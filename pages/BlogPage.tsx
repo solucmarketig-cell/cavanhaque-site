@@ -14,7 +14,7 @@ const BlogPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Todos');
 
-  const categories = ['Todos', 'Dicas', 'Ciência', 'Reviews', 'Cultura', 'Estilo'];
+  const categories = ['Todos', 'Cabelo', 'Dicas', 'Estilo', 'Tendências', 'Reviews', 'Ciência', 'Cultura'];
 
   useEffect(() => {
     // Scroll to top when component mounts

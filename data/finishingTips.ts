@@ -109,7 +109,7 @@ export const finishingTips: Record<string, { preparation: string; product: strin
         product: 'Pomada de Definição (Brilho).',
         technique: 'É crucial que nenhum fio cruze a linha da navalha. Penteie rigidamente cada lado para sua direção oposta, deixando a "estrada" (hard part) visível e limpa.'
     },
-    'bowl-cut-undercut': {
+    'bowl-cut': {
         preparation: 'O cabelo deve cair liso e pesado ao redor da cabeça.',
         product: 'Óleo de Argan ou Spray de Brilho.',
         technique: 'Use a chapinha se necessário para alinhar a franja e as laterais. O corte deve parecer uma linha contínua. Finalize com spray de brilho para efeito "glass hair".'
@@ -133,5 +133,30 @@ export const finishingTips: Record<string, { preparation: string; product: strin
         preparation: 'Toalha. Apenas isso.',
         product: 'Pasta Modeladora (quantidade mínima, tamanho de uma ervilha).',
         technique: 'Espalhe a pasta na mão e passe superficialmente no topo para baixar o frizz e dar uma leve direção aos fios. É o corte mais prático de todos.'
+    },
+    'slicked-back': {
+        preparation: 'Lave com shampoo de limpeza profunda para garantir que o cabelo tenha movimento.',
+        product: 'Pomada de Alto Brilho (Base Água) ou Gel Wax.',
+        technique: 'Com o cabelo úmido, aplique o produto generosamente. Use um pente fino para puxar todo o cabelo para trás, seguindo a linha natural da cabeça até a nuca.'
+    },
+    'cesar-moderno': {
+        preparation: 'Cabelo seco ou levemente úmido.',
+        product: 'Pomada Matte ou Cera Modeladora.',
+        technique: 'Direcione a franja para frente e o topo para o centro. Use as pontas dos dedos para criar picos de textura, evitando que o cabelo fique plano.'
+    },
+    'ivy-league': {
+        preparation: 'Lave com shampoo de uso diário.',
+        product: 'Creme para Pentear ou Pomada de Brilho Médio.',
+        technique: 'Penteie o topo para o lado com uma leve elevação na frente (estilo mini-topete). Use os dedos para um acabamento mais natural e menos ríspido.'
+    },
+    'man-bun': {
+        preparation: 'Desembarace totalmente os fios longos.',
+        product: 'Óleo de Argan e Elástico de Algodão.',
+        technique: 'Aplique o óleo nas pontas. Junte todo o cabelo no ponto mais alto da coroa e prenda com o elástico. Não aperte demais para evitar a alopecia de tração.'
+    },
+    'taper-ondulado': {
+        preparation: 'Use condicionador para definir as ondas.',
+        product: 'Ativador de Cachos ou Mousse.',
+        technique: 'Aplique o produto com le cabelo molhado fazendo movimentos de baixo para cima (amassando). Deixe secar naturalmente ou use difusor em temperatura baixa.'
     }
 };

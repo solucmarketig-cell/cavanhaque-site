@@ -5778,7 +5778,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "14 de Março de 2026",
       readTime: "12 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/high-fade.webp",
       howToSteps: [
         { name: "Marcação Inicial", text: "Marcar a linha guia com a máquina 0, dois dedos acima da orelha." },
@@ -5841,7 +5841,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "14 de Março de 2026",
       readTime: "10 min",
-      category: "Dicas",
+      category: "Cabelo",
       image: "/assets/french-crop.webp",
       howToSteps: [
         { name: "Base Lateral", text: "Executar um Low Fade ou Mid Fade nas laterais." },
@@ -5899,7 +5899,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "14 de Março de 2026",
       readTime: "15 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/corte-do-jaca.webp",
       howToSteps: [
         { name: "Navalhado Inicial", text: "Limpar a base lateral com navalha ou shaver, criando a pele lisa." },
@@ -5952,7 +5952,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "14 de Março de 2026",
       readTime: "11 min",
-      category: "Tendências",
+      category: "Cabelo",
       image: "/assets/corte-americano.webp",
       howToSteps: [
         { name: "Taper nas Costeletas", text: "Fazer um degradê suave apenas na região das costeletas, preservando a lateral." },
@@ -6005,7 +6005,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "14 de Março de 2026",
       readTime: "8 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/buzz-cut.webp",
       howToSteps: [
         { name: "Raspagem Uniforme", text: "Passar a máquina 1 ou 2 em todo o crânio de forma homogênea." },
@@ -6058,7 +6058,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "14 de Março de 2026",
       readTime: "14 min",
-      category: "Cultura",
+      category: "Cabelo",
       image: "/assets/wolf-cut.webp",
       howToSteps: [
         { name: "Divisão de Camadas", text: "Criar camadas desconectadas desde o topo até a nuca." },
@@ -6111,7 +6111,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "14 de Março de 2026",
       readTime: "13 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/asa-delta-mullet.webp",
       howToSteps: [
         { name: "Raspagem Lateral", text: "Passar máquina 2 ou 3 nas laterais, subindo até a linha da têmpora." },
@@ -6164,7 +6164,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Dr. Estilo (Ph.D)",
       date: "14 de Março de 2026",
       readTime: "18 min",
-      category: "Cultura",
+      category: "Cabelo",
       image: "/assets/box-braids.webp",
       howToSteps: [
         { name: "Preparação", text: "Lavar e desembaraçar o cabelo crespo profundamente antes do processo." },
@@ -6217,7 +6217,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "14 de Março de 2026",
       readTime: "12 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/scumbag-fade.webp",
       howToSteps: [
         { name: "Fade Alto", text: "Executar um degradê alto e nítido nas laterais e nuca." },
@@ -6270,7 +6270,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Dr. Estilo (Ph.D)",
       date: "15 de Março de 2026",
       readTime: "15 min",
-      category: "Tendências",
+      category: "Cabelo",
       image: "/assets/platinado-global.webp",
       howToSteps: [
         { name: "Descoloração", text: "Aplicar pó descolorante com água oxigenada (vol 30 ou 40) até atingir o tom 9 ou 10." },
@@ -6323,7 +6323,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "15 de Março de 2026",
       readTime: "14 min",
-      category: "Cultura",
+      category: "Cabelo",
       image: "/assets/dreadlocks-curto.webp",
       howToSteps: [
         { name: "Divisão de Mechas", text: "Separar o topo do cabelo em seções circulares ou quadradas." },
@@ -6376,7 +6376,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "15 de Março de 2026",
       readTime: "12 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/social-classico.webp",
       howToSteps: [
         { name: "Laterais na Tesoura", text: "Cortar as laterais com técnica de pente sobre tesoura para um caimento natural." },
@@ -6429,7 +6429,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "15 de Março de 2026",
       readTime: "11 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/moicano-disfarcado.png",
       howToSteps: [
         { name: "Marcação da Crista", text: "Isolar a faixa central do topo, da testa até a nuca." },
@@ -6482,7 +6482,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "15 de Março de 2026",
       readTime: "13 min",
-      category: "Dicas",
+      category: "Cabelo",
       image: "/assets/surfer-shag.png",
       howToSteps: [
         { name: "Corte em Camadas", text: "Retirar o peso excessivo das pontas com camadas longas e fluidas." },
@@ -6535,7 +6535,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "15 de Março de 2026",
       readTime: "12 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/top-knot.png",
       howToSteps: [
         { name: "Undercut Lateral", text: "Raspar as laterais e nuca na máquina 0 ou 1, criando uma linha de desconexão clara." },
@@ -6588,7 +6588,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "15 de Março de 2026",
       readTime: "10 min",
-      category: "Tendências",
+      category: "Cabelo",
       image: "/assets/fringe-fade.png",
       howToSteps: [
         { name: "Degradê Navalhado", text: "Executar um High Fade ou Skin Fade nas laterais para máximo contraste." },
@@ -6641,7 +6641,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Dr. Estilo (Ph.D)",
       date: "15 de Março de 2026",
       readTime: "9 min",
-      category: "Dicas",
+      category: "Cabelo",
       image: "/assets/nudred-afro.png",
       howToSteps: [
         { name: "Lavagem e Umidade", text: "Lavar o cabelo e manter levemente úmido (não encharcado)." },
@@ -6694,7 +6694,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "15 de Março de 2026",
       readTime: "11 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/pompadour-fade.png",
       howToSteps: [
         { name: "Undercut Total", text: "Raspar as laterais de forma uniforme (máquina 1 ou 2) sem degradê suave." },
@@ -6747,7 +6747,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "16 de Março de 2026",
       readTime: "14 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/pompadour-fade.png",
       howToSteps: [
         { name: "Crescimento do Topo", text: "Manter o topo com no mínimo 10cm para conseguir a curvatura do pompadour." },
@@ -6800,7 +6800,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "16 de Março de 2026",
       readTime: "12 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/slicked-back.png",
       howToSteps: [
         { name: "Raspagem Undercut", text: "Raspar as laterais uniformemente (máquina 1 ou 2) até a altura da têmpora." },
@@ -6853,7 +6853,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "16 de Março de 2026",
       readTime: "10 min",
-      category: "Dicas",
+      category: "Cabelo",
       image: "/assets/cesar-moderno.png",
       howToSteps: [
         { name: "Fade Médio", text: "Executar um degradê médio nas laterais." },
@@ -6906,7 +6906,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "16 de Março de 2026",
       readTime: "11 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/ivy-league.png",
       howToSteps: [
         { name: "Taper Fade Baixo", text: "Executar um degradê bem baixo nas costeletas e nuca." },
@@ -6959,7 +6959,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "16 de Março de 2026",
       readTime: "12 min",
-      category: "Tendências",
+      category: "Cabelo",
       image: "/assets/burst-fade.png",
       howToSteps: [
         { name: "Marcação em Arco", text: "Criar a linha do degradê em formato de semicírculo ao redor da orelha." },
@@ -7012,7 +7012,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Dr. Estilo (Ph.D)",
       date: "16 de Março de 2026",
       readTime: "15 min",
-      category: "Cultura",
+      category: "Cabelo",
       image: "/assets/flat-top-afro.png",
       howToSteps: [
         { name: "Corte Geométrico", text: "Usar máquina com pente de topo plano (flattop comb) para nivelar o topo horizontalmente." },
@@ -7065,7 +7065,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "16 de Março de 2026",
       readTime: "11 min",
-      category: "Estilo",
+      category: "Cabelo",
       image: "/assets/man-bun.png",
       howToSteps: [
         { name: "Raspagem Undercut", text: "Manter as laterais e nuca raspadas uniformemente." },
@@ -7118,7 +7118,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "16 de Março de 2026",
       readTime: "12 min",
-      category: "Dicas",
+      category: "Cabelo",
       image: "/assets/corte-americano.webp",
       howToSteps: [
         { name: "Taper Suave", text: "Fazer um degradê discreto nas costeletas e nuca." },
@@ -7171,7 +7171,7 @@ const ArticleDetailPage: React.FC = () => {
       author: "Carlos Barbudo",
       date: "16 de Março de 2026",
       readTime: "13 min",
-      category: "Tendências",
+      category: "Cabelo",
       image: "/assets/bowl-cut-moderno.png",
       howToSteps: [
         { name: "Linha Circular", text: "Marcar a linha de base circular ao redor de toda a cabeça." },

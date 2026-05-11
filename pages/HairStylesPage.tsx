@@ -468,7 +468,7 @@ const HairStylesPage: React.FC = () => {
                     Dicas de Finalização <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
                   </button>
                   <Link
-                    to={`/artigo/${style.slug}`}
+                    to={`/blog/${style.slug}`}
                     className="flex items-center justify-center gap-3 w-full py-4 bg-brand-charcoal text-white font-black uppercase text-xs tracking-[0.2em] hover:bg-brand-gold hover:text-brand-dark transition-all rounded-2xl flex items-center justify-center gap-2 group/tutorial transform active:scale-95"
                   >
                     Ver Tutorial Completo <Sparkles size={14} className="group-hover/tutorial:scale-125 transition-transform" />

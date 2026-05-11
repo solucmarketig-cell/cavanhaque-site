@@ -343,7 +343,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '14 Mar 2026',
           slug: 'high-fade-degrade-alto',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-2',
@@ -353,7 +353,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '14 Mar 2026',
           slug: 'french-crop-cesar-moderno',
-          category: 'Dicas'
+          category: 'Cabelo'
         },
         {
           id: 'hair-3',
@@ -363,7 +363,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '14 Mar 2026',
           slug: 'corte-do-jaca-degrade-brasileiro',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-4',
@@ -373,7 +373,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '14 Mar 2026',
           slug: 'corte-americano-taper-moderno',
-          category: 'Tendências'
+          category: 'Cabelo'
         },
         {
           id: 'hair-5',
@@ -383,7 +383,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '14 Mar 2026',
           slug: 'buzz-cut-design-risca-navalha',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-6',
@@ -393,7 +393,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '14 Mar 2026',
           slug: 'wolf-cut-masculino-tendencia',
-          category: 'Cultura'
+          category: 'Cabelo'
         },
         {
           id: 'hair-7',
@@ -403,7 +403,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '14 Mar 2026',
           slug: 'asa-delta-mullet-brasileiro',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-8',
@@ -413,7 +413,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Dr. Estilo (Ph.D)',
           date: '14 Mar 2026',
           slug: 'box-braids-masculina-afro',
-          category: 'Cultura'
+          category: 'Cabelo'
         },
         {
           id: 'hair-9',
@@ -423,7 +423,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '14 Mar 2026',
           slug: 'scumbag-fade-classico-retro',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-10',
@@ -433,7 +433,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Dr. Estilo (Ph.D)',
           date: '15 Mar 2026',
           slug: 'cabelo-platinado-nevou-guia',
-          category: 'Tendências'
+          category: 'Cabelo'
         },
         {
           id: 'hair-11',
@@ -443,7 +443,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'dreadlocks-curtos-taper-fade',
-          category: 'Cultura'
+          category: 'Cabelo'
         },
         {
           id: 'hair-12',
@@ -453,7 +453,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'corte-social-classico-corporativo',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-13',
@@ -463,7 +463,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'moicano-disfarcado-fade',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-14',
@@ -473,7 +473,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'surfer-shag-longo-ondulado',
-          category: 'Dicas'
+          category: 'Cabelo'
         },
         {
           id: 'hair-15',
@@ -483,7 +483,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'top-knot-coque-samurai',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-16',
@@ -493,7 +493,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'fringe-fade-franja-masculina',
-          category: 'Tendências'
+          category: 'Cabelo'
         },
         {
           id: 'hair-17',
@@ -503,7 +503,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Dr. Estilo (Ph.D)',
           date: '15 Mar 2026',
           slug: 'afro-nudred-textura-definicao',
-          category: 'Dicas'
+          category: 'Cabelo'
         },
         {
           id: 'hair-18',
@@ -513,7 +513,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'side-swept-undercut-estilo',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-19',
@@ -523,7 +523,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'pompadour-moderno-fade-volume',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-20',
@@ -533,7 +533,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'slicked-back-undercut-classico',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-21',
@@ -543,7 +543,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'corte-cesar-moderno-franja-curta',
-          category: 'Dicas'
+          category: 'Cabelo'
         },
         {
           id: 'hair-22',
@@ -553,7 +553,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'iv-league-haircut-executivo',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-23',
@@ -563,7 +563,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'burst-fade-moicano-discreto',
-          category: 'Tendências'
+          category: 'Cabelo'
         },
         {
           id: 'hair-24',
@@ -573,7 +573,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Dr. Estilo (Ph.D)',
           date: '16 Mar 2026',
           slug: 'flat-top-militar-afro',
-          category: 'Cultura'
+          category: 'Cabelo'
         },
         {
           id: 'hair-25',
@@ -583,7 +583,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'man-bun-undercut-estilo-samurai',
-          category: 'Estilo'
+          category: 'Cabelo'
         },
         {
           id: 'hair-26',
@@ -593,7 +593,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'taper-fade-cabelo-ondulado-textura',
-          category: 'Dicas'
+          category: 'Cabelo'
         },
         {
           id: 'hair-27',
@@ -603,7 +603,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'bowl-cut-repaginado-moderno',
-          category: 'Tendências'
+          category: 'Cabelo'
         }
       ]);
     }, 400);
