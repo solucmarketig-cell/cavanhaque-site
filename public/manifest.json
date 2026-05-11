@@ -1,0 +1,24 @@
+{
+    "name": "Cavanhaque - Guia de Estilo Masculino",
+    "short_name": "Cavanhaque",
+    "description": "O guia definitivo do homem moderno sobre grooming, barba e estilo masculino",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1a1a1a",
+    "theme_color": "#1a1a1a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "lifestyle",
+        "fashion",
+        "health"
+    ],
+    "lang": "pt-BR"
+}

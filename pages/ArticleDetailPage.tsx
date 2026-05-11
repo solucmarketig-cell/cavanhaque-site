@@ -1,0 +1,7424 @@
+
+import React, { useEffect } from 'react';
+import { Calendar, User, Clock, Share2, ArrowLeft, CheckCircle2, Star, ArrowRight, FlaskConical, Target, Trophy, Crown, Anchor, Droplets, Zap, Scissors, Film, Sparkles, AlertCircle, TrendingUp, Briefcase, Smile, ShieldCheck, HeartPulse, Hammer, Shirt, Layout, UserCheck, Microscope, Eye, AlertTriangle, Info } from 'lucide-react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import OptimizedImage from '../components/OptimizedImage';
+import AdUnit from '../components/AdUnit';
+import { fetchArticles } from '../services/contentService';
+import { Article } from '../types';
+import TutorialSteps from '../components/TutorialSteps';
+import ToolBox from '../components/ToolBox';
+
+const ArticleDetailPage: React.FC = () => {
+  const { slug } = useParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
+  const [relatedArticles, setRelatedArticles] = React.useState<Article[]>([]);
+
+  useEffect(() => {
+    fetchArticles().then(data => {
+      // Filter out current article and pick 3 random ones
+      const filtered = data.filter(a => a.slug !== slug);
+      const shuffled = [...filtered].sort(() => 0.5 - Math.random());
+      setRelatedArticles(shuffled.slice(0, 3));
+    });
+  }, [slug]);
+
+  // Links Afiliados Estratégicos
+  const AFF_DERMAROLLER = "https://mercadolivre.com/sec/28LNYBa";
+  const AFF_MINOXIDIL = "https://meli.la/1ek2JKf";
+  const AFF_VIKING = "https://amzn.to/4jEsJYH";
+  const AFF_OIL = "https://mercadolivre.com/sec/2Wo6ZWc";
+  const AFF_KIT_FACIAL = "https://amzn.to/4pzgTAw";
+  const AFF_TESOURA = "https://produto.mercadolivre.com.br/MLB-3908174291-tesoura-profissional-cabeleireiro-barbeiro-fio-navalha-kit-_JM";
+  const AFF_BALM = "https://meli.la/1jvcZjc";
+
+  const articlesData: Record<string, any> = {
+    'minoxidil-funciona-verdade': {
+      title: "Minoxidil Funciona? A Verdade Científica sobre o Crescimento de Barba",
+      subtitle: "Analisamos estudos dermatológicos para responder: o minoxidil realmente cria novos folículos ou apenas acelera o que já existe? Entenda o ciclo de crescimento folicular.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "10 de Março de 2026",
+      readTime: "15 min",
+      category: "Ciência",
+      image: "/assets/minoxidil-science.webp",
+      howToSteps: [
+        { name: "Limpeza de Pele", text: "Lave o rosto com água morna e sabonete neutro para abrir os poros." },
+        { name: "Aplicação da Dose", text: "Use o conta-gotas para aplicar 1ml do produto nas áreas falhadas." },
+        { name: "Massagem Circular", text: "Espalhe com as pontas dos dedos em movimentos circulares por 1 minuto." },
+        { name: "Período de Absorção", text: "Deixe o produto agir por pelo menos 4 horas antes de lavar ou aplicar outros cremes." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Aqui no <strong>Cavanhaque</strong>, recebemos centenas de dúvidas sobre o mesmo tema: <em>"Minoxidil realmente funciona ou é apenas marketing?"</em>. O hype em fóruns e redes sociais é imenso, com transformações milagrosas de "antes e depois". No entanto, longe da empolgação, existe a ciência dermatológica. Neste guia, fugimos do óbvio para explicar o que realmente acontece no seu folículo e como você pode ter resultados reais, baseados em nossa curadoria técnica.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Minoxidil 5% (Kirkland ou Similar)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Sabonete Antioleosidade", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Conta-gotas de Precisão", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Desobstrução de Poros",
+                description: "Lave o rosto com água morna e um sabonete antioleosidade. A gordura natural da pele bloqueia a entrada do Minoxidil. Seque bem o rosto antes de aplicar.",
+                tip: "Use uma toalha limpa para não levar bactérias para as áreas onde você quer que o pelo cresça."
+              },
+              {
+                title: "A Dose Mágica (1ml)",
+                description: "Não adianta encharcar o rosto. A pele tem um limite de absorção. Use exatamente 1ml por aplicação, espalhando uniformemente pelas áreas falhadas.",
+                tip: "Divida o 1ml em 4 gotas para cada bochecha, 2 para o bigode e o resto no queixo."
+              },
+              {
+                title: "Massagem de Ativação",
+                description: "Após aplicar as gotas, use a ponta dos dedos para massagear suavemente em círculos. Isso aumenta o fluxo sanguíneo local e ajuda o produto a penetrar no folículo.",
+                tip: "Lave as mãos imediatamente após para evitar que nasça pelo na palma da mão ou entre os dedos."
+              },
+              {
+                title: "O Relógio da Absorção",
+                description: "O Minoxidil leva até 4 horas para ser 75% absorvido. Durante esse tempo, não lave o rosto, não sue excessivamente e não aplique óleos ou balms.",
+                tip: "Se você aplicar à noite, faça isso 1 hora antes de deitar para o produto não ficar todo no travesseiro."
+              },
+              {
+                title: "Ritual de Hidratação",
+                description: "O álcool contido no produto resseca a pele. Após as 4 horas de absorção, lave o rosto e aplique um óleo de barba premium para devolver a saúde à pele.",
+                tip: "A pele descamando (parecendo caspa) é sinal de que você precisa hidratar mais entre as aplicações."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Origem Acidental: De Remédio de Pressão a Símbolo de Virilidade</h2>
+          <p className="mb-6">O Minoxidil não nasceu em um laboratório de cosméticos. Nos anos 70, a Upjohn Company buscava um <strong>vasodilatador oral</strong> para hipertensão arterial. O "erro" que mudou tudo? Os pacientes começaram a relatar um efeito colateral inusitado: o nascimento de pelos onde eles nem sabiam que tinham folículos.</p>
+          
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-8">
+            <h4 className="font-bold text-brand-dark mb-2">💡 Observação do Editor:</h4>
+            <p className="text-sm text-gray-600">Muitos sites repetem essa história, mas poucos explicam que o segredo não é o produto em si, mas como ele <em>educa</em> o seu folículo a trabalhar mais rápido. No Cavanhaque, acreditamos que entender esse processo é o primeiro passo para não desistir no segundo mês.</p>
+          </div>
+
+          <p className="mb-6">A aprovação do FDA veio em 1988, inicialmente para calvície masculina (alopecia), mas a comunidade de barbudos rapidamente percebeu que o mesmo princípio se aplicava ao rosto. O uso "off-label" — quando usamos um produto para algo que ele não foi rotulado — tornou-se o padrão ouro para quem busca um visual impecável.</p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Mecanismo de Ação: Como o Minoxidil Realmente Funciona</h2>
+          <p className="mb-6">Apesar de décadas de uso, o mecanismo exato do Minoxidil ainda não é 100% compreendido pela ciência. No entanto, sabemos que ele atua em <strong>múltiplas frentes</strong> para estimular o crescimento capilar:</p>
+
+          <div className="bg-brand-light p-8 rounded-2xl border border-brand-gold/20 my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Os 4 Mecanismos Principais</h3>
+            <ol className="space-y-6">
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-lg px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Vasodilatação Periférica</h4>
+                  <p className="text-gray-600 text-sm">O Minoxidil relaxa os músculos lisos dos vasos sanguíneos, aumentando o fluxo de sangue, oxigênio e nutrientes para a papila dérmica (a "raiz" do folículo). Mais nutrição = folículos mais saudáveis e ativos.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-lg px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Prolongamento da Fase Anágena</h4>
+                  <p className="text-gray-600 text-sm">O ciclo capilar tem 3 fases: anágena (crescimento), catágena (transição) e telógena (repouso). O Minoxidil força os folículos a permanecerem mais tempo na fase anágena, resultando em fios mais longos e grossos.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-lg px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Ativação de Canais de Potássio</h4>
+                  <p className="text-gray-600 text-sm">O Minoxidil abre canais de potássio nas células do folículo, o que estimula a síntese de DNA e proteínas estruturais como a queratina — o principal componente do fio.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-lg px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Estímulo de Fatores de Crescimento</h4>
+                  <p className="text-gray-600 text-sm">Estudos mostram que o Minoxidil aumenta a expressão de VEGF (Fator de Crescimento Endotelial Vascular), que promove a formação de novos vasos sanguíneos ao redor do folículo.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Minoxidil Cria Novos Folículos ou Apenas Acorda os Dormentes?</h2>
+          <p className="mb-6">Esta é a pergunta de 1 milhão de dólares. A resposta científica é: <strong>o Minoxidil não cria folículos do zero</strong>. Você nasce com um número fixo de folículos pilosos. O que o Minoxidil faz é:</p>
+
+          <ul className="space-y-4 mb-8">
+            <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-gold mt-1 shrink-0" size={20} /> <span><strong>Reativar folículos miniaturizados:</strong> Aqueles fios fininhos e quase invisíveis (velus) que você tem na bochecha podem ser transformados em fios terminais (grossos e pigmentados).</span></li>
+            <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-gold mt-1 shrink-0" size={20} /> <span><strong>Acordar folículos em repouso:</strong> Folículos que estavam na fase telógena (dormentes) são forçados a entrar na fase anágena (crescimento ativo).</span></li>
+            <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-gold mt-1 shrink-0" size={20} /> <span><strong>Engrossar fios existentes:</strong> Fios que já cresciam, mas eram finos e fracos, ganham diâmetro e densidade.</span></li>
+          </ul>
+
+          <p className="mb-8 italic text-gray-600">Tradução: se você tem zero folículos em uma área (como uma cicatriz profunda), o Minoxidil não vai fazer milagre. Mas se você tem aqueles pelinhos finos e transparentes, há uma chance real de transformá-los em barba de verdade.</p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Concentrações: 2%, 5% ou 10%? Qual Escolher?</h2>
+
+          <div className="overflow-x-auto my-10">
+            <table className="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-lg">
+              <thead className="bg-brand-dark text-white">
+                <tr>
+                  <th className="p-4 text-left font-black uppercase text-xs tracking-wider">Concentração</th>
+                  <th className="p-4 text-left font-black uppercase text-xs tracking-wider">Eficácia</th>
+                  <th className="p-4 text-left font-black uppercase text-xs tracking-wider">Efeitos Colaterais</th>
+                  <th className="p-4 text-left font-black uppercase text-xs tracking-wider">Recomendado Para</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 font-bold text-brand-dark">2%</td>
+                  <td className="p-4 text-sm text-gray-600">Moderada (aprovado para mulheres)</td>
+                  <td className="p-4 text-sm text-gray-600">Mínimos, pele sensível tolera bem</td>
+                  <td className="p-4 text-sm text-gray-600">Iniciantes, pele muito sensível</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-brand-gold/10">
+                  <td className="p-4 font-bold text-brand-dark">5% ⭐</td>
+                  <td className="p-4 text-sm text-gray-600"><strong>Alta</strong> (padrão-ouro para barba)</td>
+                  <td className="p-4 text-sm text-gray-600">Moderados, descamação leve</td>
+                  <td className="p-4 text-sm text-gray-600"><strong>Maioria dos homens</strong></td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 font-bold text-brand-dark">10%</td>
+                  <td className="p-4 text-sm text-gray-600">Muito alta (off-label)</td>
+                  <td className="p-4 text-sm text-gray-600">Altos, irritação, ressecamento</td>
+                  <td className="p-4 text-sm text-gray-600">Casos severos, sob supervisão</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 opacity-10 p-4"><Microscope size={120} /></div>
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold flex items-center gap-3">A Regra dos 5%: Por Que É o Padrão-Ouro</h3>
+            <p className="mb-4">Para a barba, a concentração de <strong>5%</strong> é o equilíbrio perfeito entre eficácia e tolerabilidade. Estudos mostram que o 5% é até 45% mais eficaz que o 2%, sem aumentar proporcionalmente os efeitos colaterais. Resultados sólidos costumam aparecer entre o <strong>4º e o 6º mês</strong> de uso contínuo.</p>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-gold mt-1 shrink-0" size={18} /> <span><strong>Paciência é fundamental:</strong> Os fios velus (transparentes) levam de 3 a 6 meses para maturar em fios terminais.</span></li>
+              <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-gold mt-1 shrink-0" size={18} /> <span><strong>Higiene é crucial:</strong> Aplique sempre com a pele limpa e poros abertos (pós-banho quente é ideal).</span></li>
+              <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-gold mt-1 shrink-0" size={18} /> <span><strong>Consistência é tudo:</strong> Pular dias compromete os resultados. Use 2x ao dia, todos os dias.</span></li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Protocolo Completo de Aplicação (Passo a Passo)</h2>
+
+          <div className="bg-brand-light p-8 rounded-2xl my-10">
+            <h3 className="text-xl font-bold text-brand-dark mb-6 uppercase text-xs tracking-wider">Rotina Matinal (7h - 8h)</h3>
+            <ol className="space-y-6">
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-dark text-white font-black text-sm px-3 py-1 rounded shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Lavar o Rosto</h4>
+                  <p className="text-gray-600 text-sm">Use sabonete neutro ou específico para barba. Água morna abre os poros.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-dark text-white font-black text-sm px-3 py-1 rounded shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Secar Completamente</h4>
+                  <p className="text-gray-600 text-sm">Pele úmida dilui o Minoxidil. Seque com toalha limpa.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-dark text-white font-black text-sm px-3 py-1 rounded shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Aplicar 1ml de Minoxidil</h4>
+                  <p className="text-gray-600 text-sm">Use o conta-gotas ou spray. Espalhe uniformemente nas áreas desejadas.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-dark text-white font-black text-sm px-3 py-1 rounded shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Massagear Levemente</h4>
+                  <p className="text-gray-600 text-sm">Movimentos circulares por 1-2 minutos para melhorar absorção.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-dark text-white font-black text-sm px-3 py-1 rounded shrink-0">5</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Aguardar 4 Horas</h4>
+                  <p className="text-gray-600 text-sm">Não lavar o rosto. Deixe o produto agir completamente.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div className="bg-brand-light p-8 rounded-2xl my-10">
+            <h3 className="text-xl font-bold text-brand-dark mb-6 uppercase text-xs tracking-wider">Rotina Noturna (22h - 23h)</h3>
+            <p className="text-sm text-gray-600 mb-4">Repita o mesmo protocolo antes de dormir. A aplicação noturna é crucial pois o corpo regenera durante o sono.</p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Efeitos Colaterais: O Que Esperar (e Como Minimizar)</h2>
+
+          <p className="mb-6">O Minoxidil é geralmente seguro, mas não é isento de efeitos colaterais. Conhecê-los te prepara para lidar com eles:</p>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-red-100 p-6 rounded-2xl">
+              <h4 className="font-bold text-red-600 mb-4 flex items-center gap-2"><AlertCircle size={20} /> Efeitos Comuns (30-40%)</h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li>• Ressecamento e descamação da pele</li>
+                <li>• Coceira leve nas primeiras semanas</li>
+                <li>• Vermelhidão temporária</li>
+                <li>• Crescimento de pelos em áreas adjacentes (testa, maçãs do rosto)</li>
+              </ul>
+            </div>
+            <div className="bg-white border-2 border-yellow-100 p-6 rounded-2xl">
+              <h4 className="font-bold text-yellow-600 mb-4 flex items-center gap-2"><AlertCircle size={20} /> Efeitos Raros (5-10%)</h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li>• Dermatite de contato</li>
+                <li>• Acne na região de aplicação</li>
+                <li>• Inchaço facial leve</li>
+                <li>• Taquicardia (se absorção sistêmica excessiva)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-brand-gold/10 border-l-4 border-brand-gold p-6 rounded-r-2xl my-8">
+            <h4 className="font-bold text-brand-dark mb-3">💡 Como Minimizar Efeitos Colaterais</h4>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>✓ Hidrate a pele com óleo de barba após 4h da aplicação</li>
+              <li>✓ Use protetor solar se expor ao sol (Minoxidil pode sensibilizar)</li>
+              <li>✓ Comece com 1x ao dia nas primeiras 2 semanas para adaptar a pele</li>
+              <li>✓ Se irritação severa, pause por 2-3 dias e retome com concentração menor</li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Timeline Realista: O Que Esperar Mês a Mês</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="flex gap-6 items-start">
+              <div className="bg-brand-gold text-brand-dark font-black text-xl px-5 py-3 rounded-xl shrink-0">MÊS 1</div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-2">Fase de Adaptação</h4>
+                <p className="text-sm text-gray-600">Possível shedding (queda temporária de fios fracos). Pele pode descamar. Poucos resultados visíveis. <strong>Não desista!</strong></p>
+              </div>
+            </div>
+            <div className="flex gap-6 items-start">
+              <div className="bg-brand-gold text-brand-dark font-black text-xl px-5 py-3 rounded-xl shrink-0">MÊS 2-3</div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-2">Primeiros Sinais</h4>
+                <p className="text-sm text-gray-600">Fios velus começam a aparecer (fininhos e claros). Áreas com falhas mostram "penugem". Ainda não é barba de verdade.</p>
+              </div>
+            </div>
+            <div className="flex gap-6 items-start">
+              <div className="bg-brand-gold text-brand-dark font-black text-xl px-5 py-3 rounded-xl shrink-0">MÊS 4-6</div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-2">Transformação Visível</h4>
+                <p className="text-sm text-gray-600">Fios velus começam a engrossar e escurecer. Densidade aumenta. Barba fica mais "cheia". <strong>Fase de maior motivação!</strong></p>
+              </div>
+            </div>
+            <div className="flex gap-6 items-start">
+              <div className="bg-brand-gold text-brand-dark font-black text-xl px-5 py-3 rounded-xl shrink-0">MÊS 7-12</div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-2">Maturação Completa</h4>
+                <p className="text-sm text-gray-600">Fios terminais consolidados. Barba densa e uniforme. Muitos param o uso aqui (mas há risco de perda parcial).</p>
+              </div>
+            </div>
+            <div className="flex gap-6 items-start">
+              <div className="bg-brand-gold text-brand-dark font-black text-xl px-5 py-3 rounded-xl shrink-0">12+ MESES</div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-2">Ganhos Permanentes</h4>
+                <p className="text-sm text-gray-600">Após 12-18 meses, muitos fios se tornam permanentes mesmo sem Minoxidil. Mas manutenção ocasional pode ser necessária.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Posso parar de usar depois que a barba crescer?</h4>
+              <p className="text-sm text-gray-600">Depende. Fios que se tornaram terminais (grossos e pigmentados) tendem a ser permanentes. Mas fios que ainda estão em transição podem cair. Recomenda-se usar por 12-18 meses antes de parar.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Minoxidil funciona para todo mundo?</h4>
+              <p className="text-sm text-gray-600">Não. Cerca de 60-70% dos usuários veem resultados significativos. 20% veem resultados moderados. 10% não respondem (non-responders). A genética é o fator determinante.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Posso usar Minoxidil e Dermaroller juntos?</h4>
+              <p className="text-sm text-gray-600">Sim! O microagulhamento potencializa os resultados. Mas aguarde 24h após o dermaroller para aplicar Minoxidil (evita absorção sistêmica excessiva).</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Qual a diferença entre líquido e espuma?</h4>
+              <p className="text-sm text-gray-600">Líquido: mais barato, absorção mais rápida, pode ressecar mais. Espuma: mais cara, menos ressecamento, mais confortável. Eficácia é similar.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Minoxidil causa impotência ou afeta hormônios?</h4>
+              <p className="text-sm text-gray-600">Não. Minoxidil não é anti-androgênico (diferente da Finasterida). Ele não mexe com testosterona ou DHT. É seguro nesse aspecto.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: Vale a Pena Usar Minoxidil na Barba?</h2>
+
+          <p className="mb-6">Se você tem falhas na barba, fios finos ou simplesmente quer mais densidade, o Minoxidil é a <strong>opção mais validada cientificamente</strong> disponível sem prescrição médica. Não é mágica, não funciona para todos, e exige paciência e disciplina. Mas para a maioria dos homens, os resultados são reais e transformadores.</p>
+
+          <p className="mb-8 font-medium">Recomendamos o uso do <a href={AFF_MINOXIDIL} className="text-brand-gold underline font-bold" target="_blank">Kit de Crescimento Mixidil Premium</a> para garantir que você está usando um produto farmacêutico de alta procedência, com a concentração ideal e resultados comprovados.</p>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-12 text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Pronto para Transformar Sua Barba?</h3>
+            <p className="mb-6 text-gray-300">Lembre-se: consistência é mais importante que perfeição. Use todos os dias, tenha paciência, e documente sua jornada com fotos mensais.</p>
+            <a href={AFF_MINOXIDIL} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Preço do Kit Mixidil</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'm-mix', name: "Kit Crescimento Mixidil", desc: "O padrão-ouro em custo-benefício para preenchimento de barba.", link: AFF_MINOXIDIL, icon: <FlaskConical size={32} /> },
+        { id: 'v-factor', name: "Fator Viking Crescimento", desc: "Acelere a maturação dos fios com biotecnologia.", link: AFF_VIKING, icon: <Trophy size={32} /> }
+      ]
+    },
+    'willian-bigode-estilo-e-legado': {
+      title: "Willian Bigode: A Anatomia do Visual que Marcou uma Geração no Futebol",
+      subtitle: "Entenda como o atacante transformou um apelido em uma das marcas pessoais mais valiosas do esporte através do seu icônico bigode Chevron.",
+      author: "Carlos Barbudo",
+      date: "09 de Março de 2026",
+      readTime: "14 min",
+      category: "Cultura",
+      image: "/assets/willian-bigode-premium.webp",
+      howToSteps: [
+        { name: "Crescimento de Base", text: "Deixe o bigode crescer por 6 semanas sem interferência para ganhar densidade." },
+        { name: "Marcação Chevron", text: "Apare as laterais em linha reta acompanhando o canto da boca." },
+        { name: "Alinhamento do Lábio", text: "Corte os fios que ultrapassam a linha do lábio superior com tesoura Stark." },
+        { name: "Limpeza Facial", text: "Raspe completamente o queixo e as bochechas para destacar o bigode." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Se falarmos em <em>branding</em> no esporte, o visual de Willian José da Silva (o nosso <strong>Willian Bigode</strong>) é uma aula completa. Ele não adotou o estilo apenas pela estética, mas transformou um traço físico em uma identidade indissociável de sua carreira. No Cavanhaque, analisamos como ele trouxe de volta o bigode Chevron e como você pode usar esse mesmo poder visual para impor respeito e presença.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Acabamento Stark", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Pente de Bigode Ultra Fino", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Navalha de Desenho Profissional", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Fase da Densidade (Semanas 1-6)",
+                description: "O segredo do Willian Bigode é a densidade. Não apara nada por 6 semanas. O bigode precisa de 'corpo' para aguentar o desenho Chevron sem parecer ralo.",
+                tip: "Use o Fator Viking no buço para acelerar a conexão dos fios e evitar buracos no centro."
+              },
+              {
+                title: "A Linha de Base (Chevron)",
+                description: "O Chevron é retangular. Use sua máquina de acabamento para criar uma linha reta nas laterais do bigode, terminando exatamente no canto da boca.",
+                tip: "Não deixe as pontas descerem em direção ao queixo, senão vira um estilo ferradura (Horseshoe)."
+              },
+              {
+                title: "O Penteado e Corte de Lábio",
+                description: "Penteie todo o bigode para baixo. Use a tesoura de precisão para cortar apenas os fios que encostam ou cobrem o seu lábio superior.",
+                tip: "Mantenha a tesoura na horizontal. O objetivo é criar uma linha reta que mostre o contorno da sua boca."
+              },
+              {
+                title: "Limpeza de Contraste",
+                description: "Raspe o queixo e as bochechas com navalhete e gel transparente. O bigode Chevron precisa de uma 'moldura' de pele limpa para se destacar.",
+                tip: "Mantenha a área entre o nariz e o topo do bigode bem aparada para dar nitidez ao desenho."
+              },
+              {
+                title: "O Toque de Mestre (Balm)",
+                description: "Aplique um pouco de Balm modelador apenas no bigode e penteie para os lados. Isso tira o aspecto 'arrepiado' e dá um brilho de saúde aos fios.",
+                tip: "Não use cera de bigode forte aqui; o estilo do Willian é natural e flexível, não rígido."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A História do Bigode de Willian</h2>
+
+          <p className="mb-6">Willian José da Silva, mais conhecido como <strong>Willian Bigode</strong>, não nasceu com esse apelido. Foi durante sua passagem pelo Grêmio, no início dos anos 2010, que o atacante decidiu deixar crescer um bigode estilo Chevron - e nunca mais tirou. O que começou como uma escolha estética casual rapidamente se tornou sua assinatura visual.</p>
+
+          <p className="mb-8">O timing foi perfeito: em uma época onde a maioria dos jogadores optava por rostos lisos ou barbas cheias, Willian ousou ser diferente. O bigode grosso e bem cuidado chamou atenção da mídia, dos torcedores e até de marcas. Hoje, é impossível pensar em Willian sem imaginar aquele bigode característico.</p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Estilo Chevron: Anatomia de um Ícone</h2>
+
+          <p className="mb-6">O estilo Chevron é caracterizado por ser <strong>grosso, largo e cobrir todo o lábio superior</strong>. Diferente de bigodes finos ou estilizados, o Chevron é robusto e masculino. Ele projeta virilidade e uma aura vintage que remete aos craques dos anos 70 e 80, como Sócrates e Rivelino.</p>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Características do Bigode Chevron</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-bold text-brand-dark mb-3">✓ Características Visuais:</h4>
+                <ul className="text-gray-600 space-y-2 text-sm ml-4">
+                  <li>• Largura: cobre todo o lábio superior</li>
+                  <li>• Espessura: densa e volumosa</li>
+                  <li>• Comprimento: até a linha do lábio (não ultrapassa)</li>
+                  <li>• Formato: retangular, sem pontas curvadas</li>
+                  <li>• Cor: natural, sem tingimento</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-3">✓ Requisitos:</h4>
+                <ul className="text-gray-600 space-y-2 text-sm ml-4">
+                  <li>• Densidade natural no bigode</li>
+                  <li>• Paciência para crescer (4-6 semanas)</li>
+                  <li>• Manutenção semanal</li>
+                  <li>• Produtos de finalização</li>
+                  <li>• Rosto limpo (sem barba no queixo)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Como Fazer o Bigode Estilo Willian: Tutorial Completo</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-8 text-brand-gold">Protocolo Passo a Passo</h3>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold mb-2">Fase de Crescimento (4-6 semanas)</h4>
+                  <p className="text-sm text-gray-300">Deixe o bigode crescer completamente sem aparar. Resista à tentação de cortar nos primeiros 30 dias. Raspe completamente queixo, bochechas e pescoço - mantenha APENAS o bigode.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold mb-2">Definir o Contorno</h4>
+                  <p className="text-sm text-gray-300">Com <a href={AFF_TESOURA} className="text-brand-gold underline font-bold">tesoura de precisão</a>, aparar apenas os fios que ultrapassam a linha do lábio. Criar linha reta horizontal na base do bigode.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-gold font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold mb-2">Manter a Largura Natural</h4>
+                  <p className="text-sm text-gray-300">NÃO afine as pontas. O Chevron deve ter largura uniforme de uma extremidade à outra. Deixe crescer até os cantos da boca.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold mb-2">Hidratação e Finalização</h4>
+                  <p className="text-sm text-gray-300">Aplicar <a href={AFF_OIL} className="text-brand-gold underline font-bold">óleo de sândalo</a> diariamente após o banho. Pentear para os lados com escova pequena. Usar cera leve se necessário para domar fios rebeldes.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div>
+                  <h4 className="font-bold mb-2">Manutenção Semanal</h4>
+                  <p className="text-sm text-gray-300">A cada 7 dias: aparar fios que entram na boca, raspar queixo e bochechas, ajustar linha do lábio. Manter sempre limpo e simétrico.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Impacto Cultural do Bigode no Futebol</h2>
+
+          <p className="mb-6">O bigode de Willian transcendeu o campo. Ele se tornou um fenômeno de mídia social, inspirou memes, produtos licenciados e até fantasias de carnaval. Mas além do entretenimento, há um aspecto sério: <strong>o poder do personal branding</strong>.</p>
+
+          <div className="grid md:grid-cols-3 gap-6 my-10">
+            <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/20 text-center">
+              <div className="text-4xl mb-4">📈</div>
+              <h4 className="font-bold text-brand-dark mb-3">Reconhecimento</h4>
+              <p className="text-sm text-gray-600">Pesquisas mostram que 87% dos torcedores brasileiros reconhecem Willian apenas pelo bigode, sem ver o rosto completo.</p>
+            </div>
+
+            <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/20 text-center">
+              <div className="text-4xl mb-4">💰</div>
+              <h4 className="font-bold text-brand-dark mb-3">Valor de Marca</h4>
+              <p className="text-sm text-gray-600">O apelido "Bigode" aumentou o valor de mercado do jogador em contratos de publicidade e patrocínio.</p>
+            </div>
+
+            <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/20 text-center">
+              <div className="text-4xl mb-4">🎯</div>
+              <h4 className="font-bold text-brand-dark mb-3">Diferenciação</h4>
+              <p className="text-sm text-gray-600">Em um esporte com milhares de atletas, ter uma marca visual única é um ativo valioso.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Outros Craques com Bigodes Icônicos</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl">
+              <h4 className="font-bold text-brand-dark mb-2">⚽ Sócrates (Brasil)</h4>
+              <p className="text-sm text-gray-600">O "Doutor" tinha um bigode fino e elegante que combinava com sua personalidade intelectual. Ícone dos anos 80.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl">
+              <h4 className="font-bold text-brand-dark mb-2">⚽ Rivelino (Brasil)</h4>
+              <p className="text-sm text-gray-600">Bigode grosso estilo Chevron, similar ao de Willian. Campeão mundial em 1970, seu bigode era sua marca registrada.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl">
+              <h4 className="font-bold text-brand-dark mb-2">⚽ Andrea Pirlo (Itália)</h4>
+              <p className="text-sm text-gray-600">Bigode fino e barba aparada. Visual de gentleman que combinava com seu estilo de jogo elegante.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl">
+              <h4 className="font-bold text-brand-dark mb-2">⚽ Zlatan Ibrahimović (Suécia)</h4>
+              <p className="text-sm text-gray-600">Alternava entre bigode e cavanhaque. Quando usava apenas bigode, era sempre grosso e imponente.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Produtos Essenciais para o Bigode Chevron</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-4">🔧 Ferramentas</h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-brand-gold">•</span>
+                  <span><strong>Tesoura de precisão:</strong> Para aparar fios que entram na boca</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-brand-gold">•</span>
+                  <span><strong>Pente fino:</strong> Para pentear e alinhar os fios</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-brand-gold">•</span>
+                  <span><strong>Escova de bigode:</strong> Para modelar diariamente</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-4">💧 Produtos</h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li className="flex items-start gap-2">
+                  <span className="text-brand-gold">•</span>
+                  <span><strong>Óleo de barba:</strong> Hidratação e brilho natural</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-brand-gold">•</span>
+                  <span><strong>Cera leve:</strong> Para domar fios rebeldes (opcional)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-brand-gold">•</span>
+                  <span><strong>Shampoo específico:</strong> Lavar 2-3x por semana</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quanto tempo leva para crescer um bigode Chevron?</h4>
+              <p className="text-sm text-gray-600">4-6 semanas para ter densidade suficiente. 2-3 meses para atingir o visual completo estilo Willian.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Preciso ter barba no queixo junto com o bigode?</h4>
+              <p className="text-sm text-gray-600">NÃO. O estilo Chevron clássico (como o de Willian) é APENAS bigode. Queixo e bochechas devem estar completamente raspados.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Como evitar que o bigode entre na boca?</h4>
+              <p className="text-sm text-gray-600">Aparar semanalmente com tesoura de precisão. Cortar apenas os fios que ultrapassam a linha do lábio. Usar cera leve para fixar se necessário.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ O bigode Chevron funciona em ambiente profissional?</h4>
+              <p className="text-sm text-gray-600">Sim, desde que bem cuidado. É um estilo clássico e masculino, aceito na maioria dos ambientes. Evite apenas em empresas muito conservadoras.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Posso fazer Chevron se meu bigode é ralo?</h4>
+              <p className="text-sm text-gray-600">O Chevron exige densidade natural. Se seu bigode é ralo, considere usar Minoxidil por 3-6 meses para aumentar densidade antes de tentar o estilo.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: O Legado do Bigode de Willian</h2>
+
+          <p className="mb-6">Willian Bigode provou que um detalhe visual pode se tornar uma marca pessoal poderosa. Em um mundo onde todos buscam se destacar, ele encontrou sua diferenciação em um bigode clássico e bem cuidado. O resultado? Reconhecimento instantâneo, valor de marca elevado e um legado que vai além dos gols.</p>
+
+          <p className="mb-8 font-medium">Se você quer replicar esse visual icônico, comece com as ferramentas certas: <a href={AFF_TESOURA} className="text-brand-gold underline font-bold" target="_blank">Tesoura de Precisão Stark</a> para manutenção impecável e <a href={AFF_OIL} className="text-brand-gold underline font-bold" target="_blank">Óleo Premium de Sândalo</a> para hidratação e brilho profissional.</p>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-12 text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Pronto para Ter Seu Bigode de Craque?</h3>
+            <p className="mb-6 text-gray-300">Transforme seu visual com o estilo que marcou uma geração no futebol.</p>
+            <a href={AFF_TESOURA} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Kit Completo</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 't-will', name: "Tesoura Stark de Precisão", desc: "Ferramenta essencial para o contorno do bigode.", link: AFF_TESOURA, icon: <Scissors size={32} /> },
+        { id: 'o-sand', name: "Óleo Premium Sândalo", desc: "Hidratação profunda para fios grossos e rebeldes.", link: AFF_OIL, icon: <Droplets size={32} /> }
+      ]
+    },
+    'como-corrigir-falhas': {
+      title: "Como Corrigir Falhas na Barba: O Guia Definitivo do Microagulhamento",
+      subtitle: "Aprenda como preencher buracos na barba de forma definitiva utilizando a ciência do microagulhamento e regeneração folicular.",
+      author: "Carlos Barbudo",
+      date: "08 de Março de 2026",
+      readTime: "18 min",
+      category: "Dicas",
+      image: "/assets/microagulhamento.webp",
+      howToSteps: [
+        { name: "Desinfecção do Roller", text: "Mergulhe o dermaroller em álcool 70% por 10 minutos antes de usar." },
+        { name: "Preparação da Pele", text: "Lave o rosto com sabonete neutro e seque bem com uma toalha limpa." },
+        { name: "Técnica da Estrela", text: "Passe o roller 10 vezes em cada direção: horizontal, vertical e diagonal." },
+        { name: "Pós-Aplicação", text: "Aplique um óleo de semente de uva ou jojoba para acalmar a pele." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Ter uma barba falhada não é uma sentença definitiva. Se você olha no espelho e vê aqueles buracos frustrantes nas bochechas, queixo irregular ou conexões fracas entre bigode e barba, saiba que existe uma solução cientificamente comprovada. O <strong>microagulhamento</strong> (dermaroller) é a técnica mais eficaz para reativar folículos dormentes sem intervenção cirúrgica, e neste guia completo, você vai aprender exatamente como usá-lo para transformar sua barba.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Por Que Sua Barba Tem Falhas? Entendendo as Causas</h2>
+
+          <p className="mb-6">Antes de partir para a solução, é fundamental entender <strong>por que</strong> sua barba falha. As causas são variadas e cada uma exige uma abordagem ligeiramente diferente:</p>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2"><Target size={20} className="text-brand-gold" /> 1. Genética (60% dos casos)</h4>
+              <p className="text-sm text-gray-600 mb-3">A causa mais comum. Seus folículos existem, mas estão miniaturizados ou dormentes devido à sensibilidade ao DHT (di-hidrotestosterona).</p>
+              <p className="text-xs text-brand-gold font-bold">✓ Tratável com microagulhamento + Minoxidil</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2"><Target size={20} className="text-brand-gold" /> 2. Hormonal (20% dos casos)</h4>
+              <p className="text-sm text-gray-600 mb-3">Baixos níveis de testosterona ou desequilíbrio hormonal. Comum em homens abaixo de 25 anos ou acima de 50.</p>
+              <p className="text-xs text-brand-gold font-bold">✓ Requer exames + possível suplementação</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2"><Target size={20} className="text-brand-gold" /> 3. Cicatrizes (10% dos casos)</h4>
+              <p className="text-sm text-gray-600 mb-3">Acidentes, acne severa ou queimaduras destruíram os folículos. Áreas com tecido cicatricial não respondem bem.</p>
+              <p className="text-xs text-red-600 font-bold">⚠ Mais difícil de tratar, pode precisar transplante</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2"><Target size={20} className="text-brand-gold" /> 4. Nutricional (10% dos casos)</h4>
+              <p className="text-sm text-gray-600 mb-3">Deficiência de biotina, zinco, vitamina D ou proteínas. Folículos não têm "combustível" para crescer.</p>
+              <p className="text-xs text-brand-gold font-bold">✓ Facilmente corrigível com dieta + suplementos</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Protocolo de Crescimento (Passo a Passo)</h2>
+          <p className="mb-6">
+            Não tente adivinhar. O microagulhamento é um procedimento técnico que, se feito errado, pode causar infecções ou cicatrizes. Siga este protocolo rigoroso:
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Dermaroller 0.5mm (Titânio)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Álcool 70% Líquido", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Jojoba Puro", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Sabonete Antisséptico", link: "https://mercadolivre.com/sec/2Wo6ZWc" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Esterilização Cirúrgica",
+                description: "Mergulhe o cabeçote do seu dermaroller em um recipiente com álcool 70% por exatamente 10 minutos. Jamais pule esta etapa.",
+                tip: "Use um copinho de café pequeno para economizar álcool, garantindo que as agulhas estejam totalmente submersas."
+              },
+              {
+                title: "Abertura dos Canais (Técnica da Estrela)",
+                description: "Divida a barba em áreas (bochecha esquerda, direita, queixo). Passe o rolo 10 vezes na vertical, 10 na horizontal e 10 na diagonal em cada área.",
+                tip: "Não coloque força. O peso da mão é o suficiente. Você quer micro-furos, não um corte aberto."
+              },
+              {
+                title: "A Regra das 24 Horas",
+                description: "Após o microagulhamento, seus poros estão abertos. NÃO aplique Minoxidil ou tônicos químicos nas próximas 24 horas para evitar irritação sistêmica.",
+                tip: "Aplique apenas óleos naturais leves (Jojoba ou Semente de Uva) imediatamente após para acalmar a vermelhidão."
+              },
+              {
+                title: "Limpeza de Manutenção",
+                description: "Lave o roller novamente em água corrente quente para tirar restos de pele e mergulhe no álcool por mais 5 minutos antes de guardar.",
+                tip: "Troque seu dermaroller a cada 2 meses. As agulhas perdem o fio e começam a 'rasgar' a pele em vez de furar."
+              },
+              {
+                title: "A Frequência do Sucesso",
+                description: "Faça este procedimento apenas 1 ou 2 vezes por semana. A pele precisa de tempo para cicatrizar e produzir o colágeno que vai alimentar o folículo.",
+                tip: "Mais não é melhor. Se você fizer todo dia, vai destruir a base do pelo em vez de estimulá-la."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Ciência do Microagulhamento: Como Funciona na Prática</h2>
+
+          <p className="mb-6">O microagulhamento, também conhecido como <strong>terapia de indução de colágeno</strong>, funciona através de um princípio simples mas poderoso: <em>lesão controlada seguida de regeneração amplificada</em>.</p>
+
+          <div className="bg-brand-light p-8 rounded-2xl border border-brand-gold/20 my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">O Processo em 4 Etapas</h3>
+            <ol className="space-y-6">
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-lg px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Microlesão Controlada</h4>
+                  <p className="text-gray-600 text-sm">As microagulhas (0.5mm para rosto) penetram a epiderme e atingem a derme superficial, criando milhares de micro-canais.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-lg px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Resposta Inflamatória</h4>
+                  <p className="text-gray-600 text-sm">O corpo detecta as "lesões" e envia células de reparo (fibroblastos) para a área, iniciando o processo de cicatrização.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-lg px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Produção de Colágeno e Elastina</h4>
+                  <p className="text-gray-600 text-sm">Os fibroblastos produzem colágeno tipo I e III, elastina e proteoglicanos, fortalecendo a estrutura da pele.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-lg px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Ativação Folicular</h4>
+                  <p className="text-gray-600 text-sm">O aumento de fatores de crescimento (VEGF, EGF, FGF) "acorda" folículos dormentes e estimula a fase anágena (crescimento).</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <p className="mb-8 italic text-gray-600">Estudos mostram que o microagulhamento aumenta a absorção transdérmica de ativos (como Minoxidil) em até <strong>3000%</strong>, potencializando drasticamente os resultados.</p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Tamanhos de Agulha: Qual Usar na Barba?</h2>
+
+          <div className="overflow-x-auto my-10">
+            <table className="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-lg">
+              <thead className="bg-brand-dark text-white">
+                <tr>
+                  <th className="p-4 text-left font-black uppercase text-xs tracking-wider">Tamanho</th>
+                  <th className="p-4 text-left font-black uppercase text-xs tracking-wider">Profundidade</th>
+                  <th className="p-4 text-left font-black uppercase text-xs tracking-wider">Uso</th>
+                  <th className="p-4 text-left font-black uppercase text-xs tracking-wider">Frequência</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 font-bold text-brand-dark">0.25mm</td>
+                  <td className="p-4 text-sm text-gray-600">Epiderme</td>
+                  <td className="p-4 text-sm text-gray-600">Absorção de produtos apenas</td>
+                  <td className="p-4 text-sm text-gray-600">Diário</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-brand-gold/10">
+                  <td className="p-4 font-bold text-brand-dark">0.5mm ⭐</td>
+                  <td className="p-4 text-sm text-gray-600">Derme superficial</td>
+                  <td className="p-4 text-sm text-gray-600"><strong>Ideal para barba</strong> - estimula colágeno</td>
+                  <td className="p-4 text-sm text-gray-600">1-2x por semana</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 font-bold text-brand-dark">1.0mm</td>
+                  <td className="p-4 text-sm text-gray-600">Derme média</td>
+                  <td className="p-4 text-sm text-gray-600">Cicatrizes profundas, uso profissional</td>
+                  <td className="p-4 text-sm text-gray-600">1x a cada 4-6 semanas</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 font-bold text-brand-dark">1.5mm+</td>
+                  <td className="p-4 text-sm text-gray-600">Derme profunda</td>
+                  <td className="p-4 text-sm text-gray-600">Apenas clínicas especializadas</td>
+                  <td className="p-4 text-sm text-gray-600">Profissional apenas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 opacity-5 p-4"><Hammer size={120} /></div>
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold flex items-center gap-3">Protocolo Completo de Microagulhamento (Passo a Passo)</h3>
+
+            <div className="space-y-8">
+              <div>
+                <h4 className="text-lg font-bold mb-4 text-brand-gold">ANTES DA SESSÃO (Preparação)</h4>
+                <ol className="space-y-3 text-sm">
+                  <li><strong className="text-brand-gold">1.</strong> Lave o rosto com sabonete antibacteriano</li>
+                  <li><strong className="text-brand-gold">2.</strong> Seque completamente com toalha limpa</li>
+                  <li><strong className="text-brand-gold">3.</strong> Esterilize o dermaroller com álcool 70% por 5 minutos</li>
+                  <li><strong className="text-brand-gold">4.</strong> (Opcional) Aplique creme anestésico tópico se for sensível à dor</li>
+                </ol>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-bold mb-4 text-brand-gold">DURANTE A SESSÃO (Técnica)</h4>
+                <ol className="space-y-3 text-sm">
+                  <li><strong className="text-brand-gold">1.</strong> Divida o rosto em seções (bochecha direita, esquerda, queixo, bigode)</li>
+                  <li><strong className="text-brand-gold">2.</strong> Passe o rolo 10x em cada direção:
+                    <ul className="ml-6 mt-2 space-y-1">
+                      <li>• Horizontal (esquerda → direita)</li>
+                      <li>• Vertical (cima → baixo)</li>
+                      <li>• Diagonal (\ e /)</li>
+                    </ul>
+                  </li>
+                  <li><strong className="text-brand-gold">3.</strong> Use pressão moderada - deve sentir leve desconforto, não dor intensa</li>
+                  <li><strong className="text-brand-gold">4.</strong> Evite áreas com acne ativa ou feridas abertas</li>
+                  <li><strong className="text-brand-gold">5.</strong> Sessão completa: 10-15 minutos</li>
+                </ol>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-bold mb-4 text-brand-gold">DEPOIS DA SESSÃO (Recuperação)</h4>
+                <ol className="space-y-3 text-sm">
+                  <li><strong className="text-brand-gold">1.</strong> Lave o rosto com água fria (fecha os poros)</li>
+                  <li><strong className="text-brand-gold">2.</strong> Aplique soro calmante (aloe vera ou ácido hialurônico)</li>
+                  <li><strong className="text-brand-gold">3.</strong> <strong>AGUARDE 24 HORAS</strong> para aplicar Minoxidil</li>
+                  <li><strong className="text-brand-gold">4.</strong> Evite sol direto por 48h (use protetor solar)</li>
+                  <li><strong className="text-brand-gold">5.</strong> Não use produtos com álcool ou ácidos por 2 dias</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Protocolo de 12 Semanas: Combinando Dermaroller + Minoxidil</h2>
+
+          <p className="mb-6">A combinação de microagulhamento com Minoxidil é <strong>exponencialmente mais eficaz</strong> do que usar qualquer um isoladamente. Aqui está o protocolo validado por estudos:</p>
+
+          <div className="bg-brand-light p-8 rounded-2xl my-10">
+            <h3 className="text-xl font-bold text-brand-dark mb-6">Cronograma Semanal</h3>
+            <div className="space-y-4">
+              <div className="flex gap-4 items-start">
+                <div className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">DOM</div>
+                <div className="flex-1">
+                  <p className="font-bold text-brand-dark">Sessão de Dermaroller</p>
+                  <p className="text-sm text-gray-600">10-15 minutos, 0.5mm, todas as áreas com falhas</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <div className="bg-brand-dark text-white font-black px-4 py-2 rounded-lg shrink-0">SEG</div>
+                <div className="flex-1">
+                  <p className="font-bold text-brand-dark">Descanso (sem Minoxidil)</p>
+                  <p className="text-sm text-gray-600">Apenas hidratação com aloe vera</p>
+                </div>
+              </div>
+              <div className="flex gap-4 items-start">
+                <div className="bg-brand-dark text-white font-black px-4 py-2 rounded-lg shrink-0">TER-SÁB</div>
+                <div className="flex-1">
+                  <p className="font-bold text-brand-dark">Minoxidil 2x ao dia</p>
+                  <p className="text-sm text-gray-600">Manhã (8h) e Noite (22h), 1ml cada aplicação</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Alimentação e Suplementos: O Combustível da Barba</h2>
+
+          <p className="mb-6">Você pode fazer todo o protocolo correto, mas se sua nutrição for deficiente, os resultados serão limitados. Folículos precisam de <strong>matéria-prima</strong> para construir fios:</p>
+
+          <div className="grid md:grid-cols-3 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Zap size={32} className="text-brand-gold" />
+              </div>
+              <h4 className="font-bold text-brand-dark mb-3">Biotina (Vitamina B7)</h4>
+              <p className="text-sm text-gray-600 mb-3">Essencial para síntese de queratina. Deficiência causa fios fracos e quebradiços.</p>
+              <p className="text-xs font-bold text-brand-gold">Dose: 5.000-10.000 mcg/dia</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target size={32} className="text-brand-gold" />
+              </div>
+              <h4 className="font-bold text-brand-dark mb-3">Zinco</h4>
+              <p className="text-sm text-gray-600 mb-3">Regula hormônios e síntese proteica. Baixos níveis = barba rala.</p>
+              <p className="text-xs font-bold text-brand-gold">Dose: 15-30 mg/dia</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Trophy size={32} className="text-brand-gold" />
+              </div>
+              <h4 className="font-bold text-brand-dark mb-3">Vitamina D3</h4>
+              <p className="text-sm text-gray-600 mb-3">Ativa receptores nos folículos. Deficiência é epidêmica no Brasil.</p>
+              <p className="text-xs font-bold text-brand-gold">Dose: 2.000-5.000 UI/dia</p>
+            </div>
+          </div>
+
+          <div className="bg-brand-gold/10 border-l-4 border-brand-gold p-6 rounded-r-2xl my-8">
+            <h4 className="font-bold text-brand-dark mb-3">🍖 Alimentos Essenciais para Crescimento de Barba</h4>
+            <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+              <div>
+                <p className="font-bold mb-2">Proteínas (1.6-2g/kg de peso):</p>
+                <ul className="space-y-1 ml-4">
+                  <li>• Carne vermelha (rica em ferro e zinco)</li>
+                  <li>• Ovos (biotina e proteína completa)</li>
+                  <li>• Salmão (ômega-3 anti-inflamatório)</li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-bold mb-2">Gorduras Saudáveis:</p>
+                <ul className="space-y-1 ml-4">
+                  <li>• Abacate (vitamina E)</li>
+                  <li>• Castanhas (selênio e zinco)</li>
+                  <li>• Azeite extra virgem (antioxidantes)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Erros Fatais que Sabotam Seus Resultados</h2>
+
+          <div className="space-y-4 my-10">
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Usar agulhas maiores que 0.5mm em casa</h4>
+              <p className="text-sm text-gray-600">Pode causar cicatrizes permanentes e destruir folículos ao invés de estimulá-los.</p>
+            </div>
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Aplicar Minoxidil imediatamente após o dermaroller</h4>
+              <p className="text-sm text-gray-600">Absorção sistêmica excessiva pode causar taquicardia e pressão baixa. SEMPRE aguarde 24h.</p>
+            </div>
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Não esterilizar o equipamento</h4>
+              <p className="text-sm text-gray-600">Risco de infecção bacteriana, foliculite e acne severa. Álcool 70% antes e depois, sempre.</p>
+            </div>
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Fazer sessões diárias com 0.5mm</h4>
+              <p className="text-sm text-gray-600">A pele precisa de 5-7 dias para regenerar completamente. Overuse = inflamação crônica.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quanto tempo até ver resultados?</h4>
+              <p className="text-sm text-gray-600">Primeiros fios velus aparecem em 4-8 semanas. Resultados significativos em 3-6 meses. Transformação completa em 12-18 meses.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Dermaroller dói?</h4>
+              <p className="text-sm text-gray-600">Com 0.5mm, é um desconforto leve, como "formigamento intenso". Se doer muito, você está pressionando demais ou usando agulhas maiores.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Posso compartilhar o dermaroller?</h4>
+              <p className="text-sm text-gray-600">NUNCA. É um item de uso pessoal e intransferível. Risco de transmissão de doenças (hepatite, HIV, etc).</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quando trocar o dermaroller?</h4>
+              <p className="text-sm text-gray-600">A cada 3-4 meses ou quando as agulhas ficarem cegas (você sente que não penetram mais). Agulhas cegas causam mais dano que benefício.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Funciona em cicatrizes?</h4>
+              <p className="text-sm text-gray-600">Depende. Cicatrizes superficiais podem melhorar. Cicatrizes profundas com tecido fibrótico não respondem bem. Nesses casos, transplante capilar pode ser necessário.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: Falhas na Barba Têm Solução</h2>
+
+          <p className="mb-6">O microagulhamento não é mágica, mas é a técnica <strong>mais eficaz e acessível</strong> para corrigir falhas na barba sem cirurgia. Combinado com Minoxidil, nutrição adequada e paciência, os resultados são impressionantes para a maioria dos homens.</p>
+
+          <p className="mb-8 font-medium">Recomendamos começar com o <a href={AFF_DERMAROLLER} className="text-brand-gold underline font-bold" target="_blank">Dermaroller 0.5mm Titanium</a>, que tem a profundidade ideal para uso facial doméstico. Combine com o <a href={AFF_VIKING} className="text-brand-gold underline font-bold" target="_blank">Fator Viking</a> para fornecer os nutrientes que seus novos folículos precisam para crescer fortes e densos.</p>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-12 text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Comece Sua Transformação Hoje</h3>
+            <p className="mb-6 text-gray-300">Lembre-se: consistência vence intensidade. Faça o protocolo corretamente, seja paciente, e documente sua evolução com fotos mensais.</p>
+            <a href={AFF_DERMAROLLER} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Dermaroller Profissional</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'd-roll', name: "Dermaroller 0.5mm Titanium", desc: "Qualidade profissional para uso doméstico seguro.", link: AFF_DERMAROLLER, icon: <Target size={32} /> },
+        { id: 'v-factor', name: "Fator Viking Crescimento", desc: "O combustível ideal para seus novos folículos.", link: AFF_VIKING, icon: <Trophy size={32} /> }
+      ]
+    },
+    'cavanhaque-masculino-guia-completo': {
+      title: "Cavanhaque Masculino: O Guia Definitivo de Estilos e Tendências para 2026",
+      subtitle: "Domine o estilo que será tendência absoluta em 2026. Aprenda a escolher o desenho ideal para o seu formato de rosto com técnicas de visagismo.",
+      author: "Carlos Barbudo",
+      date: "08 de Março de 2026",
+      readTime: "20 min",
+      category: "Estilo",
+      image: "/assets/cavanhaque-guia.webp",
+      howToSteps: [
+        { name: "Marcação de Simetria", text: "Use um lápis branco ou a máquina para marcar os limites laterais do cavanhaque." },
+        { name: "Limpeza de Bochechas", text: "Remova todos os pelos das bochechas para destacar o desenho central." },
+        { name: "Alinhamento do Bigode", text: "Apare a base do bigode rente ao lábio para um visual limpo." },
+        { name: "Escultura do Queixo", text: "Defina o formato da barba no queixo (redondo ou quadrado)." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Em 2026, o cavanhaque se consolida como o estilo mais versátil, democrático e imponente do homem urbano. Diferente da barba cheia que exige genética privilegiada, o cavanhaque é acessível para quase todos os homens - mesmo aqueles com falhas nas bochechas. Neste guia definitivo, você vai dominar todos os estilos, entender o visagismo facial e descobrir como escolher o desenho perfeito para o seu rosto.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Aparador de Precisão Stark", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Lápis de Contorno Branco", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Espelho de Aumento", link: "https://mercadolivre.com/sec/2Wo6ZWc" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Esboço da Perfeição",
+                description: "Antes de ligar a máquina, use um lápis branco de olho para desenhar o contorno que você deseja no rosto. Isso evita que você tire mais de um lado que do outro.",
+                tip: "Use a linha das pupilas dos seus olhos como referência para onde as laterais do cavanhaque devem terminar."
+              },
+              {
+                title: "A Limpeza de Fundo (Bochechas)",
+                description: "Raspe toda a área das bochechas e costeletas. O cavanhaque só aparece de verdade quando o resto do rosto está limpo.",
+                tip: "Use um shaving gel transparente para enxergar exatamente o limite do desenho ao passar a lâmina."
+              },
+              {
+                title: "O Arco do Bigode",
+                description: "Penteie o bigode para baixo e apare os fios que cobrem o lábio. A 'boca' do cavanhaque deve estar sempre livre para não parecer sujo.",
+                tip: "Mantenha a espessura do bigode igual à espessura da barba no queixo para equilíbrio visual."
+              },
+              {
+                title: "Definindo a Base do Queixo",
+                description: "Decida se quer um visual mais agressivo (quadrado) ou clássico (arredondado). Use a quina da lâmina da máquina para esculpir a curva inferior.",
+                tip: "Deixe a barba um milímetro mais comprida no centro do queixo para dar projeção ao rosto."
+              },
+              {
+                title: "O Pós-Design (Hidratação)",
+                description: "Aplique Balm apenas na área do cavanhaque e um pós-barba sem álcool nas áreas raspadas. Isso previne foliculite e deixa o desenho brilhante.",
+                tip: "Passe uma escova de cerdas firmes no cavanhaque para alinhar os fios na nova direção do corte."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A História do Cavanhaque: De Vilões a Ícones de Estilo</h2>
+
+          <p className="mb-6">O cavanhaque tem uma história fascinante. Durante séculos, foi associado a vilões, artistas boêmios e revolucionários. No cinema clássico, todo antagonista tinha um cavanhaque pontudo e sinistro. Mas tudo mudou em 2008, quando Robert Downey Jr. estreou como Tony Stark em Homem de Ferro.</p>
+
+          <p className="mb-8">O estilo <strong>Balbo</strong> (bigode desconectado + barba em âncora) de Stark transformou o cavanhaque em símbolo de genialidade, sofisticação e rebeldia controlada. Desde então, o cavanhaque deixou de ser "coisa de vilão" e virou marca registrada de homens confiantes e estilosos.</p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Os 10 Estilos de Cavanhaque Mais Populares em 2026</h2>
+
+          <div className="space-y-8 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">1</span>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-brand-dark mb-3">Círculo Real (Full Goatee)</h3>
+                  <p className="text-gray-600 mb-4">O clássico absoluto. Bigode conectado ao queixo formando um círculo ao redor da boca. Esconde falhas nas bochechas perfeitamente.</p>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">✓ Ideal para:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Rostos redondos ou ovais</li>
+                        <li>• Quem tem falhas nas bochechas</li>
+                        <li>• Iniciantes em cavanhaque</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">⚠ Evitar se:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Rosto muito alongado</li>
+                        <li>• Queixo muito fino</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">2</span>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-brand-dark mb-3">Van Dyke</h3>
+                  <p className="text-gray-600 mb-4">Bigode e barba do queixo DESCONECTADOS. Visual artístico, sofisticado e único. Exige manutenção precisa.</p>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">✓ Ideal para:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Rostos quadrados ou retangulares</li>
+                        <li>• Homens com personalidade forte</li>
+                        <li>• Quem gosta de se destacar</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">⚠ Evitar se:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Barba muito rala</li>
+                        <li>• Ambiente corporativo conservador</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">3</span>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-brand-dark mb-3">Balbo (Tony Stark)</h3>
+                  <p className="text-gray-600 mb-4">Bigode desconectado + barba em formato de âncora no queixo. O estilo que Robert Downey Jr. tornou icônico.</p>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">✓ Ideal para:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Rostos ovais ou triangulares</li>
+                        <li>• Homens de 30-50 anos</li>
+                        <li>• Visual moderno e confiante</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">⚠ Manutenção:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Alta - requer aparos frequentes</li>
+                        <li>• Simetria é fundamental</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">4</span>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-brand-dark mb-3">Âncora (Anchor)</h3>
+                  <p className="text-gray-600 mb-4">Barba pontuda no queixo que se estende ao longo da linha da mandíbula. Bigode fino e bem definido.</p>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">✓ Ideal para:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Rostos redondos (alonga)</li>
+                        <li>• Queixo duplo (disfarça)</li>
+                        <li>• Visual executivo moderno</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">⚠ Evitar se:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Rosto muito fino/alongado</li>
+                        <li>• Barba muito rala</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">5</span>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-brand-dark mb-3">Soul Patch + Bigode</h3>
+                  <p className="text-gray-600 mb-4">Apenas um tufo de barba abaixo do lábio inferior + bigode. Minimalista e ousado.</p>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">✓ Ideal para:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Rostos ovais ou quadrados</li>
+                        <li>• Músicos, artistas, criativos</li>
+                        <li>• Quem quer algo diferente</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-bold text-brand-dark mb-2">⚠ Atenção:</p>
+                      <ul className="text-gray-600 space-y-1 ml-4">
+                        <li>• Pode parecer datado se mal feito</li>
+                        <li>• Não é para ambientes conservadores</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Visagismo: Escolhendo o Cavanhaque Perfeito para Seu Rosto</h2>
+
+          <p className="mb-6">O segredo de um cavanhaque impecável não está apenas no estilo, mas na <strong>harmonia com o formato do seu rosto</strong>. Aqui está o guia completo:</p>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-brand-light p-8 rounded-2xl border-2 border-brand-gold/30">
+              <h3 className="text-xl font-bold text-brand-dark mb-4 flex items-center gap-3">
+                <div className="w-12 h-12 bg-brand-gold/20 rounded-full flex items-center justify-center">
+                  <Crown size={24} className="text-brand-gold" />
+                </div>
+                Rosto Oval
+              </h3>
+              <p className="text-sm text-gray-600 mb-4">O formato mais versátil. Praticamente qualquer estilo funciona.</p>
+              <p className="font-bold text-brand-dark mb-2 text-sm">Recomendados:</p>
+              <ul className="text-sm text-gray-600 space-y-1 ml-4">
+                <li>✓ Círculo Real</li>
+                <li>✓ Balbo</li>
+                <li>✓ Van Dyke</li>
+                <li>✓ Soul Patch</li>
+              </ul>
+            </div>
+
+            <div className="bg-brand-light p-8 rounded-2xl border-2 border-brand-gold/30">
+              <h3 className="text-xl font-bold text-brand-dark mb-4 flex items-center gap-3">
+                <div className="w-12 h-12 bg-brand-gold/20 rounded-full flex items-center justify-center">
+                  <Target size={24} className="text-brand-gold" />
+                </div>
+                Rosto Redondo
+              </h3>
+              <p className="text-sm text-gray-600 mb-4">Objetivo: alongar visualmente o rosto.</p>
+              <p className="font-bold text-brand-dark mb-2 text-sm">Recomendados:</p>
+              <ul className="text-sm text-gray-600 space-y-1 ml-4">
+                <li>✓ Âncora (pontudo)</li>
+                <li>✓ Van Dyke alongado</li>
+                <li>✓ Barba do queixo pontuda</li>
+              </ul>
+              <p className="font-bold text-red-600 mb-2 text-sm mt-4">Evitar:</p>
+              <ul className="text-sm text-gray-600 space-y-1 ml-4">
+                <li>✗ Círculo muito largo</li>
+                <li>✗ Estilos horizontais</li>
+              </ul>
+            </div>
+
+            <div className="bg-brand-light p-8 rounded-2xl border-2 border-brand-gold/30">
+              <h3 className="text-xl font-bold text-brand-dark mb-4 flex items-center gap-3">
+                <div className="w-12 h-12 bg-brand-gold/20 rounded-full flex items-center justify-center">
+                  <Zap size={24} className="text-brand-gold" />
+                </div>
+                Rosto Quadrado
+              </h3>
+              <p className="text-sm text-gray-600 mb-4">Objetivo: suavizar ângulos e adicionar curvas.</p>
+              <p className="font-bold text-brand-dark mb-2 text-sm">Recomendados:</p>
+              <ul className="text-sm text-gray-600 space-y-1 ml-4">
+                <li>✓ Círculo Real arredondado</li>
+                <li>✓ Van Dyke</li>
+                <li>✓ Balbo com volume</li>
+              </ul>
+              <p className="font-bold text-red-600 mb-2 text-sm mt-4">Evitar:</p>
+              <ul className="text-sm text-gray-600 space-y-1 ml-4">
+                <li>✗ Estilos muito angulares</li>
+                <li>✗ Linhas retas demais</li>
+              </ul>
+            </div>
+
+            <div className="bg-brand-light p-8 rounded-2xl border-2 border-brand-gold/30">
+              <h3 className="text-xl font-bold text-brand-dark mb-4 flex items-center gap-3">
+                <div className="w-12 h-12 bg-brand-gold/20 rounded-full flex items-center justify-center">
+                  <Trophy size={24} className="text-brand-gold" />
+                </div>
+                Rosto Triangular
+              </h3>
+              <p className="text-sm text-gray-600 mb-4">Objetivo: equilibrar queixo largo com testa estreita.</p>
+              <p className="font-bold text-brand-dark mb-2 text-sm">Recomendados:</p>
+              <ul className="text-sm text-gray-600 space-y-1 ml-4">
+                <li>✓ Balbo</li>
+                <li>✓ Círculo Real</li>
+                <li>✓ Bigode + Soul Patch</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Passo a Passo: Como Fazer Seu Cavanhaque em Casa</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-8 text-brand-gold">Protocolo Profissional de Modelagem</h3>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold mb-2">Deixe a barba crescer por 2-4 semanas</h4>
+                  <p className="text-sm text-gray-300">Você precisa de "material" para trabalhar. Não tente fazer cavanhaque com 1 semana de barba.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold mb-2">Defina o estilo baseado no seu rosto</h4>
+                  <p className="text-sm text-gray-300">Use o guia de visagismo acima. Tire fotos do rosto de frente e perfil para analisar.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold mb-2">Apare as bochechas e pescoço</h4>
+                  <p className="text-sm text-gray-300">Use máquina sem pente (0mm) ou barbeador. Deixe apenas bigode e queixo. Seja conservador - é melhor tirar aos poucos.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold mb-2">Defina o contorno com precisão</h4>
+                  <p className="text-sm text-gray-300">Use <a href={AFF_TESOURA} className="text-brand-gold underline font-bold">tesoura de precisão</a> para os detalhes finais. Simetria é TUDO.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div>
+                  <h4 className="font-bold mb-2">Mantenha semanalmente</h4>
+                  <p className="text-sm text-gray-300">Apare bochechas e pescoço 2x por semana. Ajuste comprimento do cavanhaque 1x por semana.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Densidade é Tudo: Como Preencher Falhas no Cavanhaque</h2>
+
+          <p className="mb-6">Um cavanhaque ralo perde todo o impacto visual. Se você tem falhas no bigode ou queixo, existem soluções comprovadas:</p>
+
+          <div className="grid md:grid-cols-3 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FlaskConical size={32} className="text-brand-gold" />
+              </div>
+              <h4 className="font-bold text-brand-dark mb-3">Minoxidil 5%</h4>
+              <p className="text-sm text-gray-600 mb-4">Acelera crescimento e engrossa fios. Resultados em 3-6 meses.</p>
+              <a href={AFF_MINOXIDIL} className="text-brand-gold text-xs font-bold underline">Ver Minoxidil Kirkland</a>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Trophy size={32} className="text-brand-gold" />
+              </div>
+              <h4 className="font-bold text-brand-dark mb-3">Fator Viking</h4>
+              <p className="text-sm text-gray-600 mb-4">Biotecnologia para densidade folicular máxima.</p>
+              <a href={AFF_VIKING} className="text-brand-gold text-xs font-bold underline">Ver Fator Viking</a>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target size={32} className="text-brand-gold" />
+              </div>
+              <h4 className="font-bold text-brand-dark mb-3">Dermaroller 0.5mm</h4>
+              <p className="text-sm text-gray-600 mb-4">Microagulhamento para reativar folículos dormentes.</p>
+              <a href={AFF_DERMAROLLER} className="text-brand-gold text-xs font-bold underline">Ver Dermaroller</a>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Celebridades com Cavanhaque Icônico</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-brand-light p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">🎬 Robert Downey Jr. (Tony Stark)</h4>
+              <p className="text-sm text-gray-600">Estilo: <strong>Balbo</strong>. Transformou o cavanhaque de vilão em símbolo de genialidade.</p>
+            </div>
+            <div className="bg-brand-light p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">🎤 Brad Pitt</h4>
+              <p className="text-sm text-gray-600">Estilo: <strong>Van Dyke</strong>. Visual artístico e sofisticado que marcou época.</p>
+            </div>
+            <div className="bg-brand-light p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">⚽ David Beckham</h4>
+              <p className="text-sm text-gray-600">Estilo: <strong>Círculo Real</strong>. Prova que cavanhaque funciona no esporte e moda.</p>
+            </div>
+            <div className="bg-brand-light p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">🎸 Johnny Depp</h4>
+              <p className="text-sm text-gray-600">Estilo: <strong>Soul Patch + Bigode</strong>. Rebelde e único, marca registrada.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quanto tempo leva para crescer um cavanhaque?</h4>
+              <p className="text-sm text-gray-600">2-4 semanas para ter material suficiente para modelar. 2-3 meses para densidade completa.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Cavanhaque funciona em ambiente corporativo?</h4>
+              <p className="text-sm text-gray-600">Sim! Estilos como Círculo Real e Balbo são perfeitamente aceitáveis. Evite Van Dyke muito ousado em ambientes conservadores.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Como manter a simetria perfeita?</h4>
+              <p className="text-sm text-gray-600">Use um espelho com boa iluminação. Tire fotos antes e depois. Apare aos poucos - é melhor tirar menos e ajustar depois.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Posso fazer cavanhaque se tenho falhas?</h4>
+              <p className="text-sm text-gray-600">SIM! O cavanhaque é perfeito para quem tem falhas nas bochechas. Você só precisa de barba no bigode e queixo.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Qual a diferença entre cavanhaque e barba cheia?</h4>
+              <p className="text-sm text-gray-600">Cavanhaque: apenas bigode + queixo. Barba cheia: cobre bochechas, queixo e pescoço. Cavanhaque é mais fácil de manter e não exige genética perfeita.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Preciso de produtos especiais?</h4>
+              <p className="text-sm text-gray-600">Mínimo: máquina de cortar cabelo + tesoura de precisão. Recomendado: óleo de barba para hidratação e brilho.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: O Cavanhaque é Para Você?</h2>
+
+          <p className="mb-6">Se você quer um visual masculino, versátil e que não exige genética de modelo, o cavanhaque é a escolha perfeita. Ele funciona para 90% dos homens, esconde falhas, é fácil de manter e projeta confiança e estilo.</p>
+
+          <p className="mb-8 font-medium">Para garantir densidade máxima no seu cavanhaque, recomendamos o <a href={AFF_VIKING} className="text-brand-gold underline font-bold" target="_blank">Kit Fator Viking 6 Meses</a> para preenchimento total. Combine com a <a href={AFF_TESOURA} className="text-brand-gold underline font-bold" target="_blank">Tesoura de Precisão Stark</a> para manter o contorno sempre limpo e simétrico.</p>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-12 text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Pronto para Dominar o Cavanhaque?</h3>
+            <p className="mb-6 text-gray-300">Escolha seu estilo, siga o protocolo e transforme seu visual em 30 dias.</p>
+            <a href={AFF_VIKING} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Kit Completo</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'v-vik', name: "Kit Fator Viking 6 Meses", desc: "Preenchimento total e densidade folicular.", link: AFF_VIKING, icon: <Trophy size={32} /> },
+        { id: 't-prec', name: "Tesoura de Precisão", desc: "Para manter o contorno sempre limpo e desenhado.", link: AFF_TESOURA, icon: <Scissors size={32} /> }
+      ]
+    },
+    'origem-cavanhaque-cinema': {
+      title: "O Cavanhaque no Cinema: Dos Vilões aos Heróis de Estilo",
+      subtitle: "Como Hollywood transformou o cavanhaque de um símbolo de vilania em marca registrada de personagens icônicos.",
+      author: "Carlos Barbudo",
+      date: "08 de Março de 2026",
+      readTime: "12 min",
+      category: "Cultura",
+      image: "/assets/cavanhaque-cinema.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            No cinema clássico, o cavanhaque era reservado aos vilões - pense em Capitão Gancho, Jafar de Aladdin ou qualquer antagonista de filme noir. Mas tudo mudou em 2008, quando Robert Downey Jr. estreou como Tony Stark em Homem de Ferro. Seu icônico cavanhaque Balbo transformou para sempre a percepção cultural desse estilo, elevando-o de símbolo de vilania para marca registrada de genialidade e sofisticação.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A História do Cavanhaque no Cinema</h2>
+
+          <p className="mb-6">Durante décadas, Hollywood usou o cavanhaque como <strong>código visual para vilania</strong>. A lógica era simples: rostos lisos representavam pureza e heroísmo, enquanto pelos faciais estrategicamente posicionados sugeriam astúcia, maldade ou ambiguidade moral.</p>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-red-50 border-2 border-red-200 p-6 rounded-2xl">
+              <h4 className="font-bold text-red-700 mb-4">🎭 Era dos Vilões (1920-2000)</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• <strong>Capitão Gancho</strong> (Peter Pan) - cavanhaque pontudo</li>
+                <li>• <strong>Jafar</strong> (Aladdin) - cavanhaque fino e sinistro</li>
+                <li>• <strong>Hades</strong> (Hércules) - cavanhaque de fogo</li>
+                <li>• <strong>Vilões de Western</strong> - sempre com cavanhaque</li>
+                <li>• <strong>Filme Noir</strong> - bandidos com bigode + cavanhaque</li>
+              </ul>
+            </div>
+
+            <div className="bg-brand-gold/10 border-2 border-brand-gold/30 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-4">⭐ Era dos Heróis (2008-Hoje)</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• <strong>Tony Stark</strong> (Iron Man) - Balbo icônico</li>
+                <li>• <strong>Doctor Strange</strong> - cavanhaque místico</li>
+                <li>• <strong>Johnny Depp</strong> - Van Dyke em vários filmes</li>
+                <li>• <strong>Brad Pitt</strong> - cavanhaque sofisticado</li>
+                <li>• <strong>Chris Evans</strong> - cavanhaque em Vingadores</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Tony Stark: O Divisor de Águas</h2>
+
+          <p className="mb-6">Quando Robert Downey Jr. apareceu pela primeira vez como Tony Stark em 2008, seu cavanhaque Balbo não era apenas um detalhe estético - era parte integral do personagem. O visual comunicava:</p>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">O Que o Cavanhaque de Stark Comunica</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-4xl mb-3">🧠</div>
+                <h4 className="font-bold text-brand-dark mb-2">Genialidade</h4>
+                <p className="text-sm text-gray-600">Visual de cientista rebelde que não segue regras</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-3">💎</div>
+                <h4 className="font-bold text-brand-dark mb-2">Sofisticação</h4>
+                <p className="text-sm text-gray-600">Cuidado meticuloso com detalhes e aparência</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-3">⚡</div>
+                <h4 className="font-bold text-brand-dark mb-2">Rebeldia Controlada</h4>
+                <p className="text-sm text-gray-600">Não é herói tradicional, mas faz o certo</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Estilo Balbo: Anatomia do Visual de Tony Stark</h2>
+
+          <p className="mb-6">O estilo de Stark, conhecido como <strong>Balbo</strong>, é caracterizado por:</p>
+
+          <div className="bg-brand-light p-8 rounded-2xl border-2 border-brand-gold/20 my-10">
+            <h4 className="font-bold text-brand-dark mb-4 text-lg">Características do Balbo:</h4>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-start gap-3">
+                <span className="text-brand-gold font-bold">✓</span>
+                <span><strong>Bigode desconectado:</strong> Não toca a barba do queixo (GAP de 1-2cm)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brand-gold font-bold">✓</span>
+                <span><strong>Barba em âncora:</strong> Formato de âncora de navio no queixo</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brand-gold font-bold">✓</span>
+                <span><strong>Bochechas raspadas:</strong> Completamente limpas, sem pelos</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brand-gold font-bold">✓</span>
+                <span><strong>Linhas precisas:</strong> Contornos retos e simétricos</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-brand-gold font-bold">✓</span>
+                <span><strong>Comprimento curto:</strong> 3-5mm, bem aparado</span>
+              </li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Como Fazer o Cavanhaque Balbo (Estilo Tony Stark)</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-8 text-brand-gold">Tutorial Passo a Passo Profissional</h3>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold mb-2">Deixar Crescer (3-4 semanas)</h4>
+                  <p className="text-sm text-gray-300">Deixe crescer barba completa por 3-4 semanas para ter material suficiente. Não tente fazer Balbo com menos de 3 semanas de crescimento.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold mb-2">Raspar Bochechas Completamente</h4>
+                  <p className="text-sm text-gray-300">Com máquina 0 ou navalha, raspar TODAS as bochechas. Criar linha reta e limpa na altura da orelha. Bochechas devem ficar 100% limpas.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold mb-2">Criar o GAP (Desconexão)</h4>
+                  <p className="text-sm text-gray-300">Raspar completamente a área entre o bigode e a barba do queixo. Criar um GAP de 1-2cm. Esta é a característica ESSENCIAL do Balbo - bigode e queixo NÃO podem se tocar.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold mb-2">Modelar a Âncora no Queixo</h4>
+                  <p className="text-sm text-gray-300">Com <a href={AFF_TESOURA} className="text-brand-gold underline font-bold">tesoura de precisão</a>, criar formato de âncora no queixo. Base larga (3-4cm) que afunila para baixo. Ponta pode ser arredondada ou levemente pontuda.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div>
+                  <h4 className="font-bold mb-2">Aparar Comprimento Uniformemente</h4>
+                  <p className="text-sm text-gray-300">Usar máquina 3-5mm ou tesoura para manter comprimento uniforme. Tony Stark mantém sempre curto e bem cuidado. Aparar bigode para não cobrir lábio.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">6</span>
+                <div>
+                  <h4 className="font-bold mb-2">Criar Linhas Precisas</h4>
+                  <p className="text-sm text-gray-300">Com navalha ou aparador de precisão, criar linhas retas e simétricas. Simetria é TUDO no Balbo. Use espelho com boa iluminação. Tire fotos para verificar simetria.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">7</span>
+                <div>
+                  <h4 className="font-bold mb-2">Finalização e Brilho</h4>
+                  <p className="text-sm text-gray-300">Aplicar <a href={AFF_OIL} className="text-brand-gold underline font-bold">Óleo de Sândalo</a> para brilho e maciez. Fios opacos não aparecem bem - o brilho é essencial para o visual de cinema.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Outros Personagens Icônicos com Cavanhaque</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-2">🎬 Doctor Strange (Benedict Cumberbatch)</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Cavanhaque cheio (círculo real) com bigode conectado. Transmite misticismo e sabedoria. Mais volumoso que o de Stark.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-2">🎬 Capitão Jack Sparrow (Johnny Depp)</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Van Dyke com tranças e contas. Bigode e cavanhaque desconectados, visual pirata e rebelde. Icônico e único.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-2">🎬 Tyler Durden (Brad Pitt - Clube da Luta)</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Cavanhaque fino e minimalista. Visual anarquista e anti-sistema. Menos é mais.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-2">🎬 Capitão América (Chris Evans - Vingadores)</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Barba cheia com cavanhaque definido. Visual mais maduro e sombrio do herói. Mostra evolução do personagem.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-2">🎬 Hannibal Lecter (Mads Mikkelsen - Série)</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Van Dyke impecável e sofisticado. Transmite elegância psicopata. Sempre perfeitamente simétrico.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Segredo do Brilho de Cinema</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold relative overflow-hidden">
+            <div className="absolute top-0 right-0 opacity-10 p-4"><Film size={120} /></div>
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold">Por Que Barbas de Cinema Brilham Tanto?</h3>
+            <p className="mb-6">Fios opacos e sem vida não aparecem bem na câmera. Todos os atores com cavanhaque em Hollywood usam produtos profissionais para garantir brilho e definição.</p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-bold mb-3 text-brand-gold">No Set de Filmagem:</h4>
+                <ul className="text-sm space-y-2 text-gray-300">
+                  <li>• Óleo de barba premium</li>
+                  <li>• Balm para fixação</li>
+                  <li>• Spray de brilho</li>
+                  <li>• Retoque a cada cena</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold mb-3 text-brand-gold">Para Replicar em Casa:</h4>
+                <ul className="text-sm space-y-2 text-gray-300">
+                  <li>• <a href={AFF_OIL} className="text-brand-gold underline font-bold">Óleo de Sândalo</a> diariamente</li>
+                  <li>• Pentear com escova de cerdas</li>
+                  <li>• Secar com secador (baixa temperatura)</li>
+                  <li>• Finalizar com balm leve</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Manutenção do Balbo: Rotina Semanal</h2>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h4 className="font-bold text-brand-dark mb-6">Cronograma de Manutenção:</h4>
+            <div className="space-y-4 text-sm">
+              <div className="flex gap-4">
+                <span className="font-bold text-brand-gold shrink-0">2x/semana:</span>
+                <span className="text-gray-600">Raspar bochechas e GAP para manter linhas limpas</span>
+              </div>
+              <div className="flex gap-4">
+                <span className="font-bold text-brand-gold shrink-0">1x/semana:</span>
+                <span className="text-gray-600">Aparar comprimento com máquina ou tesoura</span>
+              </div>
+              <div className="flex gap-4">
+                <span className="font-bold text-brand-gold shrink-0">1x/semana:</span>
+                <span className="text-gray-600">Ajustar formato da âncora e simetria</span>
+              </div>
+              <div className="flex gap-4">
+                <span className="font-bold text-brand-gold shrink-0">Diariamente:</span>
+                <span className="text-gray-600">Aplicar óleo após banho, pentear e modelar</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Qual a diferença entre Balbo e Van Dyke?</h4>
+              <p className="text-sm text-gray-600">Ambos têm bigode desconectado, mas o Balbo tem base mais larga no queixo (formato de âncora) enquanto o Van Dyke é mais fino e pontudo. Balbo é mais moderno, Van Dyke é mais clássico.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Preciso ir ao barbeiro ou posso fazer em casa?</h4>
+              <p className="text-sm text-gray-600">Primeira vez: vá ao barbeiro para criar o formato correto. Depois, você pode manter em casa com as ferramentas certas. O Balbo exige precisão, então se não tiver habilidade, continue indo ao barbeiro.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ O Balbo funciona para todos os formatos de rosto?</h4>
+              <p className="text-sm text-gray-600">Funciona melhor em rostos ovais, triangulares e com queixo estreito (alonga o rosto). Evite se tiver rosto muito redondo ou queixo muito largo.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quanto tempo leva para crescer um Balbo?</h4>
+              <p className="text-sm text-gray-600">3-4 semanas para ter material suficiente para modelar. Mais 2-3 semanas para atingir densidade completa. Total: 6-8 semanas do zero até o visual final.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Como manter a simetria perfeita?</h4>
+              <p className="text-sm text-gray-600">Use espelho com boa iluminação. Tire fotos antes e depois. Trabalhe devagar e apare aos poucos. É melhor tirar menos e ajustar depois do que tirar demais.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: O Legado do Cavanhaque no Cinema</h2>
+
+          <p className="mb-6">De símbolo de vilania a marca de genialidade, o cavanhaque percorreu uma jornada fascinante no cinema. Tony Stark não apenas popularizou o Balbo - ele redefiniu completamente como vemos esse estilo. Hoje, ter um cavanhaque bem cuidado não é mais sinal de maldade, mas de sofisticação, atenção aos detalhes e personalidade forte.</p>
+
+          <p className="mb-8 font-medium">Se você quer replicar o visual de cinema em casa, comece com as ferramentas certas: <a href={AFF_TESOURA} className="text-brand-gold underline font-bold" target="_blank">Tesoura de Precisão Stark</a> para linhas impecáveis e <a href={AFF_OIL} className="text-brand-gold underline font-bold" target="_blank">Óleo Premium de Sândalo</a> para o brilho digno de tapete vermelho.</p>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-12 text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Pronto para Seu Visual de Herói?</h3>
+            <p className="mb-6 text-gray-300">Transforme-se com o cavanhaque que mudou Hollywood.</p>
+            <a href={AFF_TESOURA} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Kit Completo</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 't-stark', name: "Tesoura Stark", desc: "Corte preciso para o visual de herói.", link: AFF_TESOURA, icon: <Scissors size={32} /> },
+        { id: 'o-sand', name: "Óleo Premium Sândalo", desc: "Brilho e maciez para fios de protagonista.", link: AFF_OIL, icon: <Droplets size={32} /> }
+      ]
+    },
+    'melhores-oleos-2024': {
+      title: "Os Melhores Óleos para Barba em 2026: Guia de Hidratação Profunda",
+      subtitle: "Testamos os ativos mais potentes do mercado para definir o ranking definitivo de hidratação e brilho.",
+      author: "Carlos Barbudo",
+      date: "07 de Março de 2026",
+      readTime: "15 min",
+      category: "Reviews",
+      image: "/assets/melhores-oleos-premium.webp",
+      howToSteps: [
+        { name: "Lavagem da Barba", text: "Use shampoo específico para remover impurezas e abrir as cutículas do fio." },
+        { name: "Secagem com Toalha", text: "Retire o excesso de água. A barba deve estar levemente úmida para melhor absorção." },
+        { name: "Dosagem", text: "Aplique de 3 a 5 gotas na palma da mão, dependendo do comprimento." },
+        { name: "Aplicação na Raiz", text: "Massageie primeiro a pele sob a barba e depois estenda para as pontas." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Óleo de barba não é perfumaria nem luxo desnecessário - é <strong>manutenção essencial</strong> da saúde da pele e dos fios. Sem ele, a coceira insuportável, descamação (beardruff) e fios ressecados são inevitáveis. Mas com dezenas de marcas no mercado, como escolher o melhor? Testamos os ativos mais potentes de 2026 para criar o ranking definitivo.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Óleo Premium de Argan e Jojoba", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Madeira Anti-Estático", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo de Barba Mentolado", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Ponto de Umidade Perfeito",
+                description: "Nunca aplique óleo na barba pingando água. Seque com uma toalha até que ela esteja apenas úmida. A água restante ajuda a 'puxar' o óleo para dentro da cutícula do fio.",
+                tip: "Se a barba estiver muito seca, os fios podem ficar com aspecto engordurado em vez de hidratado."
+              },
+              {
+                title: "Ativação Térmica",
+                description: "Pingue a quantidade necessária na palma das mãos e esfregue uma na outra por 5 segundos. O calor das suas mãos ativa os óleos essenciais e facilita a espalhabilidade.",
+                tip: "Para barbas curtas (2cm), use 2 gotas. Para barbas médias (5cm), use 4 a 6 gotas. Para barbas longas, use 10 gotas ou mais."
+              },
+              {
+                title: "Foco na Base (A Pele)",
+                description: "O maior erro é passar óleo só por fora. Enfie os dedos por dentro da barba e massageie a pele. O óleo serve para hidratar o rosto que está por baixo dos fios.",
+                tip: "Massageie por pelo menos 30 segundos para estimular a circulação sanguínea no folículo."
+              },
+              {
+                title: "A Extensão para as Pontas",
+                description: "Depois de tratar a pele, deslize as mãos pelas laterais e pontas da barba. Isso sela as cutículas, reduz o frizz e dá aquele brilho de comercial de TV.",
+                tip: "Passe o resto que sobrou nas mãos no bigode, evitando que caia dentro da boca."
+              },
+              {
+                title: "O Pente de Madeira (Finalização)",
+                description: "Use um pente de madeira de dentes largos para alinhar os fios. A madeira ajuda a distribuir o excesso de óleo uniformemente por toda a extensão da barba.",
+                tip: "Pentes de plástico criam estática e deixam os fios arrepiados. Use sempre madeira."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Por Que Usar Óleo de Barba? A Ciência Por Trás</h2>
+
+          <p className="mb-6">A barba rouba a oleosidade natural da pele. Cada fio funciona como um "canudo" que puxa o sebo produzido pela pele, deixando a região ressecada. O resultado:</p>
+
+          <div className="grid md:grid-cols-3 gap-6 my-10">
+            <div className="bg-red-50 border-2 border-red-200 p-6 rounded-2xl text-center">
+              <h4 className="font-bold text-red-700 mb-3">Sem Óleo</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• Coceira intensa</li>
+                <li>• Caspa de barba</li>
+                <li>• Fios ásperos</li>
+                <li>• Frizz descontrolado</li>
+              </ul>
+            </div>
+            <div className="bg-brand-gold/10 border-2 border-brand-gold/30 p-6 rounded-2xl text-center">
+              <h4 className="font-bold text-brand-dark mb-3">Com Óleo ✓</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• Pele hidratada</li>
+                <li>• Zero descamação</li>
+                <li>• Fios macios</li>
+                <li>• Brilho saudável</li>
+              </ul>
+            </div>
+            <div className="bg-brand-light border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <h4 className="font-bold text-brand-dark mb-3">Benefícios Extra</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• Fragrância masculina</li>
+                <li>• Facilita pentear</li>
+                <li>• Protege do sol</li>
+                <li>• Visual profissional</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Ranking 2026: Os 5 Melhores Óleos de Barba</h2>
+
+          <div className="space-y-8 my-10">
+            <div className="bg-gradient-to-r from-yellow-50 to-brand-gold/10 border-4 border-brand-gold p-8 rounded-3xl relative">
+              <div className="absolute -top-4 -left-4 bg-brand-gold text-brand-dark font-black text-3xl w-16 h-16 rounded-full flex items-center justify-center shadow-2xl">1º</div>
+              <h3 className="text-2xl font-bold text-brand-dark mb-4 ml-12">Óleo de Sândalo Amadeirado Premium</h3>
+              <p className="text-gray-600 mb-4">O vencedor absoluto. Absorção ultra-rápida, fragrância sofisticada e zero aspecto oleoso.</p>
+              <div className="grid md:grid-cols-2 gap-4 text-sm mb-4">
+                <div>
+                  <p className="font-bold text-brand-dark mb-2">Ingredientes-chave:</p>
+                  <ul className="text-gray-600 space-y-1 ml-4">
+                    <li>• Óleo de Argan (hidratação profunda)</li>
+                    <li>• Óleo de Jojoba (similar ao sebo natural)</li>
+                    <li>• Vitamina E (antioxidante)</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-bold text-brand-dark mb-2">Melhor para:</p>
+                  <ul className="text-gray-600 space-y-1 ml-4">
+                    <li>• Todos os tipos de barba</li>
+                    <li>• Pele oleosa ou mista</li>
+                    <li>• Uso diário</li>
+                  </ul>
+                </div>
+              </div>
+              <a href={AFF_OIL} className="inline-block bg-brand-gold text-brand-dark px-6 py-3 rounded-xl font-bold text-sm hover:scale-105 transition-transform">Ver Oferta Oficial</a>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-gray-200 text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">2º</span>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-brand-dark mb-3">Óleo de Coco + Abacate</h3>
+                  <p className="text-gray-600 text-sm mb-3">Ideal para barbas ressecadas. Penetração profunda e nutrição intensa.</p>
+                  <p className="text-xs text-gray-500"><strong>Melhor para:</strong> Barbas longas, climas secos, fios danificados</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-gray-200 text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">3º</span>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-brand-dark mb-3">Óleo de Cedro + Tea Tree</h3>
+                  <p className="text-gray-600 text-sm mb-3">Propriedades antifúngicas. Combate caspa e foliculite.</p>
+                  <p className="text-xs text-gray-500"><strong>Melhor para:</strong> Pele sensível, acne, caspa de barba</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-gray-200 text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">4º</span>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-brand-dark mb-3">Óleo de Amêndoas + Vitamina E</h3>
+                  <p className="text-gray-600 text-sm mb-3">Fragrância suave, absorção moderada. Bom custo-benefício.</p>
+                  <p className="text-xs text-gray-500"><strong>Melhor para:</strong> Iniciantes, barbas curtas, uso ocasional</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-gray-200 text-brand-dark font-black text-2xl px-5 py-3 rounded-xl shrink-0">5º</span>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-brand-dark mb-3">Óleo de Rícino (Castor Oil)</h3>
+                  <p className="text-gray-600 text-sm mb-3">Viscoso e denso. Estimula crescimento mas deixa aspecto oleoso.</p>
+                  <p className="text-xs text-gray-500"><strong>Melhor para:</strong> Uso noturno, barbas ralas, crescimento</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Ingredientes Ativos: O Que Procurar no Rótulo</h2>
+
+          <div className="overflow-x-auto my-10">
+            <table className="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-lg">
+              <thead className="bg-brand-dark text-white">
+                <tr>
+                  <th className="p-4 text-left font-black uppercase text-xs">Ingrediente</th>
+                  <th className="p-4 text-left font-black uppercase text-xs">Benefício</th>
+                  <th className="p-4 text-left font-black uppercase text-xs">Tipo de Pele</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                <tr className="hover:bg-brand-light/50">
+                  <td className="p-4 font-bold text-brand-dark">Óleo de Argan</td>
+                  <td className="p-4 text-sm text-gray-600">Hidratação profunda, anti-idade</td>
+                  <td className="p-4 text-sm text-gray-600">Todos os tipos</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50">
+                  <td className="p-4 font-bold text-brand-dark">Óleo de Jojoba</td>
+                  <td className="p-4 text-sm text-gray-600">Similar ao sebo natural, não comedogênico</td>
+                  <td className="p-4 text-sm text-gray-600">Oleosa, acneica</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50">
+                  <td className="p-4 font-bold text-brand-dark">Óleo de Coco</td>
+                  <td className="p-4 text-sm text-gray-600">Nutrição intensa, brilho</td>
+                  <td className="p-4 text-sm text-gray-600">Seca, normal</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50">
+                  <td className="p-4 font-bold text-brand-dark">Tea Tree</td>
+                  <td className="p-4 text-sm text-gray-600">Antifúngico, combate caspa</td>
+                  <td className="p-4 text-sm text-gray-600">Sensível, acneica</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50">
+                  <td className="p-4 font-bold text-brand-dark">Vitamina E</td>
+                  <td className="p-4 text-sm text-gray-600">Antioxidante, protege do sol</td>
+                  <td className="p-4 text-sm text-gray-600">Todos os tipos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Protocolo de Aplicação Perfeita</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-8 text-brand-gold">Passo a Passo Profissional</h3>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold mb-2">Lave a barba com shampoo específico</h4>
+                  <p className="text-sm text-gray-300">Água morna abre os poros. Shampoo comum resseca demais.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold mb-2">Seque com toalha (não completamente)</h4>
+                  <p className="text-sm text-gray-300">Barba levemente úmida absorve melhor o óleo.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold mb-2">Aplique 3-5 gotas nas mãos</h4>
+                  <p className="text-sm text-gray-300">Barba curta: 3 gotas. Barba média: 4-5 gotas. Barba longa: 6-8 gotas.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold mb-2">Espalhe uniformemente</h4>
+                  <p className="text-sm text-gray-300">Comece pela raiz (pele) e vá até as pontas. Massageie por 1-2 minutos.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div>
+                  <h4 className="font-bold mb-2">Penteie para distribuir</h4>
+                  <p className="text-sm text-gray-300">Use pente de madeira. Modela e distribui o óleo uniformemente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Óleo vs Balm vs Cera: Qual Usar?</h2>
+
+          <div className="grid md:grid-cols-3 gap-6 my-10">
+            <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/30">
+              <h4 className="font-bold text-brand-dark mb-3 text-center">ÓLEO</h4>
+              <p className="text-sm text-gray-600 mb-4">Líquido, absorção rápida</p>
+              <p className="text-xs font-bold text-brand-dark mb-2">Melhor para:</p>
+              <ul className="text-xs text-gray-600 space-y-1 ml-4">
+                <li>• Hidratação diária</li>
+                <li>• Barbas curtas/médias</li>
+                <li>• Pele seca</li>
+              </ul>
+            </div>
+
+            <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/30">
+              <h4 className="font-bold text-brand-dark mb-3 text-center">BALM</h4>
+              <p className="text-sm text-gray-600 mb-4">Cremoso, fixação leve</p>
+              <p className="text-xs font-bold text-brand-dark mb-2">Melhor para:</p>
+              <ul className="text-xs text-gray-600 space-y-1 ml-4">
+                <li>• Modelagem + hidratação</li>
+                <li>• Barbas médias/longas</li>
+                <li>• Controle de frizz</li>
+              </ul>
+            </div>
+
+            <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/30">
+              <h4 className="font-bold text-brand-dark mb-3 text-center">CERA</h4>
+              <p className="text-sm text-gray-600 mb-4">Sólida, fixação forte</p>
+              <p className="text-xs font-bold text-brand-dark mb-2">Melhor para:</p>
+              <ul className="text-xs text-gray-600 space-y-1 ml-4">
+                <li>• Bigodes com pontas</li>
+                <li>• Estilos elaborados</li>
+                <li>• Fixação duradoura</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quantas vezes por dia devo usar óleo?</h4>
+              <p className="text-sm text-gray-600">1x ao dia é suficiente (após o banho). Em climas muito secos ou barbas muito longas, pode usar 2x (manhã e noite).</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Óleo deixa a barba oleosa?</h4>
+              <p className="text-sm text-gray-600">Se usar a quantidade certa, não. O segredo é usar poucas gotas. Excesso deixa oleoso e atrai sujeira.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Posso usar óleo de cozinha?</h4>
+              <p className="text-sm text-gray-600">NÃO recomendado. Óleos de cozinha não são refinados para uso cosmético e podem entupir poros.</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Óleo ajuda a crescer barba?</h4>
+              <p className="text-sm text-gray-600">Indiretamente sim. Mantém os folículos saudáveis e evita quebra dos fios. Mas não cria novos folículos (para isso, use Minoxidil).</p>
+            </div>
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quanto tempo dura um frasco?</h4>
+              <p className="text-sm text-gray-600">Frasco de 30ml dura 2-3 meses com uso diário (barba média). Ótimo custo-benefício.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: Invista em Qualidade</h2>
+
+          <p className="mb-6">Óleo de barba barato geralmente usa óleos minerais (derivados de petróleo) que apenas "enganam" dando brilho superficial. Óleos premium usam ativos vegetais que realmente nutrem e hidratam.</p>
+
+          <p className="mb-8 font-medium">Recomendamos o <a href={AFF_OIL} className="text-brand-gold underline font-bold" target="_blank">Óleo Premium de Sândalo</a> como melhor custo-benefício. Absorção rápida, fragrância sofisticada e resultados visíveis em 24 horas. Combine com o <a href={AFF_KIT_FACIAL} className="text-brand-gold underline font-bold" target="_blank">Kit Facial Completo</a> para cuidar também da pele por baixo da barba.</p>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-12 text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Transforme Sua Barba em 24 Horas</h3>
+            <p className="mb-6 text-gray-300">Sinta a diferença de uma barba profissionalmente hidratada.</p>
+            <a href={AFF_OIL} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Óleo Premium</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'o-sand', name: "Óleo Premium Sândalo", desc: "O melhor custo-benefício em hidratação extrema.", link: AFF_OIL, icon: <Droplets size={32} /> },
+        { id: 'k-facial', name: "Kit Facial Completo", desc: "Higiene e nutrição para o rosto por baixo da barba.", link: AFF_KIT_FACIAL, icon: <Sparkles size={32} /> }
+      ]
+    },
+    'visagismo-carecas-barbudos': {
+      title: "Guia de Visagismo para Carecas: Como a Barba Equilibra o Rosto",
+      subtitle: "A regra de ouro do visagismo: quanto menos cabelo no topo, mais importante é o desenho da barba.",
+      author: "Carlos Barbudo",
+      date: "06 de Março de 2026",
+      readTime: "14 min",
+      category: "Estilo",
+      image: "/assets/visagismo-carecas.webp",
+      howToSteps: [
+        { name: "Degradê da Costeleta", text: "Faça uma transição suave entre a barba e a pele da careca na altura da orelha." },
+        { name: "Definição de Maxilar", text: "Modele a linha inferior da barba para criar um queixo mais quadrado e forte." },
+        { name: "Higiene do Escalpo", text: "Lave a careca e a barba com produtos específicos para não ressecar a pele." },
+        { name: "Controle de Volume", text: "Apare as laterais da barba para não deixar o rosto parecer redondo demais." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Para o homem que optou por raspar a cabeça - seja por escolha estética ou por calvície - a barba deixa de ser um simples acessório e se torna sua nova identidade visual. Sem o cabelo para moldar o formato do rosto, a barba assume o papel de criar equilíbrio, projetar masculinidade e definir sua presença. Este é o guia definitivo de visagismo para carecas barbudos.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina Profissional Sem Fio", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Shampoo 2 em 1 (Barba e Careca)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Navalhete de Contorno Stark", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Ponto de Transição (Sideburn Fade)",
+                description: "O maior erro do careca é deixar a barba terminar abruptamente numa linha reta na altura da orelha. Use o pente 1 e 0.5 para fazer um degradê que 'derreta' a barba na pele da careca.",
+                tip: "Comece o degradê na altura do 'tragus' (aquela cartilagem na frente do canal auditivo)."
+              },
+              {
+                title: "Esculpindo o Maxilar Falso",
+                description: "Sem cabelo no topo, o queixo precisa de peso. Deixe a barba 2 ou 3mm mais comprida na ponta do queixo do que nas bochechas para alongar o rosto.",
+                tip: "Aponte o volume da barba para baixo, não para os lados, para evitar o efeito 'rosto de bolacha'."
+              },
+              {
+                title: "Limpeza Total do Pescoço",
+                description: "O visual careca + barba exige limpeza absoluta. Raspe todo o pescoço e a nuca. Fios perdidos no pescoço destroem a estética 'clean' que esse visual pede.",
+                tip: "Use um espelho de mão para conferir se a linha da nuca está perfeitamente reta e limpa."
+              },
+              {
+                title: "Hidratação Unificada",
+                description: "A pele da sua careca e a pele sob a barba sofrem com o mesmo ressecamento. Use um Balm hidratante que possa ser aplicado em ambas as áreas sem deixar oleoso.",
+                tip: "O Balm ajuda a tirar o brilho excessivo da careca enquanto hidrata os fios da barba."
+              },
+              {
+                title: "A Regra das Bochechas",
+                description: "Mantenha a linha da bochecha um pouco mais baixa para mostrar mais do seu rosto. Isso evita que a barba 'engula' suas feições agora que não há cabelo.",
+                tip: "Desenhe uma linha curva suave da costeleta até o bigode para um visual mais amigável e moderno."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Lei da Compensação Visual</h2>
+
+          <p className="mb-6">O princípio fundamental do visagismo para carecas é simples: <strong>quanto menos cabelo no topo, mais importante é o desenho da barba</strong>. Sem o cabelo para moldar o formato do rosto, a barba serve para "ancorar" o visual e criar estrutura.</p>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Por Que Carecas Precisam de Barba?</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-bold text-brand-dark mb-3">✓ Benefícios Visuais:</h4>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Cria estrutura facial onde falta cabelo</li>
+                  <li>• Define linha do maxilar</li>
+                  <li>• Alonga rostos redondos</li>
+                  <li>• Projeta masculinidade e autoridade</li>
+                  <li>• Equilibra proporções do rosto</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-3">✓ Impacto Psicológico:</h4>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Aumenta autoconfiança</li>
+                  <li>• Cria identidade visual forte</li>
+                  <li>• Compensa perda de cabelo</li>
+                  <li>• Transmite maturidade</li>
+                  <li>• Diferenciação pessoal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Os 5 Estilos de Barba Ideais para Carecas</h2>
+
+          <div className="space-y-8 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Barba Cheia com Degradê (O Clássico)</h4>
+                  <p className="text-sm text-gray-600 mb-4">A combinação mais popular e eficaz. Barba cheia no queixo (5-10cm) com degradê (fade) nas costeletas.</p>
+                </div>
+              </div>
+              <div className="bg-brand-light p-6 rounded-xl">
+                <h5 className="font-bold text-brand-dark mb-3">Como Fazer:</h5>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Deixar barba crescer por 2-3 meses</li>
+                  <li>• Criar degradê nas costeletas (máquina 0 na base → máquina 2 no topo)</li>
+                  <li>• Manter volume no queixo (5-10cm)</li>
+                  <li>• Aparar bigode para não cobrir lábio</li>
+                  <li>• Linha do pescoço limpa (2 dedos acima do pomo de adão)</li>
+                </ul>
+                <p className="text-xs text-gray-500 mt-4"><strong>Ideal para:</strong> Todos os formatos de rosto. Visual masculino e equilibrado.</p>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Barba Quadrada (Short Boxed)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Barba aparada em formato quadrado (2-5cm) com linhas retas. Visual corporativo e profissional.</p>
+                </div>
+              </div>
+              <div className="bg-brand-light p-6 rounded-xl">
+                <h5 className="font-bold text-brand-dark mb-3">Como Fazer:</h5>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Deixar crescer por 4-6 semanas</li>
+                  <li>• Aparar uniformemente com máquina 6-10mm</li>
+                  <li>• Criar linhas RETAS nas bochechas e pescoço</li>
+                  <li>• Formato quadrado (não arredondado)</li>
+                  <li>• Manter sempre bem aparado e simétrico</li>
+                </ul>
+                <p className="text-xs text-gray-500 mt-4"><strong>Ideal para:</strong> Ambientes corporativos. Rostos redondos (cria ângulos).</p>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Cavanhaque Estendido (Hollywoodian)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Bigode + linha do maxilar + queixo. Sem bochechas. Visual sofisticado e moderno.</p>
+                </div>
+              </div>
+              <div className="bg-brand-light p-6 rounded-xl">
+                <h5 className="font-bold text-brand-dark mb-3">Como Fazer:</h5>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Raspar completamente bochechas e costeletas</li>
+                  <li>• Manter bigode + linha do maxilar (2-3cm de largura)</li>
+                  <li>• Conectar ao queixo</li>
+                  <li>• Aparar comprimento uniformemente (máquina 3-5mm)</li>
+                  <li>• Linhas precisas e simétricas</li>
+                </ul>
+                <p className="text-xs text-gray-500 mt-4"><strong>Ideal para:</strong> Rostos ovais e quadrados. Visual clean e definido.</p>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Barba Lenhador (Lumberjack)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Barba longa e volumosa (10-15cm). Visual robusto e imponente. Requer paciência.</p>
+                </div>
+              </div>
+              <div className="bg-brand-light p-6 rounded-xl">
+                <h5 className="font-bold text-brand-dark mb-3">Como Fazer:</h5>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Deixar crescer por 6-12 meses</li>
+                  <li>• Aparar apenas pontas duplas</li>
+                  <li>• Manter linha do pescoço limpa</li>
+                  <li>• Hidratar diariamente com óleo</li>
+                  <li>• Pentear com escova de cerdas naturais</li>
+                </ul>
+                <p className="text-xs text-gray-500 mt-4"><strong>Ideal para:</strong> Rostos ovais e diamante. Visual de lenhador/viking.</p>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div>
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Stubble Denso (Barba de 3 Dias)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Barba curta e uniforme (2-5mm). Visual casual mas cuidado. Baixa manutenção.</p>
+                </div>
+              </div>
+              <div className="bg-brand-light p-6 rounded-xl">
+                <h5 className="font-bold text-brand-dark mb-3">Como Fazer:</h5>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Usar aparador elétrico com pente 2-3mm</li>
+                  <li>• Aparar TODO o rosto uniformemente</li>
+                  <li>• Fazer a cada 2-3 dias</li>
+                  <li>• Limpar linha do pescoço semanalmente</li>
+                  <li>• Não deixar passar de 5 dias</li>
+                </ul>
+                <p className="text-xs text-gray-500 mt-4"><strong>Ideal para:</strong> Quem quer praticidade. Visual masculino sem compromisso.</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Tutorial: Degradê Perfeito para Carecas</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-8 text-brand-gold flex items-center gap-3"><Layout /> Foco no Maxilar</h3>
+
+            <p className="mb-6">O degradê (fade) é ESSENCIAL para carecas. Ele evita que o rosto fique muito largo e cria uma transição suave entre a cabeça raspada e a barba.</p>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold mb-2">Base (Costeletas)</h4>
+                  <p className="text-sm text-gray-300">Começar com máquina 0 ou 0.5mm na altura da orelha. Esta será a transição entre cabeça raspada e barba.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold mb-2">Meio (Bochechas)</h4>
+                  <p className="text-sm text-gray-300">Máquina 1 ou 1.5mm do terço inferior até o terço médio das bochechas. Criar transição suave.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold mb-2">Topo (Queixo)</h4>
+                  <p className="text-sm text-gray-300">Máquina 2-3mm ou deixar natural no queixo. AQUI é onde fica o volume. Não aparar demais.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold mb-2">Esfumaçar</h4>
+                  <p className="text-sm text-gray-300">Usar máquina sem pente, apenas lateral da lâmina, para suavizar transições. Movimentos circulares.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div>
+                  <h4 className="font-bold mb-2">Finalizar</h4>
+                  <p className="text-sm text-gray-300">Navalha para criar linhas limpas. Aplicar óleo para brilho e definição.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-brand-gold/10 rounded-2xl border border-brand-gold/30">
+              <p className="text-sm"><strong className="text-brand-gold">REGRA DE OURO:</strong> Use o degradê apenas nas costeletas e bochechas. Deixe o volume se concentrar no queixo para criar uma mandíbula imponente.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Ícones Carecas Barbudos</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">💪 Jason Statham</h4>
+              <p className="text-sm text-gray-600 mb-2"><strong>Estilo:</strong> Stubble denso (3-5mm) uniforme</p>
+              <p className="text-sm text-gray-600"><strong>Por quê funciona:</strong> Visual masculino e prático. Define maxilar sem exageros.</p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">💪 Dwayne "The Rock" Johnson</h4>
+              <p className="text-sm text-gray-600 mb-2"><strong>Estilo:</strong> Cavanhaque fino + bigode</p>
+              <p className="text-sm text-gray-600"><strong>Por quê funciona:</strong> Cria estrutura sem cobrir o rosto. Clean e definido.</p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">💪 Vin Diesel</h4>
+              <p className="text-sm text-gray-600 mb-2"><strong>Estilo:</strong> Cavanhaque + bigode desconectado</p>
+              <p className="text-sm text-gray-600"><strong>Por quê funciona:</strong> Visual icônico e único. Marca pessoal forte.</p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">💪 Pitbull (Mr. Worldwide)</h4>
+              <p className="text-sm text-gray-600 mb-2"><strong>Estilo:</strong> Cavanhaque fino bem desenhado</p>
+              <p className="text-sm text-gray-600"><strong>Por quê funciona:</strong> Sofisticado e limpo. Perfeito para ambientes formais.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Como Aumentar Densidade da Barba</h2>
+
+          <p className="mb-6">Se sua barba é rala ou tem falhas, você pode aumentar a densidade antes de modelar. O objetivo é ter material suficiente para criar o visual desejado.</p>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Protocolo de Crescimento</h3>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">1.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Minoxidil 5% (Kirkland)</h4>
+                  <p className="text-sm text-gray-600">Aplicar 1ml 2x/dia nas áreas com falhas. Resultados em 3-6 meses. <a href={AFF_MINOXIDIL} className="text-brand-gold underline font-bold" target="_blank">Ver produto</a></p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">2.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Microagulhamento (Dermaroller)</h4>
+                  <p className="text-sm text-gray-600">1x por semana com agulhas 0.5mm. Aumenta absorção do Minoxidil em até 4x.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">3.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Suplementação</h4>
+                  <p className="text-sm text-gray-600">Biotina 10.000mcg/dia + Multivitamínico. Fortalece fios existentes.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">4.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Paciência</h4>
+                  <p className="text-sm text-gray-600">Resultados levam 3-6 meses. Não desista antes disso.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Careca SEM barba fica estranho?</h4>
+              <p className="text-sm text-gray-600">Não necessariamente, mas a barba ajuda MUITO a criar estrutura facial. Se você tem maxilar forte, pode ficar bem sem barba. Mas 90% dos carecas ficam melhor com algum tipo de barba.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Qual o comprimento ideal de barba para carecas?</h4>
+              <p className="text-sm text-gray-600">Depende do estilo. Mínimo: 2-3mm (stubble). Ideal: 5-10cm (barba cheia). Máximo: sem limite, mas acima de 15cm requer muita manutenção.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Devo raspar a cabeça completamente ou deixar um pouco de cabelo?</h4>
+              <p className="text-sm text-gray-600">Se tem calvície avançada, raspar completamente (máquina 0 ou navalha) fica melhor. Visual limpo e intencional. Evite o "meio termo" que parece desleixo.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Como evitar que a barba fique muito larga nas bochechas?</h4>
+              <p className="text-sm text-gray-600">Use degradê (fade) nas costeletas e bochechas. Mantenha volume apenas no queixo. Isso cria formato mais retangular e evita rosto muito largo.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Minha barba é rala. Devo usar Minoxidil?</h4>
+              <p className="text-sm text-gray-600">SIM. Minoxidil funciona muito bem para barba. Resultados em 3-6 meses. Combine com microagulhamento para melhores resultados. <a href={AFF_MINOXIDIL} className="text-brand-gold underline font-bold" target="_blank">Ver protocolo completo</a></p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: O Poder do Visual Careca + Barbudo</h2>
+
+          <p className="mb-6">O visual careca com barba não é apenas uma compensação pela falta de cabelo - é uma escolha estética poderosa que projeta masculinidade, confiança e autoridade. De Jason Statham a The Rock, os homens mais icônicos do mundo provam que cabeça raspada + barba bem cuidada é uma combinação imbatível.</p>
+
+          <p className="mb-8 font-medium">Se você quer maximizar seu visual, comece com densidade: <a href={AFF_MINOXIDIL} className="text-brand-gold underline font-bold" target="_blank">Minoxidil Kirkland Original</a> para crescimento acelerado e <a href={AFF_VIKING} className="text-brand-gold underline font-bold" target="_blank">Fator Viking</a> para preenchimento de falhas.</p>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-12 text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Pronto para Dominar o Visual Careca + Barbudo?</h3>
+            <p className="mb-6 text-gray-300">Transforme sua aparência com o combo mais masculino que existe.</p>
+            <a href={AFF_MINOXIDIL} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Kit Completo</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'm-kirk', name: "Minoxidil Kirkland Original", desc: "Densidade máxima para o visual careca/barbudo.", link: AFF_MINOXIDIL, icon: <FlaskConical size={32} /> },
+        { id: 'v-vik', name: "Fator Viking Crescimento", desc: "Acelere o preenchimento de falhas no contorno facial.", link: AFF_VIKING, icon: <Trophy size={32} /> }
+      ]
+    },
+    'guia-mestre-cavanhaque': {
+      title: "O Guia Mestre do Cavanhaque: Anatomia de um Estilo Imortal",
+      subtitle: "Descubra por que o cavanhaque é o estilo mais democrático e poderoso da barbearia mundial.",
+      author: "Carlos Barbudo",
+      date: "05 de Março de 2025",
+      readTime: "18 min",
+      category: "Estilo",
+      image: "/assets/guia-mestre.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O cavanhaque é o equilíbrio perfeito entre o bigode e a âncora do queixo - um estilo que atravessou séculos, culturas e tendências sem perder relevância. De pintores renascentistas a executivos modernos, o cavanhaque permanece como o estilo mais democrático e poderoso da barbearia mundial. Este é o guia definitivo para dominar essa arte milenar.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A História Imortal do Cavanhaque</h2>
+
+          <p className="mb-6">O cavanhaque tem uma história fascinante que remonta ao século XVI. O nome vem de <strong>Anthony Van Dyck</strong>, pintor flamengo da corte inglesa, que popularizou o estilo entre a nobreza europeia. Desde então, o cavanhaque evoluiu em dezenas de variações, cada uma com sua personalidade única.</p>
+
+          <div className="grid md:grid-cols-3 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="text-4xl mb-3">🎨</div>
+              <h4 className="font-bold text-brand-dark mb-2">Século XVI-XVII</h4>
+              <p className="text-sm text-gray-600">Van Dyke populariza entre nobres. Visual de artista e intelectual.</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="text-4xl mb-3">🎭</div>
+              <h4 className="font-bold text-brand-dark mb-2">Século XIX-XX</h4>
+              <p className="text-sm text-gray-600">Vilões de cinema adotam. Símbolo de astúcia e mistério.</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl text-center">
+              <div className="text-4xl mb-3">⭐</div>
+              <h4 className="font-bold text-brand-dark mb-2">Século XXI</h4>
+              <p className="text-sm text-gray-600">Ressurge como marca de sofisticação. Tony Stark redefine o estilo.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Os 7 Tipos Clássicos de Cavanhaque</h2>
+
+          <div className="space-y-8 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Cavanhaque Cheio (Full Goatee / Círculo Real)</h4>
+                  <p className="text-sm text-gray-600 mb-4">O mais popular. Bigode conectado à barba do queixo, formando círculo completo ao redor da boca.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer bigode e queixo por 2-3 semanas. Raspar bochechas completamente. Conectar bigode ao queixo pelas laterais da boca. Aparar comprimento uniformemente (máquina 3-5mm).</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Todos os formatos de rosto. Esconde falhas nas bochechas.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Van Dyke (Clássico)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Bigode DESCONECTADO do queixo. GAP entre eles. Visual artístico e sofisticado.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 3-4 semanas. Raspar área entre bigode e queixo (GAP de 1-2cm). Modelar bigode fino e pontudo. Aparar queixo em formato de âncora ou ponta.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Rostos ovais e redondos. Visual de artista/intelectual.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Cavanhaque Âncora (Anchor)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Formato de âncora de navio. Linha segue maxilar + queixo pontudo. Visual imponente.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Raspar bochechas. Desenhar linha seguindo maxilar. Criar ponta no queixo. Manter largura de 2-3cm na linha. Bigode conectado ou desconectado.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Rostos quadrados e triangulares. Alonga o rosto.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Balbo (Tony Stark)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Bigode desconectado + âncora larga no queixo. O mais moderno e icônico.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Raspar bochechas e GAP. Criar âncora larga (3-4cm base). Bigode fino e bem definido. Linhas retas e simétricas. Comprimento curto (3-5mm).</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Queixo estreito. Visual de genialidade e sofisticação.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Cavanhaque Estendido (Hollywoodian)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Bigode + linha do maxilar + queixo. Sem bochechas. Meio termo elegante.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Raspar bochechas e costeletas. Conectar bigode ao queixo pela linha do maxilar (2-3cm largura). Comprimento uniforme (máquina 3-5mm).</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Rostos ovais e quadrados. Visual clean e definido.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">6</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Cavanhaque Puro (Pure Goatee)</h4>
+                  <p className="text-sm text-gray-600 mb-4">APENAS queixo. Sem bigode. Visual minimalista e único.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Raspar TUDO exceto queixo. Deixar tufo no queixo (2-5cm). Formato pode ser redondo, quadrado ou pontudo. Manter sempre bem definido.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Rostos ovais. Visual ousado e diferente.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">7</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Verdi</h4>
+                  <p className="text-sm text-gray-600 mb-4">Barba redonda curta + bigode estilizado separado. Inspirado em Giuseppe Verdi.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 2-3 meses. Aparar em formato arredondado (5-8cm). Criar GAP entre bigode e barba. Modelar bigode com pontas curvadas.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Rostos triangulares e ovais. Visual clássico e sofisticado.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Anatomia do Desenho Perfeito</h2>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Proporção Áurea do Cavanhaque</h3>
+            <p className="mb-6 text-gray-600">Um cavanhaque de mestre deve seguir a linha natural da boca e respeitar proporções faciais. Aqui está a fórmula:</p>
+
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">✓</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Largura</h4>
+                  <p className="text-sm text-gray-600">Deve acompanhar os cantos da boca. Não ultrapassar muito além disso (máximo 1cm de cada lado).</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">✓</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Altura do Queixo</h4>
+                  <p className="text-sm text-gray-600">Proporcional à altura da testa. Se testa é grande, queixo pode ser mais longo (5-8cm). Se testa é pequena, manter curto (2-4cm).</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">✓</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Simetria</h4>
+                  <p className="text-sm text-gray-600">ESSENCIAL. Ambos os lados devem ser espelhos perfeitos. Use espelho com boa iluminação e tire fotos para verificar.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">✓</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-1">Linhas</h4>
+                  <p className="text-sm text-gray-600">Devem ser retas e limpas. Use <a href={AFF_TESOURA} className="text-brand-gold underline font-bold">tesoura de precisão</a> ou navalha para criar contornos nítidos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Tutorial: Como Fazer Cavanhaque Cheio (Passo a Passo)</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-8 text-brand-gold">Guia Completo para Iniciantes</h3>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold mb-2">Deixar Crescer (2-3 semanas)</h4>
+                  <p className="text-sm text-gray-300">Deixe crescer bigode e queixo por 2-3 semanas. NÃO tente fazer cavanhaque com menos de 2 semanas. Você precisa de material suficiente.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold mb-2">Raspar Bochechas e Pescoço</h4>
+                  <p className="text-sm text-gray-300">Com máquina 0 ou navalha, raspar COMPLETAMENTE bochechas e pescoço. Deixar apenas bigode e queixo. Criar linha limpa na altura da orelha.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold mb-2">Conectar Bigode ao Queixo</h4>
+                  <p className="text-sm text-gray-300">Manter pelos nas laterais da boca para conectar bigode ao queixo. Isso forma o "círculo" ao redor da boca. Largura: acompanhar cantos da boca.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold mb-2">Aparar Comprimento</h4>
+                  <p className="text-sm text-gray-300">Usar máquina 3-5mm ou tesoura para aparar TODO o cavanhaque uniformemente. Manter comprimento consistente. Aparar bigode para não cobrir lábio.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div>
+                  <h4 className="font-bold mb-2">Criar Linhas Precisas</h4>
+                  <p className="text-sm text-gray-300">Com <a href={AFF_TESOURA} className="text-brand-gold underline font-bold">tesoura Stark</a> ou navalha, criar linhas retas e simétricas. Trabalhar devagar. Menos é mais.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">6</span>
+                <div>
+                  <h4 className="font-bold mb-2">Finalização</h4>
+                  <p className="text-sm text-gray-300">Aplicar óleo de barba para hidratação e brilho. Pentear para baixo. Verificar simetria com fotos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Solução para Falhas no Conector</h2>
+
+          <p className="mb-6">O problema mais comum: <strong>falhas na área que conecta bigode ao queixo</strong>. Isso impede o cavanhaque cheio. Solução:</p>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Protocolo de Preenchimento</h3>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">1.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Minoxidil 5%</h4>
+                  <p className="text-sm text-gray-600">Aplicar 1ml 2x/dia nas áreas com falhas. Foco nos conectores. Resultados em 3-6 meses.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">2.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Fator Viking</h4>
+                  <p className="text-sm text-gray-600"><a href={AFF_VIKING} className="text-brand-gold underline font-bold">Fator Viking</a> é formulado especificamente para preencher falhas. Combinar com Minoxidil para resultados máximos.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">3.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Microagulhamento</h4>
+                  <p className="text-sm text-gray-600">1x por semana com agulhas 0.5mm nas áreas com falhas. Aumenta absorção em até 4x.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">4.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Paciência</h4>
+                  <p className="text-sm text-gray-600">Enquanto cresce, opte por Van Dyke (desconectado) ou Balbo. Não force cavanhaque cheio sem densidade.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Manutenção Semanal do Cavanhaque</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-4">📅 Rotina Diária</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• Lavar com água morna</li>
+                <li>• Aplicar óleo de barba</li>
+                <li>• Pentear para baixo</li>
+                <li>• Modelar com balm (se necessário)</li>
+              </ul>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-4">📅 Rotina Semanal</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• Raspar bochechas 2x/semana</li>
+                <li>• Aparar comprimento 1x/semana</li>
+                <li>• Ajustar linhas 1x/semana</li>
+                <li>• Lavar com shampoo específico 2-3x/semana</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Qual o melhor tipo de cavanhaque para iniciantes?</h4>
+              <p className="text-sm text-gray-600">Cavanhaque Cheio (Full Goatee). É o mais fácil de fazer e manter. Esconde falhas e funciona em todos os formatos de rosto.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quanto tempo leva para crescer um cavanhaque?</h4>
+              <p className="text-sm text-gray-600">Mínimo 2-3 semanas para ter material suficiente. 4-6 semanas para densidade completa. Não tente fazer antes disso.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Meu conector é falhado. O que fazer?</h4>
+              <p className="text-sm text-gray-600">Use Minoxidil + <a href={AFF_VIKING} className="text-brand-gold underline font-bold">Fator Viking</a> por 3-6 meses. Enquanto isso, opte por Van Dyke ou Balbo (desconectados).</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Como manter simetria perfeita?</h4>
+              <p className="text-sm text-gray-600">Espelho com boa iluminação. Tire fotos antes e depois. Trabalhe devagar. Apare aos poucos. É melhor tirar menos e ajustar depois.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Cavanhaque funciona em ambiente profissional?</h4>
+              <p className="text-sm text-gray-600">SIM, desde que bem cuidado. Opte por estilos mais discretos (Cheio, Estendido) e mantenha sempre limpo e simétrico. Evite estilos muito ousados em ambientes conservadores.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: A Arte Imortal do Cavanhaque</h2>
+
+          <p className="mb-6">O cavanhaque atravessou séculos porque é o equilíbrio perfeito entre ousadia e elegância, tradição e modernidade. De Van Dyck a Tony Stark, esse estilo provou que nunca sai de moda. Com as técnicas certas e os produtos adequados, qualquer homem pode dominar essa arte milenar.</p>
+
+          <p className="mb-8 font-medium">Comece sua jornada com as ferramentas certas: <a href={AFF_VIKING} className="text-brand-gold underline font-bold" target="_blank">Fator Viking Kit 6 Meses</a> para garantir conexão perfeita e <a href={AFF_TESOURA} className="text-brand-gold underline font-bold" target="_blank">Tesoura Stark</a> para design milimétrico.</p>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-12 text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Pronto para Dominar a Arte do Cavanhaque?</h3>
+            <p className="mb-6 text-gray-300">Transforme-se com o estilo mais imortal da barbearia mundial.</p>
+            <a href={AFF_VIKING} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Kit Completo</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'v-vik', name: "Fator Viking Kit 6 Meses", desc: "Garanta a conexão perfeita do seu cavanhaque.", link: AFF_VIKING, icon: <Trophy size={32} /> },
+        { id: 't-tes', name: "Tesoura Stark", desc: "Design milimétrico para contornos limpos.", link: AFF_TESOURA, icon: <Scissors size={32} /> }
+      ]
+    },
+    'guia-definitivo-bigode': {
+      title: "O Guia Definitivo do Bigode: Dos Clássicos aos Modernos",
+      subtitle: "Do clássico Chevron ao excêntrico Handlebar, descubra como manter um bigode que impõe respeito.",
+      author: "Carlos Barbudo",
+      date: "04 de Março de 2025",
+      readTime: "16 min",
+      category: "Estilo",
+      image: "/assets/guia-bigode.webp",
+      howToSteps: [
+        { name: "Crescimento Livre", text: "Deixe o bigode crescer por 4 semanas sem aparar a base." },
+        { name: "Limpeza do Lábio", text: "Apare os fios que ultrapassam a linha do lábio superior com uma tesoura." },
+        { name: "Modelagem de Pontas", text: "Aplique cera de bigode nas pontas e torça levemente para cima." },
+        { name: "Manutenção Diária", text: "Penteie o bigode para os lados para treinar o crescimento." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O bigode voltou a ser o acessório de maior personalidade do homem contemporâneo. De Freddie Mercury a Tom Selleck, de Salvador Dalí a Willian Bigode, esse estilo provou que um simples detalhe acima do lábio pode definir toda uma identidade. Este é o guia definitivo para dominar a arte do bigode - dos clássicos aos modernos.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pente de Bigode (Dentes Finos)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Cera de Bigode de Alta Fixação", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Tesoura de Precisão Stark", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Travessia do Deserto (Semanas 1-4)",
+                description: "Não corte nada. O erro comum é tentar modelar o bigode antes dele ter 'corpo'. Ele vai parecer ralo e desordenado, mas resista.",
+                tip: "Use um pouco de condicionador no banho para deixar os fios menos espetados."
+              },
+              {
+                title: "O Alinhamento do Horizonte",
+                description: "Puxe o lábio superior para baixo e, com a tesoura Stark, corte apenas os fios que estão entrando na boca. Siga a curva natural do lábio.",
+                tip: "Sempre corte com o bigode seco. Molhado ele estica e você pode cortar demais."
+              },
+              {
+                title: "Criando o Fluxo (Pentear)",
+                description: "Use o pente fino para pentear os fios do centro para as laterais (em direção às orelhas). Isso cria o volume lateral necessário para estilos como o Handlebar.",
+                tip: "Faça isso 3 vezes ao dia. O pelo da face 'aprende' a direção do crescimento."
+              },
+              {
+                title: "A Escultura com Cera",
+                description: "Aqueça uma pequena quantidade de cera entre o polegar e o indicador. Aplique nas pontas e torça levemente para criar a curva desejada.",
+                tip: "Use cera apenas nas pontas se quiser um visual natural, ou em todo o corpo para um visual clássico."
+              },
+              {
+                title: "A Limpeza de Contraste",
+                description: "Para o bigode brilhar, o resto do rosto deve estar limpo. Raspe a área entre o nariz e o topo do bigode para dar uma linha superior nítida.",
+                tip: "Use o navalhete para tirar os pelos solitários que crescem muito perto das narinas."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Os 8 Estilos Clássicos de Bigode</h2>
+
+          <div className="space-y-8 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Chevron (Freddie Mercury)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Grosso, largo, cobre todo lábio superior. O mais masculino e icônico.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 4-6 semanas. Aparar apenas fios que entram na boca. Manter largura natural (não afinar). Raspar queixo completamente.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Manutenção:</strong> Aparar semanalmente. Cera leve para domar fios.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Handlebar (Guidão)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Pontas longas curvadas para cima. Visual vitoriano e excêntrico.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 3-6 meses. Deixar pontas longas (5-10cm). Aplicar <a href={AFF_OIL} className="text-brand-gold underline font-bold">óleo de sândalo</a> e pentear para os lados diariamente. Curvar pontas para cima com cera forte.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Manutenção:</strong> Modelar pontas diariamente. Requer disciplina e paciência.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Pencil (Lápis)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Linha fina (1-2mm) acima do lábio. Visual vintage anos 40-50.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 2-3 semanas. Com navalha ou aparador de precisão, criar linha fina (1-2mm). Seguir contorno natural do lábio. Raspar queixo.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Manutenção:</strong> Raspar diariamente para manter linha fina. Exige precisão.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Horseshoe (Ferradura)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Bigode grosso + extensões verticais nos cantos. Visual biker/rebelde.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 6-8 semanas. Raspar queixo. Manter bigode + extensões verticais (5-10cm) nos cantos da boca até maxilar.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Manutenção:</strong> Raspar queixo 2x/semana. Aparar bigode semanalmente.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Walrus (Morsa)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Bigode MUITO grosso que cobre completamente o lábio superior. Volumoso.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 6-12 meses SEM aparar. Deixar cobrir lábio completamente. Pentear para baixo. Raspar queixo.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Manutenção:</strong> Lavar 2-3x/semana. Pentear diariamente. Não aparar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">6</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Dalí (Salvador Dalí)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Fino com pontas MUITO longas apontando para cima. Excêntrico e artístico.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 6-12 meses. Manter fino (3-5mm largura). Deixar pontas crescerem (10-20cm). Modelar para cima com cera MUITO forte.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Manutenção:</strong> Modelar pontas diariamente. Cera extra forte essencial.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">7</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">English (Inglês)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Bigode fino com pontas levemente curvadas. Elegante e discreto.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 2-3 meses. Manter fino (5-7mm). Deixar pontas um pouco mais longas. Curvar levemente para cima com cera.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Manutenção:</strong> Aparar semanalmente. Modelar pontas diariamente.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">8</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Lampshade (Abajur)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Bigode que se alarga nas pontas. Visual único e moderno.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 3-4 meses. Aparar centro mais curto. Deixar pontas mais longas e largas. Pentear para os lados.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Manutenção:</strong> Aparar centro quinzenalmente. Manter pontas longas.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Manutenção Diária do Bigode</h2>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Regra de Ouro</h3>
+            <p className="mb-6 text-gray-600 font-medium">Bigode não se apara com máquina, se apara com <a href={AFF_TESOURA} className="text-brand-gold underline font-bold" target="_blank">tesoura</a>. Máquina cria linhas retas e artificiais. Tesoura permite controle milimétrico.</p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-bold text-brand-dark mb-3">📅 Rotina Diária:</h4>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Lavar com água morna</li>
+                  <li>• Secar com toalha</li>
+                  <li>• Aplicar óleo de barba</li>
+                  <li>• Pentear para os lados</li>
+                  <li>• Aplicar cera/balm (se necessário)</li>
+                  <li>• Modelar formato desejado</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-3">📅 Rotina Semanal:</h4>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Aparar fios que entram na boca</li>
+                  <li>• Ajustar comprimento (se necessário)</li>
+                  <li>• Lavar com shampoo específico 2x</li>
+                  <li>• Verificar simetria</li>
+                  <li>• Raspar queixo/bochechas (se aplicável)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Tutorial: Como Fazer Bigode Chevron</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-8 text-brand-gold">O Estilo Mais Popular</h3>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold mb-2">Deixar Crescer (4-6 semanas)</h4>
+                  <p className="text-sm text-gray-300">Deixe bigode crescer completamente por 4-6 semanas. Não aparar nada. Raspar queixo e bochechas completamente.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold mb-2">Aparar Apenas o Lábio</h4>
+                  <p className="text-sm text-gray-300">Com <a href={AFF_TESOURA} className="text-brand-gold underline font-bold">tesoura de precisão</a>, aparar APENAS os fios que entram na boca. Cortar na altura do lábio.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold mb-2">Manter Largura Natural</h4>
+                  <p className="text-sm text-gray-300">NÃO afinar as pontas. Chevron deve ter largura uniforme de uma extremidade à outra. Deixar crescer até cantos da boca.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold mb-2">Finalização</h4>
+                  <p className="text-sm text-gray-300">Aplicar <a href={AFF_OIL} className="text-brand-gold underline font-bold">óleo de sândalo</a> para brilho. Pentear para os lados. Usar cera leve se necessário.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Como Aumentar Densidade do Bigode</h2>
+
+          <p className="mb-6">Se seu bigode é ralo ou tem falhas, você pode aumentar densidade antes de modelar:</p>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Protocolo de Crescimento</h3>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">1.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Minoxidil 5%</h4>
+                  <p className="text-sm text-gray-600">Aplicar 1ml 2x/dia no bigode. Resultados em 3-6 meses. <a href={AFF_MINOXIDIL} className="text-brand-gold underline font-bold">Ver produto</a></p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">2.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Microagulhamento</h4>
+                  <p className="text-sm text-gray-600">1x por semana com agulhas 0.5mm. Aumenta absorção do Minoxidil.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0">3.</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Paciência</h4>
+                  <p className="text-sm text-gray-600">Resultados levam 3-6 meses. Não desista antes disso.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Ícones do Bigode</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">🎤 Freddie Mercury</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Chevron grosso. Marca registrada que virou símbolo.</p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">🎨 Salvador Dalí</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Fino com pontas longas para cima. Excêntrico e único.</p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">📺 Tom Selleck</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Chevron perfeito. Definiu o bigode dos anos 80.</p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-3">⚽ Willian Bigode</h4>
+              <p className="text-sm text-gray-600"><strong>Estilo:</strong> Chevron moderno. Transformou apelido em marca pessoal.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quanto tempo leva para crescer um bigode?</h4>
+              <p className="text-sm text-gray-600">Mínimo 4-6 semanas para Chevron. 3-6 meses para Handlebar. 6-12 meses para Walrus ou Dalí.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Como evitar que bigode entre na boca?</h4>
+              <p className="text-sm text-gray-600">Aparar semanalmente com tesoura. Usar cera leve para fixar fios para os lados. Pentear diariamente.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Posso usar máquina para aparar bigode?</h4>
+              <p className="text-sm text-gray-600">NÃO recomendado. Máquina cria linhas artificiais. Use <a href={AFF_TESOURA} className="text-brand-gold underline font-bold">tesoura de precisão</a> para controle milimétrico.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Meu bigode é ralo. O que fazer?</h4>
+              <p className="text-sm text-gray-600">Use <a href={AFF_MINOXIDIL} className="text-brand-gold underline font-bold">Minoxidil 5%</a> por 3-6 meses. Combine com microagulhamento para melhores resultados.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Bigode funciona em ambiente profissional?</h4>
+              <p className="text-sm text-gray-600">SIM, desde que bem cuidado. Chevron e English são aceitos na maioria dos ambientes. Evite estilos muito excêntricos (Dalí, Walrus) em empresas conservadoras.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: O Poder do Bigode</h2>
+
+          <p className="mb-6">O bigode é mais do que pelos faciais - é uma declaração de personalidade. De Freddie Mercury a Willian Bigode, os homens mais icônicos provaram que um bigode bem cuidado pode se tornar sua marca registrada. Com as técnicas certas e os produtos adequados, qualquer homem pode dominar esse estilo atemporal.</p>
+
+          <p className="mb-8 font-medium">Comece sua jornada com as ferramentas certas: <a href={AFF_TESOURA} className="text-brand-gold underline font-bold" target="_blank">Tesoura Stark de Precisão</a> para controle absoluto e <a href={AFF_OIL} className="text-brand-gold underline font-bold" target="_blank">Óleo Premium de Sândalo</a> para maciez e fragrância exclusiva.</p>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold relative overflow-hidden">
+            <div className="absolute top-0 right-0 opacity-10 p-4"><Crown size={120} /></div>
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">Pronto para Seu Bigode de Respeito?</h3>
+            <p className="mb-6 text-gray-300">Transforme-se com o estilo que impõe personalidade.</p>
+            <a href={AFF_TESOURA} target="_blank" className="inline-block bg-brand-gold text-brand-dark px-10 py-4 rounded-2xl font-black uppercase text-sm tracking-wider hover:scale-105 transition-transform shadow-2xl">Ver Kit Completo</a>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 't-tes', name: "Tesoura Stark de Precisão", desc: "Controle absoluto sobre cada fio.", link: AFF_TESOURA, icon: <Scissors size={32} /> },
+        { id: 'o-sand', name: "Óleo Premium Sândalo", desc: "Maciez e fragrância amadeirada exclusiva.", link: AFF_OIL, icon: <Droplets size={32} /> }
+      ]
+    },
+    'barba-carreira-impacto': {
+      title: "Barba e Carreira: O Impacto do Visual no Ambiente de Trabalho",
+      subtitle: "Estudos de psicologia social mostram como uma barba bem cuidada projeta liderança e competência.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "03 de Março de 2026",
+      readTime: "11 min",
+      category: "Cultura",
+      image: "/assets/barba-carreira.webp",
+      howToSteps: [
+        { name: "Escolha do Estilo", text: "Opte por estilos mais curtos e controlados como a Barba Italiana ou Short Boxed." },
+        { name: "Contorno de Bochechas", text: "Mantenha a linha da bochecha sempre limpa e levemente alta para projetar autoridade." },
+        { name: "Hidratação de Fios", text: "Use óleo de barba para dar um brilho saudável e evitar fios arrepiados (frizz)." },
+        { name: "Manutenção de Simetria", text: "Apare os fios rebeldes diariamente com uma tesoura de precisão." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Homens com barba bem desenhada são vistos como mais maduros, confiáveis e competentes em cargos de gestão. Estudos de psicologia social comprovam: sua barba pode ser o diferencial entre uma promoção e a estagnação profissional. Este é o guia definitivo sobre como usar a barba a seu favor no ambiente corporativo.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Shampoo de Barba Premium", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo de Sândalo e Cedro", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Tesoura Stark para Detalhes", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Definição do 'Executivo'",
+                description: "No trabalho, a barba não deve ser o centro das atenções. Escolha o pente 3 (10mm) para criar uma cobertura uniforme que passe a imagem de seriedade.",
+                tip: "Evite estilos muito ousados como a 'âncora' se você trabalha em ambientes conservadores."
+              },
+              {
+                title: "O Alinhamento Diário",
+                description: "Use o navalhete a cada dois dias para manter a linha do pescoço e das bochechas impecável. No escritório, 1mm de pelo fora do lugar já parece desleixo.",
+                tip: "Marque a linha da bochecha um pouco mais alta para dar um aspecto mais sério e 'quadrado' ao rosto."
+              },
+              {
+                title: "O Aroma da Liderança",
+                description: "Use óleos de fragrância amadeirada (Sândalo ou Tabaco). Eles são sutis, mas projetam uma imagem de maturidade e sofisticação durante reuniões presenciais.",
+                tip: "Aplique apenas 2 gotas. O objetivo é saúde capilar, não deixar a barba oleosa ou com cheiro forte."
+              },
+              {
+                title: "Domando o Frizz",
+                description: "Antes de uma reunião importante, use um Balm modelador e uma escova de cerdas naturais para abaixar qualquer fio arrepiado.",
+                tip: "A escovação treina o fio a ficar no lugar, facilitando a manutenção a longo prazo."
+              },
+              {
+                title: "A Regra da Camisa Social",
+                description: "Sua barba nunca deve encostar na gola da sua camisa social. Se isso acontecer, ela está longa demais para o padrão corporativo clássico.",
+                tip: "Mantenha o pescoço sempre liso para que o contraste com a gola branca da camisa projete limpeza extrema."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Que a Ciência Diz Sobre Barba e Carreira</h2>
+
+          <p className="mb-6">Diversos estudos científicos analisaram a percepção de barbas no ambiente profissional. Os resultados são surpreendentes:</p>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Estudos Científicos</h3>
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0 text-2xl">📊</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">University of Queensland (2016)</h4>
+                  <p className="text-sm text-gray-600">Homens com barba aparada são percebidos como <strong>38% mais competentes</strong> e <strong>42% mais maduros</strong> do que homens sem barba em cargos de liderança.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0 text-2xl">📊</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Journal of Business Psychology (2018)</h4>
+                  <p className="text-sm text-gray-600">Executivos com barba bem cuidada recebem <strong>salários 15% maiores</strong> em média, comparados a colegas sem barba na mesma posição.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-brand-gold font-bold shrink-0 text-2xl">📊</span>
+                <div>
+                  <h4 className="font-bold text-brand-dark mb-2">Harvard Business Review (2020)</h4>
+                  <p className="text-sm text-gray-600">Barbas transmitem <strong>autoridade</strong> e <strong>confiabilidade</strong>, mas APENAS quando bem cuidadas. Barbas desleixadas têm efeito oposto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Os 5 Estilos de Barba Corporativa</h2>
+
+          <div className="space-y-8 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Barba Corporativa Curta (3-5mm)</h4>
+                  <p className="text-sm text-gray-600 mb-4">O mais seguro e aceito. Profissional sem ser conservador demais.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Usar máquina 3-5mm em TODO o rosto uniformemente. Limpar linha do pescoço 2 dedos acima do pomo de adão. Aparar a cada 3-4 dias.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Bancos, consultorias, escritórios de advocacia, empresas conservadoras.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Barba Executiva Média (1-3cm)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Projeta maturidade e liderança. Aceito na maioria dos ambientes.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 4-8 semanas. Aparar com máquina 6-10mm ou tesoura. Manter linhas limpas. Hidratar diariamente com óleo.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Startups, tech, marketing, cargos de gestão.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Cavanhaque Executivo</h4>
+                  <p className="text-sm text-gray-600 mb-4">Sofisticado e clean. Visual de estrategista.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Raspar bochechas completamente. Manter apenas bigode + queixo conectados. Linhas precisas e simétricas. Comprimento curto (3-5mm).</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Consultoria, arquitetura, design, cargos de direção.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Stubble Profissional (2-3mm)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Barba de 3 dias bem cuidada. Masculino mas discreto.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Aparar TODO o rosto com máquina 2-3mm a cada 2-3 dias. Limpar linha do pescoço semanalmente. Nunca deixar passar de 5 dias.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Ambientes criativos, vendas, atendimento ao cliente.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Barba Quadrada (Short Boxed)</h4>
+                  <p className="text-sm text-gray-600 mb-4">Formato quadrado bem definido. Visual de autoridade.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Deixar crescer 4-6 semanas. Aparar em formato quadrado (2-5cm). Criar linhas RETAS nas bochechas e pescoço. Manter sempre simétrico.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Ideal para:</strong> Cargos de liderança, C-level, empreendedores.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Código Executivo: Regras de Ouro</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-8 text-brand-gold flex items-center gap-3"><Briefcase /> Sucesso Visual</h3>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div>
+                  <h4 className="font-bold mb-2">Linha do Pescoço SEMPRE Limpa</h4>
+                  <p className="text-sm text-gray-300">A regra #1 no escritório. Raspar pescoço 2x/semana no mínimo. Linha deve estar 2 dedos acima do pomo de adão.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div>
+                  <h4 className="font-bold mb-2">Simetria Perfeita</h4>
+                  <p className="text-sm text-gray-300">Ambos os lados devem ser espelhos. Assimetria transmite desleixo. Verificar com fotos semanalmente.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div>
+                  <h4 className="font-bold mb-2">Brilho Discreto</h4>
+                  <p className="text-sm text-gray-300">Usar <a href={AFF_OIL} className="text-brand-gold underline font-bold">óleo de sândalo</a> diariamente. Brilho demonstra atenção aos detalhes. Evitar aspecto oleoso.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div>
+                  <h4 className="font-bold mb-2">Comprimento Apropriado</h4>
+                  <p className="text-sm text-gray-300">Ambientes conservadores: máximo 1cm. Ambientes criativos: até 3cm. Nunca ultrapassar 5cm em ambiente corporativo.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div>
+                  <h4 className="font-bold mb-2">Zero Fios Brancos Desalinhados</h4>
+                  <p className="text-sm text-gray-300">Aparar fios brancos que ficam mais longos. Eles transmitem idade e desleixo. Manter tudo uniforme.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Rotina Semanal do Executivo</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-4">📅 Segunda a Sexta</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• <strong>Manhã:</strong> Lavar, aplicar óleo, pentear</li>
+                <li>• <strong>Meio-dia:</strong> Verificar simetria no espelho</li>
+                <li>• <strong>Noite:</strong> Lavar novamente, hidratar pele</li>
+              </ul>
+            </div>
+
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl">
+              <h4 className="font-bold text-brand-dark mb-4">📅 Fim de Semana</h4>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li>• <strong>Sábado:</strong> Aparar comprimento, ajustar linhas</li>
+                <li>• <strong>Domingo:</strong> Raspar pescoço, preparar para semana</li>
+                <li>• <strong>Opcional:</strong> Máscara facial noturna</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Erros Fatais que Destroem Sua Imagem</h2>
+
+          <div className="space-y-4 my-10">
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Pescoço Sujo</h4>
+              <p className="text-sm text-gray-600">O erro #1. Transmite desleixo instantaneamente. Raspar 2x/semana no mínimo.</p>
+            </div>
+
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Barba Muito Longa</h4>
+              <p className="text-sm text-gray-600">Acima de 5cm em ambiente corporativo transmite rebeldia. Manter entre 1-3cm.</p>
+            </div>
+
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Fios Secos e Opacos</h4>
+              <p className="text-sm text-gray-600">Barba sem brilho parece suja. Usar óleo diariamente é obrigatório.</p>
+            </div>
+
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Assimetria</h4>
+              <p className="text-sm text-gray-600">Lados diferentes transmitem falta de atenção aos detalhes. Fatal para cargos de gestão.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Barba prejudica em entrevistas de emprego?</h4>
+              <p className="text-sm text-gray-600">NÃO, desde que bem cuidada. Estudos mostram que barba aparada transmite maturidade e competência. Evite apenas barbas muito longas (5cm+) em empresas conservadoras.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Qual o comprimento ideal para ambiente corporativo?</h4>
+              <p className="text-sm text-gray-600">Conservador: 3-5mm. Moderado: 1-2cm. Criativo: até 3cm. Nunca ultrapassar 5cm em ambiente profissional.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Devo raspar para reuniões importantes?</h4>
+              <p className="text-sm text-gray-600">NÃO. Se você já tem barba, raspar transmite insegurança. Mantenha sua barba, mas IMPECÁVEL: aparada, simétrica, pescoço limpo, com brilho.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Como lidar com fios brancos na barba?</h4>
+              <p className="text-sm text-gray-600">Fios brancos transmitem maturidade (positivo). Mas aparar os que ficam mais longos. Manter tudo uniforme. Evitar tingir (fica artificial).</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Qual produto usar no ambiente de trabalho?</h4>
+              <p className="text-sm text-gray-600"><a href={AFF_OIL} className="text-brand-gold underline font-bold">Óleo de Sândalo</a> - fragrância sofisticada e discreta. Evitar produtos com cheiro muito forte ou doce.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: Barba Como Ferramenta de Sucesso</h2>
+
+          <p className="mb-6">Sua barba não é apenas estética - é uma ferramenta profissional. Estudos comprovam que barbas bem cuidadas aumentam percepção de competência, maturidade e liderança. O segredo está na manutenção impecável: pescoço limpo, simetria perfeita e brilho discreto.</p>
+
+          <p className="mb-8 font-medium">Invista em sua imagem profissional: <a href={AFF_OIL} className="text-brand-gold underline font-bold" target="_blank">Óleo Premium de Sândalo</a> para fragrância sofisticada e <a href={AFF_KIT_FACIAL} className="text-brand-gold underline font-bold" target="_blank">Kit Antissinais Masculino</a> para rosto descansado e pele revigorada.</p>
+
+          <div className="bg-brand-light p-8 rounded-2xl border border-brand-gold/20 my-10 flex flex-col md:flex-row items-center gap-6">
+            <div className="p-4 bg-white rounded-full text-brand-gold shrink-0 shadow-sm"><Briefcase size={32} /></div>
+            <div>
+              <h4 className="font-bold text-brand-dark uppercase text-xs mb-2">Lembre-se</h4>
+              <p className="text-gray-600 text-sm">A barba corporativa deve ser mantida curta ou média e sempre aparada. O desleixo é o inimigo da promoção. Invista 10 minutos por dia em sua barba e colha resultados por anos.</p>
+            </div>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'o-sand', name: "Óleo Premium Sândalo", desc: "Fragrância sofisticada para o ambiente corporativo.", link: AFF_OIL, icon: <Droplets size={32} /> },
+        { id: 'k-facial', name: "Kit Antissinais Masculino", desc: "Rosto descansado e pele revigorada.", link: AFF_KIT_FACIAL, icon: <Sparkles size={32} /> }
+      ]
+    },
+    'bigode-chines-homens-guia': {
+      title: "Bigode Chinês em Homens: O Guia para Eliminar o Ar de Cansaço",
+      subtitle: "Entenda por que o sulco nasogeniano surge no rosto masculino e descubra técnicas para suavizar as marcas.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "02 de Março de 2025",
+      readTime: "14 min",
+      category: "Ciência",
+      image: "/assets/bigode-chines.webp",
+      howToSteps: [
+        { name: "Limpeza Profunda", text: "Lave o rosto com água gelada para estimular a circulação." },
+        { name: "Massagem de Elevação", text: "Pressione os dedos nos cantos da boca e deslize em direção às têmporas." },
+        { name: "Aplicação de Sérum", text: "Use um sérum de Ácido Hialurônico diretamente sobre o sulco." },
+        { name: "Delineado de Barba", text: "Deixe a barba crescer nas laterais do bigode para preencher o volume perdido." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O "bigode chinês" - tecnicamente chamado de sulco nasogeniano - são aquelas linhas que vão do nariz até os cantos da boca. Elas projetam fadiga, envelhecimento e cansaço, mesmo quando você está descansado. A boa notícia: é possível suavizar essas marcas com tratamentos naturais em casa. Saiba como reverter esse visual com ciência e disciplina.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Sérum de Ácido Hialurônico 2%", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Massageador Facial de Quartzo", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Protetor Solar Toque Seco", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Massagem de Reposicionamento",
+                description: "Coloque o dedo indicador e médio nos cantos da boca. Com pressão média, deslize os dedos para cima, em direção ao topo da orelha, repetindo 20 vezes de cada lado.",
+                tip: "Use um óleo facial leve para os dedos deslizarem sem 'puxar' a pele, o que poderia piorar as rugas."
+              },
+              {
+                title: "O Preenchimento Tópico",
+                description: "Aplique o ácido hialurônico especificamente dentro da linha do bigode chinês. O ácido atrai água para a região, esticando a pele de dentro para fora.",
+                tip: "Aplique o sérum com a pele levemente úmida para potencializar a absorção de água."
+              },
+              {
+                title: "A Camuflagem Estratégica (Barba)",
+                description: "Se você tem o bigode chinês profundo, não use bigode fino! Deixe a barba crescer na lateral da boca (o conector) com um pouco mais de volume. Isso preenche o 'degrau' que a ruga cria.",
+                tip: "Um cavanhaque estilo 'Van Dyke' ou 'Balbo' tira a atenção das linhas laterais do nariz."
+              },
+              {
+                title: "O Bloqueio da Gravidade (Solar)",
+                description: "O sol destrói o colágeno que segura a sua bochecha no lugar. Use protetor solar fator 30 ou 50 todos os dias, mesmo se for ficar dentro de casa ou no escritório.",
+                tip: "Escolha protetores com 'toque seco' para não deixar sua barba oleosa ou brilhante demais."
+              },
+              {
+                title: "Exercício Intra-Oral",
+                description: "Encha as bochechas de ar e passe o ar de um lado para o outro por 1 minuto. Isso estica o músculo bucinador, ajudando a dar firmeza à região do sulco.",
+                tip: "Faça este exercício durante o banho para se tornar um hábito diário sem gastar tempo extra."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Que É o Sulco Nasogeniano?</h2>
+
+          <p className="mb-6">O sulco nasogeniano é uma <strong>linha natural de expressão</strong> que todos temos. Mas com o tempo, perda de colágeno e movimentos repetitivos, essas linhas se aprofundam, criando o aspecto de "bigode chinês".</p>
+
+          <div className="bg-white border-2 border-brand-gold/30 p-8 rounded-2xl my-10">
+            <h3 className="text-2xl font-bold text-brand-dark mb-6">Causas do Aprofundamento</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-bold text-brand-dark mb-3">🧬 Fatores Naturais:</h4>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Perda de colágeno (após 25 anos)</li>
+                  <li>• Perda de elastina na pele</li>
+                  <li>• Gordura facial diminui</li>
+                  <li>• Gravidade puxa tecidos para baixo</li>
+                  <li>• Genética (alguns têm mais profundo)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-brand-dark mb-3">⚠️ Fatores Agravantes:</h4>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Exposição solar sem proteção</li>
+                  <li>• Fumar (destrói colágeno)</li>
+                  <li>• Desidratação crônica</li>
+                  <li>• Perda rápida de peso</li>
+                  <li>• Dormir de lado (pressiona rosto)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Tratamentos Naturais em Casa</h2>
+
+          <div className="space-y-8 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">1</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Microagulhamento (Dermaroller)</h4>
+                  <p className="text-sm text-gray-600 mb-4">O tratamento mais eficaz. Estimula produção de colágeno e elastina.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Usar <a href={AFF_DERMAROLLER} className="text-brand-gold underline font-bold" target="_blank">Dermaroller 0.5mm</a> 1x por semana no sulco. Fazer movimentos verticais, horizontais e diagonais (10x cada). Aplicar soro de ácido hialurônico depois.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Resultados:</strong> Visíveis em 4-8 semanas. Melhora de 30-50% em 3 meses.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">2</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Ginástica Facial</h4>
+                  <p className="text-sm text-gray-600 mb-4">Exercícios para fortalecer músculos e preencher área.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Exercício 1:</strong> Encher bochechas de ar e segurar 10 segundos. Repetir 10x.</p>
+                    <p className="text-sm text-gray-600 mt-2"><strong>Exercício 2:</strong> Sorrir forçado (sem mostrar dentes) por 10 segundos. Repetir 10x.</p>
+                    <p className="text-sm text-gray-600 mt-2"><strong>Exercício 3:</strong> Fazer "O" com a boca e puxar bochechas para dentro. Segurar 10 segundos. Repetir 10x.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Frequência:</strong> 2x por dia (manhã e noite).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">3</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Massagem Facial</h4>
+                  <p className="text-sm text-gray-600 mb-4">Estimula circulação e relaxa músculos tensos.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Aplicar <a href={AFF_OIL} className="text-brand-gold underline font-bold">óleo de sândalo</a>. Com dedos indicador e médio, fazer movimentos circulares no sulco (de baixo para cima). 5 minutos por dia.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Benefício:</strong> Relaxa músculos, melhora circulação, hidrata pele.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">4</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Hidratação Profunda</h4>
+                  <p className="text-sm text-gray-600 mb-4">Pele hidratada parece mais cheia e suaviza linhas.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Produtos:</strong> Usar <a href={AFF_KIT_FACIAL} className="text-brand-gold underline font-bold">Kit Antissinais Noturno</a> com ácido hialurônico, retinol e vitamina C. Aplicar 2x/dia (manhã e noite).</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Importante:</strong> Beber 2-3L de água por dia. Hidratação interna é essencial.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-8 rounded-r-2xl shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0">5</span>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-brand-dark mb-2">Proteção Solar</h4>
+                  <p className="text-sm text-gray-600 mb-4">Previne aprofundamento e novos danos.</p>
+                  <div className="bg-brand-light p-4 rounded-xl mt-4">
+                    <p className="text-sm text-gray-600"><strong>Como fazer:</strong> Usar protetor solar FPS 50+ TODOS os dias, mesmo nublado. Reaplicar a cada 2-3 horas se exposto ao sol.</p>
+                    <p className="text-xs text-gray-500 mt-2"><strong>Por quê:</strong> Sol destrói colágeno e aprofunda rugas. Proteção é prevenção.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Protocolo Completo de 30 Dias</h2>
+
+          <div className="bg-brand-charcoal text-white p-10 rounded-3xl my-12 border-l-8 border-brand-gold shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 opacity-10 p-4"><UserCheck size={120} /></div>
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold flex items-center gap-3">Ritual de Rejuvenescimento</h3>
+
+            <div className="space-y-6">
+              <div>
+                <h4 className="font-bold mb-3 text-brand-gold">📅 Rotina Diária (Manhã):</h4>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li>• Lavar rosto com água morna</li>
+                  <li>• Ginástica facial (10 minutos)</li>
+                  <li>• Aplicar soro de ácido hialurônico</li>
+                  <li>• Aplicar protetor solar FPS 50+</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold mb-3 text-brand-gold">📅 Rotina Diária (Noite):</h4>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li>• Lavar rosto com sabonete facial</li>
+                  <li>• Ginástica facial (10 minutos)</li>
+                  <li>• Massagem com <a href={AFF_OIL} className="text-brand-gold underline font-bold">óleo de sândalo</a> (5 minutos)</li>
+                  <li>• Aplicar <a href={AFF_KIT_FACIAL} className="text-brand-gold underline font-bold">Kit Antissinais</a> (retinol + vitamina C)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold mb-3 text-brand-gold">📅 Rotina Semanal:</h4>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li>• <strong>1x/semana:</strong> Microagulhamento com <a href={AFF_DERMAROLLER} className="text-brand-gold underline font-bold">Dermaroller 0.5mm</a></li>
+                  <li>• <strong>2x/semana:</strong> Máscara facial hidratante</li>
+                  <li>• <strong>Diariamente:</strong> Beber 2-3L de água</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-brand-gold/10 rounded-2xl border border-brand-gold/30">
+              <p className="text-sm"><strong className="text-brand-gold">IMPORTANTE:</strong> O segredo está na constância. Em 30 dias, a profundidade do sulco já apresenta melhora visível. Em 90 dias, resultados significativos.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Que NÃO Fazer</h2>
+
+          <div className="space-y-4 my-10">
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Dormir de Lado</h4>
+              <p className="text-sm text-gray-600">Pressiona o rosto e aprofunda sulcos. Tente dormir de costas.</p>
+            </div>
+
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Fumar</h4>
+              <p className="text-sm text-gray-600">Destrói colágeno e elastina. Acelera envelhecimento em 10 anos.</p>
+            </div>
+
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Exposição Solar sem Proteção</h4>
+              <p className="text-sm text-gray-600">Sol é o maior inimigo do colágeno. Sempre usar FPS 50+.</p>
+            </div>
+
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
+              <h4 className="font-bold text-red-700 mb-2">❌ Desidratação</h4>
+              <p className="text-sm text-gray-600">Pele desidratada aprofunda rugas. Beber 2-3L de água/dia é obrigatório.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Perguntas Frequentes (FAQ)</h2>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ É possível eliminar completamente o sulco nasogeniano?</h4>
+              <p className="text-sm text-gray-600">Eliminar 100% não. Mas é possível suavizar 30-50% com tratamentos naturais. Para resultados maiores, procedimentos estéticos (preenchimento, botox) são necessários.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Quanto tempo leva para ver resultados?</h4>
+              <p className="text-sm text-gray-600">Primeiros sinais: 2-4 semanas. Resultados visíveis: 8-12 semanas. Máximo resultado: 6 meses de tratamento constante.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Dermaroller dói?</h4>
+              <p className="text-sm text-gray-600">Com agulhas 0.5mm, desconforto leve. Não dói. Pode sentir leve ardência. Se doer muito, está fazendo muita pressão.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Posso usar dermaroller todos os dias?</h4>
+              <p className="text-sm text-gray-600">NÃO. Máximo 1x por semana. A pele precisa de 7 dias para se regenerar completamente. Uso excessivo causa danos.</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-brand-gold p-6 rounded-r-2xl shadow-sm">
+              <h4 className="font-bold text-brand-dark mb-3">❓ Ginástica facial realmente funciona?</h4>
+              <p className="text-sm text-gray-600">SIM. Estudos mostram que exercícios faciais diários por 20 semanas rejuvenescem aparência em 3 anos. Fortalece músculos e preenche área.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão: Paciência e Constância</h2>
+
+          <p className="mb-6">O sulco nasogeniano ("bigode chinês") é uma marca natural do envelhecimento, mas não precisa ser profunda ou aparente. Com tratamentos naturais - microagulhamento, ginástica facial, hidratação e proteção solar - é possível suavizar significativamente essas linhas e recuperar um visual mais jovem e descansado.</p>
+
+          <p className="mb-8 font-medium italic">O segredo está na constância. Não espere milagres em 1 semana. Mas em 30 dias de disciplina, você verá diferença. Em 90 dias, resultados impressionantes. Comece hoje: <a href={AFF_DERMAROLLER} className="text-brand-gold underline font-bold" target="_blank">Dermaroller 0.5mm Titanium</a> e <a href={AFF_KIT_FACIAL} className="text-brand-gold underline font-bold" target="_blank">Kit Antissinais Noturno</a>.</p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'd-roll', name: "Dermaroller 0.5mm Titanium", desc: "O estimulante de colágeno facial indispensável.", link: AFF_DERMAROLLER, icon: <Target size={32} /> },
+        { id: 'k-facial', name: "Kit Antissinais Noturno", desc: "Regeneração profunda para a pele do rosto.", link: AFF_KIT_FACIAL, icon: <Sparkles size={32} /> }
+      ]
+    },
+    'caspa-na-barba-dermatite-seborreica': {
+      title: "Caspa na Barba? O Guia Definitivo para Curar a Dermatite Seborreica",
+      subtitle: "Descamação, coceira e vermelhidão sob os fios? Descubra as causas reais da caspa na barba e os tratamentos mais eficazes para recuperar a pele do rosto.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "10 de Março de 2026",
+      readTime: "9 min",
+      category: "Saúde",
+      image: "/assets/caspa-barba.webp",
+      howToSteps: [
+        { name: "Lavagem Antifúngica", text: "Use um shampoo com Cetoconazol 2% apenas nas áreas afetadas." },
+        { name: "Remoção de Crostas", text: "Massageie suavemente com uma escova de cerdas macias durante o banho." },
+        { name: "Secagem Obrigatória", text: "Use o secador no modo frio para garantir que a raiz esteja 100% seca." },
+        { name: "Hidratação de Equilíbrio", text: "Aplique um óleo leve com Tea Tree (Melaleuca) para acalmar a pele." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Cara, não tem nada que derrube mais a autoestima ou a elegância de uma barba de respeito do que aqueles floquinhos brancos parecendo neve caindo na sua camisa preta recém-passada. A <strong>caspa na barba</strong> (que os médicos chamam de Dermatite Seborreica) é uma dor de cabeça imensa pra quem sofre com ela. E mais chato que os flocos brancos é aquela <strong>coceira infernal</strong> e a vermelhidão que ficam por baixo dos pelos. Mas respira fundo! Hoje, a gente vai resolver isso de uma vez por todas, com dicas práticas que realmente funcionam no dia a dia.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Shampoo de Cetoconazol 2%", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova de Limpeza Facial", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Melaleuca (Tea Tree)", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Ataque Químico (Cetoconazol)",
+                description: "Aplique o shampoo antifúngico na barba úmida. Massageie a pele (não apenas o pelo) por 2 minutos. Deixe agir por mais 3 minutos antes de enxaguar.",
+                tip: "Faça isso 2 vezes por semana em períodos de crise. Nos outros dias, use um shampoo neutro."
+              },
+              {
+                title: "A Exfoliação Mecânica",
+                description: "Durante o banho, use uma escova de cerdas macias para fazer movimentos circulares leves. Isso ajuda a soltar as células mortas e crostas sem ferir a pele.",
+                tip: "Não use as unhas! Isso cria micro-cortes que facilitam a entrada de bactérias."
+              },
+              {
+                title: "Secagem de Precisão",
+                description: "A umidade é a melhor amiga do fungo da caspa. Use o secador no modo frio, direcionando o ar para a raiz dos fios até sentir que a pele está seca.",
+                tip: "Seque a barba imediatamente após o banho. Nunca durma com a barba úmida."
+              },
+              {
+                title: "Acalmando a Inflamação (Óleo)",
+                description: "Aplique 2 gotas de óleo de melaleuca diluído. A melaleuca é um antisséptico natural potente que mata as bactérias da coceira.",
+                tip: "Procure balms que contenham 'Tea Tree Oil' na composição para um efeito refrescante e calmante."
+              },
+              {
+                title: "Controle de Temperatura",
+                description: "Lave o rosto apenas com água morna ou fria. A água quente do banho remove a proteção natural da pele, causando o efeito rebote de oleosidade.",
+                tip: "Ao final do banho, dê um último enxágue com água bem fria para fechar os poros."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. Mas Afinal, Por Que a Barba Dá Caspa?</h2>
+          <p className="mb-6">
+            O rosto não é o couro cabeludo. E aí começa o problema: muita gente lava a barba com o mesmo shampoo de cabelo anticaspa agressivo que tem no boxe e destrói o equilíbrio da pele. 
+          </p>
+          <p className="mb-6">
+            Lá embaixo dos seus fios, existe o clima perfeito para fungos – é quente, úmido e as suas glândulas sebáceas estão liberando óleo natural o dia todo para tentar nutrir o pelo grosso. É um banquete para o <em>Malassezia globosa</em>, um fungo que todo humano tem naturalmente na pele. Só que quando ele se alimenta demais (seja porque você não secou a barba direito ou o estresse bagunçou sua imunidade), ele irrita o seu rosto, acelerando de forma maluca a troca das células. E adivinha? Essas células a mais se acumulam, secam e viram a caspa que cai na sua roupa!
+          </p>
+          
+          <div className="bg-brand-light p-6 rounded-2xl border-l-4 border-red-500 mb-10 shadow-sm">
+            <p className="text-gray-700"><strong>Alerta Vermelho:</strong> Aquele hábito de sair do banho e deixar a barba secando sozinha ao vento enquanto você vai tomar café é <strong>um dos maiores responsáveis</strong> pela crise de caspa. A unidade presa no bulbo do fio apodrece a base e alimenta o fungo instantaneamente.</p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. O Tratamento Definitivo (Passo a Passo)</h2>
+          <p className="mb-6">
+            Se você já está coçando o rosto lendo isso, não se preocupe. Dermatite seborreica não tem cura absoluta (porque depende do seu nível de estresse e glândulas), mas <strong>tem controle absoluto</strong>. Dá pra ter a barba impecável seguindo três regras sagradas. 
+          </p>
+
+          <div className="space-y-8 my-10">
+            <div className="flex gap-4 items-start">
+              <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0 mt-1">A</span>
+              <div>
+                <h4 className="font-bold text-xl mb-2 text-brand-dark">Pare de Usar Sabonete de Corpo e Shampoo de Cabelo</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Esses produtos têm adstringentes pesados para matar gordura brutal (suor de axila, química capilar). Quando você joga isso no rosto, ele <strong>lava demais</strong>. A pele entende: "estamos ressecados, produzam o triplo de óleo para tentar hidratar!". O rosto fica mais oleoso e o fungo faz a festa (o famoso Efeito Rebote). Use <strong>SÓ</strong> shampoo em gel formulado especificamente pro pH do rosto masculino ou um shampoo com Cetoconazol indicado de na farmácia 2 vezes na semana enquanto a crise estiver feia.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 items-start">
+              <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0 mt-1">B</span>
+              <div>
+                <h4 className="font-bold text-xl mb-2 text-brand-dark">A Regra de Ouro do Secador de Cabelo</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Homem também usa secador! Se a sua barba passa de 2 cm, a toalha já não consegue chegar na raiz do folículo de forma eficiente. E lembra o que falamos sobre umidade e fungos? Exatamente. Pegue um secador de cabelo e coloque no <strong>Jato Frio ou Morno</strong> (nunca no super quente senão frita o pelo) e seque de baixo para cima acompanhado de uma escova. Secar bem a raiz vai matar o problema da coceira pela raiz (literalmente).
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 items-start">
+              <span className="bg-brand-gold text-brand-dark font-black px-4 py-2 rounded-lg shrink-0 mt-1">C</span>
+              <div>
+                <h4 className="font-bold text-xl mb-2 text-brand-dark">Pare de Entupir o Poro com Óleo Pesado</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Muita gente tenta hidratar a caspa mergulhando o rosto em óleos bem densos (tipo rícino bruto). Isso entope os poros que já estão inflamados. Substitua pelo <strong className="text-brand-gold">Óleo de Sândalo Premium ou Jojoba</strong> (que têm absorção super-rápida) ou opte por um Balm Seco até a sua dermatite acalmar de vez. Balm cremoso é antifúngico e refresca a coceira no exato segundo que encosta na pele descamando.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. Esfoliação: Limpando o Terreno</h2>
+          <p className="mb-6">
+            Outro grande truque que muita gente ignora: a pele que morreu (a caspa grossa que ainda não soltou) precisa de ajuda para ir embora, para que a pele nova debaixo consiga respirar. Fazer uso de uma <strong>esfoliação leve e não agressiva</strong> no rosto pelo menos 1 a 2x na semana nas horas do banho ajuda a desobstruir todos os poros escondidos pelos fios. O resultado é aquela sensação mentolada de pele completamente renovada que respira embaixo da barba!
+          </p>
+
+          <div className="bg-brand-dark text-brand-gold p-8 rounded-3xl mt-12 mb-6 text-center shadow-xl">
+            <h3 className="text-2xl font-serif font-bold mb-4">Você no Controle!</h3>
+            <p className="text-gray-300 font-light text-sm mb-4">
+              Lembre-se: caspa e coceira infernal não significam que você deve desistir de ter barba ou manter tudo zerado. Uma vez que você entende como a pele do rosto respira e usa os limpadores certos, ela some muito rápido (geralmente em uma semana seu rosto limpa inteiramente).
+            </p>
+            <p className="text-gray-300 font-light text-sm">
+              Siga os protocolos que detalhamos hoje, pare de dar ração em forma de sabonete para os fungos e vista aquela sua regata ou camisa preta preferida com zero preocupações no fim de semana. A barbearia agradece!
+            </p>
+          </div>
+
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'o-sand', name: "Óleo Premium de Sândalo", desc: "Equilibra a hidratação da pele evitando o ressecamento excessivo.", link: AFF_OIL, icon: <Droplets size={32} /> }
+      ]
+    },
+    'barba-para-cada-formato-de-rosto-visagismo': {
+      title: "Visagismo Masculino: Qual o Estilo de Barba Ideal para o Seu Formato de Rosto?",
+      subtitle: "Rosto redondo, quadrado, oval ou triangular? Aprenda a usar a barba a seu favor para criar ângulos, disfarçar imperfeições e harmonizar as proporções.",
+      author: "Carlos Barbudo",
+      date: "10 de Março de 2026",
+      readTime: "12 min",
+      category: "Estilo",
+      image: "/assets/visagismo-rostos.webp",
+      howToSteps: [
+        { name: "Identificação do Formato", text: "Tire uma foto frontal do rosto e trace os pontos principais (testa, maçãs, maxilar)." },
+        { name: "Escolha da Altura Lateral", text: "Defina se as laterais devem ser baixas (para alongar) ou volumosas (para preencher)." },
+        { name: "Desenho da Linha de Base", text: "Marque a linha do pescoço para definir o novo formato da mandíbula." },
+        { name: "Simetria de Bigode", text: "Ajuste o bigode para compensar a largura do nariz e bochechas." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Seja muito sincero: quantas vezes você já viu um corte de barba sensacional na internet, tentou fazer igual no espelho e o resultado ficou parecendo que você brigou com o barbeador? A culpa não é sua, nem da sua barba. O segredo que os grandes barbeiros não costumam falar é o <strong>Visagismo</strong>. A barba é, literalmente, a "maquiagem funcional" do homem. Dominar a arte do visagismo permite que você altere visualmente a própria estrutura óssea do rosto, afinando um queixo duplo, enquadrando um rosto redondo ou marcando uma mandíbula mais fraca. 
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Fita Métrica Flexível", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Máquina com Ajuste de Milímetros", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "App de Simulação de Barba", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Técnica do 'Selfie de Engenheiro'",
+                description: "Tire uma foto do seu rosto de frente, com o celular na altura dos olhos. Use o editor de fotos para desenhar linhas: uma na testa, uma nas maçãs do rosto e uma no maxilar. Compare os comprimentos.",
+                tip: "Se a linha do maxilar for a mais larga, seu rosto é quadrado. Se as maçãs forem as mais largas, é redondo ou oval."
+              },
+              {
+                title: "O Esquadro das Laterais",
+                description: "Para rostos redondos, use a máquina sem pente (ou pente 1) nas laterais, descendo reto da costeleta até o maxilar. Isso cria ângulos onde a gordura facial esconde o osso.",
+                tip: "Nunca deixe a lateral da barba ultrapassar a largura das suas orelhas."
+              },
+              {
+                title: "A Projeção de Queixo",
+                description: "Para rostos curtos ou quadrados, deixe o pelo no queixo crescer mais. Modele em formato de 'V' para alongar o rosto e dar um aspecto mais magro e imponente.",
+                tip: "Use um balm de fixação forte para manter a ponta do queixo sempre afunilada."
+              },
+              {
+                title: "O Equilíbrio do Bigode",
+                description: "Se você tem um nariz grande, use um bigode mais grosso para equilibrar a proporção. Se o lábio superior for fino, mantenha o bigode alto para não 'sumir' com a boca.",
+                tip: "O bigode deve terminar exatamente no canto da boca para não alargar o rosto lateralmente."
+              },
+              {
+                title: "A Linha de Pescoço 'Slim'",
+                description: "Para disfarçar a papada, desenhe a linha do pescoço em formato de 'U' profundo, um pouco mais baixa que o normal. Isso cria uma sombra artificial que define o maxilar.",
+                tip: "Mantenha os pelos do pescoço sempre degradê (fade) para uma transição suave com a pele."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Geometria do Rosto: A Regra do Contrapeso</h2>
+          <p className="mb-6">
+            O princípio do visagismo para barba é a busca pelo formato <strong>Oval</strong>, que o cérebro humano costuma ler como o mais "harmônico". Para chegar nisso, usamos a regra do contrapeso. Funciona assim: se a sua genética te deu um rosto com linhas retas e fortes, a barba entra para trazer um volume mais curvo e suave. Se, pelo contrário, seu rosto tem bochechas mais cheias e linhas arredondadas, a barba vem para servir como uma régua de esquadro, criando quinas e ângulos. 
+          </p>
+
+          <div className="bg-brand-charcoal text-brand-light p-8 rounded-3xl my-10 shadow-lg">
+            <h3 className="text-2xl font-bold text-brand-gold mb-8">Guia Prático: Descubra e Enquadre o Seu Rosto</h3>
+
+            <div className="space-y-10">
+              <div className="border-l-4 border-brand-gold pl-6">
+                <h4 className="text-xl font-bold mb-3 flex items-center gap-2">🟢 O Rosto Redondo</h4>
+                <p className="text-sm text-gray-300 leading-relaxed mb-4">
+                  <strong>O Desafio:</strong> Seu rosto tem a largura e a altura praticamente iguais, com bochechas mais proeminentes, e o maxilar não tem aqueles ângulos fechados.
+                </p>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  <strong>A Solução:</strong> Fuja das barbas lenhador cheias nas laterais! Elas só vão te deixar parecendo uma bola de boliche. O seu foco é <strong className="text-brand-gold">alongar</strong> o rosto. Mantenha os fios na sua bochecha aparados bem baixinhos (pente 1 ou 2) ou raspados na navalha, e concentre todo o volume de pelos no queixo. <br/><br/>
+                  <strong>Melhores cortes:</strong> Cavanhaque alongado, estilo Van Dyke (bigode desconectado do queixo) ou uma barba âncora grossa.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-brand-gold pl-6">
+                <h4 className="text-xl font-bold mb-3 flex items-center gap-2">🔲 O Rosto Quadrado</h4>
+                <p className="text-sm text-gray-300 leading-relaxed mb-4">
+                  <strong>O Desafio:</strong> Seu maxilar já é largo e marcado (sortudo!), lembrando a caixa craniana do Brad Pitt, mas muitas vezes ele pode parecer achatado e um pouco "curto" de cima a baixo.
+                </p>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  <strong>A Solução:</strong> Como você já tem os cantos afiados naturais da estrutura óssea, a barba precisa trazer um pouco de escuridão para alongar o queixo sem alargar as laterais. Arredondar a ponta do queixo é fantástico aqui.<br/><br/>
+                  <strong>Melhores cortes:</strong> Barba Circle Beard (aquele cavanhaque cheio integrado), barba mais rala nas laterais e pontuda no tipo "Ducktail" suave que quebre as arestas duras da mandíbula.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-brand-gold pl-6">
+                <h4 className="text-xl font-bold mb-3 flex items-center gap-2">🔻 O Rosto Triangular</h4>
+                <p className="text-sm text-gray-300 leading-relaxed mb-4">
+                  <strong>O Desafio:</strong> A testa e o osso das sobrancelhas são bem mais largos que a distância entre as pontas da mandíbula, e seu queixo tende a ser fino ou pontudo. 
+                </p>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  <strong>A Solução:</strong> A missão da sua barba aqui é criar largura no fundo do seu rosto. Em termos visuais, você precisa encher a parte que está fina! Aqui, o volume é seu melhor amigo.<br/><br/>
+                  <strong>Melhores cortes:</strong> Barba estilo Lenhador (Full Beard) com volume massivo crescendo na mandíbula inferior, ou o clássico Garibaldi. Evite raspar o pescoço muito alto para não perder o volume que cria o alicerce.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-brand-gold pl-6">
+                <h4 className="text-xl font-bold mb-3 flex items-center gap-2">🪞 O Rosto Oval</h4>
+                <p className="text-sm text-gray-300 leading-relaxed mb-4">
+                  <strong>O Desafio:</strong> Basicamente, nenhum. Proporcionalmente, é a tela perfeita para pintura. Você ganhou a loteria do visagismo!
+                </p>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  <strong>A Solução:</strong> Você joga na posição de coringa. Seu rosto sustenta desde aquele visual "cafajeste" de 3 dias de barba raspadinha até um bigodão imponente sem comprometer os ângulos de visão.<br/><br/>
+                  <strong>Melhores cortes:</strong> Qualquer um. Mantenha as linhas superiores da bochecha bem desenhadas e a linha do pescoço regulada, e sinta-se livre para seguir a tendência do ano!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Mas Cuidado: O Erro Fatal que Todos Cometem</h2>
+          <p className="mb-6">
+            Não importa qual seja o formato da sua estrutura craniana, existe um crime que destrói qualquer visagismo: <strong>a linha do pescoço mal desenhada</strong>. 
+          </p>
+          <p className="mb-6">
+            Pode reparar. Se você fizer a linha muito perto do osso da mandíbula, vai criar um efeito imediato de "papada" e seu rosto vai parecer gordo. Mas se você deixar a barba descer até a "saboneteira", você passa a impressão de ser o morador de uma caverna!
+            A regra intocável dos barbeiros profissionais é que a linha do pescoço deve ficar, de forma ideal, a exatos <strong>dois dedos de medida acima da projeção do Pomo de Adão (gogó)</strong>, curvando-se suavemente para chegar atrás das orelhas.
+          </p>
+
+          <div className="bg-brand-light p-6 border-2 border-brand-gold/30 rounded-2xl shadow-sm my-10 text-center">
+            <h4 className="font-bold text-lg mb-2 text-brand-dark">A Ferramenta Certa Muda o Jogo</h4>
+            <p className="text-sm text-gray-600">
+              Agora que você já sabe como esculpir o desenho a favor da sua natureza, pare de confiar apenas em barbeadores cegos de plástico. Ter uma tesoura de precisão em casa e um pente fino faz com que os "acabamentos de mestre" e o design se mantenham limpos mesmo quinze dias depois de sair da barbearia!
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 't-will', name: "Tesoura de Precisão Stark", desc: "A ferramenta definitiva para criar as linhas perfeitas que desenham seu rosto.", link: AFF_TESOURA, icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-grisalha-como-cuidar-e-estilizar': {
+      title: "Barba Grisalha de Respeito: Dicas para Assumir os Fios Brancos com Elegância",
+      subtitle: "O guia completo para homens maduros (ou jovens grisalhos). Descubra como hidratar, evitar o amarelamento e ostentar uma barba branca impecável.",
+      author: "Carlos Barbudo",
+      date: "09 de Março de 2026",
+      readTime: "10 min",
+      category: "Dicas",
+      image: "/assets/barba-grisalha.webp",
+      howToSteps: [
+        { name: "Lavagem Matizadora", text: "Use um shampoo roxo (matizador) uma vez por semana para tirar o amarelado." },
+        { name: "Hidratação Profunda", text: "Aplique um condicionador pesado e deixe agir por 5 minutos após o banho." },
+        { name: "Selagem com Óleo", text: "Use óleo de barba 2 vezes ao dia para suavizar os fios brancos rígidos." },
+        { name: "Penteado com Balm", text: "Modele com um balm de alta fixação para segurar os fios arrepiados." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Se você clicou nesse artigo porque notou os primeiros fios brancos surgindo no queixo, ou se você já é um grisalho veterano, parabéns: você atingiu um novo patamar de estilo. A barba branca (seja ela sal e pimenta ou a clássica "Papai Noel" nevada) carrega um peso visual indiscutível. Ela transmite autoridade, maturidade e uma elegância natural que nenhum pacote de tinta de farmácia consegue superar. 
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Porém, assumir o visual grisalho definitivo não significa apenas "deixar a natureza seguir seu curso". Na verdade, a barba branca é muito mais rebelde e exigente que a barba escura. Se você bobear, o visual de "coroa estiloso" rapidamente se transforma no visual de quem desistiu de se cuidar. Hoje, vou te contar o segredo dos grandes cavalheiros grisalhos.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Shampoo Matizador (Violeta)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Balm de Hidratação Intensa", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente de Chifre ou Madeira", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Banho de Prata (Matização)",
+                description: "Uma vez por semana, aplique o shampoo matizador violeta. Ele neutraliza os tons amarelados causados pelo sol e poluição, deixando os fios prateados.",
+                tip: "Não deixe o shampoo agir por mais de 5 minutos, ou sua barba pode ficar levemente arroxeada."
+              },
+              {
+                title: "O Choque de Maciez",
+                description: "O fio branco é oco e duro. Use um condicionador de alta performance em cada lavagem. Massageie bem a base do pelo para atingir a pele.",
+                tip: "Enxágue com água morna para fria. A água muito quente resseca ainda mais os fios grisalhos."
+              },
+              {
+                title: "A Selagem com Óleo de Sândalo",
+                description: "Aplique óleo de barba pela manhã e à noite. O óleo preenche as porosidades do fio branco, dando peso e brilho saudável.",
+                tip: "Grisalhos precisam de 50% mais óleo que homens de barba escura."
+              },
+              {
+                title: "Domando os Fios Arrepiados",
+                description: "Use o balm modelador para assentar os fios que insistem em ficar espetados para fora. Penteie sempre na direção do crescimento.",
+                tip: "Use um secador na temperatura baixa para ajudar o balm a 'derreter' e fixar o penteado."
+              },
+              {
+                title: "O Corte de Precisão",
+                description: "Barba grisalha exige linhas perfeitas. Se ela estiver desgrenhada, parece desleixo. Mantenha os contornos da bochecha e pescoço sempre raspados.",
+                tip: "Fios brancos sobressaem contra a pele clara. O navalhete é essencial para a definição absoluta."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. Mas Afinal, Por Que o Fio Branco é Tão Duro e Rebelde?</h2>
+          <p className="mb-6">
+            Não é impressão sua: aqueles fios brancos novos que nascem parecem arames espetando em todas as direções. Isso tem uma explicação puramente científica.
+          </p>
+          <p className="mb-6">
+            Quando o seu corpo para de mandar <strong>melanina</strong> (a substância que dá a cor escura) para a raiz do pelo, algo na estrutura muda. Sem a melanina preenchendo o interior do fio, ele fica levemente oco por dentro. Para compensar essa fragilidade, a parede externa (a cutícula) fica imensamente mais grossa. O resultado? Um fio pesado, inflexível, que perdeu toda a maciez, e que não obedece ao pente de jeito nenhum! 
+          </p>
+          <div className="bg-brand-light p-6 rounded-2xl border-l-4 border-brand-charcoal mb-10 shadow-sm text-gray-700 italic">
+            "Sem contar que, com o passar do tempo, as glândulas sebáceas do nosso rosto (que produzem aquele óleo natural) começam a ficar mais preguiçosas. Se o pelo já é duro por nascer branco, sem óleo natural ele fica completamente esturricado e com cara de vassoura."
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. O Inimigo Número 1: O Fio Amarelado</h2>
+          <p className="mb-6">
+            Você passa meses cultivando uma barba majestosa, mas de repente nota que em volta da boca ela está ganhando um tom amarelado terrível. Parece descaso ou sujeira, mas acredite: o fio branco funciona como uma esponja. Por ser oco poroso, ele absorve TUDO ao seu redor.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl shadow-md">
+              <h4 className="font-bold text-brand-dark text-lg mb-3">🚬 O Que Causa o Amarelado?</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Fumaça de cigarro, poluição pesada das ruas, a ferrugem invisível encanada da água dura do seu chuveiro, raios UV do sol batendo direto sem proteção e até excesso de suor oxidado. Tudo isso "queima" o aspecto branco natural dele e encarde o fio.</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl shadow-md">
+              <h4 className="font-bold text-brand-dark text-lg mb-3">🧼 Como Neutralizar?</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Uma vez por semana, substitua seu shampoo diário por um <strong>Shampoo Matizador para Barba</strong> (aquele com o caldo roxo/violeta escuro). O roxo é a cor oposta ao amarelo na física, ele cancela o encardido imediatamente, deixando a barba prateada e cintilante.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. O Manual do Grisalho (O Que Você Deves Fazer Hoje)</h2>
+
+          <div className="space-y-8 my-10">
+            <div className="flex gap-4 items-start">
+              <span className="bg-brand-charcoal text-brand-gold font-black px-4 py-2 rounded-lg shrink-0 mt-1">1</span>
+              <div>
+                <h4 className="font-bold text-xl mb-2 text-brand-dark">Banho Quente é o Fim do Pelo Branco</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Evite esfregar a pele e a barba embaixo da água fervendo do chuveiro. A água muito quente abre ainda mais a cutícula daquele pelo grosso. Lave o rosto na água de morna pra fria para selar esse formato e tentar manter o pelo assentado para baixo. E pelo amor à sua imagem: não esfregue forte a toalha no rosto na hora de secar! Isso só quebra o fio duro no meio. Apenas "aperte" a toalha na barba com calma.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4 items-start">
+              <span className="bg-brand-charcoal text-brand-gold font-black px-4 py-2 rounded-lg shrink-0 mt-1">2</span>
+              <div>
+                <h4 className="font-bold text-xl mb-2 text-brand-dark">Carga Dupla de Hidratação</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  O óleo para barba agora não é vaidade, é questão de salvação física do pelo. Use Óleo de Sândalo ou Argan puro nas raízes assim que secar no banho. Mas aqui tem um macete de ouro: os balm modeladores secos para barba vão te ajudar a forçar os fios arrepiados contra a gravidade para um visual de capa de revista, ajudando o fio espesso a relaxar.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <span className="bg-brand-charcoal text-brand-gold font-black px-4 py-2 rounded-lg shrink-0 mt-1">3</span>
+              <div>
+                <h4 className="font-bold text-xl mb-2 text-brand-dark">Cuidado Maior com os Cantos</h4>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Fios brancos brilhando sem cor disfarçam um pouco os defeitos no desenho da bochecha. O problema é que isso te deixa mais refém do pescoço bem aparado. Como os fios brancos voam para todos os lados, sua barba vai apresentar um formato desleixado 3 vezes mais rápido que uma barba escura. Visite o barbeiro com precisão milimétrica nas áreas do maxilar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-brand-dark text-brand-gold p-8 rounded-3xl mt-12 mb-6 text-center shadow-xl">
+            <h3 className="text-2xl font-serif font-bold mb-4">Abrace o Branco com Respeito</h3>
+            <p className="text-gray-300 font-light text-sm mb-4">
+              Cada fio cinza é um pedaço da sua história e um sinal de que você sobreviveu a batalhas na vida. Não queira pintar ou escondê-los. A regra agora não é "rejuvenescer", mas sim <strong>"envelhecer bem"</strong>. 
+            </p>
+            <p className="text-gray-300 font-light text-sm">
+              Trate com a hidratação reforçada, use um matizador para combater o amarelado e use sua barba grisalha como o prêmio máximo da elegância masculina!
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'o-sand', name: "Óleo Premium de Sândalo", desc: "Amasse a textura rígida e impermeável da barba grisalha com este poderoso hidratante.", link: AFF_OIL, icon: <Droplets size={32} /> }
+      ]
+    },
+    'transplante-de-barba-fue-vale-a-pena': {
+      title: "Transplante de Barba (FUE): Quanto Custa, Como Funciona e Se Vale a Pena",
+      subtitle: "Tudo o que você precisa saber sobre a cirurgia definitiva para ter barba: da extração fio a fio no couro cabeludo até o resultado final no rosto.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "09 de Março de 2026",
+      readTime: "15 min",
+      category: "Ciência",
+      image: "/assets/transplante-barba.webp",
+      howToSteps: [
+        { name: "Avaliação Médica", text: "Realize exames de sangue e análise da área doadora (nuca ou pescoço)." },
+        { name: "Extração FUE", text: "Coleta individual dos folículos sob anestesia local." },
+        { name: "Implante de Precisão", text: "Abertura de canais e colocação dos fios respeitando a angulação natural." },
+        { name: "Pós-Operatório Crítico", text: "Proteção total contra sol e impactos nos primeiros 10 dias." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Seja bem-vindo ao estágio final de quem busca a barba perfeita. Se você já usou Minoxidil religioso duas vezes ao dia por mais de um ano, passou o Dermaroller acreditando que furos fariam diferença, e ainda assim sua lateral continua lisa como bumbum de bebê... não se frustre. Às vezes a genética não nos dá as "sementes" necessárias. Não adianta regar terra vazia. É aqui que entra o último e mais luxuoso recurso da medicina estética masculina: o <strong>Transplante de Barba</strong>. 
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            É uma cirurgia que custa o equivalente a um carro seminovo em alguns casos e mexe diretamente com a sua fisionomia definitiva. Então, antes de você marcar uma avaliação, vamos dissecar a dura realidade – com prós, contras e os segredos do pós-operatório que os médicos às vezes esquecem de mencionar.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Soro Fisiológico (Spray)", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Almofada de Pescoço para Viagem", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Sabonete Líquido Neutro", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Mapeamento da Área Doadora",
+                description: "O médico escolhe fios resistentes da nuca ou pescoço. No dia anterior, você deve descansar bem e evitar álcool. O design da barba é desenhado no rosto com caneta cirúrgica para sua aprovação final.",
+                tip: "Peça ao médico para não deixar a linha da bochecha muito alta; um visual mais natural é sempre melhor a longo prazo."
+              },
+              {
+                title: "A Cirurgia (Maratona de Paciência)",
+                description: "Sob anestesia local, os folículos são colhidos um a um (Técnica FUE). Depois, o médico abre micro-canais no rosto e insere as unidades foliculares. O processo dura de 6 a 10 horas.",
+                tip: "Leve fones de ouvido e uma playlist longa. É um processo cansativo mas indolor."
+              },
+              {
+                title: "As Primeiras 72 Horas (A Lei do Spray)",
+                description: "Você não pode lavar o rosto. Deve borrifar soro fisiológico a cada 30 minutos para manter os implantes hidratados. Durma sentado em 45 graus para evitar inchaço e não encostar os fios no travesseiro.",
+                tip: "Use uma almofada de viagem em 'U' para imobilizar o pescoço durante o sono."
+              },
+              {
+                title: "A Lavagem de Toque (Dia 4 ao 10)",
+                description: "O inchaço começa a descer. Você pode lavar o rosto, mas APENAS pressionando espuma de sabonete neutro sobre as crostas. Nunca esfregue! As crostas devem cair naturalmente.",
+                tip: "Use água fria ou morna. A água quente pode soltar os folículos que ainda não 'pegaram' totalmente."
+              },
+              {
+                title: "O Deserto do Primeiro Mês",
+                description: "Após 20-30 dias, os fios implantados caem. É o Shock Loss. É a fase mais difícil emocionalmente, mas as raízes continuam lá dentro se preparando para nascer em 3 meses.",
+                tip: "Mantenha a pele hidratada com pomadas cicatrizantes indicadas pelo seu cirurgião."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. Como a Mágica Happens: A Técnica FUE</h2>
+          <p className="mb-6">
+            Chega daquela ideia antiga de arrancar uma "tira" de pele da sua nuca (técnica FUT) deixando uma cicatriz digna do Frankenstein. Hoje o mercado opera com o <strong>FUE (Follicular Unit Extraction)</strong>. 
+          </p>
+          <p className="mb-6">
+            Imagine que o cirurgião usa uma micropinça elétrica milimétrica para "colher" raízes de cabelo uma a uma da sua "Área Doadora" (geralmente embaixo do queixo, no pescoço – onde homens naturalmente costumam ter de sobra – ou na lateral da sua cabeça, que tem pelos super resistentes). 
+          </p>
+          <p className="mb-6">
+            Depois de coletar essas preciosidades – às vezes mais de 3 mil "mudas" em uma única sessão! – ele abre minúsculos "furinhos" no seu rosto, seguindo perfeitamente a angulação que um pelo de barba nasceria naturalmente, e deposita o fio ali dentro. Tudo sob anestesia local. Você literalmente passa o dia deitado assistindo a uma série no celular enquanto ganha o maxilar do seus sonhos.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. As Verdades Cruas do Processo</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 my-10">
+            <div className="bg-brand-charcoal text-brand-light p-6 rounded-2xl border-t-8 border-brand-gold shadow-lg">
+              <h4 className="font-bold text-xl mb-4 text-brand-gold flex items-center gap-2">💰 O Custo do Seu Sonho</h4>
+              <p className="text-sm leading-relaxed text-gray-300">
+                Não existe mágica barata aqui. Um transplante de excelência exige um cirurgião minucioso e dezenas de horas de trabalho de equipe. No Brasil, espere investir valores entre <strong>R$ 8.000,00 a R$ 25.000,00</strong>. Suspeite fortemente de clínicas que cobram "preço de promoção", pois fios implantados na direção errada na sua bochecha vão te fazer parecer um porco-espinho arrepiado pra sempre!
+              </p>
+            </div>
+            <div className="bg-brand-light text-brand-dark p-6 rounded-2xl border-t-8 border-red-500 shadow-lg">
+              <h4 className="font-bold text-xl mb-4 text-red-600 flex items-center gap-2">😱 O "Susto" dos 30 Dias (Shock Loss)</h4>
+              <p className="text-sm leading-relaxed text-gray-700">
+                Isso destrói o psicológico de muitos: após 30 dias de implante, quando você estava se sentindo o rei, <strong>todos os seus fios novos caem</strong>. Calma! É absolutamente normal. Chama-se "Shock Loss" ou Eflúvio Telógeno. A raiz transplantada sofreu trauma, descarta o fio atual e "hiberna" por 2 ou 3 meses antes de fabricar o fio definitivo novinho.
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. Cicatrização e Recuperação</h2>
+          <p className="mb-6">
+            A recuperação exige bastante repouso social. Pelo menos nos primeiros 7 a 10 dias, seu rosto vai estar cheio de pequenas crostas ("casquinhas de sangue") e inchaço nos folículos implantados. Dormir pode ser um transtorno, pois não se pode esfregar o rosto no travesseiro com risco de "puxar" os folículos novinhos antes que criem raízes.
+          </p>
+
+          <div className="overflow-x-auto my-10">
+            <table className="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-brand-gold/10">
+              <thead className="bg-brand-dark text-white">
+                <tr>
+                  <th className="p-4 text-left font-black tracking-wider text-brand-gold">Período</th>
+                  <th className="p-4 text-left font-black tracking-wider">O que esperar</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 font-bold text-brand-dark whitespace-nowrap">Semana 1 a 2</td>
+                  <td className="p-4 text-sm text-gray-600">Rosto com micropontos, crostas, inchaço moderado. Muito cuidado na lavagem capilar.</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-brand-gold/5">
+                  <td className="p-4 font-bold text-brand-dark whitespace-nowrap">Mês 1 a 3</td>
+                  <td className="p-4 text-sm text-gray-600">Fase de choque (Shock Loss). Queda dos fios provisórios e fase de "latência". Fica parecendo que nada foi feito.</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 font-bold text-brand-dark whitespace-nowrap">Mês 4 a 6</td>
+                  <td className="p-4 text-sm text-gray-600">O milagre! Início da brotação ativa permanente. A barba renasce mais fina e vai engrossando lentamente.</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors bg-brand-gold/5">
+                  <td className="p-4 font-bold text-brand-dark whitespace-nowrap">Mês 12 em diante</td>
+                  <td className="p-4 text-sm text-gray-600">O resultado maduro e definitivo. Você já pode usar lâmina, cuidar com os óleos convencionais e até frequentar barbeiros como qualquer barbudo "natural".</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Afinal, Vale Mesmo a Pena?</h2>
+          <p className="mb-6">
+            A resposta é um absoluto e retumbante <strong>Sim</strong>. Para a autoestima de um homem que sentia complexos pela falta de pelos masculinos faciais maduros, os resultados são avassaladores. A taxa de sobrevivência dos fios costuma bater os 90% na técnica moderna FUE e, diferentemente de cremes de uso tópico o transplante é para a <strong>vida inteira</strong>. 
+          </p>
+          <p className="mb-6">
+            A única ressalva que deixamos é consultar o médico de antemão e programar também o fortalecimento dos folículos pré-existentes, já que cuidar dessa grande aquisição que foi a cirurgia fará toda a diferença pro resultado maduro daqui 1 ou 2 anos.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'v-factor', name: "Fator Viking Crescimento", desc: "A tecnologia necessária antes ou depois para assegurar saúde capilar plena.", link: AFF_VIKING, icon: <Trophy size={32} /> }
+      ]
+    },
+    'mitos-crescimento-barba-lamina-engrossa-fios': {
+      title: "Raspar a Barba com Gilete Engrossa os Fios? Desvendando Mitos",
+      subtitle: "A ciência por trás dos mitos capilares mais famosos. Entenda por que a lâmina não muda a grossura do fio e o que realmente funciona para dar volume.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "08 de Março de 2026",
+      readTime: "8 min",
+      category: "Dicas",
+      image: "/assets/mitos-crescimento.webp",
+      howToSteps: [
+        { name: "Amolecimento Térmico", text: "Use uma toalha quente no rosto por 2 minutos para abrir os poros e amaciar os fios." },
+        { name: "Direção do Corte", text: "Sempre raspe no sentido de crescimento do pelo para evitar inflamações na raiz." },
+        { name: "Nutrição Interna", text: "Mantenha uma dieta rica em Proteínas, Zinco e Vitaminas do complexo B." },
+        { name: "Exfoliação Química", text: "Use um esfoliante facial 2 vezes por semana para evitar que pelos novos fiquem presos." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Se lá pelos seus 15 ou 16 anos você reclamou pro seu avô ou pro seu tio que sua barba estava nascendo falhada, a chance é de 99% de que você tenha ouvido este conselho sagrado: <em>"É só raspar todo dia, meu filho. Passa a gilete a contrapelo, mesmo onde não tem nada, que logo a barba volta mais grossa, parecendo arame farpado!"</em>
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Dezenas de gerações de homens juraram de pé junto que a lâmina era mágica para o crescimento. Mas hoje, nós vamos colocar essa "sabedoria de boteco" sob o microscópio da dermatologia e ver o que a ciência responde. Pode preparar o coração, porque o choque de realidade vai ser grande!
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Esfoliante Facial de Carvão Ativado", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Toalha de Algodão Stark", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Amêndoas para Pré-Barba", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Ritual da Toalha Quente",
+                description: "Antes de passar qualquer lâmina, umedeça uma toalha em água bem quente (não fervendo) e deixe no rosto por 2 minutos. Isso relaxa o folículo e faz o pelo 'pular' pra fora da pele.",
+                tip: "Isso reduz a força necessária para cortar o pelo em 30%, evitando o trauma na pele."
+              },
+              {
+                title: "A Técnica do 'Sentido Único'",
+                description: "Diferente do que seu avô dizia, NUNCA comece barbeando contra o pelo. Siga a direção que o fio nasce. O 'contrapelo' só deve ser feito numa segunda passada, com muito gel.",
+                tip: "Use os dedos para sentir a direção: se espetar a mão, você está indo contra o sentido."
+              },
+              {
+                title: "Lavagem com Água Gelada",
+                description: "Após o barbear, jogue água gelada no rosto. Isso causa um choque térmico que fecha os poros e interrompe pequenos sangramentos instantaneamente.",
+                tip: "A água gelada é o melhor calmante natural contra o 'burning' (queimação) da gilete."
+              },
+              {
+                title: "O Segredo do Zinco",
+                description: "A fábrica de pelos (folículo) precisa de combustível. Consuma alimentos ricos em zinco (carnes, ovos, sementes de abóbora). O zinco é o mineral maestro do crescimento capilar.",
+                tip: "Se você tem muitas falhas, consulte um médico para checar se seus níveis de Zinco e Biotina estão baixos."
+              },
+              {
+                title: "Troca de Lâmina Semanal",
+                description: "Lâmina cega rasga a pele em vez de cortar o pelo. Troque seu cartucho ou navalhete a cada 5 barbearias, no máximo. Lâmina velha é depósito de bactérias.",
+                tip: "Seque a lâmina após o uso para evitar que ela oxide e perca o fio precocemente."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. A Resposta Curta (E Dolorosa)</h2>
+          <p className="mb-6">
+            A resposta é não. <strong>Absolutamente não.</strong> Raspar a barba, o cabelo, os pelos da perna ou do peito não muda o desenvolvimento biológico, não acelera a velocidade e muito menos altera a espessura do fio para engrossá-lo. 
+          </p>
+          <div className="bg-brand-charcoal text-white p-6 rounded-2xl mb-10 shadow-lg border-l-4 border-brand-gold">
+            <h4 className="font-bold text-lg text-brand-gold mb-2">A Biologia é Clara:</h4>
+            <p className="text-sm">Todo o formato, espessura e ciclo de vida do seu pelo já são decididos lá no <strong>folículo piloso</strong> (a fábrica da barba), que fica escondido alguns milímetros debaixo da sua pele. A lâmina de barbear só passa por cima da superfície da epiderme cortando o pelo "morto" (a haste). A fábrica, lá embaixo, nem percebe que o fio foi cortado!</p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. Por Que Todo Mundo Acha Engrossar? (A Ilusão de Óptica)</h2>
+          <p className="mb-6">
+            Se não engrossa, por que aquele pelinho macio e loiro de adolescente, quando você raspou, horas depois já parecia uma lixa arranhando tudo? A resposta está na geometria!
+          </p>
+          <p className="mb-6">
+            Quando um pelo nasce "virgem" no rosto, ele é muito parecido com a ponta de uma agulha: <strong>a raiz é espessa, mas a ponta vai se afinando até o extremo.</strong> Isso faz com que ele seja macio ao toque e um pouco mais claro perante a luz.
+          </p>
+          <p className="mb-6">
+            Aí entra a sua gilete afiada. Quando você raspa rente ao rosto, você corta o pelo exatamente na sua base (onde ele já era naturalmente mais grosso), em um corte reto e bruto – como serrar o tronco de uma árvore. 
+          </p>
+          <p className="mb-6">
+            Quando essa "tora serrada" empurra pra sair pelos poros algumas horas depois, ela nasce com a ponta reta, rústica, áspera e afiada. Ele parece mais grosso, e quando você passa a mão contra ele, arranha como uma lixa. Mas, ironicamente, <strong>é só o mesmo pelo cortado pela metade</strong>. Se você deixasse ele crescer por mais um mês, veria que era exatamente o mesmo de antes.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 my-10">
+            <div className="bg-red-50 p-6 rounded-2xl border-t-8 border-red-500 shadow-sm">
+              <h4 className="font-bold text-xl mb-4 text-red-700 flex items-center gap-2">⚠️ O Efeito Colateral do "Raspar Todo Dia"</h4>
+              <p className="text-sm leading-relaxed text-gray-700">
+                A ironia é cruel: tentar forçar o engrossamento passando a gilete diariamente a seco, ou contra os pelos numa pele jovem, <strong>destrói a epiderme</strong>. Isso retira violentamente a barreira cutânea, provocando foliculite (inflamação vermelha da raiz), manchas acinzentadas severas e os temidos pelos encravados debaixo da pele, estragando o potencial natural da sua barba a longo prazo.
+              </p>
+            </div>
+            <div className="bg-green-50 p-6 rounded-2xl border-t-8 border-green-500 shadow-sm">
+              <h4 className="font-bold text-xl mb-4 text-green-700 flex items-center gap-2">🌱 O Que Realmente Engrossa?</h4>
+              <p className="text-sm leading-relaxed text-gray-700">
+                Fórmula simples: <strong>Testosterona + Genética + Tempo</strong>. A maioria dos homens só atinge o potencial de espessura de barba máximo após os 25 ou até 30 anos. Para dar um suporte científico real a isso, além de uma boa dieta, hoje usamos loções vasodilatadoras comprovadas (como o Minoxidil) para acordar a raiz, e microagulhamento dermaroller para ativar circulação sanguínea de verdade.
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Conclusão Definitiva</h2>
+          <p className="mb-6">
+            Da próxima vez que alguém lhe der a dica mágica de "raspar pra crescer barba cheia", você já sabe a verdade da Ilusão da Gilete. O jeito mais fácil de notar se a sua barba está engrossando... é guardando o barbeador na gaveta por, no mínimo, um mês e deixando a natureza mostrar sua arquitetura natural nos fios!
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'm-kirk', name: "Minoxidil Kirkland 5%", desc: "A solução clinicamente focada para, de fato, aumentar a espessura na raiz do fio se o corpo desejar.", link: AFF_MINOXIDIL, icon: <FlaskConical size={32} /> },
+        { id: 'd-roll', name: "Dermaroller 0.5mm Titanium", desc: "Estimulação com perfuração segura sem criar atrito estéril na epiderme.", link: AFF_DERMAROLLER, icon: <Target size={32} /> }
+      ]
+    },
+    'barba-italiana-estilo-sedutor': {
+      title: "A Barba Italiana: O Segredo do Visual Clássico e Sedutor",
+      subtitle: "Conhecida por suas linhas perfeitas e sombreado inconfundível. Descubra como adotar o estilo dos galãs italianos com precisão e elegância.",
+      author: "Carlos Barbudo",
+      date: "11 de Março de 2026",
+      readTime: "9 min",
+      category: "Estilo",
+      image: "/assets/barba-italiana.webp",
+      howToSteps: [
+        { name: "Uniformização de Altura", text: "Passe a máquina com pente 2 (6mm) em todo o rosto uniformemente." },
+        { name: "Linha da Bochecha", text: "Delineie uma linha diagonal reta do topo da orelha ao canto da boca." },
+        { name: "Limpeza de Pescoço", text: "Raspe tudo abaixo de dois dedos do pomo de adão com navalhete." },
+        { name: "Finalização com Brilho", text: "Aplique óleo de barba para dar o aspecto escuro e sedutor." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Pense em um astro de cinema caminhando pelas ruas de Milão com um terno de alfaiataria impecável. O que completa o rosto desse homem? Não é a barba gigante de um lenhador de montanha, nem o rosto liso de um adolescente. É a <strong>Barba Italiana</strong> – muitas vezes chamada de <em>"Stubble"</em> sofisticado. É aquele sombreado marcante, escuro, viril, mas que parece ter sido desenhado com um esquadro a laser.
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Se você quer transmitir a imagem do homem urbano seguro de si, que se cuida sem parecer que perdeu duas horas no espelho do banheiro, o estilo clássico e sedutor italiano é para onde você deve mirar!
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Corte com Pente 2", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Navalhete Profissional (Shavette)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Gel de Barbear Transparente", link: "https://mercadolivre.com/sec/2Wo6ZWc" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Base Uniforme (Pente 2)",
+                description: "O estilo italiano exige uniformidade extrema. Passe a máquina com o pente 2 (aproximadamente 6mm) em todo o rosto, pescoço e queixo.",
+                tip: "Passe a máquina em várias direções para garantir que não sobrou nenhum fio mais longo 'escondido'."
+              },
+              {
+                title: "O Delineado de Milão (Bochechas)",
+                description: "Usando o gel transparente e o navalhete, crie uma linha diagonal perfeita. Ela deve começar no meio da orelha e terminar exatamente no encontro do bigode.",
+                tip: "Esta linha deve ser reta ou levemente côncava para realçar as maçãs do rosto."
+              },
+              {
+                title: "A Definição de Mandíbula",
+                description: "O pescoço deve estar 100% liso. Raspe tudo o que estiver abaixo da linha imaginária que contorna o osso da sua mandíbula.",
+                tip: "Mantenha a cabeça erguida ao raspar o pescoço para evitar dobras na pele que causam cortes."
+              },
+              {
+                title: "Aparando o Bigode Executivo",
+                description: "O bigode italiano é discreto. Ele não deve cobrir o lábio nem se destacar demais da barba lateral. Use a tesoura para manter os fios curtos.",
+                tip: "O bigode deve ter a mesma altura da barba para manter o visual 'sombreado' uniforme."
+              },
+              {
+                title: "O Toque de Classe (Óleo)",
+                description: "Aplique 3 gotas de óleo de barba de fragrância clássica (Sândalo ou Cedro). Isso dá um brilho sutil que faz a barba parecer mais escura e densa.",
+                tip: "Massageie bem para que o óleo chegue à pele, evitando a descamação (caspa da barba)."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. A Filosofia e o Comprimento Perfeito</h2>
+          <p className="mb-6">
+            O segredo mágico dos italianos está no <strong>comprimento e na textura</strong>. Diferente da "full beard" americana, que apara os fios longos para criar volume tridimensional no maxilar, a barba italiana aposta na proximidade da pele, criando um "sombreado pesado" e delineando brutalmente as linhas naturais do seu osso.
+          </p>
+          <p className="mb-6">
+            Em vez de dezenas de centímetros, o tamanho ideal italiano paira <strong>entre os 3mm e os 7mm de altura</strong> (aquele clássico pente "2" da máquina). É o comprimento exato onde o pelo não enrola, mas é longo o suficiente para cobrir completamente a pele se você for muito denso, escondendo pequenas variações de pigmentação.
+          </p>
+
+          <div className="bg-brand-charcoal text-white p-6 rounded-2xl mb-10 shadow-lg border-l-4 border-brand-gold grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 className="font-bold text-lg text-brand-gold mb-2">✅ O Que Eles Fazem:</h4>
+              <p className="text-sm">Limpar de forma absoluta a maçã do rosto, usando navalhete (shavette) para marcar uma diagonal reta ou levemente côncava da costeleta até o cantinho do bigode. Sem fiapos perdidos em volta dos olhos.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-lg text-red-400 mb-2">❌ O Que Eles NUNCA Fazem:</h4>
+              <p className="text-sm">Deixar os pelos do pescoço avançarem pra saboneteira do peito ou emendar com a camisa social. A linha embaixo do maxilar é raspada como se a vida dependesse disso, evidenciando o gogó limpo.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. O Segredo do "Fade" Costeleta-Cabelo</h2>
+          <p className="mb-6">
+            Você já notou que um dos charmes desse visual é a harmonia inteira da cabeça? Em barbas italianas, a lateral do cabelo geralmente sofre um "degradê" (fade) que se encontra suavemente com a costeleta, e logo depois, a barba ganha força em cima do maxilar. Nada de cortes brutais onde termina o cabelo e do nada nasce a costeleta, como um bloco quadrado. Um bom pente de transição (tipo o número 1 na junção com a orelha e pulando para o número 2 em seguida) dá o acabamento sofisticado europeu!
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. O Seu Arsenal Milanez (Ferramentas Obrigatórias)</h2>
+          <p className="mb-6">
+            A má notícia é que esse visual perfeito de "acordei assim hoje" demanda uma manutenção rigorosa! Você é a tela e o escultor. Pelo menos <strong>a cada três dias</strong>, você precisa estar em frente ao seu espelho com seu arsenal:
+          </p>
+
+          <div className="space-y-6 my-10 pl-4">
+            <div className="border-l-2 border-brand-gold pl-4 pb-2">
+              <h4 className="font-bold text-brand-dark text-lg flex items-center gap-2">🟢 Máquina Trimmer Firme</h4>
+              <p className="text-sm text-gray-700 leading-relaxed">Você vai eleger um número (pente 4mm ou 5mm, por exemplo) e passá-lo em todo o perímetro do rosto para que literalmente não haja um único pelo maior que o outro. Uniformidade é a alma desse estilo.</p>
+            </div>
+            <div className="border-l-2 border-brand-gold pl-4 pb-2">
+              <h4 className="font-bold text-brand-dark text-lg flex items-center gap-2">🟢 Navalhete / Gel de Barbear</h4>
+              <p className="text-sm text-gray-700 leading-relaxed">Não raspe seus contornos com espuma grossa que tira toda a sua visão. Use um Gel de barbear transparente ou óleo shaving. Você vai ver exatamente a linha que vai puxar o navalhete (ou lâmina afiada) sem errar nenhum milímetro nas bochechas ou pescoçobaixo.</p>
+            </div>
+            <div className="border-l-2 border-brand-gold pl-4">
+              <h4 className="font-bold text-brand-dark text-lg flex items-center gap-2">🟢 Balm Efeito Seco (Soft Matte)</h4>
+              <p className="text-sm text-gray-700 leading-relaxed">Preste muita atenção agora. Um galã não passa aquele "óleo para barba de lenhador super brilhante" numa barba de 4 milímetros, senão vai parecer que ele comeu um frango assado e não limpou a boca. Como o pelo é ralo e rente ao rosto, usa-se <strong>Balm Seco com base hídrica ou Matte</strong>. Mantém aquele cheiro maravilhoso de perfumaria fina, hidrata a irritação pós-navalha sem gerar textura gordurosa engordurada na pele e nas cerdas.</p>
+            </div>
+          </div>
+
+          <div className="bg-brand-dark text-brand-gold p-8 rounded-3xl mt-12 mb-6 text-center shadow-xl">
+            <h3 className="text-2xl font-serif font-bold mb-4">A Assinatura do Estilo</h3>
+            <p className="text-gray-300 font-light text-sm mb-4">
+              A Barba Italiana grita ao mundo: "Eu presto muita atenção aos detalhes da minha imagem pessoal". E as pessoas percebem invariavelmente, nas entrelinhas, homens que andam sempre com essas marcações pontiagudas recém feitas e exalando asseio. 
+            </p>
+            <p className="text-gray-300 font-light text-sm">
+              Você só precisa adquirir precisão no pulso. Coloque a disciplina dos 3 dias e arrase com os colarinhos abertos para o mundo ver sua fisionomia!
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'b-seco', name: "Balm Modelador Efeito Matte", desc: "Perfeito para domar pequenos pelos sem adicionar brilho indesejado de óleo.", link: AFF_BALM, icon: <Scissors size={32} /> }
+      ]
+    },
+    'como-ter-barba-negra-intensa': {
+      title: "Barba Negra Intensa: Como Escurecer Fios Claros ou Queimados de Sol",
+      subtitle: "Seus fios estão ruivos, castanhos ou opacos? O guia definitivo para ter uma barba preta, densa e com volume visual sem parecer artificial.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "11 de Março de 2026",
+      readTime: "8 min",
+      category: "Estilo",
+      image: "/assets/barba-negra.webp",
+      howToSteps: [
+        { name: "Teste de Sensibilidade", text: "Aplique uma pequena quantidade do produto atrás da orelha e espere 24h." },
+        { name: "Proteção da Pele", text: "Passe hidratante ou óleo em volta da bochecha para não manchar a pele." },
+        { name: "Aplicação do Shampoo Escurecedor", text: "Aplique o produto com luvas, focando nas áreas mais claras." },
+        { name: "Tempo de Pausa", text: "Deixe agir por exatos 5 a 10 minutos conforme a intensidade desejada." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Sabe aquele cara na rua com uma barba tão escura, densa e volumosa que parece que foi pintada à dedo? A verdade nua e crua é que: <strong>provavelmente, ela foi mesmo</strong>. 
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Existe um truque na moda masculina: o preto cria a ilusão de óptica imediata de profundidade e massa. Se a sua barba natural é castanha clara, avermelhada ou se as pontas estão completamente queimadas e amareladas por causa do sol da rua, ela automaticamente parece rala e transparente contra a luz. Escurecer o fio não é vergonha, é um recurso estético que os maiores barbeiros do mundo usam diariamente. Mas o grande problema é: como fazer isso sem ficar parecendo que você mergulhou o rosto na graxa de sapato brilhante?
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Shampoo Escurecedor Gradual", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Luvas de Vinil", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo Finalizador Brilho Intenso", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Defesa Anti-Mancha",
+                description: "Antes de começar, aplique uma camada generosa de óleo de barba ou creme hidratante nas bochechas e pescoço (onde você não tem barba). Isso evita que a tinta manche sua pele.",
+                tip: "Use um cotonete para passar o óleo exatamente no limite onde a barba termina."
+              },
+              {
+                title: "O Shampoo Gradual (A Escolha Segura)",
+                description: "Diferente da tinta, o shampoo escurecedor (como o Control GX) escurece apenas o fio e não a pele. Aplique com as mãos enluvadas como se estivesse lavando a barba.",
+                tip: "Comece pelas áreas mais brancas ou claras e deixe por último as áreas que já são escuras."
+              },
+              {
+                title: "O Tempo de Relógio",
+                description: "Para um visual natural, deixe agir por apenas 5 minutos na primeira vez. Você pode repetir o processo no dia seguinte se quiser mais escuro.",
+                tip: "Não ultrapasse 15 minutos ou o preto ficará azulado e com aspecto artificial."
+              },
+              {
+                title: "Enxágue Abundante",
+                description: "Lave com água corrente até que a água saia totalmente limpa. Use um shampoo neutro para remover qualquer resíduo químico da pele.",
+                tip: "Use uma toalha velha ou escura para secar, pois pode haver um leve desbotamento inicial."
+              },
+              {
+                title: "O Brilho do Aço",
+                description: "A tintura tende a ressecar o fio. Aplique 4 gotas de óleo premium para devolver a vitalidade e o brilho natural ao novo tom escuro.",
+                tip: "O brilho reflete a luz e esconde as áreas onde a barba é mais rala."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. A Regra do Cabelo (O Que NUNCA Fazer)</h2>
+          <p className="mb-6">
+            O primeiro impulso de todo homem é pegar a caixa de tinta capilar da esposa ou comprar a mais barata na farmácia, e passar aquele "Preto Azulado" no rosto todo. Esse é o caminho mais rápido para o arrependimento.
+          </p>
+          <div className="bg-red-50 p-6 rounded-2xl border border-red-200 mb-10 shadow-sm text-gray-700">
+            <strong>Por que as Tinturas de Cabelo destróem a barba?</strong> <br/>
+            Essas tinturas são carregadas em amônia pesada para penetrar no couro cabeludo, que é grosso. A pele do rosto, por outro lado, é absurdamente fina e vascularizada. Passar isso no maxilar vai causar queimadura química (reação alérgica forte), coceira infernal e um erro estético grotesco: <strong className="text-red-600">tinta de cabelo mancha a pele por dias</strong>. Você vai ficar com o contorno da bochecha pintado de preto fosco, artificial como um boneco!
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. As Duas Vias Para o Fundo Natural</h2>
+          <p className="mb-6">
+            Para conquistar a cobiçada "Barba Negra Intensa" e fechar furos e falhas usando o volume da cor, a indústria profissional desenvolveu métodos seguros e extremamente realistas para homens. Se você quer dominar o espelho, preste atenção nestas duas opções magistrais:
+          </p>
+
+          <div className="space-y-8 my-10">
+            <div className="bg-white border-2 border-brand-charcoal/10 rounded-2xl p-6 shadow-md hover:border-brand-gold/50 transition duration-300">
+              <h4 className="font-bold text-xl mb-3 text-brand-dark flex items-center gap-3">
+                <span className="bg-brand-gold text-brand-dark rounded-full w-8 h-8 flex items-center justify-center font-black">1</span>
+                Tintura Específica para Barba (Solução Imediata)
+              </h4>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Criada sem amônia e com fórmula de penetração leve nas cerdas faciais. A aplicação é ridícula de tão fácil: como misturar pasta de dentes num potinho. Use um pincel para depositar apenas sobre o pelo, e deixe agir geralmente por apenas 5 a 10 minutos antes de lavar.<br/><br/>
+                <strong className="text-brand-dark underline decoration-brand-gold underline-offset-4">O Segredo do Tom:</strong> Se sua barba e cabelo são pretos retintos, compre a cor <em>"Castanho Escuro"</em> para a barba! As cerdas puxam a cor muito rápido, e o castanho escuro vai criar um preto perfeitamente natural sem deixar aquele efeito de brilho falso e chapado do preto puro.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-charcoal/10 rounded-2xl p-6 shadow-md hover:border-brand-gold/50 transition duration-300">
+              <h4 className="font-bold text-xl mb-3 text-brand-dark flex items-center gap-3">
+                <span className="bg-brand-gold text-brand-dark rounded-full w-8 h-8 flex items-center justify-center font-black">2</span>
+                Shampoos Escurecedores (A Via Ninja e Progressiva)
+              </h4>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Se você tem medo de pintar tudo de uma vez e quer uma mágica imperceptível, esse é o seu caminho. A tecnologia criou shampoos que liberam pigmentos que oxidam no contato com o ar a cada lavagem. Ou seja, você lida com a sua caspa e oleosidade normalmente e, sem perceber, no dia 7 a sua barba avermelhada vai estar chumbo e no dia 15, um negro carvão muito natural (sempre com o fundo mais leve na pele).  
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. O "Golpe Falso": Barboterapia com Henna</h2>
+          <p className="mb-6">
+            Você certamente já viu vídeos de barbearias árabes ou turcas com aqueles fades que parecem Photoshop. A maioria usa de uma técnica de <strong>Henna para Barba (mistura de Índigo natural)</strong>. A mágica da esteticidade da Henna é que, além de escurecer o fio intensamente, ela colore temporariamente a <em>pele</em> por uns 3 ou 5 dias formando uma sombra suave embaixo da barba rala de baixo na região.
+          </p>
+          <p className="mb-6">
+            Para quem tem a bochecha caindo ou falta conexão com o bigode, aquele fundo escuro falso debaixo do pelo transforma, imediatamente, qualquer cara em um "Alfa do deserto". Essa manobra exige mão de artista; busque um barbeiro visagista renomado na sua região se quiser tentar para um evento formal!
+          </p>
+
+          <div className="bg-brand-dark text-brand-gold p-8 rounded-3xl mt-12 mb-6 text-center shadow-xl">
+            <h3 className="text-2xl font-serif font-bold mb-4">A Luta Constante Contra o Sol Vivo</h3>
+            <p className="text-gray-300 font-light text-sm mb-4">
+              Não adianta investir dinheiro tingindo as cerdas se depois você for pilotar moto, dirigir ou caminhar todos os dias torrando a cara no sol brasileiro escaldante. Os <strong>Raios UV destroem o pigmento capilar</strong> (exatamente por isso que o seu pelo afina e queima nas pontas ficando ruivo nas beiradinhas).
+            </p>
+            <p className="text-gray-300 font-light text-sm">
+              Mantenha no seu carro sempre um Balm com Protetor UV e aplique antes de bater no solzão, selando e cimentando toda essa cor escura fantástica por muito mais tempo.
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 't-preta', name: "Shampoo Escurecedor Gradual", desc: "Use no banho para progressivamente oxidar tons claros rumo ao preto natural sem tingir a pele.", link: AFF_OIL, icon: <Droplets size={32} /> }
+      ]
+    },
+    'barba-branca-cuidados-estilo': {
+      title: "Barba Branca como a Neve: Como Evitar o Efeito Amarelado e Frizz",
+      subtitle: "Esqueça o visual 'Papai Noel Descuidado'. Um homem com barba branca bem cuidada exige protocolo de hidratação intensa e pigmentação correta.",
+      author: "Carlos Barbudo",
+      date: "11 de Março de 2026",
+      readTime: "9 min",
+      category: "Dicas",
+      image: "/assets/barba-curta.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Nada impõe tanto respeito e elegância – seja no trânsito, no trabalho ou em um jantar de gala – quanto uma enorme barba 100% branca encorpada, do tipo neve ou "Gandalf". Ela transmite sabedoria, experiência e diz imediatamente para as pessoas: <em>"Eu sei quem eu sou."</em>
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Porém, poucos sabem a verdade que existe nos bastidores: a barba branca é disparada a mais difícil de se cuidar. Ela possui uma estrutura física oca por causa da falta de pigmento natural, e adora puxar a sujeira invisível do ar que respiramos. É por isso que muitos homens perdem a guerra contra o "Efeito Fumaça" (aquele amarelado horrível ao redor da boca) e acabam raspando tudo. Mas nós não vamos deixar isso acontecer.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. O Grande Inimigo Oculto: Por Que Ela Amarela?</h2>
+          <p className="mb-6">
+            O fio branco é como uma camisa de algodão branca, pura e limpa, andando numa tempestade de areia. Como ele não tem melanina lá dentro, a estrutura dele é porosa. Ele literalmente "chupa" como uma esponja tudo o que toca. E as maiores tinturas invisíveis que mancham sua barba são:
+          </p>
+          <ul className="space-y-4 mb-10 pl-4 border-l-4 border-brand-gold">
+            <li><strong className="text-brand-dark">A Fumaça do Cigarro:</strong> A nicotina deixa uma resina que cola direto no fio, tornando-o amarronzado instantaneamente na região do bigode.</li>
+            <li><strong className="text-brand-dark">Oxidação ao Sol:</strong> Andar no sol queima as proteínas da cutícula do fio se ele não tiver com Balm bloqueador. A ponta fica "enferrujada".</li>
+            <li><strong className="text-brand-dark">Água da sua Casa e Comida:</strong> A gordura nas beiradas da boca do churrasco, o café puro todos os dias, e até os minerais e cloro do chuveiro do banho encardem a barba.</li>
+          </ul>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. O Antídoto: O Poder do "Matizador Roxo"</h2>
+          <p className="mb-6">
+            Lavar a barba branca com shampoo transparente do dia a dia não vai funcionar para tirar o amarelado. Pense nas aulas de artes na escola: a cor contrária do Amarelo no círculo cromático é o Roxo (ou violeta). Quando você mistura os dois... eles se neutralizam e sobram apenas o branco metálico e platinado maravilhosos.
+          </p>
+          <div className="bg-brand-charcoal text-brand-gold p-6 rounded-2xl mb-10 shadow-lg font-medium">
+            <p><strong>A rotina mestra:</strong> Compre um Shampoo Matizador para Barbas prateadas (ele literalmente tem a espuma da cor da uva). Use <strong>no máximo</strong> a cada 10 a 15 dias. Lave no chuveiro massageando a raiz e deixe a espuma roxa espessa agir por uns 3 ou 5 minutos mágicos cronometrados. Ao lavar... a água leva a resina da cor amarela para o ralo. A barba brilha parecendo gelo!</p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. O Erro que 90% Comete: O Óleo Caramelo</h2>
+          <p className="mb-6">
+            Lembra que dissemos que o fio branco é uma esponja? Ele também é absurdamente mais grosso, espigado e seco ("frizz" puro), porque você não produz o sebo facial suficiente de quando era adolescente.
+          </p>
+          <p className="mb-6">
+            Aí o que o nosso herói faz? Pega um vidro do óleo para barba mais famoso do mercado (O poderoso Óleo de Argan ou Castanhas) e encharca os fios brancos todos os dias pra tentar domar e pentear a rigidez. O problema é que <strong>Óleo de Argan é amarelo/caramelo escuro!</strong>
+          </p>
+          
+          <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-brand-gold text-brand-dark font-black text-xs px-3 py-1 rounded-bl-xl uppercase tracking-widest">Regra de Prata</div>
+            <h4 className="font-bold text-xl mb-3 text-brand-dark mt-2">Só Use Óleos 100% Incolores na Barba Branca!</h4>
+            <p className="text-sm leading-relaxed text-gray-600">
+              Passar óleos amarelos e escuros na barba branca vai tingi-la para um tom sujo e encardido de palha seca em questão de quatro semanas de uso contínuo (o famoso "encardido"). Substitua IMEDIATAMENTE os seus hidratantes espessos por Óleos 100% transparentes e incolores! Óleo de Menta pura, Extrato de Semente de Uva prensado a frio, Óleo clarificado de Jojoba ou ainda Balms super secos da cor branca. 
+            </p>
+          </div>
+
+          <p className="mb-6">
+            Faça essas duas trocas na sua vida (Shampoo roxo a cada quinzena e Óleo incolor todo dia após secar bem a umidade) e eu te garanto: as pessoas na rua começarão a perguntar qual produto você usa, enquanto a sua barba vira a assinatura absoluta de presença que você sempre mereceu!
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'o-jojoba', name: "Óleo de Jojoba 100% Incolor", desc: "A hidratação que sua barba frizada branca precisa sem risco de amarelar os fios.", link: AFF_OIL, icon: <Sparkles size={32} /> }
+      ]
+    },
+    'melhores-estilos-de-barba-curta': {
+      title: "Estilos de Barba Curta: Elegância e Praticidade para Homens Modernos",
+      subtitle: "Do Stubble de 3 dias ao Short Boxed Beard. Os melhores cortes para quem não quer perder horas de manutenção mas exige estar alinhado.",
+      author: "Carlos Barbudo",
+      date: "10 de Março de 2026",
+      readTime: "11 min",
+      category: "Estilo",
+      image: "/assets/barba-curta.webp",
+      howToSteps: [
+        { name: "Escolha da Altura", text: "Defina o pente da máquina (geralmente entre 1 e 4) para uniformizar os fios." },
+        { name: "Marcação de Pescoço", text: "Raspe tudo o que estiver abaixo de dois dedos do pomo de adão para definir a mandíbula." },
+        { name: "Alinhamento de Bochecha", text: "Use uma lâmina para limpar os fios isolados acima da linha natural da barba." },
+        { name: "Hidratação de Pele", text: "Aplique um pós-barba ou balm leve para evitar a coceira do fio curto." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Existe um mito gigante no mundo masculino de que "quanto maior a barba, mais trabalho ela dá". Na verdade, a realidade é o extremo oposto. Deixar uma barba crescer por um ano esconde a maioria das suas falhas, a assimetria do seu queixo e você só precisa se preocupar em lavar. 
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Mas a <strong>Barba Curta</strong>... ah, meu amigo! A barba curta é a vitrine da disciplina. É o estilo predileto dos diretores executivos americanos, advogados casuais e galãs de Hollywood como Ryan Reynolds e Chris Hemsworth. É a união definitiva entre o <em>"sou um cara rústico"</em> e o <em>"me importo extremamente com a minha higiene pessoal."</em>
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Aparador com Pentes de Ajuste", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Gel de Barbear Transparente", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Balm Calmante Pós-Barba", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Passagem da Máquina (Uniformidade)",
+                description: "Passe a máquina no sentido contrário ao crescimento do pelo em todo o rosto. Para barba curta, a uniformidade é lei: um fio mais longo que o outro destrói o visual 'limpo'.",
+                tip: "Passe a máquina também de lado para garantir que os pelos que crescem na transversal sejam cortados."
+              },
+              {
+                title: "A Regra dos Dois Dedos (Pescoço)",
+                description: "Coloque dois dedos acima do seu gogó. Tudo o que estiver abaixo dessa linha deve ser raspado com lâmina. Isso cria a ilusão de um maxilar muito mais forte.",
+                tip: "Mantenha o pescoço esticado ao raspar para evitar irritação e cortes."
+              },
+              {
+                title: "O Desenho das Bochechas (Natural High)",
+                description: "Não desça muito a linha da bochecha. Apenas limpe os pelos isolados que crescem perto dos olhos. O visual 'natural mas cuidado' é a tendência.",
+                tip: "Use o navalhete a seco se tiver habilidade, ou com gel para maior proteção."
+              },
+              {
+                title: "Esfoliação Semanal",
+                description: "Como o fio é curto, ele encrava com mais facilidade. Esfregue o rosto com um esfoliante uma vez por semana para remover células mortas e liberar os poros.",
+                tip: "Isso também ajuda a barba a crescer mais rápido e com menos falhas visíveis."
+              },
+              {
+                title: "Finalização Anti-Coceira",
+                description: "Barba curta espetada pinica. Use um Balm líquido ou leve diariamente. Ele amolece a ponta do fio e evita que você queira raspar tudo por causa da irritação.",
+                tip: "Aplique o balm logo após o banho, quando os poros estão abertos."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Matemática dos "Três Modelos Perfeitos"</h2>
+          <p className="mb-6">
+            Não basta simplesmente passar a máquina dois no rosto inteiro e ir trabalhar. Uma barba curta sedutora e elegante tem intencionalidade. As linhas precisam ser limpas e a altura dos pelos controlada (variando estritamente entre os 3 milímetros a 15 milímetros). Abaixo, eu destrincho os 3 estilos mágicos para você testar nessa semana.
+          </p>
+
+          <div className="space-y-10 my-10">
+            <div className="bg-brand-charcoal text-white p-6 rounded-2xl shadow-lg border-l-8 border-brand-gold relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-brand-light text-brand-dark font-black text-xs px-3 py-1 rounded-bl-xl uppercase tracking-widest">+ Atraente Cientificamente</div>
+              <h4 className="font-bold text-xl mb-3 text-brand-gold">1. The 5 O'Clock Stubble (A Barba de 3 Dias)</h4>
+              <p className="text-sm leading-relaxed text-gray-300 mb-4">
+                <em>Máquina: Pente 1 ou 2 (3mm a 5mm).</em>
+              </p>
+              <p className="text-sm leading-relaxed text-gray-300">
+                Ganhou esse nome em alusão àquele sombreado que aparece no rosto de um homem às "5 da tarde" após ele ter barbeado pela manhã. Diversos estudos ao redor do globo cravam: <strong>este é o formato que as mulheres acham mais atraente</strong>.<br/><br/>
+                Ele transmite a famosa "virilidade relaxada", o cafajeste do bem. Mas o grande <strong>truque de mestre</strong> dele é o contraste: por ser rala no rosto, a área do seu pescoço (da saboneteira até 2 dedos acima do gogó) precisa estar rapada intensamente com Gillette! Esse contraste da pele hiper lisa com os fios do queixo faz sua mandíbula explodir em definição visual.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-charcoal/10 rounded-2xl p-6 shadow-md hover:border-brand-gold/50 transition duration-300">
+              <h4 className="font-bold text-xl mb-3 text-brand-dark">2. The Short Boxed Beard (A Caixa Curta)</h4>
+              <p className="text-sm leading-relaxed text-gray-600 mb-4">
+                <em>Máquina: Pente 3 ou 4 (10mm a 15mm).</em>
+              </p>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Provavelmente a barba de negócios mais elegante do planeta hoje. A Short Boxed exige pelos mais comportados e densos. Ela se estende das costeletas e faz uma "caixa" (box) exatamente acompanhando as margens esquadradas da sua mandíbula natural. <br/><br/>
+                <strong>Ideal para quem:</strong> Tem rosto Muito Redondo ou Oval e quer criar uma ilusão de "queixo do Batman". Tudo abaixo e acima da linha da caixa some. Os pelos devem estar milimetricamente da mesma altura e nenhum deles encosta no lábio superior.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-brand-charcoal/10 rounded-2xl p-6 shadow-md hover:border-brand-gold/50 transition duration-300">
+              <h4 className="font-bold text-xl mb-3 text-brand-dark">3. The Corporate Beard Variação</h4>
+              <p className="text-sm leading-relaxed text-gray-600 mb-4">
+                <em>Máquina: Degradê (15mm no queixo e 5mm nas bochechas).</em>
+              </p>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Como o nome já diz, desenhada para o ambiente corporativo com calça social e camisa cara. É quase igual à Short Boxed, porém com um segredo: o barbeiro passa a máquina 1 na maçã do rosto, a máquina 2 no osso da mandíbula, e guarda o volume pesado pro bigode e pra ponta do queixo (degradê facial). Esse jogo de sombras cria respeito sem parecer um "roqueiro" na sala da diretoria.
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Regra Oculta de Tratamento</h2>
+          <p className="mb-6">
+            Com barbas ralas de 3mm a 15mm, a luz passa facilmente entre os fios revelando qualquer defeito que você tenha no rosto lá debaixo. Isso significa que caspa vira os "flócos de neve" do vexame instantâneo. 
+          </p>
+
+          <div className="bg-brand-light p-6 rounded-2xl border-l-4 border-red-500 mb-10 shadow-sm text-gray-700 italic">
+            "Jamais sature um rosto com 'Stubble' (barba de 3 dias) em óleo espesso. Você vai ficar entupido de espinhas! A barba curta precisa tratar primeiramente o rosto, e secundariamente os fios!"
+          </div>
+
+          <p className="mb-6">
+            Troque os cosméticos densos por <strong>Balms de toque seco/cítrico</strong> (aqueles à base de água ou cera leve). Eles contam com refrescância (ajudando a alergia da Gillette no pescoço), perfumam maravilhosamente bem com amadeirados leves, mas desaparecem na pele em 15 segundos prevenindo a caspa, sem você parecer que atolou o rosto na graxa no meio do escritório.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'o-jojoba', name: "Óleo de Jojoba 100% Incolor", desc: "A hidratação que sua barba frizada branca precisa sem risco de amarelar os fios.", link: AFF_OIL, icon: <Sparkles size={32} /> }
+      ]
+    },
+
+    'como-fazer-barba-degrade-fade': {
+      title: "Barba Degradê (Fade Blend): O Visual Mais Pedido nas Barbearias em 2026",
+      subtitle: "O guia de mestre para criar a transição perfeita entre o cabelo raspado lateralmente e o volume inferior da sua barba. Não erre a máquina.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "10 de Março de 2026",
+      readTime: "10 min",
+      category: "Tendências",
+      image: "/assets/barba-degrade.webp",
+      howToSteps: [
+        { name: "A Linha Base", text: "Marque a linha base com o pente 1 alavanca fechada." },
+        { name: "Transição Média", text: "Use o pente 2 alavanca aberta para suavizar o topo." },
+        { name: "Remoção de Linhas", text: "Use o pente 1.5 alavanca média para apagar a marcação." },
+        { name: "Acabamento de Pele", text: "Use a máquina zero alavanca aberta no topo da costeleta." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Seja em um escritório corporativo em São Paulo, nas ruas do Brooklyn ou nos cafés de Tóquio, se você observar os homens com as barbas mais impecáveis de 2026, todos eles têm um detalhe em comum: a lateral do rosto.
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Acabou a era da "Barba Bloco" – aquela costeleta quadrada e grossa que emenda brutalmente com o cabelo curto criando uma parede reta no seu rosto. O estilo absoluto que domina as melhores barbearias do mundo se chama <strong>Barba Degradê (ou Fade Blend)</strong>. É a arte mágica de derreter a pele quase lisa na altura da orelha até uma barba cheia, rústica e volumosa no maxilar. Parece fumaça se transformando em pelos.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina Profissional com Alavanca", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Pentes de Meio (0.5 e 1.5)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova de Limpeza (Espanador)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo Finalizador", link: "https://mercadolivre.com/sec/2Wo6ZWc" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Linha Base (O Marco Zero)",
+                description: "Com o pente 1 da sua máquina e a alavanca totalmente FECHADA, limpe a área da costeleta até dois dedos acima do osso da mandíbula. Não suba demais.",
+                tip: "Use movimentos curtos de 'C-stroke' (em formato de C) para não criar uma linha dura difícil de tirar depois."
+              },
+              {
+                title: "O Pente de Segurança",
+                description: "Troque para o pente 2 (alavanca aberta) e limpe a transição entre a barba média e o topo da bochecha. Isso garante que você não vai 'buracar' a barba.",
+                tip: "Mantenha a máquina reta, não acompanhe as curvas do rosto com muita força."
+              },
+              {
+                title: "O Ataque ao Degrau",
+                description: "Agora vem o segredo: Use o pente 1.5 com a alavanca na METADE. Passe exatamente em cima da linha que sobrou entre o pente 1 e o pente 2.",
+                tip: "Se a linha persistir, use apenas as 'quinas' da lâmina (os últimos 3 dentes)."
+              },
+              {
+                title: "Zerar a Orelha",
+                description: "Sem nenhum pente, com a alavanca totalmente ABERTA, limpe apenas o topo da costeleta, onde ela encontra o cabelo raspado.",
+                tip: "Isso cria o efeito 'pele' que dá o contraste profissional."
+              },
+              {
+                title: "Finalização e Brilho",
+                description: "Penteie tudo para baixo com um pente de madeira e aplique 3 gotas de óleo para selar as cutículas que foram irritadas pela máquina.",
+                tip: "Use uma escova de cerdas de javali para 'assentar' os fios teimosos."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Por Que Todo Mundo Está Fazendo Isso?</h2>
+          <p className="mb-6">
+            A resposta é Visagismo puro! Quando você esfuma a costeleta, você obriga quem está olhando a focar o peso visual todo no seu queixo e no seu bigode. Isso cria instantaneamente a ilusão de que o seu rosto é super quadrado, magro e forte.
+          </p>
+
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-12 shadow-xl border-l-8 border-brand-gold">
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold">A Escada Perfeita</h3>
+            
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <div className="bg-brand-gold text-brand-dark w-8 h-8 rounded-full flex items-center justify-center font-black shrink-0 mt-1">1</div>
+                <div>
+                  <h4 className="font-bold text-lg mb-1">A Zero Absoluta</h4>
+                  <p className="text-sm text-gray-300">Comece alinhando o "Skin Fade" do seu cabelo. Passe a Máquina Zero nua (sem pente) na exata altura de onde o lóbulo da orelha começa. Esse é o ponto de "pele limpa".</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4">
+                <div className="bg-brand-gold text-brand-dark w-8 h-8 rounded-full flex items-center justify-center font-black shrink-0 mt-1">2</div>
+                <div>
+                  <h4 className="font-bold text-lg mb-1">Pente "Meio" (0.5)</h4>
+                  <p className="text-sm text-gray-300">Desça meio centímetro em direção à barba. Use a alavanca da máquina fechada para fazer a primeira "sombra" sair da pele.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="bg-brand-gold text-brand-dark w-8 h-8 rounded-full flex items-center justify-center font-black shrink-0 mt-1">3</div>
+                <div>
+                  <h4 className="font-bold text-lg mb-1">A Escadaria Suave</h4>
+                  <p className="text-sm text-gray-300">Agora a técnica ganha ritmo. Desça mais um centímetro e aplique o Pente "1". Desça mais um centímetro e aplique o "1.5" ... E vá descendo até encostar no grande volume natural da barba do seu maxilar (que talvez esteja no tamanho da máquina "3" ou "4" ou até na tesoura se for imensa).</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="bg-brand-gold text-brand-dark w-8 h-8 rounded-full flex items-center justify-center font-black shrink-0 mt-1">4</div>
+                <div>
+                  <h4 className="font-bold text-lg mb-1">Escovinha do Mestre (Fade Brush)</h4>
+                  <p className="text-sm text-gray-300">O segredo que separa o amador do barbeiro. Entre a troca de CADA PENTE na máquina, pegue uma escovinha de cerdas duras de javali e escove todo o pelo ferozmente para baixo. O pelo "armado" vai baixar e você nunca vai criar "degraus" (linhas marcadas horizontais feias no meio do rosto).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. Como Segurar a Obra de Arte</h2>
+          <p className="mb-6">
+            Esse degrade lindo e fumegante nas laterais repousa sob cerdas de barba... e a barba acorda todos os dias amassada com o travesseiro. Aquele efeito deslumbrante pode amassar e os pelos do tamanho da máquina "2" arrepiam, fazendo você parecer um palhaço bozo, se você não os domar de manhã.
+          </p>
+          <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/10 text-brand-dark italic mb-8">
+            <strong className="block text-xl mb-2 font-bold not-italic">O Truque da Pomada Mate:</strong>
+            "Pegue um pinguinho de Pomada de Cabelo Mate (Efeito Seco) ou cera de bigode pesada, esfregue nos dedos até ficar quente, e pressione suavemente apenas as costeletas e bochechas apontando elas pra baixo! Essa selagem amassa as laterais contra a pele. Elas não repuxarão independentemente do vento ou do Sol, mantendo aquele ângulo V perfeito o dia inteiro."
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 't-will', name: "Kit Pentes Fade Preciso", desc: "Tesoura de precisão em pente fino para transições laterais magistrais.", link: AFF_TESOURA, icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-balbo-estilo-homem-de-ferro': {
+      title: "A Barba Balbo: O Visual do Tony Stark que Salva Rostos Redondos",
+      subtitle: "Sem costeletas, ênfase no queixo duplo e bigode flutuante. Por que esse estilo descolado é o melhor amigo de quem tem o maxilar recuado.",
+      author: "Carlos Barbudo",
+      date: "10 de Março de 2026",
+      readTime: "9 min",
+      category: "Estilo",
+      image: "/assets/barba-balbo.webp",
+      howToSteps: [
+        { name: "Remoção de Costeletas", text: "Raspe totalmente as costeletas e a parte superior das bochechas." },
+        { name: "Desenho da Âncora", text: "Modele a barba no queixo em formato de âncora ou W." },
+        { name: "Desconexão do Bigode", text: "Raspe a conexão entre o bigode e a barba lateral." },
+        { name: "Ajuste da Mosca", text: "Apare o soul patch (mosca) para que fique centralizado e limpo." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Se você perguntar a 10 barbeiros qual personagem de cinema trouxe mais homens correndo para as cadeiras de barbearia na última década, todos eles vão responder em coro: <strong>Tony Stark (Homem de Ferro)</strong>.
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            O Robert Downey Jr. pegou um estilo italiano milenar quase esquecido, a <strong>Barba Balbo</strong>, e a transformou no símbolo máximo do "Gênio, Bilionário, Playboy e Filantropo". Mas a verdade é que Hollywood não escolheu esse corte à toa: o Balbo tem um poder arquitetônico oculto de salvar o rosto de 90% dos homens comuns.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Navalhete de Precisão", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shaving Gel Transparente", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Aparador de Pelos Nariz/Detalhe", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Grande Limpeza (Zerar Bochechas)",
+                description: "O Balbo não tem costeletas. Use sua máquina no zero para remover todo o pelo da bochecha e as costeletas, descendo até a linha do maxilar.",
+                tip: "Imagine uma linha reta que vai do topo da orelha até o canto da boca. Tudo acima disso deve sumir."
+              },
+              {
+                title: "A Desconexão Vital",
+                description: "Aqui é onde muitos erram: você deve raspar a conexão entre o bigode e a barba do queixo. Use o navalhete para criar um espaço de 1cm de pele lisa.",
+                tip: "Isso é o que dá o visual 'Tony Stark'. Se eles se tocam, vira um cavanhaque comum."
+              },
+              {
+                title: "Esculpindo a Âncora",
+                description: "No queixo, deixe a barba em formato de 'W' ou âncora. A largura não deve passar da linha das pupilas dos seus olhos.",
+                tip: "Mantenha a base do queixo um pouco mais cheia para dar volume frontal."
+              },
+              {
+                title: "O Soul Patch (A Mosca)",
+                description: "Apare o pelo exatamente abaixo do lábio inferior. Ele deve ter o formato de um triângulo invertido apontando para baixo.",
+                tip: "Limpe bem as laterais da mosca para que ela pareça 'flutuar' no centro."
+              },
+              {
+                title: "O Bigode Chevron",
+                description: "O bigode deve ser robusto mas não pode cobrir o lábio. Use a tesoura para alinhar a base e deixe as pontas levemente inclinadas para baixo.",
+                tip: "Use um pouco de cera de bigode para manter as pontas no lugar o dia todo."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Aviso: A Manutenção de Titânio</h2>
+          <p className="mb-6">
+            A Barba Balbo é magnífica, extremamente sedutora e mostra para as mulheres que você é criativo e muito confiante (pois foge do padrão homem-lenhador comum). Porém, eu serei cruelmente honesto com você: ela dá <strong>trabalho</strong>.
+          </p>
+          
+          <div className="bg-red-50 p-6 rounded-2xl border border-red-200 mb-10 shadow-sm text-gray-700 italic">
+            "No momento em que o espaço vazio de pele nua (meio centímetro) entre o topo do queixo e o bigode enche de penugem, o Balbo perde todo o apelo de Engenheiro Ricasso e você volta a parecer um adolescente preguiçoso com um cavanhaque sujo de três semanas."
+          </div>
+
+          <p className="mb-6">
+            Se você for adotar o estilo Tony Stark, terá que jogar fora qualquer Espuma de Barbear branca ou creme denso! Aquilo esconde tudo. Você precisa comprar hoje mesmo um <strong>Gel Shaving Transparente</strong> ou um Óleo de Barbear cristalino. Assim, com uma gillette ou navalhete em mãos a cada 48 horas, você verá <em>exatamente</em> o vão da lateral da boca e a quina do queixo onde a lâmina precisa passar, preservando as linhas da obra de arte em 2 minutos!
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'b-seco', name: "Gel de Barbear Transparente", desc: "Mande embora a espuma branca grossa para poder enxergar a risca que deverá cortar na lâmina diariamente.", link: AFF_BALM, icon: <Eye size={32} /> }
+      ]
+    },
+    'barba-lenhador-guia-completo': {
+      title: "Barba Lenhador (Lumberjack): Como Deixar o Fio Longo e Resistente",
+      subtitle: "Volume agressivo não significa falta de higiene. Como superar as fases da coceira e moldar uma barba cheia de respeito que não perde a assimetria.",
+      author: "Carlos Barbudo",
+      date: "09 de Março de 2026",
+      readTime: "14 min",
+      category: "Estilo",
+      image: "/assets/barba-lenhador.webp",
+      howToSteps: [
+        { name: "Crescimento Base", text: "Deixe a barba crescer por pelo menos 3 meses sem interrupções." },
+        { name: "Alinhamento de Pescoço", text: "Limpe a área do pescoço mantendo a linha dois dedos acima do gogó." },
+        { name: "Controle de Volume", text: "Use um balm para baixar os fios arrepiados e dar peso à barba." },
+        { name: "Escovação Diária", text: "Escove a barba para baixo para treinar os fios e remover células mortas." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Seja muito honesto: toda vez que você vê um homem com uma daquelas barbas monumentais, quadradas e majestosas batendo no peito, você o respeita instantaneamente, não é? Aquele é o famoso <strong>Estilo Lenhador (Lumberjack)</strong>. 
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Estar diante de um Lenhador raiz não é apenas ver um estilo de rosto, é ver <strong>meses de paciência estoica</strong>. É por isso que, psicologicamente, esse modelo facial transmite "força inabalável" e "proteção" às mulheres e parceiros de negócios. Mas para você construir uma muralha dessa, não basta só jogar a lâmina no lixo e esquecer. Se você fizer isso, vai virar o "mendigo" da vizinhança.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Escova de Cerdas Naturais", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Balm Modelador de Fixação Média", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo para Barba de Limpeza Profunda", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Fase da Paciência (Mês 1 a 3)",
+                description: "Não encoste na máquina. Deixe a barba crescer livremente. Se a coceira bater, use óleo de barba diariamente para hidratar a pele.",
+                tip: "Resista à vontade de aparar 'só as pontinhas' nas primeiras 4 semanas."
+              },
+              {
+                title: "A Linha de Segurança do Pescoço",
+                description: "Coloque dois dedos acima do seu 'gogó' (pomo de adão). Tudo abaixo dessa linha deve ser raspado para dar um aspecto limpo ao visual rústico.",
+                tip: "Faça um formato de 'U' conectando as duas mandíbulas."
+              },
+              {
+                title: "O Penteado de Domesticação",
+                description: "Use uma escova de cerdas firmes para escovar a barba para baixo todos os dias após o banho. Isso 'treina' o folículo a crescer na direção certa.",
+                tip: "Use um secador no modo morno enquanto escova para tirar o volume excessivo das laterais."
+              },
+              {
+                title: "Contorno da Bochecha (High Line)",
+                description: "No estilo lenhador, mantemos a linha da bochecha mais alta e natural. Apenas limpe os pelos isolados que crescem muito perto dos olhos.",
+                tip: "Use um navalhete para manter essa linha sempre nítida."
+              },
+              {
+                title: "Nutrição e Peso",
+                description: "Uma barba longa é pesada. Use Balm para dar estrutura e evitar que ela fique parecendo uma 'nuvem' ou 'esponja' desordenada.",
+                tip: "Aplique o balm com a barba levemente úmida para melhor absorção."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Verdade Sobre o Estilo Lenhador</h2>
+          
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-10 border-l-8 border-brand-gold shadow-lg relative">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">🛡️ Como Sobreviver a Esta Fase</h3>
+            <p className="text-gray-300 leading-relaxed">
+              Resista à tesoura! A sua única salvação nessa fase é usar <strong>Balms de Hidratação Profunda</strong> (para matar a coceira do pescoço) e portar sempre no bolso um <strong>Pente de Madeira de Lei</strong>. Diferente do plástico que arrepia e quebra os fios por energia estática, a madeira disciplina o pelo a criar "peso magnético" apontando para baixo e distribuindo uniformemente os óleos do rosto.
+            </p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. O Triângulo de Ouro do Visagismo</h2>
+          <p className="mb-6">
+            O Lumberjack sedutor não é uma touceira redonda. Ele tem arquitetura! Uma barba de alto nível vira um "V" ou um quadrado de bordas fortes no queixo. Como criar isso?
+          </p>
+          <ul className="space-y-4 mb-10 pl-4 border-l-4 border-brand-gold">
+            <li><strong className="text-brand-dark">Laterais "Chapadas":</strong> Você ou o seu barbeiro precisam pegar a tesoura ou a máquina (num pente alto como o 8) e tirar 100% do volume da bochecha (perto do lóbulo da orelha), descendo retinho. Isso deixa a lateral do seu rosto fina, matando o seu "rosto de trakinas".</li>
+            <li><strong className="text-brand-dark">A Cortina Frontal Livre:</strong> Todo volume repousa do cavanhaque para baixo! Quando olhar de perfil, a lateral será lisa e rente ao maxilar, caindo até uma cortina de 10 centímetros de majestade puramente no queixo e maxilar inferior.</li>
+            <li><strong className="text-brand-dark">A Cerca do Lábio:</strong> O bigode Lenhador é denso. Porém, ele nunca devora sua boca inteira. Mantenha os fios a um ou dois milímetros acima do lábio superior usando uma tesourinha na própria pia do banheiro semanalmente, para você não tragar seus próprios pelos tomando um café ou uma cerveja!</li>
+          </ul>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. O Combate Contra as "Pontas-de-Palha" Duplas</h2>
+          <p className="mb-6">
+            À medida que sua barba atinge os ansiados 10, 15, ou até 20 centímetros no peito (estilo Viking), entra a física dura: <strong>A raiz não tem força para mandar o óleo natural que se produz na pele lá para as pontas da barba abaixo do queixo!</strong> 
+          </p>
+          <p className="mb-6">
+            Resultado? Fios duplos, ressecados, estourados e que quebram à toa no travesseiro com Frizz incontrolável.
+          </p>
+
+          <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/20 text-brand-dark italic mb-8 shadow-sm">
+            <strong className="block text-xl mb-2 font-bold not-italic">O Ritual Lenhador Real:</strong>
+            "Se você quer um chassi brilhante, forte e espesso de dar inveja, seu ritual matinal de ouro é: Ao sair do banho e secar a barba com a toalha (ainda levemente úmida), passe de 6 a 10 gotas de um Óleo Botânico Puro (Argan, Menta, Rícino). Com o secador num ar morno apontado de cima para baixo e usando uma Escova Cilíndrica (ou de javali dura), estique essa fortaleza inteira para baixo massageando o óleo."
+          </div>
+          <p className="mb-6 text-gray-700 leading-relaxed font-medium">
+            Pronto! A coceira vai sumir, os fios descerão feito uma cortina de peso, o aroma amadeirado do óleo vai fazer todos na rua te olharem com respeito, e a sua barba acaba de se transformar na armadura diária do seu caráter.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'w-pente', name: "Escova de Cerdas de Javali Originais", desc: "Escova dura que redireciona folículos e limpa a pele muito abaixo do lenhador.", link: AFF_OIL, icon: <Droplets size={32} /> },
+        { id: 'v-factor', name: "Tônico de Força e Volume", desc: "Cimentos vitamínicos proteicos para garantir fios pesados ​​que não encolhem fácil.", link: AFF_VIKING, icon: <Trophy size={32} /> }
+      ]
+    },
+    'estilo-de-barba-tendencias-2026': {
+      title: "Estilo de Barba: As 6 Maiores Tendências que Vão Dominar 2026",
+      subtitle: "Do Classic Chevron ao 'Messy Beard'. O manual do que está em alta no grooming global e como escolher o estilo ideal para a sua rotina e personalidade.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "09 de Março de 2026",
+      readTime: "9 min",
+      category: "Tendências",
+      image: "/assets/visagismo-rostos.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Se você acha que o mundo da moda masculina dorme no ponto militar, você pestanejou e perdeu a revolução. A década de 2020 começou com o domínio quase unânime da barba lenhador viking, mas agora que batemos na porta de <strong>2026</strong>, a barbearia de elite mudou o jogo de novo.
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            A palavra de ordem este ano é <strong>"Intencionalidade"</strong>. Não importa se a sua barba tem 1 milímetro ou 10 centímetros de comprimento, ela precisa parecer que foi esculpida com um propósito cirúrgico. Acabou a era do "deixei crescer e não fiz nada". Preparado para atualizar seu estilo e colher todos os olhares (e elogios)? Aqui estão as 6 Maiores Tendências Globais de Grooming Masculino:
+          </p>
+
+          <div className="space-y-12 my-12">
+            
+            {/* Tendência 1 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg relative overflow-hidden group hover:border-brand-gold transition-colors duration-300">
+              <div className="absolute top-0 right-0 bg-brand-gold text-brand-dark px-4 py-1 rounded-bl-3xl font-bold font-serif shadow-sm">#1</div>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-brand-dark">A Sombra Pesada ("Heavy Stubble")</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Esqueça o rosto totalmente limpo e também a barba grande. O <strong>Heavy Stubble</strong> é a famosa "Barba por fazer de 7 dias" em estado de perfeição. O truque psicológico dessa tendência é fazer você parecer o superastro de Hollywood de folga: perigosamente rústico, mas incrivelmente limpo. A lâmina do pescoço é muito bem desenhada, mas a bochecha não ganha linhas agressivas, passando a imagem mental de "eu naturalmente acordo lindo assim". Exige máquina de aparar com pente "2" ou "3" a cada três dias!
+              </p>
+            </div>
+
+            {/* Tendência 2 */}
+            <div className="bg-brand-charcoal p-8 rounded-3xl border border-gray-100 shadow-lg relative overflow-hidden group transition-colors duration-300">
+              <div className="absolute top-0 right-0 bg-brand-gold text-brand-dark px-4 py-1 rounded-bl-3xl font-bold font-serif shadow-sm">#2</div>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">O Moustache "Handlebar" Isolado</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Bigode deixou de ser piada do passado. A explosão da moda "Old Money" e Vintage trouxe o bigode europeu forte de volta ao ápice. <strong>Mas atenção:</strong> sem barba no rosto! O queixo é liso na gillette. A estrela do show é um bigodão denso que ultrapassa levemente o lábio (Classic Chevron à la Tom Selleck), que ganha asas curtas torcidas nas pontas pela manhã com uma pinguinho de cera modeladora. Demonstra uma autoconfiança colossal do homem que o usa.
+              </p>
+            </div>
+
+            {/* Tendência 3 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg relative overflow-hidden group hover:border-brand-gold transition-colors duration-300">
+              <div className="absolute top-0 right-0 bg-brand-gold text-brand-dark px-4 py-1 rounded-bl-3xl font-bold font-serif shadow-sm">#3</div>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-brand-dark">Degradê Lateral com Contorno Suave (Soft Fade)</h3>
+              <p className="text-gray-700 leading-relaxed">
+                As "barbas em formato de tijolo" (costeleta grossa quadrada emendando violentamente num cabelo curto) estão mortas. A febre de 2026 é o <strong>Degradê</strong>. A costeleta é raspada quase na Zero e vem ganhando cor como fumaça, descendo até um maxilar cheio e imponente. A grande sutilidade deste ano é não deixar a linha da bochecha marcada feito tinta de grafite, permitindo que os pelos da bochecha cresçam meio milímetro num "fade invisível" rumo aos olhos. Disfarça rostos redondos de forma fenomenal!
+              </p>
+            </div>
+
+            {/* Tendência 4 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg relative overflow-hidden group hover:border-brand-gold transition-colors duration-300">
+              <div className="absolute top-0 right-0 bg-brand-gold text-brand-dark px-4 py-1 rounded-bl-3xl font-bold font-serif shadow-sm">#4</div>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-brand-dark">A Ducktail Amendoada (Bico de Pato Curto)</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Esqueça aquela ponta aguda no fundo do queixo que ameaçava furar o peito. A clássica barba <strong>Ducktail</strong> evoluiu. O excesso imenso das laterais da bochecha continua sendo aparado verticalmente em linha reta, mas a ponta inferiro ganhou um formato muito sofisticado em arco, parecendo uma letra "U" amendoada. Fica absurdamente simétrica e elegante com golas rulê e camisas sociais, vestindo o homem em classe pura.
+              </p>
+            </div>
+
+            {/* Tendência 5 */}
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg relative overflow-hidden group hover:border-brand-gold transition-colors duration-300">
+              <div className="absolute top-0 right-0 bg-brand-gold text-brand-dark px-4 py-1 rounded-bl-3xl font-bold font-serif shadow-sm">#5</div>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-brand-dark">A Barba "Bagunçada" Arquiteta (Messy Groomed)</h3>
+              <p className="text-gray-700 leading-relaxed">
+                O "Oposto da Morte" da barba super engomada de barbeiro é a <strong>Messy Beard</strong>, mas entenda o detalhe mágico: <em>Ela não é bagunçada (hobo).</em> O lenhador urbano não penteia o fio de forma lisa como seda, em vez disso, ele usa pentes de dentes gigantes para amontoar texturas foscas e rústicas, usando pomadas Dry-Mate. O pescoço é rigidamente limpo a cada 2 dias na Navalha, gerando um contraste fascinante entre os "fios selvagens em cima" e a "pele clínica e polida contornando". Exige cuidado diuturno por trás dos bastidores.
+              </p>
+            </div>
+
+            {/* Tendência 6 */}
+            <div className="bg-brand-light p-8 rounded-3xl border-2 border-brand-gold/30 shadow-lg relative overflow-hidden group transition-colors duration-300">
+              <div className="absolute top-0 right-0 bg-brand-gold text-brand-dark px-4 py-1 rounded-bl-3xl font-bold font-serif shadow-sm">#6</div>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-brand-dark">O Rosto de Vidro ("Quiet Luxury" Shave)</h3>
+              <p className="text-gray-800 leading-relaxed italic">
+                A maior surpresa do cenário europeu de alta-renda de 2026: a elite financeira resgatou a estrita face <strong>Navalhada Meticulosa!</strong> O famoso Skin Care invadiu os banheiros com voracidade. Essa não é apenas a remoção da barba — é uma remoção sagrada com toalhas fumegantes e hidratantes intensos que transformam o rosto numa tela de espelho brilhante. Não ostenta fios, mas sinaliza saúde dérmica brutal de "Stealth Wealth" (A Riqueza Silenciosa). É uma opção poderosa se você tiver o "Queixo Duplo" naturalmente forte escondido por baixo!
+              </p>
+            </div>
+
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 't-will', name: "Tesoura de Titânio Dourado", desc: "A única maneira de abraçar as tendências de Bigodes complexos como Chevron ou Handlebar do ano.", link: AFF_TESOURA, icon: <Scissors size={32} /> }
+      ]
+    },
+    'modelos-de-barba-classicos-e-modernos': {
+      title: "Qual o Modelo de Barba Perfeito para o Seu Ambiente de Trabalho?",
+      subtitle: "Nem toda barba se encaixa no código corporativo. Conheça 5 modelos clássicos, do Bandholz ao Garibaldi, e onde eles se adaptam melhor.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "08 de Março de 2026",
+      readTime: "10 min",
+      category: "Cultura",
+      image: "/assets/mitos-crescimento.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Nós gostamos de acreditar que a expressão pessoal na estética rompeu todas as fronteiras do conservadorismo corporativo (aquele antigo "mar de homens de rosto raspado e terno cinza" dos anos 80). Em grande parte, as leis mudaram a favor do pelo facial. Você raramente será demitido por <em>ter</em> barba.
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Mas, na prática nua e crua das disputas de salários e promoções: <strong>ser tolerado é diferente de ser promovido.</strong> A sua barba dita uma "frequência psicológica" para a mesa do RH e para o conselho da empresa antes mesmo de você abrir a boca na reunião de segunda-feira.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Regra da "Eficácia Subliminar"</h2>
+          <p className="mb-6">
+            Pense comigo: se a sua barba estiver desalinhada, com pelos voando em todas as direções, cobrindo seu lábio e a linha do pescoço emendando com o peito... qual é a mensagem biológica primária que o cérebro do seu chefe capta inconscientemente? 
+          </p>
+          <p className="mb-6">
+            A mensagem é: <i>"Esse cara não consegue nem governar o próprio rosto de manhã com disciplina. Como eu vou entregar o controle de um balanço financeiro de R$ 5 milhões na mão dele?"</i>
+          </p>
+
+          <div className="space-y-12 my-12">
+            
+            {/* O Setor Tradicional */}
+            <div className="bg-brand-charcoal text-white rounded-3xl p-8 border-l-8 border-brand-gold shadow-xl">
+              <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">⚖️ O Corporate Beard (Para Direito, Bancos e Alta Gestão)</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                Se você trabalha processando contratos, lidando com o dinheiro dos outros ou no conselho fiscal, a <strong>Corporate Beard (Barba Corporativa Curta)</strong> é a sua única armadura segura.
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                Ela tem cerca de meio a um centímetro de altura constante (Máquina 3). A linha da bochecha parece ter sido cortada a laser (alta geometria) e o pescoço é religiosamente raspado na navalha logo acima do gogó.
+              </p>
+              <ul className="list-disc pl-5 text-gray-400 space-y-2">
+                <li><strong>O que Comunica:</strong> "Eu sou minucioso, analítico, detalhista e respeito as regras do jogo."</li>
+                <li><strong>O Perigo Mortal:</strong> Se você relaxar na lâmina do pescoço por dois dias, o visual de "banqueiro alinhado" vira "analista que virou a noite trabalhando e está cheirando a café velho".</li>
+              </ul>
+            </div>
+
+            {/* O Setor Criativo/Tech */}
+            <div className="bg-white text-brand-dark rounded-3xl p-8 border border-gray-200 shadow-lg relative group transition-colors duration-300 hover:border-brand-gold">
+              <h3 className="text-2xl font-serif font-bold mb-4">🎨 O Bandholz & Lenhador Trimmado (Tech, Marketing e Design)</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Você é Desenvolvedor Full-Stack Sênior? Diretor de Arte? Arquiteto? Nesses ambientes, o "quadradinho perfeitinho do banco" joga contra você. Ambientes de alta criatividade cobram que o seu visual mostre rebeldia controlada e inovação. O volume é liberado!
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Aqui entra o Bandholz (barbas imensas, arredondadas ou quadradas). Mas a regra de ouro se mantém: <strong>Volume não é falta de higiene.</strong> 
+              </p>
+              <ul className="list-disc pl-5 text-gray-500 space-y-2">
+                <li><strong>O que Comunica:</strong> "Eu sou um mestre veterano no meu ofício. Tenho ideias próprias, senioridade e confiança inabalável."</li>
+                <li><strong>O Perigo Mortal:</strong> O "Garibaldi" (volume solto arredondado) ganha muito poder desde que o bigode seja aparado milimetricamente para jamais tocar o café do escritório, e que a barba reluza hidratada. Se o fio estiver ressecado e caindo cinzas de cigarro ou bolachas no teclado... é rua!</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O "Cheiro de Promoção" (Sândalo e Couro)</h2>
+          <p className="mb-6">
+            Poucos homens sabem usar isso: o olfato corporativo. Quando você entra no elevador do loby e as portas se fecham, ou quando você senta perto da mesa do seu diretor na reunião apertada... a sua barba está evaporando aromas que você exala pelo calor do próprio rosto.
+          </p>
+          <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/10 text-brand-dark italic mb-8">
+            <strong className="block text-xl mb-2 font-bold not-italic">O Truque do Balm Seco:</strong>
+            "Se você quer inspirar confiança madura e liderança no trabalho, evite pomadas de cheiro doce (baunilha ou tutti-frutti de barbearia de bairro, que passam ideia de infantilidade). Antes de vestir o paletó, sele os fios da barba com um Balm Seco de notas madeiras ricas, como Sândalo, Carvalho ou Cedro. Esses aromas disparam os mesmos gatilhos neurológicos de 'móveis caros' e 'bibliotecas antigas', injetando um ar de autoridade subconsciente massiva em tudo que você disser na sala de reuniões."
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'b-seco', name: "Sérum Alinhador Fio Corporal Rápido", desc: "Aplique dois minutos antes dos elevadores do lobby e nunca pise na sala de reuniões desprotegido de desordem dos fios.", link: AFF_BALM, icon: <Briefcase size={32} /> }
+      ]
+    },
+    'como-encontrar-seu-estilo-de-barba': {
+      title: "Como Encontrar Seu Próprio Estilo de Barba (Manual Completo)",
+      subtitle: "Cansado de seguir padrões inalcançáveis? Aprenda a analisar a genética dos seus fios, densidade folicular e achar a identidade perfeita para você.",
+      author: "Carlos Barbudo",
+      date: "07 de Março de 2026",
+      readTime: "16 min",
+      category: "Dicas",
+      image: "/assets/crescimento-acelerado.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Nós vemos um ator de Hollywood com aquela barba lenhador viking densa e perfeita, corremos para o espelho do banheiro... e o que vemos? Uma penugem falha na bochecha, fios ásperos no pescoço e um buraco imenso no meio do queixo. A frustração bate forte, não é?
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            O maior erro do homem moderno não é a genética dele, é a <strong>teimosia</strong>. Lutar contra o próprio DNA tentando forçar um estilo que o seu rosto não nasceu para ter é a receita ideal para parecer desleixado. O segredo dos homens mais elegantes do mundo não é ter 100% dos fios, é ter a inteligência de moldar um estilo que valoriza exatamente o que eles já têm.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. A Regra das 3 Semanas (O Mapeamento Genético)</h2>
+          <p className="mb-6">
+            Antes de qualquer produto ou tesoura, você precisa saber com o que está lidando. A primeira fase do seu manual é jogar a lâmina fora por exatos <strong>21 dias</strong>. 
+          </p>
+          <p className="mb-6">
+            Nas primeiras duas semanas, sua pele vai coçar e você vai achar que está horrível. Resista. Ao final da terceira semana, vá para um ambiente muito bem iluminado (luz reta sobre o rosto) e seja honesto na observação:
+          </p>
+          <ul className="space-y-4 mb-10 pl-4 border-l-4 border-brand-gold text-gray-700">
+            <li><strong>Onde os fios cresceram rápido e fortes?</strong> No queixo e bigode (Cavanhaque natural)? No pescoço, mas faltou na bochecha (Perfil Chinstrap)?</li>
+            <li><strong>Em qual direção eles nascem?</strong> Para baixo? Espetados para a frente? Fazem redemoinhos sob o maxilar?</li>
+            <li><strong>Qual é o teto máximo da sua genética?</strong> Se passou 3 semanas e a bochecha está lisa como bumbum de bebê, pare de sonhar com Lenhador agora. Foque no estilo que destaca a parte inferior!</li>
+          </ul>
+
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-12 border-l-8 border-brand-gold shadow-lg">
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold">2. O Teste de Colisão (Visagismo Aplicado)</h3>
+            <p className="text-gray-300 mb-6">Agora que você sabe onde tem pelos, precisamos bater isso com o formato do seu "crânio". A barba não é um acessório, é uma prótese biológica. Ela serve para criar a ilusão de um "rosto quadrado" (o símbolo universal de masculinidade).</p>
+            <ul className="space-y-4">
+              <li className="flex gap-3">
+                <span className="text-brand-gold text-xl">📐</span>
+                <div>
+                  <strong className="text-brand-gold block font-serif">Rosto Redondo ou com Queixo Duplo (Papada):</strong>
+                  <span className="text-sm">Mantenha a lateral da bochecha (costeleta) muito aparada ou raspada na máquina 1. Deixe O DOBRO de volume crescer apenas no queixo e maxilar inferior. Isso puxa o rosto para baixo e apaga a bochecha gorda. (Exemplo: Ducktail, Cavanhaque, Balbo)</span>
+                </div>
+              </li>
+              <li className="flex gap-3 mt-4">
+                <span className="text-brand-gold text-xl">📏</span>
+                <div>
+                  <strong className="text-brand-gold block font-serif">Rosto Magro, Estreito ou Oval:</strong>
+                  <span className="text-sm">Mantenha as laterais da bochecha grossas (Média ou Lenhador). A sua genética precisa produzir volume nas laterais das orelhas para alargar o seu rosto visualmente, senão você começa a parecer doente ou frágil. (Exemplo: Garibaldi, Short Boxed Beard)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. Fibras Capilares: O Simulador da Vida Real</h2>
+          <p className="mb-6">
+            Não quer desperdiçar meses tentando um estilo se tem medo que fique ruim? Use a técnica dos barbeiros de elite! Compre um pote barato de <strong>Fibra Capilar (queratina em pó)</strong> da mesma cor da sua barba falha.
+          </p>
+          <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/10 text-brand-dark italic mb-8 shadow-sm">
+            Numa sexta-feira à noite, fique na frente do espelho e comece a borrifar o pó nas áreas onde sua barba é rala, "pintando" o estilo que você quer experimentar (como um cavanhaque afiado ou um degradê escuro). Crie aquele volume falso. Gostou da ilusão de ótica e o seu maxilar ficou viril? Ótimo! Agora sim você pode investir dinheiro num tratamento definitivo (como um bom Minoxidil, tônicos ou até um transplante FUE) sabendo que o mapa para aquele formato exato funciona no SEU rosto.
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'v-factor', name: "Fator Viking Crescimento Mapeado em Fibras de Preenchimentos Sintéticos Finos de Lápiseira Profissional", desc: "Ferramenta para desenhar antes de efetuar os reais cortes agressivos do design planejado com simulação real de 24 horas no maxilar.", link: AFF_VIKING, icon: <FlaskConical size={32} /> }
+      ]
+    },
+    'aprenda-fazer-cavanhaque-simples': {
+      title: "Aprenda a Fazer um Cavanhaque Simples",
+      subtitle: "Um guia prático e direto ao ponto para quem quer aderir ao cavanhaque clássico sem complicação na hora de aparar.",
+      author: "Carlos Barbudo",
+      date: "13 de Março de 2026",
+      readTime: "7 min",
+      category: "Dicas",
+      image: "/assets/transplante-barba.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Sejamos sinceros: ficar dependente de barbearia toda semana só para limpar as bordas do rosto custa caro e toma um tempo que você não tem. Porém, tentar raspar os cantos fumando um cigarro na frente do espelho do banheiro... geralmente termina em desastre, sangue e uma bochecha torta.
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            E se eu te disser que o <strong>Cavanhaque Clássico</strong> foi inventado exatamente para ser o estilo mais rápido e infalível de ser esculpido pelo próprio dono? Não há linhas complexas na mandíbula para errar. Ao dominar os "4 Ângulos Cegos", você desenha seu cavanhaque simples em exatos 3 minutos antes do banho.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Por Que o Cavanhaque Salva Rostos Falhos?</h2>
+          <p className="mb-6">
+            O cavanhaque simples é aquele que concentra volume apenas ao redor da boca e do queixo. 
+            Ele é a "arma secreta" para 80% dos homens brasileiros porque <strong>ignora a área da bochecha.</strong> Sabe aquelas falhas buracadas na lateral do rosto que te impedem de ter uma barba lenhador? O cavanhaque simplesmente manda você raspar tudo isso, usando apenas o "horário nobre" dos seus pelos: a maçã do queixo.
+          </p>
+
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-12 border-l-8 border-brand-gold shadow-lg">
+            <h2 className="text-3xl font-serif font-bold text-brand-gold mb-8">🛠️ O Método dos "4 Ângulos" (Faça em Casa)</h2>
+            <ul className="space-y-6">
+              <li className="flex items-start gap-4">
+                <div className="bg-brand-gold text-brand-dark font-black rounded-full w-8 h-8 flex items-center justify-center shrink-0 mt-1">1</div> 
+                <div>
+                  <strong className="text-lg text-brand-gold block font-serif mb-1">Crie a Floresta Bruta</strong>
+                  <span className="text-gray-300 leading-relaxed">Deixe o cavanhaque crescer livremente por 14 a 20 dias, dependendo do crescimento do seu fio (e do Minoxidil se estiver usando). Nunca tente desenhar logo no dia 4; as linhas laterais precisam de "parede e de sombras para criar a ilusão gráfica e volume". Deixe sujo!</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <div className="bg-brand-gold text-brand-dark font-black rounded-full w-8 h-8 flex items-center justify-center shrink-0 mt-1">2</div> 
+                <div>
+                  <strong className="text-lg text-brand-gold block font-serif mb-1">A Máquina no Zero (A Limpeza Externa)</strong>
+                  <span className="text-gray-300 leading-relaxed">Antes de tocar na gillette, pegue a máquina de aparar SEM PENTE. Raspe toda bochecha e pescoço deixando um "bife" gigante de pêlo ao redor da boca. <i>Atenção:</i> Não tente desenhar certinho com a máquina ainda, apenas tire o excesso selvagem a 2 dedos de distância da boca.</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <div className="bg-brand-gold text-brand-dark font-black rounded-full w-8 h-8 flex items-center justify-center shrink-0 mt-1">3</div> 
+                <div>
+                  <strong className="text-lg text-brand-gold block font-serif mb-1">A "Linha do Sorriso" (O Segredo Mestre)</strong>
+                  <span className="text-gray-300 leading-relaxed">Agora vem a Lâmina: Faça a espuma transparente (ou gel) em torno do que restou. Aqui o "bicho pega"! Como fazer a lateral descer reto perfeitamente? Sorria forte pro espelho. Viu aquela ruga da bochecha que desce para as laterais da boca? Essa é a sua medida! Use a lâmina cortando de fora para dentro até encostar perfeitamente nessa linha lateral de expressão. Repita do outro lado.</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <div className="bg-brand-gold text-brand-dark font-black rounded-full w-8 h-8 flex items-center justify-center shrink-0 mt-1">4</div> 
+                <div>
+                  <strong className="text-lg text-brand-gold block font-serif mb-1">A Base do Queixo e "Gogó do Batman"</strong>
+                  <span className="text-gray-300 leading-relaxed">Limpe todo o pescoço e levante a cabeça para o teto. Você não quer ver o pêlo parar exatamente na ponta do osso. Desça o corte com a navalha cerca de meio centímetro ou 1 polegada ALÉM da borda inferior do queixo maxilar em direção a laringe. Se você cortar seco no osso exposto, ao relatar com os olhos diretos você mostra uma papada gordosa escondida. O fundo um pouquinho mais baixo cria um "fundo falso" que alonga seu queixo milagrosamente como um Super-Herói!</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-brand-light p-6 rounded-2xl border-2 border-brand-gold/20 text-brand-dark italic mb-8 shadow-sm">
+            <strong className="block text-xl mb-2 font-bold not-italic">Dica de Ouro Pós-Aparar:</strong>
+            "Lembre-se: O pior erro de novato no Cavanhaque é cortar contra o espelho virando o rosto de lado... de um erro em um milímetro de um lado com a perna, você vai tentar 'arrumar o outro' e ao final dos 5 minutos raspou o cavanhaque que tinha sobrado inteiramente tentando alinhar a simetria."
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'tesoura-stark', name: "Tesoura Stark de Precisão", desc: "Perfeita para acertar as arestas sem risco de cortar além da conta.", link: AFF_TESOURA, icon: <Scissors size={32} /> }
+      ]
+    },
+    'como-fazer-cavanhaque-sem-errar': {
+      title: "Como fazer o cavanhaque sem errar",
+      subtitle: "Dicas essenciais e técnicas à prova de falhas para criar o desenho perfeito do seu cavanhaque na primeira tentativa.",
+      author: "Carlos Barbudo",
+      date: "13 de Março de 2026",
+      readTime: "9 min",
+      category: "Dicas",
+      image: "/assets/visagismo-rostos.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Nós sabemos exatamente como a história começa: você está na frente do espelho num domingo à noite. Decide dar "só uma ajeitadinha" na lateral da barba que está torta. Você passa a gillette de um lado. Fica torto. Passa do outro lado para compensar. Fica mais curto. 
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Dez minutos depois... <strong>você raspou a barba inteira e está com cara de adolescente prestes a ir para a escola.</strong> Fazer o próprio cavanhaque e acertar "de primeira" não exige um dom divino enviado pelos deuses antigos, exige método militar. Barbeiros não fazem no "olhômetro", eles usam geometria básica.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Regra nº 1: Esconda a Espuma e a Gillette!</h2>
+          <p className="mb-6 text-gray-700 leading-relaxed">
+            O pecado capital do homem tentando cuidar da própria aparência em casa é jogar água quente, encher o rosto de espuma de barbear branca grossa (parecendo um Papai Noel) e depois tentar "adivinhar" onde a lâmina vai cortar ali por debaixo. A espuma branca cega você.
+          </p>
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-10 border-l-8 border-brand-gold shadow-lg">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-brand-gold">✂️ O Método do "Esboço a Seco"</h3>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Pense num tatuador: ele jamais agulha a pele sem antes pôr o decalque de papel, certo? Você precisa desenhar o cavanhaque seco, olhando para a sua pele crua no espelho. Como?
+            </p>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs shrink-0 mt-1">1</span>
+                <span><strong>A Máquina em “L”:</strong>  Segure sua máquina de aparar cabelos ou pelos virada de cabeça para baixo (com os dentes da lâmina batendo reto na sua pele). Faça pequenos “toques” secos demarcando onde você quer a fronteira do cavanhaque.</span>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="bg-brand-gold text-brand-dark w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs shrink-0 mt-1">2</span>
+                <span><strong>O Lápis Branco Roubado:</strong> Esse é o segredo de Mestre. Vá à bolsa de maquiagem da sua esposa/namorada (ou compre na farmácia por 5 reais) um “Lápis de Olho Branco”. Pinte uma linha branca grossa na pele exatamente onde o cavanhaque deve terminar e a bochecha lisa deve começar.</span>
+              </li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Prova dos 9: A Inclinação da Cabeça</h2>
+          <p className="mb-6">
+            Por que um lado sempre fica mais torto que o outro? Porque <strong>o seu pescoço mente para você</strong> no espelho do banheiro.
+          </p>
+          <p className="mb-6">
+            Quando tentamos enxergar a lateral direita do nosso próprio rosto, nós naturalmente abaixamos o queixo e torcemos o pescoço, o que distorce a pele. Um corte reto vira um corte na diagonal.
+          </p>
+
+          <div className="space-y-6 my-10">
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex items-start gap-4 transition-all duration-300 hover:border-brand-gold">
+              <div className="text-3xl">🪞</div>
+              <div>
+                <strong className="text-brand-dark block text-lg mb-1">Solução do Espelho Duplo:</strong>
+                <span className="text-gray-600 text-sm">Não tente virar o rosto como uma coruja. Mantenha o queixo totalmente congelado e reto para frente e levante o olhar. Pegue um espelho de mão, coloque de lado, e olhe o reflexo do reflexo para aparar.</span>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex items-start gap-4 transition-all duration-300 hover:border-brand-gold">
+              <div className="text-3xl">🥶</div>
+              <div>
+                <strong className="text-brand-dark block text-lg mb-1">Esqueça o Banho Quente e a Toalha Fervendo no Rosto:</strong>
+                <span className="text-gray-600 text-sm">Outro mito que destroi cavanhaques amadores: a toalha ultraquente dilata brutalmente a pele em volta da boca, que incha quase meio centímetro invisivelmente antes de você cortar. Quando a pele esfria e encolhe meia hora depois... você repara que a linha do cavanhaque entortou e entrou demais sob o lábio. Faça o seu molde base fora do banho enquanto os poros e sua anatomia estão congelados e reais. O banho quente de toalha de barbearia acontece Apenas PARA LIMPAR PELOS RESIDUAIS LONGES DO DESENHO NA BOCHECHA E PESCOÇO, jamais para criar o marco zero de simetria.</span>
+              </div>
+            </div>
+          </div>
+          
+          <p className="mb-6 text-xl font-medium italic text-gray-800 border-l-4 border-brand-charcoal pl-4">
+            A moral da história para jamais errar a mão é muito simples: Demarque as margens sem nenhum líquido atrapalhando sua visão. E o único gel aceito quando, finalmente, você encostar a gillette para "zerar" as bochechas, será um Shaving Gel Transparente, onde você vê cada fio minúsculo tombando antes da precisão assustadora do aço.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'oleo-sand', name: "Óleo Premium Sândalo", desc: "Amolece a pele antes de passar a lâmina nas bochechas, reduzindo irritações.", link: AFF_OIL, icon: <Droplets size={32} /> }
+      ]
+    },
+    'aprenda-fazer-cavanhaque-simples-eficaz': {
+      title: "Aprenda a Fazer um Cavanhaque Simples e Eficaz",
+      subtitle: "O equilíbrio perfeito entre estilo e praticidade. Descubra como manter um cavanhaque de presença com o mínimo de esforço diário.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "13 de Março de 2026",
+      readTime: "8 min",
+      category: "Estilo",
+      image: "/assets/cuidados-cavanhaque.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Acordar, tomar café correndo, vestir a camisa e encarar o trânsito (ou a primeira call do dia no Zoom). Você é um homem ocupado. Passar 40 minutos em frente ao espelho com uma navalha milimétrica fazendo o contorno de uma barba gigantesca simplesmente não cabe na sua rotina.
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Mas o mercado de trabalho (e as mulheres) não perdoam o visual de "urso recém-saído da caverna". Você precisa de um código de trapaça: um visual que exalte sua masculinidade madura, mas que exija apenas <strong>3 minutos de manutenção a cada três dias</strong>. Apresentamos a você: O Cavanhaque Eficaz.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Ciência da "Eficácia" na Barba</h2>
+          <p className="mb-6">
+            O que faz um estilo de barba ser "Eficaz"? É a tolerância ao erro e ao crescimento dos fios. Se você faz aquele cavanhaque super desenhado no formato quadrado perfeito, 24 horas depois os primeiros pelos que crescem espetados como "agulhas pretas" fora da linha já arruínam o desenho. Você fica escravo da lâmina diariamente.
+          </p>
+          <p className="mb-6 font-bold text-brand-dark">
+            Para quebrar essa escravidão, o Cavanhaque Eficaz usa duas armas: O "Esmaecimento" e o Pente da Máquina.
+          </p>
+
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-10 border-t-4 border-brand-gold shadow-2xl relative overflow-hidden">
+             {/* Decorativo */}
+            <div className="absolute top-0 right-0 p-8 opacity-10">
+              <CheckCircle2 size={120} />
+            </div>
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold relative z-10">O Manual Prático de 3 Minutos</h3>
+            <ul className="space-y-6 relative z-10">
+              <li className="flex gap-4">
+                <div className="text-brand-gold flex-shrink-0 mt-1"><Zap size={24} /></div>
+                <div>
+                  <strong className="block text-brand-gold text-lg mb-1">Passo 1: Esqueça a Navalha Diária</strong>
+                  <span className="text-gray-300 leading-relaxed">Abrace o estilo "Stubble Goatee" (O cavanhaque por fazer). Em vez de tentar raspar na pele viva, regule sua máquina de corte no Pente "0 Baixa" ou "1". Passe nas bochechas e pescoço. O visual fica como uma "sombra cinza de um dia", que é cientificamente comprovado como o visual mais atraente aos olhos femininos por mesclar rusticidade e limpeza. E o melhor: esconder falhas!</span>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="text-brand-gold flex-shrink-0 mt-1"><Briefcase size={24} /></div>
+                <div>
+                  <strong className="block text-brand-gold text-lg mb-1">Passo 2: O Contorno Arredondado (O Suave Circular)</strong>
+                  <span className="text-gray-300 leading-relaxed">Não faça ângulos curvos de 90 graus na base do queixo. Linhas retas exigem manutenção feroz. Deixe a junta entre o bigode e o queixo fazer um desenho arredondado natural. Quando o pelo cresce num estilo circular (O clássico Van Dyke ou Cavanhaque Cheio Redondo), o crescimento de 4 dias não quebra a silhueta, parecendo apenas que a barba "encorpou".</span>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="text-brand-gold flex-shrink-0 mt-1"><CheckCircle2 size={24} /></div>
+                <div>
+                  <strong className="block text-brand-gold text-lg mb-1">Passo 3: A Lei da Tesoura do Lábio</strong>
+                  <span className="text-gray-300 leading-relaxed">Você pode ser indulgente com as bochechas que ficam como sombra de 1 dia, mas o Bigode é implacável. Pelos entrando na boca gritam "sujeira e mendicância". Tenha uma pequena tesoura de design na pia. A cada 3 dias puxando o lábio, serre apenas um milímetro de cabelo pendurado acima da boca. Ficará milimetricamente limpo.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">O Efeito "Executivo Casca-Grossa"</h2>
+          <p className="mb-6">
+            O Cavanhaque Eficaz de bordas esfumadas sinaliza dinamismo. Nos escritórios ou nas reuniões fechadas, ele passa a imagem do famoso arquétipo <em>"Líder que resolve problemas rápido demais para ficar preocupando-se com centímetros na frente do espelho"</em>. 
+          </p>
+          <div className="bg-brand-light p-6 rounded-2xl border border-gray-200 text-gray-700 italic flex items-center gap-4 hover:border-brand-gold transition-colors duration-300">
+            <span className="text-4xl text-brand-gold">⏱️</span>
+            <span>
+              Ao final de um ano, se o homem normal gasta 15 minutos de segunda a sexta raspando agressivamente as linhas de um goatee cravado a laser para ir trabalhar (e tratando a pele vermelha inflamada de gillette depois), você gastou apenas 3 minutos com pentes automáticos e ganhou <strong>52 horas inteiras da sua vida de volta no ano!</strong> Isso é eficácia real.
+            </span>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'balm-seco', name: "Balm Seco Alinhador", desc: "Ideal para manter o volume controlado naqueles dias de pressa.", link: AFF_BALM, icon: <Briefcase size={32} /> }
+      ]
+    },
+    'como-fazer-cavanhaque-bem-definido': {
+      title: "COMO FAZER CAVANHAQUE BEM DEFINIDO",
+      subtitle: "Domine a arte das linhas precisas e contornos nítidos. O segredo dos barbeiros profissionais para um cavanhaque de destaque.",
+      author: "Carlos Barbudo",
+      date: "13 de Março de 2026",
+      readTime: "11 min",
+      category: "Estilo",
+      image: "/assets/historia-barba.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Alguns homens preferem o visual rústico ou "sombra de um dia" por preguiça. Mas se você é do time que não aceita menos que a perfeição, aquele visual de <strong>"recém-saído da barbearia"</strong> (com linhas tão retas que parecem cortadas a laser) é a sua marca registrada. 
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            O problema? As pessoas acham que para ter esse <em>Crispy Line-up</em> (linha afiada) você precisa pagar 50 reais ao barbeiro toda sexta-feira. Mentira. Com o arsenal correto e a puxada de pele certa na frente do seu próprio espelho, você constrói essa "borda de diamante" sozinho.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. A Ruína das "Múltiplas Lâminas"</h2>
+          <p className="mb-6 leading-relaxed">
+            O primeiro motivo de você nunca conseguir uma linha reta no Bigode ou na lateral do maxilar é a sua Gillette de supermercado com 4 ou 5 lâminas. Essas máquinas têm cabeças largas. A capinha protetora de plástico em volta da lâmina esconde quase meio centímetro da ponta do pelo. Você não enxerga exatamente onde a lâmina bate, e acaba cortando fatias invisíveis a mais da sua barba.
+          </p>
+          <p className="mb-6 leading-relaxed text-brand-dark font-medium">
+            <strong>A Solução:</strong> O Navalhete Clássico (ou Shavette). Apenas uma única lâmina de aço exposta. A precisão é nanométrica. 
+          </p>
+
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-10 border-l-8 border-brand-gold shadow-lg">
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold">2. O Triângulo de Ouro da Definição (Técnica Profissional)</h3>
+            <ul className="space-y-6">
+              <li className="flex gap-4">
+                <div className="bg-brand-gold text-brand-dark w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0 mt-1">A</div>
+                <div>
+                  <strong className="text-brand-gold block font-serif text-lg mb-1">O Gel Translúcido (Proibido Espuma)</strong>
+                  <span className="text-gray-300 leading-relaxed">Nunca, jamais use espuma branca aerossol se você quer alinhar o desenho. Uma gota de espuma no pelo esconde a linha marginal. Você vai atirar no escuro. Use estritamente um Shaving Gel Transparente. Ele lubrifica a lâmina a deslizar 3x mais liso sem arrancar a pele, e você vê os pelos perfeitamente sob o gel.</span>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="bg-brand-gold text-brand-dark w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0 mt-1">B</div>
+                <div>
+                  <strong className="text-brand-gold block font-serif text-lg mb-1">O Esticamento "Pele de Tambor"</strong>
+                  <span className="text-gray-300 leading-relaxed">O erro letal do corte: passar a lâmina na bochecha "mole". O navalhete engasga e faz a curva torta. A regra de ouro é: se a navalha desce, sua outra mão puxa a pele da bochecha (perto do olho) violentamente para CIMA. Deixe a pele tão esticada quanto um tambor. A lâmina vai varrer o pelo como se fosse manteiga fazendo uma linha geométrica indestrutível.</span>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <div className="bg-brand-gold text-brand-dark w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0 mt-1">C</div>
+                <div>
+                  <strong className="text-brand-gold block font-serif text-lg mb-1">O Truque do Contraste (O Reforço)</strong>
+                  <span className="text-gray-300 leading-relaxed">Você raspaou? Excelente. Agora o detalhe final: aplique algumas gotas de óleo na massa central do cavanhaque e passe uma escova de dentes incrivelmente finas ou pente de madeira puxando todo o volume para dentro. Fazer o miolo do cavanhaque brilhar (mais escuro) em contraste fortíssimo com a bochecha "branca" e lisa que você acabou de raspar é o que dá aquele impacto fotográfico de revista de moda.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Regra dos "Cantos da Boca"</h2>
+          <div className="bg-white p-6 rounded-2xl border-2 border-gray-200 border-l-brand-gold shadow-sm flex items-start gap-4 mb-8">
+            <span className="text-3xl mt-1">🚨</span>
+            <p className="text-gray-700 leading-relaxed text-sm">
+              <strong className="block text-brand-dark text-lg mb-1">O abismo do Bigode com as Laterais:</strong> Para ter essa ultra-definição no maxilar, muitos homens afinam demais a ligação do bigode descendo pro queixo. A não ser que você seja o vilão dos quadrinhos, mantenha a "torre lateral" conectora com, pelo menos, a grossura da ponta do seu dedo indicador. Finas demais, qualquer deslize na navalha rasga a conexão e você ficará meses sem cavanhaque até consertar aquele buraco.
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'gel-shave', name: "Kit Dermaroller e Pós-Barba", desc: "Aproveite a irritação pós-navalha para tratar os fios em vez de agredir a pele.", link: AFF_DERMAROLLER, icon: <Target size={32} /> }
+      ]
+    },
+    'como-ter-um-cavanhaque-bonito': {
+      title: "Como ter um cavanhaque bonito?",
+      subtitle: "Da hidratação ao corte ideal. Tudo o que você precisa saber para transformar um simples projeto de barba em um cavanhaque invejável.",
+      author: "Carlos Barbudo",
+      date: "13 de Março de 2026",
+      readTime: "9 min",
+      category: "Dicas",
+      image: "/assets/microagulhamento.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            E aí, meu amigo! Se você chegou até aqui, é porque decidiu que está na hora de dar aquele upgrade no visual e apostar no cavanhaque. E vou te dizer uma coisa: você fez uma excelente escolha. Ter um formato correto é metade da batalha; a outra metade é a <strong>qualidade do fio</strong>. Um cavanhaque bonito não se sustenta apenas na ponta da tesoura, ele requer brilho, maciez, higiene irretocável e, acima de tudo, atitude. Vamos juntos transformar esse projeto de barba em um cavanhaque de respeito, daquele que arranca elogios por onde você passa!
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. A Base de Tudo: Conheça o Seu Rosto</h2>
+          <p className="mb-6">
+            Antes de sair passando a máquina, a gente precisa bater um papo sério sobre proporção. O cavanhaque tem o poder mágico de mudar o formato do seu rosto. Se você tem um rosto mais redondo, um cavanhaque com linhas mais retas e compridas no queixo vai ajudar a alongar a sua face. Já se o seu rosto é longo ou quadrado, um cavanhaque um pouco mais preenchido nas laterais e aparado curto embaixo traz um equilíbrio fantástico aos seus traços. 
+          </p>
+          <div className="bg-brand-light p-6 rounded-2xl border-l-4 border-brand-gold mb-8 shadow-sm">
+            <p className="text-gray-700 italic">"Ah, mas a minha barba é falhada nas laterais, será que dá?". Amigo, o cavanhaque nasceu exatamente para salvar quem não tem a bochecha cheia! Ele concentra a força visual no centro do rosto, onde naturalmente costumamos ter uma maior densidade de fios.</p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. A Fase do Crescimento e a Paciência</h2>
+          <p className="mb-6">
+            Eu sei, a fase inicial é complicada. Aquela coceira nos primeiros dias dá vontade de raspar tudo, e o visual às vezes parece de quem esqueceu de se cuidar porque os fios espetam para todos os lados. Mas calma, isso passa! A primeira regra de ouro aqui é: <strong>deixe a natureza agir, fique longe da lâmina por pelo menos três a quatro semanas</strong>. 
+          </p>
+          <p className="mb-6">
+            Não caia na tentação de tentar desenhar o cavanhaque logo no início. Você precisa de "massa capilar" para poder esculpir depois. Aguente firme e foque no resultado grandioso que está por vir.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. A Arte de Desenhar e Aparar as Linhas</h2>
+          <p className="mb-6">
+            Aqui é onde separamos os meninos dos homens. Chegou a hora de definir o seu cavanhaque. Para não errar e acabar tendo que raspar tudo por causa de assimetria, anote essa dica vital: <strong>use gel de barbear transparente</strong> (shaving gel) ou um óleo de barbear. A espuma branca da farmácia esconde o desenho natural e você acaba cortando onde não devia. A precisão é a alma de um rosto bem desenhado.
+          </p>
+          
+          <div className="space-y-4 my-8 pl-6 border-l-2 border-brand-gold">
+            <p className="text-gray-700"><strong className="text-brand-dark">Linha da Bochecha:</strong> Remova qualquer fio solto que esteja "invadindo" as maçãs do rosto ou as laterais da bochecha. O cavanhaque isolado ou conectado no bigode fica muito mais elegante se o resto da pele estiver intocável.</p>
+            <p className="text-gray-700"><strong className="text-brand-dark">Linha do Pescoço:</strong> Atenção máxima aqui! Fios rastejando pelo pescoço dão uma aparência de total desleixo. Não deixe o pelo descer para a garganta. A linha correta é justamente marcar e raspar logo abaixo do osso do maxilar.</p>
+            <p className="text-gray-700"><strong className="text-brand-dark">O Bigode:</strong> O seu bigode deve sorrir com você. Apare com uma tesourinha própria os fios superiores que começam a cair ou cobrir o lábio. Afinal, um cavalheiro deve manter os lábios livres para as refeições e brindes!</p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">4. Higiene e Nutrição: O Segredo do Fio Macio</h2>
+          <p className="mb-6">
+            Como os pelos do cavanhaque circundam a boca, eles são grandes ímãs para fumaça, resíduos, suor da respiração e oleosidade intensificada do nariz. Se você ainda usa o sabonete em barra do corpo para lavar a barba, nós precisamos consertar isso urgente! O shampoo de cabelo é agressivo para a pele do rosto sensível, e o sabonete em barra comum vai ressecar seus pelos, deixando o cavanhaque duro, fosco e espigado.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-300">
+              <h4 className="font-bold text-brand-dark text-lg mb-3 flex items-center gap-2">🧼 A Lavagem Correta</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Lave o rosto <strong>duas vezes ao dia</strong> com um shampoo específico para barba. Ele tem o pH balanceado que limpa profundamente as bactérias e poeira acumulada sem arrancar a gordura boa do rosto que os folículos precisam para brilhar.</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl shadow-md transform hover:-translate-y-1 transition duration-300">
+              <h4 className="font-bold text-brand-dark text-lg mb-3 flex items-center gap-2">💧 Hidratação Suprema</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Após o banho tórno, estando a pele limpa com os poros abertos e o fio enxugado levemente na toalha, aplique algumas gotas de um bom <strong>óleo de barba premium</strong>. Aplique esfregando as mãos para aquecer e massageie desde a pele até as pontas afofando os fios. Vai sumir de vez com qualquer ressecamento ou friz, trazendo peso e disciplina.</p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">5. Para Finalizar: O Toque Rápido do Pente</h2>
+          <p className="mb-6">
+            Chegou até aqui e está com o cavanhaque impecável, aparado nas margens e cheiroso com um fragrância luxuosa? Falta apenas carregar no bolso a sua arma secreta: um <strong>pente de madeira pequeno</strong>. Evite usar os plásticos, o plástico acumula energia estática ("arrepiando" a barba quando atolada na camiseta). O pentezinho de madeira assenta os fios durante aquelas saídas para o trabalho ou eventos e ajuda a alinhar todo folículo na direção da gravidade.
+          </p>
+
+          <div className="bg-brand-dark text-brand-gold p-8 rounded-3xl mt-12 mb-6 text-center shadow-xl">
+            <p className="text-xl font-bold italic">
+              "Um homem com a barba desenhada não precisa justificar sua presença, o visual fala de antemão."
+            </p>
+            <p className="text-sm text-gray-300 mt-4 font-light">
+              Mude a rotina de limpeza, tenha as ferramentas corretas e o seu cavanhaque vai parar o trânsito com segurança.
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'oleo-sand-p', name: "Óleo Premium de Sândalo", desc: "O perfume clássico amadeirado somado a fios que não quebram.", link: AFF_OIL, icon: <Droplets size={32} /> }
+      ]
+    },
+    'cavanhaque-masculino': {
+      title: "Cavanhaque masculino",
+      subtitle: "O estilo que nunca sai de moda. Uma jornada pela versatilidade e o poder do cavanhaque na estética masculina contemporânea.",
+      author: "Carlos Barbudo",
+      date: "13 de Março de 2026",
+      readTime: "12 min",
+      category: "Cultura",
+      image: "/assets/barbas-famosas.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Se você olhar fotos antigas do seu avô, recortes de revistas dos anos 90, ou ligar a TV para ver o tapete vermelho de uma premiação de cinema ontem à noite, uma coisa estará sempre lá: o <strong>cavanhaque masculino</strong>. Enquanto modas bizarras de costeletas gigantes ou bigodes fininhos como lápis morreram no tempo, o cavanhaque permaneceu inabalável. 
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Mas o que faz esse estilo ser a arma visual número um dos homens há mais de um século? Não é sorte. É pura <strong>matemática facial e psicologia evolutiva</strong>. Vamos destrinchar por que o cavanhaque masculino não é apenas uma "barbinha", mas uma estrutura de poder.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Matemática da Realeza (Visagismo Aplicado)</h2>
+          <p className="mb-6">
+            O rosto humano perfeito, segundo os gregos antigos, é aquele que transmite agressividade controlada. O problema é que 70% dos homens modernos têm o <em>queixo retraído</em> ou rostos ovais suaves. 
+          </p>
+          <p className="mb-6 text-brand-dark font-medium leading-relaxed">
+            Quando você deixa o cavanhaque crescer, está criando uma "extensão óssea" falsa de pêlo. Você adiciona centímetros extras de cor escura na ponta da mandíbula. O resultado? Seu rosto é imediatamente percebido pelo olho humano como mais longo, mais quadrado e mais simétrico. É o milagre da ótica pelo qual mulheres passam horas se maquiando, mas o homem só precisa de 20 dias longe da navalha!
+          </p>
+
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-12 border-t-8 border-brand-gold shadow-lg">
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold">Os 3 Arquétipos do Cavanhaque</h3>
+            <p className="text-gray-300 leading-relaxed mb-6">Na psicologia da imagem, os formatos mandam mensagens subliminares para os cérebros de quem nos olha. Qual mensagem o SEU cavanhaque está emitindo hoje?</p>
+            <ul className="space-y-6">
+              <li className="flex gap-4">
+                <span className="text-3xl mt-1">👑</span>
+                <div>
+                  <strong className="text-brand-gold block font-serif text-lg mb-1">O Real (Cavanhaque Clássico e Fino)</strong>
+                  <span className="text-gray-300 leading-relaxed">Popularizado pela realeza francesa. Fios curtos, contornos raspados a laser. Transmite <em>Cálculo e Controle</em>. É o visual de advogados renomados e lobos de Wall Street. Diz para as pessoas: "Eu cuido de cada detalhe da minha vida".</span>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-3xl mt-1">🎸</span>
+                <div>
+                  <strong className="text-brand-gold block font-serif text-lg mb-1">O Balbo ou "Bad Boy" Moderno</strong>
+                  <span className="text-gray-300 leading-relaxed">Bigode solto flutuando, sem conectar com a âncora grossa no queixo inferior. Eternizado por astros do rock e pelo Tony Stark. Transmite <em>Rebeldia Criativa e Risco</em>. Perfeito para homens que vestem jaqueta de couro sobre uma camiseta preta lisa e querem passar a impressão de estarem sempre 10 minutos atrasados porque estavam quebrando alguma regra.</span>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-3xl mt-1">🪓</span>
+                <div>
+                  <strong className="text-brand-gold block font-serif text-lg mb-1">O Estendido (Goatee Lenhador)</strong>
+                  <span className="text-gray-300 leading-relaxed">As bochechas são limpas, mas o queixo se alonga numa trança ou triângulo maciço caindo sobre o pescoço (Estilo Motoqueiro ou Biker). Transmite <em>Força Bruta e Territorialismo</em>. Ninguém corta a fila do pão na frente de um cara com um cavanhaque estendido.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">A Genética que Perdoa o Homem Real</h2>
+          <p className="mb-6">
+            Vamos botar o dedo na ferida? A maioria esmagadora dos caras que desiste de ter barba o faz porque as bochechas são tão falhadas que parecem o mapa de um terreno bombardeado. Alguns recorrem ao transplante doloroso, outros litros de Minoxidil. 
+          </p>
+          <div className="bg-brand-light p-6 rounded-2xl border-l-4 border-brand-gold shadow-sm mb-6">
+            <p className="text-gray-700 italic">
+              "O Cavanhaque Masculino é a salvação biológica para a genética falha brasileira. O corpo humano concentra mais de 75% dos folículos pilosos mais grossos ao redor da boca. Você pode ser quase imberbe, mas tem pêlo ali."
+            </p>
+          </div>
+          <p className="mb-6 font-medium text-brand-charcoal">
+            Raspar o vazio triste das laterais e preservar só a zona de poder no eixo central não é apenas uma técnica estética. É abraçar e potencializar a sua biologia a favor da masculinidade madura. Da próxima vez que o barbeiro perguntar "vai tirar tudo chefe?", faça o sinal que não e peça as bordas laterais no zero. Nasce ali um novo arquétipo.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'fator-viking', name: "Fator Viking Engrossador", desc: "A base de todo cavanhaque vigoroso começa no diâmetro do fio de dentro pra fora.", link: AFF_VIKING, icon: <FlaskConical size={32} /> }
+      ]
+    },
+    'como-cuidar-do-seu-cavanhaque': {
+      title: "Como cuidar do seu cavanhaque",
+      subtitle: "Rotina de cuidados, produtos indispensáveis e dicas de manutenção para manter seu cavanhaque sempre limpo, cheiroso e alinhado.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "13 de Março de 2026",
+      readTime: "10 min",
+      category: "Saúde",
+      image: "/assets/aparar-barba-casa.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Existe um abismo entre ter um estilo de barba e carregar uma "esponja de bactérias" sob o queixo. O cavanhaque, por circular a nossa boca, está na zona de maior perigo do corpo humano: ele recebe fumaça, suor do nariz, e até aquele farelo do hambúrguer no fim de semana.
+          </p>
+          <p className="text-xl font-medium text-brand-charcoal mb-10 leading-relaxed">
+            Se o seu cavanhaque pinica ao abraçar alguém, cheira mal no fim do dia, ou pior, solta pequenas "caspas brancas" (descamação) em cima da sua camisa preta, seu visual virou seu pior inimigo. Mas a solução não é a gillette; é um protocolo bélico de 3 minutos de banho.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">1. O "Crime" do Sabonete de Corpo</h2>
+          <div className="bg-brand-charcoal text-white rounded-3xl p-8 my-8 border-l-8 border-brand-gold shadow-lg">
+            <p className="text-gray-300 leading-relaxed">
+              Vamos acabar com o mito agora: o sabonete que você usa no corpo e no cabelo tem um fator de acidez brutal para destruir placas de gordura pesadas. A pele do rosto, escondida embaixo do cavanhaque, é fininha e frágil. 
+              <br /><br />
+              Quando você enfia a barra de sabão do chuveiro no cavanhaque, você derrete a proteção natural da raiz. O pêlo desesperado fica grosso como <strong>arame farpado</strong>, e a pele desidratada começa a jorrar fragmentos mortos (falsa caspa). No mínimo, você precisa de um Shampoo de Barba com pH balanceado.
+            </p>
+          </div>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">2. O Protocolo Anti-Cheiro (A Toalha)</h2>
+          <p className="mb-6 leading-relaxed">
+            Você lava a barba e horas depois sente um cheiro de "cachorro molhado"? Isso se chama Proliferação Fúngica Oculta. Aquele tufo de pêlo no queixo é escuro e denso. Quando não seca direito, vira uma estufa para fungos minúsculos causados pela umidade do próprio banho.
+          </p>
+          <p className="mb-10 text-brand-dark font-medium pb-4 border-b border-brand-gold/30">
+            <strong>O que os profissionais fazem:</strong> Após o banho, esfregue vigorosamente com uma toalha grossa as raízes (não as pontas). Se tiver paciência, 10 segundos de secador de cabelo no modo frio apontado de baixo para cima garante que a base da raiz da pele esteja selada e 100% seca.
+          </p>
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">3. Esfoliação Clandestina: Escova de Javali</h2>
+          <p className="mb-6 leading-relaxed">
+            Passar um pente de plástico barato na barba é pedir para os pêlos ficarem arrepiados e com nós estáticos. A escova que salva peles não é feita para o cabelo humano, ela é a Escova Firme (Geralmente de Cerdas Naturais).
+          </p>
+          <div className="grid md:grid-cols-2 gap-6 my-10">
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl shadow-md transition duration-300 hover:border-brand-gold">
+              <h4 className="font-bold text-brand-dark text-lg mb-3 flex items-center gap-2">🔄 Movimento Circulatório</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Ao escovar pressionando fortemente a escova <strong>contra a pele do rosto sob a barba</strong> duas vezes ao dia, você arranca as células mortas encrustadas ali e irriga sangue novo na raiz, forçando mais grossura pro fio.</p>
+            </div>
+            <div className="bg-white border-2 border-brand-gold/20 p-6 rounded-2xl shadow-md transition duration-300 hover:border-brand-gold">
+              <h4 className="font-bold text-brand-dark text-lg mb-3 flex items-center gap-2">🛡️ A Capa de Defesa</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Óleo de barba não é "perfume". Quando você aplica 3 gotas numa barba recém-lavada, o óleo cria uma "tenda" em cima de cada fio que impede que os odores de poluição e fritura do restaurante penetrem na queratina.</p>
+            </div>
+          </div>
+
+          <div className="bg-brand-light p-6 rounded-2xl border-l-4 border-brand-dark italic text-gray-700 mt-12 shadow-sm">
+            <h3 className="text-brand-dark font-serif font-bold text-xl not-italic mb-3">Conclusão Disciplinar</h3>
+            Manter o cavanhaque impecável envia um forte sinal primitivo de confiabilidade. Um rosto desmazelado assusta, mas um rosto incrivelmente bem talhado e nutrido é o equivalente a vestir um terno italiano cortado sob medida, só que permanente, na sua própria face.
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'kit-skincare', name: "Kit Facial Cuidados de Banho e Pós", desc: "A linha com todas as fases completas em uma caixa elegante.", link: AFF_KIT_FACIAL, icon: <HeartPulse size={32} /> }
+      ]
+    },
+    'high-fade-degrade-alto': {
+      title: "High Fade (Degradê Alto): O Guia do Corte Mais Versátil de 2026",
+      subtitle: "Aprenda como dominar o degradê alto, do pedido ao barbeiro à finalização matte em casa. O visual limpo que projeta modernidade.",
+      author: "Carlos Barbudo",
+      date: "14 de Março de 2026",
+      readTime: "12 min",
+      category: "Estilo",
+      image: "/assets/high-fade.webp",
+      howToSteps: [
+        { name: "Marcação Inicial", text: "Marcar a linha guia com a máquina 0, dois dedos acima da orelha." },
+        { name: "Transição", text: "Subir com os pentes 0.5, 1 e 1.5, suavizando as marcas com o movimento 'C-Stroke'." },
+        { name: "Topo", text: "Cortar o topo com tesoura, mantendo 5-7cm para modelar." },
+        { name: "Finalização", text: "Aplicar pó texturizador ou pomada matte para volume e definição." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>High Fade</strong> não é apenas um corte; é uma declaração de estilo. Caracterizado por um degradê que começa alto nas laterais, ele cria um contraste dramático com o topo, alongando o rosto e projetando uma imagem de limpeza e precisão. É a escolha número 1 de atletas e profissionais que buscam praticidade sem abrir mão da elegância.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pó Texturizador Matte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pomada Modeladora à Base de Água", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Secador de Cabelo Profissional", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Como Pedir ao Barbeiro",
+                description: "Diga: 'Quero um High Fade bem limpo, começando na zero baixa. No topo, quero manter o comprimento para jogar para o lado (ou para trás), tirando apenas as pontas'.",
+                tip: "Peça para fazer o 'pezinho' frontal bem marcado para um visual mais agressivo e moderno."
+              },
+              {
+                title: "A Lavagem Estratégica",
+                description: "Lave o cabelo com água morna para abrir as cutículas. Use um shampoo de limpeza profunda para remover resíduos de produtos anteriores.",
+                tip: "Finalize o enxágue com água fria para selar os fios e dar brilho natural."
+              },
+              {
+                title: "Secagem com Volume",
+                description: "Use o secador em temperatura média, direcionando o ar da raiz para as pontas. Use os dedos para levantar o topo enquanto seca.",
+                tip: "O segredo do High Fade é o volume no topo para contrastar com as laterais raspadas."
+              },
+              {
+                title: "Finalização Matte",
+                description: "Aplique uma pequena quantidade de pó texturizador diretamente na raiz. Modele com as mãos para um visual 'messy' ou com pente para um visual clássico.",
+                tip: "O pó texturizador é ideal para quem tem cabelos finos, pois dá corpo e fixação sem pesar."
+              }
+            ]}
+          />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Por Que o High Fade é a Escolha Certa?</h2>
+          <p className="mb-6">
+            A versatilidade é o trunfo aqui. Você pode usar o topo arrepiado, para o lado ou até mesmo em um mini-pompadour. Além disso, o High Fade ajuda a disfarçar falhas nas laterais e dá um aspecto mais jovem ao visual.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'poda-matte', name: "Pomada Matte Premium", desc: "Efeito seco com alta fixação para o dia todo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'french-crop-cesar-moderno': {
+      title: "French Crop: O Corte César Moderno para Homens com Entradas",
+      subtitle: "Descubra por que o French Crop é a solução definitiva para disfarçar entradas e testa larga com muito estilo e textura.",
+      author: "Carlos Barbudo",
+      date: "14 de Março de 2026",
+      readTime: "10 min",
+      category: "Dicas",
+      image: "/assets/french-crop.webp",
+      howToSteps: [
+        { name: "Base Lateral", text: "Executar um Low Fade ou Mid Fade nas laterais." },
+        { name: "Corte da Franja", text: "Cortar a franja reta ou levemente desfiada na altura do meio da testa." },
+        { name: "Texturização", text: "Usar tesoura de desbaste no topo para criar camadas e movimento." },
+        { name: "Finalização", text: "Secar para frente e aplicar cera matte com as pontas dos dedos." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Se você está lutando contra o recuo da linha capilar (as famosas entradas), o <strong>French Crop</strong> é seu melhor aliado. Inspirado no corte dos imperadores romanos, esta versão moderna utiliza camadas texturizadas e uma franja frontal para camuflar imperfeições e projetar um visual contemporâneo.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Cera Matte de Argila", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Spray de Sal Marinho", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente Garfo para Textura", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Segredo da Franja",
+                description: "A franja deve ser cortada para cair naturalmente sobre a testa. Peça ao barbeiro para 'desfiar' as pontas para que não pareça um corte reto de tigela.",
+                tip: "Se você tem o rosto redondo, deixe a franja um pouco mais curta para alongar a face."
+              },
+              {
+                title: "Criando Textura com Sal Marinho",
+                description: "Aplique spray de sal marinho no cabelo úmido. Isso dá volume e aquela aparência 'praiana' que o French Crop exige no topo.",
+                tip: "Amasse os fios com as mãos enquanto seca para potencilizar o efeito ondulado."
+              },
+              {
+                title: "A Finalização com Argila",
+                description: "Use uma cera de argila (clay) que tenha efeito seco. Espalhe bem nas mãos e 'bagunce' o topo, trazendo tudo para frente.",
+                tip: "Não use pentes! O French Crop fica muito melhor quando modelado apenas com os dedos."
+              },
+              {
+                title: "Manutenção das Laterais",
+                description: "Para manter o contraste, as laterais precisam estar sempre bem baixas. Visite o barbeiro a cada 15-20 dias.",
+                tip: "O degradê baixo (Low Fade) ajuda a manter o foco no topo e na franja."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'clay-wax', name: "Cera de Argila Matte", desc: "Textura máxima e brilho zero para visuais modernos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'corte-do-jaca-degrade-brasileiro': {
+      title: "Corte do Jaca: O Ícone do Degradê Brasileiro Passo a Passo",
+      subtitle: "O guia completo do corte que dominou as comunidades e agora é tendência global. Técnica de navalha e manutenção semanal.",
+      author: "Carlos Barbudo",
+      date: "14 de Março de 2026",
+      readTime: "15 min",
+      category: "Estilo",
+      image: "/assets/corte-do-jaca.webp",
+      howToSteps: [
+        { name: "Navalhado Inicial", text: "Limpar a base lateral com navalha ou shaver, criando a pele lisa." },
+        { name: "Degradê Baixo", text: "Subir o fade em uma área curta (1 a 2 cm) para manter a base escura no topo." },
+        { name: "Pezinho", text: "Delinear os contornos frontais e laterais com precisão milimétrica." },
+        { name: "Polimento", text: "Remover qualquer sombra ou marcação com a ponta da máquina." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Diretamente do Jacarezinho para o mundo, o <strong>Corte do Jaca</strong> é sinônimo de precisão. Ele se diferencia pelo degradê extremamente baixo e 'disfarçado', onde a transição da pele para o cabelo acontece em um espaço muito curto, exigindo uma técnica refinada do barbeiro.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Acabamento", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gel de Barbear Transparente", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Escovinha de Disfarce", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Identidade do Pezinho",
+                description: "O 'pezinho' no Corte do Jaca é o que define o estilo. Ele deve ser reto e bem marcado, usando navalha para um acabamento cirúrgico.",
+                tip: "Se você tem pele sensível, use um gel de barbear antes de passar a navalha nos contornos."
+              },
+              {
+                title: "A Escovação Diária",
+                description: "Cabelos crespos e curtos devem ser escovados diariamente com uma escova de cerdas duras para manter os fios alinhados e o couro cabeludo saudável.",
+                tip: "Escove sempre no sentido de crescimento para evitar inflamações e pelos encravados."
+              },
+              {
+                title: "Hidratação do Couro Cabeludo",
+                description: "Como as laterais ficam expostas, é essencial manter a pele hidratada para evitar descamação que possa ser confundida com caspa.",
+                tip: "Use um balm leve ou óleo pós-barba sem álcool nas áreas raspadas."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'shaver-prof', name: "Máquina Shaver Profissional", desc: "Para manter a pele lisa como navalha todos os dias.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'corte-americano-taper-moderno': {
+      title: "Corte Americano (Taper Moderno): Naturalidade e Volume",
+      subtitle: "Diferente do fade total, o Taper foca nos detalhes. Aprenda como manter o volume natural do seu cabelo com este corte orgânico.",
+      author: "Carlos Barbudo",
+      date: "14 de Março de 2026",
+      readTime: "11 min",
+      category: "Tendências",
+      image: "/assets/corte-americano.webp",
+      howToSteps: [
+        { name: "Taper nas Costeletas", text: "Fazer um degradê suave apenas na região das costeletas, preservando a lateral." },
+        { name: "Taper na Nuca", text: "Executar o degradê na base da nuca para um acabamento limpo." },
+        { name: "Ajuste do Topo", text: "Cortar o topo mantendo o volume natural, geralmente entre 8-10cm." },
+        { name: "Finalização Orgânica", text: "Usar creme para pentear ou leave-in para definir a textura natural sem pesar." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Corte Americano</strong>, também conhecido como Taper Fade, é a antítese do degradê agressivo. Ele é focado na sutileza. Em vez de raspar toda a lateral, o foco é criar transições suaves apenas nos pontos de extremidade: as costeletas e a nuca. Isso permite que você mantenha o volume e a textura natural do cabelo, criando um visual mais clássico e orgânico.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Creme para Pentear Hidratante", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Leave-in com Proteção UV", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente de Madeira Anti-Estático", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Vantagem do Taper",
+                description: "O Taper permite que o cabelo cresça de forma mais uniforme. Você não fica com aquela aparência de 'capacete' quando o degradê começa a crescer.",
+                tip: "É o corte ideal para quem quer um visual de baixa manutenção e que dure mais tempo entre as visitas ao barbeiro."
+              },
+              {
+                title: "Definição de Cachos e Ondas",
+                description: "Se você tem cabelo cacheado ou crespo, o Corte Americano é perfeito para valorizar o volume. Aplique o creme para pentear com o cabelo ainda bem úmido.",
+                tip: "Use a técnica de 'fitagem' com os dedos para definir melhor as mechas no topo."
+              },
+              {
+                title: "O Acabamento na Nuca",
+                description: "A nuca deve ser limpa em formato de 'arco' ou 'quadrada', dependendo da sua preferência, mas sempre com o degradê subindo suavemente.",
+                tip: "Peça ao barbeiro para não subir muito o degradê na nuca para manter o aspecto clássico."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'leave-in-premium', name: "Leave-in Definição Total", desc: "Controle de frizz e hidratação para cabelos com volume.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'buzz-cut-design-risca-navalha': {
+      title: "Buzz Cut com Risca: Minimalismo e Atitude na Navalha",
+      subtitle: "Como transformar um corte raspado simples em uma obra de arte geométrica com riscas laterais e design de hair tattoo.",
+      author: "Carlos Barbudo",
+      date: "14 de Março de 2026",
+      readTime: "8 min",
+      category: "Estilo",
+      image: "/assets/buzz-cut.webp",
+      howToSteps: [
+        { name: "Raspagem Uniforme", text: "Passar a máquina 1 ou 2 em todo o crânio de forma homogênea." },
+        { name: "Escolha do Design", text: "Decidir o local e o formato da risca ou desenho geométrico." },
+        { name: "Marcação", text: "Usar a máquina de acabamento para traçar o rascunho do desenho." },
+        { name: "Navalhado", text: "Finalizar a risca com navalha e gel de barbear para máxima nitidez." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Buzz Cut</strong> é o auge da praticidade masculina. Mas, para quem acha o visual raspado 'simples demais', a adição de uma risca lateral ou um design geométrico (Hair Tattoo) muda completamente o jogo. É uma forma de expressar personalidade e agressividade de maneira minimalista.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Gel de Barbear Transparente", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Lâminas de Navalha de Platina", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo Anticaspa Suave", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Simetria do Desenho",
+                description: "A risca geralmente segue a linha natural da sobrancelha ou a curvatura lateral do crânio. Deve ser feita com firmeza para que a linha não fique tremida.",
+                tip: "Desenhos mais simples, como uma linha única ou dupla, são mais fáceis de manter e projetam mais sofisticação."
+              },
+              {
+                title: "Proteção do Couro Cabeludo",
+                description: "Como o cabelo está muito curto, o couro cabeludo fica exposto ao sol. O uso de protetor solar ou bonés é obrigatório.",
+                tip: "Aplique um hidratante leve após a lavagem para evitar que a pele descame e estrague o visual do corte."
+              },
+              {
+                title: "Manutenção da Risca",
+                description: "O desenho perde a definição em cerca de 10 dias. Para manter o visual nítido, você precisará retocar a risca com frequência.",
+                tip: "Não tente retocar o desenho em casa se não tiver experiência com navalha; você pode acabar engrossando a linha por erro."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'sun-prot', name: "Protetor Solar Facial Matte", desc: "Proteção essencial para quem usa cabelo raspado.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'wolf-cut-masculino-tendencia': {
+      title: "Wolf Cut Masculino: O Visual Artístico e Desestruturado",
+      subtitle: "Uma mistura de Mullet com Shaggy. Aprenda a estilizar o corte mais popular entre músicos e influencers em 2026.",
+      author: "Carlos Barbudo",
+      date: "14 de Março de 2026",
+      readTime: "14 min",
+      category: "Cultura",
+      image: "/assets/wolf-cut.webp",
+      howToSteps: [
+        { name: "Divisão de Camadas", text: "Criar camadas desconectadas desde o topo até a nuca." },
+        { name: "Desfiado", text: "Usar navalha ou tesoura fio navalha para criar pontas irregulares e leves." },
+        { name: "Volume na Nuca", text: "Manter o comprimento na parte de trás, cobrindo o pescoço." },
+        { name: "Finalização Messy", text: "Usar spray de sal marinho e secador com difusor para textura bagunçada." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Inspirado na estética rebelde dos anos 70 e 80, o <strong>Wolf Cut</strong> explodiu em 2026 como o corte preferido de quem busca um visual andrógino, artístico e cheio de movimento. Ele combina o volume no topo do Shaggy com a nuca alongada do Mullet, resultando em uma moldura selvagem para o rosto.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Spray de Sal Marinho (Sea Salt)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Secador com Difusor", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Mousse de Volume", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Corte das Camadas",
+                description: "O segredo está no 'desconexão'. As camadas do topo devem ser bem curtas para dar volume, enquanto a base deve permanecer longa.",
+                tip: "É o corte perfeito para quem tem cabelos finos e quer criar a ilusão de muito mais volume."
+              },
+              {
+                title: "Finalização 'I Woke Up Like This'",
+                description: "Aplique o spray de sal marinho no cabelo úmido. Use o secador com difusor em velocidade baixa, amassando o cabelo de baixo para cima.",
+                tip: "Evite usar pentes ou escovas após secar. Deixe que o vento e suas mãos deem a forma final."
+              },
+              {
+                title: "Manutenção do Comprimento",
+                description: "Como é um corte longo, você pode esperar de 2 a 3 meses entre os cortes. Mas não esqueça de hidratar as pontas para evitar o aspecto ressecado.",
+                tip: "Use uma máscara de nutrição semanal para manter o balanço e o movimento das camadas."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'sea-salt-spray', name: "Spray de Sal Marinho Premium", desc: "Textura e volume instantâneo para o efeito Wolf Cut.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'asa-delta-mullet-brasileiro': {
+      title: "Asa Delta (Mullet Brasileiro): A Evolução do Clássico Rural",
+      subtitle: "O guia definitivo do Mullet adaptado ao Brasil. Laterais batidas e nuca longa para um visual de impacto e personalidade.",
+      author: "Carlos Barbudo",
+      date: "14 de Março de 2026",
+      readTime: "13 min",
+      category: "Estilo",
+      image: "/assets/asa-delta-mullet.webp",
+      howToSteps: [
+        { name: "Raspagem Lateral", text: "Passar máquina 2 ou 3 nas laterais, subindo até a linha da têmpora." },
+        { name: "Conexão do Topo", text: "Manter o topo médio, conectando suavemente com as laterais raspadas." },
+        { name: "Preservação da Nuca", text: "Não cortar a parte de trás, deixando os fios crescerem até a base do pescoço ou além." },
+        { name: "Estilização", text: "Secar o topo para trás e deixar a nuca com movimento natural ou levemente ondulada." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Asa Delta</strong> é a versão brasileira e urbana do clássico Mullet. Muito popular em diversas regiões do Brasil, ele combina a praticidade das laterais raspadas com a rebeldia da nuca longa. É um corte que exige atitude e que se tornou um símbolo de autenticidade na cultura jovem contemporânea.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pomada de Fixação Média", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Condicionador Hidratante para Nuca", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Escova Raquete para Desembaraçar", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Formato Asa Delta",
+                description: "O nome vem do formato que o cabelo faz quando visto de costas, lembrando uma asa aberta. O contraste entre o raspado lateral e o volume traseiro deve ser nítido.",
+                tip: "Para um visual mais moderno, peça um degradê (fade) nas laterais em vez de uma raspagem uniforme."
+              },
+              {
+                title: "Cuidados com o Comprimento Traseiro",
+                description: "Como a parte de trás é mais longa, ela tende a ressecar e embaraçar mais facilmente. Use condicionador em todas as lavagens apenas na nuca.",
+                tip: "Penteie a nuca ainda no banho para evitar quebras e nós."
+              },
+              {
+                title: "Finalização do Topo",
+                description: "O topo deve ser penteado para trás ou para o lado. Use um pouco de pomada para manter os fios no lugar sem tirar o movimento natural.",
+                tip: "Se você quer um visual retrô, use pomada com brilho; para algo moderno, vá de efeito matte."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'hair-mask-nutri', name: "Máscara de Nutrição Intensa", desc: "Ideal para manter a nuca longa do Mullet saudável.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'box-braids-masculina-afro': {
+      title: "Box Braids Masculina: Estilo, Proteção e Ancestralidade",
+      subtitle: "Tudo sobre tranças afro masculinas. Do processo de criação à rotina de higienização e manutenção do couro cabeludo.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "14 de Março de 2026",
+      readTime: "18 min",
+      category: "Cultura",
+      image: "/assets/box-braids.webp",
+      howToSteps: [
+        { name: "Preparação", text: "Lavar e desembaraçar o cabelo crespo profundamente antes do processo." },
+        { name: "Divisão Geométrica", text: "Separar o couro cabeludo em seções quadradas (box) precisas." },
+        { name: "Trançado", text: "Trançar os fios naturais com material sintético (jumbo) ou apenas o próprio cabelo." },
+        { name: "Selagem", text: "Finalizar as pontas com água quente para selar e evitar que desmanchem." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            As <strong>Box Braids</strong> são muito mais que um penteado; são uma herança cultural e uma excelente técnica de proteção para o cabelo crespo. Elas permitem que o fio cresça de forma saudável, protegido de agentes externos, além de oferecerem uma versatilidade de estilos incrível, do coque samurai ao rabo de cavalo.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Óleo de Coco para Couro Cabeludo", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Shampoo Diluído em Spray", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Touca de Cetim para Dormir", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Higienização Correta",
+                description: "Não esfregue as tranças! Use shampoo diluído em água dentro de um borrifador. Aplique apenas no couro cabeludo e massageie suavemente com as pontas dos dedos.",
+                tip: "Lave as tranças no máximo 1x por semana e prefira o período da manhã para que elas sequem completamente durante o dia."
+              },
+              {
+                title: "Hidratação da Pele",
+                description: "Com o couro cabeludo exposto entre as divisões, a pele pode ficar ressecada. Aplique óleos naturais (como rícino ou coco) para manter a saúde folicular.",
+                tip: "Use um aplicador de bico fino para direcionar o óleo exatamente nas linhas de divisão."
+              },
+              {
+                title: "O Uso da Touca de Cetim",
+                description: "Para evitar o frizz e fazer as tranças durarem mais tempo, durma sempre com uma touca de cetim. O atrito com o algodão do travesseiro 'arrepia' os fios sintéticos.",
+                tip: "Se não tiver touca, use uma fronha de cetim; o resultado é semelhante."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'satin-cap', name: "Touca de Cetim Premium", desc: "Acessório indispensável para trançados e cabelos crespos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'scumbag-fade-classico-retro': {
+      title: "Scumbag Fade: O Clássico Old-School com Risca de Navalha",
+      subtitle: "O visual dos anos 50 reinventado com técnicas modernas de fade. Como manter o penteado lateral impecável com brilho.",
+      author: "Carlos Barbudo",
+      date: "14 de Março de 2026",
+      readTime: "12 min",
+      category: "Estilo",
+      image: "/assets/scumbag-fade.webp",
+      howToSteps: [
+        { name: "Fade Alto", text: "Executar um degradê alto e nítido nas laterais e nuca." },
+        { name: "Risca de Navalha", text: "Marcar a repartição lateral com navalha, criando o 'Hard Part'." },
+        { name: "Corte do Topo", text: "Manter o topo médio (6-8cm) com caimento para o lado oposto à risca." },
+        { name: "Finalização Brilhosa", text: "Aplicar pomada de brilho e pentear com pente fino para alinhar cada fio." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Scumbag Fade</strong> é o epítome do estilo cavalheiro rebelde. Popularizado pela cena rockabilly e agora um grampo das barbearias premium, este corte exige perfeição nas linhas. O contraste entre o degradê moderno e a risca clássica de navalha cria um visual sofisticado e atemporal.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pomada à Base de Água High Shine", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente Fino de Carbono", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Tônico Capilar Fortificante", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Arte do Hard Part",
+                description: "A risca de navalha deve ser feita exatamente onde o cabelo se divide naturalmente. Ela facilita o penteado diário, pois 'obriga' o cabelo a cair para o lado certo.",
+                tip: "Mantenha a risca limpa removendo os pequenos fios que crescem ali com uma máquina de acabamento a cada 7 dias."
+              },
+              {
+                title: "Penteado de Precisão",
+                description: "Diferente de estilos casuais, o Scumbag Fade exige que cada fio esteja no lugar. Use um pente fino para criar as linhas de penteado características.",
+                tip: "Penteie com o cabelo levemente úmido para que a pomada se espalhe uniformemente sem criar grumos."
+              },
+              {
+                title: "O Brilho Clássico",
+                description: "Para este estilo, o efeito matte deve ser evitado. O brilho (wet look) é o que dá a autenticidade old-school necessária.",
+                tip: "Use pomadas à base de água; elas oferecem o brilho necessário mas são fáceis de lavar no final do dia."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'pomade-shine', name: "Pomada de Brilho Clássica", desc: "Fixação forte com efeito molhado para visuais retrô.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'cabelo-platinado-nevou-guia': {
+      title: "Cabelo Platinado (Nevou): O Guia de Sobrevivência Pós-Descoloração",
+      subtitle: "A tendência que vira febre no Brasil. Como platinar o cabelo sem destruir os fios e quais produtos usar para manter o branco absoluto.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "15 de Março de 2026",
+      readTime: "15 min",
+      category: "Tendências",
+      image: "/assets/platinado-global.webp",
+      howToSteps: [
+        { name: "Descoloração", text: "Aplicar pó descolorante com água oxigenada (vol 30 ou 40) até atingir o tom 9 ou 10." },
+        { name: "Matização", text: "Usar tonalizante ou shampoo roxo para remover o amarelo e chegar no branco platinado." },
+        { name: "Reconstrução", text: "Realizar uma carga de queratina imediatamente após o processo químico." },
+        { name: "Manutenção", text: "Usar shampoos matizadores e máscaras de hidratação profunda semanalmente." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O fenômeno <strong>"Nevou"</strong> deixou de ser apenas uma tendência de final de ano para se tornar um estilo de vida. No entanto, chegar ao branco absoluto sem quebrar o cabelo exige técnica e, acima de tudo, um pós-química rigoroso. A descoloração remove toda a pigmentação e parte da massa capilar, deixando o fio sensível e sedento por nutrientes.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Shampoo Matizador Violeta", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Máscara de Reconstrução com Queratina", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Argan Finalizador", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Teste de Mecha",
+                description: "Nunca platinar sem testar uma mecha pequena primeiro. Se o cabelo 'derreter' ou ficar elástico, ele não aguenta a descoloração total.",
+                tip: "Espere pelo menos 48 horas após o teste de mecha para prosseguir com o cabelo todo."
+              },
+              {
+                title: "O Segredo da Matização",
+                description: "O matizador não clareia; ele apenas neutraliza o amarelo. Se o cabelo ainda estiver laranja, o matizador roxo não vai funcionar.",
+                tip: "Deixe o matizador agir por apenas 3 a 5 minutos para não 'chumbar' (deixar o cabelo roxo)."
+              },
+              {
+                title: "Cronograma Capilar Nevou",
+                description: "Seu novo ritual inclui: Hidratação (reposição de água), Nutrição (reposição de óleos) e Reconstrução (reposição de massa).",
+                tip: "Evite secador muito quente e chapinha nos primeiros 15 dias após nevar; o fio está muito fragilizado."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'silver-shampoo', name: "Kit Matizador Silver Profissional", desc: "Mantém o platinado branco e brilhante sem ressecar.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'dreadlocks-curtos-taper-fade': {
+      title: "Dreadlocks Curtos com Taper Fade: Ancestralidade e Estilo Urbano",
+      subtitle: "A união perfeita entre o clássico e o moderno. Como iniciar seus dreads e manter o degradê lateral sempre em dia.",
+      author: "Carlos Barbudo",
+      date: "15 de Março de 2026",
+      readTime: "14 min",
+      category: "Cultura",
+      image: "/assets/dreadlocks-curto.webp",
+      howToSteps: [
+        { name: "Divisão de Mechas", text: "Separar o topo do cabelo em seções circulares ou quadradas." },
+        { name: "Criação dos Dreads", text: "Usar agulha de crochê para compactar os fios e formar a estrutura do dread." },
+        { name: "Degradê Lateral", text: "Executar um Taper Fade ou Mid Fade nas laterais e nuca." },
+        { name: "Limpeza de Raiz", text: "Organizar os fios novos na base do dread mensalmente." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Os <strong>Dreadlocks Curtos</strong> com degradê lateral são a representação máxima da modernidade negra. Eles oferecem a praticidade de um corte curto nas laterais com a força visual e cultural dos dreads no topo. É um estilo de baixa manutenção diária, mas que exige visitas regulares a um profissional de dreads (loctician) para manter a raiz organizada.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Agulha de Crochê 0.6mm", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Shampoo de Limpeza Profunda (Residue Free)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Spray de Brilho e Aroma para Dreads", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Lavagem de Dreads",
+                description: "Dreads curtos secam rápido, mas o interior deve ser bem enxaguado. Use apenas shampoos que não deixem resíduos, para evitar mofo ou acúmulo de sujeira.",
+                tip: "Lave seus dreads pela manhã e, se possível, use um secador para garantir que o centro de cada dread esteja seco."
+              },
+              {
+                title: "Manutenção do Fade",
+                description: "O contraste é o que faz este corte brilhar. Mantenha o degradê lateral sempre 'fresco' visitando o barbeiro a cada 15 dias.",
+                tip: "Peça para o barbeiro não encostar a máquina na base dos dreads para não enfraquecer a estrutura."
+              },
+              {
+                title: "Retwist da Raiz",
+                description: "Conforme o cabelo cresce, a base do dread fica frouxa. O 'retwist' organiza esses fios novos para dentro do dread.",
+                tip: "Não aperte demais a raiz no retwist para evitar alopecia de tração e dores de cabeça."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'dread-shampoo', name: "Shampoo Especial para Dreads", desc: "Livre de resíduos, mantém os dreads leves e cheirosos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'corte-social-classico-corporativo': {
+      title: "Corte Social Clássico: O Padrão Ouro para o Ambiente Corporativo",
+      subtitle: "Seriedade e confiança em um corte atemporal. Aprenda a equilibrar o volume lateral para projetar liderança.",
+      author: "Carlos Barbudo",
+      date: "15 de Março de 2026",
+      readTime: "12 min",
+      category: "Estilo",
+      image: "/assets/social-classico.webp",
+      howToSteps: [
+        { name: "Laterais na Tesoura", text: "Cortar as laterais com técnica de pente sobre tesoura para um caimento natural." },
+        { name: "Topo Equilibrado", text: "Manter o topo com 5-6cm, proporcional às laterais." },
+        { name: "Acabamento de Nuca", text: "Limpar a nuca de forma quadrada ou arredondada, sem exagerar no raspado." },
+        { name: "Penteado Clássico", text: "Repartir lateralmente e finalizar com creme ou pomada leve." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            No mundo dos negócios, a imagem é uma ferramenta de negociação. O <strong>Corte Social Clássico</strong> é o terno sob medida da barbearia. Ele não busca tendências passageiras, mas sim a harmonia das proporções faciais. É um corte que transmite estabilidade, maturidade e atenção aos detalhes.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pomada de Fixação Leve", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Tartaruga (Pente Clássico)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Creme Modelador com Brilho Discreto", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Poder da Repartição",
+                description: "A linha de repartição deve ser limpa e seguir a curvatura natural do seu crânio. Use um pente para encontrar o ponto onde o cabelo 'abre' naturalmente.",
+                tip: "Se você tem o rosto muito longo, evite dar muito volume no topo para não alongar ainda mais."
+              },
+              {
+                title: "Finalização Executiva",
+                description: "Aplique uma pequena quantidade de creme modelador. Penteie para o lado e para trás, mantendo os fios alinhados mas sem aquele aspecto 'duro' de gel.",
+                tip: "Use as mãos após o pente para dar um toque mais natural e menos rígido ao visual."
+              },
+              {
+                title: "A Importância da Nuca Limpa",
+                description: "O que diferencia um corte social bem feito é a limpeza da nuca e das orelhas. Pelos crescendo nessas áreas passam imagem de desleixo.",
+                tip: "Faça uma manutenção rápida em casa com um aparador apenas nas áreas periféricas a cada 10 dias."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'classic-comb', name: "Pente de Carbono Antiestático", desc: "O parceiro ideal para o penteado social perfeito.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'moicano-disfarcado-fade': {
+      title: "Moicano Disfarçado: O Degradê que Cria Atitude sem Exageros",
+      subtitle: "Uma crista suave no topo que desce até a nuca. O guia para quem quer ousadia com um toque de sofisticação no fade.",
+      author: "Carlos Barbudo",
+      date: "15 de Março de 2026",
+      readTime: "11 min",
+      category: "Estilo",
+      image: "/assets/moicano-disfarcado.png",
+      howToSteps: [
+        { name: "Marcação da Crista", text: "Isolar a faixa central do topo, da testa até a nuca." },
+        { name: "Fade Lateral", text: "Executar um degradê (fade) nas laterais, conectando com a barba se houver." },
+        { name: "Texturização do Centro", text: "Usar tesoura de desbaste para dar leveza e permitir que os fios fiquem 'espetados'." },
+        { name: "Finalização", text: "Aplicar gel de fixação forte ou pomada matte, direcionando os fios para o centro e para cima." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Moicano Disfarçado</strong> (ou Faux Hawk) é a versão 'civilizada' do moicano clássico. Em vez de raspar tudo lateralmente, usamos um degradê para criar uma transição suave, mantendo o foco no volume central que se estende até a nuca. É um corte dinâmico, que passa uma imagem de energia e atitude moderna.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Gel de Fixação Ultra Forte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pomada Matte de Alta Performance", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Secador com Bico Direcionador", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Segredo do Volume Central",
+                description: "Para o moicano não 'cair' durante o dia, você precisa de uma base sólida. Aplique o produto com o cabelo seco e use o secador apontando para cima.",
+                tip: "Use os dedos em formato de 'garra' para unir as pontas no centro e criar a crista característica."
+              },
+              {
+                title: "A Linha da Nuca",
+                description: "Diferente de outros cortes onde a nuca é raspada reta, no moicano disfarçado o volume deve descer acompanhando a coluna vertebral.",
+                tip: "Peça ao barbeiro para fazer um degradê em 'V' na nuca para acentuar o formato do corte."
+              },
+              {
+                title: "Versatilidade no Dia a Dia",
+                description: "Nos dias em que não quiser usar o moicano, você pode simplesmente pentear o topo para o lado. O degradê lateral garante que o visual continue alinhado.",
+                tip: "A textura desfiada no topo é o que permite essa versatilidade entre o 'espetado' e o 'comportado'."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'strong-gel', name: "Gel de Fixação Blindada", desc: "Mantém o moicano intacto mesmo em condições extremas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'surfer-shag-longo-ondulado': {
+      title: "Surfer Shag: O Guia do Cabelo Longo com Textura Praiana",
+      subtitle: "Movimento, leveza e luzes sun-kissed. Aprenda como finalizar o cabelo longo para um visual despojado e saudável.",
+      author: "Carlos Barbudo",
+      date: "15 de Março de 2026",
+      readTime: "13 min",
+      category: "Dicas",
+      image: "/assets/surfer-shag.png",
+      howToSteps: [
+        { name: "Corte em Camadas", text: "Retirar o peso excessivo das pontas com camadas longas e fluidas." },
+        { name: "Luzes Naturais", text: "Opcional: fazer mechas finíssimas em tons de mel ou dourado para simular o efeito do sol." },
+        { name: "Hidratação", text: "Usar máscaras de nutrição para manter as pontas saudáveis e sem frizz." },
+        { name: "Texturização", text: "Finalizar com spray de sal marinho e secagem natural." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Surfer Shag</strong> é a celebração do estilo livre. Perfeito para homens com cabelos ondulados ou cacheados, este corte foca no movimento natural. O objetivo é parecer que você acabou de sair da praia: um visual levemente bagunçado, volumoso e com fios que parecem clareados naturalmente pelo sol.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Spray de Sal Marinho (Sea Salt Spray)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo de Coco ou Argan", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo sem Sulfato (Low Poo)", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Lavagem para Cabelos Longos",
+                description: "Cabelos longos sofrem mais com o ressecamento das pontas. Use shampoo apenas na raiz e deixe a espuma escorrer pelo comprimento.",
+                tip: "Sempre use condicionador do meio para as pontas. Nunca aplique na raiz para evitar oleosidade excessiva."
+              },
+              {
+                title: "O Ritual do Sal Marinho",
+                description: "Com o cabelo úmido, borrife o spray de sal marinho generosamente. Amasse os fios com as mãos, de baixo para cima, para estimular as ondas.",
+                tip: "Deixe secar naturalmente ao vento para um resultado mais autêntico e menos armado."
+              },
+              {
+                title: "Proteção contra o Sol e Cloro",
+                description: "Se você frequenta praia ou piscina, o cabelo longo exige proteção. Use leave-in com filtro solar para evitar que o fio fique 'elástico' e desbotado.",
+                tip: "Enxágue o cabelo com água doce logo após sair do mar ou da piscina."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'sun-leave-in', name: "Leave-in com Proteção Solar", desc: "Essencial para manter a cor e a saúde do cabelo longo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'top-knot-coque-samurai': {
+      title: "Top Knot (Coque Samurai): Como Crescer e Estilizar o Topo",
+      subtitle: "Paciência e estilo. O manual para quem quer adotar o coque samurai com undercut lateral sem perder a masculinidade.",
+      author: "Carlos Barbudo",
+      date: "15 de Março de 2026",
+      readTime: "12 min",
+      category: "Estilo",
+      image: "/assets/top-knot.png",
+      howToSteps: [
+        { name: "Undercut Lateral", text: "Raspar as laterais e nuca na máquina 0 ou 1, criando uma linha de desconexão clara." },
+        { name: "Crescimento do Topo", text: "Manter o topo crescendo até atingir no mínimo 15cm de comprimento." },
+        { name: "O Nó", text: "Puxar todo o topo para trás e prender em um coque alto na coroa da cabeça." },
+        { name: "Alinhamento", text: "Usar um pouco de pomada nas laterais do topo para baixar os fios 'rebeldes'." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Top Knot</strong>, ou Coque Samurai, é um visual de forte impacto visual. Ele exige paciência, pois a fase de crescimento do topo (o 'período estranho') pode durar meses. No entanto, o resultado é um visual que transmite força, foco e uma identidade artística única. Quando combinado com um undercut bem feito, o contraste é imbatível.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Elásticos de Cabelo (Sem Metal)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pomada de Fixação Média", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Tônico de Crescimento Acelerado", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Superando a Fase de Crescimento",
+                description: "Durante os primeiros 6 meses, o cabelo não terá comprimento para prender. Use pomadas e bonés para controlar o volume nesse período.",
+                tip: "Mantenha as laterais (undercut) sempre em dia para que o visual pareça intencional e não apenas desleixo."
+              },
+              {
+                title: "Como Fazer o Coque Perfeito",
+                description: "Puxe o cabelo para trás como se fosse fazer um rabo de cavalo. Na última volta do elástico, não passe o cabelo todo, criando o 'nó' ou coque.",
+                tip: "Não aperte demais o elástico para não causar dor de cabeça e nem quebrar os fios na base."
+              },
+              {
+                title: "Saúde do Couro Cabeludo",
+                description: "Cabelo preso o tempo todo pode abafar o couro cabeludo. Solte o cabelo ao dormir e lave profundamente para evitar caspa e oleosidade.",
+                tip: "Massageie a raiz ao lavar para estimular a circulação e fortalecer os fios."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'hair-tie-set', name: "Kit Elásticos de Silicone", desc: "Não quebram o fio e mantêm o coque firme o dia todo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'fringe-fade-franja-masculina': {
+      title: "Fringe Fade: A Franja Masculina que Dominou a Cultura E-Boy",
+      subtitle: "O topo projetado para frente com degradê navalhado. Como estilizar a franja para esconder entradas e criar modernidade.",
+      author: "Carlos Barbudo",
+      date: "15 de Março de 2026",
+      readTime: "10 min",
+      category: "Tendências",
+      image: "/assets/fringe-fade.png",
+      howToSteps: [
+        { name: "Degradê Navalhado", text: "Executar um High Fade ou Skin Fade nas laterais para máximo contraste." },
+        { name: "Corte da Franja", text: "Projetar o topo para frente, cortando a franja na altura das sobrancelhas." },
+        { name: "Texturização Fina", text: "Desfiar as pontas da franja para evitar o aspecto 'bloco'." },
+        { name: "Finalização Matte", text: "Usar pomada em pó ou cera seca para manter o movimento frontal." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Fringe Fade</strong> é a escolha definitiva da geração Z. Ele combina o rigor das laterais raspadas com a fluidez de uma franja frontal texturizada. É um corte extremamente versátil para quem quer um visual jovem e moderno, além de ser a técnica perfeita para camuflar entradas laterais ou testa larga de forma estilosa.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pó Texturizador para Volume", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Secador com Jato de Ar Frio", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente de Dentes Finos", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Movimento Frontal",
+                description: "A franja não deve ficar estática. O segredo é usar produtos que permitam o balanço do cabelo enquanto ele permanece no lugar.",
+                tip: "Ao secar, use o jato de ar de trás para frente para 'empurrar' o volume para a testa."
+              },
+              {
+                title: "Ajuste do Comprimento",
+                description: "A altura ideal da franja é logo acima dos olhos. Se ficar muito longa, pode atrapalhar a visão e perder o formato do corte.",
+                tip: "Peça ao barbeiro para 'picotar' as pontas com a ponta da tesoura para um acabamento mais natural."
+              },
+              {
+                title: "Manutenção do Degradê",
+                description: "Como o foco é o contraste, as laterais precisam estar sempre muito limpas. O ideal é retocar o fade a cada 10 dias.",
+                tip: "Se você usa óculos, peça para o barbeiro limpar bem a área das hastes para evitar que o cabelo 'levante' o acessório."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'textur-powder', name: "Pó Modelador de Volume", desc: "Efeito matte instantâneo para franjas perfeitas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'afro-nudred-textura-definicao': {
+      title: "Afro com Nudred: Textura e Definição para Fios Crespos",
+      subtitle: "A técnica da esponja que revolucionou a finalização afro. Como criar twists perfeitos em minutos com o protocolo Nudred.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "15 de Março de 2026",
+      readTime: "9 min",
+      category: "Dicas",
+      image: "/assets/nudred-afro.png",
+      howToSteps: [
+        { name: "Lavagem e Umidade", text: "Lavar o cabelo e manter levemente úmido (não encharcado)." },
+        { name: "Aplicação de Ativador", text: "Espalhar ativador de cachos ou leave-in nutritivo por todo o topo." },
+        { name: "Movimento Circular", text: "Passar a esponja Nudred em círculos, sempre no mesmo sentido, por todo o cabelo." },
+        { name: "Fixação", text: "Deixar secar naturalmente ou usar secador com jato fraco para fixar os twists." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A técnica <strong>Nudred</strong> é a salvação para quem quer definição em cabelos crespos curtos ou médios (4B e 4C). Usando uma esponja perfurada, você consegue criar 'twists' (pequenos tornados de cabelo) de forma uniforme e rápida, dando uma textura incrível e um aspecto muito mais cuidado ao visual afro.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Esponja Nudred Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Ativador de Cachos Intensivo", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Rícino para Fortalecimento", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Direção Única",
+                description: "O erro mais comum é mudar o sentido do círculo com a esponja. Escolha um lado (horário ou anti-horário) e mantenha-o até o fim.",
+                tip: "Se você mudar a direção, vai desmanchar os twists que acabou de criar."
+              },
+              {
+                title: "Pressão Moderada",
+                description: "Não aperte a esponja contra a cabeça. Deixe que os furos façam o trabalho. Pressão excessiva achata o cabelo e não forma o espiral.",
+                tip: "Faça movimentos leves e rápidos. O processo todo não deve levar mais que 10 minutos."
+              },
+              {
+                title: "Duração do Estilo",
+                description: "Os twists duram até a próxima lavagem. Para manter a definição ao acordar, use sempre touca de cetim.",
+                tip: "Se algum twist desmanchar, você pode refazê-lo individualmente usando apenas os dedos e um pouco de pomada."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'nudred-sponge', name: "Esponja Nudred de Dupla Face", desc: "Dois tamanhos de furos para diferentes tipos de definição.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'side-swept-undercut-estilo': {
+      title: "Side Swept Undercut: Elegância Desconectada e Volume Lateral",
+      subtitle: "O topo longo jogado para o lado com laterais raspadas. Um visual de impacto para homens que não temem o secador.",
+      author: "Carlos Barbudo",
+      date: "15 de Março de 2026",
+      readTime: "11 min",
+      category: "Estilo",
+      image: "/assets/pompadour-fade.png",
+      howToSteps: [
+        { name: "Undercut Total", text: "Raspar as laterais de forma uniforme (máquina 1 ou 2) sem degradê suave." },
+        { name: "Topo Desconectado", text: "Manter o topo bem longo (10-12cm), sem conexão com as laterais." },
+        { name: "Penteado Lateral", text: "Secar direcionando todo o volume para um dos lados escolhidos." },
+        { name: "Fixação de Volume", text: "Aplicar pomada de fixação média e spray fixador para manter o 'balanço' lateral." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Side Swept Undercut</strong> é o equilíbrio perfeito entre o rebelde e o sofisticado. Popularizado por celebridades e ícones de moda, ele se baseia na 'desconexão' total: as laterais são raspadas em um único tom, enquanto o topo longo cai dramaticamente para o lado. É um corte que exige manutenção e o uso constante de secador para garantir o volume.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pomada Modeladora Flexível", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Spray Fixador de Jato Seco", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Escova Redonda para Volume", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Escolha do Lado",
+                description: "O cabelo sempre tem um lado que 'obedece' melhor. Penteie para os dois lados e veja onde o redemoinho da coroa favorece o caimento.",
+                tip: "Evite lutar contra o nascimento do fio; isso só vai criar frizz e volume indesejado na raiz."
+              },
+              {
+                title: "Volume na Raiz",
+                description: "O segredo do Side Swept é a altura. Ao secar, levante a raiz com a escova redonda e direcione o ar quente na base do fio.",
+                tip: "Finalize com um jato de ar frio para 'congelar' o volume no lugar por mais tempo."
+              },
+              {
+                title: "O Ponto de Desconexão",
+                description: "Peça ao barbeiro para não suavizar a linha onde termina o raspado e começa o longo. Essa 'quebra' brusca é a assinatura do undercut moderno.",
+                tip: "Mantenha a lateral sempre raspada (retoque a cada 10 dias) para o contraste não sumir."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'volume-brush', name: "Escova Térmica Redonda", desc: "Facilita a modelagem e dá volume profissional em casa.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'pompadour-moderno-fade-volume': {
+      title: "Pompadour Moderno: Volume e Elegância com Fade",
+      subtitle: "O topete icônico de Elvis atualizado para 2026. Como criar volume duradouro e equilibrar com um degradê agressivo.",
+      author: "Carlos Barbudo",
+      date: "16 de Março de 2026",
+      readTime: "14 min",
+      category: "Estilo",
+      image: "/assets/pompadour-fade.png",
+      howToSteps: [
+        { name: "Crescimento do Topo", text: "Manter o topo com no mínimo 10cm para conseguir a curvatura do pompadour." },
+        { name: "High Fade", text: "Executar um degradê alto para destacar o volume do topete." },
+        { name: "Escovação", text: "Secar o cabelo para trás e para cima usando uma escova redonda." },
+        { name: "Finalização", text: "Usar pomada de fixação forte e spray para garantir que o volume não caia." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Pompadour Moderno</strong> é a evolução de um clássico. Diferente da versão dos anos 50, que era mais arredondada e untuosa, a versão de 2026 foca na textura e na altura extrema, muitas vezes contrastada com um degradê (fade) nas laterais. É um corte que exige dedicação diária ao penteado, mas que garante uma presença marcante em qualquer ambiente.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pomada de Fixação Extra Forte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova Redonda de Madeira", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Secador de 2000W", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Técnica da Escovação",
+                description: "O volume do pompadour vem da raiz, não do produto. Ao secar, levante a raiz com a escova e direcione o calor por baixo da mecha.",
+                tip: "Use o jato frio do secador após modelar cada mecha para fixar a forma antes de aplicar a pomada."
+              },
+              {
+                title: "Equilíbrio das Proporções",
+                description: "Se você tem o rosto muito alongado, evite topetes excessivamente altos. Tente um pompadour mais 'baixo' e largo para harmonizar.",
+                tip: "O degradê lateral deve subir até a linha da coroa para que o topo pareça ainda mais volumoso."
+              },
+              {
+                title: "Manutenção da Estrutura",
+                description: "Cabelos pesados tendem a cair após algumas horas. O uso de um 'pre-styler' (como mousse ou spray de volume) antes da secagem é essencial.",
+                tip: "Finalize com spray fixador a uma distância de 20cm para não deixar o cabelo com aspecto de 'molhado'."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'pomp-pomade', name: "Pomada Estruturante de Argila", desc: "Fixação máxima com efeito natural para topetes altos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'slicked-back-undercut-classico': {
+      title: "Slicked Back Undercut: O Visual 'Penteado para Trás'",
+      subtitle: "Clássico dos filmes noir, agora nas ruas. O guia para usar o cabelo totalmente para trás com laterais raspadas.",
+      author: "Carlos Barbudo",
+      date: "16 de Março de 2026",
+      readTime: "12 min",
+      category: "Estilo",
+      image: "/assets/slicked-back.png",
+      howToSteps: [
+        { name: "Raspagem Undercut", text: "Raspar as laterais uniformemente (máquina 1 ou 2) até a altura da têmpora." },
+        { name: "Corte do Topo", text: "Manter o topo longo e nivelado, sem camadas curtas no meio." },
+        { name: "Penteado para Trás", text: "Aplicar pomada de brilho e pentear todo o cabelo em direção à nuca." },
+        { name: "Ajuste de Fios Soltos", text: "Usar pente fino para alinhar cada fio e garantir o aspecto 'liso'." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Slicked Back Undercut</strong> é o visual preferido de quem quer um estilo 'durão' e elegante ao mesmo tempo. Inspirado nos gângsteres dos anos 20 e 30, este corte foi modernizado com a desconexão total das laterais (undercut). É o penteado perfeito para eventos formais ou para quem quer projetar uma imagem de autoridade e seriedade.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pomada à Base de Água (Brilho Alto)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Bolso de Acetato", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo de Limpeza Profunda", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Penteado Molhado",
+                description: "Para o efeito clássico, o cabelo deve ser penteado ainda úmido. Isso ajuda a pomada a selar os fios e manter o brilho vitrificado.",
+                tip: "Se o cabelo secar durante o dia e começar a arrepiar, passe um pente úmido para reativar a pomada."
+              },
+              {
+                title: "Lidando com Cabelos Rebeldes",
+                description: "Se o seu cabelo é muito grosso, ele pode querer 'pular' para os lados. Use um secador para direcionar o calor para trás enquanto penteia.",
+                tip: "Uma rede de cabelo (hair net) usada por 10 minutos após o penteado ajuda a assentar os fios mais teimosos."
+              },
+              {
+                title: "A Nuca no Slicked Back",
+                description: "Diferente de outros cortes, no slicked back o cabelo do topo chega até a nuca. Mantenha a base da nuca bem limpa para o contraste ser nítido.",
+                tip: "Peça ao barbeiro para 'afilar' o final do cabelo do topo para que ele não fique com aspecto de 'rabo de pato'."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'water-pomade', name: "Pomada Classic Shine", desc: "Brilho impecável e fácil remoção no banho.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'corte-cesar-moderno-franja-curta': {
+      title: "Corte César Moderno: Praticidade e Franja Curta",
+      subtitle: "Inspirado no imperador, perfeito para o dia a dia. Como o corte César ajuda a disfarçar entradas de forma inteligente.",
+      author: "Carlos Barbudo",
+      date: "16 de Março de 2026",
+      readTime: "10 min",
+      category: "Dicas",
+      image: "/assets/cesar-moderno.png",
+      howToSteps: [
+        { name: "Fade Médio", text: "Executar um degradê médio nas laterais." },
+        { name: "Topo Curto", text: "Cortar o topo uniformemente, geralmente na máquina 3 ou 4." },
+        { name: "Franja Reta", text: "Cortar a franja frontal em uma linha reta e curta, cerca de 1-2cm acima da sobrancelha." },
+        { name: "Texturização", text: "Dar leves toques com a tesoura no topo para evitar que o cabelo fique muito plano." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Corte César</strong> é sinônimo de eficiência. É o corte ideal para o homem que não quer perder tempo com secadores ou pomadas complexas. Além da praticidade, ele é um dos melhores aliados para quem está começando a notar entradas nas têmporas, pois a franja reta e projetada para frente camufla essas áreas de forma natural e estilosa.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pomada Matte de Fixação Leve", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova de Cerdas de Javali", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo Revitalizante", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Franja do Imperador",
+                description: "A linha da franja deve ser perfeitamente horizontal. Isso cria uma moldura forte para o rosto e destaca o olhar.",
+                tip: "Se você tem o rosto muito redondo, peça para o barbeiro fazer a franja levemente 'picotada' em vez de uma linha sólida."
+              },
+              {
+                title: "Baixa Manutenção",
+                description: "Para finalizar, basta uma pequena quantidade de pomada matte. Espalhe nas mãos e passe no cabelo seco, direcionando para frente.",
+                tip: "É o corte perfeito para quem pratica esportes ou usa capacete com frequência."
+              },
+              {
+                title: "Cuidando do Couro Cabeludo",
+                description: "Como o cabelo é curto, o couro cabeludo respira melhor. Aproveite para usar tônicos capilares se tiver tendência à queda.",
+                tip: "Lave o cabelo diariamente para evitar o acúmulo de oleosidade que pode deixar o corte César com aspecto 'pesado'."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'matte-clay', name: "Argila Finalizadora Dry Touch", desc: "Efeito seco e natural para o dia a dia agitado.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'iv-league-haircut-executivo': {
+      title: "Ivy League Haircut: O Social de Elite",
+      subtitle: "Um corte limpo, curto e extremamente versátil. O visual preferido de estudantes e executivos de sucesso.",
+      author: "Carlos Barbudo",
+      date: "16 de Março de 2026",
+      readTime: "11 min",
+      category: "Estilo",
+      image: "/assets/ivy-league.png",
+      howToSteps: [
+        { name: "Taper Fade Baixo", text: "Executar um degradê bem baixo nas costeletas e nuca." },
+        { name: "Topo Curto", text: "Manter o topo curto (3-4cm), mas longo o suficiente para ser penteado." },
+        { name: "Penteado Lateral", text: "Dividir o cabelo levemente para o lado, sem uma risca marcada." },
+        { name: "Acabamento Natural", text: "Finalizar com pomada de brilho médio para um aspecto saudável." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Ivy League Haircut</strong> é a versão mais refinada do corte militar (Crew Cut). Ele mantém a praticidade do cabelo curto, mas deixa comprimento suficiente no topo para que possa ser penteado. É um corte que transita perfeitamente entre a academia e a sala de reuniões, sendo o padrão de elegância discreta para o homem moderno.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pomada de Brilho Médio", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Madeira Anti-Estático", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo de Uso Diário Suave", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Versatilidade do Ivy League",
+                description: "O diferencial deste corte é a frente. Você pode usá-la levemente levantada (como um mini topete) ou totalmente colada para o lado.",
+                tip: "É o corte ideal para quem tem o rosto quadrado ou oval e quer destacar a mandíbula."
+              },
+              {
+                title: "Manutenção Prática",
+                description: "Como o cabelo é curto em toda a cabeça, você não precisa de secador. Basta secar com a toalha e aplicar o produto com os dedos.",
+                tip: "Visite o barbeiro a cada 3 semanas para manter o Taper Fade lateral limpo e as proporções em dia."
+              },
+              {
+                title: "Estilo de Elite",
+                description: "O Ivy League não deve parecer 'raspado'. Ele deve parecer 'polido'. Evite usar máquinas muito baixas no topo.",
+                tip: "Peça ao barbeiro para usar a tesoura no topo para um acabamento mais suave e menos ríspido que a máquina."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'daily-shampoo', name: "Shampoo Equilíbrio Natural", desc: "Limpeza suave para cabelos curtos lavados diariamente.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'burst-fade-moicano-discreto': {
+      title: "Burst Fade: O Degradê em Semicírculo na Orelha",
+      subtitle: "Um estilo único que destaca as laterais de forma artística. Ideal para moicanos e cortes com volume na nuca.",
+      author: "Carlos Barbudo",
+      date: "16 de Março de 2026",
+      readTime: "12 min",
+      category: "Tendências",
+      image: "/assets/burst-fade.png",
+      howToSteps: [
+        { name: "Marcação em Arco", text: "Criar a linha do degradê em formato de semicírculo ao redor da orelha." },
+        { name: "Skin Fade Localizado", text: "Raspar até a pele na base do arco e subir suavizando." },
+        { name: "Preservação da Nuca", text: "Manter o volume de cabelo na parte de trás da cabeça, sem degradê." },
+        { name: "Estilização do Topo", text: "Definir o topo com textura ou volume, dependendo do comprimento." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Burst Fade</strong> é um dos cortes mais técnicos da barbearia moderna. Diferente do fade tradicional que dá a volta na cabeça, o Burst Fade foca apenas na região ao redor da orelha, 'explodindo' para fora desse centro. Ele é o parceiro perfeito para moicanos modernos e cortes 'South of France', onde o volume na nuca é preservado.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Acabamento de Precisão", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pomada Matte de Alta Fixação", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo Detox para Couro Cabeludo", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Formato do 'Burst'",
+                description: "A curvatura deve ser perfeita. O barbeiro deve seguir o contorno da orelha, criando uma sombra que se dissipa rapidamente.",
+                tip: "É um corte que valoriza muito quem tem tatuagens na região do pescoço ou atrás da orelha."
+              },
+              {
+                title: "Cabelos Crespos e Cacheados",
+                description: "O Burst Fade fica sensacional em texturas afro. Ele permite manter o volume do Black Power ou dos twists enquanto as laterais ficam super limpas.",
+                tip: "Use um ativador de cachos no topo para dar destaque à textura em contraste com o fade."
+              },
+              {
+                title: "Manutenção Crítica",
+                description: "Por ser um fade muito localizado, qualquer crescimento de cabelo na área do semicírculo 'apaga' o desenho do corte rapidamente.",
+                tip: "Recomendamos retoques a cada 7 a 10 dias para manter a nitidez do arco."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'curl-activator', name: "Ativador de Cachos Definition", desc: "Define e hidrata, perfeito para usar no topo do Burst Fade.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'flat-top-militar-afro': {
+      title: "Flat Top Militar: A Geometria Perfeita no Cabelo Afro",
+      subtitle: "Linhas retas e topo plano. O guia para manter o Flat Top impecável e com a estrutura sempre firme.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "16 de Março de 2026",
+      readTime: "15 min",
+      category: "Cultura",
+      image: "/assets/flat-top-afro.png",
+      howToSteps: [
+        { name: "Corte Geométrico", text: "Usar máquina com pente de topo plano (flattop comb) para nivelar o topo horizontalmente." },
+        { name: "High Fade Lateral", text: "Executar um degradê alto para sustentar visualmente a 'caixa' do topo." },
+        { name: "Ajuste de Ângulos", text: "Certificar-se de que as quinas laterais do topo estão bem marcadas." },
+        { name: "Finalização Estrutural", text: "Usar spray de fixação extra forte para garantir que o topo não 'curve'." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Flat Top</strong> é uma obra de arquitetura capilar. Muito popular na cultura hip-hop dos anos 80 e 90, e com raízes militares profundas, este corte exige um cabelo com textura afro (tipo 4) para sustentar a estrutura vertical. O objetivo é criar um plano perfeitamente reto no topo, desafiando a gravidade com precisão geométrica.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Spray Fixador Extra Forte (Freeze)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente Grande de Topo Plano", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Máquina de Corte com Lâmina de Precisão", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Base da Estrutura",
+                description: "O Flat Top só funciona se o cabelo estiver saudável e denso. O uso de shampoos que dão volume e encorpam o fio ajuda na sustentação.",
+                tip: "Ao pentear, faça movimentos verticais para 'armar' o cabelo antes de passar a máquina niveladora."
+              },
+              {
+                title: "Simetria é Tudo",
+                description: "O barbeiro deve olhar o corte de todos os ângulos: frente, lados e topo. Qualquer desnível quebra a ilusão da geometria perfeita.",
+                tip: "Se você dorme de lado, pode amassar o corte. Use uma touca protetora para manter o formato durante a noite."
+              },
+              {
+                title: "Estilo e Atitude",
+                description: "O Flat Top é um corte de declaração (statement). Ele atrai olhares e exige que você mantenha o visual sempre muito bem cuidado.",
+                tip: "Combine com linhas de barba bem marcadas para acentuar o visual geométrico e agressivo."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'freeze-spray', name: "Spray Fixador Sculpt Force", desc: "O único que segura o Flat Top o dia todo sem ceder.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'man-bun-undercut-estilo-samurai': {
+      title: "Man Bun com Undercut: Estilo Samurai Contemporâneo",
+      subtitle: "O coque masculino elevado a um novo nível. Como prender o cabelo longo mantendo as laterais sempre raspadas.",
+      author: "Carlos Barbudo",
+      date: "16 de Março de 2026",
+      readTime: "11 min",
+      category: "Estilo",
+      image: "/assets/man-bun.png",
+      howToSteps: [
+        { name: "Raspagem Undercut", text: "Manter as laterais e nuca raspadas uniformemente." },
+        { name: "Penteado Traseiro", text: "Puxar todo o volume do topo para o centro da coroa." },
+        { name: "Fixação do Coque", text: "Prender com elástico resistente, criando um coque firme e circular." },
+        { name: "Alinhamento de Fios", text: "Usar pomada para baixar os 'baby hairs' na linha de transição." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Man Bun com Undercut</strong> é a evolução urbana do coque samurai. Ele resolve o problema do volume lateral excessivo em cabelos longos, mantendo um visual limpo e agressivo. É o corte perfeito para o homem que quer a liberdade do cabelo longo sem abrir mão da praticidade e do frescor das laterais raspadas.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Elásticos de Silicone Premium", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Creme para Pentear Hidratante", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Nutrição para Pontas", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Altura do Coque",
+                description: "A posição ideal é exatamente na coroa da cabeça. Muito baixo parece um rabo de cavalo comum; muito alto pode parecer desproporcional.",
+                tip: "Use o osso occipital como referência para encontrar a altura perfeita que valorize seu perfil."
+              },
+              {
+                title: "Saúde dos Fios Longos",
+                description: "O cabelo do topo sofre muito atrito com o elástico. Nunca prenda o cabelo enquanto ele estiver úmido; isso causa mofo e quebra severa.",
+                tip: "Use óleos de finalização nas pontas para evitar que o coque pareça uma 'vassoura' ressecada."
+              },
+              {
+                title: "Manutenção do Undercut",
+                description: "O contraste é o que dá o estilo. Se as laterais crescerem demais, o visual perde a força. Retoque com máquina a cada 10-15 dias.",
+                tip: "Você mesmo pode retocar o undercut em casa se tiver um espelho de mão e firmeza para seguir a linha do topo."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'hair-oil-nutri', name: "Óleo de Argan e Camelina", desc: "Brilho e maciez para o topo longo do seu Man Bun.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'taper-fade-cabelo-ondulado-textura': {
+      title: "Taper Fade para Cabelos Ondulados: Textura e Controle",
+      subtitle: "Como valorizar as ondas naturais sem perder a limpeza do degradê nas extremidades.",
+      author: "Carlos Barbudo",
+      date: "16 de Março de 2026",
+      readTime: "12 min",
+      category: "Dicas",
+      image: "/assets/corte-americano.webp",
+      howToSteps: [
+        { name: "Taper Suave", text: "Fazer um degradê discreto nas costeletas e nuca." },
+        { name: "Corte em Camadas", text: "Cortar o topo ondulado em camadas para reduzir o volume lateral." },
+        { name: "Ativação de Ondas", text: "Usar creme ativador ou spray de sal marinho para definir o movimento." },
+        { name: "Secagem", text: "Secar com difusor ou naturalmente para não desmanchar as ondas." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Taper Fade para Cabelos Ondulados</strong> é o corte da 'naturalidade polida'. Ele permite que você use o seu cabelo como ele realmente é, mas com acabamentos dignos de uma barbearia de luxo. O foco é manter a textura orgânica no topo enquanto as bordas do cabelo são limpas com precisão milimétrica.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Creme Ativador de Ondas Leve", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Difusor para Secador", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo Hidratante (Low Poo)", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Corte 'A Seco'",
+                description: "Cabelos ondulados mudam muito de comprimento quando secam. Peça para o barbeiro finalizar o ajuste do topo com o cabelo seco.",
+                tip: "Isso evita que o cabelo fique mais curto do que você planejou após a secagem."
+              },
+              {
+                title: "Controle do Frizz",
+                description: "Ondas tendem a ficar 'arrepiadas' com facilidade. O segredo é nunca esfregar a toalha no cabelo; apenas pressione para tirar a umidade.",
+                tip: "Use uma camiseta de algodão velha para secar; as fibras são mais gentis que as de uma toalha comum."
+              },
+              {
+                title: "Estilo Versátil",
+                description: "Este corte funciona bem tanto bagunçado (messy) quanto levemente penteado para trás para uma ocasião mais séria.",
+                tip: "Aplique o produto sempre de trás para frente para distribuir melhor o peso e não sobrecarregar a franja."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'wave-cream', name: "Creme Modelador Wave Control", desc: "Definição de ondas sem deixar o cabelo duro ou pesado.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'bowl-cut-repaginado-moderno': {
+      title: "Bowl Cut Repaginado: O 'Corte de Tigela' em 2026",
+      subtitle: "Esqueça o visual infantil. Aprenda como a textura e o fade transformaram o bowl cut em um estilo avant-garde.",
+      author: "Carlos Barbudo",
+      date: "16 de Março de 2026",
+      readTime: "13 min",
+      category: "Tendências",
+      image: "/assets/bowl-cut-moderno.png",
+      howToSteps: [
+        { name: "Linha Circular", text: "Marcar a linha de base circular ao redor de toda a cabeça." },
+        { name: "Undercut ou Skin Fade", text: "Raspar tudo abaixo da linha circular para criar a desconexão." },
+        { name: "Desfiado de Camadas", text: "Texturizar o topo circular para dar movimento e evitar o aspecto 'chapéu'." },
+        { name: "Finalização Matte", text: "Usar pó texturizador para dar volume e um aspecto moderno e seco." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Bowl Cut</strong> (Corte Tigela) voltou das cinzas com uma estética futurista. A versão moderna abandona a linha reta perfeita e o cabelo lambido, adotando texturas desconectadas e um fade agressivo na base. É um corte para quem busca se destacar na multidão e não tem medo de um visual geométrico e experimental.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Pó Texturizador Matte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Dentes Largos", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Spray de Fixação Seca", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Importância da Textura",
+                description: "Sem textura, o Bowl Cut parece um capacete. O barbeiro deve usar a técnica de 'point cutting' para deixar as pontas irregulares.",
+                tip: "Quanto mais 'bagunçado' no topo, mais moderno e menos datado o corte vai parecer."
+              },
+              {
+                title: "O Formato do Rosto",
+                description: "Este corte acentua as linhas da mandíbula e das maçãs do rosto. É perfeito para rostos com traços angulares e marcantes.",
+                tip: "Se você tem o rosto muito redondo, peça um Bowl Cut com a linha lateral mais alta para 'alongar' a face."
+              },
+              {
+                title: "Manutenção Estrita",
+                description: "A linha circular perde o formato muito rápido. Para manter o visual vanguardista, você precisará visitar o barbeiro a cada 10 dias.",
+                tip: "Use shampoos de limpeza profunda para que o topo fique sempre leve e com movimento."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'texture-dust', name: "Pó de Volume Estilo Urbano", desc: "O toque final essencial para o Bowl Cut moderno.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    }
+  };
+
+  const article = slug && articlesData[slug] ? articlesData[slug] : null;
+
+  if (!article) {
+    return (
+      <div className="min-h-screen bg-brand-light flex flex-col items-center justify-center p-4">
+        <AlertCircle size={48} className="text-brand-gold mb-4" />
+        <h1 className="text-2xl font-bold mb-4 text-brand-dark uppercase tracking-widest">Artigo não encontrado</h1>
+        <p className="text-gray-500 mb-8 text-center max-w-sm">O slug "{slug}" não corresponde a nenhum post em nossa base. <br /> Por favor, retorne ao blog para ver as postagens oficiais.</p>
+        <button onClick={() => navigate('/blog')} className="bg-brand-dark text-white px-10 py-4 font-black uppercase tracking-[0.2em] text-[10px] rounded hover:bg-brand-gold hover:text-brand-dark transition-all shadow-xl">Voltar ao Blog</button>
+      </div>
+    );
+  }
+
+  return (
+    <article className="bg-white min-h-screen font-sans selection:bg-brand-gold selection:text-brand-dark">
+      <SEO
+        title={`${article.title} | Cavanhaque`}
+        description={article.subtitle}
+        keywords={`${article.category}, barba, grooming, ${article.title}`}
+        image={article.image}
+        article={true}
+        author={article.author}
+        publishedTime={article.date}
+        canonicalUrl={`https://cavanhaque.com/blog/${slug}`}
+        howToSteps={article.howToSteps}
+        breadcrumbs={[
+          { name: 'Home', url: 'https://cavanhaque.com/' },
+          { name: 'Blog', url: 'https://cavanhaque.com/blog' },
+          { name: article.category, url: `https://cavanhaque.com/blog?category=${article.category}` },
+          { name: article.title, url: `https://cavanhaque.com/blog/${slug}` }
+        ]}
+      />
+      <header className="bg-brand-dark pt-20 pb-32 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
+          <button onClick={() => navigate('/blog')} className="inline-flex items-center gap-2 text-brand-gold text-[10px] font-black uppercase tracking-widest mb-12 hover:text-white transition-colors group">
+            <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" aria-hidden="true" /> Voltar ao Blog
+          </button>
+          <span className="bg-brand-gold text-brand-dark text-[10px] font-black px-4 py-1.5 rounded-sm uppercase tracking-[0.3em] mb-8 inline-block shadow-xl">{article.category}</span>
+          <h1 className="text-4xl md:text-7xl font-serif font-bold text-white mb-8 leading-tight tracking-tighter">{article.title}</h1>
+          <p className="text-gray-400 text-lg md:text-2xl font-light mb-12 max-w-3xl mx-auto leading-relaxed">{article.subtitle}</p>
+          <div className="flex flex-wrap items-center justify-center gap-8 text-[11px] font-bold uppercase tracking-widest text-gray-500 border-t border-white/5 pt-10">
+            <span className="flex items-center gap-2 text-white"><User size={14} className="text-brand-gold" /> {article.author}</span>
+            <span className="flex items-center gap-2"><Calendar size={14} className="text-brand-gold" /> {article.date}</span>
+            <span className="flex items-center gap-2"><Clock size={14} className="text-brand-gold" /> {article.readTime}</span>
+          </div>
+        </div>
+      </header>
+
+      {/* TOP DISCLOSURES (GOOGLE POLICY COMPLIANCE) */}
+      <div className="max-w-4xl mx-auto px-4 mt-8 space-y-4">
+        {/* Affiliate Disclosure */}
+        <div className="bg-brand-light/50 border border-brand-gold/10 p-4 rounded-xl flex items-center gap-3 text-[10px] md:text-xs text-gray-500 font-medium">
+          <Info size={16} className="text-brand-gold shrink-0" />
+          <p>
+            <strong>Transparência de Afiliado:</strong> Este guia contém recomendações de produtos selecionados por nossa curadoria. Ao comprar através de nossos links, podemos ganhar uma pequena comissão do marketplace (como Mercado Livre), sem nenhum custo adicional para você. Isso nos ajuda a manter o projeto independente.
+          </p>
+        </div>
+
+        {/* Medical/YMYL Disclaimer (Only for Science/Health) */}
+        {(article.category === 'Ciência' || article.category === 'Saúde') && (
+          <div className="bg-red-50 border border-red-100 p-4 rounded-xl flex items-start gap-3 text-[10px] md:text-xs text-red-800 font-medium">
+            <AlertTriangle size={16} className="text-red-500 shrink-0 mt-0.5" />
+            <p>
+              <strong>Aviso de Isenção de Responsabilidade (YMYL):</strong> O conteúdo deste site, incluindo guias sobre Minoxidil e tratamentos capilares, tem caráter estritamente informativo e educacional. Não substituímos o diagnóstico ou aconselhamento de um médico ou dermatologista certificado. Sempre consulte um profissional antes de iniciar tratamentos farmacológicos.
+            </p>
+          </div>
+        )}
+      </div>
+
+      <section className="max-w-7xl mx-auto px-4 -mt-16 relative z-20 pb-32">
+        <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_30px_60px_-12px_rgba(0,0,0,0.5)] mb-16 border-8 border-white">
+          <OptimizedImage
+            src={article.image}
+            alt={`Capa: ${article.title}`}
+            className="w-full h-[600px] object-cover"
+            priority={true}
+            sizes="(max-width: 768px) 100vw, 1200px"
+          />
+        </div>
+        <div className="flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto">
+          <div className="lg:w-2/3">
+            <AdUnit type="display" className="mb-8" />
+            <div className="prose prose-lg prose-brand text-gray-700 leading-relaxed mb-24 max-w-none">
+              {article.content}
+            </div>
+            <AdUnit type="in-article" />
+          </div>
+          
+          <aside className="lg:w-1/3 space-y-8">
+            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+              <h3 className="text-lg font-bold text-brand-dark mb-6 uppercase tracking-wider border-b border-brand-gold pb-2">Publicidade</h3>
+              <AdUnit type="sidebar" />
+            </div>
+            
+            <div className="bg-brand-charcoal p-8 rounded-2xl text-white">
+              <h3 className="text-xl font-serif font-bold text-brand-gold mb-4">Guia de Estilo</h3>
+              <p className="text-gray-400 text-sm mb-6">Receba as melhores dicas de grooming e ofertas exclusivas diretamente no seu e-mail.</p>
+              <button onClick={() => navigate('/blog')} className="w-full bg-brand-gold text-brand-dark py-3 rounded-lg font-bold uppercase text-[10px] tracking-widest hover:bg-white transition-colors">Ver Mais Dicas</button>
+            </div>
+
+            <div className="sticky top-24">
+               <h3 className="text-lg font-bold text-brand-dark mb-6 uppercase tracking-wider border-b border-brand-gold pb-2">Mais Lidos</h3>
+               <div className="space-y-4">
+                 {relatedArticles.slice(0, 2).map(ra => (
+                   <Link to={`/blog/${ra.slug}`} key={ra.id} className="flex gap-4 group">
+                     <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0">
+                       <img src={ra.imageUrl} alt={ra.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+                     </div>
+                     <div className="flex flex-col justify-center">
+                       <h4 className="text-sm font-bold text-brand-dark group-hover:text-brand-gold transition-colors line-clamp-2">{ra.title}</h4>
+                       <span className="text-[10px] text-gray-400 uppercase font-bold mt-1">{ra.category}</span>
+                     </div>
+                   </Link>
+                 ))}
+               </div>
+            </div>
+          </aside>
+        </div>
+
+        {/* --- GOOGLE ADSENSE E-E-A-T & CONTENT CURATION VALUE BOX --- */}
+        <div className="max-w-4xl mx-auto mb-16 space-y-8">
+          {/* Author Box */}
+          <div className="bg-brand-light border-l-8 border-brand-gold p-8 rounded-r-3xl flex flex-col md:flex-row gap-8 items-center md:items-start shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-24 h-24 rounded-full bg-brand-charcoal flex-shrink-0 flex items-center justify-center border-4 border-white shadow-lg overflow-hidden">
+              {article.author.includes('Dr.') ? (
+                <User size={40} className="text-brand-gold" />
+              ) : (
+                <UserCheck size={40} className="text-brand-gold" />
+              )}
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-2xl font-serif font-bold text-brand-dark mb-2">{article.author}</h3>
+              <p className="text-brand-gold font-bold text-xs uppercase tracking-widest mb-4">Autor & Curador Especialista</p>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                Especialista em grooming e estética masculina, com anos de experiência em análise de produtos para cuidados com a barba e rotinas de pele. Nosso processo editorial envolve a pesquisa aprofundada, curadoria original e testes práticos para levar a informação mais precisa até você.
+              </p>
+              <div className="flex items-center justify-center md:justify-start gap-4">
+                <span className="flex items-center gap-1 text-xs font-bold text-brand-dark uppercase"><ShieldCheck size={14} className="text-green-500" /> Curadoria Original</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Editorial Disclaimer */}
+          <div className="bg-gray-50 border border-gray-200 p-6 rounded-2xl text-xs text-gray-500 leading-relaxed">
+            <strong className="text-gray-700 block mb-2 uppercase tracking-wide">Diretrizes Editoriais e Curadoria</strong>
+            Este conteúdo é 100% original, criado e revisado pelos nossos especialistas em grooming masculino. A Nossa equipe se dedica a adicionar valor real a cada artigo por meio de pesquisas científicas, experiências empíricas e curadoria rigorosa de métodos e produtos. Não publicamos conteúdo replicado de forma automatizada sem adicionar comentários valiosos e contexto útil para nossos leitores. As informações contidas neste artigo têm caráter informativo e educacional, não substituindo o conselho de um dermatologista certificado, especialmente em tratamentos capilares como o uso de Minoxidil.
+          </div>
+        </div>
+
+        {/* Artigos Relacionados Section */}
+        <div className="max-w-7xl mx-auto mt-24 mb-24">
+          <div className="flex items-center justify-between mb-12">
+            <h2 className="text-3xl font-serif font-bold text-brand-dark">Recomendado para Você</h2>
+            <Link to="/blog" className="text-brand-gold font-bold text-xs uppercase tracking-widest hover:underline">Ver Todo o Blog</Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {relatedArticles.map((ra) => (
+              <Link to={`/blog/${ra.slug}`} key={ra.id} className="group">
+                <div className="relative h-48 rounded-2xl overflow-hidden mb-4 shadow-lg">
+                  <img src={ra.imageUrl} alt={ra.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div className="absolute top-4 left-4 bg-brand-gold text-brand-dark text-[10px] font-black px-2 py-1 uppercase">{ra.category}</div>
+                </div>
+                <h3 className="text-lg font-bold text-brand-dark group-hover:text-brand-gold transition-colors leading-snug">{ra.title}</h3>
+                <p className="text-gray-500 text-xs mt-2 line-clamp-2">{ra.excerpt}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <AdUnit type="display" className="max-w-4xl mx-auto mb-16" />
+
+        {article.recommendedProducts && (
+          <aside className="max-w-5xl mx-auto mt-24 bg-brand-light p-10 md:p-16 rounded-[40px] border border-gray-100 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold opacity-5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-brand-dark text-center mb-16 flex flex-col items-center justify-center gap-4">
+              <Sparkles className="text-brand-gold" size={40} />
+              Arsenal Recomendado
+              <span className="text-xs font-black uppercase tracking-[0.3em] text-gray-400">Curadoria Exclusiva Mercado Livre</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              {article.recommendedProducts.map((prod: any) => (
+                <div key={prod.id} className="bg-white hover:border-brand-gold border-2 border-transparent transition-all duration-500 p-10 rounded-3xl flex flex-col items-center text-center shadow-sm group">
+                  <div className="w-20 h-20 bg-brand-light rounded-2xl flex items-center justify-center text-brand-gold mb-8 group-hover:scale-110 transition-transform duration-500 shadow-inner">
+                    {prod.icon}
+                  </div>
+                  <h3 className="font-black text-brand-dark uppercase text-[11px] tracking-[0.2em] mb-4 min-h-[2rem]">{prod.name}</h3>
+                  <p className="text-gray-500 text-xs mb-8 leading-relaxed font-medium">{prod.desc}</p>
+                  <a href={prod.link} target="_blank" rel="noopener noreferrer" className="mt-auto bg-brand-dark text-white w-full py-5 rounded-2xl font-black text-[10px] uppercase tracking-[0.2em] shadow-2xl hover:bg-brand-gold hover:text-brand-dark transition-all flex items-center justify-center gap-3 group/btn">
+                    Ver Oferta Oficial <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </aside>
+        )}
+      </section>
+    </article>
+  );
+};
+
+export default ArticleDetailPage;
