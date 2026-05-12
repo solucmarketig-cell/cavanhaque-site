@@ -274,6 +274,7 @@ const styles = [
     faceShape: 'Oval e Diamante',
     maintenance: 'Alta (Raspar bigode)',
     img: 'https://blog.newoldman.com.br/wp-content/uploads/2019/10/Barba-Old-Dutch.jpg',
+    slug: 'barba-old-dutch-holandes',
     alt: 'Estilo Old Dutch barba cheia sem bigode',
     imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/2Wo6ZWc'

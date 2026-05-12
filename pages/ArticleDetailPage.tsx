@@ -9214,6 +9214,69 @@ const ArticleDetailPage: React.FC = () => {
       recommendedProducts: [
         { id: 'handlebar-wax', name: "Cera Modeladora Extreme Hold", desc: "A cera definitiva para quem quer o guidão perfeito o dia todo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
       ]
+    },
+    'barba-old-dutch-holandes': {
+      title: "Old Dutch: O Guia do Estilo 'Holandês' Tradicional",
+      subtitle: "Descubra como dominar a barba rústica que dispensa o bigode para um visual de autoridade.",
+      author: "Carlos Barbudo",
+      date: "20 de Junho de 2026",
+      readTime: "11 min",
+      category: "Barba",
+      image: "https://blog.newoldman.com.br/wp-content/uploads/2019/10/Barba-Old-Dutch.jpg",
+      howToSteps: [
+        { name: "Crescimento de Base", text: "Deixar a barba crescer por pelo menos 3 meses para ter volume lateral e frontal." },
+        { name: "Remoção do Bigode", text: "Raspar completamente o lábio superior, mantendo a pele lisa e sem sombra de pelos." },
+        { name: "Formato Quadrado", text: "Aparar as laterais e o fundo para criar uma base quadrada e larga." },
+        { name: "Conexão com Costeletas", text: "Garantir que os pelos da mandíbula subam em linha reta até as costeletas." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O estilo <strong>Old Dutch</strong> (O Velho Holandês) é uma das marcas registradas da estética rústica e tradicional. Caracterizado por uma barba cheia, quadrada e sem o bigode, este visual remete à sobriedade dos colonos europeus e à autoridade clássica. É um corte para homens que não têm medo de volume e que buscam uma distinção clara entre os pelos do rosto e a região da boca.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Shampoo para Barba de Limpeza Profunda", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo para Barba (Fragrância Amadeirada)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente de Madeira com Dentes Largos", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Segredo da Base Quadrada",
+                description: "Diferente da barba lenhador que pode ser arredondada, o Old Dutch brilha quando as linhas inferiores são retas. Use um aparador para nivelar o fundo da barba em relação ao pescoço.",
+                tip: "Ao olhar de lado, a linha da mandíbula deve parecer uma continuação sólida das costeletas."
+              },
+              {
+                title: "A Disciplina do Bigode",
+                description: "Para manter a autenticidade, o lábio superior deve estar perfeitamente raspado. Qualquer crescimento nessa área descaracteriza o estilo e o transforma em uma 'Full Beard' comum.",
+                tip: "Raspe a área do bigode diariamente com uma lâmina de precisão para evitar a sombra do pelo."
+              },
+              {
+                title: "Volume Lateral Controlado",
+                description: "Embora seja uma barba volumosa, ela não deve 'explodir' para os lados. Use um balm para manter os fios laterais alinhados e apontando para baixo.",
+                tip: "Use o secador em temperatura média enquanto penteia para baixo para selar as cutículas do fio."
+              }
+            ]}
+          />
+
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "O Old Dutch funciona incrivelmente bem para rostos com formato diamante ou oval, pois o volume lateral e a base quadrada ajudam a dar mais peso à mandíbula. Como a boca fica totalmente exposta, é essencial manter a higiene da barba impecável após as refeições, usando sempre um shampoo de qualidade para evitar o acúmulo de resíduos."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'old-dutch-kit', name: "Combo Barba de Respeito", desc: "Tudo o que você precisa para manter o volume e a limpeza do seu Old Dutch.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
     }
   };
   const article = slug && articlesData[slug] ? articlesData[slug] : null;
