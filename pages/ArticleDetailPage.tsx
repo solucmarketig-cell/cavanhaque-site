@@ -9404,6 +9404,69 @@ const ArticleDetailPage: React.FC = () => {
       recommendedProducts: [
         { id: 'hair-maintenance', name: "Kit Pós-Op Premium", desc: "Shampoo e loções calmantes para uma cicatrização perfeita.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
       ]
+    },
+    'soul-patch-mosca': {
+      title: "Soul Patch: O Detalhe que Faz a Diferença",
+      subtitle: "Saiba como usar e manter o pequeno triângulo de pelos abaixo do lábio para um visual artístico e minimalista.",
+      author: "Carlos Barbudo",
+      date: "15 de Maio de 2026",
+      readTime: "8 min",
+      category: "Barba",
+      image: "/assets/soul-patch.webp",
+      howToSteps: [
+        { name: "Delimitação Central", text: "Identificar o centro exato abaixo do lábio inferior." },
+        { name: "Raspagem Periférica", text: "Remover todos os pelos ao redor, deixando apenas o triângulo ou gota." },
+        { name: "Ajuste de Altura", text: "Aparar os fios para que não fiquem excessivamente longos." },
+        { name: "Hidratação da Pele", text: "Como a área é pequena, a pele ao redor deve estar impecável." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Soul Patch</strong>, carinhosamente conhecido no Brasil como "Mosca", é um dos estilos mais minimalistas e expressivos da barbearia. Localizado logo abaixo do lábio inferior, este pequeno detalhe pode mudar completamente a dinâmica do rosto, trazendo um ar artístico, boêmio e sofisticado sem o esforço de uma barba cheia.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Trimmer de Alta Precisão", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gel de Barbear Transparente", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Barba Leve", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Encontrando o Centro",
+                description: "O Soul Patch deve estar perfeitamente centralizado com o arco do cupido e o centro do queixo. Use um espelho de aumento para garantir a simetria.",
+                tip: "Comece com um formato maior e vá diminuindo até chegar ao tamanho ideal para o seu rosto."
+              },
+              {
+                title: "O Formato Ideal",
+                description: "Os formatos mais comuns são o triângulo invertido ou a 'gota'. Ele deve terminar antes de chegar à dobra do queixo.",
+                tip: "Mantenha as bordas nítidas usando uma lâmina de acabamento ou navalhete."
+              },
+              {
+                title: "Integração com Outros Estilos",
+                description: "A mosca funciona muito bem sozinha, mas também é o complemento essencial para o Cavanhaque Van Dyke ou o Estilo Balbo.",
+                tip: "Se usar com bigode, garanta que haja um espaço de pele limpa entre eles."
+              }
+            ]}
+          />
+
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "O segredo do Soul Patch de respeito é a densidade. Se os pelos forem muito claros ou finos, mantenha-os um pouco mais longos (cerca de 5-8mm) para que o desenho fique visível. Se forem escuros e grossos, um stubble curto já é o suficiente para criar o impacto desejado."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'precision-trimmer', name: "Aparador de Detalhes Pro", desc: "A ferramenta indispensável para manter os contornos da sua mosca sempre afiados.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
     }
   };
   const article = slug && articlesData[slug] ? articlesData[slug] : null;

@@ -259,7 +259,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'beard-23',
           title: 'Soul Patch: O Detalhe que Faz a Diferença',
           excerpt: 'Saiba como usar e manter o pequeno triângulo de pelos abaixo do lábio para um visual artístico.',
-          imageUrl: '/assets/cavanhaque-guia.webp',
+          imageUrl: '/assets/soul-patch.webp',
           author: 'Carlos Barbudo',
           date: '15 Mai 2026',
           slug: 'soul-patch-mosca',
