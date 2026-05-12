@@ -9467,6 +9467,69 @@ const ArticleDetailPage: React.FC = () => {
       recommendedProducts: [
         { id: 'precision-trimmer', name: "Aparador de Detalhes Pro", desc: "A ferramenta indispensável para manter os contornos da sua mosca sempre afiados.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
       ]
+    },
+    'bigode-lapis-vintage': {
+      title: "Bigode Lápis: Elegância e Precisão do Cinema Clássico",
+      subtitle: "Aprenda a desenhar a linha fina de sofisticação que marcou a era de ouro de Hollywood.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "15 de Maio de 2026",
+      readTime: "10 min",
+      category: "Barba",
+      image: "/assets/bigode-lapis.webp",
+      howToSteps: [
+        { name: "Marcação da Linha", text: "Definir uma linha fina de cerca de 2-3mm acima do lábio superior." },
+        { name: "Limpeza Total", text: "Raspar todos os pelos acima da linha escolhida até o nariz." },
+        { name: "Simetria Labial", text: "Garantir que a espessura seja constante e centralizada." },
+        { name: "Manutenção Diária", text: "Pela finura, qualquer crescimento fora da linha estraga o visual." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Bigode Lápis</strong> (Pencil Mustache) é a personificação do charme clássico de Hollywood. Eternizado por ícones como Clark Gable e Errol Flynn, este estilo exige uma mão firme e um olhar atento à simetria. Não se trata de volume, mas de <em>precisão gráfica</em>: uma linha fina e nítida que emoldura o lábio superior com sofisticação absoluta.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Navalhete de Precisão", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gel de Barbear Transparente", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Lápis de Marcação (Opcional)", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Linha de Separação",
+                description: "O Bigode Lápis deve estar a uma distância de 2 a 4mm do lábio superior. Ele nunca deve tocar a boca. O segredo é o espaço de pele limpa entre o pelo e o lábio.",
+                tip: "Use um gel transparente para que você possa ver exatamente onde a lâmina está passando."
+              },
+              {
+                title: "Espessura Constante",
+                description: "Diferente do Chevron, o lápis não tem volume vertical. Ele deve ser uma faixa fina e contínua. Se o seu pelo for muito ralo, você pode usar um pouco de rímel para barba para dar definição.",
+                tip: "Não tente fazer o bigode muito fino na primeira tentativa; vá reduzindo aos poucos."
+              },
+              {
+                title: "Limpeza Superior",
+                description: "A área entre o bigode e o nariz deve estar perfeitamente lisa. Qualquer sombra de pelo descaracteriza o estilo e o deixa com aspecto de 'sujo'.",
+                tip: "Finalize com uma loção pós-barba para fechar os poros e evitar vermelhidão na área raspada."
+              }
+            ]}
+          />
+
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "O Bigode Lápis é o visual definitivo para homens de lábios finos ou médios. Ele traz um foco imediato para a boca sem sobrecarregar o rosto. A manutenção deve ser diária: por ser uma linha tão fina, o crescimento de apenas 24 horas já é suficiente para borrar os contornos e tirar a elegância do corte."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'precision-razor', name: "Navalhete Profissional em Aço", desc: "A ferramenta de precisão necessária para criar as linhas ultra-finas do estilo lápis.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
     }
   };
   const article = slug && articlesData[slug] ? articlesData[slug] : null;

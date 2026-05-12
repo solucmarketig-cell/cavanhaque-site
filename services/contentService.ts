@@ -249,7 +249,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'beard-22',
           title: 'Bigode Lápis: Elegância e Precisão do Cinema Clássico',
           excerpt: 'Aprenda a desenhar a linha fina de sofisticação que marcou a era de ouro de Hollywood.',
-          imageUrl: '/assets/bigode-chines.webp',
+          imageUrl: '/assets/bigode-lapis.webp',
           author: 'Dr. Estilo (Ph.D)',
           date: '15 Mai 2026',
           slug: 'bigode-lapis-vintage',
