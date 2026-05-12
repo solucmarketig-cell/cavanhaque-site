@@ -7741,6 +7741,7 @@ const ArticleDetailPage: React.FC = () => {
       readTime: "13 min",
       category: "Cabelo",
       image: "/assets/bowl-cut-moderno.png",
+      imagePosition: "object-top",
       howToSteps: [
         { name: "Linha Circular", text: "Marcar a linha de base circular ao redor de toda a cabeça." },
         { name: "Undercut ou Skin Fade", text: "Raspar tudo abaixo da linha circular para criar a desconexão." },
@@ -9354,7 +9355,7 @@ const ArticleDetailPage: React.FC = () => {
           <OptimizedImage
             src={article.image}
             alt={`Capa: ${article.title}`}
-            className="w-full h-[600px] object-cover"
+            className={`w-full h-[600px] object-cover ${article.imagePosition || 'object-center'}`}
             priority={true}
             sizes="(max-width: 768px) 100vw, 1200px"
           />
