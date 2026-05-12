@@ -16,6 +16,256 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Ciência'
         },
         {
+          id: 'beard-1',
+          title: 'Barba Degradê (Fade): O Manual do Visual Ultra Limpo',
+          excerpt: 'Aprenda a dominar a tendência #1 das barbearias. Como criar a transição perfeita das costeletas ao queixo em casa.',
+          imageUrl: '/assets/barba-degrade-fade.webp',
+          author: 'Carlos Barbudo',
+          date: '11 Mai 2026',
+          slug: 'barba-degrade-fade',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-2',
+          title: 'Ducktail (Cauda de Pato): Sofisticação e Geometria',
+          excerpt: 'O guia completo para esculpir a barba que alonga o rosto e transmite autoridade. O equilíbrio entre o rústico e o polido.',
+          imageUrl: '/assets/barba-ducktail.webp',
+          author: 'Carlos Barbudo',
+          date: '11 Mai 2026',
+          slug: 'barba-ducktail-cauda-de-pato',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-3',
+          title: 'Bigode Chevron: O Retorno do Clássico Atemporal',
+          excerpt: 'Aprenda a cultivar e manter o bigode grosso que domina o lábio superior. O visual de Tom Selleck e Freddie Mercury.',
+          imageUrl: '/assets/bigode-chevron.webp',
+          author: 'Carlos Barbudo',
+          date: '11 Mai 2026',
+          slug: 'bigode-chevron-vintage',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-4',
+          title: 'Van Dyke: O Estilo Artístico que Atravessa Séculos',
+          excerpt: 'Descubra como combinar o bigode e o cavanhaque desconectados para um visual criativo, sofisticado e cheio de personalidade.',
+          imageUrl: '/assets/barba-van-dyke.webp',
+          author: 'Carlos Barbudo',
+          date: '11 Mai 2026',
+          slug: 'barba-van-dyke-classica',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-5',
+          title: 'Cavanhaque Âncora: O Guia do Design de Alta Precisão',
+          excerpt: 'Aprenda a traçar as linhas que definem o maxilar e criam um visual imponente. O favorito de quem busca um rosto angular.',
+          imageUrl: '/assets/cavanhaque-ancora.webp',
+          author: 'Carlos Barbudo',
+          date: '11 Mai 2026',
+          slug: 'cavanhaque-ancora-imponente',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-6',
+          title: 'Barba Lenhador (Viking): O Guia do Volume Máximo',
+          excerpt: 'Como cultivar e manter uma barba longa, densa e saudável sem perder a elegância. O estilo rústico definitivo.',
+          imageUrl: '/assets/barba-lenhador.webp',
+          author: 'Carlos Barbudo',
+          date: '12 Mai 2026',
+          slug: 'barba-lenhador-viking-estilo',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-7',
+          title: 'Barba Corporativa: Elegância e Autoridade no Trabalho',
+          excerpt: 'O manual para manter uma barba curta e impecável que projeta profissionalismo e confiança.',
+          imageUrl: '/assets/barba-corporativa.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '12 Mai 2026',
+          slug: 'barba-corporativa-profissional',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-8',
+          title: 'Stubble (Barba por Fazer): O Charme do Desalinhado Planejado',
+          excerpt: 'Aprenda a técnica para manter aquele visual de "3 dias" de forma eterna e simétrica.',
+          imageUrl: '/assets/barba-stubble.webp',
+          author: 'Carlos Barbudo',
+          date: '12 Mai 2026',
+          slug: 'barba-stubble-por-fazer',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-9',
+          title: 'Estilo Balbo: O Visual Ícone de Personalidade',
+          excerpt: 'Tudo sobre o estilo que une bigode, cavanhaque e soul patch em um desenho único e desconectado.',
+          imageUrl: '/assets/barba-balbo.webp',
+          author: 'Carlos Barbudo',
+          date: '12 Mai 2026',
+          slug: 'barba-balbo-guia',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-10',
+          title: 'Barba Garibaldi: O Equilíbrio da Barba Cheia e Redonda',
+          excerpt: 'Aprenda a modelar a barba robusta e circular que transmite força e naturalidade.',
+          imageUrl: '/assets/barba-garibaldi.webp',
+          author: 'Carlos Barbudo',
+          date: '12 Mai 2026',
+          slug: 'barba-garibaldi-circular',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-11',
+          title: 'Barba Viking: Tranças, História e Autenticidade',
+          excerpt: 'Descubra como cultivar uma barba épica e aprender as técnicas de trançado nórdico.',
+          imageUrl: '/assets/barba-viking.webp',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'barba-viking-trancada',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-12',
+          title: 'Barba Espartana: O Design que Esculpe o Rosto',
+          excerpt: 'Aprenda a criar o ângulo perfeito no queixo enquanto mantém as laterais baixas.',
+          imageUrl: '/assets/barba-espartana.webp',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'barba-espartana-maxilar',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-13',
+          title: 'Short Boxed: A Barba Quadrada para o Sucesso',
+          excerpt: 'O guia da barba executiva. Saiba como manter o formato retangular que transmite autoridade.',
+          imageUrl: '/assets/barba-short-boxed.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'barba-quadrada-short-boxed',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-14',
+          title: 'Hollywoodian: O Cavanhaque das Estrelas',
+          excerpt: 'Descubra como adotar o estilo que une o cavanhaque à linha do maxilar sem costeletas.',
+          imageUrl: '/assets/cavanhaque-estendido.webp',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'cavanhaque-estendido-hollywoodian',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-15',
+          title: 'Barba Verdi: O Equilíbrio entre a Arte e a Robustez',
+          excerpt: 'Aprenda a cultivar a barba arredondada com o bigode Handlebar destacado.',
+          imageUrl: '/assets/barba-verdi.webp',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'barba-verdi-giuseppe',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-16',
+          title: 'French Fork: O Estilo que Divide Opiniões e Rostos',
+          excerpt: 'Aprenda a esculpir e manter a barba que se divide em duas pontas no queixo.',
+          imageUrl: '/assets/barba-french-fork.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'barba-french-fork-garfo-frances',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-17',
+          title: 'Chin Strap: A Linha que Define o Maxilar',
+          excerpt: 'Descubra como desenhar a faixa de barba perfeita que acompanha o contorno do rosto.',
+          imageUrl: '/assets/barba-chin-strap.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'barba-chin-strap-faixa',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-18',
+          title: 'Bandholz: O Estilo para os Pacientes e Poderosos',
+          excerpt: 'Tudo sobre o estilo que celebra o crescimento natural e o volume extremo.',
+          imageUrl: '/assets/barba-viking.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'barba-bandholz-volume-maximo',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-19',
+          title: 'Hulihee: A Extravagância das Costeletas Conectadas',
+          excerpt: 'Descubra o estilo clássico onde as costeletas volumosas se encontram no bigode.',
+          imageUrl: '/assets/barba-garibaldi.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'barba-hulihee-estilo-vintage',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-20',
+          title: 'Barba Imperial: O Visual da Realeza Europeia',
+          excerpt: 'Aprenda a combinar o bigode aristocrático com um cavanhaque pontudo e elegante.',
+          imageUrl: '/assets/barba-van-dyke.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'barba-imperial-realeza',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-21',
+          title: 'Mutton Chops: O Estilo Feroz das Costeletas de Carneiro',
+          excerpt: 'Saiba como cultivar as costeletas mais icônicas da cultura pop e do visual rústico.',
+          imageUrl: '/assets/barba-grisalha.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'barba-mutton-chops-wolverine',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-22',
+          title: 'Bigode Lápis: Elegância e Precisão do Cinema Clássico',
+          excerpt: 'Aprenda a desenhar a linha fina de sofisticação que marcou a era de ouro de Hollywood.',
+          imageUrl: '/assets/bigode-chines.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '15 Mai 2026',
+          slug: 'bigode-lapis-vintage',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-23',
+          title: 'Soul Patch: O Detalhe que Faz a Diferença',
+          excerpt: 'Saiba como usar e manter o pequeno triângulo de pelos abaixo do lábio para um visual artístico.',
+          imageUrl: '/assets/cavanhaque-guia.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'soul-patch-mosca',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-24',
+          title: 'Bigode Ferradura: O Visual de Impacto e Rebeldia',
+          excerpt: 'Aprenda a domar o estilo clássico dos motoqueiros e ícones da luta livre.',
+          imageUrl: '/assets/bigode-chevron.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'bigode-ferradura-biker',
+          category: 'Barba'
+        },
+        {
+          id: 'beard-25',
+          title: 'Bigode Guidão (Handlebar): A Arte da Curva Perfeita',
+          excerpt: 'Descubra como cultivar e modelar o bigode mais icônico da cultura hipster e clássica.',
+          imageUrl: '/assets/bigode-chevron.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'bigode-handlebar-guidao',
+          category: 'Barba'
+        },
+        {
           id: 'willian-bigode-article',
           title: 'Willian Bigode: A Anatomia do Visual que Marcou uma Geração no Futebol',
           excerpt: 'Aprenda como o atacante transformou um bigode clássico em uma identidade de marca pessoal. Um guia prático do Cavanhaque sobre o estilo Chevron.',

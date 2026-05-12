@@ -12,7 +12,8 @@ const styles = [
     description: 'A tendência #1 das barbearias modernas. As costeletas começam raspadas e o volume aumenta gradualmente até o queixo. Visual ultra limpo e urbano.',
     faceShape: 'Quadrado e Redondo',
     maintenance: 'Muito Alta',
-    img: 'https://vitacheckup.com.br/wp-content/uploads/2022/05/Barba-Degrade.jpg',
+    img: '/assets/barba-degrade-fade.webp',
+    slug: 'barba-degrade-fade',
     alt: 'Barba com corte degradê fade lateral perfeito',
     imagePosition: 'object-top'
   },
@@ -22,7 +23,8 @@ const styles = [
     description: 'Uma variação elegante da barba cheia, onde os pelos do queixo são aparados em ponta, lembrando a cauda de um pato. Alonga o rosto e transmite sofisticação.',
     faceShape: 'Redondo e Retangular',
     maintenance: 'Alta',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2019/10/Barba-Ducktail-8.jpg',
+    img: '/assets/barba-ducktail.webp',
+    slug: 'barba-ducktail-cauda-de-pato',
     alt: 'Barba estilo Ducktail pontuda no queixo',
     imagePosition: 'object-center'
   },
@@ -32,7 +34,8 @@ const styles = [
     description: 'O bigode grosso e largo que cobre todo o lábio superior, estilo Freddie Mercury. Voltou com força total na cultura pop e moda vintage.',
     faceShape: 'Oval e Quadrado',
     maintenance: 'Média',
-    img: 'https://comoterbarba.com/wp-content/uploads/2023/11/Bigode-Chevron.jpg.webp',
+    img: '/assets/bigode-chevron.webp',
+    slug: 'bigode-chevron-vintage',
     alt: 'Bigode grosso estilo Chevron vintage',
     imagePosition: 'object-top'
   },
@@ -44,7 +47,8 @@ const styles = [
     description: 'Um clássico artístico que separa o bigode do cavanhaque no queixo. Popularizado por pintores do século 17 e astros de Hollywood como Johnny Depp.',
     faceShape: 'Oval e Redondo',
     maintenance: 'Alta',
-    img: 'https://estilosmasculinos.com/wp-content/uploads/2024/05/Barba-Van-Dyke-3-1024x700.webp',
+    img: '/assets/barba-van-dyke.webp',
+    slug: 'barba-van-dyke-classica',
     alt: 'Close-up de cavanhaque estilo Van Dyke com bigode separado',
     imagePosition: 'object-top'
   },
@@ -54,18 +58,20 @@ const styles = [
     description: 'Um estilo sofisticado que traça a linha do maxilar. Nesta variação "Full", o volume é mantido alto no queixo e bigode, criando um visual imponente.',
     faceShape: 'Quadrado e Triangular',
     maintenance: 'Média',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2019/10/Barba-Ancora-5.jpg',
+    img: '/assets/cavanhaque-ancora.webp',
+    slug: 'cavanhaque-ancora-imponente',
     alt: 'Detalhe de barba desenhada estilo âncora',
     imagePosition: 'object-top'
   },
   {
     id: 'lumberjack',
     name: 'Barba Lenhador (Lumberjack)',
-    description: 'O símbolo máximo de virilidade. Uma barba cheia, longa e volumosa. Exige paciência para crescer e muita higiene para não parecer desleixo.',
-    faceShape: 'Oval e Diamante',
-    maintenance: 'Média',
-    img: 'https://comoterbarba.com/wp-content/uploads/2023/10/barba-lenhador-classica.webp',
-    alt: 'Homem com barba longa e cheia estilo lenhador',
+    description: 'Rústica e imponente. Uma barba cheia que exige paciência para crescer e cuidado extremo com a hidratação. O visual clássico do homem do campo adaptado à cidade.',
+    faceShape: 'Oval e Retangular',
+    maintenance: 'Alta',
+    img: '/assets/barba-lenhador.webp',
+    slug: 'barba-lenhador-viking-estilo',
+    alt: 'Homem com barba lenhador longa e volumosa',
     imagePosition: 'object-center'
   },
   {
@@ -74,21 +80,21 @@ const styles = [
     description: 'O design mais tradicional onde o bigode se conecta à barba do queixo, formando um círculo ao redor da boca. Ideal para esconder falhas.',
     faceShape: 'Diamante e Quadrado',
     maintenance: 'Média',
-    img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    img: '/assets/cavanhaque-guia.webp',
+    slug: 'cavanhaque-masculino-guia-completo',
     alt: 'Homem bonito com rosto em destaque usando cavanhaque cheio e barba desenhada',
-    imagePosition: 'object-[center_55%]',
-    extraClasses: 'scale-[1.1] group-hover:scale-[1.15]'
+    imagePosition: 'object-top'
   },
   {
     id: 'stubble',
-    name: 'Barba Por Fazer (Stubble)',
-    description: 'A famosa "barba de 3 dias". Transmite masculinidade rústica mas cuidada. Exige aparador elétrico frequente para não parecer desleixo.',
-    faceShape: 'Todos os formatos',
+    name: 'Barba por Fazer (Stubble)',
+    description: 'O famoso visual de "3 dias". Prático e atraente, exige apenas uma máquina com pente baixo para manutenção. Ideal para quem busca um estilo descomplicado.',
+    faceShape: 'Coração e Oval',
     maintenance: 'Baixa',
-    img: 'https://estilosmasculinos.com/wp-content/uploads/2024/05/Barba-Por-Fazer-Stubble-2-1024x700.webp',
-    alt: 'Homem com barba rala estilo stubble masculina bem cuidada',
+    img: '/assets/barba-stubble.webp',
+    slug: 'barba-stubble-por-fazer',
+    alt: 'Visual masculino com barba por fazer sombreada',
     imagePosition: 'object-top',
-    affiliateLink: 'https://mercadolivre.com/sec/1iKoWFz',
     affiliateName: 'Combo Shampoo Bomba + Óleo'
   },
   {
@@ -97,10 +103,10 @@ const styles = [
     description: 'Similar ao Âncora, mas com uma base mais larga no queixo e bigode flutuante. Robert Downey Jr. (Tony Stark) imortalizou este estilo.',
     faceShape: 'Queixo estreito',
     maintenance: 'Alta',
-    img: 'https://64.media.tumblr.com/087ee35c6cd9275f851d9aeea84c7152/tumblr_pno4ryvII51uiyzn8_500.jpg',
-    alt: 'Robert Downey Jr usando barba estilo Balbo',
-    imagePosition: 'object-[center_60%]',
-    extraClasses: 'scale-[1.25] group-hover:scale-[1.35]'
+    img: '/assets/barba-balbo.webp',
+    slug: 'barba-balbo-guia',
+    alt: 'Estilo de barba Balbo com bigode flutuante',
+    imagePosition: 'object-top'
   },
   {
     id: 'garibaldi',
@@ -108,7 +114,8 @@ const styles = [
     description: 'Uma barba cheia, larga e arredondada na base. Para quem quer volume máximo mas com aparência natural e levemente aparada.',
     faceShape: 'Oval e Retangular',
     maintenance: 'Média',
-    img: 'https://reinodabarba.com.br/wp-content/uploads/2025/05/Barba-Cheia-Tradicional.jpg',
+    img: '/assets/barba-garibaldi.webp',
+    slug: 'barba-garibaldi-circular',
     alt: 'Barba cheia e volumosa estilo Garibaldi em destaque',
     imagePosition: 'object-top'
   },
@@ -120,7 +127,8 @@ const styles = [
     description: 'Estilo longo, denso e muitas vezes trançado. Inspirado nos guerreiros nórdicos, transmite força e brutalidade. Requer óleos potentes para hidratação.',
     faceShape: 'Oval e Triangular',
     maintenance: 'Média',
-    img: 'https://reinodabarba.com.br/wp-content/uploads/2025/05/Barba-Viking-com-Acessorios.jpg',
+    img: '/assets/barba-viking.webp',
+    slug: 'barba-viking-trancada',
     alt: 'Homem com barba viking longa e trançada estilo nórdico',
     imagePosition: 'object-top'
   },
@@ -130,7 +138,8 @@ const styles = [
     description: 'Similar à Viking e à Full Beard, mas com as bochechas mais aparadas e o queixo pontudo e anguloso, acentuando a linha do maxilar.',
     faceShape: 'Redondo e Oval',
     maintenance: 'Média/Alta',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2019/09/Barba-Estilo-Espartana-8.jpg',
+    img: '/assets/barba-espartana.webp',
+    slug: 'barba-espartana-maxilar',
     alt: 'Barba espartana com maxilar definido e queixo pontudo',
     imagePosition: 'object-top'
   },
@@ -140,7 +149,8 @@ const styles = [
     description: 'A versão corporativa da barba cheia. Cuidadosamente aparada com linhas retas nas bochechas e pescoço. Ideal para ambiente de trabalho.',
     faceShape: 'Todos os formatos',
     maintenance: 'Alta',
-    img: 'https://blog.cuecastore.com.br/wp-content/uploads/2019/07/Barba-quadrada.jpg',
+    img: '/assets/barba-short-boxed.webp',
+    slug: 'barba-quadrada-short-boxed',
     alt: 'Barba quadrada curta estilo executivo business',
     imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/2Wo6ZWc'
@@ -151,7 +161,8 @@ const styles = [
     description: 'Também chamado de "Hollywoodian". É um cavanhaque que se estende pela linha do maxilar, mas sem as costeletas. Um meio termo elegante.',
     faceShape: 'Quadrado e Oval',
     maintenance: 'Média',
-    img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX6eC8mXxtKAHwy9Gm9bZerEKm3rvepbeIjSiF_rBfwlwiSkRt_EnfAlYRfHdvR8FNZ75mBui_j0uY8d9Zj1eWeONxpWqIgZALoN3aYX13WLFc5eLkK8GZw_6ACYSLwe_FSIj5raFSY9VV/s1600/cavanhaque-estendido-estilos-de-barba-2017+%25282%2529.jpg',
+    img: '/assets/cavanhaque-estendido.webp',
+    slug: 'cavanhaque-estendido-hollywoodian',
     alt: 'Cavanhaque estendido sem costeletas estilo hollywood',
     imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/1iKoWFz',
@@ -163,9 +174,10 @@ const styles = [
     description: 'Um estilo ousado e vintage onde as costeletas crescem até encontrar o bigode, mas o queixo fica raspado. Estilo Wolverine.',
     faceShape: 'Redondo e Oval',
     maintenance: 'Alta',
-    img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaH2JazOHYXrLPnlblN2JMVDyLiRzbIu2bQxoG7CJbKKYeV1XWMOsNC_xjeGk7-ZBFSH1VNk3Imdw4IsaVPg_qiTSVQQuixZkkOb_SI4XNrfsFjRU5psN5dTsRcMEUSjpnlfExr4gDjJo/s1600/Barba+Mutton+Chops.jpg',
+    img: '/assets/barba-grisalha.webp',
+    slug: 'barba-mutton-chops-wolverine',
     alt: 'Estilo de barba mutton chops com costeletas largas',
-    imagePosition: 'object-[center_75%]',
+    imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/2Wo6ZWc'
   },
   {
@@ -174,10 +186,10 @@ const styles = [
     description: 'Uma linha fina e elegante logo acima do lábio superior. Ícone do cinema dos anos 40 e 50. Requer precisão cirúrgica no barbear.',
     faceShape: 'Oval e Coração',
     maintenance: 'Diária',
-    img: 'https://pbs.twimg.com/media/Ef0pt2RWkAEI0sx.jpg',
+    img: '/assets/bigode-chines.webp',
+    slug: 'bigode-lapis-vintage',
     alt: 'Bigode fino estilo lápis vintage',
-    imagePosition: 'object-[center_60%]', // Foco ajustado para baixo (boca) para cortar olhos
-    extraClasses: 'scale-[2.5] group-hover:scale-[2.7]', // Zoom extremo para detalhe apenas do bigode
+    imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/1iKoWFz',
     affiliateName: 'Combo Shampoo Bomba + Óleo'
   },
@@ -187,7 +199,8 @@ const styles = [
     description: 'Um pequeno tufo de pelos logo abaixo do lábio inferior. Minimalista, artístico e fácil de manter. Frequentemente combinado com bigodes.',
     faceShape: 'Todos os formatos',
     maintenance: 'Baixa',
-    img: 'https://barbologia.wordpress.com/wp-content/uploads/2014/10/mike-and-his-soul-patch.jpg',
+    img: '/assets/cavanhaque-guia.webp',
+    slug: 'soul-patch-mosca',
     alt: 'Homem com estilo de barba mosca soul patch',
     imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/1iKoWFz',
@@ -199,7 +212,8 @@ const styles = [
     description: 'Inspirado em Giuseppe Verdi. Uma barba redonda e cheia, porém curta, com um bigode estilizado e separado da barba.',
     faceShape: 'Triangular e Oval',
     maintenance: 'Alta',
-    img: 'https://www.beautymarket.es/peluqueria/fotos/17780_notbmp3grande.jpg',
+    img: '/assets/barba-verdi.webp',
+    slug: 'barba-verdi-giuseppe',
     alt: 'Barba estilo Verdi com bigode estilizado',
     imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/2Wo6ZWc'
@@ -210,7 +224,8 @@ const styles = [
     description: 'Uma barba cheia que se divide em duas pontas na região do queixo. Um visual muito distinto e original para quem quer se destacar.',
     faceShape: 'Retangular',
     maintenance: 'Média',
-    img: 'https://cdn.shopify.com/s/files/1/0368/4342/1740/files/French_Fork_Goatee_Style_480x480.webp?v=1743458216',
+    img: '/assets/barba-french-fork.webp',
+    slug: 'barba-french-fork-garfo-frances',
     alt: 'Barba French Fork dividida no meio do queixo',
     imagePosition: 'object-center',
     affiliateLink: 'https://mercadolivre.com/sec/2Wo6ZWc'
@@ -221,7 +236,8 @@ const styles = [
     description: 'Uma linha fina de pelos que segue a linha do maxilar de uma orelha à outra. Não cobre o bigode. Destaca muito o contorno do rosto.',
     faceShape: 'Oval e Forte Maxilar',
     maintenance: 'Muito Alta',
-    img: 'https://fashionistodiaries.com/wp-content/uploads/2022/02/tp-chin-strap-beard.jpg',
+    img: '/assets/barba-chin-strap.webp',
+    slug: 'barba-chin-strap-faixa',
     alt: 'Barba fina no contorno do rosto estilo chin strap',
     imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/1iKoWFz',
@@ -233,7 +249,8 @@ const styles = [
     description: 'Para quem tem paciência. Deixe crescer livremente por meses antes de aparar. Volume máximo e naturalidade. Requer muita limpeza.',
     faceShape: 'Triangular e Diamante',
     maintenance: 'Média (Hidratação)',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2019/09/Barba-Bandholz-2.jpg',
+    img: '/assets/barba-lenhador.webp',
+    slug: 'barba-bandholz-volume-maximo',
     alt: 'Barba enorme estilo Bandholz hipster',
     imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/2Wo6ZWc'
@@ -244,10 +261,10 @@ const styles = [
     description: 'O oposto do cavanhaque: barba cheia e costeletas largas, mas sem pelos no queixo. Um estilo vitoriano clássico e excêntrico.',
     faceShape: 'Oval',
     maintenance: 'Alta',
-    img: 'https://live.staticflickr.com/2626/3976155491_a2077c0500_z.jpg',
+    img: '/assets/barba-garibaldi.webp',
+    slug: 'barba-hulihee-estilo-vintage',
     alt: 'Estilo de barba Hulihee clássico vitoriano',
     imagePosition: 'object-center',
-    extraClasses: 'scale-[1.2] group-hover:scale-[1.3]',
     affiliateLink: 'https://mercadolivre.com/sec/2Wo6ZWc'
   },
   {
@@ -267,10 +284,33 @@ const styles = [
     description: 'Um bigode grosso com extensões verticais longas que descem pelos cantos da boca até o maxilar. O estilo clássico dos "Biker" e do Hulk Hogan.',
     faceShape: 'Quadrado e Redondo',
     maintenance: 'Média',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2018/10/Tipos-de-bigode-mais-estilosos-6.jpg',
+    img: '/assets/bigode-chevron.webp',
+    slug: 'bigode-ferradura-biker',
     alt: 'Homem com bigode estilo ferradura horseshoe',
     imagePosition: 'object-top',
     affiliateLink: 'https://mercadolivre.com/sec/2Wo6ZWc'
+  },
+  {
+    id: 'imperial',
+    name: 'Bigode Imperial',
+    description: 'A aristocracia no rosto. Um bigode grande e curvado para cima, muitas vezes acompanhado por um cavanhaque pontudo. Exige cera de alta fixação.',
+    faceShape: 'Retangular e Oval',
+    maintenance: 'Muito Alta',
+    img: '/assets/barba-van-dyke.webp',
+    slug: 'barba-imperial-realeza',
+    alt: 'Bigode estilo imperial curvado para cima aristocrático',
+    imagePosition: 'object-top'
+  },
+  {
+    id: 'handlebar',
+    name: 'Bigode Guidão (Handlebar)',
+    description: 'O ícone hipster por excelência. As pontas são longas e enroladas para cima, criando um formato de guidão de bicicleta. Requer muita dedicação e cera.',
+    faceShape: 'Oval e Diamante',
+    maintenance: 'Diária (Modelagem)',
+    img: '/assets/bigode-chevron.webp',
+    slug: 'bigode-handlebar-guidao',
+    alt: 'Bigode estilo guidão handlebar enrolado nas pontas',
+    imagePosition: 'object-top'
   }
 ];
 
@@ -367,12 +407,21 @@ const BeardStylesPage: React.FC = () => {
                 </div>
 
                 {style.affiliateLink ? (
-                  <a href={style.affiliateLink} target="_blank" rel="noopener noreferrer" className="block text-center w-full py-3 border border-brand-dark text-brand-dark font-bold uppercase text-xs tracking-wider hover:bg-brand-dark hover:text-white transition-colors">
+                  <a href={style.affiliateLink} target="_blank" rel="noopener noreferrer" className="block text-center w-full py-3 border border-brand-dark text-brand-dark font-bold uppercase text-xs tracking-wider hover:bg-brand-dark hover:text-white transition-colors mb-3">
                     Produtos para esse estilo
                   </a>
                 ) : (
-                  <Link to="/" className="block text-center w-full py-3 border border-brand-dark text-brand-dark font-bold uppercase text-xs tracking-wider hover:bg-brand-dark hover:text-white transition-colors">
+                  <Link to="/" className="block text-center w-full py-3 border border-brand-dark text-brand-dark font-bold uppercase text-xs tracking-wider hover:bg-brand-dark hover:text-white transition-colors mb-3">
                     Produtos para esse estilo
+                  </Link>
+                )}
+
+                {style.slug && (
+                  <Link 
+                    to={`/blog/${style.slug}`} 
+                    className="block text-center w-full py-3 bg-brand-gold text-brand-dark font-black uppercase text-xs tracking-widest hover:bg-brand-dark hover:text-white transition-all shadow-lg"
+                  >
+                    Ver Tutorial Completo
                   </Link>
                 )}
               </div>

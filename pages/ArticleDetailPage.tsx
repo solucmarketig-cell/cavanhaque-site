@@ -7217,6 +7217,1384 @@ const ArticleDetailPage: React.FC = () => {
       recommendedProducts: [
         { id: 'texture-dust', name: "Pó de Volume Estilo Urbano", desc: "O toque final essencial para o Bowl Cut moderno.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
       ]
+    },
+    'barba-degrade-fade': {
+      title: "Barba Degradê (Fade): O Manual do Visual Ultra Limpo",
+      subtitle: "Aprenda a dominar a tendência #1 das barbearias. Como criar a transição perfeita das costeletas ao queixo em casa.",
+      author: "Carlos Barbudo",
+      date: "11 de Maio de 2026",
+      readTime: "12 min",
+      category: "Barba",
+      image: "/assets/barba-degrade-fade.webp",
+      howToSteps: [
+        { name: "Marcação das Costeletas", text: "Use a máquina no zero ou 0.5 para limpar a área das costeletas até a altura da orelha." },
+        { name: "Transição Gradual", text: "Suba os pentes (1, 1.5, 2) à medida que desce em direção à mandíbula, criando o efeito 'fade'." },
+        { name: "Linha da Bochecha", text: "Desenhe uma linha curva ou reta bem nítida usando um navalhete ou trimmer." },
+        { name: "Pescoço e Acabamento", text: "Limpe todo o pescoço dois dedos acima do pomo de adão para destacar o degradê." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Barba Degradê</strong>, ou <em>Beard Fade</em>, é o estilo que separa os amadores dos profissionais. Ela exige precisão, mas o resultado é um visual extremamente limpo, moderno e que valoriza as linhas do seu rosto. O segredo está na paciência para esfumar as marcas entre os diferentes tamanhos de pente.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Acabamento com Pentes", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Shaving Gel Transparente", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Escovinha de Disfarce", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Ponto de Partida",
+                description: "O degradê começa na conexão com o cabelo. Se o seu cabelo está curto (fade), a barba deve começar na mesma altura da máquina. Use a 0 ou 0.5 nas costeletas.",
+                tip: "Sempre comece com um pente maior se estiver inseguro; você pode diminuir depois, mas não pode devolver o pelo cortado."
+              },
+              {
+                title: "A Técnica do C-Stroke",
+                description: "Ao passar a máquina, faça movimentos em 'C' para fora da pele. Isso ajuda a suavizar a transição entre os pentes e evita marcas de degraus.",
+                tip: "Use a pontinha da máquina para polir as áreas de sombra."
+              },
+              {
+                title: "Simetria é Tudo",
+                description: "Verifique constantemente no espelho se o degradê de um lado está na mesma altura do outro. Use o lóbulo da orelha como ponto de referência.",
+                tip: "Iluminação frontal forte é essencial para ver as sombras reais do fade."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'trimmer-pro', name: "Trimmer de Precisão Profissional", desc: "Motor de alta rotação para linhas cirúrgicas no seu fade.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-ducktail-cauda-de-pato': {
+      title: "Ducktail (Cauda de Pato): Sofisticação e Geometria",
+      subtitle: "O guia completo para esculpir a barba que alonga o rosto e transmite autoridade. O equilíbrio entre o rústico e o polido.",
+      author: "Carlos Barbudo",
+      date: "11 de Maio de 2026",
+      readTime: "10 min",
+      category: "Barba",
+      image: "/assets/barba-ducktail.webp",
+      howToSteps: [
+        { name: "Crescimento de Base", text: "Ter pelo menos 4 a 6 semanas de crescimento de barba cheia." },
+        { name: "Laterais Retas", text: "Aparar as bochechas verticalmente para reduzir o volume lateral." },
+        { name: "Ponta do Queixo", text: "Modelar o queixo em formato de 'V' ou triângulo suave, mantendo o comprimento." },
+        { name: "Limpeza de Pescoço", text: "Manter o pescoço raspado para destacar a ponta da Ducktail." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Barba Ducktail</strong> é um dos estilos mais elegantes da barbearia clássica. Ela recebe esse nome porque a ponta no queixo lembra a cauda de um pato. É o estilo ideal para homens com rostos redondos, pois alonga visualmente a face e cria uma linha de mandíbula mais definida.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Balm Modelador de Forte Fixação", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Tesoura de Desbaste", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente de Madeira de Dentes Largos", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Arquitetura Lateral",
+                description: "O segredo da Ducktail não é o queixo, mas as bochechas. Elas devem ser mantidas baixas e retas. Use a máquina no pente 2 ou 3 descendo verticalmente.",
+                tip: "Não siga a curva natural do rosto; corte 'para fora' para criar uma silhueta angular."
+              },
+              {
+                title: "Esculpindo a Ponta",
+                description: "Com uma tesoura, apare as pontas do queixo para formar um bico suave. O comprimento deve ser maior no centro e diminuir em direção às mandíbulas.",
+                tip: "Use Balm para unir os fios e ver o formato real antes de cortar."
+              },
+              {
+                title: "Manutenção Diária",
+                description: "Como é um estilo geométrico, qualquer fio fora do lugar aparece. Penteie sempre para baixo e para o centro.",
+                tip: "Use um secador para direcionar os fios do queixo para a ponta."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'balm-premium', name: "Balm Modelador Ultra-Fix", desc: "Essencial para manter a ponta da sua Ducktail no lugar o dia todo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'bigode-chevron-vintage': {
+      title: "Bigode Chevron: O Retorno do Clássico Atemporal",
+      subtitle: "Aprenda a cultivar e manter o bigode grosso que domina o lábio superior. O visual de Tom Selleck e Freddie Mercury para o homem moderno.",
+      author: "Carlos Barbudo",
+      date: "11 de Maio de 2026",
+      readTime: "8 min",
+      category: "Barba",
+      image: "/assets/bigode-chevron.webp",
+      howToSteps: [
+        { name: "Raspar o Rosto", text: "Manter o resto do rosto totalmente limpo ou com stubble muito baixo." },
+        { name: "Comprimento do Lábio", text: "Deixar o bigode crescer até cobrir levemente o lábio superior." },
+        { name: "Corte de Precisão", text: "Usar uma tesourinha para aparar os fios que entram na boca, seguindo a linha do lábio." },
+        { name: "Densidade", text: "Pentear para baixo para garantir que o volume seja uniforme." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Bigode Chevron</strong> é a definição de masculinidade vintage. Grosso, largo e imponente, ele cobre todo o lábio superior e desce levemente nos cantos da boca. É um estilo que exige autoconfiança e uma manutenção simples, mas constante.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Cera de Bigode (Mustache Wax)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Bigode Mini", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Tesoura de Precisão Stark", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Regra do Lábio",
+                description: "O Chevron deve ser denso. Nunca apare o comprimento por cima. Deixe-o descer até o lábio e corte apenas o excesso que atrapalha a fala ou a alimentação.",
+                tip: "Use a tesoura num ângulo de 45 graus para um acabamento mais natural."
+              },
+              {
+                title: "Limpeza das Bochechas",
+                description: "Para o bigode brilhar, o rosto deve estar limpo. Se preferir usar com barba, certifique-se de que o bigode seja significativamente mais longo que o resto.",
+                tip: "O contraste é o que torna o Chevron icônico."
+              },
+              {
+                title: "Nutrição e Brilho",
+                description: "Aplique uma gota de óleo apenas no bigode para evitar que os fios fiquem espetados ou ressecados.",
+                tip: "Cera de bigode ajuda a manter os fios alinhados sem parecer engomado."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'mustache-wax', name: "Cera de Bigode Extrema", desc: "Fixação total para manter o Chevron imponente e alinhado.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-van-dyke-classica': {
+      title: "Van Dyke: O Estilo Artístico que Atravessa Séculos",
+      subtitle: "Descubra como combinar o bigode e o cavanhaque desconectados para um visual criativo, sofisticado e cheio de personalidade.",
+      author: "Carlos Barbudo",
+      date: "11 de Maio de 2026",
+      readTime: "9 min",
+      category: "Barba",
+      image: "/assets/barba-van-dyke.webp",
+      howToSteps: [
+        { name: "Desconexão Total", text: "Raspar as laterais (bochechas) e a área que liga o bigode ao queixo." },
+        { name: "Cavanhaque Pontudo", text: "Modelar os pelos do queixo em formato de 'T' invertido ou gota pontuda." },
+        { name: "Bigode Estilizado", text: "Manter o bigode separado, podendo ser um Handlebar leve ou Chevron fino." },
+        { name: "Pele Lisa", text: "Garantir que as áreas raspadas estejam sempre sem sombra para destacar o desenho." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Inspirado no pintor do século XVII Anthony van Dyck, este estilo é a escolha de homens que buscam um visual artístico e sofisticado. A principal característica da <strong>Barba Van Dyke</strong> é que o bigode e o cavanhaque nunca se tocam, criando um desenho flutuante e muito nítido no rosto.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Navalhete de Precisão", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Lápis de Contorno (Opcional)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Barba Leve", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Limpeza Estratégica",
+                description: "O Van Dyke exige bochechas e pescoço totalmente limpos. Use gel transparente para ver exatamente onde termina o cavanhaque.",
+                tip: "A 'mosca' (soul patch) sob o lábio inferior costuma fazer parte deste estilo."
+              },
+              {
+                title: "Simetria do Bigode",
+                description: "Como o bigode é isolado, qualquer assimetria aparece. Use o 'arco do cupido' do lábio como centro.",
+                tip: "Se o seu bigode for ralo, mantenha-o mais curto para parecer mais denso."
+              },
+              {
+                title: "O Formato do Queixo",
+                description: "O cavanhaque deve ser centrado e pontudo. Evite formatos muito largos, pois isso descaracteriza o estilo clássico.",
+                tip: "Mantenha o comprimento do queixo em cerca de 1 a 2 cm."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'shave-gel', name: "Gel de Barbear Transparente", desc: "Visibilidade total para desenhar seu Van Dyke sem erros.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'cavanhaque-ancora-imponente': {
+      title: "Cavanhaque Âncora: O Guia do Design de Alta Precisão",
+      subtitle: "Aprenda a traçar as linhas que definem o maxilar e criam um visual imponente. O favorito de quem busca um rosto mais angular.",
+      author: "Carlos Barbudo",
+      date: "11 de Maio de 2026",
+      readTime: "11 min",
+      category: "Barba",
+      image: "/assets/cavanhaque-ancora.webp",
+      howToSteps: [
+        { name: "Desenho da Base", text: "Traçar uma linha que segue o osso da mandíbula, conectando ao queixo." },
+        { name: "Bigode Fino", text: "Modelar um bigode que não se conecta às laterais, preferencialmente fino e reto." },
+        { name: "Soul Patch", text: "Manter a 'mosca' conectada ou não à base do queixo." },
+        { name: "Laterais Raspadas", text: "Remover 100% dos pelos das bochechas e costeletas." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Cavanhaque Âncora</strong> recebe esse nome pelo seu formato que lembra uma âncora de navio. Ele combina um bigode fino com uma barba que acompanha a linha do queixo e sobe levemente em direção à mandíbula. É um dos estilos mais complexos de fazer em casa, mas um dos que mais valoriza o visagismo facial.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina Shaver para Pele Lisa", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente Guia de Barba", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Loção Pós-Barba sem Álcool", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Mapeando a Âncora",
+                description: "Use a ponta do queixo como centro e trace a linha para os lados, seguindo o osso. A linha não deve subir muito nas bochechas.",
+                tip: "Use um lápis de olho branco para desenhar o molde na pele antes de passar a lâmina."
+              },
+              {
+                title: "A Conexão Labial",
+                description: "A âncora clássica tem uma conexão fina no centro do queixo que sobe até o lábio inferior (o soul patch).",
+                tip: "Mantenha essa conexão bem centralizada para não parecer torto."
+              },
+              {
+                title: "O Acabamento Shaver",
+                description: "Como a âncora tem muitas áreas de pele exposta, use uma máquina shaver ou navalha para deixar a pele 'lisinha', aumentando o contraste com o desenho.",
+                tip: "Hidrate bem as áreas raspadas para evitar vermelhidão."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'shaver-pro-2', name: "Máquina Shaver de Alta Performance", desc: "Pele lisa como navalha para destacar o desenho da sua Âncora.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-lenhador-viking-estilo': {
+      title: "Barba Lenhador (Viking): O Guia do Volume Máximo",
+      subtitle: "Como cultivar e manter uma barba longa, densa e saudável sem perder a elegância. O estilo rústico definitivo.",
+      author: "Carlos Barbudo",
+      date: "12 de Maio de 2026",
+      readTime: "15 min",
+      category: "Barba",
+      image: "/assets/barba-lenhador.webp",
+      howToSteps: [
+        { name: "Crescimento Livre", text: "Deixar a barba crescer por pelo menos 3 a 6 meses sem aparar o comprimento." },
+        { name: "Aparar Pontas Duplas", text: "Usar tesoura para remover fios rebeldes e pontas secas mensalmente." },
+        { name: "Limpeza de Linha", text: "Manter a bochecha com uma linha natural, mas limpa." },
+        { name: "Hidratação Intensa", text: "Aplicar óleo de barba diariamente para alcançar as camadas mais profundas." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Barba Lenhador</strong>, também conhecida como estilo Viking, é o ápice da paciência e cuidado. Não se engane: uma barba longa exige muito mais manutenção do que uma curta. O segredo para não parecer desleixado é a hidratação constante e o controle do volume nas laterais para não "arredondar" demais o rosto.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Óleo de Barba Premium (Sândalo)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova de Cerdas de Javali", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Shampoo de Barba Hidratante", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Higiene Profunda",
+                description: "Barbas longas acumulam resíduos. Lave com shampoo específico 2 a 3 vezes por semana, focando na pele sob os pelos.",
+                tip: "Nunca durma com a barba úmida; use um secador no modo frio."
+              },
+              {
+                title: "O Poder da Escovação",
+                description: "Escovar a barba diariamente com cerdas naturais ajuda a distribuir a oleosidade natural da raiz até as pontas.",
+                tip: "Sempre escove de baixo para cima primeiro para dar volume, e depois de cima para baixo para alinhar."
+              },
+              {
+                title: "Controle de Volume",
+                description: "Use um Balm denso para assentar os fios 'espetados' nas laterais, mantendo o foco no comprimento do queixo.",
+                tip: "Se a barba estiver muito rebelde, use um pente de madeira para desembaraçar antes da escova."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'viking-oil', name: "Kit Óleo Viking de Respeito", desc: "Fragrância amadeirada e hidratação profunda para barbas longas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-corporativa-profissional': {
+      title: "Barba Corporativa: Elegância e Autoridade no Trabalho",
+      subtitle: "O manual para manter uma barba curta e impecável que projeta profissionalismo e confiança em qualquer ambiente.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "12 de Maio de 2026",
+      readTime: "9 min",
+      category: "Barba",
+      image: "/assets/barba-corporativa.webp",
+      howToSteps: [
+        { name: "Comprimento Uniforme", text: "Manter os fios entre 5mm e 1cm usando um pente de máquina constante." },
+        { name: "Linhas Definidas", text: "A bochecha e o pescoço devem estar sempre com a linha nítida e sem sombra." },
+        { name: "Higiene Diária", text: "Lavar o rosto e a barba todas as manhãs para evitar oleosidade excessiva." },
+        { name: "Pós-Barba", text: "Usar balm ou loção para manter a pele hidratada e sem vermelhidão." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Barba Corporativa</strong> é o meio-termo perfeito entre o rosto limpo e a barba cheia. Ela é caracterizada pela uniformidade e pela limpeza extrema das bordas. Estudos de psicologia social indicam que uma barba bem cuidada pode projetar mais liderança e maturidade no ambiente corporativo.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Barbeador Elétrico OneBlade", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Balm de Barba Anti-Frizz", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Esfoliante Facial Masculino", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Padrão de Comprimento",
+                description: "Use o pente 2 ou 3 da sua máquina em todo o rosto. A ideia é que a barba cubra a pele, mas não esconda o formato da mandíbula.",
+                tip: "Apare a barba a cada 3 dias para não perder o aspecto de 'sempre pronto'."
+              },
+              {
+                title: "A Linha do Pescoço",
+                description: "Esta é a parte mais importante. A linha deve estar exatamente dois dedos acima do pomo de adão. Nada de barba crescendo no pescoço.",
+                tip: "Use um espelho de mão para conferir o ângulo lateral do pescoço."
+              },
+              {
+                title: "O Toque de Mestre",
+                description: "Use um balm hidratante de absorção rápida para que a barba fique macia e com brilho discreto, sem parecer engordurada.",
+                tip: "Escolha fragrâncias leves que não briguem com o seu perfume."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'corporate-balm', name: "Balm Premium Matte Finish", desc: "Acabamento fosco e natural para o dia a dia no escritório.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-stubble-por-fazer': {
+      title: "Stubble (Barba por Fazer): O Charme do Desalinhado Planejado",
+      subtitle: "Aprenda a técnica para manter aquele visual de '3 dias' de forma eterna e simétrica. Praticidade sem perder o estilo.",
+      author: "Carlos Barbudo",
+      date: "12 de Maio de 2026",
+      readTime: "7 min",
+      category: "Barba",
+      image: "/assets/barba-stubble.webp",
+      howToSteps: [
+        { name: "Pente de 1mm a 3mm", text: "Passar a máquina em todo o rosto usando o pente mais baixo." },
+        { name: "Limpeza de Pescoço", text: "Remover totalmente os pelos que descem em direção ao peito." },
+        { name: "Contorno Labial", text: "Limpar a área ao redor dos lábios para um sorriso mais nítido." },
+        { name: "Hidratação de Pele", text: "Como o pelo é curto, o foco aqui é a saúde da pele do rosto." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Stubble</strong> é o estilo mais versátil e fácil de manter. Ele passa uma imagem de masculinidade moderna e relaxada. No entanto, o "por fazer" não significa "esquecido". Para não parecer desleixado, é essencial manter os contornos limpos e o comprimento uniforme.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Aparador de Barba com Ajuste de 0.5mm", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Hidratante Facial com FPS", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Lâmina de Segurança (Safety Razor)", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Uniformidade é a Chave",
+                description: "Passe a máquina em diferentes direções para garantir que todos os pelos (que crescem para lados diferentes) fiquem do mesmo tamanho.",
+                tip: "O tamanho ideal costuma ser o 2mm (pente 1 da maioria das máquinas)."
+              },
+              {
+                title: "Desenhando com Disfarce",
+                description: "Mesmo sendo curta, você pode baixar um pouco mais o pente nas bochechas para criar um leve degradê visual.",
+                tip: "Isso ajuda a afinar o rosto lateralmente."
+              },
+              {
+                title: "Pele Impecável",
+                description: "Com o stubble, sua pele está muito exposta. Use um esfoliante semanal para evitar pelos encravados.",
+                tip: "O uso de hidratante facial é obrigatório para evitar a 'coceira do terceiro dia'."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'stubble-trimmer', name: "Aparador Philips Multigroom", desc: "A máquina definitiva para quem ama o visual stubble.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-balbo-guia': {
+      title: "Estilo Balbo: O Visual Ícone de Personalidade",
+      subtitle: "Tudo sobre o estilo que une bigode, cavanhaque e soul patch em um desenho único e desconectado. Elegância italiana clássica.",
+      author: "Carlos Barbudo",
+      date: "12 de Maio de 2026",
+      readTime: "11 min",
+      category: "Barba",
+      image: "/assets/barba-balbo.webp",
+      howToSteps: [
+        { name: "Remover Costeletas", text: "Raspar totalmente as laterais e costeletas." },
+        { name: "Bigode Isolado", text: "Modelar um bigode largo mas que não encosta na barba inferior." },
+        { name: "Base Ampla", text: "Deixar a barba no queixo se estender um pouco para as laterais, como um 'T' invertido." },
+        { name: "Soul Patch Central", text: "Manter o pequeno triângulo de pelo sob o lábio inferior." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Nomeado em homenagem a Italo Balbo, o <strong>Estilo Balbo</strong> é para quem não tem medo de ousar. Ele é sofisticado e exige uma mão firme no desenho. É o estilo ideal para quem tem o queixo mais estreito e quer dar uma aparência de base mais sólida e imponente ao rosto.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Navalha de Barbeiro Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gel de Barbear de Precisão", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Mini Pente para Detalhes", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Desenho da Base",
+                description: "A barba inferior do Balbo deve seguir a linha da mandíbula mas parar antes de chegar às costeletas. O desenho deve ser simétrico em relação ao centro do queixo.",
+                tip: "Mantenha a altura da barba no queixo entre 5 e 10mm."
+              },
+              {
+                title: "A Desconexão",
+                description: "O espaço entre o bigode e a barba do queixo deve estar perfeitamente limpo. Use um trimmer de precisão para criar esse canal de 1cm de pele lisa.",
+                tip: "Isso é o que diferencia o Balbo de um cavanhaque comum."
+              },
+              {
+                title: "Manutenção de Linhas",
+                description: "Como o Balbo tem muitas bordas, você precisará retocar o desenho a cada 2 dias para manter o visual 'sharp'.",
+                tip: "Use uma loção pós-barba calmante para evitar irritação nas áreas de pele raspada."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'shaving-kit-pro', name: "Kit de Barbear Vintage", desc: "Ferramentas clássicas para o homem que desenha o próprio estilo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-garibaldi-circular': {
+      title: "Barba Garibaldi: O Equilíbrio da Barba Cheia e Redonda",
+      subtitle: "Aprenda a modelar a barba robusta e circular que transmite força e naturalidade. O guia para o formato perfeito.",
+      author: "Carlos Barbudo",
+      date: "12 de Maio de 2026",
+      readTime: "13 min",
+      category: "Barba",
+      image: "/assets/barba-garibaldi.webp",
+      howToSteps: [
+        { name: "Volume de Fundo", text: "Crescer a barba até atingir cerca de 15 a 20cm de comprimento." },
+        { name: "Arredondamento", text: "Aparar a base da barba em um formato circular perfeito, sem pontas." },
+        { name: "Bigode Integrado", text: "Manter o bigode longo mas que flui naturalmente para dentro da barba lateral." },
+        { name: "Laterais Cheias", text: "Diferente da Ducktail, aqui as laterais mantêm o volume e a densidade." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Barba Garibaldi</strong> é imponente, larga e arredondada. Diferente de outros estilos longos que buscam ângulos, a Garibaldi celebra a forma circular e natural. É a escolha perfeita para quem quer um visual de impacto que pareça "esforço zero", embora exija uma modelagem precisa na base.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Tesoura de Corte Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Madeira Grande", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Balm Cremoso para Volume", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Escultura da Base",
+                description: "Penteie toda a barba para baixo. Com uma tesoura, corte os fios em um arco suave de orelha a orelha. A base deve ser larga e não pontuda.",
+                tip: "Faça o corte com a barba seca para não ter surpresas após o encolhimento."
+              },
+              {
+                title: "O Bigode Garibaldino",
+                description: "O bigode deve ser mantido longo e pode ser levemente curvado para as laterais, integrando-se ao volume da bochecha.",
+                tip: "Não use cera de fixação forte no bigode; ele deve parecer natural."
+              },
+              {
+                title: "Cuidado com o Comprimento",
+                description: "A Garibaldi clássica não passa dos 20cm. Se crescer demais, ela vira uma 'Viking'. O charme está no formato compacto e denso.",
+                tip: "Use um condicionador de barba potente no banho para manter os fios macios."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'garibaldi-shampoo', name: "Shampoo de Limpeza e Volume", desc: "Ideal para manter a densidade e o brilho da sua Garibaldi.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-viking-trancada': {
+      title: "Barba Viking: Tranças, História e Autenticidade",
+      subtitle: "Descubra como cultivar uma barba épica e aprender as técnicas de trançado que definem o visual dos guerreiros nórdicos.",
+      author: "Carlos Barbudo",
+      date: "13 de Maio de 2026",
+      readTime: "14 min",
+      category: "Barba",
+      image: "/assets/barba-viking.webp",
+      howToSteps: [
+        { name: "Base Ultra Longa", text: "Ter pelo menos 15 a 20cm de comprimento no queixo." },
+        { name: "Divisão de Mechas", text: "Separar a barba em 3 mechas iguais para iniciar a trança." },
+        { name: "Trançado Firme", text: "Trançar os fios de forma firme e prender com anéis de metal (beads) ou elásticos discretos." },
+        { name: "Finalização com Óleo", text: "Aplicar óleo nas pontas trançadas para evitar que se soltem ou quebrem." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Barba Viking</strong> é mais do que um estilo; é uma declaração de força e história. Diferente da barba lenhador comum, a Viking frequentemente incorpora tranças e adornos de metal. É um visual rústico que exige fios muito fortes e saudáveis para suportar o peso e a tração das tranças.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Anéis de Barba (Beads) Estilo Nórdico", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo de Crescimento Viking", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente de Osso ou Madeira", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Comprimento de Respeito",
+                description: "Para uma trança visível, você precisa de tempo. O crescimento pode levar de 8 meses a um ano. Não corte nada além das laterais durante esse período.",
+                tip: "Use tônicos de crescimento para fortalecer a raiz do fio."
+              },
+              {
+                title: "A Técnica da Trança",
+                description: "Comece a trança logo abaixo do queixo. Tente manter a tensão igual em todas as voltas para que a trança não fique torta.",
+                tip: "Se sua barba for muito lisa, use um pouco de cera antes de trançar."
+              },
+              {
+                title: "Adornos e Simbolismo",
+                description: "Os anéis de metal não são apenas decorativos; eles ajudam a manter a trança no lugar sem a necessidade de elásticos que podem quebrar o fio.",
+                tip: "Escolha beads de aço inoxidável ou prata para não irritar a pele do pescoço."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'viking-kit', name: "Kit Barba Viking Completo", desc: "Shampoo, Óleo e Anéis de metal para sua barba épica.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-espartana-maxilar': {
+      title: "Barba Espartana: O Design que Esculpe o Rosto",
+      subtitle: "Aprenda a criar o ângulo perfeito no queixo enquanto mantém as laterais baixas para um visual guerreiro e definido.",
+      author: "Carlos Barbudo",
+      date: "13 de Maio de 2026",
+      readTime: "11 min",
+      category: "Barba",
+      image: "/assets/barba-espartana.webp",
+      howToSteps: [
+        { name: "Laterais em Degradê", text: "Baixar o volume das bochechas com máquina pente 1 ou 2." },
+        { name: "Queixo Pontudo", text: "Deixar o volume crescer para baixo no queixo, criando um bico angular." },
+        { name: "Linha de Mandíbula", text: "Limpar a linha do pescoço de forma reta, acompanhando o osso da mandíbula." },
+        { name: "Contorno do Bigode", text: "Bigode curto e integrado, sem cobrir os lábios." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Inspirada na estética dos antigos guerreiros da Grécia, a <strong>Barba Espartana</strong> foca na geometria. Ela é caracterizada por bochechas extremamente limpas e um queixo que se projeta para baixo em um formato triangular. É o estilo supremo para quem quer disfarçar um queixo retraído ou bochechas muito redondas.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Acabamento com Lâmina em T", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Modelagem Angular", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Balm Modelador com Efeito Seco", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Linha da Bochecha Alta",
+                description: "A linha da bochecha deve ser mantida alta e reta. Use uma régua de barba se necessário. O contraste entre a pele limpa e o pelo escuro define o rosto.",
+                tip: "Use uma navalha para dar o toque final de limpeza nas bordas superiores."
+              },
+              {
+                title: "Esculpindo o Triângulo",
+                description: "Tire o volume das laterais da barba (perto da mandíbula) e deixe o comprimento apenas na frente. Isso cria o efeito espartano clássico.",
+                tip: "Penteie sempre para a frente e para baixo durante o corte."
+              },
+              {
+                title: "Manutenção de Guerreiro",
+                description: "A cada 15 dias, você deve retocar o ângulo do queixo. Como a barba cresce rápido, a ponta pode perder o formato em pouco tempo.",
+                tip: "Use uma escova de cerdas firmes para direcionar os fios rebeldes."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'spartan-trimmer', name: "Trimmer de Alta Precisão 300", desc: "A ferramenta ideal para desenhar ângulos perfeitos no rosto.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-quadrada-short-boxed': {
+      title: "Short Boxed: A Barba Quadrada para o Sucesso",
+      subtitle: "O guia da barba executiva. Saiba como manter o formato retangular que transmite ordem, asseio e autoridade.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "13 de Maio de 2026",
+      readTime: "10 min",
+      category: "Barba",
+      image: "/assets/barba-short-boxed.webp",
+      howToSteps: [
+        { name: "Comprimento Médio", text: "Manter a barba com cerca de 1cm a 2cm de comprimento uniforme." },
+        { name: "Linhas Verticais", text: "Aparar as laterais de forma que fiquem paralelas, criando o aspecto quadrado." },
+        { name: "Base Plana", text: "Cortar a parte de baixo da barba (mandíbula) em uma linha reta horizontal." },
+        { name: "Bigode Alinhado", text: "Bigode aparado na linha do lábio, sem volume excessivo." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Short Boxed</strong> é a versão polida da barba cheia. Ela é "encaixotada", ou seja, segue linhas muito retas e ângulos de 90 graus na mandíbula. É o estilo preferido de CEOs e profissionais que querem a presença de uma barba sem o visual rústico de um lenhador.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Kit de Pentes Guia para Máquina", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Navalhete de Barbear Clássico", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Barba Sem Brilho", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Quadratura do Círculo",
+                description: "Se o seu rosto é redondo, a Short Boxed é sua melhor amiga. Use a máquina para remover o volume das bochechas laterais, criando planos retos.",
+                tip: "Use um espelho triplo para garantir que as laterais estejam paralelas."
+              },
+              {
+                title: "O Canto da Mandíbula",
+                description: "O ângulo onde a lateral encontra a base deve ser bem marcado. Use a máquina sem pente para definir esse ponto exato logo abaixo da orelha.",
+                tip: "Mantenha a linha do pescoço limpa a exatamente dois dedos do pomo de adão."
+              },
+              {
+                title: "Hidratação Sem Óleo",
+                description: "Como é um visual corporativo, evite barbas muito brilhantes. Use um Balm leve que hidrate sem deixar aquele aspecto oleoso no terno.",
+                tip: "Aplique o produto com a barba ainda levemente úmida."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'boxed-balm', name: "Balm Executive Matte Finish", desc: "O toque final de classe para sua barba quadrada.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'cavanhaque-estendido-hollywoodian': {
+      title: "Hollywoodian: O Cavanhaque das Estrelas",
+      subtitle: "Descubra como adotar o estilo que une o cavanhaque à linha do maxilar, mantendo as costeletas raspadas. Sofisticação pura.",
+      author: "Carlos Barbudo",
+      date: "13 de Maio de 2026",
+      readTime: "9 min",
+      category: "Barba",
+      image: "/assets/cavanhaque-estendido.webp",
+      howToSteps: [
+        { name: "Remoção de Costeletas", text: "Raspar totalmente as laterais do rosto desde a orelha até o início da mandíbula." },
+        { name: "Linha de Maxilar", text: "Deixar a barba crescer apenas na linha inferior do rosto." },
+        { name: "Conexão com Cavanhaque", text: "Integrar a linha do maxilar ao bigode e queixo." },
+        { name: "Height of Bochecha", text: "Baixar a linha da bochecha significativamente, deixando apenas uma faixa estreita de barba." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Cavanhaque Estendido</strong>, ou Hollywoodian, é o favorito de celebridades que querem destacar o maxilar sem a densidade de uma barba cheia. A principal diferença é a ausência total de costeletas, o que cria um visual limpo perto das orelhas e focado na parte frontal do rosto.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina Shaver de Folha", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gel de Barbear Transparente", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pós-Barba Hidratante", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Ponto de Corte das Costeletas",
+                description: "A barba deve parar cerca de 2 a 3 centímetros antes da orelha. A transição deve ser brusca e limpa, sem degradê.",
+                tip: "Use uma máquina shaver para deixar as áreas laterais 'lisas como seda'."
+              },
+              {
+                title: "A Linha da Bochecha Baixa",
+                description: "Diferente da maioria dos estilos, no Hollywoodian a barba na bochecha é muito baixa. Ela deve acompanhar a curvatura da mandíbula de forma paralela.",
+                tip: "Mantenha a espessura da faixa de barba entre 2 e 4 cm."
+              },
+              {
+                title: "Manutenção da 'Ilha'",
+                description: "Como há muita pele exposta, a manutenção deve ser diária. Qualquer penugem nas bochechas ou costeletas destrói o visual sofisticado do estilo.",
+                tip: "Esfolie as áreas raspadas para evitar irritação constante."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'hollywood-gel', name: "Gel de Barbear Precision Clear", desc: "Visibilidade máxima para desenhar o cavanhaque das estrelas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-verdi-giuseppe': {
+      title: "Barba Verdi: O Equilíbrio entre a Arte e a Robustez",
+      subtitle: "Aprenda a cultivar a barba arredondada com o bigode Handlebar destacado. O estilo do compositor Giuseppe Verdi.",
+      author: "Carlos Barbudo",
+      date: "13 de Maio de 2026",
+      readTime: "12 min",
+      category: "Barba",
+      image: "/assets/barba-verdi.webp",
+      howToSteps: [
+        { name: "Comprimento Curto-Médio", text: "Manter a barba no queixo com no máximo 10cm, sempre arredondada." },
+        { name: "Bigode Handlebar", text: "Deixar o bigode crescer longo para que as pontas possam ser curvadas para cima." },
+        { name: "Desconexão Sutil", text: "O bigode pode ou não encostar na barba, mas deve ser claramente o destaque visual." },
+        { name: "Laterais Aparadas", text: "As bochechas devem ter volume controlado para não brigar com o bigode." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Batizada em homenagem ao compositor de óperas Giuseppe Verdi, este estilo é pura arte facial. A <strong>Barba Verdi</strong> combina uma barba curta, cheia e arredondada com um bigode imponente, muitas vezes estilizado como um <em>Handlebar</em> (guidão de bicicleta). É o visual definitivo para o cavalheiro moderno que aprecia a estética clássica.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Cera de Bigode de Alta Fixação", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Madeira para Bigode", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Barba Hidratante", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Arredondamento da Base",
+                description: "Diferente da Ducktail, a Verdi nunca é pontuda. Use a tesoura para criar uma curva suave que acompanhe o formato do queixo.",
+                tip: "Apare a barba a cada 10 dias para manter o comprimento compacto."
+              },
+              {
+                title: "Estilizando o Handlebar",
+                description: "O segredo está no bigode. Use cera nas pontas e enrole-as para cima e para fora. Ele deve parecer 'flutuar' sobre a barba.",
+                tip: "Não corte o bigode no meio; penteie-o para as laterais desde o início do crescimento."
+              },
+              {
+                title: "O Contraste Necessário",
+                description: "Mantenha a linha do pescoço muito bem limpa. O contraste entre a barba robusta e o pescoço liso realça o desenho da Verdi.",
+                tip: "Use um secador de cabelo e uma escova redonda pequena para dar volume ao bigode."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'verdi-wax', name: "Mustache Wax Imperial Strong", desc: "A cera definitiva para manter seu Handlebar impecável o dia todo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-balbo-guia': {
+      title: "Estilo Balbo: O Visual Ícone de Personalidade",
+      subtitle: "Tudo sobre o estilo que une bigode, cavanhaque e soul patch em um desenho único e desconectado. Elegância italiana clássica.",
+      author: "Carlos Barbudo",
+      date: "12 de Maio de 2026",
+      readTime: "11 min",
+      category: "Barba",
+      image: "/assets/barba-balbo.webp",
+      howToSteps: [
+        { name: "Remover Costeletas", text: "Raspar totalmente as laterais e costeletas." },
+        { name: "Bigode Isolado", text: "Modelar um bigode largo mas que não encosta na barba inferior." },
+        { name: "Base Ampla", text: "Deixar a barba no queixo se estender um pouco para as laterais, como um 'T' invertido." },
+        { name: "Soul Patch Central", text: "Manter o pequeno triângulo de pelo sob o lábio inferior." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Nomeado em homenagem a Italo Balbo, o <strong>Estilo Balbo</strong> é para quem não tem medo de ousar. Ele é sofisticado e exige uma mão firme no desenho. É o estilo ideal para quem tem o queixo mais estreito e quer dar uma aparência de base mais sólida e imponente ao rosto.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Navalha de Barbeiro Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gel de Barbear de Precisão", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Mini Pente para Detalhes", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Desenho da Base",
+                description: "A barba inferior do Balbo deve seguir a linha da mandíbula mas parar antes de chegar às costeletas. O desenho deve ser simétrico em relação ao centro do queixo.",
+                tip: "Mantenha a altura da barba no queixo entre 5 e 10mm."
+              },
+              {
+                title: "A Desconexão",
+                description: "O espaço entre o bigode e a barba do queixo deve estar perfeitamente limpo. Use um trimmer de precisão para criar esse canal de 1cm de pele lisa.",
+                tip: "Isso é o que diferencia o Balbo de um cavanhaque comum."
+              },
+              {
+                title: "Manutenção de Linhas",
+                description: "Como o Balbo tem muitas bordas, você precisará retocar o desenho a cada 2 dias para manter o visual 'sharp'.",
+                tip: "Use uma loção pós-barba calmante para evitar irritação nas áreas de pele raspada."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'shaving-kit-pro', name: "Kit de Barbear Vintage", desc: "Ferramentas clássicas para o homem que desenha o próprio estilo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-french-fork-garfo-frances': {
+      title: "French Fork: O Estilo que Divide Opiniões e Rostos",
+      subtitle: "Aprenda a esculpir e manter a barba que se divide em duas pontas, um visual clássico e excêntrico.",
+      author: "Carlos Barbudo",
+      date: "14 de Maio de 2026",
+      readTime: "11 min",
+      category: "Barba",
+      image: "/assets/barba-french-fork.webp",
+      howToSteps: [
+        { name: "Crescimento de Base", text: "Ter uma barba cheia com pelo menos 5cm no queixo." },
+        { name: "Divisão Central", text: "Usar um pente para criar uma risca no meio exato do queixo." },
+        { name: "Modelagem de Pontas", text: "Aplicar balm forte em cada lado para criar duas pontas separadas." },
+        { name: "Limpeza Lateral", text: "Manter as laterais mais baixas para focar a atenção na divisão." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>French Fork</strong> (Garfo Francês) é uma barba para homens que não têm medo de serem o centro das atenções. Popularizada por figuras históricas e personagens de piratas, ela se caracteriza por uma barba cheia que é propositalmente dividida em duas pontas no queixo. É um estilo que exige fios grossos e uma boa dose de produto modelador.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Balm Modelador de Alta Fixação", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Dentes Finos para Divisão", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Tesoura de Precisão para Pontas", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Simetria é Tudo",
+                description: "A divisão deve começar exatamente no centro do lábio inferior e descer até a base da barba. Se ficar torto, o visual perde toda a elegância.",
+                tip: "Use o 'arco do cupido' do lábio como referência para a linha central."
+              },
+              {
+                title: "Criando as Pontas",
+                description: "Penteie cada metade da barba para fora e para baixo. Use uma tesoura para aparar os fios de forma que cada lado termine em uma ponta suave.",
+                tip: "Não corte demais na primeira vez; fios de barba encolhem quando secam."
+              },
+              {
+                title: "Manutenção do Vão",
+                description: "O espaço entre as duas pontas deve ser mantido limpo e definido. Use um pouco de cera de bigode para 'colar' os fios rebeldes que tentam fechar o buraco.",
+                tip: "Aplique o produto com os dedos, torcendo levemente as pontas."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'french-wax', name: "Cera Modeladora Strong Hold", desc: "A fixação necessária para manter o seu garfo francês separado o dia todo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-chin-strap-faixa': {
+      title: "Chin Strap: A Linha que Define o Maxilar",
+      subtitle: "Descubra como desenhar a faixa de barba perfeita que acompanha o contorno do rosto sem bigode.",
+      author: "Carlos Barbudo",
+      date: "14 de Maio de 2026",
+      readTime: "9 min",
+      category: "Barba",
+      image: "/assets/barba-chin-strap.webp",
+      howToSteps: [
+        { name: "Barbear Total", text: "Raspar totalmente o bigode e as bochechas altas." },
+        { name: "Desenho de Faixa", text: "Deixar apenas uma linha de pelos acompanhando o osso da mandíbula." },
+        { name: "Simetria de Lados", text: "Garantir que a espessura da faixa seja idêntica em ambos os lados." },
+        { name: "Limpeza de Pescoço", text: "Remover qualquer pelo abaixo da linha da mandíbula." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Chin Strap</strong> é um estilo minimalista que foca puramente na estrutura óssea do rosto. É a escolha ideal para homens com maxilar bem definido ou para aqueles que querem criar a ilusão de uma mandíbula mais forte. Exige uma manutenção quase diária para que as áreas raspadas não fiquem com 'sombra'.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Barbeador de Precisão", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gel de Barbear Transparente", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Lâmina de Acabamento", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Caminho da Lâmina",
+                description: "A faixa deve começar na costeleta e descer suavemente até o queixo. A largura ideal varia entre 0.5cm e 1.5cm.",
+                tip: "Quanto mais fina a faixa, mais difícil é manter a simetria."
+              },
+              {
+                title: "A Ausência do Bigode",
+                description: "O Chin Strap clássico não tem bigode. Use uma máquina shaver para deixar a pele acima do lábio superior perfeitamente lisa.",
+                tip: "Se quiser uma variação moderna, pode deixar um bigode bem ralo (stubble)."
+              },
+              {
+                title: "Manutenção Diária",
+                description: "Qualquer pelo fora da linha 'suja' o visual. Você precisará raspar as bochechas e o pescoço a cada 1 ou 2 dias.",
+                tip: "Use um gel transparente para enxergar exatamente onde a lâmina está passando."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'chin-shaver', name: "Shaver de Alta Precisão", desc: "Perfeito para manter as áreas ao redor da sua chin strap sempre limpas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-bandholz-volume-maximo': {
+      title: "Bandholz: O Estilo para os Pacientes e Poderosos",
+      subtitle: "Tudo sobre o estilo que celebra o crescimento natural e o volume extremo. Saiba como chegar lá.",
+      author: "Carlos Barbudo",
+      date: "14 de Maio de 2026",
+      readTime: "15 min",
+      category: "Barba",
+      image: "/assets/barba-viking.webp",
+      howToSteps: [
+        { name: "O Ano de Ouro", text: "Deixar a barba crescer por pelo menos 1 ano sem cortes significativos." },
+        { name: "Higiene Impecável", text: "Lavar e condicionar diariamente para evitar o ressecamento de barbas longas." },
+        { name: "Bigode Integrado", text: "Deixar o bigode crescer livremente junto com a barba." },
+        { name: "Escovação de Luxo", text: "Escovar 3 vezes ao dia para direcionar os fios e evitar nós." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Criado por Eric Bandholz, este estilo é o 'Santo Graal' das barbas cheias. A <strong>Bandholz</strong> foca no crescimento orgânico e no volume máximo. Diferente da Garibaldi, ela não tem um limite de comprimento definido. É uma jornada de paciência e cuidado genético que recompensa com um visual de autoridade inigualável.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Escova de Cerdas de Javali Premium", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Condicionador de Barba Leave-in", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente de Chifre ou Madeira", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Fase da Coceira",
+                description: "Nos primeiros meses, a barba vai incomodar. Resista à tentação de aparar. Use óleo de barba desde o primeiro dia para manter a pele macia.",
+                tip: "A coceira geralmente passa após a 4ª semana de crescimento."
+              },
+              {
+                title: "Nutrição de Dentro para Fora",
+                description: "Uma barba Bandholz exige nutrientes. Mantenha uma dieta rica em biotina e vitaminas do complexo B para fios fortes.",
+                tip: "Beba pelo menos 2 litros de água por dia para hidratar os folículos."
+              },
+              {
+                title: "Aparando com Moderação",
+                description: "Após 6 meses, apare apenas as pontas duplas. O objetivo é densidade, não apenas comprimento.",
+                tip: "Use uma tesoura de barbeiro profissional, nunca use máquina no comprimento."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'bandholz-oil', name: "Óleo Ultra-Hidratante 100ml", desc: "A dose necessária de nutrição para barbas de longo prazo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-hulihee-estilo-vintage': {
+      title: "Hulihee: A Extravagância das Costeletas Conectadas",
+      subtitle: "Descubra o estilo clássico onde as costeletas volumosas se encontram no bigode, deixando o queixo livre.",
+      author: "Carlos Barbudo",
+      date: "14 de Maio de 2026",
+      readTime: "13 min",
+      category: "Barba",
+      image: "/assets/barba-garibaldi.webp",
+      howToSteps: [
+        { name: "Crescer Laterais", text: "Focar no volume máximo das bochechas e costeletas." },
+        { name: "Raspar o Queixo", text: "Manter uma área de pelo menos 3 dedos no queixo totalmente lisa." },
+        { name: "União com Bigode", text: "Deixar o bigode crescer para os lados até se fundir com as costeletas." },
+        { name: "Penteado para Fora", text: "Escovar as costeletas para as laterais, criando um visual 'alado'." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Hulihee</strong> é um estilo de barba havaiano clássico que exala personalidade. É essencialmente um conjunto de mutton chops (costeletas de carneiro) extremamente longos e conectados por um bigode, mas com o queixo e a parte inferior do lábio totalmente raspados. É um visual teatral e muito impactante.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Balm de Volume para Laterais", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Navalha Clássica", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Escova Redonda Pequena", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Desenho do 'Vazio'",
+                description: "A parte mais importante é a limpeza do queixo. A linha deve ser nítida e simétrica. O queixo liso destaca o volume lateral.",
+                tip: "Use um espelho de aumento para garantir que não restou nenhum fio no queixo."
+              },
+              {
+                title: "Dando Volume às 'Asas'",
+                description: "Penteie os pelos das bochechas para trás e para cima. Use um secador no modo morno para dar aquele aspecto cheio e imponente.",
+                tip: "Aplique um pouco de fixador de cabelo leve para manter as 'asas' no lugar."
+              },
+              {
+                title: "A Integração do Bigode",
+                description: "O bigode não deve ser curto. Ele deve ser largo o suficiente para que seus fios se misturem com os fios das bochechas sem divisões visíveis.",
+                tip: "Não apare a parte superior do bigode; deixe-o encostar no nariz se necessário."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'hulihee-balm', name: "Balm de Volume e Brilho", desc: "Ideal para dar forma e destaque às laterais da sua Hulihee.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-imperial-realeza': {
+      title: "Barba Imperial: O Visual da Realeza Europeia",
+      subtitle: "Aprenda a combinar o bigode aristocrático com um cavanhaque pontudo e elegante.",
+      author: "Carlos Barbudo",
+      date: "14 de Maio de 2026",
+      readTime: "12 min",
+      category: "Barba",
+      image: "/assets/barba-van-dyke.webp",
+      howToSteps: [
+        { name: "Bigode Handlebar", text: "Crescer um bigode longo e curvar as pontas para cima com cera." },
+        { name: "Cavanhaque Pontudo", text: "Aparar a barba do queixo em um formato de 'V' invertido." },
+        { name: "Desconexão Total", text: "Raspar as áreas entre o bigode e o queixo para isolar os elementos." },
+        { name: "Costeletas Curtas", text: "Manter as laterais do rosto muito baixas ou raspadas." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Barba Imperial</strong> é inspirada no Kaiser Wilhelm II e na aristocracia do século XIX. É um estilo que exige manutenção cirúrgica e o uso constante de cera de bigode. O objetivo é criar um visual de 'V' duplo: um no bigode apontando para cima e outro no queixo apontando para baixo.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Cera de Bigode Extra-Forte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Navalhete de Precisão", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Mini Ferro de Modelar Bigode", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Curvatura Imperial",
+                description: "O bigode deve ser o protagonista. Penteie-o para fora e use cera para enrolar as pontas em círculos perfeitos voltados para as bochechas.",
+                tip: "Aqueça a cera entre os dedos antes de aplicar para evitar grumos."
+              },
+              {
+                title: "O Queixo em 'V'",
+                description: "A barba no queixo deve ser estreita e longa o suficiente para ser modelada em uma ponta fina. Não deixe pelos nas laterais da mandíbula.",
+                tip: "Use um pouco de cera também na ponta do queixo para manter o formato."
+              },
+              {
+                title: "O Toque Final de Limpeza",
+                description: "As bochechas devem estar sempre lisas. Qualquer sombra de pelo nessas áreas tira o foco do desenho Imperial.",
+                tip: "Use uma loção pós-barba com álcool para um acabamento clássico e refrescante."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'imperial-wax', name: "Mustache Wax Royal Gold", desc: "A cera preferida dos competidores de barba e bigode.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'barba-mutton-chops-wolverine': {
+      title: "Mutton Chops: O Estilo Feroz das Costeletas de Carneiro",
+      subtitle: "Saiba como cultivar as costeletas mais icônicas da cultura pop e do visual rústico vintage.",
+      author: "Carlos Barbudo",
+      date: "15 de Maio de 2026",
+      readTime: "10 min",
+      category: "Barba",
+      image: "/assets/barba-grisalha.webp",
+      howToSteps: [
+        { name: "Crescer Costeletas", text: "Deixar os pelos das laterais do rosto crescerem sem restrições." },
+        { name: "Raspar o Centro", text: "Manter o queixo e a parte inferior da boca perfeitamente raspados." },
+        { name: "Unir ao Bigode", text: "Permitir que as costeletas se conectem ao bigode, formando uma curva." },
+        { name: "Volume Controlado", text: "Aparar apenas a altura dos fios para não parecer desleixado." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            As <strong>Mutton Chops</strong> são um retorno ao século XIX, mas com uma pegada moderna de rebeldia. Este estilo foca no volume lateral, onde as costeletas são deixadas largas e densas, muitas vezes conectadas ao bigode, enquanto o queixo permanece limpo. É o visual definitivo para quem quer um rosto mais largo e uma presença masculina marcante.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Corte Potente", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gel de Barbear Refrescante", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Barba Suavizante", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Definição do Queixo",
+                description: "A área raspada no queixo deve ter pelo menos 3 a 5 cm de largura. Use uma navalha para garantir que a linha entre a pele lisa e os pelos seja reta e nítida.",
+                tip: "Use o centro do lábio como guia para centralizar a raspagem."
+              },
+              {
+                title: "O Formato da Ferradura lateral",
+                description: "As costeletas devem descer pela bochecha e curvar-se em direção ao bigode. Mantenha a densidade alta perto da orelha e vá diminuindo levemente em direção à boca.",
+                tip: "Penteie os pelos para baixo para ver o real comprimento antes de aparar."
+              },
+              {
+                title: "Cuidados com a Pele Exposta",
+                description: "Como o queixo é raspado constantemente, a pele pode sofrer. Use um bom pós-barba para evitar vermelhidão na área central do rosto.",
+                tip: "Não esqueça de hidratar os pelos das bochechas com balm."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'mutton-trimmer', name: "Trimmer de Alta Performance", desc: "Ferramenta essencial para esculpir as linhas laterais do seu rosto.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'bigode-lapis-vintage': {
+      title: "Bigode Lápis: Elegância e Precisão do Cinema Clássico",
+      subtitle: "Aprenda a desenhar a linha fina de sofisticação que marcou a era de ouro de Hollywood.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "15 de Maio de 2026",
+      readTime: "8 min",
+      category: "Barba",
+      image: "/assets/bigode-chines.webp",
+      howToSteps: [
+        { name: "Base Curta", text: "Aparar o bigode com máquina pente 1 ou 0.5." },
+        { name: "Desenho de Linha", text: "Usar uma lâmina para remover os pelos superiores, deixando apenas uma linha estreita." },
+        { name: "Vão Central", text: "Limpar o filtro (o vão abaixo do nariz) para separar as duas metades." },
+        { name: "Simetria Total", text: "Garantir que a linha acompanhe perfeitamente a curvatura do lábio superior." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Bigode Lápis</strong> é o ápice da manutenção. Popularizado por astros como Clark Gable, este estilo exige uma mão firme e um olhar atento à simetria. Ele deve parecer uma linha desenhada a lápis sobre o lábio superior, transmitindo um ar de mistério, asseio e sofisticação europeia.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Navalhete de Precisão", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Lápis de Contorno de Barba", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Espelho de Aumento 5x", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Espessura Correta",
+                description: "A linha não deve ter mais do que 2 ou 3 milímetros de altura. Ela deve ficar suspensa cerca de 1 milímetro acima do lábio.",
+                tip: "Use um lápis de olho preto ou marrom para marcar a linha antes de passar a navalha."
+              },
+              {
+                title: "O Barbeado Perfeito",
+                description: "A pele ao redor do bigode deve estar impecável. Qualquer penugem acima da linha destrói o efeito visual de 'desenho'.",
+                tip: "Raspe no sentido contrário ao crescimento para um acabamento extra liso."
+              },
+              {
+                title: "Manutenção de Gala",
+                description: "Este estilo exige retoque a cada 24 horas. Se o pelo crescer um pouco, a linha perde a definição e o charme.",
+                tip: "Mantenha sempre uma lâmina nova à mão; lâminas cegas causam cortes em áreas sensíveis como o buço."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'pencil-blade', name: "Lâminas de Platina Extra-Afiadas", desc: "O corte necessário para a precisão do bigode lápis.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'soul-patch-mosca': {
+      title: "Soul Patch: O Detalhe que Faz a Diferença",
+      subtitle: "Saiba como usar e manter o pequeno triângulo de pelos abaixo do lábio para um visual artístico.",
+      author: "Carlos Barbudo",
+      date: "15 de Maio de 2026",
+      readTime: "7 min",
+      category: "Barba",
+      image: "/assets/cavanhaque-guia.webp",
+      howToSteps: [
+        { name: "Localização Central", text: "Identificar o centro do lábio inferior." },
+        { name: "Formato Triangular", text: "Modelar o pequeno tufo em formato de triângulo invertido ou gota." },
+        { name: "Limpeza ao Redor", text: "Raspar todo o resto do queixo e bochechas." },
+        { name: "Comprimento Curto", text: "Manter os pelos com cerca de 3 a 5mm." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Soul Patch</strong>, ou 'A Mosca' em português, é o estilo minimalista preferido de músicos de jazz e artistas. É um pequeno detalhe que adiciona profundidade ao queixo sem o compromisso de uma barba completa. Pode ser usado sozinho ou acompanhando um bigode bem desenhado.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Aparador de Detalhes à Bateria", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Espuma de Barbear Sensível", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Hidratante Facial Matte", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Tamanho Ideal",
+                description: "O Soul Patch não deve ser maior do que a largura do seu filtro labial superior. Ele deve ser um detalhe sutil, não um cavanhaque incompleto.",
+                tip: "Pense nele como um acento visual no seu rosto."
+              },
+              {
+                title: "A Geometria do Triângulo",
+                description: "A base do triângulo deve estar encostada no lábio e a ponta virada para o queixo. Use uma pinça se houver fios crescendo muito fora do desenho.",
+                tip: "Mantenha o ângulo bem limpo com uma máquina de acabamento."
+              },
+              {
+                title: "Combinações",
+                description: "O Soul Patch funciona muito bem com o Bigode Chevron ou com o Cavanhaque Van Dyke. Experimente deixar o resto do rosto com a barba por fazer para um visual moderno.",
+                tip: "Use um balm para que os fios fiquem deitados e não espetados."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'soul-trimmer', name: "Mini Aparador de Precisão", desc: "A ferramenta perfeita para os menores detalhes do seu rosto.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'bigode-ferradura-biker': {
+      title: "Bigode Ferradura: O Visual de Impacto e Rebeldia",
+      subtitle: "Aprenda a domar o estilo clássico dos motoqueiros e ícones da luta livre.",
+      author: "Carlos Barbudo",
+      date: "15 de Maio de 2026",
+      readTime: "11 min",
+      category: "Barba",
+      image: "/assets/bigode-chevron.webp",
+      howToSteps: [
+        { name: "Crescimento Vertical", text: "Deixar o bigode crescer para baixo nos cantos da boca." },
+        { name: "Linhas Paralelas", text: "Aparar as extensões verticais para que fiquem paralelas até o maxilar." },
+        { name: "Queixo Limpo", text: "Raspar totalmente o centro do queixo e bochechas." },
+        { name: "Volume Uniforme", text: "Manter a mesma espessura desde o lábio até o final da extensão." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Bigode Ferradura</strong> (Horseshoe) é um dos estilos mais agressivos e reconhecíveis do mundo. Caracterizado por um bigode que desce em linhas retas até a mandíbula, ele emoldura a boca e transmite uma imagem de força e atitude. É o estilo favorito de subculturas como motoqueiros e roqueiros.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Contorno Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Bigode e Barba", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Gel de Barbear para Pele Sensível", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Linha da Ferradura",
+                description: "As duas linhas que descem da boca devem ser perfeitamente retas. Use a quina do seu maxilar como referência de fim da linha.",
+                tip: "Cuidado para não deixar as linhas muito finas; a ferradura deve ter presença."
+              },
+              {
+                title: "O Contraste do Queixo",
+                description: "A área central do queixo deve estar sempre muito bem raspada. Qualquer pelo nessa área transforma o bigode em um cavanhaque, perdendo o estilo original.",
+                tip: "Use uma lâmina de barbear clássica para garantir a limpeza total no centro."
+              },
+              {
+                title: "Penteando para Baixo",
+                description: "Penteie os fios verticalmente todos os dias. Isso treina o pelo a crescer na direção certa e evita que ele entre na boca.",
+                tip: "Apare os fios que passarem da linha do lábio superior com uma tesoura pequena."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'biker-kit', name: "Kit Bigode de Respeito", desc: "Tudo o que você precisa para manter sua ferradura alinhada e brilhante.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'bigode-handlebar-guidao': {
+      title: "Bigode Guidão (Handlebar): A Arte da Curva Perfeita",
+      subtitle: "Descubra como cultivar e modelar o bigode mais icônico da cultura hipster e clássica.",
+      author: "Carlos Barbudo",
+      date: "15 de Maio de 2026",
+      readTime: "12 min",
+      category: "Barba",
+      image: "/assets/bigode-chevron.webp",
+      howToSteps: [
+        { name: "Crescer sem Cortar", text: "Não apare os pelos acima do lábio; penteie-os para os lados." },
+        { name: "Treinar os Fios", text: "Usar cera diariamente para 'ensinar' o bigode a crescer para fora." },
+        { name: "Enrolar as Pontas", text: "Quando houver comprimento suficiente, use os dedos para criar a espiral." },
+        { name: "Limpeza Labial", text: "Aparar apenas os pelos que entrarem na boca, preservando o comprimento lateral." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Bigode Guidão</strong> (Handlebar) é mais do que um estilo; é um compromisso com a estética. Caracterizado por pontas longas e enroladas, ele evoca a elegância do século XIX e a modernidade hipster. É o visual definitivo para quem não tem medo de chamar a atenção e valoriza a precisão na modelagem.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Cera de Bigode Extra Forte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Bigode de Chifre ou Madeira", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Secador de Cabelo (para amolecer a cera)", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "A Fase do Crescimento",
+                description: "O maior erro é aparar o meio do bigode. Você precisa deixar os pelos crescerem o suficiente para que possam ser penteados para os lados e alcancem as pontas.",
+                tip: "Use um balm para controlar os fios rebeldes enquanto eles crescem."
+              },
+              {
+                title: "A Técnica da Modelagem",
+                description: "Aqueça uma pequena quantidade de cera entre os dedos. Aplique do centro para as pontas e use o secador no modo quente para ajudar a cera a penetrar, depois mude para o frio para 'congelar' a curva.",
+                tip: "Enrole a ponta ao redor de um lápis se tiver dificuldade em fazer a curva com os dedos."
+              },
+              {
+                title: "Higiene Constante",
+                description: "Bigodes grandes acumulam resíduos de comida e bebida. Lave sempre após as refeições e use um condicionador de barba para manter os fios macios.",
+                tip: "Tenha sempre um lenço à mão quando for beber café ou cerveja."
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'handlebar-wax', name: "Cera Modeladora Extreme Hold", desc: "A cera definitiva para quem quer o guidão perfeito o dia todo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
     }
   };
 
