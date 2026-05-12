@@ -7183,7 +7183,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "15 de Março de 2026",
       readTime: "11 min",
       category: "Cabelo",
-      image: "/assets/pompadour-fade.png",
+      image: "/assets/side-swept.webp",
       howToSteps: [
         { name: "Undercut Total", text: "Raspar as laterais de forma uniforme (máquina 1 ou 2) sem degradê suave." },
         { name: "Topo Desconectado", text: "Manter o topo bem longo (10-12cm), sem conexão com as laterais." },
@@ -7677,7 +7677,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "12 min",
       category: "Cabelo",
-      image: "/assets/corte-americano.webp",
+      image: "/assets/taper-ondulado.webp",
       howToSteps: [
         { name: "Taper Suave", text: "Fazer um degradê discreto nas costeletas e nuca." },
         { name: "Corte em Camadas", text: "Cortar o topo ondulado em camadas para reduzir o volume lateral." },
