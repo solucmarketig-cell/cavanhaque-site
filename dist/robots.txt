@@ -1,0 +1,32 @@
+# Robots.txt para Cavanhaque
+# https://cavanhaque.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cavanhaque.com/sitemap.xml
+
+# Crawl-delay para bots de SEO (permite crawling mas com delay)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Bloquear apenas bots maliciosos conhecidos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+# Permitir explicitamente Google, Bing, etc
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
