@@ -5546,7 +5546,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Março de 2026",
       readTime: "7 min",
       category: "Dicas",
-      image: "/assets/transplante-barba.webp",
+      image: "/assets/cavanhaque-ancora.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
