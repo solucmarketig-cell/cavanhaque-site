@@ -9086,133 +9086,7 @@ const ArticleDetailPage: React.FC = () => {
         </>
       ),
       recommendedProducts: [
-        { id: 'mutton-trimmer', name: "Trimmer de Alta Performance", desc: "Ferramenta essencial para esculpir as linhas laterais do seu rosto.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
-      ]
-    },
-    'bigode-lapis-vintage': {
-      title: "Bigode Lápis: Elegância e Precisão do Cinema Clássico",
-      subtitle: "Aprenda a desenhar a linha fina de sofisticação que marcou a era de ouro de Hollywood.",
-      author: "Carlos Barbudo",
-      date: "15 de Maio de 2026",
-      readTime: "8 min",
-      category: "Barba",
-      image: "/assets/bigode-chines.webp",
-      howToSteps: [
-        { name: "Base Curta", text: "Aparar o bigode com máquina pente 1 ou 0.5." },
-        { name: "Desenho de Linha", text: "Usar uma lâmina para remover os pelos superiores, deixando apenas uma linha estreita." },
-        { name: "Vão Central", text: "Limpar o filtro (o vão abaixo do nariz) para separar as duas metades." },
-        { name: "Simetria Total", text: "Garantir que a linha acompanhe perfeitamente a curvatura do lábio superior." }
-      ],
-      content: (
-        <>
-          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>Bigode Lápis</strong> é o ápice da manutenção. Popularizado por astros como Clark Gable, este estilo exige uma mão firme e um olhar atento à simetria. Ele deve parecer uma linha desenhada a lápis sobre o lábio superior, transmitindo um ar de mistério, asseio e sofisticação europeia.
-          </p>
-
-          <ToolBox 
-            tools={[
-              { name: "Navalhete de Precisão", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Lápis de Contorno de Barba", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Espelho de Aumento 5x", link: "https://mercadolivre.com/sec/1exasrj" }
-            ]}
-          />
-
-          <TutorialSteps 
-            steps={[
-              {
-                title: "A Espessura Correta",
-                description: "A linha não deve ter mais do que 2 ou 3 milímetros de altura. Ela deve ficar suspensa cerca de 1 milímetro acima do lábio.",
-                tip: "Use um lápis de olho preto ou marrom para marcar a linha antes de passar a navalha."
-              },
-              {
-                title: "O Barbeado Perfeito",
-                description: "A pele ao redor do bigode deve estar impecável. Qualquer penugem acima da linha destrói o efeito visual de 'desenho'.",
-                tip: "Raspe no sentido contrário ao crescimento para um acabamento extra liso."
-              },
-              {
-                title: "Manutenção de Gala",
-                description: "Este estilo exige retoque a cada 24 horas. Se o pelo crescer um pouco, a linha perde a definição e o charme.",
-                tip: "Mantenha sempre uma lâmina nova à mão; lâminas cegas causam cortes em áreas sensíveis como o buço."
-              }
-            ]}
-          />
-
-          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
-            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
-              <Star className="text-brand-gold fill-brand-gold" size={22} />
-              Dica do Mestre
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic">
-              "O Bigode Lápis é sobre 'milímetros'. Se você tremer a mão, vai engrossar a linha e perder o estilo. Use um lápis de contorno para desenhar a linha exata antes de passar o navalhete. A precisão absoluta é o que transforma esse bigode em um acessório de luxo facial."
-            </p>
-          </div>
-        </>
-      ),
-      recommendedProducts: [
-        { id: 'pencil-blade', name: "Lâminas de Platina Extra-Afiadas", desc: "O corte necessário para a precisão do bigode lápis.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
-      ]
-    },
-    'soul-patch-mosca': {
-      title: "Soul Patch: O Detalhe que Faz a Diferença",
-      subtitle: "Saiba como usar e manter o pequeno triângulo de pelos abaixo do lábio para um visual artístico.",
-      author: "Carlos Barbudo",
-      date: "15 de Maio de 2026",
-      readTime: "7 min",
-      category: "Barba",
-      image: "/assets/cavanhaque-guia.webp",
-      howToSteps: [
-        { name: "Localização Central", text: "Identificar o centro do lábio inferior." },
-        { name: "Formato Triangular", text: "Modelar o pequeno tufo em formato de triângulo invertido ou gota." },
-        { name: "Limpeza ao Redor", text: "Raspar todo o resto do queixo e bochechas." },
-        { name: "Comprimento Curto", text: "Manter os pelos com cerca de 3 a 5mm." }
-      ],
-      content: (
-        <>
-          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>Soul Patch</strong>, ou 'A Mosca' em português, é o estilo minimalista preferido de músicos de jazz e artistas. É um pequeno detalhe que adiciona profundidade ao queixo sem o compromisso de uma barba completa. Pode ser usado sozinho ou acompanhando um bigode bem desenhado.
-          </p>
-
-          <ToolBox 
-            tools={[
-              { name: "Aparador de Detalhes à Bateria", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Espuma de Barbear Sensível", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Hidratante Facial Matte", link: "https://mercadolivre.com/sec/1exasrj" }
-            ]}
-          />
-
-          <TutorialSteps 
-            steps={[
-              {
-                title: "O Tamanho Ideal",
-                description: "O Soul Patch não deve ser maior do que a largura do seu filtro labial superior. Ele deve ser um detalhe sutil, não um cavanhaque incompleto.",
-                tip: "Pense nele como um acento visual no seu rosto."
-              },
-              {
-                title: "A Geometria do Triângulo",
-                description: "A base do triângulo deve estar encostada no lábio e a ponta virada para o queixo. Use uma pinça se houver fios crescendo muito fora do desenho.",
-                tip: "Mantenha o ângulo bem limpo com uma máquina de acabamento."
-              },
-              {
-                title: "Combinações",
-                description: "O Soul Patch funciona muito bem com o Bigode Chevron ou com o Cavanhaque Van Dyke. Experimente deixar o resto do rosto com a barba por fazer para um visual moderno.",
-                tip: "Use um balm para que os fios fiquem deitados e não espetados."
-              }
-            ]}
-          />
-
-          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
-            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
-              <Star className="text-brand-gold fill-brand-gold" size={22} />
-              Dica do Mestre
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic">
-              "No Soul Patch, menos é mais. Não deixe o pelo crescer demais para fora do centro do lábio. Ele deve ser um detalhe vertical. Se você tem o queixo muito pequeno, o Soul Patch ajuda a criar uma 'sombra' que dá a ilusão de um queixo mais projetado e volumoso."
-            </p>
-          </div>
-        </>
-      ),
-      recommendedProducts: [
-        { id: 'soul-trimmer', name: "Mini Aparador de Precisão", desc: "A ferramenta perfeita para os menores detalhes do seu rosto.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+        { id: 'mutton-kit', name: "Kit de Manutenção Lateral", desc: "Tudo o que você precisa para manter suas costeletas alinhadas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
       ]
     },
     'bigode-ferradura-biker': {
@@ -9342,7 +9216,6 @@ const ArticleDetailPage: React.FC = () => {
       ]
     }
   };
-
   const article = slug && articlesData[slug] ? articlesData[slug] : null;
 
   if (!article) {

@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { fetchArticles } from './services/contentService.ts';
+import { fetchArticles } from '../services/contentService.ts';
 
 async function updateSitemap() {
   const articles = await fetchArticles();

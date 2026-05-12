@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Zap } from 'lucide-react';
 
 interface Step {
   title: string;
@@ -16,7 +16,7 @@ const TutorialSteps: React.FC<TutorialStepsProps> = ({ steps, category = 'Estilo
   return (
     <div className="my-16 space-y-12">
       <h2 className="text-3xl font-serif font-bold text-brand-dark mb-12 flex items-center gap-4">
-        <span className="bg-brand-gold text-brand-dark w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 shadow-lg">?</span>
+        <Zap className="text-brand-gold fill-brand-gold shrink-0" size={32} />
         Guia Passo a Passo
       </h2>
       
