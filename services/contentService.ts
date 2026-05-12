@@ -6,6 +6,26 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'transp-1',
+          title: 'Transplante Capilar: Quanto Custa Realmente em 2026? (Valores e Fatores)',
+          excerpt: 'Descubra os valores reais de um transplante capilar hoje. Analisamos os custos das técnicas FUE e FUT e o que você deve considerar antes de investir.',
+          imageUrl: '/assets/transplante-capilar-custos.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '12 Mai 2026',
+          slug: 'transplante-capilar-valores-custos',
+          category: 'Cabelo'
+        },
+        {
+          id: 'transp-2',
+          title: 'Transplante Capilar Antes e Depois: A Jornada da Recuperação Real',
+          excerpt: 'Veja o que esperar do antes e depois de um transplante capilar. Cronograma completo do crescimento e como garantir o melhor resultado final.',
+          imageUrl: '/assets/transplante-capilar-antes-depois.webp',
+          author: 'Carlos Barbudo',
+          date: '12 Mai 2026',
+          slug: 'transplante-capilar-antes-e-depois-resultados',
+          category: 'Cabelo'
+        },
+        {
           id: 'minox-1',
           title: 'Minoxidil Funciona? A Verdade Científica sobre o Crescimento de Barba',
           excerpt: 'Um mergulho na ciência por trás do Minoxidil. O que o seu folículo realmente sente e como ter resultados reais baseados em curadoria técnica do Cavanhaque.',

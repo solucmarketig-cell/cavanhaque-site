@@ -9278,6 +9278,132 @@ const ArticleDetailPage: React.FC = () => {
       recommendedProducts: [
         { id: 'old-dutch-kit', name: "Combo Barba de Respeito", desc: "Tudo o que você precisa para manter o volume e a limpeza do seu Old Dutch.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
       ]
+    },
+    'transplante-capilar-valores-custos': {
+      title: "Transplante Capilar: Quanto Custa Realmente em 2026? (Valores e Fatores)",
+      subtitle: "Descubra os valores reais de um transplante capilar hoje. Analisamos os custos das técnicas FUE e FUT e o que você deve considerar antes de investir.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "12 de Maio de 2026",
+      readTime: "15 min",
+      category: "Cabelo",
+      image: "/assets/transplante-capilar-custos.webp",
+      howToSteps: [
+        { name: "Consulta Inicial", text: "Avaliação técnica da área doadora e receptora para determinar a viabilidade." },
+        { name: "Escolha da Técnica", text: "Decidir entre FUE (extração individual) ou FUT (faixa de couro cabeludo)." },
+        { name: "Cálculo de Folículos", text: "Definição da quantidade de unidades foliculares necessárias para a cobertura desejada." },
+        { name: "Pós-Operatório", text: "Planejamento dos custos com medicamentos e loções para a fase de cicatrização." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Transplante Capilar</strong> deixou de ser um luxo inacessível para se tornar uma das cirurgias estéticas mais procuradas por homens em todo o mundo. No entanto, a pergunta principal permanece: <em>"Quanto custa?"</em>. Em 2026, os valores variam drasticamente dependendo da tecnologia utilizada, da reputação da clínica e da extensão da calvície.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Shampoo Pós-Transplante (pH Neutro)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Loção de Minoxidil 5% (Grade Farmacêutica)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Travesseiro de Pescoço para Recuperação", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "Técnica FUE (Follicular Unit Extraction)",
+                description: "Atualmente a técnica mais buscada. Os folículos são extraídos um a um, sem deixar cicatrizes lineares. O custo por folículo costuma ser mais alto devido à precisão e tempo de cirurgia.",
+                tip: "Ideal para quem usa cabelo curto, pois as marcas são praticamente imperceptíveis."
+              },
+              {
+                title: "Técnica FUT (Follicular Unit Transplantation)",
+                description: "Envolve a remoção de uma pequena faixa de couro cabeludo. Embora mais tradicional, permite a extração de grandes volumes em uma única sessão. Geralmente possui um valor mais acessível que a FUE.",
+                tip: "Recomendada para casos de calvície avançada onde o volume é a prioridade."
+              },
+              {
+                title: "Fatores que Influenciam o Preço",
+                description: "A densidade desejada, a qualificação da equipe médica e a infraestrutura hospitalar são os pilares do orçamento. Clínicas premium oferecem hoje até robótica assistida.",
+                tip: "Fuja de orçamentos muito abaixo da média; a saúde do seu couro cabeludo é o bem mais precioso."
+              }
+            ]}
+          />
+
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Ao analisar os valores de um transplante capilar, considere que este é um investimento para a vida toda. O custo médio no Brasil em 2026 varia entre R$ 15.000 e R$ 45.000, dependendo da técnica. Lembre-se: o barato pode sair caro se a área doadora for desperdiçada por mãos inexperientes."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'hair-growth-kit', name: "Kit Crescimento Acelerado", desc: "Suplementação e loções essenciais para potencializar seu transplante.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
+    },
+    'transplante-capilar-antes-e-depois-resultados': {
+      title: "Transplante Capilar Antes e Depois: A Jornada da Recuperação Real",
+      subtitle: "Veja o que esperar do antes e depois de um transplante capilar. Cronograma completo do crescimento e como garantir o melhor resultado final.",
+      author: "Carlos Barbudo",
+      date: "12 de Maio de 2026",
+      readTime: "12 min",
+      category: "Cabelo",
+      image: "/assets/transplante-capilar-antes-depois.webp",
+      howToSteps: [
+        { name: "Primeiros 10 Dias", text: "Fase crítica de cicatrização e fixação dos enxertos." },
+        { name: "30 Dias (Eflúvio)", text: "Queda temporária dos cabelos transplantados (totalmente normal)." },
+        { name: "3 a 6 Meses", text: "Início do crescimento dos novos fios, ainda finos e claros." },
+        { name: "12 Meses", text: "Resultado final com densidade máxima e textura natural." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Nada gera mais ansiedade em quem decide fazer um transplante do que o <strong>Antes e Depois</strong>. A transformação física é impactante, mas a jornada emocional entre a cirurgia e o resultado final requer paciência e disciplina. Entender a evolução cronológica é a chave para uma recuperação tranquila.
+          </p>
+
+          <ToolBox 
+            tools={[
+              { name: "Vitaminas para Fortalecimento Capilar", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova de Cerdas Macias (Pós 3 meses)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Protetor Solar para Couro Cabeludo", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Choque da Queda (Shock Loss)",
+                description: "Cerca de 3 a 4 semanas após o procedimento, os cabelos transplantados caem. Não entre em pânico: as raízes (bulbos) permanecem firmes sob a pele. É a fase de repouso antes do crescimento real.",
+                tip: "Mantenha a hidratação recomendada pelo médico para acalmar o couro cabeludo nesta fase."
+              },
+              {
+                title: "A Fase do 'Broto'",
+                description: "Entre o 3º e o 4º mês, pequenos fios começam a romper a superfície. Eles podem parecer desalinhados ou finos no início, mas ganharão espessura conforme o ciclo capilar se estabiliza.",
+                tip: "Evite química ou tinturas agressivas durante os primeiros 6 meses."
+              },
+              {
+                title: "A Consolidação da Densidade",
+                description: "Do 9º ao 12º mês, o 'Depois' finalmente se revela. A densidade aumenta e a linha frontal adquire o aspecto natural planejado na cirurgia.",
+                tip: "Use um óleo finalizador para dar brilho e saúde aos novos fios permanentes."
+              }
+            ]}
+          />
+
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Um transplante bem-sucedido não depende apenas do cirurgião, mas do cuidado pós-operatório. Fotos de antes e depois mostram apenas o fim, mas o segredo está em seguir a risca o uso de bloqueadores de DHT (como a Finasterida) para evitar que o cabelo nativo continue caindo ao redor dos novos fios."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'hair-maintenance', name: "Kit Pós-Op Premium", desc: "Shampoo e loções calmantes para uma cicatrização perfeita.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+      ]
     }
   };
   const article = slug && articlesData[slug] ? articlesData[slug] : null;
