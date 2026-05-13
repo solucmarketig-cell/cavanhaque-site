@@ -21,6 +21,7 @@ const TrackingPage = lazy(() => import('./pages/TrackingPage'));
 const ReturnsPage = lazy(() => import('./pages/ReturnsPage'));
 const FaqPage = lazy(() => import('./pages/FaqPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Loading component
 const LoadingFallback = () => (
@@ -59,6 +60,7 @@ function AppContent() {
             <Route path="/cabelo" element={<HairStylesPage />} />
             <Route path="/acessorios" element={<AccessoriesPage />} />
             <Route path="/kits" element={<KitsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>
       </main>

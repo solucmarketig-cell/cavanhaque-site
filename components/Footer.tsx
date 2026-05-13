@@ -16,11 +16,15 @@ const Footer: React.FC = () => {
               Cavanhaque. A marca do homem moderno que não abre mão do estilo e do cuidado pessoal. Produtos premium e conteúdo de verdade.
             </p>
             <div className="flex space-x-4">
-              {[Instagram, Facebook, Twitter].map((Icon, i) => (
-                <a key={i} href="#" className="text-gray-400 hover:text-brand-gold transition-colors" aria-label={`Visitar nosso ${i === 0 ? 'Instagram' : i === 1 ? 'Facebook' : 'Twitter'}`}>
-                  <Icon size={20} />
-                </a>
-              ))}
+              <a href="https://instagram.com/cavanhaque" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-gold transition-colors" aria-label="Visitar nosso Instagram">
+                <Instagram size={20} />
+              </a>
+              <a href="https://facebook.com/cavanhaque" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-gold transition-colors" aria-label="Visitar nosso Facebook">
+                <Facebook size={20} />
+              </a>
+              <a href="https://twitter.com/cavanhaque" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-gold transition-colors" aria-label="Visitar nosso Twitter">
+                <Twitter size={20} />
+              </a>
             </div>
           </div>
 
@@ -52,7 +56,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-sm text-gray-400">
               <li>Seg a Sex: 9h às 18h</li>
               <li className="flex items-center gap-2">
-                contato@cavanhaque.com.br
+                contato@cavanhaque.com
               </li>
             </ul>
 
