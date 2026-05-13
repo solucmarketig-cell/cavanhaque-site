@@ -6,6 +6,66 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'hair-curly-1',
+          title: 'Cabelos Cacheados Masculinos: O Guia Definitivo de Cortes e Cuidados',
+          excerpt: 'Descubra os melhores cortes para cabelos cacheados masculinos em 2026. Aprenda técnicas de finalização e os produtos essenciais para definição e brilho.',
+          imageUrl: '/assets/cabelos-cacheados-guia.png',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'cabelos-cacheados-masculinos-guia-cortes',
+          category: 'Cabelo'
+        },
+        {
+          id: 'botox-capilar-1',
+          title: 'Botox Capilar Masculino: O Segredo para Fios Alinhados e Saudáveis (Sem Formol)',
+          excerpt: 'Tudo sobre o botox capilar profissional para homens. Descubra como reduzir o frizz e repor a massa capilar sem o uso de químicas agressivas.',
+          imageUrl: '/assets/botox-capilar-masculino.png',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'botox-capilar-profissional-masculino-sem-formol',
+          category: 'Cabelo'
+        },
+        {
+          id: 'dermatite-1',
+          title: 'Dermatite Seborreica: Como Acabar com a Caspa e Irritação no Couro Cabeludo',
+          excerpt: 'Sofrendo com dermatite seborreica no couro cabeludo? Conheça os melhores shampoos e tratamentos para controlar a descamação e a coceira de vez.',
+          imageUrl: '/assets/dermatite-seborreica-guia.png',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'dermatite-seborreica-couro-cabeludo-shampoo-tratamento',
+          category: 'Cabelo'
+        },
+        {
+          id: 'implante-1',
+          title: 'Implante Capilar: A Solução Definitiva Contra a Calvície Masculina',
+          excerpt: 'Entenda a diferença entre implante e transplante capilar. Custos, recuperação e o que esperar dos resultados para recuperar sua autoestima.',
+          imageUrl: '/assets/implante-capilar-estetica.png',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'implante-capilar-masculino-precos-resultados',
+          category: 'Cabelo'
+        },
+        {
+          id: 'ozonio-1',
+          title: 'Ozonioterapia Capilar: A Nova Fronteira do Tratamento para Queda e Saúde dos Fios',
+          excerpt: 'Descubra como a ozonioterapia capilar pode acelerar o crescimento, combater a queda e revitalizar profundamente a saúde do seu couro cabeludo.',
+          imageUrl: '/assets/ozonioterapia-capilar.png',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'ozonioterapia-capilar-beneficios-crescimento',
+          category: 'Cabelo'
+        },
+        {
+          id: 'kids-curly-1',
+          title: 'Penteado Infantil para Cabelos Cacheados: Estilo e Praticidade para os Pequenos',
+          excerpt: 'Dicas de penteados para crianças com cabelos cacheados. Como manter os cachos definidos e saudáveis de forma simples e divertida.',
+          imageUrl: '/assets/penteado-infantil-cacheado.png',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'penteado-infantil-cabelos-cacheados-estilos',
+          category: 'Cabelo'
+        },
+        {
           id: 'transp-1',
           title: 'Transplante Capilar: Quanto Custa Realmente em 2026? (Valores e Fatores)',
           excerpt: 'Descubra os valores reais de um transplante capilar hoje. Analisamos os custos das técnicas FUE e FUT e o que você deve considerar antes de investir.',

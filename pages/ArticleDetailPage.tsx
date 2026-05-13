@@ -9530,6 +9530,219 @@ const ArticleDetailPage: React.FC = () => {
       recommendedProducts: [
         { id: 'precision-razor', name: "Navalhete Profissional em Aço", desc: "A ferramenta de precisão necessária para criar as linhas ultra-finas do estilo lápis.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
       ]
+    },
+    'cabelos-cacheados-masculinos-guia-cortes': {
+      title: "Cabelos Cacheados Masculinos: O Guia Definitivo de Cortes e Cuidados",
+      subtitle: "Domine a definição dos seus cachos com os cortes mais modernos de 2026 e técnicas de finalização profissional.",
+      author: "Carlos Barbudo",
+      date: "13 de Maio de 2026",
+      readTime: "14 min",
+      category: "Cabelo",
+      image: "/assets/cabelos-cacheados-guia.png",
+      howToSteps: [
+        { name: "Lavagem Nutritiva", text: "Usar shampoo sem sulfato e condicionador liberado para manter a hidratação." },
+        { name: "Finalização com Creme", text: "Aplicar creme de pentear ou ativador de cachos com o cabelo ainda bem úmido." },
+        { name: "Técnica de Fitagem", text: "Separar o cabelo em fitas com os dedos para garantir definição mecha a mecha." },
+        { name: "Secagem com Difusor", text: "Usar o secador com difusor em temperatura média para evitar o frizz." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Por muito tempo, o homem com <strong>cabelo cacheado</strong> foi incentivado a raspar as laterais ou manter o corte muito curto por "praticidade". Em 2026, a regra mudou: o volume e a textura natural são os novos símbolos de estilo e personalidade. Aprender a cuidar dos cachos não é apenas vaidade, é entender a geometria do seu próprio rosto e como valorizar a estrutura única dos seus fios.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Creme de Pentear Ativador", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Dentes Largos", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Difusor de Secador Profissional", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <TutorialSteps 
+            steps={[
+              {
+                title: "O Corte Ideal para Cachos",
+                description: "O segredo do cabelo cacheado masculino é o corte em camadas. Isso evita o efeito 'pirâmide' (volume apenas nas pontas) e distribui o peso de forma harmônica.",
+                tip: "Procure um barbeiro especialista em visagismo para ajustar o volume lateral de acordo com o seu formato de rosto."
+              },
+              {
+                title: "A Lavagem Inteligente (Low Poo)",
+                description: "O cabelo cacheado tende a ser mais seco. Use shampoos sem sulfatos agressivos para não remover a oleosidade natural que protege o cacho.",
+                tip: "Enxágue com água fria no final para fechar as cutículas e aumentar o brilho natural."
+              },
+              {
+                title: "Finalização e Fitagem",
+                description: "Com o cabelo úmido, aplique o creme de pentear e use os dedos como se fossem um pente, separando as mechas. Isso cria 'fitas' que se transformam em cachos definidos após secar.",
+                tip: "Nunca use toalha comum; prefira uma camiseta de algodão para secar o excesso de água sem gerar frizz."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "O maior inimigo do cacho definido é o toque constante. Depois que você finalizou e o cabelo está secando, resista à tentação de passar as mãos. Deixe o 'durinho' do creme se formar e, só quando estiver 100% seco, amasse levemente os fios para dar balanço e naturalidade."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'curly-kit', name: "Kit Finalização Cachos Gold", desc: "Tudo o que você precisa para definição máxima e zero frizz.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
+    'botox-capilar-profissional-masculino-sem-formol': {
+      title: "Botox Capilar Masculino: O Segredo para Fios Alinhados e Saudáveis",
+      subtitle: "Descubra como reduzir o frizz e repor a massa capilar sem químicas agressivas e com resultado profissional.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "13 de Maio de 2026",
+      readTime: "12 min",
+      category: "Cabelo",
+      image: "/assets/botox-capilar-masculino.png",
+      howToSteps: [
+        { name: "Limpeza Profunda", text: "Lavar com shampoo antirresíduos para preparar as cutículas." },
+        { name: "Aplicação do Produto", text: "Espalhar o botox capilar mecha por mecha, respeitando 1cm da raiz." },
+        { name: "Tempo de Pausa", text: "Deixar agir por 30 a 50 minutos conforme a espessura do fio." },
+        { name: "Selagem Térmica", text: "Enxaguar parcialmente e selar com escova e prancha em temperatura controlada." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O nome pode assustar, mas o <strong>Botox Capilar</strong> não tem agulhas. É um tratamento de reconstrução profunda que preenche as 'falhas' da fibra capilar, devolvendo massa e selando as cutículas. Para o homem que sofre com cabelo volumoso demais, rebelde ou danificado por sol e cloro, o botox é a solução ideal para um visual alinhado sem o aspecto artificial das progressivas tradicionais.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Botox Capilar Sem Formol", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pincel e Pente Fino", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Chapinha de Cerâmica", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <ShieldCheck className="text-brand-gold" size={22} />
+              Segurança em Primeiro Lugar
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Exija sempre o Botox Sem Formol. O formol é uma substância proibida para fins estéticos e extremamente prejudicial à saúde. O botox real foca na nutrição e reposição de aminoácidos, não no alisamento químico permanente."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'botox-mask', name: "Máscara Repositora de Massa", desc: "Efeito botox em casa com queratina e óleos nobres.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <FlaskConical size={32} /> }
+      ]
+    },
+    'dermatite-seborreica-couro-cabeludo-shampoo-tratamento': {
+      title: "Dermatite Seborreica: Como Acabar com a Caspa e Irritação",
+      subtitle: "Um guia médico e prático para controlar a descamação, coceira e oleosidade excessiva no couro cabeludo.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "13 de Maio de 2026",
+      readTime: "15 min",
+      category: "Saúde",
+      image: "/assets/dermatite-seborreica-guia.png",
+      howToSteps: [
+        { name: "Diagnóstico", text: "Identificar se a descamação é seca (caspa) ou oleosa (dermatite)." },
+        { name: "Lavagem Terapêutica", text: "Usar shampoo com cetoconazol, zinco ou alcatrão 2 a 3 vezes por semana." },
+        { name: "Tempo de Ação", text: "Deixar o shampoo agir no couro cabeludo por 5 minutos antes de enxaguar." },
+        { name: "Prevenção", text: "Evitar banhos muito quentes e dormir com o cabelo úmido." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Dermatite Seborreica</strong> é uma condição inflamatória crônica que afeta milhões de homens. Ela não tem cura definitiva, mas tem controle total. O excesso de oleosidade alimenta fungos naturais da pele, gerando inflamação e as incômodas 'plaquinhas' brancas ou amareladas. Entender o gatilho da sua dermatite é o primeiro passo para um couro cabeludo saudável e livre de coceira.
+          </p>
+          <div className="bg-red-50 border border-red-100 p-6 rounded-2xl my-10 flex items-start gap-4">
+            <AlertTriangle className="text-red-500 shrink-0" size={24} />
+            <p className="text-red-800 text-sm italic">
+              "Atenção: Se a sua dermatite apresentar feridas abertas, sangramento ou perda de cabelo localizada, procure um dermatologista imediatamente. Este guia tem caráter informativo para controle de casos leves e moderados."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'shampoo-dermatite', name: "Shampoo Anticaspa Profissional", desc: "Fórmula com piritionato de zinco para controle imediato.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Microscope size={32} /> }
+      ]
+    },
+    'implante-capilar-masculino-precos-resultados': {
+      title: "Implante Capilar: A Solução Definitiva Contra a Calvície",
+      subtitle: "Entenda a diferença entre implante e transplante capilar, os custos envolvidos e a jornada da recuperação.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "13 de Maio de 2026",
+      readTime: "18 min",
+      category: "Cabelo",
+      image: "/assets/implante-capilar-estetica.png",
+      howToSteps: [
+        { name: "Avaliação", text: "Consultar um cirurgião para analisar a área doadora e a extensão da calvície." },
+        { name: "Procedimento", text: "Extração de unidades foliculares (FUE) e implante nas áreas receptoras." },
+        { name: "Pós-Operatório", text: "Seguir rigorosamente o repouso e a higienização especial nos primeiros 15 dias." },
+        { name: "Crescimento", text: "Acompanhar a evolução nos meses 3 a 12 para o resultado final definitivo." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Perder o cabelo é um dos maiores medos do homem moderno. Felizmente, o <strong>Implante Capilar</strong> evoluiu de tal forma que os resultados hoje são praticamente imperceptíveis. Esqueça o 'cabelo de boneca' do passado. Com a técnica FUE (Follicular Unit Extraction), cada fio é colocado respeitando a angulação e densidade natural, garantindo um visual denso e autêntico.
+          </p>
+          <div className="bg-brand-charcoal text-white p-8 rounded-3xl my-12 border-l-8 border-brand-gold shadow-lg">
+            <h3 className="text-2xl font-serif font-bold text-brand-gold mb-4">Vale o Investimento?</h3>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              O custo de um transplante capilar de qualidade no Brasil varia entre R$ 15.000 e R$ 35.000. Embora o valor pareça alto, é uma solução de longo prazo que devolve a autoestima e elimina a dependência de loções paliativas pelo resto da vida.
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'pos-transp-kit', name: "Kit Pós-Transplante S.O.S", desc: "Produtos suaves para higienização sem agredir os folículos novos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Trophy size={32} /> }
+      ]
+    },
+    'ozonioterapia-capilar-beneficios-crescimento': {
+      title: "Ozonioterapia Capilar: A Revolução na Saúde dos Fios",
+      subtitle: "Descubra como o ozônio medicinal pode acelerar o crescimento e combater a queda capilar de forma natural.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "13 de Maio de 2026",
+      readTime: "10 min",
+      category: "Cabelo",
+      image: "/assets/ozonioterapia-capilar.png",
+      howToSteps: [
+        { name: "Aplicação", text: "O ozônio é aplicado através de vapor ou injeção localizada no couro cabeludo." },
+        { name: "Ação Germicida", text: "O gás elimina fungos e bactérias, limpando profundamente os folículos." },
+        { name: "Oxigenação", text: "O tratamento aumenta a microcirculação sanguínea, levando mais nutrientes à raiz." },
+        { name: "Revitalização", text: "Os fios nascem mais fortes, brilhantes e com crescimento acelerado." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>Ozonioterapia Capilar</strong> é a nova aliada de quem busca tratamentos menos invasivos para a queda de cabelo. Ao combinar oxigênio e ozônio, este protocolo médico-estético regenera as células do couro cabeludo e combate o estresse oxidativo, um dos grandes vilões da perda capilar precoce.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'ozonio-oil', name: "Óleo Ozonizado Premium", desc: "Potencialize a saúde do couro cabeludo com as propriedades do ozônio.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Droplets size={32} /> }
+      ]
+    },
+    'penteado-infantil-cabelos-cacheados-estilos': {
+      title: "Penteado Infantil para Cabelos Cacheados: Estilo para os Pequenos",
+      subtitle: "Dicas práticas e divertidas para manter os cachos das crianças definidos, saudáveis e cheios de estilo.",
+      author: "Carlos Barbudo",
+      date: "13 de Maio de 2026",
+      readTime: "8 min",
+      category: "Cabelo",
+      image: "/assets/penteado-infantil-cacheado.png",
+      howToSteps: [
+        { name: "Desembaraço Suave", text: "Usar creme de pentear infantil e desembaraçar sempre de baixo para cima." },
+        { name: "Definição Brincando", text: "Enrolar as mechas nos dedos (dedoliss) para criar cachos perfeitos." },
+        { name: "Penteados", text: "Explorar o coque abacaxi ou o visual natural volumoso para o dia a dia." },
+        { name: "Manutenção", text: "Usar borrifador com água e leave-in para revitalizar os cachos pela manhã." }
+      ],
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Cuidar do <strong>cabelo cacheado infantil</strong> deve ser um momento de diversão e reforço da autoestima. Evite prender o cabelo muito apertado ou tentar 'alisar' com escovas. O segredo é usar produtos hipoalergênicos e ensinar o pequeno a amar a textura natural dos fios desde cedo. Um cacho bem cuidado na infância é a base para um estilo forte no futuro.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'kids-curly-shampoo', name: "Shampoo Cachos Kids Soft", desc: "Fórmula suave que não arde os olhos e define os cachinhos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <HeartPulse size={32} /> }
+      ]
     }
   };
   const article = slug && articlesData[slug] ? articlesData[slug] : null;
