@@ -6,33 +6,83 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
-          id: 'hair-blonde-1',
-          title: 'Cabelos Loiros Masculinos: Tons de Mel, Dourado e Loiro Escuro',
-          excerpt: 'Um guia completo sobre as tonalidades de loiro para homens. Descubra qual tom combina com seu tom de pele e como manter a cor vibrante.',
+          id: 'hair-blonde-gen',
+          title: 'Cabelos Loiros Masculinos: O Guia Completo de Estilo',
+          excerpt: 'Tudo o que você precisa saber sobre o universo dos loiros para homens. Do cuidado básico à escolha da tonalidade ideal.',
           imageUrl: '/assets/cabelos-loiros-guia.png',
           author: 'Carlos Barbudo',
-          date: '13 Mai 2026',
-          slug: 'cabelos-loiros-masculinos-tons-mel-dourado-escuro',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-masculinos-guia',
           category: 'Cabelo'
         },
         {
-          id: 'hair-blonde-curly',
-          title: 'Loiro Cacheado e Curto: Como Manter a Cor e a Textura Impecáveis',
-          excerpt: 'Dicas essenciais para homens com cabelos loiros cacheados ou curtos. Aprenda a evitar o amarelamento e a manter a definição dos fios.',
+          id: 'hair-blonde-mel',
+          title: 'Cabelos Loiros Mel: O Tom Quente que é Tendência',
+          excerpt: 'Descubra por que o loiro mel é a escolha perfeita para um visual iluminado e natural. Dicas de manutenção e produtos.',
+          imageUrl: '/assets/loiro-mel.png',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-mel-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-dourado',
+          title: 'Cabelos Loiros Dourados: Brilho e Sofisticação',
+          excerpt: 'Como conquistar e manter o loiro dourado impecável. O guia para homens que buscam um visual solar e marcante.',
+          imageUrl: '/assets/loiro-dourado.png',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-dourados-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-escuro',
+          title: 'Cabelos Loiros Escuros: Elegância Discreta e Natural',
+          excerpt: 'O loiro escuro é a tonalidade mais versátil para o homem moderno. Saiba como valorizar essa cor com o corte certo.',
+          imageUrl: '/assets/loiro-escuro.png',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-escuros-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-curto',
+          title: 'Cabelos Loiros Curtos: Praticidade com Estilo',
+          excerpt: 'Os melhores cortes curtos para quem tem cabelo loiro. Do Buzz Cut ao Crew Cut, veja como destacar a cor no comprimento curto.',
+          imageUrl: '/assets/loiro-curto-especifico.png',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-curtos-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-cacheado',
+          title: 'Cabelos Loiros Cacheados: Definição e Cor em Harmonia',
+          excerpt: 'Como cuidar da saúde dos cachos loiros. Técnicas de finalização para destacar a textura e a tonalidade dos fios.',
           imageUrl: '/assets/loiro-cacheado-curto.png',
           author: 'Carlos Barbudo',
-          date: '13 Mai 2026',
-          slug: 'cabelos-loiros-cacheados-curto-masculino-cuidados',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-cacheados-masculino',
           category: 'Cabelo'
         },
         {
-          id: 'hair-red-1',
-          title: 'Ruivo Masculino: Do Acobreado Escuro ao Vibrante',
-          excerpt: 'Tudo sobre o cabelo ruivo masculino. Tendências de ruivo acobreado escuro e os cuidados necessários para fios ruivos saudáveis e brilhantes.',
+          id: 'hair-red-gen',
+          title: 'Cabelos Ruivos Masculinos: Atitude e Personalidade',
+          excerpt: 'Um mergulho no mundo dos ruivos. Conheça as variações de tons e como cuidar da pigmentação ruiva.',
           imageUrl: '/assets/cabelos-ruivos-guia.png',
           author: 'Dr. Estilo (Ph.D)',
-          date: '13 Mai 2026',
-          slug: 'cabelos-ruivos-masculinos-acobreado-escuro-tendencias',
+          date: '14 Mai 2026',
+          slug: 'cabelos-ruivos-masculinos-guia',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-red-acobreado',
+          title: 'Ruivo Acobreado Escuro: A Cor da Estação para Homens',
+          excerpt: 'O guia definitivo para o ruivo acobreado escuro. Saiba como chegar no tom e manter o brilho metálico por mais tempo.',
+          imageUrl: '/assets/ruivo-acobreado-escuro.png',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '14 Mai 2026',
+          slug: 'cabelos-ruivos-acobreado-escuro-masculino',
           category: 'Cabelo'
         },
         {

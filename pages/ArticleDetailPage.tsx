@@ -9744,102 +9744,156 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'kids-curly-shampoo', name: "Shampoo Cachos Kids Soft", desc: "Fórmula suave que não arde os olhos e define os cachinhos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <HeartPulse size={32} /> }
       ]
     },
-    'cabelos-loiros-masculinos-tons-mel-dourado-escuro': {
-      title: "Cabelos Loiros Masculinos: Tons de Mel, Dourado e Loiro Escuro",
-      subtitle: "Descubra a versatilidade dos tons loiros para homens e como escolher a tonalidade certa para o seu visual.",
+    'cabelos-loiros-masculinos-guia': {
+      title: "Cabelos Loiros Masculinos: O Guia Completo de Estilo",
+      subtitle: "Tudo o que você precisa saber sobre o universo dos loiros para homens. Do cuidado básico à escolha da tonalidade ideal.",
       author: "Carlos Barbudo",
-      date: "13 de Maio de 2026",
-      readTime: "11 min",
+      date: "14 de Maio de 2026",
+      readTime: "12 min",
       category: "Cabelo",
       image: "/assets/cabelos-loiros-guia.png",
-      howToSteps: [
-        { name: "Escolha do Tom", text: "Identificar se seu subtom de pele é quente (combina com dourado/mel) ou frio (combina com loiro escuro/acinzentado)." },
-        { name: "Proteção da Cor", text: "Usar shampoos específicos para cabelos coloridos para evitar o desbotamento." },
-        { name: "Hidratação Semanal", text: "Fazer cronograma capilar para repor os nutrientes perdidos na descoloração." },
-        { name: "Finalização Matte", text: "Usar pomadas de efeito seco para destacar as mechas e a profundidade da cor." }
-      ],
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>cabelo loiro masculino</strong> deixou de ser apenas uma escolha ousada para se tornar um pilar de estilo e modernidade. Seja através de um loiro escuro natural ou de um loiro mel iluminado, a cor certa tem o poder de suavizar traços agressivos ou destacar o olhar. No entanto, ser loiro exige compromisso: a manutenção é a chave para que o visual não pareça descuidado ou danificado.
+            O <strong>cabelo loiro masculino</strong> é uma afirmação de estilo. Seja natural ou tingido, o loiro traz luminosidade ao rosto e uma vibração de modernidade. Neste guia, exploramos as bases para quem quer entrar no mundo dos loiros, desde a preparação do fio até os cuidados diários para evitar o ressecamento.
           </p>
-          <ToolBox 
-            tools={[
-              { name: "Shampoo Matizador", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Máscara de Reconstrução", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Protetor Térmico", link: "https://mercadolivre.com/sec/1exasrj" }
-            ]}
-          />
-          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
-            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
-              <Star className="text-brand-gold fill-brand-gold" size={22} />
-              Dica do Mestre
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic">
-              "Para o loiro mel ou dourado, a luz do sol é sua melhor amiga e sua pior inimiga. Ela destaca os reflexos, mas também oxida a cor. Use sempre um leave-in com proteção UV para garantir que o seu loiro não fique opaco ou com aspecto de palha."
-            </p>
-          </div>
         </>
       ),
       recommendedProducts: [
-        { id: 'blonde-shampoo', name: "Kit Matizador Professional", desc: "Elimina o tom amarelado e devolve o brilho aos fios loiros.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+        { id: 'blonde-shampoo-gen', name: "Shampoo Manutenção Loiros", desc: "Limpeza suave que preserva a cor e o brilho.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
       ]
     },
-    'cabelos-loiros-cacheados-curto-masculino-cuidados': {
-      title: "Loiro Cacheado e Curto: Como Manter a Cor e a Textura",
-      subtitle: "A união perfeita entre cor vibrante e definição. Saiba como cuidar dos cachos loiros e cortes curtos.",
+    'cabelos-loiros-mel-masculino': {
+      title: "Cabelos Loiros Mel: O Tom Quente que é Tendência",
+      subtitle: "Descubra por que o loiro mel é a escolha perfeita para um visual iluminado e natural.",
       author: "Carlos Barbudo",
-      date: "13 de Maio de 2026",
+      date: "14 de Maio de 2026",
+      readTime: "10 min",
+      category: "Cabelo",
+      image: "/assets/loiro-mel.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Loiro Mel</strong> é a tonalidade ideal para quem busca um visual 'sun-kissed' (beijado pelo sol). É um tom quente que combina perfeitamente com peles bronzeadas e traz um aspecto saudável e vibrante ao cabelo masculino.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'honey-oil', name: "Óleo Iluminador Mel", desc: "Destaca os reflexos dourados e hidrata profundamente.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Droplets size={32} /> }
+      ]
+    },
+    'cabelos-loiros-dourados-masculino': {
+      title: "Cabelos Loiros Dourados: Brilho e Sofisticação",
+      subtitle: "Como conquistar e manter o loiro dourado impecável. O guia para homens que buscam um visual solar.",
+      author: "Carlos Barbudo",
+      date: "14 de Maio de 2026",
+      readTime: "10 min",
+      category: "Cabelo",
+      image: "/assets/loiro-dourado.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Loiro Dourado</strong> exala confiança. É um tom clássico que nunca sai de moda e funciona muito bem em cortes com mais volume no topo, onde a luz pode refletir em diferentes ângulos, criando profundidade e movimento.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'gold-mask', name: "Máscara de Brilho Dourado", desc: "Realça o pigmento dourado e sela as cutículas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
+    'cabelos-loiros-escuros-masculino': {
+      title: "Cabelos Loiros Escuros: Elegância Discreta e Natural",
+      subtitle: "O loiro escuro é a tonalidade mais versátil para o homem moderno. Saiba como valorizar essa cor.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "14 de Maio de 2026",
       readTime: "9 min",
       category: "Cabelo",
-      image: "/assets/loiro-cacheado-curto.png",
-      howToSteps: [
-        { name: "Umectação", text: "Aplicar óleos naturais para combater o ressecamento extra do loiro cacheado." },
-        { name: "Corte Periódico", text: "Manter o corte curto a cada 20 dias para evitar pontas duplas e sem forma." },
-        { name: "Lavagem Suave", text: "Usar a técnica de Co-Wash para limpar sem agredir a cor ou o cacho." }
-      ],
+      image: "/assets/loiro-escuro.png",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            Manter o <strong>cabelo loiro cacheado</strong> é um desafio duplo: você precisa cuidar da integridade da cor e da definição dos cachos simultaneamente. Cabelos curtos e loiros também exigem precisão, pois qualquer falha no crescimento ou na cor fica muito mais evidente. O segredo está na nutrição pesada e no uso de finalizadores que não pesem no fio.
+            Muitas vezes confundido com o castanho claro, o <strong>Loiro Escuro</strong> é uma cor rica e multidimensional. É a escolha perfeita para quem quer clarear o visual de forma sutil, mantendo uma aparência sóbria e profissional.
           </p>
         </>
       ),
       recommendedProducts: [
-        { id: 'curly-blonde-oil', name: "Elixir de Nutrição Profunda", desc: "Óleo leve que define os cachos e protege o tom loiro.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Droplets size={32} /> }
+        { id: 'dark-blonde-wax', name: "Cera Modeladora Matte", desc: "Define o corte sem tirar a naturalidade do loiro escuro.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
       ]
     },
-    'cabelos-ruivos-masculinos-acobreado-escuro-tendencias': {
-      title: "Ruivo Masculino: Do Acobreado Escuro ao Vibrante",
-      subtitle: "Tudo sobre a cor que transmite atitude e exclusividade. Descubra como adotar o ruivo acobreado escuro.",
+    'cabelos-loiros-curtos-masculino': {
+      title: "Cabelos Loiros Curtos: Praticidade com Estilo",
+      subtitle: "Os melhores cortes curtos para quem tem cabelo loiro. Veja como destacar a cor no comprimento curto.",
+      author: "Carlos Barbudo",
+      date: "14 de Maio de 2026",
+      readTime: "8 min",
+      category: "Cabelo",
+      image: "/assets/loiro-curto-especifico.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Cortes curtos como o <strong>Buzz Cut</strong> ganham uma vida nova quando platinados ou loiros. A cor clara destaca as linhas do corte e o formato do crânio, criando um visual impactante e de baixa manutenção.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'short-blonde-balm', name: "Balm Protetor de Couro", desc: "Hidrata a pele e o fio curto após a descoloração.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <HeartPulse size={32} /> }
+      ]
+    },
+    'cabelos-loiros-cacheados-masculino': {
+      title: "Cabelos Loiros Cacheados: Definição e Cor em Harmonia",
+      subtitle: "Como cuidar da saúde dos cachos loiros e destacar a textura dos fios.",
+      author: "Carlos Barbudo",
+      date: "14 de Maio de 2026",
+      readTime: "11 min",
+      category: "Cabelo",
+      image: "/assets/loiro-cacheado-curto.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Cachos loiros são visualmente impressionantes. A variação de tons entre as curvas do fio cria um efeito de luz e sombra natural que valoriza qualquer penteado. O foco aqui deve ser a <strong>hidratação extrema</strong>, pois o cacho e a descoloração tendem a ressecar o fio.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'curly-blonde-cream', name: "Ativador de Cachos Loiros", desc: "Define e protege a cor com filtro UV.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
+    'cabelos-ruivos-masculinos-guia': {
+      title: "Cabelos Ruivos Masculinos: Atitude e Personalidade",
+      subtitle: "Um mergulho no mundo dos ruivos. Conheça as variações de tons e como cuidar da pigmentação.",
       author: "Dr. Estilo (Ph.D)",
-      date: "13 de Maio de 2026",
+      date: "14 de Maio de 2026",
       readTime: "12 min",
       category: "Cabelo",
       image: "/assets/cabelos-ruivos-guia.png",
-      howToSteps: [
-        { name: "Tonalização", text: "Usar tonalizantes acobreados para manter a vivacidade da cor entre as visitas ao barbeiro." },
-        { name: "Evitar Água Quente", text: "A água quente abre a cutícula e faz o pigmento ruivo sair muito mais rápido." },
-        { name: "Brilho Intenso", text: "Finalizar com sprays de brilho para destacar as nuances do acobreado." }
-      ],
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>cabelo ruivo masculino</strong>, especialmente no tom acobreado escuro, é uma das tendências mais fortes de 2026 para quem busca um visual sofisticado e marcante. Diferente do ruivo vibrante 'fantasia', o acobreado escuro simula uma cor natural e elegante. É a escolha perfeita para homens de pele clara com subtons quentes que querem sair do óbvio.
+            Ser ruivo é carregar uma cor rara e cheia de personalidade. Seja você um ruivo natural ou por escolha, a manutenção do pigmento vermelho é o maior desafio para manter o visual impecável.
           </p>
-          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
-            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
-              <Zap className="text-brand-gold" size={22} />
-              Alerta de Desbotamento
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic">
-              "O pigmento vermelho é o que sai mais fácil da fibra capilar. Se você não usar produtos específicos para cabelos coloridos, seu ruivo acobreado vai virar um laranja desbotado em menos de duas semanas."
-            </p>
-          </div>
         </>
       ),
       recommendedProducts: [
-        { id: 'red-mask', name: "Máscara Tonalizante Cobre", desc: "Mantém o ruivo acobreado intenso e brilhante por muito mais tempo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <FlaskConical size={32} /> }
+        { id: 'red-shampoo-gen', name: "Shampoo Realce Ruivo", desc: "Evita o desbotamento e mantém o tom vibrante.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <FlaskConical size={32} /> }
+      ]
+    },
+    'cabelos-ruivos-acobreado-escuro-masculino': {
+      title: "Ruivo Acobreado Escuro: A Cor da Estação para Homens",
+      subtitle: "O guia definitivo para o ruivo acobreado escuro. Saiba como chegar no tom e manter o brilho.",
+      author: "Dr. Estilo (Ph.D)",
+      date: "14 de Maio de 2026",
+      readTime: "13 min",
+      category: "Cabelo",
+      image: "/assets/ruivo-acobreado-escuro.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>Ruivo Acobreado Escuro</strong> é a escolha para quem quer sofisticação. É um tom sóbrio, com reflexos metálicos que aparecem sob a luz, ideal para cortes clássicos e barbas bem desenhadas.
+          </p>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'copper-mask-dark', name: "Máscara Tonalizante Cobre Escuro", desc: "Repõe o pigmento e garante brilho metálico.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Droplets size={32} /> }
       ]
     }
   };
