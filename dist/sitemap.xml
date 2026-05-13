@@ -37,7 +37,25 @@
   <!-- Artigos do Blog -->
   <url>
     <loc>https://cavanhaque.com/blog/transplante-capilar-valores-custos</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cavanhaque.com/blog/cabelos-loiros-masculinos-tons-mel-dourado-escuro</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cavanhaque.com/blog/cabelos-loiros-cacheados-curto-masculino-cuidados</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cavanhaque.com/blog/cabelos-ruivos-masculinos-acobreado-escuro-tendencias</loc>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

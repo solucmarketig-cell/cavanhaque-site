@@ -6,6 +6,36 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'hair-blonde-1',
+          title: 'Cabelos Loiros Masculinos: Tons de Mel, Dourado e Loiro Escuro',
+          excerpt: 'Um guia completo sobre as tonalidades de loiro para homens. Descubra qual tom combina com seu tom de pele e como manter a cor vibrante.',
+          imageUrl: '/assets/cabelos-loiros-guia.png',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'cabelos-loiros-masculinos-tons-mel-dourado-escuro',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-curly',
+          title: 'Loiro Cacheado e Curto: Como Manter a Cor e a Textura Impecáveis',
+          excerpt: 'Dicas essenciais para homens com cabelos loiros cacheados ou curtos. Aprenda a evitar o amarelamento e a manter a definição dos fios.',
+          imageUrl: '/assets/loiro-cacheado-curto.png',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'cabelos-loiros-cacheados-curto-masculino-cuidados',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-red-1',
+          title: 'Ruivo Masculino: Do Acobreado Escuro ao Vibrante',
+          excerpt: 'Tudo sobre o cabelo ruivo masculino. Tendências de ruivo acobreado escuro e os cuidados necessários para fios ruivos saudáveis e brilhantes.',
+          imageUrl: '/assets/cabelos-ruivos-guia.png',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'cabelos-ruivos-masculinos-acobreado-escuro-tendencias',
+          category: 'Cabelo'
+        },
+        {
           id: 'hair-curly-1',
           title: 'Cabelos Cacheados Masculinos: O Guia Definitivo de Cortes e Cuidados',
           excerpt: 'Descubra os melhores cortes para cabelos cacheados masculinos em 2026. Aprenda técnicas de finalização e os produtos essenciais para definição e brilho.',
