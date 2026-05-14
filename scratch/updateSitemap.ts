@@ -4,6 +4,7 @@ import path from 'path';
 
 // This is a scratch script to update the sitemap with all articles
 const articles = [
+  'corte-para-cabelo-cacheado',
   'cabelo-cacheado',
   'penteado-cabelo-cacheado',
   'afro-nudred-textura-definicao',

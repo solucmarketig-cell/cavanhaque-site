@@ -39,6 +39,62 @@ const ArticleDetailPage: React.FC = () => {
   const AFF_BALM = "https://meli.la/1jvcZjc";
 
   const articlesData: Record<string, any> = {
+    'corte-para-cabelo-cacheado': {
+      title: "Corte para Cabelo Cacheado: 5 Estilos que são Tendência em 2026",
+      subtitle: "Descubra o corte para cabelo cacheado ideal para o seu formato de rosto e aprenda a técnica do corte a seco.",
+      author: "Lara Estilo",
+      date: "14 de Maio de 2026",
+      readTime: "12 min",
+      category: "Cabelo",
+      image: "/assets/corte-cabelo-cacheado-feminino.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Escolher o <strong>corte para cabelo cacheado</strong> certo é o que separa um cabelo sem forma de uma moldura perfeita para o rosto. Diferente do cabelo liso, o cacho possui o 'fator encolhimento', o que torna a escolha do estilo e do profissional algo estratégico. Seja você fã de volume máximo ou de um visual mais controlado, existe um corte desenhado exatamente para a sua curvatura.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Tesoura de Fio Navalha Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo Finalizador Antifrizz", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente Garfo para Volume", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Top 3 Cortes para Valorizar seus Cachos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Shaggy Hair Cacheado",
+                description: "O Shaggy é o rei da modernidade. Com camadas desconectadas e uma franja cheia de atitude, ele traz movimento e reduz o peso das pontas, evitando o efeito 'pirâmide'. É ideal para quem busca um visual rocker e despojado.",
+                tip: "Use um mousse de fixação leve para manter as camadas destacadas durante o dia."
+              },
+              {
+                title: "2. Corte em Camadas (U ou V)",
+                description: "O clássico que nunca falha. As camadas ajudam a distribuir o volume por toda a extensão do cabelo, garantindo que o topo não fique murcho e as pontas não fiquem ralas. O segredo é que as camadas comecem na altura da maçã do rosto.",
+                tip: "Peça ao seu cabeleireiro para fazer o corte com o cabelo seco; assim você vê o comprimento real na hora."
+              },
+              {
+                title: "3. Heart Shape (Corte Coração)",
+                description: "Específico para quem ama volume no topo e laterais mais arredondadas. Como o nome sugere, o formato final lembra um coração, valorizando muito o queixo e os olhos. É perfeito para curvaturas 3B e 3C.",
+                tip: "Use um pente garfo na raiz após o cabelo secar para 'abrir' o corte e revelar o formato coração."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica da Especialista
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "A regra de ouro do corte para cabelo cacheado: nunca use navalha! A navalha desfia o fio e causa pontas duplas instantâneas em cabelos com curvatura. Exija sempre o uso da tesoura de fio navalha para um corte limpo e saudável."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'pick-comb', name: "Pente Garfo de Metal", desc: "A ferramenta indispensável para dar volume e forma ao corte.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Hammer size={32} /> },
+        { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
+      ]
+    },
     'cabelo-cacheado': {
       title: "Cabelo Cacheado: O Guia Absoluto de Cuidados e Tendências",
       subtitle: "Do 2A ao 4C: Aprenda a identificar, tratar e amar a verdadeira essência do seu cabelo cacheado.",

@@ -136,6 +136,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Cabelo'
         },
         {
+          id: 'corte-feminino-cacheado',
+          title: 'Corte para Cabelo Cacheado: 5 Estilos que são Tendência',
+          excerpt: 'Procurando o corte para cabelo cacheado perfeito? Conheça os estilos que valorizam o volume e trazem leveza ao seu visual.',
+          imageUrl: '/assets/corte-cabelo-cacheado-feminino.webp',
+          author: 'Lara Estilo',
+          date: '14 Mai 2026',
+          slug: 'corte-para-cabelo-cacheado',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-cacheado-feminino',
           title: 'Cabelo Cacheado: O Guia Absoluto de Cuidados e Tendências',
           excerpt: 'Tudo o que você precisa saber sobre o universo do cabelo cacheado. Tipos de cachos, hidratação profunda e as melhores rotinas de cuidados.',
