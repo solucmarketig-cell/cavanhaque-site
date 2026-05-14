@@ -24,13 +24,13 @@ jobs:
     - name: 🔨 Build Project
       run: npm run build
 
-    - name: 📂 Sync files via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+    - name: 📂 Sync files via SSH/SFTP
+      uses: appleboy/scp-action@v0.1.7
       with:
-        server: ${{ secrets.FTP_SERVER }}
+        host: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
-        server-dir: /public_html/
-        protocol: ftp
-        port: 21
+        port: 22
+        source: "dist/*"
+        target: "/home/cavanhaque.com/public_html"
+        strip_components: 1
