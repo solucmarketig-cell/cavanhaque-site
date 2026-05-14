@@ -39,6 +39,62 @@ const ArticleDetailPage: React.FC = () => {
   const AFF_BALM = "https://meli.la/1jvcZjc";
 
   const articlesData: Record<string, any> = {
+    'penteado-cabelo-cacheado': {
+      title: "Penteado Cabelo Cacheado: Guia Completo de Estilo e Definição",
+      subtitle: "Descubra como dominar a arte do penteado cabelo cacheado com técnicas profissionais de fitagem, volume e day after.",
+      author: "Lara Estilo",
+      date: "14 de Maio de 2026",
+      readTime: "14 min",
+      category: "Cabelo",
+      image: "/assets/penteado-feminino-cacheado.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Dominar o <strong>penteado cabelo cacheado</strong> é uma jornada de autoconhecimento e paciência. Diferente dos cabelos lisos, os cachos possuem uma estrutura que exige hidratação constante e técnicas específicas de manipulação para evitar o frizz e garantir a definição duradoura. Neste guia, Lara Estilo revela os segredos das passarelas para você transformar seus cachos em uma afirmação de poder e personalidade.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Difusor de Ar com Controle de Temperatura", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gelatina de Alta Definição", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Escova Estilizadora (Tipo Jacaré ou Denman)", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Passo a Passo: O Penteado Perfeito</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. A Preparação 'Liquid Gold'",
+                description: "O segredo começa no chuveiro. Use um leave-in de base aquosa logo após o enxágue do condicionador, com o cabelo ainda pingando. Isso 'prende' a umidade dentro do fio, garantindo brilho espelhado.",
+                tip: "Nunca use toalhas de banho comuns; prefira uma camiseta de algodão ou toalha de microfibra para retirar o excesso de água."
+              },
+              {
+                title: "2. Técnica de Fitagem Estruturada",
+                description: "Divida o cabelo em seções. Aplique o creme de pentear misturado com um pouco de gelatina. Use os dedos ou uma escova específica para separar as 'fitas' de cabelo. Balance as mechas para que os cachos se formem naturalmente.",
+                tip: "Para mais volume na raiz, faça a fitagem com a cabeça inclinada para a frente ou para os lados."
+              },
+              {
+                title: "3. Secagem Inteligente com Difusor",
+                description: "Encaixe o difusor no secador em temperatura média e velocidade baixa. Coloque o cacho dentro do 'copo' do difusor e leve até a raiz, segurando por 15 segundos. Repita por todo o cabelo até que esteja 90% seco.",
+                tip: "Não toque no cabelo enquanto ele seca para evitar o frizz. Só use os dedos para soltar os cachos depois que estiverem 100% secos e frios."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica da Especialista
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Para um Day After impecável, use óleos leves de argan ou coco para 'quebrar o durinho' do creme. Isso devolve o movimento natural e elimina aquele aspecto estático. Lembre-se: o volume é seu aliado, não seu inimigo!"
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'diffuser-pro', name: "Difusor Universal Profissional", desc: "Secagem uniforme que preserva a curvatura original.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'styling-gel', name: "Gelatina Modeladora Gold", desc: "Fixação flexível sem ressecar os fios.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Droplets size={32} /> }
+      ]
+    },
     'minoxidil-funciona-verdade': {
       title: "Minoxidil Funciona? A Verdade Científica sobre o Crescimento de Barba",
       subtitle: "Analisamos estudos dermatológicos para responder: o minoxidil realmente cria novos folículos ou apenas acelera o que já existe? Entenda o ciclo de crescimento folicular.",

@@ -4,6 +4,7 @@ import path from 'path';
 
 // This is a scratch script to update the sitemap with all articles
 const articles = [
+  'penteado-cabelo-cacheado',
   'afro-nudred-textura-definicao',
   'aprenda-fazer-cavanhaque-simples',
   'aprenda-fazer-cavanhaque-simples-eficaz',
@@ -100,9 +101,8 @@ const articles = [
   'surfer-shag-longo-ondulado',
   'taper-fade-cabelo-ondulado-textura',
   'top-knot-coque-samurai',
-  'fringe-fade-franja-masculina',
   'transplante-capilar-antes-e-depois-resultados',
-  'transplante-capilar-valores-custos',
+  'transplante-capilar-values-custos',
   'transplante-de-barba-fue-vale-a-pena',
   'visagismo-carecas-barbudos',
   'willian-bigode-estilo-e-legado',

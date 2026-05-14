@@ -136,6 +136,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Cabelo'
         },
         {
+          id: 'penteado-feminino-cacheado',
+          title: 'Penteado Cabelo Cacheado: Guia Completo de Estilo e Definição',
+          excerpt: 'Descubra as melhores técnicas de penteado para cabelos cacheados femininos. Aprenda a valorizar seu volume natural com definição impecável.',
+          imageUrl: '/assets/penteado-feminino-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '14 Mai 2026',
+          slug: 'penteado-cabelo-cacheado',
+          category: 'Cabelo'
+        },
+        {
           id: 'kids-curly-1',
           title: 'Penteado Infantil para Cabelos Cacheados: Estilo e Praticidade para os Pequenos',
           excerpt: 'Dicas de penteados para crianças com cabelos cacheados. Como manter os cachos definidos e saudáveis de forma simples e divertida.',
