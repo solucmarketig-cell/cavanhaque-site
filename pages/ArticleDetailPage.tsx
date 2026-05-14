@@ -9968,11 +9968,11 @@ const ArticleDetailPage: React.FC = () => {
       </div>
 
       <section className="max-w-7xl mx-auto px-4 -mt-16 relative z-20 pb-32">
-        <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_30px_60px_-12px_rgba(0,0,0,0.5)] mb-16 border-8 border-white">
+        <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_30px_60px_-12px_rgba(0,0,0,0.5)] mb-16 border-8 border-white bg-brand-light/30">
           <OptimizedImage
             src={article.image}
             alt={`Capa: ${article.title}`}
-            className={`w-full aspect-video max-h-[70vh] object-cover ${article.imagePosition || 'object-center'}`}
+            className={`w-full aspect-video max-h-[70vh] object-contain ${article.imagePosition || 'object-center'}`}
             priority={true}
             sizes="(max-width: 768px) 100vw, 1200px"
           />
