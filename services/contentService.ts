@@ -136,6 +136,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Cabelo'
         },
         {
+          id: 'cabelo-cacheado-feminino',
+          title: 'Cabelo Cacheado: O Guia Absoluto de Cuidados e Tendências',
+          excerpt: 'Tudo o que você precisa saber sobre o universo do cabelo cacheado. Tipos de cachos, hidratação profunda e as melhores rotinas de cuidados.',
+          imageUrl: '/assets/cabelo-cacheado-feminino.webp',
+          author: 'Lara Estilo',
+          date: '14 Mai 2026',
+          slug: 'cabelo-cacheado',
+          category: 'Cabelo'
+        },
+        {
           id: 'penteado-feminino-cacheado',
           title: 'Penteado Cabelo Cacheado: Guia Completo de Estilo e Definição',
           excerpt: 'Descubra as melhores técnicas de penteado para cabelos cacheados femininos. Aprenda a valorizar seu volume natural com definição impecável.',

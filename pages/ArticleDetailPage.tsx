@@ -39,6 +39,62 @@ const ArticleDetailPage: React.FC = () => {
   const AFF_BALM = "https://meli.la/1jvcZjc";
 
   const articlesData: Record<string, any> = {
+    'cabelo-cacheado': {
+      title: "Cabelo Cacheado: O Guia Absoluto de Cuidados e Tendências",
+      subtitle: "Do 2A ao 4C: Aprenda a identificar, tratar e amar a verdadeira essência do seu cabelo cacheado.",
+      author: "Lara Estilo",
+      date: "14 de Maio de 2026",
+      readTime: "16 min",
+      category: "Cabelo",
+      image: "/assets/cabelo-cacheado-feminino.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo cacheado</strong> é muito mais do que um tipo de fio; é uma identidade. Cada cacho possui sua própria personalidade, curvatura e necessidades únicas. Para quem está em transição capilar ou apenas busca a melhor versão dos seus fios, entender a biologia do cacho é o primeiro passo para o sucesso. Neste guia definitivo, mergulhamos fundo nas melhores práticas para garantir que seu cabelo seja sempre o protagonista.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Shampoo Low Poo (Sem Sulfatos)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Máscara de Nutrição com Óleos Naturais", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Pente de Madeira de Dentes Largos", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Como Identificar e Cuidar do seu Cacho</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Identificação da Curvatura",
+                description: "O cabelo cacheado se divide em categorias: 3A (cachos largos), 3B (cachos mais definidos e médios) e 3C (cachos fechados e volumosos). Identificar o seu tipo ajuda na escolha dos produtos certos, já que cada um exige uma carga diferente de óleos.",
+                tip: "É comum ter mais de uma curvatura na mesma cabeça. Adapte a aplicação de produtos conforme a necessidade de cada área."
+              },
+              {
+                title: "2. Cronograma Capilar de Elite",
+                description: "O segredo para cachos brilhantes é o equilíbrio entre Hidratação (água), Nutrição (óleos) e Reconstrução (proteína). Como o óleo natural tem dificuldade de chegar às pontas devido ao formato espiral, a etapa de Nutrição deve ser a sua favorita.",
+                tip: "Use óleos vegetais puros para umectação noturna uma vez por semana; isso transforma a textura do fio."
+              },
+              {
+                title: "3. Lavagem e Finalização",
+                description: "Lave o cabelo preferencialmente com técnica Low Poo para não retirar a proteção natural. Na hora de finalizar, use a técnica 'Plopping' (secar com uma camiseta de algodão) para remover a umidade sem causar atrito ou quebra dos fios.",
+                tip: "Evite secar o cabelo esfregando a toalha; o atrito é o maior gerador de frizz e perda de definição."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Nunca penteie seu cabelo cacheado quando ele estiver seco. Isso quebra a estrutura dos cachos e causa um volume desordenado. O momento de desembaraçar é sempre com o cabelo úmido e com uma boa dose de condicionador ou creme."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'low-poo-kit', name: "Kit Low Poo Especialista", desc: "Limpeza suave que preserva a hidratação dos cachos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Trophy size={32} /> },
+        { id: 'curly-mask', name: "Máscara Nutritiva Intensa", desc: "Reposição lipídica para brilho e maciez extrema.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Crown size={32} /> }
+      ]
+    },
     'penteado-cabelo-cacheado': {
       title: "Penteado Cabelo Cacheado: Guia Completo de Estilo e Definição",
       subtitle: "Descubra como dominar a arte do penteado cabelo cacheado com técnicas profissionais de fitagem, volume e day after.",
