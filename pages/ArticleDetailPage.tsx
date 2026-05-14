@@ -9596,15 +9596,9 @@ const ArticleDetailPage: React.FC = () => {
       subtitle: "Descubra como reduzir o frizz e repor a massa capilar sem químicas agressivas e com resultado profissional.",
       author: "Dr. Estilo (Ph.D)",
       date: "13 de Maio de 2026",
-      readTime: "12 min",
+      readTime: "14 min",
       category: "Cabelo",
-      image: "/assets/botox-capilar-masculino.png",
-      howToSteps: [
-        { name: "Limpeza Profunda", text: "Lavar com shampoo antirresíduos para preparar as cutículas." },
-        { name: "Aplicação do Produto", text: "Espalhar o botox capilar mecha por mecha, respeitando 1cm da raiz." },
-        { name: "Tempo de Pausa", text: "Deixar agir por 30 a 50 minutos conforme a espessura do fio." },
-        { name: "Selagem Térmica", text: "Enxaguar parcialmente e selar com escova e prancha em temperatura controlada." }
-      ],
+      image: "/assets/botox-capilar-v2.png",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -9614,7 +9608,27 @@ const ArticleDetailPage: React.FC = () => {
             tools={[
               { name: "Botox Capilar Sem Formol", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
               { name: "Pincel e Pente Fino", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Chapinha de Cerâmica", link: "https://mercadolivre.com/sec/1exasrj" }
+              { name: "Chapinha de Cerâmica (230°C)", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Passo a Passo: Como Fazer o Botox Capilar</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Limpeza Profunda (Preparação)",
+                description: "Lave o cabelo duas vezes com um shampoo antirresíduos. Isso abre as cutículas para que o tratamento de botox consiga penetrar profundamente no córtex do fio.",
+                tip: "Certifique-se de que o couro cabeludo está bem limpo e livre de óleos antes de prosseguir."
+              },
+              {
+                title: "2. Aplicação Estratégica",
+                description: "Divida o cabelo em mechas e aplique o produto com um pincel, respeitando a distância de 1cm da raiz para evitar irritações. Use um pente fino para espalhar uniformemente.",
+                tip: "O segredo é não encharcar o cabelo, apenas umedecer as mechas com o produto."
+              },
+              {
+                title: "3. Tempo de Pausa e Selagem",
+                description: "Deixe agir por 40 minutos. Enxágue apenas 50% do produto e seque fazendo uma escova bem lisa. O calor é o que ativa as propriedades selantes do botox.",
+                tip: "Passe a prancha (chapinha) em mechas finas pelo menos 10 vezes em cada uma para garantir a selagem térmica total."
+              }
             ]}
           />
           <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
@@ -9623,7 +9637,7 @@ const ArticleDetailPage: React.FC = () => {
               Segurança em Primeiro Lugar
             </h4>
             <p className="text-gray-700 leading-relaxed italic">
-              "Exija sempre o Botox Sem Formol. O formol é uma substância proibida para fins estéticos e extremamente prejudicial à saúde. O botox real foca na nutrição e reposição de aminoácidos, não no alisamento químico permanente."
+              "Exija sempre o Botox Sem Formol. O botox real foca na nutrição e reposição de aminoácidos, não no alisamento químico permanente. O resultado deve ser um cabelo com movimento natural, não estático."
             </p>
           </div>
         </>
@@ -9637,25 +9651,49 @@ const ArticleDetailPage: React.FC = () => {
       subtitle: "Um guia médico e prático para controlar a descamação, coceira e oleosidade excessiva no couro cabeludo.",
       author: "Dr. Estilo (Ph.D)",
       date: "13 de Maio de 2026",
-      readTime: "15 min",
+      readTime: "16 min",
       category: "Saúde",
-      image: "/assets/dermatite-seborreica-guia.png",
-      howToSteps: [
-        { name: "Diagnóstico", text: "Identificar se a descamação é seca (caspa) ou oleosa (dermatite)." },
-        { name: "Lavagem Terapêutica", text: "Usar shampoo com cetoconazol, zinco ou alcatrão 2 a 3 vezes por semana." },
-        { name: "Tempo de Ação", text: "Deixar o shampoo agir no couro cabeludo por 5 minutos antes de enxaguar." },
-        { name: "Prevenção", text: "Evitar banhos muito quentes e dormir com o cabelo úmido." }
-      ],
+      image: "/assets/dermatite-seborreica-v2.png",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
             A <strong>Dermatite Seborreica</strong> é uma condição inflamatória crônica que afeta milhões de homens. Ela não tem cura definitiva, mas tem controle total. O excesso de oleosidade alimenta fungos naturais da pele, gerando inflamação e as incômodas 'plaquinhas' brancas ou amareladas. Entender o gatilho da sua dermatite é o primeiro passo para um couro cabeludo saudável e livre de coceira.
           </p>
-          <div className="bg-red-50 border border-red-100 p-6 rounded-2xl my-10 flex items-start gap-4">
-            <AlertTriangle className="text-red-500 shrink-0" size={24} />
-            <p className="text-red-800 text-sm italic">
-              "Atenção: Se a sua dermatite apresentar feridas abertas, sangramento ou perda de cabelo localizada, procure um dermatologista imediatamente. Este guia tem caráter informativo para controle de casos leves e moderados."
-            </p>
+          <ToolBox 
+            tools={[
+              { name: "Shampoo com Cetoconazol", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Loção Calmante Capilar", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Escova de Massagem de Silicone", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Guia de Tratamento: Como Controlar a Dermatite</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Escolha do Ativo Correto",
+                description: "Não use qualquer shampoo anticaspa. Para dermatite real, procure produtos com Cetoconazol, Ácido Salicílico ou Piritionato de Zinco. Eles combatem o fungo Malassezia, responsável pela inflamação.",
+                tip: "Alterne entre dois tipos de shampoo com ativos diferentes a cada 15 dias para evitar que o couro cabeludo 'se acostume'."
+              },
+              {
+                title: "2. A Técnica dos 5 Minutos",
+                description: "O erro mais comum é enxaguar o shampoo terapêutico imediatamente. Massageie suavemente com as pontas dos dedos e deixe a espuma agir por 5 minutos inteiros para que o ativo penetre nos poros.",
+                tip: "Nunca use as unhas para coçar; isso cria microferidas que aumentam a inflamação."
+              },
+              {
+                title: "3. Hábitos de Higiene e Sono",
+                description: "Nunca durma com o cabelo úmido. A umidade e o calor do travesseiro criam o ambiente perfeito para a proliferação da dermatite. Use secador no modo morno ou frio após a lavagem.",
+                tip: "Lave suas fronhas e bonés semanalmente. Eles acumulam fungos e resíduos de pele morta."
+              }
+            ]}
+          />
+          <div className="bg-red-50 border border-red-100 p-6 rounded-2xl my-10 flex items-start gap-4 shadow-sm">
+            <AlertTriangle className="text-red-500 shrink-0 mt-1" size={24} />
+            <div>
+               <h4 className="font-bold text-red-900 mb-2">Aviso Médico Importante</h4>
+               <p className="text-red-800 text-sm italic leading-relaxed">
+                "Se a sua dermatite apresentar feridas abertas, sangramento ou perda de cabelo localizada, procure um dermatologista. O estresse e a má alimentação são gatilhos biológicos que podem anular o efeito dos shampoos."
+               </p>
+            </div>
           </div>
         </>
       ),
@@ -9749,7 +9787,7 @@ const ArticleDetailPage: React.FC = () => {
       subtitle: "Tudo o que você precisa saber sobre o universo dos loiros para homens. Do cuidado básico à escolha da tonalidade ideal.",
       author: "Carlos Barbudo",
       date: "14 de Maio de 2026",
-      readTime: "12 min",
+      readTime: "15 min",
       category: "Cabelo",
       image: "/assets/cabelos-loiros-guia.png",
       content: (
@@ -9757,6 +9795,42 @@ const ArticleDetailPage: React.FC = () => {
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
             O <strong>cabelo loiro masculino</strong> é uma afirmação de estilo. Seja natural ou tingido, o loiro traz luminosidade ao rosto e uma vibração de modernidade. Neste guia, exploramos as bases para quem quer entrar no mundo dos loiros, desde a preparação do fio até os cuidados diários para evitar o ressecamento.
           </p>
+          <ToolBox 
+            tools={[
+              { name: "Shampoo Matizador Violeta", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Máscara de Reconstrução", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Argan Finalizador", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Guia Passo a Passo: Como Cuidar do Loiro</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. A Lavagem Inteligente (Matização)",
+                description: "O maior inimigo do loiro é o tom amarelado 'ovo'. Use um shampoo matizador (roxo/violeta) uma vez por semana para neutralizar os reflexos quentes e manter a cor fria e moderna.",
+                tip: "Não deixe o shampoo matizador por mais de 5 minutos, ou o cabelo pode ficar com reflexos azulados."
+              },
+              {
+                title: "2. Cronograma de Hidratação",
+                description: "A descoloração remove massa do fio. Você precisa repor água e queratina. Alterne entre máscaras de hidratação e nutrição a cada duas lavagens.",
+                tip: "Use água morna ou fria. A água quente abre as cutículas e faz a cor desbotar muito mais rápido."
+              },
+              {
+                title: "3. Proteção e Finalização",
+                description: "O cabelo loiro é mais sensível ao sol e ao calor do secador. Sempre use um leave-in com proteção térmica e filtro UV antes de sair de casa ou usar ferramentas de calor.",
+                tip: "Aplique duas gotas de óleo finalizador nas pontas diariamente para evitar o aspecto 'espigado'."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Se você vai entrar na piscina, molhe o cabelo com água doce antes. O cabelo loiro é como uma esponja; se já estiver saturado de água limpa, ele absorverá menos cloro, evitando que o seu loiro fique esverdeado."
+            </p>
+          </div>
         </>
       ),
       recommendedProducts: [
@@ -9863,14 +9937,50 @@ const ArticleDetailPage: React.FC = () => {
       subtitle: "Um mergulho no mundo dos ruivos. Conheça as variações de tons e como cuidar da pigmentação.",
       author: "Dr. Estilo (Ph.D)",
       date: "14 de Maio de 2026",
-      readTime: "12 min",
+      readTime: "14 min",
       category: "Cabelo",
       image: "/assets/cabelos-ruivos-guia.png",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            Ser ruivo é carregar uma cor rara e cheia de personalidade. Seja você um ruivo natural ou por escolha, a manutenção do pigmento vermelho é o maior desafio para manter o visual impecável.
+            Ser ruivo é carregar uma cor rara e cheia de personalidade. Seja você um ruivo natural ou por escolha, a manutenção do pigmento vermelho é o maior desafio para manter o visual impecável. O ruivo desbota com mais facilidade que outras cores, exigindo uma rotina de cuidados específica para selar a cor dentro do fio.
           </p>
+          <ToolBox 
+            tools={[
+              { name: "Shampoo Sem Sulfato (Color Protect)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Máscara Acidificante", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Óleo de Brilho de Cranberry", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Passo a Passo: Como Manter o Ruivo Vibrante</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Lavagem com Água Fria",
+                description: "O pigmento ruivo é uma molécula grande que sai fácil com água quente. Lave o cabelo sempre com água fria para manter as cutículas seladas e a cor vibrante por mais tempo.",
+                tip: "Tente espaçar as lavagens. O uso diário de shampoo é o maior culpado pelo desbotamento do ruivo."
+              },
+              {
+                title: "2. Acidificação e Selagem",
+                description: "O cabelo colorido precisa estar com o PH equilibrado. Use um acidificante capilar uma vez por semana após o shampoo para garantir que o fio fique selado e brilhante.",
+                tip: "Produtos com extrato de frutas vermelhas ajudam a manter a oxidação longe dos seus fios."
+              },
+              {
+                title: "3. Proteção Solar Obrigatória",
+                description: "O sol 'queima' o pigmento ruivo, deixando-o alaranjado sem brilho. Use finalizadores com filtro solar específico para cabelos sempre que for se expor ao ar livre.",
+                tip: "Se você for à praia, reaplique o protetor capilar a cada mergulho."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Para ruivos naturais: o seu cabelo costuma ser mais grosso e seco. Foque em óleos naturais como o de jojoba ou macadâmia. Para ruivos tingidos: o segredo é a reposição de massa proteica."
+            </p>
+          </div>
         </>
       ),
       recommendedProducts: [
