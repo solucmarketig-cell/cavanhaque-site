@@ -9972,7 +9972,7 @@ const ArticleDetailPage: React.FC = () => {
           <OptimizedImage
             src={article.image}
             alt={`Capa: ${article.title}`}
-            className={`w-full h-[600px] object-cover ${article.imagePosition || 'object-[center_15%]'}`}
+            className={`w-full aspect-video max-h-[70vh] object-cover ${article.imagePosition || 'object-center'}`}
             priority={true}
             sizes="(max-width: 768px) 100vw, 1200px"
           />
