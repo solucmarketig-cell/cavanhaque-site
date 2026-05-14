@@ -157,7 +157,7 @@ const BlogPage: React.FC = () => {
                     <OptimizedImage
                       src={article.imageUrl}
                       alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div className="absolute top-4 left-4 bg-brand-gold text-brand-dark text-xs font-bold px-2 py-1 uppercase">

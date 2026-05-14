@@ -415,7 +415,7 @@ const HairStylesPage: React.FC = () => {
                 <OptimizedImage
                   src={style.img}
                   alt={style.alt}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]"
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-[1.5s]"
                   width={600}
                   height={600}
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
