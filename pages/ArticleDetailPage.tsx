@@ -9946,29 +9946,8 @@ const ArticleDetailPage: React.FC = () => {
         </div>
       </header>
 
-      {/* TOP DISCLOSURES (GOOGLE POLICY COMPLIANCE) */}
-      <div className="max-w-4xl mx-auto px-4 mt-8 space-y-4">
-        {/* Affiliate Disclosure */}
-        <div className="bg-brand-light/50 border border-brand-gold/10 p-4 rounded-xl flex items-center gap-3 text-[10px] md:text-xs text-gray-500 font-medium">
-          <Info size={16} className="text-brand-gold shrink-0" />
-          <p>
-            <strong>Transparência de Afiliado:</strong> Este guia contém recomendações de produtos selecionados por nossa curadoria. Ao comprar através de nossos links, podemos ganhar uma pequena comissão do marketplace (como Mercado Livre), sem nenhum custo adicional para você. Isso nos ajuda a manter o projeto independente.
-          </p>
-        </div>
-
-        {/* Medical/YMYL Disclaimer (Only for Science/Health) */}
-        {(article.category === 'Ciência' || article.category === 'Saúde') && (
-          <div className="bg-red-50 border border-red-100 p-4 rounded-xl flex items-start gap-3 text-[10px] md:text-xs text-red-800 font-medium">
-            <AlertTriangle size={16} className="text-red-500 shrink-0 mt-0.5" />
-            <p>
-              <strong>Aviso de Isenção de Responsabilidade (YMYL):</strong> O conteúdo deste site, incluindo guias sobre Minoxidil e tratamentos capilares, tem caráter estritamente informativo e educacional. Não substituímos o diagnóstico ou aconselhamento de um médico ou dermatologista certificado. Sempre consulte um profissional antes de iniciar tratamentos farmacológicos.
-            </p>
-          </div>
-        )}
-      </div>
-
       <section className="max-w-7xl mx-auto px-4 -mt-16 relative z-20 pb-32">
-        <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_30px_60px_-12px_rgba(0,0,0,0.5)] mb-16 border-8 border-white bg-brand-light/30">
+        <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[0_30px_60px_-12px_rgba(0,0,0,0.5)] mb-8 border-8 border-white bg-brand-light/30">
           <OptimizedImage
             src={article.image}
             alt={`Capa: ${article.title}`}
@@ -9977,6 +9956,28 @@ const ArticleDetailPage: React.FC = () => {
             sizes="(max-width: 768px) 100vw, 1200px"
           />
         </div>
+
+        {/* TOP DISCLOSURES (GOOGLE POLICY COMPLIANCE) */}
+        <div className="max-w-4xl mx-auto px-4 mb-12 space-y-4">
+          {/* Affiliate Disclosure */}
+          <div className="bg-brand-light/50 border border-brand-gold/10 p-4 rounded-xl flex items-center gap-3 text-[10px] md:text-xs text-gray-500 font-medium">
+            <Info size={16} className="text-brand-gold shrink-0" />
+            <p>
+              <strong>Transparência de Afiliado:</strong> Este guia contém recomendações de produtos selecionados por nossa curadoria. Ao comprar através de nossos links, podemos ganhar uma pequena comissão do marketplace (como Mercado Livre), sem nenhum custo adicional para você. Isso nos ajuda a manter o projeto independente.
+            </p>
+          </div>
+
+          {/* Medical/YMYL Disclaimer (Only for Science/Health) */}
+          {(article.category === 'Ciência' || article.category === 'Saúde') && (
+            <div className="bg-red-50 border border-red-100 p-4 rounded-xl flex items-start gap-3 text-[10px] md:text-xs text-red-800 font-medium">
+              <AlertTriangle size={16} className="text-red-500 shrink-0 mt-0.5" />
+              <p>
+                <strong>Aviso de Isenção de Responsabilidade (YMYL):</strong> O conteúdo deste site, incluindo guias sobre Minoxidil e tratamentos capilares, tem caráter estritamente informativo e educacional. Não substituímos o diagnóstico ou aconselhamento de um médico ou dermatologista certificado. Sempre consulte um profissional antes de iniciar tratamentos farmacológicos.
+              </p>
+            </div>
+          )}
+        </div>
+
         <div className="flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto">
           <div className="lg:w-2/3">
             <AdUnit type="display" className="mb-8" />
