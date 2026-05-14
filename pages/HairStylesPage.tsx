@@ -158,7 +158,7 @@ const hairStyles = [
     faceShape: 'Oval e Quadrado',
     hairType: 'Liso e Ondulado',
     maintenance: 'Média',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2025/02/Corte-Moicano-Disfarcado-18.jpg',
+    img: '/assets/moicano-disfarcado.png',
     alt: 'Moicano disfarçado degradê masculino'
   },
   {
@@ -170,7 +170,7 @@ const hairStyles = [
     faceShape: 'Angular',
     hairType: 'Ondulado',
     maintenance: 'Baixa',
-    img: 'https://www.thefashionisto.com/wp-content/uploads/2024/01/Surfer-Curly-Hair.jpg',
+    img: '/assets/surfer-shag.png',
     alt: 'Cabelo longo masculino estilo surfista'
   },
   {
@@ -182,7 +182,7 @@ const hairStyles = [
     faceShape: 'Oval e Quadrado',
     hairType: 'Liso e Ondulado',
     maintenance: 'Média',
-    img: 'https://images.unsplash.com/photo-1512663150964-d8f43c899f76?q=80&w=800&auto=format&fit=crop',
+    img: '/assets/top-knot.png',
     alt: 'Coque samurai masculino top knot'
   },
   {
@@ -194,7 +194,7 @@ const hairStyles = [
     faceShape: 'Comprido e Testa Larga',
     hairType: 'Liso e Médio',
     maintenance: 'Média',
-    img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEictWOogUAxYlSTvlQZOaUBUbbqQGAoYfX9hvd3xsjPY1wie8wfmJPOCCVvawN5QFNoSoe-3CcvMaEUBLuvpYtVRzd6m1zSkWgS9t-I8ULZhv1CSesMU8w6PJEmA0CsDoYuaVoUr18QptDN/s1600/corte-masculino-sidepart-com-franja+%25281%2529.jpg',
+    img: '/assets/fringe-fade.png',
     alt: 'Cabelo masculino com franja e degradê'
   },
   {
@@ -206,7 +206,7 @@ const hairStyles = [
     faceShape: 'Oval',
     hairType: 'Crespo (4C)',
     maintenance: 'Diária (Finalização)',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2019/04/afro-nudred.jpg',
+    img: '/assets/nudred-afro.png',
     alt: 'Cabelo afro masculino finalizado com nudred'
   },
   {
@@ -218,7 +218,7 @@ const hairStyles = [
     faceShape: 'Diamante',
     hairType: 'Liso e Fino',
     maintenance: 'Média',
-    img: 'https://www.gatsbyglobal.com/en/technique/undercut-hairstyles-men-classics-hottest-trends/images/img16.jpg',
+    img: '/assets/side-swept.webp',
     alt: 'Undercut masculino jogado para o lado'
   },
   {
@@ -230,7 +230,7 @@ const hairStyles = [
     faceShape: 'Oval',
     hairType: 'Grosso e Crespo',
     maintenance: 'Muito Alta',
-    img: 'https://www.menshairstylestoday.com/wp-content/uploads/2016/09/Flat-Top-Haircut.jpg',
+    img: '/assets/flat-top-afro.png',
     alt: 'Flat top masculino corte quadrado vintage'
   },
   {
@@ -242,7 +242,7 @@ const hairStyles = [
     faceShape: 'Todos',
     hairType: 'Todos',
     maintenance: 'Alta',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2025/02/Corte-Burst-Fade-21.jpg',
+    img: '/assets/burst-fade.png',
     alt: 'Degradê navalhado masculino disfarçado'
   },
   {
@@ -254,7 +254,7 @@ const hairStyles = [
     faceShape: 'Oval e Comprido',
     hairType: 'Liso e Grosso',
     maintenance: 'Alta',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2025/02/Corte-de-Cabelo-Masculino-Pompadour-19.jpg',
+    img: '/assets/pompadour-fade.png',
     alt: 'Pompadour moderno masculino com volume'
   },
   {
@@ -266,7 +266,7 @@ const hairStyles = [
     faceShape: 'Todos',
     hairType: 'Liso',
     maintenance: 'Média',
-    img: 'https://www.gatsbyglobal.com/en/hairstyles/slicked-back-undercut/images/main.jpg',
+    img: '/assets/slicked-back.png',
     alt: 'Slicked back undercut masculino'
   },
   {
@@ -278,7 +278,7 @@ const hairStyles = [
     faceShape: 'Oval',
     hairType: 'Todos',
     maintenance: 'Baixa',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2025/02/Corte-de-Cabelo-Masculino-Cesar-17.jpg',
+    img: '/assets/cesar-moderno.png',
     alt: 'Corte César moderno'
   },
   {
@@ -290,7 +290,7 @@ const hairStyles = [
     faceShape: 'Quadrado',
     hairType: 'Todos',
     maintenance: 'Baixa',
-    img: 'https://www.thetrendspotter.net/wp-content/uploads/2018/02/Ivy-League-Haircut-Men.jpg',
+    img: '/assets/ivy-league.png',
     alt: 'Ivy league haircut executivo'
   },
   {
@@ -302,7 +302,7 @@ const hairStyles = [
     faceShape: 'Oval',
     hairType: 'Liso e Ondulado',
     maintenance: 'Média',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2025/02/Corte-de-Cabelo-Masculino-Coque-Samurai-ou-Man-Bun-16.jpg',
+    img: '/assets/man-bun.png',
     alt: 'Man bun undercut samurai'
   },
   {
@@ -314,7 +314,7 @@ const hairStyles = [
     faceShape: 'Todos',
     hairType: 'Ondulado',
     maintenance: 'Baixa',
-    img: 'https://www.menshairstyletrends.com/wp-content/uploads/2021/05/Wavy-hair-taper-fade-low-man_puebla.jpg',
+    img: '/assets/taper-ondulado.webp',
     alt: 'Taper ondulado masculino textura natural'
   },
   {
@@ -326,7 +326,7 @@ const hairStyles = [
     faceShape: 'Finos',
     hairType: 'Liso',
     maintenance: 'Alta',
-    img: 'https://www.menshairstyletrends.com/wp-content/uploads/2021/01/Bowl-cut-fade-edwardklipperhands.jpg',
+    img: '/assets/bowl-cut-moderno.png',
     alt: 'Bowl cut moderno masculino tigela'
   }
 ];
