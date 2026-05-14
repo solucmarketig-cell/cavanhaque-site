@@ -9762,20 +9762,50 @@ const ArticleDetailPage: React.FC = () => {
       subtitle: "Dicas práticas e divertidas para manter os cachos das crianças definidos, saudáveis e cheios de estilo.",
       author: "Carlos Barbudo",
       date: "13 de Maio de 2026",
-      readTime: "8 min",
+      readTime: "12 min",
       category: "Cabelo",
       image: "/assets/penteado-infantil-cacheado.png",
-      howToSteps: [
-        { name: "Desembaraço Suave", text: "Usar creme de pentear infantil e desembaraçar sempre de baixo para cima." },
-        { name: "Definição Brincando", text: "Enrolar as mechas nos dedos (dedoliss) para criar cachos perfeitos." },
-        { name: "Penteados", text: "Explorar o coque abacaxi ou o visual natural volumoso para o dia a dia." },
-        { name: "Manutenção", text: "Usar borrifador com água e leave-in para revitalizar os cachos pela manhã." }
-      ],
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
             Cuidar do <strong>cabelo cacheado infantil</strong> deve ser um momento de diversão e reforço da autoestima. Evite prender o cabelo muito apertado ou tentar 'alisar' com escovas. O segredo é usar produtos hipoalergênicos e ensinar o pequeno a amar a textura natural dos fios desde cedo. Um cacho bem cuidado na infância é a base para um estilo forte no futuro.
           </p>
+          <ToolBox 
+            tools={[
+              { name: "Creme de Pentear Infantil Soft", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Dentes Largos (Silicone)", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Borrifador de Água Contínua", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Passo a Passo: Rotina de Cachos para Crianças</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Desembaraço Sem Dor",
+                description: "Nunca penteie o cabelo cacheado seco. Use um spray desembaraçante ou o próprio condicionador durante o banho. Use um pente de dentes largos e comece sempre pelas pontas, subindo gradualmente até a raiz.",
+                tip: "Divida o cabelo em 4 partes para facilitar o processo e evitar que a criança fique impaciente."
+              },
+              {
+                title: "2. Definição 'Dedoliss'",
+                description: "Após a lavagem, aplique o creme de pentear e enrole pequenas mechas nos dedos (técnica dedoliss). Isso ajuda a memorizar o formato do cacho e garante uma definição que dura vários dias.",
+                tip: "Ensine a criança a fazer o movimento de 'amassar' os cachos de baixo para cima; isso estimula a curvatura natural."
+              },
+              {
+                title: "3. O Segredo do Day After",
+                description: "Para não precisar lavar todo dia, use um borrifador com água e um pouco de leave-in. Umedeça levemente os fios pela manhã e amasse novamente para reativar o produto e a definição.",
+                tip: "Use uma fronha de cetim no travesseiro da criança para reduzir o frizz durante o sono."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica do Mestre
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Transforme o cuidado em brincadeira. Deixe a criança escolher o penteado ou ajudar a passar o creme. Isso cria uma relação positiva com o próprio cabelo e evita o trauma de 'puxões' que muitas crianças cacheadas sofrem."
+            </p>
+          </div>
         </>
       ),
       recommendedProducts: [
@@ -9998,8 +10028,35 @@ const ArticleDetailPage: React.FC = () => {
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>Ruivo Acobreado Escuro</strong> é a escolha para quem quer sofisticação. É um tom sóbrio, com reflexos metálicos que aparecem sob a luz, ideal para cortes clássicos e barbas bem desenhadas.
+            O <strong>Ruivo Acobreado Escuro</strong> é a escolha para quem quer sofisticação. É um tom sóbrio, com reflexos metálicos que aparecem sob a luz, ideal para cortes clássicos e barbas bem desenhadas. Diferente do ruivo laranjinha, o acobreado escuro traz um ar de mistério e elegância que combina muito com o outono/inverno.
           </p>
+          <ToolBox 
+            tools={[
+              { name: "Máscara Tonalizante Cobre", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Shampoo Antioxidante", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Leave-in Hidratante com Filtro UV", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Passo a Passo: Como Manter o Tom Acobreado</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Higienização de Baixo Impacto",
+                description: "O cobre escuro desbota para um marrom sem vida se lavado incorretamente. Use shampoos com PH baixo e evite esfregar o comprimento do fio. Foque apenas na raiz.",
+                tip: "Lave o cabelo no máximo 3 vezes por semana para preservar o pigmento profundo."
+              },
+              {
+                title: "2. Banho de Brilho Mensal",
+                description: "A cada 30 dias, use uma máscara tonalizante acobreada. Isso repõe o reflexo metálico que se perde com as lavagens, sem precisar recorrer à tinta com amônia novamente.",
+                tip: "Misture a máscara tonalizante com um pouco de creme branco para um resultado mais natural e sutil."
+              },
+              {
+                title: "3. Selagem de Brilho",
+                description: "O segredo do acobreado é o reflexo da luz. Use óleos leves de finalização que contenham vitamina E para proteger contra a oxidação causada pela poluição e sol.",
+                tip: "Finalize sempre com um jato de ar frio do secador para selar as cutículas e dar o brilho máximo."
+              }
+            ]}
+          />
         </>
       ),
       recommendedProducts: [

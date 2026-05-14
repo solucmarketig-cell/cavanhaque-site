@@ -32,7 +32,7 @@ const AdUnit: React.FC<AdUnitProps> = ({ type, className = '', slot = '583256298
   };
 
   return (
-    <div className={`ad-unit-container ${getAdStyles()} ${className}`} id={`ad-slot-${type}`}>
+    <div className={`ad-unit-container relative ${getAdStyles()} ${className}`} id={`ad-slot-${type}`}>
       {/* Placeholder for development/visual check */}
       <div className="text-[10px] uppercase tracking-widest text-gray-400 absolute top-2 right-2 font-bold pointer-events-none">
         Anúncio Google
