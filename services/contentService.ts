@@ -216,6 +216,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Barba'
         },
         {
+          id: 'beard-old-dutch',
+          title: "Old Dutch: O Guia do Estilo 'Holandês' Tradicional",
+          excerpt: 'Descubra como dominar a barba rústica que dispensa o bigode para um visual de autoridade.',
+          imageUrl: '/assets/barba-espartana.webp',
+          author: 'Carlos Barbudo',
+          date: '20 Jun 2026',
+          slug: 'barba-old-dutch-holandes',
+          category: 'Barba'
+        },
+        {
           id: 'beard-5',
           title: 'Cavanhaque Âncora: O Guia do Design de Alta Precisão',
           excerpt: 'Aprenda a traçar as linhas que definem o maxilar e criam um visual imponente. O favorito de quem busca um rosto angular.',
