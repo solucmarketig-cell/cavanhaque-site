@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-ondulado-masculino',
+          title: 'Cabelo Ondulado Masculino: Cortes e Dicas de Textura',
+          excerpt: 'Domine suas ondas. Conheça os cortes que valorizam o cabelo ondulado masculino e como finalizar para um visual moderno.',
+          imageUrl: '/assets/corte-para-cabelo-ondulado-masculino.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-ondulado-masculino-cortes-textura',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-ondulado-definicao',
           title: 'Cabelo Ondulado: Guia de Definição e Controle de Frizz',
           excerpt: 'Aprenda a valorizar suas ondas naturais com as técnicas certas de finalização e os produtos que não pesam nos fios.',

@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-ondulado-masculino-cortes-textura': {
+      title: 'Cabelo Ondulado Masculino: Cortes e Dicas de Textura',
+      subtitle: 'Domine suas ondas. Conheça os cortes que valorizam o cabelo ondulado masculino e como finalizar para um visual moderno.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Cabelo',
+      image: '/assets/corte-para-cabelo-ondulado-masculino.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo ondulado masculino</strong> é a combinação perfeita entre o volume do cacheado e a praticidade do liso. No entanto, sem o corte e a finalização correta, ele pode facilmente parecer desarrumado ou sem forma. Em 2026, a tendência para os ondulados masculinos é focar em cortes que utilizam o movimento natural das ondas para criar texturas dinâmicas e visuais cheios de personalidade.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Cera de Argila (Clay) Matte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Dentes Médios", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Shampoo Hidratante Antifrizz", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Cortes e Estilos para Ondas Masculinas</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Americano (Taper Fade) em Ondulados",
+                description: "O degradê nas costeletas e nuca cria um contraste limpo que faz com que as ondas no topo ganhem todo o destaque. É o corte mais procurado nas barbearias modernas para quem tem fios ondulados.",
+                tip: "Mantenha o topo com comprimento médio para que a curvatura da onda fique bem visível.",
+                image: "/assets/corte-para-cabelo-ondulado-masculino.webp"
+              },
+              {
+                title: "2. Textured Fringe (Franja Texturizada)",
+                description: "Corte focado em camadas na parte frontal. As ondas naturais criam um volume orgânico que cai sobre a testa, transmitindo um ar jovem e despojado.",
+                tip: "Use um pouco de pó texturizador apenas na franja para dar fixação sem pesar as ondas.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "3. Surfistinha Moderno (Shag)",
+                description: "Um corte com camadas desestruturadas por todo o cabelo. Valoriza o balanço natural das ondas e é ideal para quem prefere um visual menos rígido e mais 'saída de praia'.",
+                tip: "Finalize com spray de sal marinho para um efeito mais fosco e desconstruído.",
+                image: "/assets/surfer-shag.webp"
+              },
+              {
+                title: "4. Side Part com Ondas Alinhadas",
+                description: "Para um visual mais formal, divida o cabelo na lateral. O ondulado permite que o topete lateral tenha muito mais volume e fixação do que o liso, sem precisar de muito produto.",
+                tip: "Aplique uma pomada à base de água para um brilho discreto e controle das ondas rebeldes.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "5. Controle de Volume e Frizz",
+                description: "Ondulados masculinos tendem a ressecar nas pontas, o que causa o frizz. Use condicionador em todas as lavagens e evite esfregar a toalha com força no topo da cabeça.",
+                tip: "Pressione a toalha suavemente para remover a água sem agredir a fibra capilar.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Cabelo ondulado não aceita gel barato. Se você quer definição e atitude, invista em uma cera de argila (Clay). Ela segura a onda no lugar o dia todo e mantém aquele aspecto de 'cabelo natural' que é a marca registrada do homem de estilo em 2026."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'clay-matte-pro', name: "Cera de Argila Matte Viking", desc: "Fixação forte e textura natural para ondas masculinas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'sea-salt-men', name: "Spray Salino Urban", desc: "O segredo para ondas com textura de praia instantânea.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-ondulado-guia-definicao-frizz': {
       title: 'Cabelo Ondulado: Guia de Definição e Controle de Frizz',
       subtitle: 'Aprenda a valorizar suas ondas naturais com as técnicas certas de finalização e os produtos que não pesam nos fios.',
