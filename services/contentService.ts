@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cortes-crespo-artisticos',
+          title: 'Cortes de Cabelo Crespo Masculino: Tendências de 2026',
+          excerpt: 'Do Freestyle ao Platinado, veja as tendências urbanas e artísticas que estão redefinindo o visual crespo masculino.',
+          imageUrl: '/assets/pompadour-fade.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'cortes-cabelo-crespo-masculino-tendencias-artisticas',
+          category: 'Cabelo'
+        },
+        {
           id: 'penteado-crespo-elegancia',
           title: 'Penteado em Cabelo Crespo: 5 Estilos de Puro Charme',
           excerpt: 'Do Afro Puff aos Bantu Knots, descubra penteados que valorizam a textura crespa com elegância e criatividade.',

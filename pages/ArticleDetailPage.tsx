@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cortes-cabelo-crespo-masculino-tendencias-artisticas': {
+      title: 'Cortes de Cabelo Crespo Masculino: Tendências Artísticas de 2026',
+      subtitle: 'Do Freestyle ao Platinado, veja as tendências urbanas e artísticas que estão redefinindo o visual crespo masculino.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/pompadour-fade.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>corte de cabelo crespo masculino</strong> tornou-se uma tela para a expressão artística urbana. Em 2026, a barbearia moderna transcende o degradê comum, incorporando elementos de design, cor e geometria que celebram a cultura de rua e a individualidade. Este guia explora as tendências mais ousadas que estão fazendo a cabeça dos homens que buscam protagonismo visual.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pó Descolorante de Alta Performance", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Lâminas de Precisão (Navalhete)", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Spray de Brilho Instantâneo", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Vanguarda Urbana em Fios Crespos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. High Fade com Freestyle (Riscos Artísticos)",
+                description: "O degradê alto serve como base para desenhos geométricos, tribais ou linhas minimalistas feitos na navalha. É a personalização máxima do corte, transformando o cabelo em uma obra de arte única.",
+                tip: "Escolha designs que acompanhem a curvatura natural do seu crânio para um visual mais harmônico.",
+                image: "/assets/pompadour-fade.webp"
+              },
+              {
+                title: "2. Afro Curto Platinado (Nevou)",
+                description: "A tendência do platinado global continua forte. No cabelo crespo, o contraste entre a cor claríssima e a textura densa cria um impacto visual inigualável, destacando o contorno do rosto.",
+                tip: "A descoloração no crespo exige um cronograma capilar rigoroso de reconstrução para não perder a elasticidade.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "3. Burst Fade em Crespos",
+                description: "Um degradê em formato de meia-lua que 'explode' ao redor das orelhas, deixando o volume na nuca e no topo. Cria um visual dinâmico que valoriza o moicano natural dos fios crespos.",
+                tip: "Finalize o volume central com um pouco de pomada para dar sustentação e definição.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "4. Corte 'Box' Retrô com Textura",
+                description: "Inspirado na 'Era de Ouro' do Hip Hop, o corte Box ganha uma releitura moderna com topos menos rígidos e laterais em degradê de pele (Skin Fade). Une a nostalgia com a precisão atual.",
+                tip: "Use o pente garfo para garantir que a geometria do topo esteja perfeitamente alinhada.",
+                image: "/assets/cabelo-crespo.webp"
+              },
+              {
+                title: "5. Manutenção Criativa: Pigmentação",
+                description: "Para quem quer o contorno (line up) e os desenhos sempre nítidos, a pigmentação capilar é a aliada perfeita. Ela preenche falhas e destaca a geometria do corte por mais tempo.",
+                tip: "Procure profissionais que usem pigmentos de qualidade para evitar que a cor desbote para tons avermelhados ou esverdeados.",
+                image: "/assets/fringe-fade.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Estilo urbano não é apenas sobre o corte, é sobre a atitude. Se você optar por um platinado ou um freestyle complexo, esteja ciente de que a sua visita ao barbeiro será semanal. O segredo da estética urbana de alta performance é nunca deixar o desenho 'esfumar' com o crescimento do cabelo."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'platinum-kit-pro', name: "Kit Descoloração Protect", desc: "Clareamento máximo com proteção da fibra capilar.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'detailer-razor-pro', name: "Navalhete de Precisão Pro", desc: "O controle total para criar riscos e desenhos nítidos.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'penteado-em-cabelo-crespo-elegancia-estilo': {
       title: 'Penteado em Cabelo Crespo: 5 Estilos de Puro Charme',
       subtitle: 'Do Afro Puff aos Bantu Knots, descubra penteados que valorizam a textura crespa com elegância e criatividade.',

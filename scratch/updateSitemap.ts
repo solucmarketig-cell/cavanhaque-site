@@ -133,7 +133,8 @@ const articles = [
   'cabelo-crespo-guia-cuidados-volume',
   'corte-cabelo-crespo-masculino-estilos-modernos',
   'cortes-cabelo-crespo-masculino-profissionais-executivos',
-  'penteado-em-cabelo-crespo-elegancia-estilo'
+  'penteado-em-cabelo-crespo-elegancia-estilo',
+  'cortes-cabelo-crespo-masculino-tendencias-artisticas'
 ];
 
 const baseUrl = 'https://cavanhaque.com';
