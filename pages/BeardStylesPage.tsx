@@ -174,7 +174,7 @@ const styles = [
     description: 'Um estilo ousado e vintage onde as costeletas crescem até encontrar o bigode, mas o queixo fica raspado. Estilo Wolverine.',
     faceShape: 'Redondo e Oval',
     maintenance: 'Alta',
-    img: '/assets/barba-grisalha.webp',
+    img: '/assets/barba-mutton-chops.webp',
     slug: 'barba-mutton-chops-wolverine',
     alt: 'Estilo de barba mutton chops com costeletas largas',
     imagePosition: 'object-top',
@@ -186,7 +186,7 @@ const styles = [
     description: 'Uma linha fina e elegante logo acima do lábio superior. Ícone do cinema dos anos 40 e 50. Requer precisão cirúrgica no barbear.',
     faceShape: 'Oval e Coração',
     maintenance: 'Diária',
-    img: '/assets/bigode-chines.webp',
+    img: '/assets/bigode-lapis.webp',
     slug: 'bigode-lapis-vintage',
     alt: 'Bigode fino estilo lápis vintage',
     imagePosition: 'object-top',
@@ -249,7 +249,7 @@ const styles = [
     description: 'Para quem tem paciência. Deixe crescer livremente por meses antes de aparar. Volume máximo e naturalidade. Requer muita limpeza.',
     faceShape: 'Triangular e Diamante',
     maintenance: 'Média (Hidratação)',
-    img: '/assets/barba-lenhador.webp',
+    img: '/assets/barba-bandholz.webp',
     slug: 'barba-bandholz-volume-maximo',
     alt: 'Barba enorme estilo Bandholz hipster',
     imagePosition: 'object-top',
@@ -261,7 +261,7 @@ const styles = [
     description: 'O oposto do cavanhaque: barba cheia e costeletas largas, mas sem pelos no queixo. Um estilo vitoriano clássico e excêntrico.',
     faceShape: 'Oval',
     maintenance: 'Alta',
-    img: '/assets/barba-garibaldi.webp',
+    img: '/assets/barba-hulihee.webp',
     slug: 'barba-hulihee-estilo-vintage',
     alt: 'Estilo de barba Hulihee clássico vitoriano',
     imagePosition: 'object-center',
@@ -273,7 +273,7 @@ const styles = [
     description: 'Estilo rústico e tradicional. Uma barba cheia e quadrada, conectada às costeletas, mas com o lábio superior totalmente raspado (sem bigode).',
     faceShape: 'Oval e Diamante',
     maintenance: 'Alta (Raspar bigode)',
-    img: 'https://blog.newoldman.com.br/wp-content/uploads/2019/10/Barba-Old-Dutch.jpg',
+    img: '/assets/barba-old-dutch.webp',
     slug: 'barba-old-dutch-holandes',
     alt: 'Estilo Old Dutch barba cheia sem bigode',
     imagePosition: 'object-top',
@@ -285,7 +285,7 @@ const styles = [
     description: 'Um bigode grosso com extensões verticais longas que descem pelos cantos da boca até o maxilar. O estilo clássico dos "Biker" e do Hulk Hogan.',
     faceShape: 'Quadrado e Redondo',
     maintenance: 'Média',
-    img: '/assets/bigode-chevron.webp',
+    img: '/assets/bigode-ferradura.webp',
     slug: 'bigode-ferradura-biker',
     alt: 'Homem com bigode estilo ferradura horseshoe',
     imagePosition: 'object-top',
@@ -297,7 +297,7 @@ const styles = [
     description: 'A aristocracia no rosto. Um bigode grande e curvado para cima, muitas vezes acompanhado por um cavanhaque pontudo. Exige cera de alta fixação.',
     faceShape: 'Retangular e Oval',
     maintenance: 'Muito Alta',
-    img: '/assets/barba-van-dyke.webp',
+    img: '/assets/barba-imperial.webp',
     slug: 'barba-imperial-realeza',
     alt: 'Bigode estilo imperial curvado para cima aristocrático',
     imagePosition: 'object-top'
@@ -308,7 +308,7 @@ const styles = [
     description: 'O ícone hipster por excelência. As pontas são longas e enroladas para cima, criando um formato de guidão de bicicleta. Requer muita dedicação e cera.',
     faceShape: 'Oval e Diamante',
     maintenance: 'Diária (Modelagem)',
-    img: '/assets/bigode-chevron.webp',
+    img: '/assets/bigode-handlebar.webp',
     slug: 'bigode-handlebar-guidao',
     alt: 'Bigode estilo guidão handlebar enrolado nas pontas',
     imagePosition: 'object-top'
@@ -334,7 +334,7 @@ const BeardStylesPage: React.FC = () => {
       />
       {/* SEO Optimized Header */}
       <header className="bg-brand-dark py-20 text-center text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.webp')]"></div>
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <span className="text-brand-gold uppercase tracking-[0.2em] text-xs font-bold mb-4 block">
             Guia Visual 2026

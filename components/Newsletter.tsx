@@ -12,7 +12,7 @@ const Newsletter: React.FC = () => {
   return (
     <section className="bg-stone-300 py-20 relative overflow-hidden">
       {/* Texture overlay simulation */}
-      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/cubes.png")' }}></div>
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/cubes.webp")' }}></div>
       
       <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-charcoal mb-4">

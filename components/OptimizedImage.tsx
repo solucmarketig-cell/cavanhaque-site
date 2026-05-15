@@ -38,6 +38,8 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
         return undefined;
     };
 
+    if (!src) return null;
+
     const srcSet = generateSrcSet(src);
 
     return (

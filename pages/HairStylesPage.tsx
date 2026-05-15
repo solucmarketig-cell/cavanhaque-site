@@ -158,7 +158,7 @@ const hairStyles = [
     faceShape: 'Oval e Quadrado',
     hairType: 'Liso e Ondulado',
     maintenance: 'Média',
-    img: '/assets/moicano-disfarcado.png',
+    img: '/assets/moicano-disfarcado.webp',
     alt: 'Moicano disfarçado degradê masculino'
   },
   {
@@ -170,7 +170,7 @@ const hairStyles = [
     faceShape: 'Angular',
     hairType: 'Ondulado',
     maintenance: 'Baixa',
-    img: '/assets/surfer-shag.png',
+    img: '/assets/surfer-shag.webp',
     alt: 'Cabelo longo masculino estilo surfista'
   },
   {
@@ -182,7 +182,7 @@ const hairStyles = [
     faceShape: 'Oval e Quadrado',
     hairType: 'Liso e Ondulado',
     maintenance: 'Média',
-    img: '/assets/top-knot.png',
+    img: '/assets/top-knot.webp',
     alt: 'Coque samurai masculino top knot'
   },
   {
@@ -194,7 +194,7 @@ const hairStyles = [
     faceShape: 'Comprido e Testa Larga',
     hairType: 'Liso e Médio',
     maintenance: 'Média',
-    img: '/assets/fringe-fade.png',
+    img: '/assets/fringe-fade.webp',
     alt: 'Cabelo masculino com franja e degradê'
   },
   {
@@ -206,7 +206,7 @@ const hairStyles = [
     faceShape: 'Oval',
     hairType: 'Crespo (4C)',
     maintenance: 'Diária (Finalização)',
-    img: '/assets/nudred-afro.png',
+    img: '/assets/nudred-afro.webp',
     alt: 'Cabelo afro masculino finalizado com nudred'
   },
   {
@@ -230,7 +230,7 @@ const hairStyles = [
     faceShape: 'Oval',
     hairType: 'Grosso e Crespo',
     maintenance: 'Muito Alta',
-    img: '/assets/flat-top-afro.png',
+    img: '/assets/flat-top-afro.webp',
     alt: 'Flat top masculino corte quadrado vintage'
   },
   {
@@ -242,7 +242,7 @@ const hairStyles = [
     faceShape: 'Todos',
     hairType: 'Todos',
     maintenance: 'Alta',
-    img: '/assets/burst-fade.png',
+    img: '/assets/burst-fade.webp',
     alt: 'Degradê navalhado masculino disfarçado'
   },
   {
@@ -254,7 +254,7 @@ const hairStyles = [
     faceShape: 'Oval e Comprido',
     hairType: 'Liso e Grosso',
     maintenance: 'Alta',
-    img: '/assets/pompadour-fade.png',
+    img: '/assets/pompadour-fade.webp',
     alt: 'Pompadour moderno masculino com volume'
   },
   {
@@ -266,7 +266,7 @@ const hairStyles = [
     faceShape: 'Todos',
     hairType: 'Liso',
     maintenance: 'Média',
-    img: '/assets/slicked-back.png',
+    img: '/assets/slicked-back.webp',
     alt: 'Slicked back undercut masculino'
   },
   {
@@ -278,7 +278,7 @@ const hairStyles = [
     faceShape: 'Oval',
     hairType: 'Todos',
     maintenance: 'Baixa',
-    img: '/assets/cesar-moderno.png',
+    img: '/assets/cesar-moderno.webp',
     alt: 'Corte César moderno'
   },
   {
@@ -290,7 +290,7 @@ const hairStyles = [
     faceShape: 'Quadrado',
     hairType: 'Todos',
     maintenance: 'Baixa',
-    img: '/assets/ivy-league.png',
+    img: '/assets/ivy-league.webp',
     alt: 'Ivy league haircut executivo'
   },
   {
@@ -302,7 +302,7 @@ const hairStyles = [
     faceShape: 'Oval',
     hairType: 'Liso e Ondulado',
     maintenance: 'Média',
-    img: '/assets/man-bun.png',
+    img: '/assets/man-bun.webp',
     alt: 'Man bun undercut samurai'
   },
   {
@@ -326,7 +326,7 @@ const hairStyles = [
     faceShape: 'Finos',
     hairType: 'Liso',
     maintenance: 'Alta',
-    img: '/assets/bowl-cut-moderno.png',
+    img: '/assets/bowl-cut-moderno.webp',
     alt: 'Bowl cut moderno masculino tigela'
   }
 ];
@@ -368,7 +368,7 @@ const HairStylesPage: React.FC = () => {
       />
       {/* MEGA SEO HEADER */}
       <header className="bg-brand-dark py-28 text-center text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.webp')]"></div>
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <span className="text-brand-gold uppercase tracking-[0.3em] text-xs font-black mb-6 block animate-bounce">
             Tudo sobre Cabelo Masculino

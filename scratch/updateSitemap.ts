@@ -7,6 +7,8 @@ const articles = [
   'corte-para-cabelo-cacheado',
   'cabelo-cacheado',
   'penteado-cabelo-cacheado',
+  'corte-americano-cabelo-cacheado-feminino',
+  'corte-para-cabelo-cacheado-tendencias',
   'afro-nudred-textura-definicao',
   'aprenda-fazer-cavanhaque-simples',
   'aprenda-fazer-cavanhaque-simples-eficaz',

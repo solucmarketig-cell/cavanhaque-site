@@ -5,6 +5,7 @@ interface Step {
   title: string;
   description: string;
   tip?: string;
+  image?: string;
 }
 
 interface TutorialStepsProps {
@@ -17,7 +18,7 @@ const TutorialSteps: React.FC<TutorialStepsProps> = ({ steps, category = 'Estilo
     <div className="my-16 space-y-12">
       <h2 className="text-3xl font-serif font-bold text-brand-dark mb-12 flex items-center gap-4">
         <Zap className="text-brand-gold fill-brand-gold shrink-0" size={32} />
-        Guia Passo a Passo
+        Modelos e Estilos
       </h2>
       
       <div className="relative">
@@ -32,17 +33,29 @@ const TutorialSteps: React.FC<TutorialStepsProps> = ({ steps, category = 'Estilo
                 {index + 1}
               </div>
               
-              <div className="md:ml-20 flex-1 bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative">
-                <div className="md:hidden mb-4 flex items-center gap-2 text-brand-gold font-black uppercase text-xs tracking-widest">
-                   Passo {index + 1}
+              <div className="md:ml-20 flex-1 bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col lg:flex-row gap-8">
+                <div className="flex-1">
+                  <div className="md:hidden mb-4 flex items-center gap-2 text-brand-gold font-black uppercase text-xs tracking-widest">
+                    Estilo {index + 1}
+                  </div>
+                  <h3 className="text-2xl font-bold text-brand-dark mb-4 uppercase tracking-tight">{step.title}</h3>
+                  <p className="text-gray-600 leading-relaxed mb-6 text-lg">{step.description}</p>
+                  
+                  {step.tip && (
+                    <div className="bg-brand-light p-4 rounded-xl border-l-4 border-brand-gold flex gap-3 italic text-sm text-brand-charcoal">
+                      <span className="font-bold text-brand-gold">Dica:</span>
+                      {step.tip}
+                    </div>
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-brand-dark mb-4 uppercase tracking-tight">{step.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">{step.description}</p>
-                
-                {step.tip && (
-                  <div className="bg-brand-light p-4 rounded-xl border-l-4 border-brand-gold flex gap-3 italic text-sm text-brand-charcoal">
-                    <span className="font-bold text-brand-gold">Dica:</span>
-                    {step.tip}
+
+                {step.image && (
+                  <div className="lg:w-1/3 h-64 lg:h-auto rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <img 
+                      src={step.image} 
+                      alt={step.title} 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
                   </div>
                 )}
                 

@@ -46,46 +46,110 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "12 min",
       category: "Cabelo",
-      image: "/assets/corte-cabelo-cacheado-feminino.webp",
+      image: "/assets/corte-cacheado-tendencia-v2.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            Escolher o <strong>corte para cabelo cacheado</strong> certo é o que separa um cabelo sem forma de uma moldura perfeita para o rosto. Diferente do cabelo liso, o cacho possui o 'fator encolhimento', o que torna a escolha do estilo e do profissional algo estratégico. Seja você fã de volume máximo ou de um visual mais controlado, existe um corte desenhado exatamente para a sua curvatura.
+            Escolher o <strong>corte para cabelo cacheado</strong> certo é o que separa um cabelo sem forma de uma moldura perfeita para o rosto. Diferente do cabelo liso, o cacho possui o 'fator encolhimento', o que torna a escolha do estilo e do profissional algo estratégico. Seja você fã de volume máximo ou de um visual mais controlado, existe um corte desenhado exatamente para a sua curvatura. 
+            <br /><br />
+            Com a consultoria da nossa especialista <strong>Lara Estilo</strong>, mapeamos as tendências que estão dominando os salões e que prometem ser o auge de 2026.
           </p>
           <ToolBox 
             tools={[
               { name: "Tesoura de Fio Navalha Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
               { name: "Óleo Finalizador Antifrizz", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Pente Garfo para Volume", link: "https://mercadolivre.com/sec/1exasrj" }
+              { name: "Pente Garfo para Volume", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Creme Ativador de Cachos Premium", link: "https://mercadolivre.com/sec/2Wo6ZWc" }
             ]}
           />
-          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Top 3 Cortes para Valorizar seus Cachos</h2>
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Top 5 Cortes para Valorizar seus Cachos em 2026</h2>
           <TutorialSteps 
             steps={[
               {
-                title: "1. Shaggy Hair Cacheado",
-                description: "O Shaggy é o rei da modernidade. Com camadas desconectadas e uma franja cheia de atitude, ele traz movimento e reduz o peso das pontas, evitando o efeito 'pirâmide'. É ideal para quem busca um visual rocker e despojado.",
-                tip: "Use um mousse de fixação leve para manter as camadas destacadas durante o dia."
+                title: "1. Shaggy Hair Cacheado (O Rei da Textura)",
+                description: "O Shaggy é o queridinho das mulheres modernas. Com camadas desconectadas e uma franja cheia de atitude, ele traz movimento e reduz o peso excessivo das pontas, evitando o temido efeito 'pirâmide'. É ideal para quem busca um visual rocker e despojado que funciona tanto no 2C quanto no 3B.",
+                tip: "Finalize amassando os fios de baixo para cima com um pouco de mousse para manter as camadas destacadas.",
+                image: "/assets/corte-shaggy-cacheado.webp"
               },
               {
-                title: "2. Corte em Camadas (U ou V)",
-                description: "O clássico que nunca falha. As camadas ajudam a distribuir o volume por toda a extensão do cabelo, garantindo que o topo não fique murcho e as pontas não fiquem ralas. O segredo é que as camadas comecem na altura da maçã do rosto.",
-                tip: "Peça ao seu cabeleireiro para fazer o corte com o cabelo seco; assim você vê o comprimento real na hora."
+                title: "2. Corte em Camadas Progressivas (U ou V)",
+                description: "Este clássico foi reinventado com camadas que começam na altura da maçã do rosto. Elas ajudam a distribuir o volume por toda a extensão, garantindo que o topo tenha vida e as pontas não fiquem ralas. O corte em V é excelente para alongar a silhueta em cabelos longos.",
+                tip: "Sempre peça o corte a seco; assim você e o profissional têm controle total sobre o fator encolhimento dos seus cachos.",
+                image: "/assets/corte-camadas-curly.webp"
               },
               {
-                title: "3. Heart Shape (Corte Coração)",
-                description: "Específico para quem ama volume no topo e laterais mais arredondadas. Como o nome sugere, o formato final lembra um coração, valorizando muito o queixo e os olhos. É perfeito para curvaturas 3B e 3C.",
-                tip: "Use um pente garfo na raiz após o cabelo secar para 'abrir' o corte e revelar o formato coração."
+                title: "3. Heart Shape (O Formato Coração)",
+                description: "Específico para quem ama volume no topo e laterais arredondadas. Como o nome sugere, o formato final lembra um coração, valorizando muito o queixo e abrindo o olhar. É a escolha definitiva para as curvaturas 3B, 3C e 4A que desejam um visual romântico e poderoso.",
+                tip: "O segredo aqui é o pente garfo na raiz logo após a secagem para 'abrir' o corte e revelar o design.",
+                image: "/assets/corte-coracao-curly.webp"
+              },
+              {
+                title: "4. Short Bob Cacheado (Sofisticação Curta)",
+                description: "Uma versão moderna do bob tradicional. O comprimento na altura do queixo com camadas internas invisíveis cria um visual sofisticado que destaca a linha do pescoço e maxilar. É prático para o dia a dia e extremamente elegante para eventos formais.",
+                tip: "Use um sérum de brilho nas pontas para um acabamento de passarela que destaca a curvatura.",
+                image: "/assets/corte-bob-curly.webp"
+              },
+              {
+                title: "5. Wolf Cut Cacheado (Ousadia e Volume)",
+                description: "O encontro explosivo do mullet com o shaggy. Este corte foca em um volume dramático no topo e camadas que afinam drasticamente em direção à nuca. É a escolha de quem não tem medo de ousar e quer um visual de influencer internacional.",
+                tip: "A franja cortininha (curtain bangs) é obrigatória aqui para fechar o visual com perfeição.",
+                image: "/assets/corte-wolf-cut-curly.webp"
               }
             ]}
           />
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-16 mb-8 text-center">Visagismo: Qual o Corte Ideal para Você?</h2>
+          <div className="overflow-x-auto mb-12">
+            <table className="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+              <thead className="bg-brand-charcoal text-white">
+                <tr>
+                  <th className="p-4 text-left font-bold uppercase text-xs">Curvatura</th>
+                  <th className="p-4 text-left font-bold uppercase text-xs">Corte Recomendado</th>
+                  <th className="p-4 text-left font-bold uppercase text-xs">Objetivo Principal</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 text-sm font-bold">2C / 3A</td>
+                  <td className="p-4 text-sm italic">Shaggy ou Wolf Cut</td>
+                  <td className="p-4 text-sm">Criar volume e textura onde o fio é mais pesado.</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 text-sm font-bold">3B / 3C</td>
+                  <td className="p-4 text-sm italic">Heart Shape ou Camadas</td>
+                  <td className="p-4 text-sm">Definição e distribuição equilibrada do volume.</td>
+                </tr>
+                <tr className="hover:bg-brand-light/50 transition-colors">
+                  <td className="p-4 text-sm font-bold">4A / 4B</td>
+                  <td className="p-4 text-sm italic">Corte Coração ou Taper Fade</td>
+                  <td className="p-4 text-sm">Valorizar a estrutura afro e o volume vertical.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-brand-dark text-white p-10 rounded-3xl my-16 shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-4 opacity-10"><Scissors size={120} /></div>
+            <h3 className="text-2xl font-serif font-bold mb-6 text-brand-gold">FAQ: Dúvidas sobre Corte Cacheado</h3>
+            <div className="space-y-6">
+              <div>
+                <h4 className="font-bold text-brand-gold mb-2">Com que frequência devo cortar?</h4>
+                <p className="text-gray-400 text-sm">Para manter o formato e evitar pontas duplas, recomendamos o corte a cada 3 ou 4 meses. Cortes curtos como o Bob podem precisar de retoques a cada 60 dias.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-brand-gold mb-2">O corte a seco é realmente melhor?</h4>
+                <p className="text-sm text-gray-400">Sim! Molhado, o cacho estica. Seco, ele mostra sua forma real. Cortar a seco evita surpresas desagradáveis com o comprimento final.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
             <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
               <Star className="text-brand-gold fill-brand-gold" size={22} />
-              Dica da Especialista
+              Dica da Lara Estilo
             </h4>
             <p className="text-gray-700 leading-relaxed italic">
-              "A regra de ouro do corte para cabelo cacheado: nunca use navalha! A navalha desfia o fio e causa pontas duplas instantâneas em cabelos com curvatura. Exija sempre o uso da tesoura de fio navalha para um corte limpo e saudável."
+              "A regra de ouro: nunca use navalha em cachos! Ela destrói a cutícula do fio e gera frizz impossível de controlar. Exija sempre o uso da tesoura de fio navalha para um corte limpo e saudável que respeite a sua curvatura."
             </p>
           </div>
         </>
@@ -95,6 +159,119 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'corte-americano-cabelo-cacheado-feminino': {
+      title: "Corte Americano Feminino: A Tendência do Fade para Cacheadas",
+      subtitle: "Descubra como o clássico 'Taper Fade' se adaptou ao universo feminino, trazendo modernidade e destaque para os cachos.",
+      author: "Lara Estilo",
+      date: "14 de Maio de 2026",
+      readTime: "11 min",
+      category: "Cabelo",
+      image: "/assets/corte-americano-feminino-cacheado.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>corte americano</strong> (ou Taper Fade) deixou de ser exclusividade das barbearias para dominar o visual das mulheres que buscam atitude e praticidade. Quando aplicado ao <strong>cabelo cacheado</strong>, esse estilo cria um contraste poderoso: as laterais polidas e graduadas dão total protagonismo ao volume e à definição do topo. É o corte perfeito para quem deseja um visual moderno, fresco e carregado de personalidade.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Acabamento Slim", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Pomada Modeladora Efeito Matte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo de Argan para Finalização", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Por que apostar no Corte Americano?</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Valorização da Estrutura Facial",
+                description: "O degradê lateral (fade) 'limpa' o visual ao redor das orelhas e têmporas, o que ajuda a alongar o rosto e destacar as maçãs e o maxilar. Para cacheadas, isso significa que o volume não 'pesa' no rosto, mantendo a leveza.",
+                tip: "Peça ao profissional para ajustar a altura do fade conforme o formato das suas orelhas e rosto.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "2. Versatilidade de Estilização",
+                description: "Com as laterais baixas, você pode focar toda a sua criatividade no topo. Use técnicas de fitagem para cachos super definidos ou use um pente garfo para um visual afro-chic volumoso e impactante.",
+                tip: "Experimente usar acessórios como presilhas coloridas na transição do fade para um visual mais delicado."
+              },
+              {
+                title: "3. Praticidade no Day After",
+                description: "Menos cabelo nas laterais significa menos tempo desembaraçando áreas críticas. O corte americano mantém o visual arrumado por mais tempo, exigindo apenas uma revitalização rápida dos cachos do topo pela manhã.",
+                tip: "Use uma fronha de cetim para que o fade não perca a nitidez devido ao atrito com o travesseiro."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica da Lara
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "O segredo do corte americano feminino é a transição. Diferente do corte masculino, que costuma ser mais geométrico, o feminino pode ter linhas mais suaves e orgânicas. Certifique-se de que o profissional entende a curvatura do seu cacho para que o degradê não fique com 'degraus'."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'trimmer-pro', name: "Trimmer Profissional Slim", desc: "Ideal para manter o pezinho e o fade sempre em dia.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Scissors size={32} /> },
+        { id: 'matte-paste', name: "Pomada Matte Control", desc: "Define os fios do topo sem brilho excessivo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Droplets size={32} /> }
+      ]
+    },
+    'corte-para-cabelo-cacheado-tendencias': {
+      title: "Corte para Cabelo Cacheado: Tendências que vão Dominar 2026",
+      subtitle: "Do visual 'Butterfly' ao 'Wolf Cut', veja quais cortes para cabelo cacheado são as apostas das passarelas internacionais.",
+      author: "Lara Estilo",
+      date: "14 de Maio de 2026",
+      readTime: "13 min",
+      category: "Cabelo",
+      image: "/assets/corte-cabelo-cacheado-feminino-tendencia.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Se você busca um novo <strong>corte para cabelo cacheado</strong>, 2026 é o ano da liberdade. As tendências apontam para visuais que abraçam a textura natural e o volume indomado, mas com uma engenharia de camadas que garante movimento e leveza. Esqueça os cortes retos e sem vida; a moda agora é a escultura capilar que valoriza cada curva do seu fio.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Creme de Pentear Reconstrutor", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Difusor de Alta Performance", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Tesoura de Desbaste Especializada", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">As 3 Apostas de 2026 para Cacheadas</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Butterfly Cut Cacheado",
+                description: "O corte 'Borboleta' chegou aos cachos. Com camadas curtas no topo que se misturam a camadas longas na base, ele cria a ilusão de dois comprimentos diferentes, proporcionando um volume luxuoso e um movimento incrível.",
+                tip: "Finalize com um leave-in leve para que as camadas 'voem' naturalmente."
+              },
+              {
+                title: "2. Wolf Cut com Volume Afro",
+                description: "A mistura do mullet com o shaggy continua forte. Para cacheadas, o foco é na franja volumosa e nas laterais mais baixas, criando um visual 'messy' proposital e cheio de estilo urbano.",
+                tip: "Use uma gelatina modeladora para dar peso e definição à franja."
+              },
+              {
+                title: "3. Round Layered (Camadas Arredondadas)",
+                description: "O clássico redondo ganha novas proporções. O objetivo é criar uma moldura circular perfeita ao redor do rosto, distribuindo o volume de forma uniforme. É o corte ideal para quem não tem medo de ser notada.",
+                tip: "Penteie a raiz para cima enquanto seca com o difusor para maximizar o formato redondo."
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
+              <Star className="text-brand-gold fill-brand-gold" size={22} />
+              Dica da Especialista
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              "Independentemente da tendência, o melhor corte para cabelo cacheado é aquele que respeita a sua rotina. Se você não gosta de usar secador, evite cortes que exigem muita finalização. O corte deve trabalhar a seu favor no dia a dia, não contra."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'curly-cream', name: "Creme Ativador de Cachos Gold", desc: "Definição prolongada e proteção térmica.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Droplets size={32} /> },
+        { id: 'pro-diffuser', name: "Difusor Tornado Power", desc: "Secagem ultra rápida sem desmanchar os cachos.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
+      ]
+    },
     'cabelo-cacheado': {
       title: "Cabelo Cacheado: O Guia Absoluto de Cuidados e Tendências",
       subtitle: "Do 2A ao 4C: Aprenda a identificar, tratar e amar a verdadeira essência do seu cabelo cacheado.",
@@ -102,7 +279,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "16 min",
       category: "Cabelo",
-      image: "/assets/cabelo-cacheado-feminino.webp",
+      image: "/assets/cabelo-cacheado-absoluto-v2.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -121,7 +298,8 @@ const ArticleDetailPage: React.FC = () => {
               {
                 title: "1. Identificação da Curvatura",
                 description: "O cabelo cacheado se divide em categorias: 3A (cachos largos), 3B (cachos mais definidos e médios) e 3C (cachos fechados e volumosos). Identificar o seu tipo ajuda na escolha dos produtos certos, já que cada um exige uma carga diferente de óleos.",
-                tip: "É comum ter mais de uma curvatura na mesma cabeça. Adapte a aplicação de produtos conforme a necessidade de cada área."
+                tip: "É comum ter mais de uma curvatura na mesma cabeça. Adapte a aplicação de produtos conforme a necessidade de cada área.",
+                image: "/assets/cabelo-cacheado-feminino.webp"
               },
               {
                 title: "2. Cronograma Capilar de Elite",
@@ -158,7 +336,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "14 min",
       category: "Cabelo",
-      image: "/assets/penteado-feminino-cacheado.webp",
+      image: "/assets/penteado-cacheado-guia-v2.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -177,7 +355,8 @@ const ArticleDetailPage: React.FC = () => {
               {
                 title: "1. A Preparação 'Liquid Gold'",
                 description: "O segredo começa no chuveiro. Use um leave-in de base aquosa logo após o enxágue do condicionador, com o cabelo ainda pingando. Isso 'prende' a umidade dentro do fio, garantindo brilho espelhado.",
-                tip: "Nunca use toalhas de banho comuns; prefira uma camiseta de algodão ou toalha de microfibra para retirar o excesso de água."
+                tip: "Nunca use toalhas de banho comuns; prefira uma camiseta de algodão ou toalha de microfibra para retirar o excesso de água.",
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "2. Técnica de Fitagem Estruturada",
@@ -5641,7 +5820,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "07 de Março de 2026",
       readTime: "16 min",
       category: "Dicas",
-      image: "/assets/crescimento-acelerado.png",
+      image: "/assets/crescimento-acelerado.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -5954,7 +6133,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Março de 2026",
       readTime: "11 min",
       category: "Estilo",
-      image: "/assets/historia-barba.png",
+      image: "/assets/historia-barba.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -6115,7 +6294,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Março de 2026",
       readTime: "12 min",
       category: "Cultura",
-      image: "/assets/barbas-famosas.png",
+      image: "/assets/barbas-famosas.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -6196,7 +6375,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Março de 2026",
       readTime: "10 min",
       category: "Saúde",
-      image: "/assets/aparar-barba-casa.png",
+      image: "/assets/aparar-barba-casa.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -7036,7 +7215,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "15 de Março de 2026",
       readTime: "11 min",
       category: "Cabelo",
-      image: "/assets/moicano-disfarcado.png",
+      image: "/assets/moicano-disfarcado.webp",
       howToSteps: [
         { name: "Marcação da Crista", text: "Isolar a faixa central do topo, da testa até a nuca." },
         { name: "Fade Lateral", text: "Executar um degradê (fade) nas laterais, conectando com a barba se houver." },
@@ -7099,7 +7278,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "15 de Março de 2026",
       readTime: "13 min",
       category: "Cabelo",
-      image: "/assets/surfer-shag.png",
+      image: "/assets/surfer-shag.webp",
       howToSteps: [
         { name: "Corte em Camadas", text: "Retirar o peso excessivo das pontas com camadas longas e fluidas." },
         { name: "Luzes Naturais", text: "Opcional: fazer mechas finíssimas em tons de mel ou dourado para simular o efeito do sol." },
@@ -7162,7 +7341,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "15 de Março de 2026",
       readTime: "12 min",
       category: "Cabelo",
-      image: "/assets/top-knot.png",
+      image: "/assets/top-knot.webp",
       howToSteps: [
         { name: "Undercut Lateral", text: "Raspar as laterais e nuca na máquina 0 ou 1, criando uma linha de desconexão clara." },
         { name: "Crescimento do Topo", text: "Manter o topo crescendo até atingir no mínimo 15cm de comprimento." },
@@ -7225,7 +7404,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "15 de Março de 2026",
       readTime: "10 min",
       category: "Cabelo",
-      image: "/assets/fringe-fade.png",
+      image: "/assets/fringe-fade.webp",
       howToSteps: [
         { name: "Degradê Navalhado", text: "Executar um High Fade ou Skin Fade nas laterais para máximo contraste." },
         { name: "Corte da Franja", text: "Projetar o topo para frente, cortando a franja na altura das sobrancelhas." },
@@ -7288,7 +7467,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "15 de Março de 2026",
       readTime: "9 min",
       category: "Cabelo",
-      image: "/assets/nudred-afro.png",
+      image: "/assets/nudred-afro.webp",
       howToSteps: [
         { name: "Lavagem e Umidade", text: "Lavar o cabelo e manter levemente úmido (não encharcado)." },
         { name: "Aplicação de Ativador", text: "Espalhar ativador de cachos ou leave-in nutritivo por todo o topo." },
@@ -7404,7 +7583,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "14 min",
       category: "Cabelo",
-      image: "/assets/pompadour-fade.png",
+      image: "/assets/pompadour-fade.webp",
       howToSteps: [
         { name: "Crescimento do Topo", text: "Manter o topo com no mínimo 10cm para conseguir a curvatura do pompadour." },
         { name: "High Fade", text: "Executar um degradê alto para destacar o volume do topete." },
@@ -7467,7 +7646,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "12 min",
       category: "Cabelo",
-      image: "/assets/slicked-back.png",
+      image: "/assets/slicked-back.webp",
       howToSteps: [
         { name: "Raspagem Undercut", text: "Raspar as laterais uniformemente (máquina 1 ou 2) até a altura da têmpora." },
         { name: "Corte do Topo", text: "Manter o topo longo e nivelado, sem camadas curtas no meio." },
@@ -7530,7 +7709,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "10 min",
       category: "Cabelo",
-      image: "/assets/cesar-moderno.png",
+      image: "/assets/cesar-moderno.webp",
       howToSteps: [
         { name: "Fade Médio", text: "Executar um degradê médio nas laterais." },
         { name: "Topo Curto", text: "Cortar o topo uniformemente, geralmente na máquina 3 ou 4." },
@@ -7593,7 +7772,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "11 min",
       category: "Cabelo",
-      image: "/assets/ivy-league.png",
+      image: "/assets/ivy-league.webp",
       howToSteps: [
         { name: "Taper Fade Baixo", text: "Executar um degradê bem baixo nas costeletas e nuca." },
         { name: "Topo Curto", text: "Manter o topo curto (3-4cm), mas longo o suficiente para ser penteado." },
@@ -7656,7 +7835,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "12 min",
       category: "Cabelo",
-      image: "/assets/burst-fade.png",
+      image: "/assets/burst-fade.webp",
       howToSteps: [
         { name: "Marcação em Arco", text: "Criar a linha do degradê em formato de semicírculo ao redor da orelha." },
         { name: "Skin Fade Localizado", text: "Raspar até a pele na base do arco e subir suavizando." },
@@ -7719,7 +7898,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "15 min",
       category: "Cabelo",
-      image: "/assets/flat-top-afro.png",
+      image: "/assets/flat-top-afro.webp",
       howToSteps: [
         { name: "Corte Geométrico", text: "Usar máquina com pente de topo plano (flattop comb) para nivelar o topo horizontalmente." },
         { name: "High Fade Lateral", text: "Executar um degradê alto para sustentar visualmente a 'caixa' do topo." },
@@ -7782,7 +7961,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "11 min",
       category: "Cabelo",
-      image: "/assets/man-bun.png",
+      image: "/assets/man-bun.webp",
       howToSteps: [
         { name: "Raspagem Undercut", text: "Manter as laterais e nuca raspadas uniformemente." },
         { name: "Penteado Traseiro", text: "Puxar todo o volume do topo para o centro da coroa." },
@@ -7908,7 +8087,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "16 de Março de 2026",
       readTime: "13 min",
       category: "Cabelo",
-      image: "/assets/bowl-cut-moderno.png",
+      image: "/assets/bowl-cut-moderno.webp",
       imagePosition: "object-top",
       howToSteps: [
         { name: "Linha Circular", text: "Marcar a linha de base circular ao redor de toda a cabeça." },
@@ -9391,7 +9570,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "20 de Junho de 2026",
       readTime: "11 min",
       category: "Barba",
-      image: "https://blog.newoldman.com.br/wp-content/uploads/2019/10/Barba-Old-Dutch.jpg",
+      image: "/assets/barba-old-dutch.webp",
       howToSteps: [
         { name: "Crescimento de Base", text: "Deixar a barba crescer por pelo menos 3 meses para ter volume lateral e frontal." },
         { name: "Remoção do Bigode", text: "Raspar completamente o lábio superior, mantendo a pele lisa e sem sombra de pelos." },
@@ -9706,7 +9885,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Maio de 2026",
       readTime: "14 min",
       category: "Cabelo",
-      image: "/assets/cabelos-cacheados-guia.png",
+      image: "/assets/cabelos-cacheados-guia.webp",
       howToSteps: [
         { name: "Lavagem Nutritiva", text: "Usar shampoo sem sulfato e condicionador liberado para manter a hidratação." },
         { name: "Finalização com Creme", text: "Aplicar creme de pentear ou ativador de cachos com o cabelo ainda bem úmido." },
@@ -9766,7 +9945,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Maio de 2026",
       readTime: "14 min",
       category: "Cabelo",
-      image: "/assets/botox-capilar-v2.png",
+      image: "/assets/botox-capilar-v2.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -9821,7 +10000,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Maio de 2026",
       readTime: "16 min",
       category: "Saúde",
-      image: "/assets/dermatite-seborreica-v2.png",
+      image: "/assets/dermatite-seborreica-v2.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -9876,7 +10055,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Maio de 2026",
       readTime: "18 min",
       category: "Cabelo",
-      image: "/assets/implante-capilar-estetica.png",
+      image: "/assets/implante-capilar-estetica.webp",
       howToSteps: [
         { name: "Avaliação", text: "Consultar um cirurgião para analisar a área doadora e a extensão da calvície." },
         { name: "Procedimento", text: "Extração de unidades foliculares (FUE) e implante nas áreas receptoras." },
@@ -9907,7 +10086,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Maio de 2026",
       readTime: "10 min",
       category: "Cabelo",
-      image: "/assets/ozonioterapia-capilar.png",
+      image: "/assets/ozonioterapia-capilar.webp",
       howToSteps: [
         { name: "Aplicação", text: "O ozônio é aplicado através de vapor ou injeção localizada no couro cabeludo." },
         { name: "Ação Germicida", text: "O gás elimina fungos e bactérias, limpando profundamente os folículos." },
@@ -9932,7 +10111,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Maio de 2026",
       readTime: "12 min",
       category: "Cabelo",
-      image: "/assets/penteado-infantil-cacheado.png",
+      image: "/assets/penteado-infantil-cacheado.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -9987,7 +10166,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "15 min",
       category: "Cabelo",
-      image: "/assets/cabelos-loiros-guia.png",
+      image: "/assets/cabelos-loiros-guia.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -10042,7 +10221,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "10 min",
       category: "Cabelo",
-      image: "/assets/loiro-mel.png",
+      image: "/assets/loiro-mel.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -10061,7 +10240,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "10 min",
       category: "Cabelo",
-      image: "/assets/loiro-dourado.png",
+      image: "/assets/loiro-dourado.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -10080,7 +10259,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "9 min",
       category: "Cabelo",
-      image: "/assets/loiro-escuro.png",
+      image: "/assets/loiro-escuro.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -10099,7 +10278,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "8 min",
       category: "Cabelo",
-      image: "/assets/loiro-curto-especifico.png",
+      image: "/assets/loiro-curto-especifico.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -10118,7 +10297,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "11 min",
       category: "Cabelo",
-      image: "/assets/loiro-cacheado-curto.png",
+      image: "/assets/loiro-cacheado-curto.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -10137,7 +10316,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "14 min",
       category: "Cabelo",
-      image: "/assets/cabelos-ruivos-guia.png",
+      image: "/assets/cabelos-ruivos-guia.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -10192,7 +10371,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "14 de Maio de 2026",
       readTime: "13 min",
       category: "Cabelo",
-      image: "/assets/ruivo-acobreado-escuro.png",
+      image: "/assets/ruivo-acobreado-escuro.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -10265,7 +10444,7 @@ const ArticleDetailPage: React.FC = () => {
         ]}
       />
       <header className="bg-brand-dark pt-20 pb-32 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.webp')]"></div>
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
           <button onClick={() => navigate('/blog')} className="inline-flex items-center gap-2 text-brand-gold text-[10px] font-black uppercase tracking-widest mb-12 hover:text-white transition-colors group">
             <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" aria-hidden="true" /> Voltar ao Blog

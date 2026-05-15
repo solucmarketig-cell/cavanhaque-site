@@ -99,7 +99,7 @@ const AccessoriesPage: React.FC = () => {
 
       {/* Premium Header */}
       <header className="bg-brand-dark py-24 text-center text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')]"></div>
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.webp')]"></div>
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <span className="text-brand-gold uppercase tracking-[0.3em] text-xs font-black mb-4 block animate-pulse">
             Ferramentas de Precisão

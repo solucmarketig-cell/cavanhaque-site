@@ -6,130 +6,10 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
-          id: 'hair-blonde-gen',
-          title: 'Cabelos Loiros Masculinos: O Guia Completo de Estilo',
-          excerpt: 'Tudo o que você precisa saber sobre o universo dos loiros para homens. Do cuidado básico à escolha da tonalidade ideal.',
-          imageUrl: '/assets/cabelos-loiros-guia.png',
-          author: 'Carlos Barbudo',
-          date: '14 Mai 2026',
-          slug: 'cabelos-loiros-masculinos-guia',
-          category: 'Cabelo'
-        },
-        {
-          id: 'hair-blonde-mel',
-          title: 'Cabelos Loiros Mel: O Tom Quente que é Tendência',
-          excerpt: 'Descubra por que o loiro mel é a escolha perfeita para um visual iluminado e natural. Dicas de manutenção e produtos.',
-          imageUrl: '/assets/loiro-mel.png',
-          author: 'Carlos Barbudo',
-          date: '14 Mai 2026',
-          slug: 'cabelos-loiros-mel-masculino',
-          category: 'Cabelo'
-        },
-        {
-          id: 'hair-blonde-dourado',
-          title: 'Cabelos Loiros Dourados: Brilho e Sofisticação',
-          excerpt: 'Como conquistar e manter o loiro dourado impecável. O guia para homens que buscam um visual solar e marcante.',
-          imageUrl: '/assets/loiro-dourado.png',
-          author: 'Carlos Barbudo',
-          date: '14 Mai 2026',
-          slug: 'cabelos-loiros-dourados-masculino',
-          category: 'Cabelo'
-        },
-        {
-          id: 'hair-blonde-escuro',
-          title: 'Cabelos Loiros Escuros: Elegância Discreta e Natural',
-          excerpt: 'O loiro escuro é a tonalidade mais versátil para o homem moderno. Saiba como valorizar essa cor com o corte certo.',
-          imageUrl: '/assets/loiro-escuro.png',
-          author: 'Dr. Estilo (Ph.D)',
-          date: '14 Mai 2026',
-          slug: 'cabelos-loiros-escuros-masculino',
-          category: 'Cabelo'
-        },
-        {
-          id: 'hair-blonde-curto',
-          title: 'Cabelos Loiros Curtos: Praticidade com Estilo',
-          excerpt: 'Os melhores cortes curtos para quem tem cabelo loiro. Do Buzz Cut ao Crew Cut, veja como destacar a cor no comprimento curto.',
-          imageUrl: '/assets/loiro-curto-especifico.png',
-          author: 'Carlos Barbudo',
-          date: '14 Mai 2026',
-          slug: 'cabelos-loiros-curtos-masculino',
-          category: 'Cabelo'
-        },
-        {
-          id: 'hair-blonde-cacheado',
-          title: 'Cabelos Loiros Cacheados: Definição e Cor em Harmonia',
-          excerpt: 'Como cuidar da saúde dos cachos loiros. Técnicas de finalização para destacar a textura e a tonalidade dos fios.',
-          imageUrl: '/assets/loiro-cacheado-curto.png',
-          author: 'Carlos Barbudo',
-          date: '14 Mai 2026',
-          slug: 'cabelos-loiros-cacheados-masculino',
-          category: 'Cabelo'
-        },
-        {
-          id: 'hair-red-gen',
-          title: 'Cabelos Ruivos Masculinos: Atitude e Personalidade',
-          excerpt: 'Um mergulho no mundo dos ruivos. Conheça as variações de tons e como cuidar da pigmentação ruiva.',
-          imageUrl: '/assets/cabelos-ruivos-guia.png',
-          author: 'Dr. Estilo (Ph.D)',
-          date: '14 Mai 2026',
-          slug: 'cabelos-ruivos-masculinos-guia',
-          category: 'Cabelo'
-        },
-        {
-          id: 'hair-red-acobreado',
-          title: 'Ruivo Acobreado Escuro: A Cor da Estação para Homens',
-          excerpt: 'O guia definitivo para o ruivo acobreado escuro. Saiba como chegar no tom e manter o brilho metálico por mais tempo.',
-          imageUrl: '/assets/ruivo-acobreado-escuro.png',
-          author: 'Dr. Estilo (Ph.D)',
-          date: '14 Mai 2026',
-          slug: 'cabelos-ruivos-acobreado-escuro-masculino',
-          category: 'Cabelo'
-        },
-        {
-          id: 'hair-curly-1',
-          title: 'Cabelos Cacheados Masculinos: O Guia Definitivo de Cortes e Cuidados',
-          excerpt: 'Descubra os melhores cortes para cabelos cacheados masculinos em 2026. Aprenda técnicas de finalização e os produtos essenciais para definição e brilho.',
-          imageUrl: '/assets/cabelos-cacheados-guia.png',
-          author: 'Carlos Barbudo',
-          date: '13 Mai 2026',
-          slug: 'cabelos-cacheados-masculinos-guia-cortes',
-          category: 'Cabelo'
-        },
-        {
-          id: 'botox-capilar-1',
-          title: 'Botox Capilar Masculino: O Segredo para Fios Alinhados e Saudáveis (Sem Formol)',
-          excerpt: 'Tudo sobre o botox capilar profissional para homens. Descubra como reduzir o frizz e repor a massa capilar sem o uso de químicas agressivas.',
-          imageUrl: '/assets/botox-capilar-v2.png',
-          author: 'Dr. Estilo (Ph.D)',
-          date: '13 Mai 2026',
-          slug: 'botox-capilar-profissional-masculino-sem-formol',
-          category: 'Cabelo'
-        },
-        {
-          id: 'dermatite-1',
-          title: 'Dermatite Seborreica: Como Acabar com a Caspa e Irritação no Couro Cabeludo',
-          excerpt: 'Sofrendo com dermatite seborreica no couro cabeludo? Conheça os melhores shampoos e tratamentos para controlar a descamação e a coceira de vez.',
-          imageUrl: '/assets/dermatite-seborreica-v2.png',
-          author: 'Dr. Estilo (Ph.D)',
-          date: '13 Mai 2026',
-          slug: 'dermatite-seborreica-couro-cabeludo-shampoo-tratamento',
-          category: 'Cabelo'
-        },
-        {
-          id: 'implante-1',
-          title: 'Implante Capilar: A Solução Definitiva Contra a Calvície Masculina',
-          excerpt: 'Entenda a diferença entre implante e transplante capilar. Custos, recuperação e o que esperar dos resultados para recuperar sua autoestima.',
-          imageUrl: '/assets/implante-capilar-v2.png',
-          author: 'Dr. Estilo (Ph.D)',
-          date: '13 Mai 2026',
-          slug: 'implante-capilar-masculino-precos-resultados',
-          category: 'Cabelo'
-        },
-        {
           id: 'ozonio-1',
           title: 'Ozonioterapia Capilar: A Nova Fronteira do Tratamento para Queda e Saúde dos Fios',
           excerpt: 'Descubra como a ozonioterapia capilar pode acelerar o crescimento, combater a queda e revitalizar profundamente a saúde do seu couro cabeludo.',
-          imageUrl: '/assets/ozonioterapia-capilar.png',
+          imageUrl: '/assets/ozonioterapia-capilar.webp',
           author: 'Dr. Estilo (Ph.D)',
           date: '13 Mai 2026',
           slug: 'ozonioterapia-capilar-beneficios-crescimento',
@@ -137,9 +17,9 @@ export const fetchArticles = async (): Promise<Article[]> => {
         },
         {
           id: 'corte-feminino-cacheado',
-          title: 'Corte para Cabelo Cacheado: 5 Estilos que são Tendência',
+          title: 'Corte para Cabelo Cacheado: 5 Estilos que são Tendência em 2026',
           excerpt: 'Procurando o corte para cabelo cacheado perfeito? Conheça os estilos que valorizam o volume e trazem leveza ao seu visual.',
-          imageUrl: '/assets/corte-cabelo-cacheado-feminino.webp',
+          imageUrl: '/assets/corte-cacheado-tendencia-v2.webp',
           author: 'Lara Estilo',
           date: '14 Mai 2026',
           slug: 'corte-para-cabelo-cacheado',
@@ -149,7 +29,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'cabelo-cacheado-feminino',
           title: 'Cabelo Cacheado: O Guia Absoluto de Cuidados e Tendências',
           excerpt: 'Tudo o que você precisa saber sobre o universo do cabelo cacheado. Tipos de cachos, hidratação profunda e as melhores rotinas de cuidados.',
-          imageUrl: '/assets/cabelo-cacheado-feminino.webp',
+          imageUrl: '/assets/cabelo-cacheado-absoluto-v2.webp',
           author: 'Lara Estilo',
           date: '14 Mai 2026',
           slug: 'cabelo-cacheado',
@@ -159,17 +39,157 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'penteado-feminino-cacheado',
           title: 'Penteado Cabelo Cacheado: Guia Completo de Estilo e Definição',
           excerpt: 'Descubra as melhores técnicas de penteado para cabelos cacheados femininos. Aprenda a valorizar seu volume natural com definição impecável.',
-          imageUrl: '/assets/penteado-feminino-cacheado.webp',
+          imageUrl: '/assets/penteado-cacheado-guia-v2.webp',
           author: 'Lara Estilo',
           date: '14 Mai 2026',
           slug: 'penteado-cabelo-cacheado',
           category: 'Cabelo'
         },
         {
+          id: 'corte-americano-feminino-cacheado',
+          title: 'Corte Americano Feminino: A Tendência do Fade para Cacheadas',
+          excerpt: 'O corte americano não é mais exclusividade masculina. Descubra como o degradê lateral valoriza o volume dos cachos femininos com muita atitude.',
+          imageUrl: '/assets/corte-americano-feminino-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '14 Mai 2026',
+          slug: 'corte-americano-cabelo-cacheado-feminino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'corte-cabelo-cacheado-tendencia-2026',
+          title: 'Corte para Cabelo Cacheado: Tendências que vão Dominar 2026',
+          excerpt: 'Renove seu visual com os cortes para cabelo cacheado que estão dominando as tendências. Dicas de visagismo e manutenção para cachos perfeitos.',
+          imageUrl: '/assets/corte-cabelo-cacheado-feminino-tendencia.webp',
+          author: 'Lara Estilo',
+          date: '14 Mai 2026',
+          slug: 'corte-para-cabelo-cacheado-tendencias',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-gen',
+          title: 'Cabelos Loiros Masculinos: O Guia Completo de Estilo',
+          excerpt: 'Tudo o que você precisa saber sobre o universo dos loiros para homens. Do cuidado básico à escolha da tonalidade ideal.',
+          imageUrl: '/assets/cabelos-loiros-guia.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-masculinos-guia',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-mel',
+          title: 'Cabelos Loiros Mel: O Tom Quente que é Tendência',
+          excerpt: 'Descubra por que o loiro mel é a escolha perfeita para um visual iluminado e natural. Dicas de manutenção e produtos.',
+          imageUrl: '/assets/loiro-mel.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-mel-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-dourado',
+          title: 'Cabelos Loiros Dourados: Brilho e Sofisticação',
+          excerpt: 'Como conquistar e manter o loiro dourado impecável. O guia para homens que buscam um visual solar e marcante.',
+          imageUrl: '/assets/loiro-dourado.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-dourados-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-escuro',
+          title: 'Cabelos Loiros Escuros: Elegância Discreta e Natural',
+          excerpt: 'O loiro escuro é a tonalidade mais versátil para o homem moderno. Saiba como valorizar essa cor com o corte certo.',
+          imageUrl: '/assets/loiro-escuro.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-escuros-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-curto',
+          title: 'Cabelos Loiros Curtos: Praticidade com Estilo',
+          excerpt: 'Os melhores cortes curtos para quem tem cabelo loiro. Do Buzz Cut ao Crew Cut, veja como destacar a cor no comprimento curto.',
+          imageUrl: '/assets/loiro-curto-especifico.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-curtos-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-blonde-cacheado',
+          title: 'Cabelos Loiros Cacheados: Definição e Cor em Harmonia',
+          excerpt: 'Como cuidar da saúde dos cachos loiros. Técnicas de finalização para destacar a textura e a tonalidade dos fios.',
+          imageUrl: '/assets/loiro-cacheado-curto.webp',
+          author: 'Carlos Barbudo',
+          date: '14 Mai 2026',
+          slug: 'cabelos-loiros-cacheados-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-red-gen',
+          title: 'Cabelos Ruivos Masculinos: Atitude e Personalidade',
+          excerpt: 'Um mergulho no mundo dos ruivos. Conheça as variações de tons e como cuidar da pigmentação ruiva.',
+          imageUrl: '/assets/cabelos-ruivos-guia.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '14 Mai 2026',
+          slug: 'cabelos-ruivos-masculinos-guia',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-red-acobreado',
+          title: 'Ruivo Acobreado Escuro: A Cor da Estação para Homens',
+          excerpt: 'O guia definitivo para o ruivo acobreado escuro. Saiba como chegar no tom e manter o brilho metálico por mais tempo.',
+          imageUrl: '/assets/ruivo-acobreado-escuro.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '14 Mai 2026',
+          slug: 'cabelos-ruivos-acobreado-escuro-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'hair-curly-1',
+          title: 'Cabelos Cacheados Masculinos: O Guia Definitivo de Cortes e Cuidados',
+          excerpt: 'Descubra os melhores cortes para cabelos cacheados masculinos em 2026. Aprenda técnicas de finalização e os produtos essenciais para definição e brilho.',
+          imageUrl: '/assets/cabelos-cacheados-guia.webp',
+          author: 'Carlos Barbudo',
+          date: '13 Mai 2026',
+          slug: 'cabelos-cacheados-masculinos-guia-cortes',
+          category: 'Cabelo'
+        },
+        {
+          id: 'botox-capilar-1',
+          title: 'Botox Capilar Masculino: O Segredo para Fios Alinhados e Saudáveis (Sem Formol)',
+          excerpt: 'Tudo sobre o botox capilar profissional para homens. Descubra como reduzir o frizz e repor a massa capilar sem o uso de químicas agressivas.',
+          imageUrl: '/assets/botox-capilar-v2.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'botox-capilar-profissional-masculino-sem-formol',
+          category: 'Cabelo'
+        },
+        {
+          id: 'dermatite-1',
+          title: 'Dermatite Seborreica: Como Acabar com a Caspa e Irritação no Couro Cabeludo',
+          excerpt: 'Sofrendo com dermatite seborreica no couro cabeludo? Conheça os melhores shampoos e tratamentos para controlar a descamação e a coceira de vez.',
+          imageUrl: '/assets/dermatite-seborreica-v2.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'dermatite-seborreica-couro-cabeludo-shampoo-tratamento',
+          category: 'Cabelo'
+        },
+        {
+          id: 'implante-1',
+          title: 'Implante Capilar: A Solução Definitiva Contra a Calvície Masculina',
+          excerpt: 'Entenda a diferença entre implante e transplante capilar. Custos, recuperação e o que esperar dos resultados para recuperar sua autoestima.',
+          imageUrl: '/assets/implante-capilar-v2.webp',
+          author: 'Dr. Estilo (Ph.D)',
+          date: '13 Mai 2026',
+          slug: 'implante-capilar-masculino-precos-resultados',
+          category: 'Cabelo'
+        },
+        {
           id: 'kids-curly-1',
           title: 'Penteado Infantil para Cabelos Cacheados: Estilo e Praticidade para os Pequenos',
           excerpt: 'Dicas de penteados para crianças com cabelos cacheados. Como manter os cachos definidos e saudáveis de forma simples e divertida.',
-          imageUrl: '/assets/penteado-infantil-cacheado.png',
+          imageUrl: '/assets/penteado-infantil-cacheado.webp',
           author: 'Carlos Barbudo',
           date: '13 Mai 2026',
           slug: 'penteado-infantil-cabelos-cacheados-estilos',
@@ -246,10 +266,14 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Barba'
         },
         {
+          slug: 'barba-old-dutch-holandes',
+          category: 'Barba'
+        },
+        {
           id: 'beard-old-dutch',
           title: "Old Dutch: O Guia do Estilo 'Holandês' Tradicional",
           excerpt: 'Descubra como dominar a barba rústica que dispensa o bigode para um visual de autoridade.',
-          imageUrl: '/assets/barba-espartana.webp',
+          imageUrl: '/assets/barba-old-dutch.webp',
           author: 'Carlos Barbudo',
           date: '20 Jun 2026',
           slug: 'barba-old-dutch-holandes',
@@ -386,40 +410,56 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Barba'
         },
         {
+          slug: 'barba-bandholz-volume-maximo',
+          category: 'Barba'
+        },
+        {
           id: 'beard-18',
           title: 'Bandholz: O Estilo para os Pacientes e Poderosos',
           excerpt: 'Tudo sobre o estilo que celebra o crescimento natural e o volume extremo.',
-          imageUrl: '/assets/barba-viking.webp',
+          imageUrl: '/assets/barba-bandholz.webp',
           author: 'Carlos Barbudo',
           date: '14 Mai 2026',
           slug: 'barba-bandholz-volume-maximo',
           category: 'Barba'
         },
         {
+          slug: 'barba-hulihee-estilo-vintage',
+          category: 'Barba'
+        },
+        {
           id: 'beard-19',
           title: 'Hulihee: A Extravagância das Costeletas Conectadas',
           excerpt: 'Descubra o estilo clássico onde as costeletas volumosas se encontram no bigode.',
-          imageUrl: '/assets/barba-garibaldi.webp',
+          imageUrl: '/assets/barba-hulihee.webp',
           author: 'Carlos Barbudo',
           date: '14 Mai 2026',
           slug: 'barba-hulihee-estilo-vintage',
           category: 'Barba'
         },
         {
+          slug: 'barba-imperial-realeza',
+          category: 'Barba'
+        },
+        {
           id: 'beard-20',
           title: 'Barba Imperial: O Visual da Realeza Europeia',
           excerpt: 'Aprenda a combinar o bigode aristocrático com um cavanhaque pontudo e elegante.',
-          imageUrl: '/assets/barba-van-dyke.webp',
+          imageUrl: '/assets/barba-imperial.webp',
           author: 'Carlos Barbudo',
           date: '14 Mai 2026',
           slug: 'barba-imperial-realeza',
           category: 'Barba'
         },
         {
+          slug: 'barba-mutton-chops-wolverine',
+          category: 'Barba'
+        },
+        {
           id: 'beard-21',
           title: 'Mutton Chops: O Estilo Feroz das Costeletas de Carneiro',
           excerpt: 'Saiba como cultivar as costeletas mais icônicas da cultura pop e do visual rústico.',
-          imageUrl: '/assets/barba-grisalha.webp',
+          imageUrl: '/assets/barba-mutton-chops.webp',
           author: 'Carlos Barbudo',
           date: '15 Mai 2026',
           slug: 'barba-mutton-chops-wolverine',
@@ -446,20 +486,28 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Barba'
         },
         {
+          slug: 'bigode-ferradura-biker',
+          category: 'Barba'
+        },
+        {
           id: 'beard-24',
           title: 'Bigode Ferradura: O Visual de Impacto e Rebeldia',
           excerpt: 'Aprenda a domar o estilo clássico dos motoqueiros e ícones da luta livre.',
-          imageUrl: '/assets/bigode-chevron.webp',
+          imageUrl: '/assets/bigode-ferradura.webp',
           author: 'Carlos Barbudo',
           date: '15 Mai 2026',
           slug: 'bigode-ferradura-biker',
           category: 'Barba'
         },
         {
+          slug: 'bigode-handlebar-guidao',
+          category: 'Barba'
+        },
+        {
           id: 'beard-25',
           title: 'Bigode Guidão (Handlebar): A Arte da Curva Perfeita',
           excerpt: 'Descubra como cultivar e modelar o bigode mais icônico da cultura hipster e clássica.',
-          imageUrl: '/assets/bigode-chevron.webp',
+          imageUrl: '/assets/bigode-handlebar.webp',
           author: 'Carlos Barbudo',
           date: '15 Mai 2026',
           slug: 'bigode-handlebar-guidao',
@@ -479,7 +527,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'falhas-1',
           title: 'Como Corrigir Falhas na Barba: O Guia Definitivo do Microagulhamento',
           excerpt: 'De técnicas de preenchimento com dermaroller até o uso de tônicos de crescimento. Saiba como preencher buracos na barba de forma definitiva e segura.',
-          imageUrl: '/assets/crescimento-acelerado.png',
+          imageUrl: '/assets/crescimento-acelerado.webp',
           author: 'Carlos Barbudo',
           date: '08 Mar 2026',
           slug: 'como-corrigir-falhas',
@@ -636,10 +684,14 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Estilo'
         },
         {
+          slug: 'barba-branca-cuidados-estilo',
+          category: 'Dicas'
+        },
+        {
           id: 'branca-1',
           title: 'Barba Branca como a Neve: Como Evitar o Efeito Amarelado e Frizz',
           excerpt: 'Esqueça o visual "Papai Noel Descuidado". Um homem com barba branca bem cuidada exige protocolo de hidratação intensa e pigmentação correta.',
-          imageUrl: '/assets/barba-grisalha.webp',
+          imageUrl: '/assets/barba-branca.webp',
           author: 'Carlos Barbudo',
           date: '11 Mar 2026',
           slug: 'barba-branca-cuidados-estilo',
@@ -686,10 +738,14 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Estilo'
         },
         {
+          slug: 'estilo-de-barba-tendencias-2026',
+          category: 'Tendências'
+        },
+        {
           id: 'estilos-geral-1',
           title: 'Estilo de Barba: As 6 Maiores Tendências que Vão Dominar 2026',
           excerpt: 'Do Classic Chevron ao "Messy Beard". O manual do que está em alta no grooming global e como escolher o estilo ideal para a sua rotina e personalidade.',
-          imageUrl: '/assets/visagismo-rostos.webp',
+          imageUrl: '/assets/tendencias-barba-2026.webp',
           author: 'Dr. Estilo (Ph.D)',
           date: '09 Mar 2026',
           slug: 'estilo-de-barba-tendencias-2026',
@@ -716,10 +772,14 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Dicas'
         },
         {
+          slug: 'aprenda-fazer-cavanhaque-simples',
+          category: 'Dicas'
+        },
+        {
           id: 'cav-simples-1',
           title: 'Aprenda a Fazer um Cavanhaque Simples',
           excerpt: 'Um guia prático e direto ao ponto para quem quer aderir ao cavanhaque clássico sem complicação na hora de aparar.',
-          imageUrl: '/assets/cavanhaque-ancora.webp',
+          imageUrl: '/assets/cavanhaque-simples.webp',
           author: 'Carlos Barbudo',
           date: '13 Mar 2026',
           slug: 'aprenda-fazer-cavanhaque-simples',
@@ -749,7 +809,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'cav-bem-definido',
           title: 'COMO FAZER CAVANHAQUE BEM DEFINIDO',
           excerpt: 'Domine a arte das linhas precisas e contornos nítidos. O segredo dos barbeiros profissionais para um cavanhaque de destaque.',
-          imageUrl: '/assets/historia-barba.png',
+          imageUrl: '/assets/historia-barba.webp',
           author: 'Carlos Barbudo',
           date: '13 Mar 2026',
           slug: 'como-fazer-cavanhaque-bem-definido',
@@ -769,7 +829,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'cav-masculino-2',
           title: 'Cavanhaque masculino',
           excerpt: 'O estilo que nunca sai de moda. Uma jornada pela versatilidade e o poder do cavanhaque na estética masculina contemporânea.',
-          imageUrl: '/assets/barbas-famosas.png',
+          imageUrl: '/assets/barbas-famosas.webp',
           author: 'Carlos Barbudo',
           date: '13 Mar 2026',
           slug: 'cavanhaque-masculino',
@@ -779,7 +839,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'cuidar-cav',
           title: 'Como cuidar do seu cavanhaque',
           excerpt: 'Rotina de cuidados, produtos indispensáveis e dicas de manutenção para manter seu cavanhaque sempre limpo, cheiroso e alinhado.',
-          imageUrl: '/assets/aparar-barba-casa.png',
+          imageUrl: '/assets/aparar-barba-casa.webp',
           author: 'Dr. Estilo (Ph.D)',
           date: '13 Mar 2026',
           slug: 'como-cuidar-do-seu-cavanhaque',
@@ -909,7 +969,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-13',
           title: 'Moicano Disfarçado: O Degradê que Cria Atitude sem Exageros',
           excerpt: 'Uma crista suave no topo que desce até a nuca. O guia para quem quer ousadia com um toque de sofisticação no fade.',
-          imageUrl: '/assets/moicano-disfarcado.png',
+          imageUrl: '/assets/moicano-disfarcado.webp',
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'moicano-disfarcado-fade',
@@ -919,7 +979,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-14',
           title: 'Surfer Shag: O Guia do Cabelo Longo com Textura Praiana',
           excerpt: 'Movimento, leveza e luzes sun-kissed. Aprenda como finalizar o cabelo longo para um visual despojado e saudável.',
-          imageUrl: '/assets/surfer-shag.png',
+          imageUrl: '/assets/surfer-shag.webp',
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'surfer-shag-longo-ondulado',
@@ -929,7 +989,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-15',
           title: 'Top Knot (Coque Samurai): Como Crescer e Estilizar o Topo',
           excerpt: 'Paciência e estilo. O manual para quem quer adotar o coque samurai com undercut lateral sem perder a masculinidade.',
-          imageUrl: '/assets/top-knot.png',
+          imageUrl: '/assets/top-knot.webp',
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'top-knot-coque-samurai',
@@ -939,7 +999,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-16',
           title: 'Fringe Fade: A Franja Masculina que Dominou a Cultura E-Boy',
           excerpt: 'O topo projetado para frente com degradê navalhado. Como estilizar a franja para esconder entradas e criar modernidade.',
-          imageUrl: '/assets/fringe-fade.png',
+          imageUrl: '/assets/fringe-fade.webp',
           author: 'Carlos Barbudo',
           date: '15 Mar 2026',
           slug: 'fringe-fade-franja-masculina',
@@ -949,7 +1009,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-17',
           title: 'Afro com Nudred: Textura e Definição para Fios Crespos',
           excerpt: 'A técnica da esponja que revolucionou a finalização afro. Como criar twists perfeitos em minutos com o protocolo Nudred.',
-          imageUrl: '/assets/nudred-afro.png',
+          imageUrl: '/assets/nudred-afro.webp',
           author: 'Dr. Estilo (Ph.D)',
           date: '15 Mar 2026',
           slug: 'afro-nudred-textura-definicao',
@@ -969,7 +1029,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-19',
           title: 'Pompadour Moderno: Volume e Elegância com Fade',
           excerpt: 'O topete icônico de Elvis atualizado para 2026. Como criar volume duradouro e equilibrar com um degradê agressivo.',
-          imageUrl: '/assets/pompadour-fade.png',
+          imageUrl: '/assets/pompadour-fade.webp',
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'pompadour-moderno-fade-volume',
@@ -979,7 +1039,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-20',
           title: 'Slicked Back Undercut: O Visual "Penteado para Trás"',
           excerpt: 'Clássico dos filmes noir, agora nas ruas. O guia para usar o cabelo totalmente para trás com laterais raspadas.',
-          imageUrl: '/assets/slicked-back.png',
+          imageUrl: '/assets/slicked-back.webp',
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'slicked-back-undercut-classico',
@@ -989,7 +1049,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-21',
           title: 'Corte César Moderno: Praticidade e Franja Curta',
           excerpt: 'Inspirado no imperador, perfeito para o dia a dia. Como o corte César ajuda a disfarçar entradas de forma inteligente.',
-          imageUrl: '/assets/cesar-moderno.png',
+          imageUrl: '/assets/cesar-moderno.webp',
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'corte-cesar-moderno-franja-curta',
@@ -999,7 +1059,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-22',
           title: 'Ivy League Haircut: O Social de Elite',
           excerpt: 'Um corte limpo, curto e extremamente versátil. O visual preferido de estudantes e executivos de sucesso.',
-          imageUrl: '/assets/ivy-league.png',
+          imageUrl: '/assets/ivy-league.webp',
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'iv-league-haircut-executivo',
@@ -1009,7 +1069,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-23',
           title: 'Burst Fade: O Degradê em Semicírculo na Orelha',
           excerpt: 'Um estilo único que destaca as laterais de forma artística. Ideal para moicanos e cortes com volume na nuca.',
-          imageUrl: '/assets/burst-fade.png',
+          imageUrl: '/assets/burst-fade.webp',
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'burst-fade-moicano-discreto',
@@ -1019,7 +1079,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-24',
           title: 'Flat Top Militar: A Geometria Perfeita no Cabelo Afro',
           excerpt: 'Linhas retas e topo plano. O guia para manter o Flat Top impecável e com a estrutura sempre firme.',
-          imageUrl: '/assets/flat-top-afro.png',
+          imageUrl: '/assets/flat-top-afro.webp',
           author: 'Dr. Estilo (Ph.D)',
           date: '16 Mar 2026',
           slug: 'flat-top-militar-afro',
@@ -1029,7 +1089,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-25',
           title: 'Man Bun com Undercut: Estilo Samurai Contemporâneo',
           excerpt: 'O coque masculino elevado a um novo nível. Como prender o cabelo longo mantendo as laterais sempre raspadas.',
-          imageUrl: '/assets/man-bun.png',
+          imageUrl: '/assets/man-bun.webp',
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'man-bun-undercut-estilo-samurai',
@@ -1049,7 +1109,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           id: 'hair-27',
           title: 'Bowl Cut Repaginado: O "Corte de Tigela" em 2026',
           excerpt: 'Esqueça o visual infantil. Aprenda como a textura e o fade transformaram o bowl cut em um estilo avant-garde.',
-          imageUrl: '/assets/bowl-cut-moderno.png',
+          imageUrl: '/assets/bowl-cut-moderno.webp',
           author: 'Carlos Barbudo',
           date: '16 Mar 2026',
           slug: 'bowl-cut-repaginado-moderno',

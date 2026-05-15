@@ -59,7 +59,7 @@ const BlogPage: React.FC = () => {
       />
       {/* Blog Header */}
       <div className="bg-brand-charcoal text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/cubes.png")' }}></div>
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/cubes.webp")' }}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <span className="text-brand-gold uppercase tracking-[0.2em] text-xs font-bold mb-4 block animate-fade-in-up">
             Conhecimento é Poder
@@ -106,33 +106,37 @@ const BlogPage: React.FC = () => {
         <AdUnit type="display" className="mt-8 mb-16" />
 
         {/* Featured Articles */}
-        {!loading && filteredArticles.length > 0 && selectedCategory === 'Todos' && !searchTerm && (
+        {!loading && filteredArticles.length >= 2 && selectedCategory === 'Todos' && !searchTerm && (
           <div className="mb-20">
             <h2 className="text-2xl font-serif font-bold text-brand-dark mb-8 flex items-center gap-3">
               <span className="w-10 h-1px bg-brand-gold"></span> Artigos em Destaque
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Main Featured */}
-              <Link to={`/blog/${articles[0].slug}`} className="relative group overflow-hidden rounded-3xl h-[500px] shadow-2xl">
-                <img src={articles[0].imageUrl} alt={articles[0].title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-transparent to-transparent opacity-90"></div>
-                <div className="absolute bottom-0 left-0 p-10 text-white">
-                  <span className="bg-brand-gold text-brand-dark text-[10px] font-black px-3 py-1 rounded uppercase mb-4 inline-block">{articles[0].category}</span>
-                  <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4 leading-tight">{articles[0].title}</h3>
-                  <p className="text-gray-300 line-clamp-2 text-sm max-w-xl">{articles[0].excerpt}</p>
-                </div>
-              </Link>
+              {articles[0] && (
+                <Link to={`/blog/${articles[0].slug}`} className="relative group overflow-hidden rounded-3xl h-[500px] shadow-2xl">
+                  <img src={articles[0].imageUrl} alt={articles[0].title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-transparent to-transparent opacity-90"></div>
+                  <div className="absolute bottom-0 left-0 p-10 text-white">
+                    <span className="bg-brand-gold text-brand-dark text-[10px] font-black px-3 py-1 rounded uppercase mb-4 inline-block">{articles[0].category}</span>
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4 leading-tight">{articles[0].title}</h3>
+                    <p className="text-gray-300 line-clamp-2 text-sm max-w-xl">{articles[0].excerpt}</p>
+                  </div>
+                </Link>
+              )}
               
               {/* Secondary Featured + Ad */}
               <div className="flex flex-col gap-8">
-                <Link to={`/blog/${articles[1].slug}`} className="relative group overflow-hidden rounded-3xl h-[235px] shadow-xl">
-                  <img src={articles[1].imageUrl} alt={articles[1].title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 p-6 text-white">
-                    <span className="bg-brand-gold text-brand-dark text-[10px] font-black px-2 py-0.5 rounded uppercase mb-2 inline-block">{articles[1].category}</span>
-                    <h3 className="text-xl font-bold leading-tight">{articles[1].title}</h3>
-                  </div>
-                </Link>
+                {articles[1] && (
+                  <Link to={`/blog/${articles[1].slug}`} className="relative group overflow-hidden rounded-3xl h-[235px] shadow-xl">
+                    <img src={articles[1].imageUrl} alt={articles[1].title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 p-6 text-white">
+                      <span className="bg-brand-gold text-brand-dark text-[10px] font-black px-2 py-0.5 rounded uppercase mb-2 inline-block">{articles[1].category}</span>
+                      <h3 className="text-xl font-bold leading-tight">{articles[1].title}</h3>
+                    </div>
+                  </Link>
+                )}
                 <div className="bg-white rounded-3xl h-[235px] shadow-sm border border-gray-100 flex items-center justify-center overflow-hidden">
                    <AdUnit type="display" className="my-0 border-none shadow-none" />
                 </div>

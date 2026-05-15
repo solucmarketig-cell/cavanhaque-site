@@ -19,7 +19,7 @@ const AboutPage: React.FC = () => {
       />
       {/* Hero Section */}
       <section className="bg-brand-dark py-28 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')]"></div>
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.webp')]"></div>
         <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
           <span className="text-brand-gold uppercase tracking-[0.3em] text-[10px] font-black mb-6 block animate-fade-in-up">
             Muito mais que um Blog, seu Guia de Estilo
