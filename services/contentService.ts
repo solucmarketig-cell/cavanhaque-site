@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'como-cortar-liso-tecnico',
+          title: 'Como Cortar Cabelo Liso: O Guia Técnico do Acabamento',
+          excerpt: 'Descubra os segredos profissionais para cortar fios lisos sem deixar marcas e garantindo o caimento perfeito.',
+          imageUrl: '/assets/social-classico.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'como-cortar-cabelo-liso-guia-tecnico',
+          category: 'Cabelo'
+        },
+        {
           id: 'cortes-liso-classico-masculino',
           title: 'Cortes Masculinos em Cabelo Liso: 5 Opções para Profissionais',
           excerpt: 'Da reunião de negócios ao evento social, conheça os cortes clássicos que valorizam o cabelo liso com elegância e seriedade.',

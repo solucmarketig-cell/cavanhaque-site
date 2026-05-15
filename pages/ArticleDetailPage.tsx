@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'como-cortar-cabelo-liso-guia-tecnico': {
+      title: 'Como Cortar Cabelo Liso: O Guia Técnico do Acabamento',
+      subtitle: 'Descubra os segredos profissionais para cortar fios lisos sem deixar marcas e garantindo o caimento perfeito.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '13 min',
+      category: 'Cabelo',
+      image: '/assets/social-classico.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            <strong>Cortar cabelo liso</strong> exige uma precisão muito maior do que cabelos cacheados ou ondulados. Qualquer erro de ângulo ou pressão na tesoura fica imediatamente visível (o famoso "degrau"). Neste guia técnico, vamos abordar as etapas fundamentais que todo profissional (ou entusiasta) deve seguir para garantir um corte limpo, simétrico e com caimento natural.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Tesoura Fio Navalha 6.0", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Pente de Precisão Anti-estático", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Borrifador de Água com Névoa Fina", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Protocolo Técnico para Corte Liso</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Preparação e Umectação",
+                description: "O cabelo liso deve ser cortado levemente úmido. Isso ajuda a controlar o fio e evita que ele escorregue entre as lâminas da tesoura. Use um shampoo que remova resíduos para que o fio tenha sua fluidez natural.",
+                tip: "Nunca corte o cabelo liso totalmente seco se o objetivo for precisão geométrica.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "2. Divisão em Ferradura",
+                description: "Divida o cabelo em seções claras. A divisão em 'ferradura' separa o topo das laterais, permitindo que você trabalhe o degradê ou a tesoura nas laterais sem interferir no volume do topo.",
+                tip: "Use presilhas de qualidade para manter as seções bem isoladas.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "3. Ângulo de Corte e Mecha Guia",
+                description: "Defina a mecha guia no topo. No cabelo liso, use ângulos de 90 graus para um corte reto ou 45 graus para criar camadas suaves. A precisão aqui evita os temidos buracos no penteado.",
+                tip: "Sempre confira a simetria puxando as mechas dos dois lados para o centro.",
+                image: "/assets/pompadour-fade.webp"
+              },
+              {
+                title: "4. Texturização com Tesoura Dentada",
+                description: "Para remover o peso excessivo e evitar o efeito 'bloco', use a tesoura desfiadeira apenas nas pontas. Isso cria canais de ar que permitem que o liso tenha movimento e não fique chapado.",
+                tip: "Não suba a tesoura dentada até a raiz, ou você criará frizz impossível de controlar.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "5. Acabamento e Contorno",
+                description: "O acabamento da nuca e orelhas no cabelo liso deve ser feito com máquina de acabamento e finalizado na navalha. Como o liso evidencia as linhas, qualquer assimetria será notada.",
+                tip: "Use um gel de barbear transparente para enxergar exatamente onde a lâmina está passando.",
+                image: "/assets/high-fade.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "No cabelo liso, menos é mais. Não tente inventar ângulos complexos se você não domina a base. O segredo de um grande corte liso é a limpeza das seções. Se a sua divisão estiver bagunçada, o seu resultado final também estará. Organização é 50% do corte."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'pro-scissors-set', name: "Kit Tesouras Premium 6.0", desc: "Aço japonês para um corte milimétrico e sem esforço.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Scissors size={32} /> },
+        { id: 'precision-comb-luxe', name: "Pente de Carbono Master", desc: "Resistente ao calor e com dentes que seguram o fio liso.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cortes-masculinos-cabelo-liso-classicos-profissionais': {
       title: 'Cortes Masculinos em Cabelo Liso: 5 Opções para Profissionais',
       subtitle: 'Da reunião de negócios ao evento social, conheça os cortes clássicos que valorizam o cabelo liso com elegância e seriedade.',
