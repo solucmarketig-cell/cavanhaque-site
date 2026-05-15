@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-ressecado-guia-resgate-nutricao': {
+      title: 'Cabelo Ressecado: Guia de Resgate e Nutrição Profunda',
+      subtitle: 'Dê adeus ao aspecto de palha. Aprenda as técnicas de reposição lipídica que devolvem o brilho e a maciez aos fios ressecados.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '13 min',
+      category: 'Cabelo',
+      image: '/assets/loiro-escuro.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Ter o <strong>cabelo ressecado</strong> é uma das reclamações mais comuns nos salões. Diferente do cabelo seco (que é uma característica genética), o ressecamento é um estado causado por agressões externas, químicas ou falta de manutenção. Em 2026, o resgate capilar foca na reposição de lipídios e na selagem imediata das cutículas para interromper a perda de nutrientes.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Óleo de Coco ou Argan Extra Virgem", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Máscara de Nutrição Intensiva", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Acidificante Capilar Profissional", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Protocolo de Resgate para Fios Ressecados</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Diagnóstico: Ressecamento vs Porosidade",
+                description: "Se o seu cabelo demora a secar e não absorve nada, ele está com porosidade baixa. Se ele 'bebe' o creme e continua áspero, está com porosidade alta. Identificar isso é o primeiro passo para o tratamento certo.",
+                tip: "Faça o teste do copo d'água: se o fio boiar, precisa de hidratação; se afundar, precisa de reconstrução.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "2. Lavagem Inversa (Pre-Poo)",
+                description: "Antes de entrar no banho, aplique um óleo ou condicionador barato nas pontas secas. Isso cria uma barreira que impede que o shampoo remova a oleosidade natural que ainda resta nos seus fios.",
+                tip: "Deixe o Pre-Poo agir por pelo menos 15 minutos antes da lavagem.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "3. Nutrição com Óleos Nobres",
+                description: "O cabelo ressecado precisa de gordura (lipídios). Use máscaras que contenham manteiga de karité, óleo de argan ou macadâmia. A nutrição devolve o peso e o brilho que o fio perdeu.",
+                tip: "Potencialize a máscara misturando três gotas de óleo puro na porção que for usar.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "4. Selagem com Acidificante",
+                description: "Muitas vezes o produto não funciona porque as cutículas estão muito abertas. O acidificante equilibra o pH do fio, fechando as escamas e 'prendendo' o tratamento lá dentro.",
+                tip: "Use o acidificante após a máscara e antes do condicionador final.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Hábitos de Preservação",
+                description: "Evite água muito quente e reduza o uso de secador e chapinha durante o período de tratamento. Use protetores térmicos com silicone volátil, que protegem sem pesar.",
+                tip: "Substitua a fronha de algodão por uma de cetim para evitar que o tecido 'roube' a hidratação dos fios durante a noite.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Cabelo ressecado não se recupera com uma única hidratação. É necessário um ciclo de pelo menos 4 semanas de nutrição intensiva. Pense no seu cabelo como uma planta: se a terra está seca, não adianta jogar um balde de água de uma vez, é preciso regar aos poucos e com consistência."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'lipid-mask-pro', name: "Máscara Lipid Recovery", desc: "Reposição lipídica profunda para fios com toque de seda.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'acidifier-expert', name: "Acidificante pH Control", desc: "Sela as cutículas instantaneamente e devolve o brilho.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'penteado-cabelo-crespo-trancas-protetores': {
       title: 'Penteado Cabelo Crespo: Guia de Tranças e Estilos Protetores',
       subtitle: 'Das Box Braids às Nagô, conheça os penteados protetores que garantem estilo e saúde para o seu cabelo crespo.',

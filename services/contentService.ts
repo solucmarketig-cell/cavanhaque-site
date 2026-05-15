@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-ressecado-resgate',
+          title: 'Cabelo Ressecado: Guia de Resgate e Nutrição Profunda',
+          excerpt: 'Dê adeus ao aspecto de palha. Aprenda as técnicas de reposição lipídica que devolvem o brilho e a maciez aos fios ressecados.',
+          imageUrl: '/assets/loiro-escuro.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-ressecado-guia-resgate-nutricao',
+          category: 'Cabelo'
+        },
+        {
           id: 'penteado-crespo-trancas',
           title: 'Penteado Cabelo Crespo: Guia de Tranças e Estilos Protetores',
           excerpt: 'Das Box Braids às Nagô, conheça os penteados protetores que garantem estilo e saúde para o seu cabelo crespo.',
