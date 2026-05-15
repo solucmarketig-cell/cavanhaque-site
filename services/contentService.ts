@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-ondulado-feminino-longo',
+          title: 'Cabelo Ondulado Feminino: Cortes para Volume e Balanço',
+          excerpt: 'Do Butterfly Cut ao Shag moderno, descubra os cortes que transformam suas ondas em um visual de capa de revista.',
+          imageUrl: '/assets/cabelo-ondulado-feminino.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-ondulado-feminino-cortes-volume-balanco',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-ondulado-curto',
           title: 'Cabelo Ondulado e Curto: 5 Cortes de Puro Charme',
           excerpt: 'Quem disse que ondulado não combina com curto? Veja os cortes que valorizam a textura e trazem praticidade ao dia a dia.',

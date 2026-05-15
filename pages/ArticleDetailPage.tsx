@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-ondulado-feminino-cortes-volume-balanco': {
+      title: 'Cabelo Ondulado Feminino: Cortes para Volume e Balanço',
+      subtitle: 'Do Butterfly Cut ao Shag moderno, descubra os cortes que transformam suas ondas em um visual de capa de revista.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/cabelo-ondulado-feminino.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo ondulado feminino</strong> possui um charme natural irresistível. No entanto, o peso excessivo do comprimento pode fazer com que as ondas "estiquem" e percam a definição. Em 2026, os cortes que são tendência focam em camadas que devolvem o balanço e criam um volume luxuoso, permitindo que a textura ondulada brilhe em todo o seu potencial.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Sérum de Brilho Intensivo", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Creme Ativador de Ondas", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Escova Modeladora (Round Brush)", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Cortes que Valorizam as Ondas Longas</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Butterfly Cut (Corte Borboleta)",
+                description: "O corte queridinho das redes sociais. São camadas curtas no topo que se misturam com camadas longas no comprimento, imitando o formato das asas de uma borboleta. No ondulado, isso gera um volume cinematográfico.",
+                tip: "Use o secador direcionando as camadas da frente para trás para realçar o efeito 'asas'.",
+                image: "/assets/cabelo-ondulado-feminino.webp"
+              },
+              {
+                title: "2. U-Cut com Camadas Internas",
+                description: "O corte em formato de 'U' na base evita que as pontas pareçam ralas. As camadas internas removem o peso sem alterar o comprimento, permitindo que as ondas subam e fiquem mais nítidas.",
+                tip: "Ideal para quem tem muito volume e quer controle sem perder a extensão dos fios.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "3. Wavy Shag com Franja Cortininha",
+                description: "Inspirado nos anos 70, o Shag é todo repicado. Combinado com a franja cortininha (Curtain Bangs), ele emoldura o rosto e traz uma atitude moderna e despojada às ondas.",
+                tip: "Aplique um mousse leve nas camadas repicadas para dar fixação e textura.",
+                image: "/assets/surfer-shag.webp"
+              },
+              {
+                title: "4. Corte em 'V' para Ondulados Pesados",
+                description: "Se você gosta de pontas bem afinadas e um visual que alonga a silhueta, o corte em V é a escolha certa. Ele direciona o balanço das ondas para o centro das costas.",
+                tip: "Finalize com um óleo nutritivo nas pontas para evitar o ressecamento comum nesse tipo de corte.",
+                image: "/assets/corte-para-cabelo-ondulado.webp"
+              },
+              {
+                title: "5. Rotina Noturna: O Truque da Meia",
+                description: "Para manter as ondas sem frizz e sem amassados ao acordar, use a técnica do 'coque abacaxi' ou enrole mechas em uma meia de seda antes de dormir.",
+                tip: "Isso preserva a forma das ondas e reduz a necessidade de usar calor no dia seguinte.",
+                image: "/assets/penteado-cacheado.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O cabelo ondulado longo precisa de 'respiro' entre as camadas. Se o corte for muito reto, as ondas perdem a força. O segredo para o ondulado perfeito é nunca cortar a base de forma 100% estática. Peça sempre por um leve desfiado nas pontas para garantir o balanço."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'wave-serum-gold', name: "Sérum Shine & Wave", desc: "Brilho instantâneo e proteção térmica para ondas longas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'volume-mousse-luxe', name: "Mousse de Volume Royal", desc: "Sustentação para o Butterfly Cut sem deixar o fio pesado.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-ondulado-curto-cortes-praticidade': {
       title: 'Cabelo Ondulado e Curto: 5 Cortes de Puro Charme',
       subtitle: 'Quem disse que ondulado não combina com curto? Veja os cortes que valorizam a textura e trazem praticidade ao dia a dia.',
