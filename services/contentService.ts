@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'corte-americano-liso-textura',
+          title: 'Corte Americano com Textura em Cabelo Liso: 5 Estilos Modernos',
+          excerpt: 'Saia do liso chapado. Veja como o corte americano pode ganhar textura, movimento e atitude com as técnicas certas.',
+          imageUrl: '/assets/fringe-fade.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'corte-americano-masculino-liso-texturizado',
+          category: 'Cabelo'
+        },
+        {
           id: 'corte-americano-liso-pixie',
           title: 'Corte Americano em Cabelo Liso: 5 Variações para o Look Curto',
           excerpt: 'Do Pixie com Taper ao Bowl Cut moderno, veja como o estilo americano redefine o cabelo curto feminino.',

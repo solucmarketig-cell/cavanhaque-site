@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'corte-americano-masculino-liso-texturizado': {
+      title: 'Corte Americano com Textura em Cabelo Liso: 5 Estilos Modernos',
+      subtitle: 'Saia do liso chapado. Veja como o corte americano pode ganhar textura, movimento e atitude com as técnicas certas.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Cabelo',
+      image: '/assets/fringe-fade.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O maior desafio do <strong>cabelo liso masculino</strong> é o movimento. Sem a textura correta, o <strong>corte americano</strong> pode parecer muito estático ou pesado. Em 2026, a chave para um visual moderno é combinar a precisão do Taper Fade nas laterais com técnicas de corte que tragam "camadas desconectadas" e volume ao topo, criando um estilo dinâmico e cheio de atitude.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pó Texturizador Matte", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Cera de Argila (Clay)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Dentes Largos", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Variantes Texturizadas do Estilo Americano</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Fringe Fade (Franja com Degradê)",
+                description: "O topo é cortado com tesoura de desbaste para criar mechas de comprimentos variados, resultando em uma franja texturizada que cai sobre a testa. O contraste com o Taper Fade lateral limpa o visual e foca a atenção no rosto.",
+                tip: "Use o pó texturizador diretamente na franja e amasse com os dedos para um efeito 'bagunçado' proposital.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "2. Textured Crop Americano",
+                description: "Um corte curto no topo, mas com muita textura. É a evolução do clássico Cesar, mas com as laterais em degradê americano suave. Ideal para quem busca praticidade sem abrir mão do estilo.",
+                tip: "Finalize com cera matte para dar definição a cada pequena mecha do topo.",
+                image: "/assets/cesar-moderno.webp"
+              },
+              {
+                title: "3. Mule Americano Moderno",
+                description: "Uma versão contemporânea onde a nuca é levemente mais longa, mas as costeletas possuem o Taper Fade clássico. O topo liso é texturizado para dar volume e um ar rebelde sofisticado.",
+                tip: "Peça ao barbeiro para usar a técnica de 'point cutting' para pontas mais desfiadas.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "4. Americano com Topo Desconectado",
+                description: "O degradê lateral não se conecta suavemente com o topo, criando uma linha de peso que traz agressividade e modernidade ao visual liso.",
+                tip: "Penteie para a frente ou para cima para destacar o contraste do corte.",
+                image: "/assets/undercut.webp"
+              },
+              {
+                title: "5. Técnicas de Finalização",
+                description: "Cabelos lisos pedem produtos secos (matte). O excesso de brilho pode evidenciar a oleosidade e 'pesar' os fios, tirando o efeito da textura criada no corte.",
+                tip: "Evite géis comuns. Prefira ceras de argila que oferecem fixação forte sem brilho.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Se você tem cabelo liso e quer textura, peça para seu barbeiro usar a tesoura de dente (desfiadeira) apenas nas pontas. Isso cria espaços entre os fios, permitindo que o ar circule e o produto de finalização 'segure' as mechas em direções diferentes, tirando aquele aspecto chapado."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'clay-wax-pro', name: "Cera de Argila Matte", desc: "Fixação extrema e textura seca para fios lisos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'volume-powder-viking', name: "Pó Volumizador Viking", desc: "O segredo para manter o topo alto e texturizado o dia todo.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'corte-americano-feminino-liso-moderno': {
       title: 'Corte Americano em Cabelo Liso: 5 Variações para o Look Curto',
       subtitle: 'Do Pixie com Taper ao Bowl Cut moderno, veja como o estilo americano redefine o cabelo curto feminino.',
