@@ -113,7 +113,8 @@ const articles = [
   'wolf-cut-masculino-tendencia',
   'penteados-infantis-cabelo-cacheado',
   'penteado-cabelo-cacheado-infantil',
-  'corte-para-cabelo-cacheado-masculino'
+  'corte-para-cabelo-cacheado-masculino',
+  'cabelo-liso-feminino-guia'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

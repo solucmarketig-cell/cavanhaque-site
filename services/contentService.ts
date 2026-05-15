@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-liso-feminino',
+          title: 'Cabelo Liso: O Guia Absoluto de Cuidados, Cortes e Brilho',
+          excerpt: 'Descubra como manter seus fios lisos impecáveis. Dos melhores cortes que dão movimento até o segredo do brilho espelhado.',
+          imageUrl: '/assets/cabelo-liso-guia.png',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-liso-feminino-guia',
+          category: 'Cabelo'
+        },
+        {
           id: 'ozonio-1',
           title: 'Ozonioterapia Capilar: A Nova Fronteira do Tratamento para Queda e Saúde dos Fios',
           excerpt: 'Descubra como a ozonioterapia capilar pode acelerar o crescimento, combater a queda e revitalizar profundamente a saúde do seu couro cabeludo.',

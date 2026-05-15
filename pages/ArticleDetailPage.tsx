@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-liso-feminino-guia': {
+      title: 'Cabelo Liso: O Guia Absoluto de Cuidados, Cortes e Brilho',
+      subtitle: 'Descubra como manter seus fios lisos impecáveis. Dos melhores cortes que dão movimento até o segredo do brilho espelhado.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Cabelo',
+      image: '/assets/loiro-escuro.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo liso</strong> é sinônimo de elegância atemporal e praticidade. No entanto, engana-se quem pensa que fios lisos não exigem cuidados específicos para manter a saúde e o movimento. O excesso de oleosidade na raiz e as pontas espigadas são desafios comuns que podem ser resolvidos com a rotina certa.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Protetor Térmico Spray", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Shampoo Detox para Raiz", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Óleo Finalizador de Brilho", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Guia de Cortes e Cuidados para Cabelo Liso</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. O Blunt Cut Perfeito (Corte Reto)",
+                description: "O corte reto, sem camadas, é a maior tendência para 2026. Ele traz uma sensação de fios mais encorpados e densos, sendo a escolha ideal para quem busca um visual moderno, 'clean' e minimalista.",
+                tip: "Peça ao seu cabeleireiro para fazer o corte com a tesoura a fio laser para garantir a precisão milimétrica nas pontas.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "2. Camadas Invisíveis para Movimento",
+                description: "Para quem tem muito volume e sente o cabelo 'pesado', as camadas internas são a solução. Elas removem o peso sem alterar o comprimento visual, permitindo que os fios balancem com naturalidade a cada passo.",
+                tip: "Evite camadas muito curtas no topo para não criar o efeito 'ouriçado' indesejado em dias úmidos.",
+                image: "/assets/french-crop.webp"
+              },
+              {
+                title: "3. Curtain Bangs (Franja Cortininha)",
+                description: "A franja que emoldura o rosto de forma suave. No cabelo liso, ela traz um ar romântico e ajuda a equilibrar as proporções do rosto, tirando a monotonia do liso chapado.",
+                tip: "Use uma escova redonda grande e o secador direcionado para fora para dar o caimento perfeito às pontas da franja.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "4. Penteado Slicked Back Polido",
+                description: "O look de passarela: todo o cabelo penteado para trás com efeito ultra polido. É o penteado perfeito para eventos formais onde você quer transmitir poder e sofisticação.",
+                tip: "Aplique um pouco de pomada de fixação leve na raiz e use um pente fino para criar as linhas de direção perfeitas.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "5. Ritual de Brilho Espelhado",
+                description: "Fios lisos têm a vantagem de refletir a luz com mais facilidade. Um cronograma focado em selagem das cutículas e hidratação profunda é o segredo para aquele brilho que parece um espelho.",
+                tip: "Termine o banho sempre com um jato de água fria. Isso fecha as escamas do fio instantaneamente, potencializando o brilho natural.",
+                image: "/assets/ivy-league.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O maior erro de quem tem cabelo liso é usar produtos muito pesados 'para baixar o volume'. Isso só deixa o fio sem vida e oleoso mais rápido. Menos é mais: use produtos em spray ou texturas leves, e foque a nutrição apenas do meio para as pontas."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'thermal-protect', name: "Protetor Térmico Lumina", desc: "Escudo invisível contra o calor do secador e chapinha.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'shine-oil', name: "Óleo Finalizador Glow", desc: "Brilho instantâneo sem pesar nos fios finos.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'corte-americano-cabelo-cacheado-feminino': {
       title: "Corte Americano Feminino: A Tendência do Fade para Cacheadas",
       subtitle: "Descubra como o clássico 'Taper Fade' se adaptou ao universo feminino, trazendo modernidade e destaque para os cachos.",
