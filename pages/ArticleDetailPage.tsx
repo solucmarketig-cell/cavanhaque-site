@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'penteado-em-cabelo-crespo-elegancia-estilo': {
+      title: 'Penteado em Cabelo Crespo: 5 Estilos de Puro Charme',
+      subtitle: 'Do Afro Puff aos Bantu Knots, descubra penteados que valorizam a textura crespa com elegância e criatividade.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '13 min',
+      category: 'Cabelo',
+      image: '/assets/penteado-cacheado.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Realizar um <strong>penteado em cabelo crespo</strong> é uma oportunidade de celebrar a versatilidade e a estrutura única dos fios tipo 4. Diferente de outras texturas, o crespo oferece uma sustentação natural que permite criar volumes arquitetônicos e designs geométricos sem a necessidade de muitos acessórios. Em 2026, os penteados crespos unem modernidade com referências ancestrais.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Gelatina Modeladora Vegana", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Escova de Cerdas Macias (Baby Hair)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Grampos de Aço Reforçados", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Estilos Criativos para Fios Crespos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Afro Puff Clássico",
+                description: "O penteado favorito pela sua praticidade e impacto. Consiste em prender todo o cabelo no topo da cabeça, deixando o volume livre. No crespo, o puff ganha uma forma arredondada perfeita.",
+                tip: "Use uma faixa de tecido ou um cadarço largo para prender sem quebrar os fios.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "2. Bantu Knots (Coques Bantu)",
+                description: "Pequenos coques enrolados por toda a cabeça ou em seções estratégicas. Além de ser um penteado com forte carga cultural, ele pode ser usado para texturizar o cabelo após solto.",
+                tip: "Aplique um pouco de óleo nas divisões do couro cabeludo para um visual mais limpo e brilhante.",
+                image: "/assets/cabelo-crespo.webp"
+              },
+              {
+                title: "3. Space Buns Crespos",
+                description: "Dois puffs laterais que trazem um ar divertido e jovial. O crespo garante que os coques fiquem bem cheios e volumosos sem precisar de preenchimento artificial.",
+                tip: "Estilize o baby hair na testa para dar um acabamento mais polido e moderno ao visual.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "4. Coque Baixo Sleek Hair",
+                description: "Ideal para casamentos ou eventos formais. A raiz é bem esticada com gelatina, e o volume crespo é preso na nuca de forma compacta ou em um puff baixo.",
+                tip: "Use uma escova de cerdas macias para assentar os fios da raiz sem causar tração excessiva.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Penteado Semipreso com Twists",
+                description: "Faça twists na parte frontal e prenda-os para trás, deixando o restante do volume solto. Une a definição do twist com a potência do volume natural.",
+                tip: "Finalize as pontas dos twists com um pouco de creme para evitar que desmanchem.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O segredo para qualquer penteado em cabelo crespo durar mais é a preparação. Nunca tente fazer um penteado esticado com o cabelo totalmente seco e sem produto. Uma boa gelatina ou mousse é essencial para dar o acabamento 'sleek' e manter cada fio no seu devido lugar."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'gelatina-pro-crespo', name: "Gelatina Alta Definição", desc: "Fixação que não resseca e garante brilho aos penteados.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'baby-hair-brush', name: "Escova de Acabamento Luxe", desc: "A ferramenta ideal para desenhar o baby hair com precisão.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cortes-cabelo-crespo-masculino-profissionais-executivos': {
       title: 'Cortes para Cabelo Crespo Masculino: 5 Opções para Profissionais',
       subtitle: 'Conheça os cortes clássicos e discretos que valorizam o cabelo crespo masculino no ambiente corporativo e eventos formais.',

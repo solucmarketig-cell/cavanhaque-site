@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'penteado-crespo-elegancia',
+          title: 'Penteado em Cabelo Crespo: 5 Estilos de Puro Charme',
+          excerpt: 'Do Afro Puff aos Bantu Knots, descubra penteados que valorizam a textura crespa com elegância e criatividade.',
+          imageUrl: '/assets/penteado-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteado-em-cabelo-crespo-elegancia-estilo',
+          category: 'Cabelo'
+        },
+        {
           id: 'cortes-crespo-profissional',
           title: 'Cortes para Cabelo Crespo Masculino: 5 Opções para Profissionais',
           excerpt: 'Conheça os cortes clássicos e discretos que valorizam o cabelo crespo masculino no ambiente corporativo e eventos formais.',
