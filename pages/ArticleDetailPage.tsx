@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cortes-cabelo-curto-feminino-cacheado-estilos': {
+      title: 'Cortes de Cabelo Curto Feminino Cacheado: 5 Estilos que Valorizam os Caracóis',
+      subtitle: 'Valorize a textura dos seus cachos com cortes curtos que trazem volume, leveza e muita personalidade ao visual.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '13 min',
+      category: 'Cabelo',
+      image: '/assets/corte-americano-feminino-cacheado.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Escolher um dos muitos <strong>cortes de cabelo curto feminino cacheado</strong> disponíveis hoje é mergulhar em um mundo de liberdade e autenticidade. Diferente dos fios lisos, o curto cacheado brinca com o volume e a geometria, permitindo que cada cacho se torne um elemento de design no visual. Em 2026, a tendência é abraçar o volume natural e usar camadas para dar forma e balanço aos fios.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Ativador de Cachos Nutritivo", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Difusor de Ar Universal", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo de Coco Finalizador", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Volume e Forma: Curtos Poderosos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Corte Coração (Heart-shaped)",
+                description: "Como o nome sugere, este corte cria um formato de coração ao deixar mais volume no topo e camadas arredondadas nas laterais. É perfeito para equilibrar rostos angulares e dar destaque total à textura dos cachos.",
+                tip: "Finalize amassando bem os fios de baixo para cima para garantir que o volume lateral fique simétrico.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "2. Tapered Cut Cacheado",
+                description: "Foca na nuca e laterais bem curtas, quase em degradê, com todo o volume concentrado no topo da cabeça. É um corte extremamente moderno, fresco e que exala atitude e praticidade.",
+                tip: "Use um gel de fixação média no topo para garantir que os cachos fiquem definidos e altos o dia todo.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "3. Curly Bob Desfiado",
+                description: "A versão cacheada do bob tradicional, mas com pontas desfiadas para evitar o efeito 'pirâmide'. As camadas distribuem o volume de forma harmoniosa ao redor do rosto, criando um visual leve e jovial.",
+                tip: "Peça ao seu cabeleireiro para cortar os fios a seco para prever exatamente onde cada cacho vai cair.",
+                image: "/assets/cabelo-cacheado.webp"
+              },
+              {
+                title: "4. Shaggy Hair Cacheado",
+                description: "Inspirado no estilo rock n' roll, o shaggy curto foca em muitas camadas e uma franja cacheada. O resultado é um visual com muito movimento, perfeito para quem quer um estilo mais 'rebelde' e moderno.",
+                tip: "Não tenha medo da franja cacheada! Ela ajuda a emoldurar o rosto e traz um charme extra ao corte.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Micro Curls com Laterais Batidas",
+                description: "Ideal para quem tem cachos menores e mais fechados (tipo 3C ou 4A). As laterais mais baixas destacam a delicadeza dos cachos menores no topo, criando um visual sofisticado e clean.",
+                tip: "Mantenha o couro cabeludo bem hidratado, pois ele fica mais exposto nesse tipo de corte.",
+                image: "/assets/cabelo-crespo.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O maior erro ao cortar o cabelo cacheado curto é cortá-lo molhado. O 'fator encolhimento' pode transformar um bob em um pixie em segundos! Procure sempre um especialista em cachos que utilize a técnica de corte a seco. E lembre-se: cachos curtos amam difusor para ganhar volume extra!"
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'curl-activator-luxe', name: "Ativador de Cachos Gold", desc: "Definição máxima com proteção térmica para secagem com difusor.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'diffuser-universal-pro', name: "Difusor Expert 360", desc: "Secagem rápida que preserva a forma natural do cacho.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-curto-feminino-profissional-elegante': {
       title: 'Cabelo Curto Feminino: 5 Opções para um Visual Profissional',
       subtitle: 'Descubra como o cabelo curto feminino pode transmitir autoridade e elegância no ambiente de trabalho com cortes clássicos e polidos.',

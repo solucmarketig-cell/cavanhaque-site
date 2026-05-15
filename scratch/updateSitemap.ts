@@ -142,7 +142,8 @@ const articles = [
   'shampoo-para-cabelo-ressecado-escolha-lavagem',
   'oleo-para-cabelo-ressecado-nutricao-selagem',
   'corte-de-cabelo-curto-feminino-estilos-modernos',
-  'cabelo-curto-feminino-profissional-elegante'
+  'cabelo-curto-feminino-profissional-elegante',
+  'cortes-cabelo-curto-feminino-cacheado-estilos'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

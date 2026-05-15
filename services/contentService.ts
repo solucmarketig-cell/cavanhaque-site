@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cortes-curto-cacheado',
+          title: 'Cortes de Cabelo Curto Feminino Cacheado: 5 Tendências',
+          excerpt: 'Valorize a textura dos seus cachos com cortes curtos que trazem volume, leveza e muita personalidade ao visual.',
+          imageUrl: '/assets/corte-americano-feminino-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cortes-cabelo-curto-feminino-cacheado-estilos',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-curto-executivo',
           title: 'Cabelo Curto Feminino: 5 Opções para Profissionais',
           excerpt: 'Descubra como o cabelo curto feminino pode transmitir autoridade e elegância no ambiente de trabalho com cortes clássicos e polidos.',
