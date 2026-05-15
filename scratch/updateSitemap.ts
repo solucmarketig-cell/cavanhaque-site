@@ -137,7 +137,8 @@ const articles = [
   'cortes-cabelo-crespo-masculino-tendencias-artisticas',
   'penteado-cabelo-crespo-trancas-protetores',
   'cabelo-ressecado-guia-resgate-nutricao',
-  'hidratacao-caseira-cabelo-ressecado-receitas'
+  'hidratacao-caseira-cabelo-ressecado-receitas',
+  'hidratacao-para-cabelo-ressecado-tecnicas-ativos'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

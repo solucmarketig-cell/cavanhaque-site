@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'hidratacao-ressecado-tecnicas',
+          title: 'Hidratação para Cabelo Ressecado: Técnicas e Ativos',
+          excerpt: 'Descubra como escolher os melhores ativos e as técnicas de enluvamento que garantem uma hidratação profunda para fios ressecados.',
+          imageUrl: '/assets/cabelo-ondulado-definicao.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'hidratacao-para-cabelo-ressecado-tecnicas-ativos',
+          category: 'Cabelo'
+        },
+        {
           id: 'hidratacao-caseira-ressecado',
           title: 'Hidratação Caseira para Cabelo Ressecado: 5 Receitas Incríveis',
           excerpt: 'Transforme ingredientes da sua cozinha em tratamentos de luxo. Veja as melhores receitas caseiras para resgatar fios desidratados.',

@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'hidratacao-para-cabelo-ressecado-tecnicas-ativos': {
+      title: 'Hidratação para Cabelo Ressecado: Técnicas e Ativos que Transformam os Fios',
+      subtitle: 'Descubra como escolher os melhores ativos e as técnicas de enluvamento que garantem uma hidratação profunda para fios ressecados.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '13 min',
+      category: 'Cabelo',
+      image: '/assets/cabelo-ondulado-definicao.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Uma <strong>hidratação para cabelo ressecado</strong> verdadeiramente eficaz vai além de apenas aplicar um creme nos fios durante o banho. Ela exige a escolha correta de ativos umectantes e a aplicação de técnicas que garantam a penetração desses nutrientes no córtex capilar. Em 2026, a ciência capilar nos mostra que a forma como você massageia o fio é tão importante quanto o produto que você utiliza.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Máscara com Pantenol e Vitamina B5", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Ampola de Hidratação Instantânea", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Touca Térmica Metalizada", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Técnicas de Alta Performance para Fios Sedentos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Entendendo os Ativos Umectantes",
+                description: "Para hidratar (devolver água), procure por produtos que contenham Pantenol, Glicerina, Aloe Vera ou Extratos Vegetais. Esses componentes atraem e prendem as moléculas de água dentro da fibra capilar.",
+                tip: "Fuja de produtos com excesso de óleos se o seu objetivo principal for a fase de hidratação pura do cronograma.",
+                image: "/assets/cabelo-ondulado-definicao.webp"
+              },
+              {
+                title: "2. Técnica de Enluvamento Profissional",
+                description: "Separe o cabelo em mechas finas e deslize as mãos repetidamente (de 10 a 15 vezes) de cima para baixo. O calor gerado pelo atrito e a massagem ajudam a máscara a penetrar nas escamas abertas pelo shampoo.",
+                tip: "O enluvamento deve ser firme, mas nunca agressivo, para não causar quebra nos fios fragilizados.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "3. Hidratação com Vapor (Vaporização)",
+                description: "O uso de uma touca térmica ou até mesmo o vapor do próprio chuveiro ajuda a dilatar as cutículas de forma suave. Isso permite que os ativos de baixo peso molecular entrem profundamente no fio ressecado.",
+                tip: "Deixe o vapor agir por 5 a 10 minutos antes de enxaguar com água fria para selar.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "4. Potencialização com Ampolas",
+                description: "As ampolas de hidratação possuem alta concentração de ativos e efeito instantâneo. Elas são perfeitas para aqueles dias em que você não tem tempo para o cronograma completo, mas precisa de um resultado visual imediato.",
+                tip: "Misture a ampola diretamente na sua máscara favorita para criar um tratamento 'super-charged'.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. A Importância do Leave-in com Proteção UV",
+                description: "O sol é um dos maiores vilões do cabelo ressecado. Após a hidratação, finalize com um leave-in que contenha filtro solar para impedir que a radiação evapore a água que você acabou de repor.",
+                tip: "Aplique o leave-in no cabelo ainda bem úmido para distribuir melhor o produto e selar a hidratação.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Hidratação é o primeiro passo para qualquer cabelo bonito. Se o seu fio estiver ressecado, ele não terá elasticidade para aguentar nutrição ou reconstrução. Pense na hidratação como a base da pirâmide capilar. Sem água, o fio quebra; com água, ele brilha e tem balanço."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'panthenol-boost-luxe', name: "Máscara Panthenol Max", desc: "Concentração máxima de vitamina B5 para hidratação extrema.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'uv-shield-leavein', name: "Leave-in Hydra Shield UV", desc: "Proteção solar e selagem térmica para prolongar o brilho.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'hidratacao-caseira-cabelo-ressecado-receitas': {
       title: 'Hidratação Caseira para Cabelo Ressecado: 5 Receitas de Salão em Casa',
       subtitle: 'Transforme ingredientes da sua cozinha em tratamentos de luxo. Veja as melhores receitas caseiras para resgatar fios desidratados.',
