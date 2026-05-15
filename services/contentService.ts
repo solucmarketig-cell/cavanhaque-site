@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'penteado-simples-sozinha',
+          title: 'Penteado Simples para Fazer Sozinha: 5 Ideias Rápidas',
+          excerpt: 'Sem tempo? Aprenda 5 penteados simples e encantadores que você pode fazer sozinha em poucos minutos para qualquer ocasião.',
+          imageUrl: '/assets/penteado-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteado-simples-para-fazer-sozinha-rapido',
+          category: 'Penteados'
+        },
+        {
           id: 'cortes-curto-cacheado',
           title: 'Cortes de Cabelo Curto Feminino Cacheado: 5 Tendências',
           excerpt: 'Valorize a textura dos seus cachos com cortes curtos que trazem volume, leveza e muita personalidade ao visual.',

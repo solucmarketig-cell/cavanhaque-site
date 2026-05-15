@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'penteado-simples-para-fazer-sozinha-rapido': {
+      title: 'Penteado Simples para Fazer Sozinha: 5 Opções Rápidas',
+      subtitle: 'Sem tempo? Aprenda 5 penteados simples e encantadores que você pode fazer sozinha em poucos minutos para qualquer ocasião.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '10 min',
+      category: 'Penteados',
+      image: '/assets/penteado-cacheado.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Dominar um <strong>penteado simples para fazer sozinha</strong> é o segredo para estar sempre bem apresentável, mesmo naqueles dias de correria absoluta. Muitas vezes, pequenos truques com acessórios e elásticos podem transformar um cabelo comum em um visual digno de salão. Em 2026, a tendência 'effortless' (sem esforço) valoriza penteados que parecem naturais, mas possuem um toque de sofisticação.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Grampos Invisíveis", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Elásticos de Silicone Transparentes", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Fixador de Brilho Instantâneo", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Penteados Express: Beleza em Minutos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Semipreso com Torcidinho Lateral",
+                description: "Pegue duas mechas frontais, torça-as para trás e prenda com um grampo invisível ou um pequeno elástico. É o penteado mais rápido do mundo para tirar o cabelo do rosto com elegância.",
+                tip: "Afrouxe levemente os torcidinhos para um visual mais romântico e volumoso.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "2. Coque Baixo Despojado com Lenço",
+                description: "Faça um rabo de cavalo baixo, enrole em um coque frouxo e amarre um lenço colorido por cima. O acessório esconde as imperfeições e traz um ar fashionista instantâneo.",
+                tip: "Deixe algumas mechas soltas na frente para emoldurar o rosto.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "3. Bubble Braid (Trança de Bolhas)",
+                description: "Uma alternativa moderna para quem não sabe trançar. Basta fazer um rabo de cavalo e colocar elásticos a cada 3 ou 4 centímetros, 'inflando' cada seção para criar as bolhas.",
+                tip: "Use elásticos da cor do seu cabelo para um acabamento mais profissional.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "4. Rabo de Cavalo 'Double Pony'",
+                description: "Faça dois rabos de cavalo, um em cima do outro. O rabo de cima esconde a base do de baixo, criando a ilusão de um rabo de cavalo único muito mais longo e volumoso.",
+                tip: "Ideal para quem tem cabelos finos ou médios.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Topete 'Sleek' com Cabelo Solto",
+                description: "Penteie a parte frontal do cabelo para trás com um pouco de gel ou pomada e prenda no topo. Deixe o restante do cabelo solto e liso ou ondulado. É um visual clássico de tapete vermelho.",
+                tip: "Use uma escova de cerdas macias para deixar o topo perfeitamente assentado e sem frizz.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O segredo para um penteado feito sozinha durar o dia todo é a preparação. Aplique um pouco de shampoo seco ou spray de textura nos fios secos antes de começar; isso dá 'aderência' ao cabelo, impedindo que os grampos e elásticos deslizem. E nunca subestime o poder de um bom acessório!"
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'bobby-pins-luxe', name: "Kit Grampos Pro-Hold", desc: "Grampos que não marcam e possuem fixação extra forte.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'silicone-bands-mini', name: "Elásticos Invisíveis Soft", desc: "Não quebram o fio e são ideais para penteados delicados.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cortes-cabelo-curto-feminino-cacheado-estilos': {
       title: 'Cortes de Cabelo Curto Feminino Cacheado: 5 Estilos que Valorizam os Caracóis',
       subtitle: 'Valorize a textura dos seus cachos com cortes curtos que trazem volume, leveza e muita personalidade ao visual.',
