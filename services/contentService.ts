@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cortes-liso-classico-masculino',
+          title: 'Cortes Masculinos em Cabelo Liso: 5 Opções para Profissionais',
+          excerpt: 'Da reunião de negócios ao evento social, conheça os cortes clássicos que valorizam o cabelo liso com elegância e seriedade.',
+          imageUrl: '/assets/side-swept.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'cortes-masculinos-cabelo-liso-classicos-profissionais',
+          category: 'Cabelo'
+        },
+        {
           id: 'cortes-liso-masculino-2026',
           title: 'Cortes de Cabelo Liso Masculino: As 5 Tendências para 2026',
           excerpt: 'Do Wolf Cut ao Ivy League, veja quais cortes vão dominar as ruas e como estilizar fios lisos com perfeição.',

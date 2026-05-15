@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cortes-masculinos-cabelo-liso-classicos-profissionais': {
+      title: 'Cortes Masculinos em Cabelo Liso: 5 Opções para Profissionais',
+      subtitle: 'Da reunião de negócios ao evento social, conheça os cortes clássicos que valorizam o cabelo liso com elegância e seriedade.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Cabelo',
+      image: '/assets/side-swept.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo liso masculino</strong> é a base ideal para cortes clássicos e executivos. Pela sua natureza alinhada, ele permite criar contornos precisos e penteados polidos que transmitem autoridade e profissionalismo. Em um ambiente corporativo ou eventos formais, o corte certo pode ser o diferencial na sua imagem pessoal.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pomada à Base de Água (Brilho Médio)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Bolso em Acetato", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Shampoo de Limpeza Equilibrada", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Clássicos Atemporais para Fios Lisos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Executive Contour (Contorno Executivo)",
+                description: "O corte de negócios por excelência. Laterais baixas na tesoura (ou degradê conservador) e topo médio penteado com uma risca lateral marcada. No liso, a definição da risca é absoluta.",
+                tip: "Use um pente de dentes finos para garantir que cada fio esteja em seu lugar antes da pomada secar.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "2. Side Swept Undercut",
+                description: "Uma versão moderna do clássico. Laterais em undercut (curtas) e o topo longo o suficiente para ser jogado totalmente para o lado. Une a praticidade do curto com a elegância do liso longo.",
+                tip: "Seque o topo direcionando o ar para a lateral desejada para 'acostumar' o fio ao penteado.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "3. Flat Top Social",
+                description: "Corte geométrico onde o topo é mantido reto. No cabelo liso e grosso, o Flat Top transmite uma imagem de ordem, disciplina e seriedade.",
+                tip: "Exige manutenção frequente (a cada 15 dias) para não perder a linha reta do topo.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "4. Scumbag Fade (Retro Chic)",
+                description: "Inspirado nos anos 50, possui um degradê alto e o topo penteado com muito brilho e fixação. É o visual das barbearias tradicionais holandesas aplicado ao liso.",
+                tip: "Aplique a pomada com o cabelo generosamente úmido para obter o efeito 'molhado' clássico.",
+                image: "/assets/high-fade.webp"
+              },
+              {
+                title: "5. Corte Social Tradicional",
+                description: "O básico que nunca falha. Todo feito na tesoura, respeitando o caimento natural do liso. Ideal para quem prefere não usar máquina e busca um visual discreto.",
+                tip: "Ótimo para disfarçar entradas leves, pois o caimento lateral cobre as têmporas com naturalidade.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Para o homem profissional, o segredo do cabelo liso é o brilho saudável, não a oleosidade. Use pomadas à base de água que permitem o penteado sem deixar resíduos pesados. E nunca esqueça: um corte social clássico exige que a nuca esteja sempre limpa."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'business-pomade', name: "Pomada Executiva Shine", desc: "Brilho discreto e fixação que dura toda a jornada de trabalho.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'pocket-comb-pro', name: "Pente de Bolso Premium", desc: "Mantenha o penteado alinhado em qualquer lugar.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cortes-cabelo-liso-masculino-tendencias-2026': {
       title: 'Cortes de Cabelo Liso Masculino: As 5 Tendências para 2026',
       subtitle: 'Do Wolf Cut ao Ivy League, veja quais cortes vão dominar as ruas e como estilizar fios lisos com perfeição.',

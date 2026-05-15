@@ -121,7 +121,8 @@ const articles = [
   'penteado-em-cabelo-liso-feminino-guia',
   'corte-americano-feminino-liso-moderno',
   'corte-americano-masculino-liso-texturizado',
-  'cortes-cabelo-liso-masculino-tendencias-2026'
+  'cortes-cabelo-liso-masculino-tendencias-2026',
+  'cortes-masculinos-cabelo-liso-classicos-profissionais'
 ];
 
 const baseUrl = 'https://cavanhaque.com';
