@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'corte-americano-masculino-liso',
+          title: 'Corte Americano em Cabelo Liso Masculino: O Guia do Taper Perfeito',
+          excerpt: 'Domine a técnica do Taper Fade em fios lisos. Saiba como pedir ao barbeiro e quais produtos usar para manter o visual impecável.',
+          imageUrl: '/assets/corte-americano.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'corte-americano-masculino-cabelo-liso-guia',
+          category: 'Cabelo'
+        },
+        {
           id: 'cortes-americanos-liso-feminino',
           title: 'Cortes Americanos em Cabelo Liso Feminino: O Guia da Ousadia',
           excerpt: 'O estilo "Americano" chegou com tudo para os fios lisos. Veja como o Taper Fade pode transformar seu visual com modernidade e atitude.',

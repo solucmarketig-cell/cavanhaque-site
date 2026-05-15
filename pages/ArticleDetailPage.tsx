@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'corte-americano-masculino-cabelo-liso-guia': {
+      title: 'Corte Americano em Cabelo Liso Masculino: O Guia do Taper Perfeito',
+      subtitle: 'Domine a técnica do Taper Fade em fios lisos. Saiba como pedir ao barbeiro e quais produtos usar para manter o visual impecável.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '10 min',
+      category: 'Cabelo',
+      image: '/assets/corte-americano.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>corte americano</strong> (ou Taper Fade) tornou-se a escolha padrão para o homem moderno que busca um visual limpo e de baixa manutenção. No <strong>cabelo liso</strong>, esse corte brilha especialmente pela facilidade de criar transições suaves e polidas, eliminando o volume excessivo das laterais sem a agressividade de um degradê total.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pó Texturizador de Volume", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Pomada à Base de Água", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Secador de Cabelo Profissional", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Como Dominar o Estilo Americano em Lisos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. O Taper Fade Clássico",
+                description: "O degradê é concentrado exclusivamente nas costeletas e na nuca. No cabelo liso, isso evita que as laterais fiquem 'espetadas' conforme o cabelo cresce, mantendo o contorno sempre limpo.",
+                tip: "Peça ao barbeiro um 'Low Taper' se você busca um visual mais conservador e elegante.",
+                image: "/assets/corte-americano.webp"
+              },
+              {
+                title: "2. Americano com Topete (Pompadour)",
+                description: "Combine o degradê lateral discreto com um topo volumoso. O cabelo liso permite criar topetes altos e polidos que se destacam pelo brilho e alinhamento dos fios.",
+                tip: "Use o secador direcionando o ar de baixo para cima para ganhar volume máximo na frente.",
+                image: "/assets/pompadour-fade.webp"
+              },
+              {
+                title: "3. Fade Navalhado Local",
+                description: "Para um visual mais 'agressivo', a base do taper pode ser feita na navalha. Isso traz uma sensação de limpeza extrema ao redor das orelhas, ideal para quem usa óculos.",
+                tip: "Mantenha a pele hidratada após o corte para evitar irritações na área navalhada.",
+                image: "/assets/high-fade.webp"
+              },
+              {
+                title: "4. Slick Back com Taper",
+                description: "Todo o cabelo é penteado para trás, e o taper lateral remove o peso que costuma incomodar acima das orelhas. É o equilíbrio perfeito entre o clássico e o moderno.",
+                tip: "Aplique a pomada com o cabelo levemente úmido para um controle total da direção dos fios.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "5. Manutenção em Casa",
+                description: "Cabelos lisos mostram o crescimento mais rápido. Aprenda a limpar o contorno da nuca em casa para estender a vida útil do seu corte americano.",
+                tip: "Use um espelho de mão para conferir a simetria do 'pezinho' atrás das orelhas.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "No cabelo liso, o Taper Fade é um jogo de sombras. Se o barbeiro não souber trabalhar o pente e a tesoura, o degrau vai aparecer. Procure profissionais que dominem a técnica 'scissor over comb' (tesoura sobre o pente) para um acabamento superior."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'texture-powder-pro', name: "Pó Volumizador Extreme", desc: "Acaba com o aspecto escorrido do liso instantaneamente.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'shine-pomade-viking', name: "Pomada Viking High Shine", desc: "Fixação e brilho para penteados clássicos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cortes-americanos-cabelo-liso-feminino': {
       title: 'Cortes Americanos em Cabelo Liso Feminino: O Guia da Ousadia',
       subtitle: 'O estilo "Americano" chegou com tudo para os fios lisos. Veja como o Taper Fade pode transformar seu visual com modernidade e atitude.',
