@@ -129,7 +129,8 @@ const articles = [
   'cabelo-ondulado-guia-definicao-frizz',
   'cabelo-ondulado-masculino-cortes-textura',
   'cabelo-ondulado-curto-cortes-praticidade',
-  'cabelo-ondulado-feminino-cortes-volume-balanco'
+  'cabelo-ondulado-feminino-cortes-volume-balanco',
+  'cabelo-crespo-guia-cuidados-volume'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-crespo-guia-cuidados-volume': {
+      title: 'Cabelo Crespo: Guia de Cuidados, Hidratação e Volume',
+      subtitle: 'Aprenda a valorizar a potência do seu crespo com técnicas de hidratação profunda e finalizações que celebram o volume.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '15 min',
+      category: 'Cabelo',
+      image: '/assets/cabelo-crespo.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo crespo</strong> é um símbolo de resistência e beleza. Caracterizado por curvaturas muito fechadas (Tipos 4A, 4B e 4C), ele possui uma estrutura única que exige cuidados específicos para manter a umidade e a saúde da fibra capilar. Em 2026, cuidar do crespo significa celebrar o volume, entender a porosidade e utilizar técnicas que realçam a textura natural sem agressões.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Manteiga de Karité Pura", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo de Rícino Fortificante", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Pente Garfo de Metal", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Protocolo de Alta Performance para Crespos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Identificando 4A, 4B e 4C",
+                description: "O 4A possui cachos pequenos e definidos; o 4B tem formato em 'Z' e mais encolhimento; o 4C é o mais frágil e sem definição natural, mas com um volume incrível. Identificar o seu ajuda a escolher o peso certo dos produtos.",
+                tip: "Crespos 4C amam produtos à base de manteigas densas, enquanto 4A se dão bem com cremes de consistência média.",
+                image: "/assets/cabelo-crespo.webp"
+              },
+              {
+                title: "2. Método LOC (Líquido, Óleo, Creme)",
+                description: "A técnica infalível para reter umidade. Primeiro, umedeça com água ou spray hidratante (L), sele com um óleo vegetal (O) e finalize com um creme de pentear ou manteiga (C). Isso cria uma barreira protetora duradoura.",
+                tip: "Use o método LOC após a lavagem para garantir que o cabelo não resseque ao longo da semana.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "3. Pente Garfo e o Volume Black",
+                description: "Para ganhar volume sem desmanchar a textura, use o pente garfo apenas na raiz. Insira o pente e puxe levemente para cima. Isso solta o cabelo do couro cabeludo e cria o efeito Black Power.",
+                tip: "Nunca passe o pente garfo até as pontas para não quebrar o fio e gerar frizz desnecessário.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "4. Umectação Noturna com Óleo de Rícino",
+                description: "Cabelos crespos amam nutrição. Aplique óleo de rícino ou coco em todo o cabelo seco antes de dormir. Lave apenas no dia seguinte. Isso devolve a elasticidade e o brilho que o crespo perde naturalmente.",
+                tip: "Proteja os fios com uma touca de cetim para que o óleo não manche o travesseiro e a hidratação seja potencializada.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "5. Finalização: Dedoliss vs Twists",
+                description: "Se busca definição extrema, o Dedoliss (enrolar mecha por mecha no dedo) é ideal. Se busca controle e redução de encolhimento, os Twists (tranças de duas mechas) são a melhor escolha para o dia a dia.",
+                tip: "Ao soltar os twists, use um pouco de óleo nas mãos para evitar que o atrito gere frizz.",
+                image: "/assets/fringe-fade.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O maior erro no cuidado com o crespo é a falta de paciência com o 'fator encolhimento'. Aceite que seu cabelo é uma mola! Se você quer comprimento, foque em técnicas de esticamento (como o banding), mas nunca abra mão da hidratação pesada. O crespo saudável é aquele que brilha e tem elasticidade."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'shea-butter-luxe', name: "Manteiga de Karité Orgânica", desc: "Nutrição pesada para selar as cutículas do tipo 4.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'viking-oil-crespo', name: "Mix de Óleos Nutritivos", desc: "A combinação perfeita para umectação e brilho intenso.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-ondulado-feminino-cortes-volume-balanco': {
       title: 'Cabelo Ondulado Feminino: Cortes para Volume e Balanço',
       subtitle: 'Do Butterfly Cut ao Shag moderno, descubra os cortes que transformam suas ondas em um visual de capa de revista.',

@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-crespo-guia',
+          title: 'Cabelo Crespo: Guia de Cuidados, Hidratação e Volume',
+          excerpt: 'Aprenda a valorizar a potência do seu crespo com técnicas de hidratação profunda e finalizações que celebram o volume.',
+          imageUrl: '/assets/cabelo-crespo.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-crespo-guia-cuidados-volume',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-ondulado-feminino-longo',
           title: 'Cabelo Ondulado Feminino: Cortes para Volume e Balanço',
           excerpt: 'Do Butterfly Cut ao Shag moderno, descubra os cortes que transformam suas ondas em um visual de capa de revista.',
