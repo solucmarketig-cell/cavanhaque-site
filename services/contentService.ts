@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'hidratacao-caseira-ressecado',
+          title: 'Hidratação Caseira para Cabelo Ressecado: 5 Receitas Incríveis',
+          excerpt: 'Transforme ingredientes da sua cozinha em tratamentos de luxo. Veja as melhores receitas caseiras para resgatar fios desidratados.',
+          imageUrl: '/assets/cabelo-ondulado-feminino.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'hidratacao-caseira-cabelo-ressecado-receitas',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-ressecado-resgate',
           title: 'Cabelo Ressecado: Guia de Resgate e Nutrição Profunda',
           excerpt: 'Dê adeus ao aspecto de palha. Aprenda as técnicas de reposição lipídica que devolvem o brilho e a maciez aos fios ressecados.',

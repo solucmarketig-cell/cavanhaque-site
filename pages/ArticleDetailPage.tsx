@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'hidratacao-caseira-cabelo-ressecado-receitas': {
+      title: 'Hidratação Caseira para Cabelo Ressecado: 5 Receitas de Salão em Casa',
+      subtitle: 'Transforme ingredientes da sua cozinha em tratamentos de luxo. Veja as melhores receitas caseiras para resgatar fios desidratados.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/cabelo-ondulado-feminino.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            A <strong>hidratação caseira para cabelo ressecado</strong> é uma excelente alternativa para manter os fios saudáveis entre as idas ao salão. Com ingredientes simples que você já tem na cozinha, é possível criar misturas potentes que devolvem a água, o brilho e a elasticidade aos fios. Em 2026, as receitas DIY (Do It Yourself) estão mais tecnológicas, focando no equilíbrio do pH e na absorção profunda dos ativos naturais.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Mel de Abelha Orgânico", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Azeite de Oliva Extra Virgem", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Glicerina Bi-destilada", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Receitas Potentes para Resgate Imediato</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Misturinha de Mel e Azeite (Nutrição Hídrica)",
+                description: "O mel é um umectante natural que atrai água, enquanto o azeite sela a cutícula. Misture 2 colheres de máscara, 1 de mel e 1 de azeite. Aplique nos fios úmidos e deixe agir por 20 minutos.",
+                tip: "Aqueça levemente o azeite antes de misturar para facilitar a penetração na fibra capilar.",
+                image: "/assets/cabelo-ondulado-feminino.webp"
+              },
+              {
+                title: "2. Glicerina e Água de Arroz (Brilho Espelhado)",
+                description: "A água de arroz é rica em aminoácidos, e a glicerina retém a umidade. Borrifar essa mistura antes de aplicar a máscara caseira potencializa o brilho e reduz o frizz drasticamente.",
+                tip: "Use essa receita apenas em dias de alta umidade para evitar que a glicerina 'roube' água do seu fio.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "3. Máscara de Babosa (Aloe Vera) Pura",
+                description: "O gel da babosa é um dos regeneradores mais potentes do mundo. Bata o gel no liquidificador com sua máscara favorita. Devolve a vida até aos cabelos mais porosos e ressecados.",
+                tip: "Remova bem a 'aloína' (líquido amarelo da casca) antes de extrair o gel para evitar irritações.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "4. Touca de Gesso com Amido de Milho",
+                description: "O famoso 'mingau' de maizena alinha os fios e reduz o volume excessivo causado pelo ressecamento. Misture o amido com água, leve ao fogo até engrossar e adicione à máscara.",
+                tip: "Aplique a mistura ainda morna para ajudar na abertura sutil das escamas e melhor absorção.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Selagem Final com Soro Fisiológico",
+                description: "O soro fisiológico possui um pH muito próximo ao do nosso cabelo. Usá-lo no último enxágue ajuda a fechar as cutículas, garantindo que todo o tratamento caseiro fique 'preso' dentro do fio.",
+                tip: "Mantenha o soro na geladeira; o jato frio ajuda ainda mais no brilho instantâneo.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "A hidratação caseira funciona melhor se você lavar bem o cabelo com shampoo antes, para remover resíduos de óleo e poluição. Lembre-se: ingredientes naturais são incríveis, mas a consistência é a chave. Faça pelo menos uma dessas receitas por semana e você verá seu cabelo ressecado se transformar em 30 dias."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'honey-mask-luxe', name: "Máscara Extrato de Mel", desc: "A praticidade do salão com o poder do mel natural.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'aloe-vera-gel-pro', name: "Gel de Aloe Vera 100% Puro", desc: "Regeneração profunda para fios porosos e sem vida.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-ressecado-guia-resgate-nutricao': {
       title: 'Cabelo Ressecado: Guia de Resgate e Nutrição Profunda',
       subtitle: 'Dê adeus ao aspecto de palha. Aprenda as técnicas de reposição lipídica que devolvem o brilho e a maciez aos fios ressecados.',
