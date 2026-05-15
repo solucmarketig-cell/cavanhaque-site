@@ -125,7 +125,8 @@ const articles = [
   'cortes-masculinos-cabelo-liso-classicos-profissionais',
   'como-cortar-cabelo-liso-guia-tecnico',
   'corte-cabelo-liso-masculino-medio-longo-estilo',
-  'como-deixar-o-cabelo-liso-guia-completo'
+  'como-deixar-o-cabelo-liso-guia-completo',
+  'cabelo-ondulado-guia-definicao-frizz'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

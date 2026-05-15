@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-ondulado-definicao',
+          title: 'Cabelo Ondulado: Guia de Definição e Controle de Frizz',
+          excerpt: 'Aprenda a valorizar suas ondas naturais com as técnicas certas de finalização e os produtos que não pesam nos fios.',
+          imageUrl: '/assets/corte-para-cabelo-ondulado.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-ondulado-guia-definicao-frizz',
+          category: 'Cabelo'
+        },
+        {
           id: 'como-deixar-liso-completo',
           title: 'Como Deixar o Cabelo Liso: Guia do Alinhamento ao Brilho',
           excerpt: 'Descubra as melhores técnicas, produtos e segredos para conquistar um liso impecável e duradouro sem abrir mão da saúde.',

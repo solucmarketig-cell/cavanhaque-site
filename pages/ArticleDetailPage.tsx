@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-ondulado-guia-definicao-frizz': {
+      title: 'Cabelo Ondulado: Guia de Definição e Controle de Frizz',
+      subtitle: 'Aprenda a valorizar suas ondas naturais com as técnicas certas de finalização e os produtos que não pesam nos fios.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '13 min',
+      category: 'Cabelo',
+      image: '/assets/corte-para-cabelo-ondulado.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo ondulado</strong> é um dos mais versáteis, mas também um dos que mais sofrem com a indecisão entre o liso e o cacheado. Muitas vezes, a falta de definição e o excesso de frizz mascaram a beleza real das ondas. O segredo para um ondulado de capa de revista está em equilibrar hidratação com produtos leves que estimulem a memória do fio sem "pesar" a curvatura.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Mousse Modelador Leve", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Toalha de Microfibra ou Algodão", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Ativador de Ondas em Spray", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Ritual de Definição para Onduladas</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Identificando sua Curvatura (2A, 2B, 2C)",
+                description: "Ondulados 2A são quase lisos, 2B possuem ondas em S mais definidas e 2C já flertam com os cachos. Saber sua curvatura ajuda a escolher a densidade certa do creme finalizador.",
+                tip: "Cabelos 2A pedem produtos quase líquidos (sprays), enquanto 2C seguram bem mousses e gelatinas leves.",
+                image: "/assets/corte-para-cabelo-ondulado.webp"
+              },
+              {
+                title: "2. Finalização 'Fitagem' Suave",
+                description: "Ao contrário dos cachos, a fitagem no ondulado deve ser feita com menos produto e mais 'scrunch' (amassar de baixo para cima). Isso estimula a formação das ondas sem deixar o fio endurecido.",
+                tip: "Faça a finalização com o cabelo ainda bem molhado para selar a umidade dentro do fio.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "3. Técnica do Plopping",
+                description: "Envolva o cabelo em uma toalha de microfibra ou camiseta de algodão no topo da cabeça por 20 minutos. Isso remove o excesso de água sem gerar atrito, combatendo o frizz desde a secagem.",
+                tip: "Essa técnica é o maior segredo para ondas definidas e sem fios arrepiados.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "4. Secagem com Difusor",
+                description: "Use o difusor em temperatura média e baixa velocidade. Encaixe as ondas no bocal e leve em direção à raiz. O calor controlado ajuda a fixar a forma das ondas por mais tempo.",
+                tip: "Não toque no cabelo enquanto ele seca com o difusor para não desmanchar a definição.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "5. Revitalização no Day After",
+                description: "Para o dia seguinte, use um borrifador com água e um pouco de leave-in líquido. Amasse as ondas suavemente para devolver o volume e a forma sem precisar lavar novamente.",
+                tip: "Durma com uma fronha de cetim para reduzir o atrito e manter as ondas intactas até de manhã.",
+                image: "/assets/loiro-escuro.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O maior erro das onduladas é usar cremes muito densos feitos para cacheadas 3C ou 4C. Isso estica a onda e faz o cabelo parecer sujo. Procure sempre por termos como 'fluido', 'light' ou 'mousse' nos rótulos. Menos é sempre mais para o ondulado perfeito."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'wave-mousse', name: "Mousse Define Waves", desc: "Volume e fixação leve que não deixa o fio rígido.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'microfiber-towel-luxe', name: "Toalha de Microfibra Soft", desc: "O acessório indispensável para o Plopping sem frizz.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'como-deixar-o-cabelo-liso-guia-completo': {
       title: 'Como Deixar o Cabelo Liso: Guia do Alinhamento ao Brilho',
       subtitle: 'Descubra as melhores técnicas, produtos e segredos para conquistar um liso impecável e duradouro sem abrir mão da saúde.',
