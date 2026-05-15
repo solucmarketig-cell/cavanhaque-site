@@ -124,7 +124,8 @@ const articles = [
   'cortes-cabelo-liso-masculino-tendencias-2026',
   'cortes-masculinos-cabelo-liso-classicos-profissionais',
   'como-cortar-cabelo-liso-guia-tecnico',
-  'corte-cabelo-liso-masculino-medio-longo-estilo'
+  'corte-cabelo-liso-masculino-medio-longo-estilo',
+  'como-deixar-o-cabelo-liso-guia-completo'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

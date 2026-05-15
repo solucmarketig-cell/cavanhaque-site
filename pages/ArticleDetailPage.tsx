@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'como-deixar-o-cabelo-liso-guia-completo': {
+      title: 'Como Deixar o Cabelo Liso: Guia do Alinhamento ao Brilho',
+      subtitle: 'Descubra as melhores técnicas, produtos e segredos para conquistar um liso impecável e duradouro sem abrir mão da saúde.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '14 min',
+      category: 'Cabelo',
+      image: '/assets/loiro-escuro.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Muitas pessoas buscam saber <strong>como deixar o cabelo liso</strong> de forma saudável e com movimento. O segredo não está apenas na "chapinha", mas em uma rotina completa de cuidados que alinham a cutícula do fio e combatem o frizz. Seja seu cabelo naturalmente liso, ondulado ou com química, este guia vai te mostrar o caminho para o brilho espelhado.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Protetor Térmico Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Máscara de Nutrição com Óleos", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Escova de Cerdas Naturais", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Protocolo de Alinhamento para Fios Lisos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Cronograma Capilar de Alinhamento",
+                description: "O cabelo só fica liso e com balanço se estiver nutrido. Alterne entre hidratação (reposição de água) e nutrição (reposição de óleos). Fios ressecados tendem a armar e perder a forma lisa.",
+                tip: "Use produtos que contenham queratina vegetal para fortalecer a estrutura do fio sem deixá-lo rígido.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "2. Escovação Térmica com Segurança",
+                description: "Ao usar o secador, direcione o jato de cima para baixo, seguindo o sentido de crescimento do fio. Isso ajuda a fechar as cutículas naturalmente. Nunca esqueça o protetor térmico!",
+                tip: "Divida o cabelo em mechas finas para garantir que o calor seja distribuído de forma uniforme.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "3. Selagem Térmica vs Botox Capilar",
+                description: "Para quem quer um efeito liso mais duradouro, o Botox Capilar é excelente para reduzir o volume e alinhar os fios sem a agressividade de uma progressiva. Ele repõe a massa capilar enquanto alisa levemente.",
+                tip: "Sempre faça um teste de mecha antes de aplicar qualquer produto químico em todo o cabelo.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "4. Controle de Frizz com Óleos Leves",
+                description: "O frizz é o maior inimigo do cabelo liso. Use óleos finalizadores (como de Argan ou Macadâmia) diariamente nas pontas para selar os fios e protegê-los da umidade externa.",
+                tip: "Aplique apenas duas gotas na palma das mãos e espalhe bem antes de passar nos fios.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "5. O Truque do Jato Frio",
+                description: "Após terminar a escova ou chapinha, finalize com um jato de ar frio do secador por todo o cabelo. O choque térmico sela as cutículas instantaneamente e garante um brilho imediato.",
+                tip: "Esse passo também ajuda a baixar os baby hairs que insistem em ficar arrepiados.",
+                image: "/assets/ivy-league.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Para manter o cabelo liso por mais tempo, evite lavá-lo com água muito quente. O calor excessivo abre as cutículas e estimula a oleosidade da raiz, o que 'pesa' o visual. Água morna ou fria é a melhor amiga do seu liso."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'thermal-shield-pro', name: "Protetor Térmico L'Oréal", desc: "Escudo imbatível contra o calor de até 230°C.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'nutrition-mask-gold', name: "Máscara Nutritiva Oro", desc: "Reposição lipídica para um liso com movimento de seda.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'corte-cabelo-liso-masculino-medio-longo-estilo': {
       title: 'Corte de Cabelo Liso Masculino Médio e Longo: O Guia do Estilo',
       subtitle: 'Do Surfer Shag ao Coque Samurai, descubra como deixar o cabelo liso crescer com saúde e muito estilo.',

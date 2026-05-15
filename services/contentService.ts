@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'como-deixar-liso-completo',
+          title: 'Como Deixar o Cabelo Liso: Guia do Alinhamento ao Brilho',
+          excerpt: 'Descubra as melhores técnicas, produtos e segredos para conquistar um liso impecável e duradouro sem abrir mão da saúde.',
+          imageUrl: '/assets/loiro-escuro.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'como-deixar-o-cabelo-liso-guia-completo',
+          category: 'Cabelo'
+        },
+        {
           id: 'corte-liso-longo-masculino',
           title: 'Corte de Cabelo Liso Masculino Médio e Longo: O Guia do Estilo',
           excerpt: 'Do Surfer Shag ao Coque Samurai, descubra como deixar o cabelo liso crescer com saúde e muito estilo.',
