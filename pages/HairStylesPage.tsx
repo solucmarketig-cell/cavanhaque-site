@@ -406,72 +406,77 @@ const HairStylesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* STYLES GRID */}
-      <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+      {/* STYLES LIST */}
+      <section className="py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-12">
           {hairStyles.map((style, idx) => (
-            <article key={style.id} className="bg-white rounded-3xl shadow-2xl overflow-hidden group hover:-translate-y-4 transition-all duration-700 border border-gray-100 flex flex-col h-full">
-              <div className="relative h-96 overflow-hidden">
+            <article key={style.id} className="bg-white rounded-[2.5rem] shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col lg:flex-row h-full min-h-[400px]">
+              <div className="relative lg:w-2/5 overflow-hidden">
                 <OptimizedImage
                   src={style.img}
                   alt={style.alt}
                   className="w-full h-full object-cover object-[center_15%] group-hover:scale-110 transition-transform duration-[1.5s]"
-                  width={600}
-                  height={600}
-                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  width={800}
+                  height={800}
+                  sizes="(min-width: 1024px) 40vw, 100vw"
                 />
-                <div className="absolute top-6 right-6 bg-brand-dark/80 backdrop-blur-md text-brand-gold w-12 h-12 rounded-full flex items-center justify-center font-serif text-xl font-bold border border-brand-gold/30">
+                <div className="absolute top-6 left-6 bg-brand-gold text-brand-dark w-12 h-12 rounded-2xl flex items-center justify-center font-black text-xl shadow-lg z-10">
                   {idx + 1}
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
-                <div className="absolute bottom-8 left-8 right-8">
-                  <h3 className="text-3xl font-serif font-bold text-white mb-3 group-hover:text-brand-gold transition-colors">{style.name}</h3>
-                  <div className="flex gap-2">
-                    <span className="bg-brand-gold text-brand-dark text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-widest">
-                      {style.hairType}
-                    </span>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-white/10"></div>
               </div>
 
-              <div className="p-10 flex flex-col flex-1">
-                <p className="text-gray-600 mb-10 leading-relaxed text-sm flex-1">
-                  {style.description}
-                </p>
+              <div className="p-8 lg:p-12 flex flex-col flex-1 justify-center">
+                <div className="mb-6">
+                  <div className="flex gap-2 mb-4">
+                    <span className="bg-brand-gold/10 text-brand-dark text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-widest border border-brand-gold/20">
+                      {style.hairType}
+                    </span>
+                    <span className="bg-brand-dark text-brand-gold text-[10px] font-black px-3 py-1 rounded-md uppercase tracking-widest">
+                      {style.maintenance}
+                    </span>
+                  </div>
+                  <h3 className="text-4xl font-serif font-bold text-brand-charcoal mb-4 group-hover:text-brand-gold transition-colors leading-tight">
+                    {style.name}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-base">
+                    {style.description}
+                  </p>
+                </div>
 
-                <div className="grid grid-cols-2 gap-6 mb-10 pt-6 border-t border-gray-100">
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-brand-light rounded-xl text-brand-gold">
-                      <User size={18} />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 pt-8 border-t border-gray-100">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-brand-light rounded-2xl text-brand-gold shadow-sm">
+                      <User size={20} />
                     </div>
                     <div>
-                      <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Visagismo</span>
-                      <span className="text-xs font-bold text-brand-charcoal">{style.faceShape}</span>
+                      <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Ideal para Rosto</span>
+                      <span className="text-sm font-bold text-brand-charcoal">{style.faceShape}</span>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-brand-light rounded-xl text-brand-gold">
-                      <Scissors size={18} />
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-brand-light rounded-2xl text-brand-gold shadow-sm">
+                      <Scissors size={20} />
                     </div>
                     <div>
-                      <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Barbearia</span>
-                      <span className="text-xs font-bold text-brand-charcoal">{style.maintenance}</span>
+                      <span className="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Manutenção</span>
+                      <span className="text-sm font-bold text-brand-charcoal">{style.maintenance}</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3 mt-auto">
+                <div className="flex flex-col sm:flex-row gap-4 mt-auto">
                   <button
                     onClick={() => openTipModal(style.id)}
-                    className="flex items-center justify-center gap-3 w-full py-4 bg-brand-light text-brand-dark font-black uppercase text-xs tracking-[0.2em] hover:bg-brand-gold transition-all rounded-2xl group/btn transform active:scale-95"
+                    className="flex-1 flex items-center justify-center gap-3 py-4 bg-brand-light text-brand-dark font-black uppercase text-xs tracking-[0.2em] hover:bg-brand-gold transition-all rounded-2xl group/btn transform active:scale-95 shadow-sm"
                   >
                     Dicas de Finalização <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
                   </button>
                   <Link
                     to={`/blog/${style.slug}`}
-                    className="flex items-center justify-center gap-3 w-full py-4 bg-brand-charcoal text-white font-black uppercase text-xs tracking-[0.2em] hover:bg-brand-gold hover:text-brand-dark transition-all rounded-2xl flex items-center justify-center gap-2 group/tutorial transform active:scale-95"
+                    className="flex-1 flex items-center justify-center gap-3 py-4 bg-brand-charcoal text-white font-black uppercase text-xs tracking-[0.2em] hover:bg-brand-gold hover:text-brand-dark transition-all rounded-2xl group/tutorial transform active:scale-95 shadow-lg"
                   >
-                    Ver Tutorial Completo <Sparkles size={14} className="group-hover/tutorial:scale-125 transition-transform" />
+                    Ver Tutorial <Sparkles size={14} className="group-hover/tutorial:scale-125 transition-transform" />
                   </Link>
                 </div>
               </div>

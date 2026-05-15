@@ -361,70 +361,78 @@ const BeardStylesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Styles Grid */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {/* Styles List */}
+      <section className="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-12">
           {styles.map((style: any) => (
-            <article key={style.id} className="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
-              <div className="relative h-80 overflow-hidden">
+            <article key={style.id} className="bg-white rounded-[2.5rem] shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col lg:flex-row min-h-[400px]">
+              <div className="relative lg:w-2/5 overflow-hidden">
                 <OptimizedImage
                   src={style.img}
                   alt={style.alt}
-                  className={`w-full h-full object-cover ${style.imagePosition || 'object-center'} ${style.extraClasses || 'group-hover:scale-110'} transition-transform duration-700`}
-                  width={600}
-                  height={400}
-                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  className={`w-full h-full object-cover ${style.imagePosition || 'object-center'} group-hover:scale-110 transition-transform duration-[1.5s]`}
+                  width={800}
+                  height={800}
+                  sizes="(min-width: 1024px) 40vw, 100vw"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 pt-20">
-                  <h3 className="text-2xl font-serif font-bold text-white">{style.name}</h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent lg:hidden"></div>
+                <div className="absolute bottom-6 left-6 right-6 lg:hidden">
+                  <h3 className="text-3xl font-serif font-bold text-white">{style.name}</h3>
                 </div>
               </div>
 
-              <div className="p-6">
-                <p className="text-gray-600 mb-6 leading-relaxed text-sm h-20 overflow-hidden">
-                  {style.description}
-                </p>
+              <div className="p-8 lg:p-12 flex flex-col flex-1 justify-center">
+                <div className="mb-6">
+                  <h3 className="hidden lg:block text-4xl font-serif font-bold text-brand-charcoal mb-4 group-hover:text-brand-gold transition-colors leading-tight">
+                    {style.name}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-base">
+                    {style.description}
+                  </p>
+                </div>
 
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center gap-3 text-sm">
-                    <div className="p-2 bg-brand-light rounded-full text-brand-dark">
-                      <User size={16} />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 pt-8 border-t border-gray-100">
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-brand-light rounded-2xl text-brand-gold shadow-sm">
+                      <User size={20} />
                     </div>
                     <div>
-                      <span className="block font-bold text-xs text-brand-gold uppercase">Ideal para Rosto</span>
-                      <span className="text-brand-charcoal font-medium">{style.faceShape}</span>
+                      <span className="block text-[10px] font-black text-brand-gold uppercase tracking-widest mb-1">Ideal para Rosto</span>
+                      <span className="text-sm font-bold text-brand-charcoal">{style.faceShape}</span>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 text-sm">
-                    <div className="p-2 bg-brand-light rounded-full text-brand-dark">
-                      <Scissors size={16} />
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-brand-light rounded-2xl text-brand-gold shadow-sm">
+                      <Scissors size={20} />
                     </div>
                     <div>
-                      <span className="block font-bold text-xs text-brand-gold uppercase">Nível de Manutenção</span>
-                      <span className="text-brand-charcoal font-medium">{style.maintenance}</span>
+                      <span className="block text-[10px] font-black text-brand-gold uppercase tracking-widest mb-1">Manutenção</span>
+                      <span className="text-sm font-bold text-brand-charcoal">{style.maintenance}</span>
                     </div>
                   </div>
                 </div>
 
-                {style.affiliateLink ? (
-                  <a href={style.affiliateLink} target="_blank" rel="noopener noreferrer" className="block text-center w-full py-3 border border-brand-dark text-brand-dark font-bold uppercase text-xs tracking-wider hover:bg-brand-dark hover:text-white transition-colors mb-3">
-                    Produtos para esse estilo
-                  </a>
-                ) : (
-                  <Link to="/" className="block text-center w-full py-3 border border-brand-dark text-brand-dark font-bold uppercase text-xs tracking-wider hover:bg-brand-dark hover:text-white transition-colors mb-3">
-                    Produtos para esse estilo
-                  </Link>
-                )}
+                <div className="flex flex-col sm:flex-row gap-4 mt-auto">
+                  {style.affiliateLink ? (
+                    <a href={style.affiliateLink} target="_blank" rel="noopener noreferrer" className="flex-1 text-center py-4 border-2 border-brand-dark text-brand-dark font-black uppercase text-xs tracking-widest hover:bg-brand-dark hover:text-white transition-all rounded-2xl">
+                      Produtos para o Estilo
+                    </a>
+                  ) : (
+                    <Link to="/" className="flex-1 text-center py-4 border-2 border-brand-dark text-brand-dark font-black uppercase text-xs tracking-widest hover:bg-brand-dark hover:text-white transition-all rounded-2xl">
+                      Produtos para o Estilo
+                    </Link>
+                  )}
 
-                {style.slug && (
-                  <Link 
-                    to={`/blog/${style.slug}`} 
-                    className="block text-center w-full py-3 bg-brand-gold text-brand-dark font-black uppercase text-xs tracking-widest hover:bg-brand-dark hover:text-white transition-all shadow-lg"
-                  >
-                    Ver Tutorial Completo
-                  </Link>
-                )}
+                  {style.slug && (
+                    <Link 
+                      to={`/blog/${style.slug}`} 
+                      className="flex-1 text-center py-4 bg-brand-gold text-brand-dark font-black uppercase text-xs tracking-[0.2em] hover:bg-brand-dark hover:text-white transition-all rounded-2xl shadow-lg shadow-brand-gold/20"
+                    >
+                      Ver Tutorial Completo
+                    </Link>
+                  )}
+                </div>
               </div>
             </article>
           ))}
