@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'corte-americano-feminino-liso-moderno': {
+      title: 'Corte Americano em Cabelo Liso: 5 Variações para o Look Curto',
+      subtitle: 'Do Pixie com Taper ao Bowl Cut moderno, veja como o estilo americano redefine o cabelo curto feminino.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Cabelo',
+      image: '/assets/corte-americano-feminino-cacheado.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>corte americano em cabelo liso</strong> está quebrando barreiras e se tornando a escolha número um para mulheres que buscam praticidade extrema sem abrir mão da elegância. A técnica do Taper Fade, que cria um degradê suave apenas nas bordas, permite que cortes curtos como o Pixie e o Bowl Cut ganhem um acabamento muito mais limpo e sofisticado.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pomada Matte de Alta Fixação", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Carbono Anti-estático", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Tônico Revitalizante de Couro Cabeludo", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Transformando o Curto com o Estilo Americano</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Pixie com Taper Fade",
+                description: "O Pixie clássico ganha uma nova vida com as costeletas e a nuca em degradê baixo. Isso remove o excesso de fios que costumam incomodar nessas áreas e destaca o desenho das orelhas e do maxilar.",
+                tip: "Finalize o topo com uma cera matte para criar textura 'bagunçada' e moderna.",
+                image: "/assets/corte-americano.webp"
+              },
+              {
+                title: "2. Bowl Cut Moderno (Estilo Americano)",
+                description: "O corte 'tigela' repaginado. A linha reta do topo liso contrasta perfeitamente com um Mid Fade nas laterais, criando um visual geométrico e de alta moda.",
+                tip: "Mantenha o brilho espelhado do topo usando um spray de brilho após a secagem.",
+                image: "/assets/bowl-cut-moderno.webp"
+              },
+              {
+                title: "3. Pompadour Feminino com Fade Alto",
+                description: "Um topete volumoso e liso no topo com laterais em degradê alto. É um visual de impacto que alonga a silhueta e transmite confiança.",
+                tip: "Use o secador e uma escova pequena para dar a curvatura perfeita ao pompadour frontal.",
+                image: "/assets/pompadour-fade.webp"
+              },
+              {
+                title: "4. Americano com Sidecut Artístico",
+                description: "Uma lateral é mantida em degradê americano (taper) enquanto a outra possui o comprimento liso. A área do degradê pode receber desenhos discretos na navalha.",
+                tip: "É o corte ideal para quem quer um visual assimétrico e cheio de personalidade.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "5. Manutenção e Higiene",
+                description: "Cabelos curtos e lisos com degradê exigem visitas ao barbeiro ou cabeleireiro a cada 15-20 dias para manter a nitidez do fade e o contorno impecável.",
+                tip: "Use shampoos de limpeza profunda na área do degradê para evitar o acúmulo de oleosidade e resíduos.",
+                image: "/assets/cesar-moderno.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Não tenha medo de entrar em uma barbearia! Muitos barbeiros são mestres na técnica do degradê que o seu cabelo liso precisa. O segredo para um corte americano feminino de sucesso é manter a suavidade na transição, evitando linhas muito marcadas."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'matte-wax-luxe', name: "Cera Matte Profissional", desc: "Textura e fixação sem brilho para cortes curtos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'styling-comb-set', name: "Kit Pentes de Precisão", desc: "Ferramentas essenciais para modelar o estilo americano.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Scissors size={32} /> }
+      ]
+    },
     'penteado-em-cabelo-liso-feminino-guia': {
       title: 'Penteado em Cabelo Liso: 5 Looks de Puro Luxo e Elegância',
       subtitle: 'Do visual "Clean Girl" ao coque minimalista, descubra os penteados que valorizam a textura lisa com sofisticação.',

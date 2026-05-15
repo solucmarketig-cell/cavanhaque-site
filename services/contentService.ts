@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'corte-americano-liso-pixie',
+          title: 'Corte Americano em Cabelo Liso: 5 Variações para o Look Curto',
+          excerpt: 'Do Pixie com Taper ao Bowl Cut moderno, veja como o estilo americano redefine o cabelo curto feminino.',
+          imageUrl: '/assets/corte-americano-feminino-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'corte-americano-feminino-liso-moderno',
+          category: 'Cabelo'
+        },
+        {
           id: 'penteado-liso-feminino',
           title: 'Penteado em Cabelo Liso: 5 Looks de Puro Luxo e Elegância',
           excerpt: 'Do visual "Clean Girl" ao coque minimalista, descubra os penteados que valorizam a textura lisa com sofisticação.',
