@@ -115,7 +115,8 @@ const articles = [
   'penteado-cabelo-cacheado-infantil',
   'corte-para-cabelo-cacheado-masculino',
   'cabelo-liso-feminino-guia',
-  'cabelo-liso-masculino-guia-estilo'
+  'cabelo-liso-masculino-guia-estilo',
+  'cortes-americanos-cabelo-liso-feminino'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

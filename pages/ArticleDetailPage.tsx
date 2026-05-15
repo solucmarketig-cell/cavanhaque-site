@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cortes-americanos-cabelo-liso-feminino': {
+      title: 'Cortes Americanos em Cabelo Liso Feminino: O Guia da Ousadia',
+      subtitle: 'O estilo "Americano" chegou com tudo para os fios lisos. Veja como o Taper Fade pode transformar seu visual com modernidade e atitude.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/corte-americano.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Quem disse que o <strong>corte americano</strong> é exclusividade masculina? Em 2026, mulheres com <strong>cabelo liso</strong> estão adotando o "Taper Fade" para criar visuais de impacto, que unem a precisão da barbearia com a sofisticação feminina. O contraste entre as laterais raspadas em degradê e o topo liso e polido é a definição de modernidade.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Máquina de Acabamento Pro", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Pomada Modeladora Matte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Spray de Brilho Instantâneo", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Variações do Corte Americano para Lisos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Low Taper (Degradê Baixo)",
+                description: "Uma versão sutil onde o degradê ocorre apenas nas costeletas e na nuca. Perfeito para quem quer testar o estilo sem uma mudança radical. No cabelo liso, cria uma moldura limpa para o rosto.",
+                tip: "Use um brinco de impacto para destacar ainda mais a região polida das costeletas.",
+                image: "/assets/corte-americano.webp"
+              },
+              {
+                title: "2. Mid Fade com Topo Assimétrico",
+                description: "O degradê começa na altura da orelha e sobe suavemente. O topo liso pode ser cortado de forma assimétrica para um visual artístico e contemporâneo.",
+                tip: "Penteie o topo para o lado oposto ao fade mais alto para criar um volume dramático.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "3. High Fade com Hair Tattoo",
+                description: "Para as mais ousadas: degradê alto e desenhos geométricos feitos na navalha (hair tattoo) nas laterais. O contraste com o topo liso chapado é visualmente impressionante.",
+                tip: "Retoque o desenho a cada 10 dias para manter a nitidez das linhas.",
+                image: "/assets/buzz-cut.webp"
+              },
+              {
+                title: "4. Americano com Franja Longa",
+                description: "Laterais em degradê e uma franja longa e lisa que cai sobre o rosto. Une o 'boyish look' com uma feminilidade misteriosa.",
+                tip: "Pranche a franja para garantir que ela fique perfeitamente alinhada com o fade lateral.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Undercut Americano (Oculto)",
+                description: "O degradê é feito apenas na nuca e laterais baixas, ficando oculto quando o cabelo está solto e revelando o estilo ao prender um rabo de cavalo ou coque.",
+                tip: "Ideal para quem precisa de um visual formal no trabalho mas quer atitude nas horas vagas.",
+                image: "/assets/high-fade.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O segredo do corte americano feminino em cabelo liso é a hidratação do couro cabeludo. Como as laterais ficam muito expostas, use um tônico hidratante para evitar o ressecamento da pele e manter o degradê sempre com aspecto saudável e brilhante."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'finishing-wax', name: "Cera de Finalização Slim", desc: "Define as pontas do topo liso sem pesar no degradê.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'scalp-tonic', name: "Tônico Capilar Hidratante", desc: "Cuida da pele exposta nas áreas do fade.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-liso-masculino-guia-estilo': {
       title: 'Cabelo Liso Masculino: Do Clássico ao Moderno em 2026',
       subtitle: 'Aprenda a dar volume, textura e personalidade aos fios lisos. Os cortes e produtos que todo homem precisa conhecer.',

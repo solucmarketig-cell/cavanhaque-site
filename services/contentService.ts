@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cortes-americanos-liso-feminino',
+          title: 'Cortes Americanos em Cabelo Liso Feminino: O Guia da Ousadia',
+          excerpt: 'O estilo "Americano" chegou com tudo para os fios lisos. Veja como o Taper Fade pode transformar seu visual com modernidade e atitude.',
+          imageUrl: '/assets/corte-americano.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cortes-americanos-cabelo-liso-feminino',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-liso-masculino',
           title: 'Cabelo Liso Masculino: Do Clássico ao Moderno em 2026',
           excerpt: 'Aprenda a dar volume, textura e personalidade aos fios lisos. Os cortes e produtos que todo homem precisa conhecer.',
