@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'corte-curto-feminino',
+          title: 'Corte de Cabelo Curto Feminino: 5 Estilos Modernos',
+          excerpt: 'Do Pixie ao Short Bob, descubra os cortes curtos que estão definindo a moda feminina com praticidade e elegância.',
+          imageUrl: '/assets/corte-curto-feminino.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'corte-de-cabelo-curto-feminino-estilos-modernos',
+          category: 'Cabelo'
+        },
+        {
           id: 'oleo-ressecado-guia',
           title: 'Óleo para Cabelo Ressecado: Nutrição e Selagem',
           excerpt: 'Descubra os melhores óleos para devolver a vida ao cabelo ressecado. Da umectação pré-shampoo à selagem de pontas.',

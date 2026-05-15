@@ -140,7 +140,8 @@ const articles = [
   'hidratacao-caseira-cabelo-ressecado-receitas',
   'hidratacao-para-cabelo-ressecado-tecnicas-ativos',
   'shampoo-para-cabelo-ressecado-escolha-lavagem',
-  'oleo-para-cabelo-ressecado-nutricao-selagem'
+  'oleo-para-cabelo-ressecado-nutricao-selagem',
+  'corte-de-cabelo-curto-feminino-estilos-modernos'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

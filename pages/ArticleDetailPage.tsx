@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'corte-de-cabelo-curto-feminino-estilos-modernos': {
+      title: 'Corte de Cabelo Curto Feminino: 5 Estilos Modernos',
+      subtitle: 'Do Pixie ao Short Bob, descubra os cortes curtos que estão definindo a moda feminina com praticidade e elegância.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Cabelo',
+      image: '/assets/corte-curto-feminino.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>corte de cabelo curto feminino</strong> é muito mais do que uma escolha de praticidade; é uma afirmação de estilo e autoconfiança. Em 2026, as tendências curtas focam em texturas naturais, camadas desconectadas e designs que emolduram o rosto com precisão. Seja para ganhar tempo na rotina ou para renovar o visual, o cabelo curto oferece uma versatilidade surpreendente.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pomada Modeladora Matte", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Spray Texturizador de Sal", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova Redonda Pequena (Modelagem)", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Os 5 Curtos que Dominam as Tendências</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Pixie Cut Repicado",
+                description: "O clássico 'Joãozinho' ganha uma versão moderna com camadas repicadas e franja alongada. É o corte ideal para destacar os traços do rosto e garantir um visual fresco e ousado.",
+                tip: "Use uma pomada matte para definir as pontas e criar aquele efeito 'bagunçado' proposital.",
+                image: "/assets/corte-curto-feminino.webp"
+              },
+              {
+                title: "2. Bixie (Bob + Pixie)",
+                description: "A mistura perfeita entre o comprimento do bob e o desfiado do pixie. Ele mantém o volume no topo e na nuca, sendo a escolha certa para quem quer encurtar os fios sem radicalizar totalmente.",
+                tip: "Fica incrível em cabelos ondulados, valorizando o movimento natural das mechas.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "3. Short Bob com Base Reta",
+                description: "Um corte elegante e minimalista que termina na altura do queixo ou um pouco acima. A base reta transmite uma imagem de sofisticação e ajuda a dar corpo aos cabelos mais finos.",
+                tip: "Finalize com uma chapinha para um visual 'glass hair' extremamente brilhante.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "4. Undercut Feminino Estilizado",
+                description: "Para as mais ousadas, o undercut remove o volume excessivo da nuca ou das laterais com máquina. Além de ser extremamente fresco para o verão, permite designs artísticos escondidos sob o cabelo.",
+                tip: "É uma ótima solução para quem tem muito volume na parte de trás da cabeça.",
+                image: "/assets/pompadour-fade.webp"
+              },
+              {
+                title: "5. Shaggy Curto (Wolf Cut)",
+                description: "Inspirado na estética dos anos 70, o shaggy curto foca em muitas camadas e uma franja volumosa. Transmite um ar 'cool' e é perfeito para quem busca um visual com muita atitude e pouco esforço na finalização.",
+                tip: "Aplique um spray texturizador com os fios ainda úmidos e amasse com as mãos.",
+                image: "/assets/fringe-fade.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Cabelo curto exige manutenção frequente para não perder o desenho. O ideal é visitar o seu cabeleireiro a cada 4 ou 6 semanas. Além disso, não economize nos finalizadores: um bom spray de brilho ou pomada é o que diferencia um curto comum de um visual de capa de revista."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'matte-wax-short', name: "Pomada Sculpt Matte", desc: "Definição e textura sem deixar os fios oleosos.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'sea-salt-spray-pro', name: "Spray de Sal Texturizador", desc: "O segredo para o volume e movimento dos cortes repicados.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'oleo-para-cabelo-ressecado-nutricao-selagem': {
       title: 'Óleo para Cabelo Ressecado: Os Melhores Elixires para Nutrição e Brilho',
       subtitle: 'Descubra os melhores óleos para devolver a vida ao cabelo ressecado. Da umectação pré-shampoo à selagem de pontas.',
