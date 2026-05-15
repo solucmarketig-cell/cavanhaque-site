@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cortes-liso-masculino-2026',
+          title: 'Cortes de Cabelo Liso Masculino: As 5 Tendências para 2026',
+          excerpt: 'Do Wolf Cut ao Ivy League, veja quais cortes vão dominar as ruas e como estilizar fios lisos com perfeição.',
+          imageUrl: '/assets/wolf-cut-masculino.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'cortes-cabelo-liso-masculino-tendencias-2026',
+          category: 'Cabelo'
+        },
+        {
           id: 'corte-americano-liso-textura',
           title: 'Corte Americano com Textura em Cabelo Liso: 5 Estilos Modernos',
           excerpt: 'Saia do liso chapado. Veja como o corte americano pode ganhar textura, movimento e atitude com as técnicas certas.',

@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cortes-cabelo-liso-masculino-tendencias-2026': {
+      title: 'Cortes de Cabelo Liso Masculino: As 5 Tendências para 2026',
+      subtitle: 'Do Wolf Cut ao Ivy League, veja quais cortes vão dominar as ruas e como estilizar fios lisos com perfeição.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/wolf-cut-masculino.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo liso masculino</strong> está passando por uma revolução. Em 2026, abandonamos o "básico" para abraçar cortes que utilizam a fluidez do fio liso como uma vantagem estética. Das camadas selvagens do Wolf Cut à precisão milimétrica do Ivy League, há uma tendência para cada estilo de vida e personalidade.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Cera Matte de Fixação Média", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Spray de Texturização Salina", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Óleo Finalizador de Nutrição", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">As Tendências que Vão Dominar 2026</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Wolf Cut Masculino",
+                description: "O corte do momento. Caracteriza-se por muitas camadas e fios desfiados, criando um visual volumoso e 'selvagem'. No cabelo liso, as camadas dão o movimento que o fio naturalmente não tem.",
+                tip: "Use o spray de sal marinho com o cabelo úmido para criar aquela textura de 'saída de praia' que o Wolf Cut exige.",
+                image: "/assets/wolf-cut-masculino.webp"
+              },
+              {
+                title: "2. Modern Mullet",
+                description: "O mullet voltou com uma roupagem sofisticada. Laterais baixas (ou em fade) e a parte de trás longa e lisa. É o corte perfeito para quem quer atitude e não tem medo de ousar.",
+                tip: "Penteie a parte de trás para baixo e o topo para o lado para um visual mais arrumado.",
+                image: "/assets/mullet-moderno.webp"
+              },
+              {
+                title: "3. Ivy League (O Militar Elegante)",
+                description: "Uma variação do Crew Cut, mas com o topo longo o suficiente para ser penteado para o lado. É a definição do liso impecável e executivo.",
+                tip: "Finalize com uma pomada de brilho leve para um visual 'old money' extremamente polido.",
+                image: "/assets/ivy-league.webp"
+              },
+              {
+                title: "4. French Crop Texturizado",
+                description: "Laterais em degradê e o topo cortado para a frente com uma franja curta e reta. No cabelo liso, a precisão da franja fica incrível e muito moderna.",
+                tip: "Passe um pouco de pó texturizador no topo para separar as mechas e tirar o aspecto chapado.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Buzz Cut com Desenhos (Hair Tattoo)",
+                description: "Para quem quer praticidade total. O cabelo é raspado, mas ganha personalidade com linhas e desenhos geométricos feitos na navalha.",
+                tip: "Retoque o desenho a cada semana para manter o visual sempre nítido e profissional.",
+                image: "/assets/buzz-cut.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Independente da tendência, o segredo do cabelo liso é a saúde do fio. Cabelos lisos opacos parecem descuidados. Invista em um bom óleo finalizador para usar nas pontas; isso garante que o brilho natural do liso seja o protagonista do seu novo corte."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'sea-salt-spray', name: "Spray Salino Texturizador", desc: "Cria ondas e movimento em fios lisos instantaneamente.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'matte-pomade-2026', name: "Cera Matte Next Gen", desc: "Fixação que dura o dia todo sem pesar.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'corte-americano-masculino-liso-texturizado': {
       title: 'Corte Americano com Textura em Cabelo Liso: 5 Estilos Modernos',
       subtitle: 'Saia do liso chapado. Veja como o corte americano pode ganhar textura, movimento e atitude com as técnicas certas.',
