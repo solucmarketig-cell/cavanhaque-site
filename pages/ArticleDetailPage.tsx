@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'corte-cabelo-crespo-masculino-estilos-modernos': {
+      title: 'Corte para Cabelo Crespo Masculino: 5 Estilos Modernos',
+      subtitle: 'Do High Top Fade ao Nudred, conheça os cortes que valorizam o cabelo crespo masculino com precisão e estilo.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/corte-americano-feminino-cacheado.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>corte para cabelo crespo masculino</strong> evoluiu muito nos últimos anos, saindo do básico para designs que exigem alta precisão técnica e entendimento da textura afro. Em 2026, a tendência foca na combinação de degradês impecáveis com volumes esculpidos, criando visuais que transmitem força, modernidade e ancestralidade.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Esponja Nudred (Magic Twist)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gelatina de Alta Fixação", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Máquina de Acabamento Pro", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Cortes de Vanguarda para Fios Crespos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. High Top Fade (O Clássico Flat Top)",
+                description: "Com as laterais em degradê alto e o topo esculpido de forma plana ou levemente arredondada. É um corte imponente que exige uma mão firme do barbeiro para garantir a simetria perfeita.",
+                tip: "Use o pente garfo para levantar todo o topo antes de realizar o polimento final com a máquina.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "2. Estilo Nudred (Cachos de Esponja)",
+                description: "A técnica que utiliza uma esponja perfurada para criar pequenos rolinhos ou cachos definidos no topo do cabelo crespo. É a solução perfeita para quem quer textura sem usar química.",
+                tip: "Sempre faça movimentos circulares no mesmo sentido para que os cachos fiquem uniformes.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "3. Buzz Cut com Risca Frontal (Shape Up)",
+                description: "O cabelo é cortado bem baixo, mas o destaque fica para o 'shape up' – o contorno da testa e das têmporas feito com precisão milimétrica na navalha, muitas vezes acompanhado de uma risca lateral ou frontal.",
+                tip: "Mantenha o pezinho sempre limpo para que a geometria do corte não se perca conforme o cabelo cresce.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "4. Frohawk (Moicano Americano)",
+                description: "As laterais são totalmente raspadas ou em degradê alto, mantendo uma faixa de volume que vai da testa até a nuca. É um visual ousado e muito estiloso para quem tem crespo tipo 4.",
+                tip: "Aplique uma pomada finalizadora na faixa central para manter o volume firme e bem direcionado.",
+                image: "/assets/cabelo-crespo.webp"
+              },
+              {
+                title: "5. Taper Fade Discreto",
+                description: "Para quem prefere um visual mais conservador mas ainda moderno. O degradê acontece apenas nas costeletas e no acabamento da nuca, preservando o volume natural em todo o restante da cabeça.",
+                tip: "Ótimo para quem está deixando o cabelo crescer e quer manter o visual limpo durante o processo.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O segredo de um bom corte crespo masculino não está apenas na máquina, mas na hidratação pré-corte. Um cabelo crespo hidratado corta melhor e permite que o degradê fique muito mais suave (o famoso efeito 'blur'). Não esqueça de beber água e hidratar os fios!"
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'nudred-sponge-pro', name: "Esponja Nudred Premium", desc: "Design ergonômico para definição instantânea no topo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'holding-gel-viking', name: "Gelatina Fixadora Viking", desc: "Fixação máxima para manter os contornos nítidos o dia todo.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-crespo-guia-cuidados-volume': {
       title: 'Cabelo Crespo: Guia de Cuidados, Hidratação e Volume',
       subtitle: 'Aprenda a valorizar a potência do seu crespo com técnicas de hidratação profunda e finalizações que celebram o volume.',

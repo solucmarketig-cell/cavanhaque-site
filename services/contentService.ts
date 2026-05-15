@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'corte-crespo-masculino',
+          title: 'Corte para Cabelo Crespo Masculino: 5 Estilos Modernos',
+          excerpt: 'Do High Top Fade ao Nudred, conheça os cortes que valorizam o cabelo crespo masculino com precisão e estilo.',
+          imageUrl: '/assets/corte-americano-feminino-cacheado.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'corte-cabelo-crespo-masculino-estilos-modernos',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-crespo-guia',
           title: 'Cabelo Crespo: Guia de Cuidados, Hidratação e Volume',
           excerpt: 'Aprenda a valorizar a potência do seu crespo com técnicas de hidratação profunda e finalizações que celebram o volume.',
