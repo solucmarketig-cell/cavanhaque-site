@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-curto-executivo',
+          title: 'Cabelo Curto Feminino: 5 Opções para Profissionais',
+          excerpt: 'Descubra como o cabelo curto feminino pode transmitir autoridade e elegância no ambiente de trabalho com cortes clássicos e polidos.',
+          imageUrl: '/assets/social-classico.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-curto-feminino-profissional-elegante',
+          category: 'Cabelo'
+        },
+        {
           id: 'corte-curto-feminino',
           title: 'Corte de Cabelo Curto Feminino: 5 Estilos Modernos',
           excerpt: 'Do Pixie ao Short Bob, descubra os cortes curtos que estão definindo a moda feminina com praticidade e elegância.',

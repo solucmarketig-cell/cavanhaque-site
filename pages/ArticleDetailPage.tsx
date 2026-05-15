@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-curto-feminino-profissional-elegante': {
+      title: 'Cabelo Curto Feminino: 5 Opções para um Visual Profissional',
+      subtitle: 'Descubra como o cabelo curto feminino pode transmitir autoridade e elegância no ambiente de trabalho com cortes clássicos e polidos.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/social-classico.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo curto feminino</strong> no ambiente corporativo é um símbolo de dinamismo e autoridade. Ao escolher um corte que equilibra a modernidade com o polimento clássico, a mulher transmite uma imagem de competência e atenção aos detalhes. Em 2026, a estética executiva para curtos foca em linhas limpas, brilho espelhado e volumes estrategicamente posicionados.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Sérum de Brilho Intensivo", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Escova Progressiva de Cerâmica", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Fixador de Memória Leve", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Clássicos Executivos para Fios Curtos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Bob Executivo com Pontas Curvadas",
+                description: "Um corte que termina na altura do maxilar, com as pontas levemente curvadas para dentro. Transmite uma imagem de organização e elegância impecável, sendo ideal para reuniões de alto nível.",
+                tip: "Use uma escova redonda média durante a secagem para garantir a curvatura perfeita das pontas.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "2. Pixie Clássico Penteado (Sleek Pixie)",
+                description: "Diferente da versão repicada, o pixie profissional é mantido mais alinhado e penteado para o lado ou para trás. O foco aqui é o brilho e a precisão do contorno nas orelhas.",
+                tip: "Aplique um pouco de sérum após o corte para manter os fios no lugar com um aspecto saudável.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "3. Corte Tapered Feminino Texturizado",
+                description: "Para mulheres com fios ondulados ou crespos, o tapered (mais baixo nas laterais e nuca, com volume no topo) oferece um visual moderno e extremamente respeitável no ambiente formal.",
+                tip: "Mantenha o volume do topo bem definido com um mousse de fixação leve para evitar o frizz.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "4. Side Swept Curto com Volume",
+                description: "Um corte curto que foca em uma franja lateral longa e volumosa. Suaviza as linhas do rosto enquanto mantém o impacto visual de um corte de cabelo curto bem planejado.",
+                tip: "O segredo aqui é o levantamento da raiz na parte frontal usando um secador e bico direcionador.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "5. Micro Bob Simétrico",
+                description: "Uma versão ainda mais curta do bob, terminando logo abaixo das orelhas. A simetria perfeita deste corte transmite uma imagem de precisão e controle, essencial para cargos de liderança.",
+                tip: "Exige manutenção frequente para que o alinhamento da base permaneça reto.",
+                image: "/assets/loiro-escuro.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "No mundo profissional, a sua imagem é o seu cartão de visitas. O cabelo curto feminino facilita a rotina matinal, mas não dispensa o cuidado. Um cabelo bem hidratado e com o corte em dia comunica que você é uma pessoa que cuida da própria base antes de cuidar dos negócios. Brilho é sinal de vigor!"
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'shine-serum-exec', name: "Sérum Brilho Absoluto", desc: "Acabamento espelhado para cortes curtos executivos.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'ceramic-brush-pro', name: "Escova Cerâmica Nano", desc: "Modelagem rápida e proteção térmica para o dia a dia.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'corte-de-cabelo-curto-feminino-estilos-modernos': {
       title: 'Corte de Cabelo Curto Feminino: 5 Estilos Modernos',
       subtitle: 'Do Pixie ao Short Bob, descubra os cortes curtos que estão definindo a moda feminina com praticidade e elegância.',
