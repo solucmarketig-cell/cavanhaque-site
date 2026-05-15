@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'penteado-crespo-trancas',
+          title: 'Penteado Cabelo Crespo: Guia de Tranças e Estilos Protetores',
+          excerpt: 'Das Box Braids às Nagô, conheça os penteados protetores que garantem estilo e saúde para o seu cabelo crespo.',
+          imageUrl: '/assets/penteado-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteado-cabelo-crespo-trancas-protetores',
+          category: 'Cabelo'
+        },
+        {
           id: 'cortes-crespo-artisticos',
           title: 'Cortes de Cabelo Crespo Masculino: Tendências de 2026',
           excerpt: 'Do Freestyle ao Platinado, veja as tendências urbanas e artísticas que estão redefinindo o visual crespo masculino.',

@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'penteado-cabelo-crespo-trancas-protetores': {
+      title: 'Penteado Cabelo Crespo: Guia de Tranças e Estilos Protetores',
+      subtitle: 'Das Box Braids às Nagô, conheça os penteados protetores que garantem estilo e saúde para o seu cabelo crespo.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '14 min',
+      category: 'Cabelo',
+      image: '/assets/penteado-cacheado.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>penteado cabelo crespo</strong> vai muito além da estética; para muitas mulheres, as tranças e penteados protetores são fundamentais para a saúde dos fios. Eles permitem que o cabelo cresça sem a manipulação diária, protegendo as pontas e celebrando a herança cultural africana. Em 2026, as tranças ganham novos materiais, cores e designs que unem tradição com alta tecnologia capilar.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pomada de Trança (Anti-frizz)", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Tônico Capilar para Couro Cabeludo", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Mousse Finalizador de Brilho", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Penteados Protetores de Alto Impacto</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Box Braids Tradicionais",
+                description: "Tranças soltas feitas com material sintético (Jumbo) que permitem uma infinidade de penteados. São ideais para quem busca durabilidade (até 2 meses) e praticidade total no dia a dia.",
+                tip: "Escolha materiais leves para evitar a tração excessiva na raiz do seu cabelo crespo.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "2. Tranças Nagô (Cornrows) com Design",
+                description: "Tranças rasteiras feitas rente ao couro cabeludo. Em 2026, o foco está em desenhos geométricos complexos e na mistura de espessuras de tranças para criar um visual artístico.",
+                tip: "Durma com uma touca de cetim para evitar que os fios 'arrepiem' na base das tranças.",
+                image: "/assets/cabelo-crespo.webp"
+              },
+              {
+                title: "3. Passion Twists",
+                description: "Uma variação dos twists tradicionais feita com um material mais cacheado e macio. O resultado é uma textura boêmia, leve e com muito balanço, perfeita para quem quer um visual menos rígido.",
+                tip: "Aplique um sérum de brilho nos twists semanalmente para manter o aspecto de novo.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "4. Fulani Braids (Estilo Tribal)",
+                description: "Uma combinação de tranças nagô frontais com box braids na parte de trás, muitas vezes adornadas com búzios, anéis e miçangas. É um penteado que exala herança e sofisticação.",
+                tip: "Os acessórios metálicos devem ser removidos antes da lavagem para evitar a oxidação.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "5. Cuidados com o Couro Cabeludo",
+                description: "Estar trançada não significa esquecer a saúde. Use tônicos capilares e lave o couro cabeludo apenas com shampoo diluído em água para evitar resíduos entre as divisões.",
+                tip: "Nunca prenda as tranças molhadas para evitar a proliferação de fungos e o mau cheiro.",
+                image: "/assets/penteado-cacheado.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O maior segredo das tranças perfeitas é a finalização com mousse. Após terminar as tranças, aplique uma quantidade generosa de mousse e envolva a cabeça com uma faixa (durag). Isso 'assenta' os fios e garante que o penteado fique impecável por muito mais tempo."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'braid-pomade-pro', name: "Pomada Sleek Braid", desc: "Controle total do frizz na base das tranças com brilho intenso.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'scalp-tonic-viking', name: "Tônico Scalp Care", desc: "Hidratação e frescor para o couro cabeludo durante o uso de tranças.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cortes-cabelo-crespo-masculino-tendencias-artisticas': {
       title: 'Cortes de Cabelo Crespo Masculino: Tendências Artísticas de 2026',
       subtitle: 'Do Freestyle ao Platinado, veja as tendências urbanas e artísticas que estão redefinindo o visual crespo masculino.',

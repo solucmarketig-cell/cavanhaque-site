@@ -134,7 +134,8 @@ const articles = [
   'corte-cabelo-crespo-masculino-estilos-modernos',
   'cortes-cabelo-crespo-masculino-profissionais-executivos',
   'penteado-em-cabelo-crespo-elegancia-estilo',
-  'cortes-cabelo-crespo-masculino-tendencias-artisticas'
+  'cortes-cabelo-crespo-masculino-tendencias-artisticas',
+  'penteado-cabelo-crespo-trancas-protetores'
 ];
 
 const baseUrl = 'https://cavanhaque.com';
