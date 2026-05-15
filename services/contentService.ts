@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-liso-masculino',
+          title: 'Cabelo Liso Masculino: Do Clássico ao Moderno em 2026',
+          excerpt: 'Aprenda a dar volume, textura e personalidade aos fios lisos. Os cortes e produtos que todo homem precisa conhecer.',
+          imageUrl: '/assets/slicked-back.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-liso-masculino-guia-estilo',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-liso-feminino',
           title: 'Cabelo Liso: O Guia Absoluto de Cuidados, Cortes e Brilho',
           excerpt: 'Descubra como manter seus fios lisos impecáveis. Dos melhores cortes que dão movimento até o segredo do brilho espelhado.',

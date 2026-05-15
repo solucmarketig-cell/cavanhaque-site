@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-liso-masculino-guia-estilo': {
+      title: 'Cabelo Liso Masculino: Do Clássico ao Moderno em 2026',
+      subtitle: 'Aprenda a dar volume, textura e personalidade aos fios lisos. Os cortes e produtos que todo homem precisa conhecer.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '10 min',
+      category: 'Cabelo',
+      image: '/assets/slicked-back.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo liso masculino</strong> é extremamente versátil, mas muitos homens sofrem com a falta de volume ou o aspecto "escorrido". Em 2026, a tendência é usar a estrutura lisa para criar visuais polidos, mas com texturas que tragam modernidade.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pomada à Base de Água (Brilho)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pó Texturizador de Volume", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Cera Matte de Fixação Forte", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Estilos e Técnicas para Cabelo Liso</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Slick Back (Penteado para Trás)",
+                description: "O rei dos cabelos lisos. Utiliza o comprimento para criar um visual limpo e sofisticado. Pode ser feito com undercut (laterais raspadas) ou degradê.",
+                tip: "Use um pente de dentes finos e pomada de brilho para um visual clássico de gângster moderno.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "2. Pompadour com Volume",
+                description: "Para quem quer altura. O segredo no cabelo liso é o uso do secador e uma escova redonda para criar o topete, finalizando com spray de fixação.",
+                tip: "Aplique o pó texturizador na raiz antes de modelar para garantir que o topete não caia durante o dia.",
+                image: "/assets/pompadour-fade.webp"
+              },
+              {
+                title: "3. Side Part (Divisão Lateral)",
+                description: "O corte executivo por excelência. A risca lateral bem definida traz ordem e seriedade ao visual liso.",
+                tip: "Peça ao barbeiro para marcar a risca com a navalha para facilitar a estilização matinal.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "4. Corte Americano em Lisos",
+                description: "O Taper Fade aplicado ao cabelo liso foca na naturalidade das costeletas e nuca, mantendo o topo longo o suficiente para cair naturalmente.",
+                tip: "Deixe os fios secarem naturalmente com um pouco de leave-in para um visual mais orgânico e jovem.",
+                image: "/assets/corte-americano.webp"
+              },
+              {
+                title: "5. Corte Social Clássico",
+                description: "Para quem busca o básico impecável. Laterais na tesoura e topo médio, penteado de forma discreta.",
+                tip: "O segredo do social é a manutenção mensal para manter o 'pezinho' e o contorno da orelha sempre limpos.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O maior segredo para o homem de cabelo liso não é o corte, é o secador. Se você quer volume, precisa aprender a usar o ar quente a seu favor. E lembre-se: nunca use pomada em excesso, ou seu cabelo vai parecer sujo em poucas horas."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'water-pomade', name: "Pomada Classic Shine", desc: "Brilho e fixação para o Slick Back perfeito.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'volumizer-powder', name: "Pó Texturizador Extreme", desc: "Volume imediato para cabelos lisos e finos.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-liso-feminino-guia': {
       title: 'Cabelo Liso: O Guia Absoluto de Cuidados, Cortes e Brilho',
       subtitle: 'Descubra como manter seus fios lisos impecáveis. Dos melhores cortes que dão movimento até o segredo do brilho espelhado.',
