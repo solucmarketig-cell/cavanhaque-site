@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'penteados-elegantes-festas-eventos': {
+      title: 'Penteados Elegantes: 5 Estilos Sofisticados para Festas e Eventos',
+      subtitle: 'Do Chignon às Hollywood Waves, descubra penteados elegantes que garantem um visual sofisticado e inesquecível em qualquer cerimônia.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '14 min',
+      category: 'Penteados',
+      image: '/assets/side-swept.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Escolher um entre os diversos <strong>penteados elegantes</strong> disponíveis é o passo final para um visual de festa impecável. Mais do que apenas prender o cabelo, um penteado sofisticado harmoniza com o traje e a maquiagem, elevando a autoconfiança para momentos especiais. Em 2026, a elegância reside no equilíbrio entre o clássico estruturado e o moderno com brilho intenso.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Fixador Extra Forte (No-Frizz)", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Spray de Brilho Espelhado", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Cabo Fino (Precisão)", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Luxo e Sofisticação: Penteados de Gala</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Coque Chignon Clássico",
+                description: "O epítome da elegância. Posicionado baixo na nuca, este coque é polido e simétrico. É a escolha perfeita para casamentos e eventos black-tie, onde a sofisticação discreta é a regra.",
+                tip: "Use uma rede invisível da cor do seu cabelo para garantir que nenhum fio saia do lugar durante a festa.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "2. Hollywood Waves (Ondas de Cinema)",
+                description: "Ondas largas, brilhantes e perfeitamente alinhadas para o lado. Este penteado traz o glamour da era de ouro do cinema diretamente para o seu evento. Exige um cabelo bem hidratado para refletir a luz.",
+                tip: "Após fazer as ondas com o babyliss, escove-as suavemente com uma escova de cerdas naturais para criar o efeito contínuo.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "3. Penteado Francês (French Twist)",
+                description: "Também conhecido como coque banana, o French Twist é vertical e alonga a silhueta. É um clássico que ganhou releituras modernas com acabamentos menos rígidos e algumas mechas soltas.",
+                tip: "Garanta a sustentação interna com grampos grandes inseridos na vertical.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "4. Semipreso com Volume no Topo",
+                description: "Inspirado na estética dos anos 60, este semipreso foca no volume na coroa da cabeça e fios perfeitamente lisos ou com ondas suaves no comprimento. Transmite uma elegância vintage poderosa.",
+                tip: "Desfie levemente a raiz no topo (backcombing) antes de prender para ganhar altura duradoura.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Rabo de Cavalo Baixo Polido",
+                description: "A prova de que a simplicidade pode ser extremamente elegante. O segredo está na base oculta pelo próprio cabelo e no acabamento 'glass hair' (cabelo de vidro) obtido com prancha e spray de brilho.",
+                tip: "Use um gel de fixação forte para deixar a parte frontal impecável e sem baby hairs aparentes.",
+                image: "/assets/slicked-back.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Para um penteado elegante durar a noite inteira, o segredo é o 'spray em camadas'. Aplique o spray de fixação durante cada etapa da construção, não apenas no final. E nunca esqueça do spray de brilho: em eventos noturnos, o brilho é o que diferencia um penteado profissional de um amador."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'extra-hold-spray-luxe', name: "Fixador Diamond Hold", desc: "Fixação extrema que resiste à umidade e ao movimento da pista de dança.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'mirror-shine-spray', name: "Gloss Shine Spray", desc: "Acabamento espelhado e toque de seda instantâneo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'penteado-simples-para-fazer-sozinha-rapido': {
       title: 'Penteado Simples para Fazer Sozinha: 5 Opções Rápidas',
       subtitle: 'Sem tempo? Aprenda 5 penteados simples e encantadores que você pode fazer sozinha em poucos minutos para qualquer ocasião.',

@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'penteados-elegantes-festas',
+          title: 'Penteados Elegantes: 5 Estilos para Festas e Eventos',
+          excerpt: 'Do Chignon às Hollywood Waves, descubra penteados elegantes que garantem um visual sofisticado e inesquecível em qualquer cerimônia.',
+          imageUrl: '/assets/side-swept.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteados-elegantes-festas-eventos',
+          category: 'Penteados'
+        },
+        {
           id: 'penteado-simples-sozinha',
           title: 'Penteado Simples para Fazer Sozinha: 5 Ideias Rápidas',
           excerpt: 'Sem tempo? Aprenda 5 penteados simples e encantadores que você pode fazer sozinha em poucos minutos para qualquer ocasião.',
