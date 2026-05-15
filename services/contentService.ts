@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'oleo-ressecado-guia',
+          title: 'Óleo para Cabelo Ressecado: Nutrição e Selagem',
+          excerpt: 'Descubra os melhores óleos para devolver a vida ao cabelo ressecado. Da umectação pré-shampoo à selagem de pontas.',
+          imageUrl: '/assets/cabelo-crespo.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'oleo-para-cabelo-ressecado-nutricao-selagem',
+          category: 'Cabelo'
+        },
+        {
           id: 'shampoo-ressecado-guia',
           title: 'Shampoo para Cabelo Ressecado: O Guia de Escolha e Uso',
           excerpt: 'Lavar o cabelo ressecado exige técnica. Aprenda a escolher shampoos sem sulfato e a lavar os fios sem remover a hidratação.',

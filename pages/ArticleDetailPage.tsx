@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'oleo-para-cabelo-ressecado-nutricao-selagem': {
+      title: 'Óleo para Cabelo Ressecado: Os Melhores Elixires para Nutrição e Brilho',
+      subtitle: 'Descubra os melhores óleos para devolver a vida ao cabelo ressecado. Da umectação pré-shampoo à selagem de pontas.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/cabelo-crespo.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>óleo para cabelo ressecado</strong> é o aliado mais potente na jornada de recuperação dos fios. Ao contrário da água, que evapora facilmente, os óleos (lipídios) criam uma barreira protetora que retém a umidade e devolve a elasticidade. Em 2026, o uso de óleos puros e elixires tecnológicos é a base para cabelos que brilham com saúde e resistem às agressões diárias.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Óleo de Argan Puro", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Óleo de Jojoba Prensado a Frio", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Sérum Finalizador Luxe", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Elixires da Nutrição: Como Usar Óleos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Umectação Noturna com Óleo de Coco",
+                description: "O óleo de coco é um dos poucos que consegue penetrar profundamente no córtex do fio. Aplique-o generosamente no cabelo seco antes de dormir e lave no dia seguinte. É o tratamento de choque ideal para fios extremamente ressecados.",
+                tip: "Use uma touca de cetim para potencializar o calor e não sujar o travesseiro.",
+                image: "/assets/cabelo-crespo.webp"
+              },
+              {
+                title: "2. Óleo de Argan: O Ouro de Marrocos",
+                description: "Rico em vitamina E e ácidos graxos, o óleo de argan é perfeito para selar as pontas duplas e controlar o frizz sem pesar. Use-o como finalizador após o secador ou em dias de alta umidade.",
+                tip: "Apenas duas gotas são suficientes para todo o comprimento e pontas.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "3. Jojoba para Equilíbrio e Proteção",
+                description: "O óleo de jojoba tem uma composição muito próxima ao sebo natural produzido pelo nosso couro cabeludo. É excelente para proteger os fios da poluição e do sol, agindo como um escudo invisível.",
+                tip: "Misture com seu leave-in favorito para uma finalização mais completa.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "4. O 'Boost' na Máscara de Nutrição",
+                description: "Transforme uma máscara básica em um tratamento de luxo adicionando algumas gotas de um mix de óleos vegetais. Isso aumenta o poder de reposição lipídica e garante um toque aveludado pós-enxágue.",
+                tip: "Sempre misture o óleo apenas na quantidade de máscara que for usar na hora.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "5. Selagem de Pontas Diária",
+                description: "Cabelos ressecados perdem nutrientes pelas pontas. Criar o hábito de aplicar um pouco de óleo finalizador todas as manhãs e noites cria uma barreira contra o atrito e o ressecamento ambiental.",
+                tip: "Evite passar óleo muito próximo à raiz para não obstruir os folículos e causar oleosidade excessiva no couro cabeludo.",
+                image: "/assets/fringe-fade.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Nem todo óleo é igual. Para tratamento (umectação), use óleos 100% vegetais e prensados a frio. Para o dia a dia e finalização, prefira séruns que combinam óleos com silicones nobres, que dão brilho instantâneo e proteção térmica. O óleo certo no momento certo muda tudo!"
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'argan-oil-luxe', name: "Óleo de Argan Premium", desc: "Sela as cutículas e elimina o frizz instantaneamente.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'jojoba-repair-oil', name: "Óleo de Jojoba Puro", desc: "Nutrição leve que não pesa nos fios, ideal para todos os tipos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'shampoo-para-cabelo-ressecado-escolha-lavagem': {
       title: 'Shampoo para Cabelo Ressecado: Como Escolher e Lavar sem Agredir',
       subtitle: 'Lavar o cabelo ressecado exige técnica. Aprenda a escolher shampoos sem sulfato e a lavar os fios sem remover a hidratação.',

@@ -139,7 +139,8 @@ const articles = [
   'cabelo-ressecado-guia-resgate-nutricao',
   'hidratacao-caseira-cabelo-ressecado-receitas',
   'hidratacao-para-cabelo-ressecado-tecnicas-ativos',
-  'shampoo-para-cabelo-ressecado-escolha-lavagem'
+  'shampoo-para-cabelo-ressecado-escolha-lavagem',
+  'oleo-para-cabelo-ressecado-nutricao-selagem'
 ];
 
 const baseUrl = 'https://cavanhaque.com';
