@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'corte-liso-longo-masculino',
+          title: 'Corte de Cabelo Liso Masculino Médio e Longo: O Guia do Estilo',
+          excerpt: 'Do Surfer Shag ao Coque Samurai, descubra como deixar o cabelo liso crescer com saúde e muito estilo.',
+          imageUrl: '/assets/surfer-shag.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'corte-cabelo-liso-masculino-medio-longo-estilo',
+          category: 'Cabelo'
+        },
+        {
           id: 'como-cortar-liso-tecnico',
           title: 'Como Cortar Cabelo Liso: O Guia Técnico do Acabamento',
           excerpt: 'Descubra os segredos profissionais para cortar fios lisos sem deixar marcas e garantindo o caimento perfeito.',

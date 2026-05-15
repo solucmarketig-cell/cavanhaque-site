@@ -123,7 +123,8 @@ const articles = [
   'corte-americano-masculino-liso-texturizado',
   'cortes-cabelo-liso-masculino-tendencias-2026',
   'cortes-masculinos-cabelo-liso-classicos-profissionais',
-  'como-cortar-cabelo-liso-guia-tecnico'
+  'como-cortar-cabelo-liso-guia-tecnico',
+  'corte-cabelo-liso-masculino-medio-longo-estilo'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

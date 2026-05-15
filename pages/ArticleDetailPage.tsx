@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'corte-cabelo-liso-masculino-medio-longo-estilo': {
+      title: 'Corte de Cabelo Liso Masculino Médio e Longo: O Guia do Estilo',
+      subtitle: 'Do Surfer Shag ao Coque Samurai, descubra como deixar o cabelo liso crescer com saúde e muito estilo.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/surfer-shag.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Deixar o <strong>cabelo liso masculino</strong> crescer é um exercício de paciência e cuidado. Ao contrário dos fios curtos, o comprimento médio e longo exige um corte que direcione o peso para evitar o aspecto "pirâmide". Em 2026, os estilos longos para lisos focam no movimento orgânico e na versatilidade de penteados, transmitindo uma imagem de liberdade e autenticidade.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Creme de Pentear Hidratante", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo Finalizador de Nutrição", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Escova de Madeira (Anti-frizz)", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Opções de Estilo para Lisos Longos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Surfer Shag (Camadas Selvagens)",
+                description: "O corte que imita o visual dos surfistas. Muitas camadas desfiadas a partir da altura dos olhos. No cabelo liso, isso cria um volume despojado e evita que os fios fiquem totalmente estáticos.",
+                tip: "Use um pouco de spray de sal marinho para dar uma textura leve e tirar o brilho excessivo do liso perfeito.",
+                image: "/assets/surfer-shag.webp"
+              },
+              {
+                title: "2. Middle Part (Corte Cortininha)",
+                description: "Ficou famoso nos anos 90 e voltou com tudo. O cabelo liso é dividido exatamente ao meio, com o comprimento chegando até a altura das orelhas ou maxilar. Exige um fio muito bem alinhado.",
+                tip: "Finalize as pontas para fora com o secador para um visual mais retrô e charmoso.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "3. Coque Samurai (Top Knot)",
+                description: "A solução perfeita para dias quentes ou eventos casuais. O cabelo longo é preso no topo da cabeça. No liso, o coque fica firme e com um acabamento muito limpo.",
+                tip: "Não aperte demais o elástico para evitar a tração excessiva e a quebra dos fios na frente.",
+                image: "/assets/top-knot.webp"
+              },
+              {
+                title: "4. Corte na Altura do Ombro com Fio Reto",
+                description: "Para quem quer um visual de impacto. O cabelo é mantido reto, logo acima dos ombros. Transmite um ar artístico e sofisticado, ideal para quem tem fios grossos e pesados.",
+                tip: "Faça hidratações quinzenais para evitar que as pontas fiquem duplas e opacas.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "5. Manutenção do Comprimento",
+                description: "Crescer o cabelo não significa parar de ir ao barbeiro. Visite o profissional a cada 2 meses apenas para 'limpar' as pontas e refazer as camadas que dão movimento.",
+                tip: "Penteie sempre começando pelas pontas e subindo para a raiz para evitar nós e quebra.",
+                image: "/assets/wolf-cut-masculino.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O maior erro do homem com cabelo longo é achar que shampoo 2 em 1 resolve. Fios longos precisam de condicionador de qualidade e óleos de nutrição. O cabelo liso longo só fica bonito se estiver brilhante e com as pontas saudáveis. Se parecer palha, é hora de cortar."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'leave-in-pro', name: "Creme Leave-in Nutritivo", desc: "Controla o frizz e protege o comprimento longo o dia todo.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'wood-brush-luxe', name: "Escova de Madeira Premium", desc: "Desembaraça sem gerar eletricidade estática nos fios lisos.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'como-cortar-cabelo-liso-guia-tecnico': {
       title: 'Como Cortar Cabelo Liso: O Guia Técnico do Acabamento',
       subtitle: 'Descubra os segredos profissionais para cortar fios lisos sem deixar marcas e garantindo o caimento perfeito.',
