@@ -131,7 +131,8 @@ const articles = [
   'cabelo-ondulado-curto-cortes-praticidade',
   'cabelo-ondulado-feminino-cortes-volume-balanco',
   'cabelo-crespo-guia-cuidados-volume',
-  'corte-cabelo-crespo-masculino-estilos-modernos'
+  'corte-cabelo-crespo-masculino-estilos-modernos',
+  'cortes-cabelo-crespo-masculino-profissionais-executivos'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cortes-crespo-profissional',
+          title: 'Cortes para Cabelo Crespo Masculino: 5 Opções para Profissionais',
+          excerpt: 'Conheça os cortes clássicos e discretos que valorizam o cabelo crespo masculino no ambiente corporativo e eventos formais.',
+          imageUrl: '/assets/social-classico.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'cortes-cabelo-crespo-masculino-profissionais-executivos',
+          category: 'Cabelo'
+        },
+        {
           id: 'corte-crespo-masculino',
           title: 'Corte para Cabelo Crespo Masculino: 5 Estilos Modernos',
           excerpt: 'Do High Top Fade ao Nudred, conheça os cortes que valorizam o cabelo crespo masculino com precisão e estilo.',

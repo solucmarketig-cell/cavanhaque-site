@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cortes-cabelo-crespo-masculino-profissionais-executivos': {
+      title: 'Cortes para Cabelo Crespo Masculino: 5 Opções para Profissionais',
+      subtitle: 'Conheça os cortes clássicos e discretos que valorizam o cabelo crespo masculino no ambiente corporativo e eventos formais.',
+      author: 'Carlos Barbudo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Cabelo',
+      image: '/assets/social-classico.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>cabelo crespo masculino</strong> no ambiente corporativo exige um corte que transmita seriedade, asseio e profissionalismo, sem perder a identidade da textura afro. Em 2026, a estética executiva para crespos foca em contornos impecáveis e volumes controlados, garantindo uma imagem de autoridade e cuidado pessoal em qualquer reunião de negócios.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pomada Modeladora Matte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente de Dentes Finos (Acabamento)", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Shampoo de Brilho Intensivo", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Clássicos Executivos para Fios Crespos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Low Fade com Topo Curto",
+                description: "O degradê começa bem próximo à orelha e nuca, mantendo a maior parte do cabelo com um comprimento baixo e uniforme. É a definição de um visual discreto, limpo e extremamente profissional.",
+                tip: "Peça ao barbeiro para manter a linha da testa (line up) natural, mas muito bem desenhada.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "2. Corte Social Crespo na Tesoura",
+                description: "Todo feito na tesoura para um caimento mais orgânico e menos agressivo que a máquina. Ideal para quem busca um visual clássico que respeita a curvatura do fio sem o contraste do degradê.",
+                tip: "Exige que o cabelo esteja muito bem hidratado para que o corte tenha o brilho necessário da estética executiva.",
+                image: "/assets/high-fade.webp"
+              },
+              {
+                title: "3. Mid Fade com Risca Lateral Discreta",
+                description: "O degradê médio traz modernidade, enquanto a risca lateral feita na navalha simula o repartido clássico dos cortes de negócios. Transmite uma imagem de quem presta atenção aos detalhes.",
+                tip: "A risca deve ser fina e seguir o desenho natural da cabeça para não parecer artificial.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "4. Black Power Reduzido e Simétrico",
+                description: "Para quem não abre mão do volume mas precisa de controle. O cabelo é mantido em um formato arredondado impecável e com comprimento menor, garantindo que o volume seja uma moldura séria para o rosto.",
+                tip: "Use o pente garfo apenas para ajustar a forma, mantendo as pontas seladas com pomada.",
+                image: "/assets/cabelo-crespo.webp"
+              },
+              {
+                title: "5. Manutenção e Brilho Diário",
+                description: "Um corte executivo pede fios brilhantes. O cabelo crespo tende a ser opaco; por isso, o uso diário de um sérum ou óleo finalizador é obrigatório para transmitir saúde e vigor.",
+                tip: "Aplique o produto sempre após a higienização, com o cabelo levemente úmido para melhor absorção.",
+                image: "/assets/slicked-back.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "No mundo dos negócios, o seu cabelo fala antes de você. Para o homem negro, um corte crespo com o 'pezinho' (contorno) sempre em dia é o equivalente a estar com a camisa bem passada. Mantenha a manutenção a cada 10 ou 15 dias para garantir que a sua imagem de autoridade nunca oscile."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'matte-pomade-exec', name: "Pomada Matte Profissional", desc: "Fixação que dura toda a jornada sem deixar brilho artificial.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'shine-serum-viking', name: "Sérum de Brilho Viking", desc: "O segredo para um crespo vibrante e saudável no escritório.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'corte-cabelo-crespo-masculino-estilos-modernos': {
       title: 'Corte para Cabelo Crespo Masculino: 5 Estilos Modernos',
       subtitle: 'Do High Top Fade ao Nudred, conheça os cortes que valorizam o cabelo crespo masculino com precisão e estilo.',
