@@ -66,6 +66,36 @@ export const fetchArticles = async (): Promise<Article[]> => {
           category: 'Cabelo'
         },
         {
+          id: 'corte-masculino-cacheado-2026',
+          title: 'Corte para Cabelo Cacheado Masculino: 5 Estilos que Dominam 2026',
+          excerpt: 'Procurando o corte para cabelo cacheado masculino ideal? Veja os estilos que estão fazendo sucesso nas barbearias este ano.',
+          imageUrl: '/assets/cabelos-cacheados-guia.webp',
+          author: 'Carlos Barbudo',
+          date: '15 Mai 2026',
+          slug: 'corte-para-cabelo-cacheado-masculino',
+          category: 'Cabelo'
+        },
+        {
+          id: 'penteado-cabelo-cacheado-infantil-guia',
+          title: 'Penteado Cabelo Cacheado Infantil: 5 Ideias Encantadoras',
+          excerpt: 'Encontre o penteado cabelo cacheado infantil perfeito para festas, casamentos ou para o dia a dia com muito estilo e brilho.',
+          imageUrl: '/assets/penteado-infantil-floral.png',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteado-cabelo-cacheado-infantil',
+          category: 'Cabelo'
+        },
+        {
+          id: 'penteados-infantis-cabelo-cacheado-tendencia',
+          title: 'Penteados Infantis Cabelo Cacheado: 5 Estilos que são Tendência',
+          excerpt: 'Transforme a rotina das crianças com penteados infantis para cabelo cacheado que unem estilo, praticidade e muita fofura.',
+          imageUrl: '/assets/penteado-infantil-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteados-infantis-cabelo-cacheado',
+          category: 'Cabelo'
+        },
+        {
           id: 'hair-blonde-gen',
           title: 'Cabelos Loiros Masculinos: O Guia Completo de Estilo',
           excerpt: 'Tudo o que você precisa saber sobre o universo dos loiros para homens. Do cuidado básico à escolha da tonalidade ideal.',

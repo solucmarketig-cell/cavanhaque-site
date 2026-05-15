@@ -110,7 +110,10 @@ const articles = [
   'transplante-de-barba-fue-vale-a-pena',
   'visagismo-carecas-barbudos',
   'willian-bigode-estilo-e-legado',
-  'wolf-cut-masculino-tendencia'
+  'wolf-cut-masculino-tendencia',
+  'penteados-infantis-cabelo-cacheado',
+  'penteado-cabelo-cacheado-infantil',
+  'corte-para-cabelo-cacheado-masculino'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

@@ -191,12 +191,14 @@ const ArticleDetailPage: React.FC = () => {
               {
                 title: "2. Versatilidade de Estilização",
                 description: "Com as laterais baixas, você pode focar toda a sua criatividade no topo. Use técnicas de fitagem para cachos super definidos ou use um pente garfo para um visual afro-chic volumoso e impactante.",
-                tip: "Experimente usar acessórios como presilhas coloridas na transição do fade para um visual mais delicado."
+                tip: "Experimente usar acessórios como presilhas coloridas na transição do fade para um visual mais delicado.",
+                image: "/assets/curly-american-versatility.png"
               },
               {
                 title: "3. Praticidade no Day After",
                 description: "Menos cabelo nas laterais significa menos tempo desembaraçando áreas críticas. O corte americano mantém o visual arrumado por mais tempo, exigindo apenas uma revitalização rápida dos cachos do topo pela manhã.",
-                tip: "Use uma fronha de cetim para que o fade não perca a nitidez devido ao atrito com o travesseiro."
+                tip: "Use uma fronha de cetim para que o fade não perca a nitidez devido ao atrito com o travesseiro.",
+                image: "/assets/curly-satin-pillowcase.png"
               }
             ]}
           />
@@ -242,17 +244,20 @@ const ArticleDetailPage: React.FC = () => {
               {
                 title: "1. Butterfly Cut Cacheado",
                 description: "O corte 'Borboleta' chegou aos cachos. Com camadas curtas no topo que se misturam a camadas longas na base, ele cria a ilusão de dois comprimentos diferentes, proporcionando um volume luxuoso e um movimento incrível.",
-                tip: "Finalize com um leave-in leve para que as camadas 'voem' naturalmente."
+                tip: "Finalize com um leave-in leve para que as camadas 'voem' naturalmente.",
+                image: "/assets/curly-butterfly-cut.png"
               },
               {
                 title: "2. Wolf Cut com Volume Afro",
                 description: "A mistura do mullet com o shaggy continua forte. Para cacheadas, o foco é na franja volumosa e nas laterais mais baixas, criando um visual 'messy' proposital e cheio de estilo urbano.",
-                tip: "Use uma gelatina modeladora para dar peso e definição à franja."
+                tip: "Use uma gelatina modeladora para dar peso e definição à franja.",
+                image: "/assets/curly-wolf-cut.png"
               },
               {
                 title: "3. Round Layered (Camadas Arredondadas)",
                 description: "O clássico redondo ganha novas proporções. O objetivo é criar uma moldura circular perfeita ao redor do rosto, distribuindo o volume de forma uniforme. É o corte ideal para quem não tem medo de ser notada.",
-                tip: "Penteie a raiz para cima enquanto seca com o difusor para maximizar o formato redondo."
+                tip: "Penteie a raiz para cima enquanto seca com o difusor para maximizar o formato redondo.",
+                image: "/assets/curly-round-cut.png"
               }
             ]}
           />
@@ -299,17 +304,19 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Identificação da Curvatura",
                 description: "O cabelo cacheado se divide em categorias: 3A (cachos largos), 3B (cachos mais definidos e médios) e 3C (cachos fechados e volumosos). Identificar o seu tipo ajuda na escolha dos produtos certos, já que cada um exige uma carga diferente de óleos.",
                 tip: "É comum ter mais de uma curvatura na mesma cabeça. Adapte a aplicação de produtos conforme a necessidade de cada área.",
-                image: "/assets/cabelo-cacheado-feminino.webp"
+                image: "/assets/curly-curvatures.png"
               },
               {
                 title: "2. Cronograma Capilar de Elite",
                 description: "O segredo para cachos brilhantes é o equilíbrio entre Hidratação (água), Nutrição (óleos) e Reconstrução (proteína). Como o óleo natural tem dificuldade de chegar às pontas devido ao formato espiral, a etapa de Nutrição deve ser a sua favorita.",
-                tip: "Use óleos vegetais puros para umectação noturna uma vez por semana; isso transforma a textura do fio."
+                tip: "Use óleos vegetais puros para umectação noturna uma vez por semana; isso transforma a textura do fio.",
+                image: "/assets/curly-schedule.png"
               },
               {
                 title: "3. Lavagem e Finalização",
                 description: "Lave o cabelo preferencialmente com técnica Low Poo para não retirar a proteção natural. Na hora de finalizar, use a técnica 'Plopping' (secar com uma camiseta de algodão) para remover a umidade sem causar atrito ou quebra dos fios.",
-                tip: "Evite secar o cabelo esfregando a toalha; o atrito é o maior gerador de frizz e perda de definição."
+                tip: "Evite secar o cabelo esfregando a toalha; o atrito é o maior gerador de frizz e perda de definição.",
+                image: "/assets/curly-plopping.png"
               }
             ]}
           />
@@ -356,17 +363,19 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. A Preparação 'Liquid Gold'",
                 description: "O segredo começa no chuveiro. Use um leave-in de base aquosa logo após o enxágue do condicionador, com o cabelo ainda pingando. Isso 'prende' a umidade dentro do fio, garantindo brilho espelhado.",
                 tip: "Nunca use toalhas de banho comuns; prefira uma camiseta de algodão ou toalha de microfibra para retirar o excesso de água.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/curly-liquid-gold.png"
               },
               {
                 title: "2. Técnica de Fitagem Estruturada",
                 description: "Divida o cabelo em seções. Aplique o creme de pentear misturado com um pouco de gelatina. Use os dedos ou uma escova específica para separar as 'fitas' de cabelo. Balance as mechas para que os cachos se formem naturalmente.",
-                tip: "Para mais volume na raiz, faça a fitagem com a cabeça inclinada para a frente ou para os lados."
+                tip: "Para mais volume na raiz, faça a fitagem com a cabeça inclinada para a frente ou para os lados.",
+                image: "/assets/curly-fitagem.png"
               },
               {
                 title: "3. Secagem Inteligente com Difusor",
                 description: "Encaixe o difusor no secador em temperatura média e velocidade baixa. Coloque o cacho dentro do 'copo' do difusor e leve até a raiz, segurando por 15 segundos. Repita por todo o cabelo até que esteja 90% seco.",
-                tip: "Não toque no cabelo enquanto ele seca para evitar o frizz. Só use os dedos para soltar os cachos depois que estiverem 100% secos e frios."
+                tip: "Não toque no cabelo enquanto ele seca para evitar o frizz. Só use os dedos para soltar os cachos depois que estiverem 100% secos e frios.",
+                image: "/assets/curly-diffuser.png"
               }
             ]}
           />
@@ -10157,6 +10166,211 @@ const ArticleDetailPage: React.FC = () => {
       ),
       recommendedProducts: [
         { id: 'kids-curly-shampoo', name: "Shampoo Cachos Kids Soft", desc: "Fórmula suave que não arde os olhos e define os cachinhos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <HeartPulse size={32} /> }
+      ]
+    },
+    'corte-para-cabelo-cacheado-masculino': {
+      title: "Corte para Cabelo Cacheado Masculino: 5 Estilos que Dominam 2026",
+      subtitle: "Do volume clássico ao degradê moderno, encontre o corte para cabelo cacheado masculino que mais combina com seu estilo.",
+      author: "Carlos Barbudo",
+      date: "15 de Maio de 2026",
+      readTime: "14 min",
+      category: "Cabelo",
+      image: "/assets/cabelos-cacheados-guia.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>corte para cabelo cacheado masculino</strong> passou por uma revolução nos últimos anos. Se antes o objetivo era apenas 'domar' o volume, hoje a tendência é abraçar a textura e usar técnicas de degradê (fade) para criar contraste e modernidade. Seja você um adepto do visual curto e prático ou do volume dramático, o corte certo é a base de um grooming de respeito. Carlos Barbudo selecionou as 5 apostas que estão fazendo a cabeça dos homens este ano.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pomada Modeladora Efeito Matte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Pente Garfo para Volume", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Ativador de Cachos Masculino", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Top 5 Cortes para Homens Cacheados</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. High Fade com Cachos Definidos",
+                description: "O degradê alto 'limpa' as laterais de forma agressiva e moderna, deixando todo o destaque para os cachos no topo da cabeça. É ideal para rostos redondos, pois ajuda a alongar a silhueta. Exige manutenção quinzenal para manter o fade nítido.",
+                tip: "Finalize os cachos do topo com um pouco de gelatina para que eles fiquem bem firmes e não 'desabem' durante o dia.",
+                image: "/assets/high-fade.webp"
+              },
+              {
+                title: "2. Taper Fade Ondulado (O Clássico Moderno)",
+                description: "Diferente do fade tradicional, o Taper foca apenas na nuca e nas costeiras. É um corte mais discreto e elegante, perfeito para ambientes corporativos que permitem um pouco de volume natural. Valoriza muito a textura de quem tem cachos do tipo 2C e 3A.",
+                tip: "Use um leave-in hidratante para que as ondas tenham movimento e brilho saudável.",
+                image: "/assets/taper-ondulado.webp"
+              },
+              {
+                title: "3. Burst Fade / Moicano Disfarcado",
+                description: "O degradê circular ao redor da orelha cria um visual de moicano muito estiloso para cabelos cacheados e crespos. É um corte com muita personalidade e que destaca a curvatura vertical do fio.",
+                tip: "O pente garfo é o seu melhor amigo aqui para dar aquela 'subida' no volume do moicano após a secagem.",
+                image: "/assets/burst-fade.webp"
+              },
+              {
+                title: "4. Surfista Moderno (Shag Masculino)",
+                description: "Para quem não abre mão do comprimento. O corte é feito em camadas para distribuir o volume por toda a cabeça, evitando o efeito pirâmide. Traz uma vibe relaxada e jovial, ideal para quem tem um estilo de vida mais despojado.",
+                tip: "Finalize com spray de sal marinho para um visual 'podrinho' de praia que valoriza a textura.",
+                image: "/assets/surfer-shag.webp"
+              },
+              {
+                title: "5. Corte César com Textura Cacheada",
+                description: "Uma variação do clássico César, com a franja reta mas mantendo a textura natural dos cachos. É um corte curto, prático e que disfarça muito bem entradas leves na testa, trazendo foco para o centro do rosto.",
+                tip: "Use uma pomada de fixação média para manter a franja no lugar sem tirar o movimento natural.",
+                image: "/assets/cesar-moderno.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica do Carlos Barbudo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "O maior erro do homem cacheado é querer usar a mesma rotina de quem tem cabelo liso. Seu cabelo precisa de óleo, não de shampoo forte. Invista em um bom condicionador e nunca, em hipótese alguma, penteie o cabelo seco. O segredo do corte é a finalização."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'matte-pomade', name: "Pomada Viking Matte", desc: "Fixação forte sem brilho para um visual natural.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'curl-activator', name: "Ativador de Cachos Pro", desc: "Define e hidrata os fios masculinos o dia todo.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Droplets size={32} /> }
+      ]
+    },
+    'penteado-cabelo-cacheado-infantil': {
+      title: "Penteado Cabelo Cacheado Infantil: 5 Ideias Encantadoras",
+      subtitle: "Descubra opções de penteado cabelo cacheado infantil para transformar qualquer ocasião em um momento de pura magia.",
+      author: "Lara Estilo",
+      date: "15 de Maio de 2026",
+      readTime: "12 min",
+      category: "Cabelo",
+      image: "/assets/penteado-infantil-floral.png",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Escolher o <strong>penteado cabelo cacheado infantil</strong> ideal é mais do que apenas estética; é sobre valorizar a beleza natural e a autoestima desde cedo. Para festas, eventos formais ou até para um passeio especial, existem técnicas que destacam a curvatura dos cachinhos sem comprometer a saúde dos fios. Neste guia, Lara Estilo apresenta opções que unem elegância e praticidade para deixar os pequenos radiantes.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Sérum Iluminador de Cachos", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova de Cerdas Macias para Acabamento", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Acessórios com Pérolas e Flores", link: "https://mercadolivre.com/sec/1exasrj" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Sugestões de Penteados para Momentos Especiais</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Semipreso Floral Encantado",
+                description: "Um estilo romântico que nunca sai de moda. Prenda as mechas laterais na parte de trás da cabeça e decore com pequenas flores naturais ou presilhas florais. Deixe o restante dos cachos bem definidos e soltos para um visual de 'fada'.",
+                tip: "Use um spray de brilho leve para dar um acabamento luminoso que se destaca sob as luzes da festa.",
+                image: "/assets/penteado-infantil-floral.png"
+              },
+              {
+                title: "2. Coque Baixo com Detalhes de Pérolas",
+                description: "Para eventos muito formais como casamentos, o coque baixo é a escolha de elite. Organize os cachos de forma frouxa na nuca e intercale pequenos grampos com pérolas para um toque de sofisticação clássica.",
+                tip: "Aplique um pouco de balm nas mãos antes de montar o coque para evitar o frizz durante a manipulação.",
+                image: "/assets/penteado-infantil-acessorios.png"
+              },
+              {
+                title: "3. Trança Lateral com Cascata de Cachos",
+                description: "Faça uma trança embutida apenas em um lado da cabeça, começando na têmpora e indo até atrás da orelha. Deixe o outro lado completamente solto e volumoso. É um penteado moderno que combina atitude e delicadeza.",
+                tip: "Prenda o final da trança com um elástico invisível e esconda-o sob uma mecha de cabelo.",
+                image: "/assets/penteado-infantil-trancas.png"
+              },
+              {
+                title: "4. Coroa de Cachos com Tiara",
+                description: "Use o volume a seu favor! Penteie o cabelo para trás e use uma tiara delicada para segurar os fios, permitindo que os cachos formem uma 'coroa' natural no topo e nas laterais. É simples, rápido e muito elegante.",
+                tip: "Escolha tiaras que tenham proteção nas pontas para não incomodar a criança após algumas horas de uso.",
+                image: "/assets/penteado-infantil-cacheado.webp"
+              },
+              {
+                title: "5. Rabo de Cavalo com Laço de Cetim",
+                description: "Um clássico reinventado. Faça um rabo de cavalo alto e bem volumoso. O detalhe final fica por conta de um laço de cetim luxuoso. É um visual limpo que destaca o rosto da criança e a definição dos fios.",
+                tip: "Para um rabo de cavalo mais cheio, use dois elásticos em vez de um para dar mais sustentação à base.",
+                image: "/assets/penteado-infantil-abacaxi.png"
+              }
+            ]}
+          />
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'styling-serum', name: "Sérum Glow Cachos Kids", desc: "Brilho instantâneo e proteção contra umidade.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> },
+        { id: 'flower-clips', name: "Kit Presilhas Florais Premium", desc: "Acessórios delicados que não puxam o fio.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <HeartPulse size={32} /> }
+      ]
+    },
+    'penteados-infantis-cabelo-cacheado': {
+      title: "Penteados Infantis Cabelo Cacheado: 5 Estilos que são Tendência",
+      subtitle: "Transforme o visual dos pequenos com penteados infantis para cabelo cacheado que celebram a textura natural com criatividade.",
+      author: "Lara Estilo",
+      date: "15 de Maio de 2026",
+      readTime: "13 min",
+      category: "Cabelo",
+      image: "/assets/penteado-infantil-cacheado.webp",
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Criar <strong>penteados infantis para cabelo cacheado</strong> é uma oportunidade maravilhosa de fortalecer a conexão com as crianças e incentivar o amor pelos seus fios naturais. Esqueça os penteados que esticam ou agridem o couro cabeludo sensível; a tendência atual foca no volume, na cor e em acessórios que transformam o cuidado em uma verdadeira brincadeira. Com a curadoria da <strong>Lara Estilo</strong>, selecionamos 5 looks que são práticos para os pais e amados pelos pequenos.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Elásticos de Silicone Coloridos (Sem Quebra)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gelatina Infantil com Cheirinho de Frutas", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Escova Desembaraçante Flexível", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Laços e Tiaras de Cetim", link: "https://mercadolivre.com/sec/2Wo6ZWc" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Top 5 Penteados para Arrasar em Qualquer Ocasião</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Coque Abacaxi Estilizado",
+                description: "O clássico 'pineapple' ganha um toque de sofisticação com um laço gigante na base. É o penteado perfeito para festas ou para dias quentes, mantendo os cachos protegidos e o rosto livre. O segredo é não apertar muito o elástico para manter o balanço dos fios no topo.",
+                tip: "Use uma gelatina leve nas laterais para abaixar os 'baby hairs' sem deixar o cabelo endurecido.",
+                image: "/assets/penteado-infantil-abacaxi.png"
+              },
+              {
+                title: "2. Tranças Laterais com Elásticos Coloridos",
+                description: "Este visual é pura diversão! Faça pequenas tranças ou torcidinhos nas laterais da cabeça, prendendo cada seção com elásticos de cores diferentes. Deixe o restante do cabelo solto e bem volumoso atrás. É um sucesso garantido na escola.",
+                tip: "Umedeça as mechas com um pouco de creme de pentear antes de trançar para garantir que o penteado dure o dia todo.",
+                image: "/assets/penteado-infantil-trancas.png"
+              },
+              {
+                title: "3. Maria-Chiquinha Alta com Volume",
+                description: "Reinventamos a tradicional maria-chiquinha. Em vez de prender todo o comprimento, prenda apenas a base no topo da cabeça, permitindo que os cachos se abram como pompons gigantes. Traz um ar lúdico e destaca a curvatura natural da criança.",
+                tip: "Penteie a raiz suavemente com uma escova de cerdas macias para um acabamento polido na base.",
+                image: "/assets/penteado-infantil-chiquinha.png"
+              },
+              {
+                title: "4. Semipreso com Space Buns (Mini Coques)",
+                description: "Os 'space buns' são a febre do momento. Prenda apenas a parte frontal do cabelo em dois mini coques no topo da cabeça, deixando a parte de trás solta. É moderno, estiloso e muito confortável para brincar.",
+                tip: "Decore os mini coques com glitter capilar biodegradável para eventos especiais ou aniversários.",
+                image: "/assets/penteado-infantil-spacebuns.png"
+              },
+              {
+                title: "5. Acessórios de Princesa e Tiaras",
+                description: "Às vezes, menos é mais. Um cabelo solto e bem finalizado pode ser transformado com o acessório certo. Tiaras com flores, coroas delicadas ou presilhas de pérolas dão o toque final para casamentos e batizados.",
+                tip: "Sempre verifique se o acessório não tem partes pontiagudas que possam machucar o couro cabeludo da criança.",
+                image: "/assets/penteado-infantil-acessorios.png"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "A regra número um para penteados infantis é o conforto. Se a criança sentir que está puxando ou incomodando, ela terá uma relação negativa com o cuidado capilar. Use sempre produtos 'no tears' (sem lágrimas) e transforme o momento do penteado em uma história ou conversa prazerosa."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'kids-gel', name: "Gelatina Kids Brilho Mágico", desc: "Fixação suave e cheirinho de chiclete.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> },
+        { id: 'kids-brush', name: "Escova Mágica Desembaraçante", desc: "Desata nós sem puxar e sem quebrar os cachinhos.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Scissors size={32} /> }
       ]
     },
     'cabelos-loiros-masculinos-guia': {
