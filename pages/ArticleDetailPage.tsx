@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'shampoo-para-cabelo-ressecado-escolha-lavagem': {
+      title: 'Shampoo para Cabelo Ressecado: Como Escolher e Lavar sem Agredir',
+      subtitle: 'Lavar o cabelo ressecado exige técnica. Aprenda a escolher shampoos sem sulfato e a lavar os fios sem remover a hidratação.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Cabelo',
+      image: '/assets/side-swept.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Muitas vezes, o <strong>shampoo para cabelo ressecado</strong> é o culpado pelo aspecto de "palha" dos fios. Shampoos convencionais com sulfatos agressivos removem não apenas a sujeira, mas também os óleos naturais essenciais para a saúde da fibra. Em 2026, a tendência é a limpeza inteligente, utilizando produtos que higienizam o couro cabeludo enquanto tratam e protegem o comprimento e as pontas.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Shampoo Sem Sulfato (Sulfate-Free)", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Shampoo de Limpeza Hidratante", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Cowash (Condicionador Limpante)", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Limpando com Inteligência: O Guia do Shampoo</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. O Perigo dos Sulfatos Fortes",
+                description: "Sulfatos como o Sodium Lauryl Sulfate são detergentes potentes que 'sequestram' a umidade do fio. Para cabelos ressecados, procure por shampoos com surfactantes suaves, que fazem menos espuma, mas limpam sem ressecar.",
+                tip: "Verifique o rótulo: nomes como 'Sodium Laureth Sulfate' são mais suaves que o 'Lauryl'.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "2. Shampoos de PH Balanceado",
+                description: "O pH ideal do cabelo é levemente ácido (entre 4.5 e 5.5). Shampoos alcalinos abrem demais as cutículas. Escolher um shampoo para cabelo ressecado com pH balanceado mantém as escamas seladas desde a lavagem.",
+                tip: "Shampoos perolados costumam ser mais hidratantes que os transparentes.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "3. Aplicação Estratégica: Foco na Raiz",
+                description: "O shampoo deve ser aplicado apenas no couro cabeludo. A espuma que escorre pelo comprimento durante o enxágue é suficiente para limpar as pontas sem agredi-las. Nunca esfregue as pontas entre as mãos.",
+                tip: "Massageie o couro cabeludo com a ponta dos dedos, nunca com as unhas, para ativar a circulação.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "4. Alternando com Cowash",
+                description: "Para cabelos extremamente ressecados ou cacheados, a técnica de Cowash (lavar apenas com condicionador limpante) uma vez por semana ajuda a preservar a barreira lipídica natural.",
+                tip: "Certifique-se de usar um condicionador específico para Cowash, que não contenha silicones insolúveis.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "5. Enxágue com Água Morna ou Fria",
+                description: "A água quente derrete os óleos protetores do fio e aumenta o ressecamento. Finalize a lavagem sempre com água morna ou fria para garantir que as cutículas fiquem bem fechadas.",
+                tip: "Se puder, use água filtrada no último enxágue para evitar o excesso de cloro e minerais.",
+                image: "/assets/social-classico.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Lavar o cabelo ressecado todos os dias é o caminho mais curto para o desastre. Tente espaçar as lavagens e, nos dias de 'folga', use um shampoo seco apenas na raiz se necessário. Menos lavagem significa mais óleos naturais protegendo a estrutura do seu fio."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'sulfate-free-shampoo', name: "Shampoo Pure Moisture", desc: "Fórmula sem sulfatos que limpa tratando a fibra capilar.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'cowash-luxe-cream', name: "Creme Limpante Cowash", desc: "Limpeza ultra suave para fios extremamente fragilizados.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'hidratacao-para-cabelo-ressecado-tecnicas-ativos': {
       title: 'Hidratação para Cabelo Ressecado: Técnicas e Ativos que Transformam os Fios',
       subtitle: 'Descubra como escolher os melhores ativos e as técnicas de enluvamento que garantem uma hidratação profunda para fios ressecados.',

@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'shampoo-ressecado-guia',
+          title: 'Shampoo para Cabelo Ressecado: O Guia de Escolha e Uso',
+          excerpt: 'Lavar o cabelo ressecado exige técnica. Aprenda a escolher shampoos sem sulfato e a lavar os fios sem remover a hidratação.',
+          imageUrl: '/assets/side-swept.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'shampoo-para-cabelo-ressecado-escolha-lavagem',
+          category: 'Cabelo'
+        },
+        {
           id: 'hidratacao-ressecado-tecnicas',
           title: 'Hidratação para Cabelo Ressecado: Técnicas e Ativos',
           excerpt: 'Descubra como escolher os melhores ativos e as técnicas de enluvamento que garantem uma hidratação profunda para fios ressecados.',
