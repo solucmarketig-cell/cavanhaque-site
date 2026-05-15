@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'penteado-liso-feminino',
+          title: 'Penteado em Cabelo Liso: 5 Looks de Puro Luxo e Elegância',
+          excerpt: 'Do visual "Clean Girl" ao coque minimalista, descubra os penteados que valorizam a textura lisa com sofisticação.',
+          imageUrl: '/assets/social-classico.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteado-em-cabelo-liso-feminino-guia',
+          category: 'Cabelo'
+        },
+        {
           id: 'corte-americano-masculino-liso',
           title: 'Corte Americano em Cabelo Liso Masculino: O Guia do Taper Perfeito',
           excerpt: 'Domine a técnica do Taper Fade em fios lisos. Saiba como pedir ao barbeiro e quais produtos usar para manter o visual impecável.',

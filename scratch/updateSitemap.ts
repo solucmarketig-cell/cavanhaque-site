@@ -117,7 +117,8 @@ const articles = [
   'cabelo-liso-feminino-guia',
   'cabelo-liso-masculino-guia-estilo',
   'cortes-americanos-cabelo-liso-feminino',
-  'corte-americano-masculino-cabelo-liso-guia'
+  'corte-americano-masculino-cabelo-liso-guia',
+  'penteado-em-cabelo-liso-feminino-guia'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

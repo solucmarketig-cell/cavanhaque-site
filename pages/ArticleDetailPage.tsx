@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'penteado-em-cabelo-liso-feminino-guia': {
+      title: 'Penteado em Cabelo Liso: 5 Looks de Puro Luxo e Elegância',
+      subtitle: 'Do visual "Clean Girl" ao coque minimalista, descubra os penteados que valorizam a textura lisa com sofisticação.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/social-classico.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>penteado em cabelo liso</strong> brilha pela precisão e pelo acabamento impecável. Em 2026, a tendência foca no minimalismo luxuoso: cabelos extremamente bem cuidados, com brilho espelhado e linhas definidas. Seja para o dia a dia ou para um grande evento, o segredo do sucesso nos lisos está na preparação e no uso correto dos produtos de finalização.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Pomada de Fixação Invisível", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Spray de Fixação Forte (Sem Resíduos)", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Grampos de Aço Reforçados", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Top 5 Penteados para Cabelos Lisos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Rabo de Cavalo Alto Polido",
+                description: "O icônico visual 'Clean Girl'. O cabelo é puxado para o topo da cabeça e preso com extrema precisão. Não deve haver nenhum fio fora do lugar. O rabo de cavalo cai liso e reto, transmitindo elegância e poder.",
+                tip: "Use uma escova de dentes com um pouco de spray para abaixar os baby hairs e garantir o acabamento perfeito.",
+                image: "/assets/social-classico.webp"
+              },
+              {
+                title: "2. Coque Baixo Minimalista",
+                description: "Posicionado na altura da nuca, este coque é a definição de sofisticação discreta. É o penteado favorito para casamentos e eventos corporativos de alto nível no cabelo liso.",
+                tip: "Enrole o próprio cabelo ao redor do elástico para escondê-lo e dar um toque artesanal ao penteado.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "3. Semipreso com Torcidinhos",
+                description: "Duas mechas frontais são levemente torcidas e presas na parte de trás. Um penteado romântico que valoriza o comprimento liso e retira o cabelo do rosto com delicadeza.",
+                tip: "Adicione uma presilha de pérolas no ponto onde as mechas se encontram para um toque extra de luxo.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "4. Efeito Wet Look (Molhado)",
+                description: "O auge da modernidade. O topo do cabelo recebe gel de fixação média para criar o aspecto molhado, enquanto o comprimento continua seco e liso. É o look das passarelas internacionais.",
+                tip: "Penteie para trás com um pente largo para criar as marcas de direção que dão textura ao visual.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "5. Trança Lateral Embutida",
+                description: "Uma trança única que começa na têmpora e desce rente ao couro cabeludo, deixando o restante do cabelo solto. No liso, a definição da trança fica extremamente nítida.",
+                tip: "Aplique um pouco de pó texturizador nos gomos da trança e abra-os levemente com os dedos para dar mais volume.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Para penteados em cabelos lisos, a preparação é tudo. Se o fio estiver muito 'escorregadio', o penteado não vai durar. O segredo é usar um pouco de shampoo a seco na raiz antes de começar, mesmo com o cabelo limpo, para criar a aderência necessária."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'invisible-pomade', name: "Pomada Glow Invisível", desc: "Fixa sem deixar o cabelo com aspecto oleoso ou duro.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'luxe-hairspray', name: "Spray de Fixação Royal", desc: "Brilho intenso e fixação que resiste à umidade.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'corte-americano-masculino-cabelo-liso-guia': {
       title: 'Corte Americano em Cabelo Liso Masculino: O Guia do Taper Perfeito',
       subtitle: 'Domine a técnica do Taper Fade em fios lisos. Saiba como pedir ao barbeiro e quais produtos usar para manter o visual impecável.',
