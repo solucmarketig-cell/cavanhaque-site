@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'cabelo-ondulado-e-curto-cortes-femininos': {
+      title: 'Cabelo Ondulado e Curto: 5 Cortes de Pura Modernidade',
+      subtitle: 'Descubra como o cabelo curto pode ser o aliado perfeito para as suas ondas. Conheça cortes que trazem volume e praticidade.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Cabelo',
+      image: '/assets/fringe-fade.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Muitas mulheres acreditam que ter o <strong>cabelo ondulado e curto</strong> é um desafio de manutenção, mas a verdade é que as ondas trazem um volume natural que o cabelo liso não possui, tornando o visual curto muito mais dinâmico e estiloso. Em 2026, os cortes curtos para ondulados focam em texturas desconectadas que celebram o movimento real dos fios.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Gelatina de Fixação Leve", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Difusor Universal de Silicone", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Sérum de Brilho Intensivo", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Os 5 Cortes Mais Desejados para Ondulados Curtos</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Wavy Pixie (Pixie Ondulado)",
+                description: "O corte batidinho na nuca e laterais, mas com o topo longo e ondulado. É a definição de modernidade. As ondas trazem uma suavidade que quebra a rigidez do corte masculino.",
+                tip: "Use uma pomada finalizadora nas pontas para dar direção às ondas sem tirar o volume.",
+                image: "/assets/fringe-fade.webp"
+              },
+              {
+                title: "2. Short Bob Assimétrico",
+                description: "Uma base de bob clássico, mas com uma das laterais levemente mais longa. No cabelo ondulado, a assimetria valoriza o balanço dos fios e disfarça o volume excessivo de um só lado.",
+                tip: "Finalize amassando as ondas com gelatina para garantir que o corte mantenha o formato o dia todo.",
+                image: "/assets/corte-para-cabelo-ondulado.webp"
+              },
+              {
+                title: "3. French Bob com Franja",
+                description: "Corte na altura do queixo com franja curta. No ondulado, a franja ganha uma textura 'messy' deliciosa e muito parisiense. É um visual clássico que nunca sai de moda.",
+                tip: "Seque a franja com os dedos para manter o ondulado natural em vez de esticar com a escova.",
+                image: "/assets/corte-americano-feminino-cacheado.webp"
+              },
+              {
+                title: "4. Undercut Feminino Estratégico",
+                description: "A nuca raspada ou bem curta oculta sob o comprimento ondulado. Isso reduz o volume na base do pescoço, permitindo que as ondas do topo caiam com mais leveza e definição.",
+                tip: "Ótima opção para quem tem muito cabelo e quer reduzir o tempo de secagem.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "5. Estilização Rápida no Curto",
+                description: "O cabelo curto e ondulado seca muito rápido. O segredo é aplicar os produtos com o fio ainda pingando água e não tocar nele até que esteja 100% seco para evitar o frizz.",
+                tip: "Finalize com o jato frio do secador para selar o brilho e 'congelar' as ondas no lugar.",
+                image: "/assets/loiro-escuro.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Cabelo ondulado curto é um convite à liberdade. Não tente 'domar' suas ondas com produtos pesados. A beleza do curto está justamente nesse movimento um pouco mais rebelde e cheio de volume. Use produtos à base de água para manter a leveza."
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'light-jelly', name: "Gelatina Modeladora Light", desc: "Definição extrema para ondas curtas sem pesar.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Zap size={32} /> },
+        { id: 'silicone-diffuser', name: "Difusor de Viagem Flex", desc: "Leve suas ondas definidas para qualquer lugar.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Sparkles size={32} /> }
+      ]
+    },
     'cabelo-ondulado-masculino-cortes-textura': {
       title: 'Cabelo Ondulado Masculino: Cortes e Dicas de Textura',
       subtitle: 'Domine suas ondas. Conheça os cortes que valorizam o cabelo ondulado masculino e como finalizar para um visual moderno.',

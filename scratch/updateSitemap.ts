@@ -127,7 +127,8 @@ const articles = [
   'corte-cabelo-liso-masculino-medio-longo-estilo',
   'como-deixar-o-cabelo-liso-guia-completo',
   'cabelo-ondulado-guia-definicao-frizz',
-  'cabelo-ondulado-masculino-cortes-textura'
+  'cabelo-ondulado-masculino-cortes-textura',
+  'cabelo-ondulado-e-curto-cortes-femininos'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

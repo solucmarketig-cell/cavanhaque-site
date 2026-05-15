@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'cabelo-ondulado-curto-feminino',
+          title: 'Cabelo Ondulado e Curto: 5 Cortes de Pura Modernidade',
+          excerpt: 'Descubra como o cabelo curto pode ser o aliado perfeito para as suas ondas. Conheça cortes que trazem volume e praticidade.',
+          imageUrl: '/assets/fringe-fade.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'cabelo-ondulado-e-curto-cortes-femininos',
+          category: 'Cabelo'
+        },
+        {
           id: 'cabelo-ondulado-masculino',
           title: 'Cabelo Ondulado Masculino: Cortes e Dicas de Textura',
           excerpt: 'Domine suas ondas. Conheça os cortes que valorizam o cabelo ondulado masculino e como finalizar para um visual moderno.',
