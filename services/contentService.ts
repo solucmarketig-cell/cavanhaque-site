@@ -295,10 +295,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'barba-van-dyke-classica',
           category: 'Barba'
         },
-        {
-          slug: 'barba-old-dutch-holandes',
-          category: 'Barba'
-        },
+
         {
           id: 'beard-old-dutch',
           title: "Old Dutch: O Guia do Estilo 'Holandês' Tradicional",
@@ -439,10 +436,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'barba-chin-strap-faixa',
           category: 'Barba'
         },
-        {
-          slug: 'barba-bandholz-volume-maximo',
-          category: 'Barba'
-        },
+
         {
           id: 'beard-18',
           title: 'Bandholz: O Estilo para os Pacientes e Poderosos',
@@ -453,10 +447,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'barba-bandholz-volume-maximo',
           category: 'Barba'
         },
-        {
-          slug: 'barba-hulihee-estilo-vintage',
-          category: 'Barba'
-        },
+
         {
           id: 'beard-19',
           title: 'Hulihee: A Extravagância das Costeletas Conectadas',
@@ -467,10 +458,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'barba-hulihee-estilo-vintage',
           category: 'Barba'
         },
-        {
-          slug: 'barba-imperial-realeza',
-          category: 'Barba'
-        },
+
         {
           id: 'beard-20',
           title: 'Barba Imperial: O Visual da Realeza Europeia',
@@ -481,10 +469,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'barba-imperial-realeza',
           category: 'Barba'
         },
-        {
-          slug: 'barba-mutton-chops-wolverine',
-          category: 'Barba'
-        },
+
         {
           id: 'beard-21',
           title: 'Mutton Chops: O Estilo Feroz das Costeletas de Carneiro',
@@ -515,10 +500,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'soul-patch-mosca',
           category: 'Barba'
         },
-        {
-          slug: 'bigode-ferradura-biker',
-          category: 'Barba'
-        },
+
         {
           id: 'beard-24',
           title: 'Bigode Ferradura: O Visual de Impacto e Rebeldia',
@@ -529,10 +511,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'bigode-ferradura-biker',
           category: 'Barba'
         },
-        {
-          slug: 'bigode-handlebar-guidao',
-          category: 'Barba'
-        },
+
         {
           id: 'beard-25',
           title: 'Bigode Guidão (Handlebar): A Arte da Curva Perfeita',
@@ -713,10 +692,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'como-ter-barba-negra-intensa',
           category: 'Estilo'
         },
-        {
-          slug: 'barba-branca-cuidados-estilo',
-          category: 'Dicas'
-        },
+
         {
           id: 'branca-1',
           title: 'Barba Branca como a Neve: Como Evitar o Efeito Amarelado e Frizz',
@@ -767,10 +743,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'barba-lenhador-guia-completo',
           category: 'Estilo'
         },
-        {
-          slug: 'estilo-de-barba-tendencias-2026',
-          category: 'Tendências'
-        },
+
         {
           id: 'estilos-geral-1',
           title: 'Estilo de Barba: As 6 Maiores Tendências que Vão Dominar 2026',
@@ -801,10 +774,7 @@ export const fetchArticles = async (): Promise<Article[]> => {
           slug: 'como-encontrar-seu-estilo-de-barba',
           category: 'Dicas'
         },
-        {
-          slug: 'aprenda-fazer-cavanhaque-simples',
-          category: 'Dicas'
-        },
+
         {
           id: 'cav-simples-1',
           title: 'Aprenda a Fazer um Cavanhaque Simples',
