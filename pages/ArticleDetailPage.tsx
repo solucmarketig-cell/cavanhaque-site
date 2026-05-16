@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'penteado-cabelo-medio-solto-estilos': {
+      title: 'Penteado Cabelo Médio Solto: 5 Formas de Valorizar o Comprimento',
+      subtitle: 'O comprimento médio é o mais versátil de todos. Aprenda a estilizar seus fios soltos com ondas, brilho e acessórios.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '12 min',
+      category: 'Penteados',
+      image: '/assets/cabelo-ondulado-feminino.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            O <strong>penteado cabelo médio solto</strong> é a escolha favorita de quem busca um visual moderno e descomplicado. O comprimento médio permite uma infinidade de texturas, desde o liso espelhado até as ondas volumosas, funcionando como uma tela em branco para a criatividade. Em 2026, a tendência é focar na saúde da fibra capilar e no uso estratégico de acessórios que trazem brilho ao rosto.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Modelador de Cachos (Curler) 32mm", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Sérum de Brilho de Argan", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Presilhas de Pérolas ou Metalizadas", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Versatilidade Médio: Estilos para Todo Dia</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Ondas Texturizadas (Beach Waves)",
+                description: "Crie ondas largas e desconectadas usando um modelador de cachos. O segredo é deixar as pontas retas para um visual mais moderno e aplicar um spray de textura após finalizar. É o penteado solto ideal para um look casual chic.",
+                tip: "Alterne a direção dos cachos para um efeito mais natural e volumoso.",
+                image: "/assets/cabelo-ondulado-feminino.webp"
+              },
+              {
+                title: "2. Risca Lateral com Presilhas 'Statement'",
+                description: "Divida o cabelo lateralmente e use duas ou três presilhas decorativas no lado com menos cabelo. Isso mantém os fios no lugar e adiciona um ponto de brilho imediato ao visual.",
+                tip: "Escolha presilhas que contrastem com a cor do seu cabelo para um destaque extra.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "3. Semipreso com Nó (Half-up Knot)",
+                description: "Pegue apenas a parte superior do cabelo e faça um nó pequeno e frouxo, deixando o restante do comprimento solto e com textura natural. É um penteado urbano, prático e muito estiloso.",
+                tip: "Puxe algumas mechas da parte presa para criar um volume 'messy' proposital.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "4. Liso Espelhado (Glass Hair Médio)",
+                description: "O acabamento extremamente liso e brilhante valoriza o corte reto do cabelo médio. Use um protetor térmico antes da prancha e finalize com um sérum de brilho para um efeito 'cabelo de vidro'.",
+                tip: "Passe a prancha devagar em mechas finas para garantir o selamento total das cutículas.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "5. Ondas de Um Lado Só (Old Hollywood Médio)",
+                description: "Jogue todo o cabelo para um ombro e prenda a parte de trás com grampos invisíveis. As ondas largas no comprimento médio criam um ar sofisticado e glamouroso para jantares e eventos.",
+                tip: "Fixe a lateral com um pouco de gel ou pomada para um acabamento impecável.",
+                image: "/assets/side-swept.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "Cabelos médios soltos podem perder o volume ao longo do dia. O truque de mestre é carregar um spray de brilho ou um leave-in em spray na bolsa. Uma borrifada rápida e uma amassadinha com as mãos devolvem a vida e o movimento instantaneamente. Não tenha medo de mudar a risca de lugar para ganhar volume extra na raiz!"
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'curler-pro-32', name: "Modelador de Cachos Titanium", desc: "Temperatura estável para ondas perfeitas que duram o dia todo.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'argan-gloss-serum', name: "Sérum Gloss de Argan", desc: "Elimina o frizz e confere brilho espelhado sem pesar nos fios médios.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+      ]
+    },
     'penteados-para-festa-a-noite-brilho-impacto': {
       title: 'Penteados para Festa a Noite: 5 Looks para Brilhar na Pista de Dança',
       subtitle: 'Brilhe em qualquer evento noturno com penteados que combinam glamour, fixação e as últimas tendências das passarelas.',

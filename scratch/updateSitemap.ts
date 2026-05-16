@@ -146,7 +146,8 @@ const articles = [
   'cortes-cabelo-curto-feminino-cacheado-estilos',
   'penteado-simples-para-fazer-sozinha-rapido',
   'penteados-elegantes-festas-eventos',
-  'penteados-para-festa-a-noite-brilho-impacto'
+  'penteados-para-festa-a-noite-brilho-impacto',
+  'penteado-cabelo-medio-solto-estilos'
 ];
 
 const baseUrl = 'https://cavanhaque.com';

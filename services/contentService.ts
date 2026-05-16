@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'penteado-medio-solto',
+          title: 'Penteado Cabelo Médio Solto: 5 Estilos Modernos',
+          excerpt: 'O comprimento médio é o mais versátil de todos. Aprenda a estilizar seus fios soltos com ondas, brilho e acessórios.',
+          imageUrl: '/assets/cabelo-ondulado-feminino.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteado-cabelo-medio-solto-estilos',
+          category: 'Penteados'
+        },
+        {
           id: 'penteados-festa-noite',
           title: 'Penteados para Festa a Noite: 5 Looks de Impacto',
           excerpt: 'Brilhe em qualquer evento noturno com penteados que combinam glamour, fixação e as últimas tendências das passarelas.',
