@@ -166,7 +166,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Penteados',
-      image: '/assets/cabelo-ondulado-feminino.webp',
+      image: '/assets/corte-americano-feminino-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -186,7 +186,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Ondas Texturizadas (Beach Waves)",
                 description: "Crie ondas largas e desconectadas usando um modelador de cachos. O segredo é deixar as pontas retas para um visual mais moderno e aplicar um spray de textura após finalizar. É o penteado solto ideal para um look casual chic.",
                 tip: "Alterne a direção dos cachos para um efeito mais natural e volumoso.",
-                image: "/assets/cabelo-ondulado-feminino.webp"
+                image: "/assets/corte-americano-feminino-cacheado.webp"
               },
               {
                 title: "2. Risca Lateral com Presilhas 'Statement'",
@@ -494,7 +494,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "5. Micro Curls com Laterais Batidas",
                 description: "Ideal para quem tem cachos menores e mais fechados (tipo 3C ou 4A). As laterais mais baixas destacam a delicadeza dos cachos menores no topo, criando um visual sofisticado e clean.",
                 tip: "Mantenha o couro cabeludo bem hidratado, pois ele fica mais exposto nesse tipo de corte.",
-                image: "/assets/cabelo-crespo.webp"
+                image: "/assets/penteado-infantil-cacheado.webp"
               }
             ]}
           />
@@ -592,7 +592,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '11 min',
       category: 'Cabelo',
-      image: '/assets/corte-curto-feminino.webp',
+      image: '/assets/loiro-curto-especifico.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -612,7 +612,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Pixie Cut Repicado",
                 description: "O clássico 'Joãozinho' ganha uma versão moderna com camadas repicadas e franja alongada. É o corte ideal para destacar os traços do rosto e garantir um visual fresco e ousado.",
                 tip: "Use uma pomada matte para definir as pontas e criar aquele efeito 'bagunçado' proposital.",
-                image: "/assets/corte-curto-feminino.webp"
+                image: "/assets/loiro-curto-especifico.webp"
               },
               {
                 title: "2. Bixie (Bob + Pixie)",
@@ -663,7 +663,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/cabelo-crespo.webp',
+      image: '/assets/penteado-infantil-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -683,7 +683,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Umectação Noturna com Óleo de Coco",
                 description: "O óleo de coco é um dos poucos que consegue penetrar profundamente no córtex do fio. Aplique-o generosamente no cabelo seco antes de dormir e lave no dia seguinte. É o tratamento de choque ideal para fios extremamente ressecados.",
                 tip: "Use uma touca de cetim para potencializar o calor e não sujar o travesseiro.",
-                image: "/assets/cabelo-crespo.webp"
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
                 title: "2. Óleo de Argan: O Ouro de Marrocos",
@@ -825,7 +825,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Entendendo os Ativos Umectantes",
                 description: "Para hidratar (devolver água), procure por produtos que contenham Pantenol, Glicerina, Aloe Vera ou Extratos Vegetais. Esses componentes atraem e prendem as moléculas de água dentro da fibra capilar.",
                 tip: "Fuja de produtos com excesso de óleos se o seu objetivo principal for a fase de hidratação pura do cronograma.",
-                image: "/assets/cabelo-ondulado-definicao.webp"
+                image: "/assets/side-swept.webp"
               },
               {
                 title: "2. Técnica de Enluvamento Profissional",
@@ -876,7 +876,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/cabelo-ondulado-feminino.webp',
+      image: '/assets/corte-americano-feminino-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -896,7 +896,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Misturinha de Mel e Azeite (Nutrição Hídrica)",
                 description: "O mel é um umectante natural que atrai água, enquanto o azeite sela a cutícula. Misture 2 colheres de máscara, 1 de mel e 1 de azeite. Aplique nos fios úmidos e deixe agir por 20 minutos.",
                 tip: "Aqueça levemente o azeite antes de misturar para facilitar a penetração na fibra capilar.",
-                image: "/assets/cabelo-ondulado-feminino.webp"
+                image: "/assets/corte-americano-feminino-cacheado.webp"
               },
               {
                 title: "2. Glicerina e Água de Arroz (Brilho Espelhado)",
@@ -1044,7 +1044,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "2. Tranças Nagô (Cornrows) com Design",
                 description: "Tranças rasteiras feitas rente ao couro cabeludo. Em 2026, o foco está em desenhos geométricos complexos e na mistura de espessuras de tranças para criar um visual artístico.",
                 tip: "Durma com uma touca de cetim para evitar que os fios 'arrepiem' na base das tranças.",
-                image: "/assets/cabelo-crespo.webp"
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
                 title: "3. Passion Twists",
@@ -1127,7 +1127,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "4. Corte 'Box' Retrô com Textura",
                 description: "Inspirado na 'Era de Ouro' do Hip Hop, o corte Box ganha uma releitura moderna com topos menos rígidos e laterais em degradê de pele (Skin Fade). Une a nostalgia com a precisão atual.",
                 tip: "Use o pente garfo para garantir que a geometria do topo esteja perfeitamente alinhada.",
-                image: "/assets/cabelo-crespo.webp"
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
                 title: "5. Manutenção Criativa: Pigmentação",
@@ -1186,7 +1186,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "2. Bantu Knots (Coques Bantu)",
                 description: "Pequenos coques enrolados por toda a cabeça ou em seções estratégicas. Além de ser um penteado com forte carga cultural, ele pode ser usado para texturizar o cabelo após solto.",
                 tip: "Aplique um pouco de óleo nas divisões do couro cabeludo para um visual mais limpo e brilhante.",
-                image: "/assets/cabelo-crespo.webp"
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
                 title: "3. Space Buns Crespos",
@@ -1269,7 +1269,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "4. Black Power Reduzido e Simétrico",
                 description: "Para quem não abre mão do volume mas precisa de controle. O cabelo é mantido em um formato arredondado impecável e com comprimento menor, garantindo que o volume seja uma moldura séria para o rosto.",
                 tip: "Use o pente garfo apenas para ajustar a forma, mantendo as pontas seladas com pomada.",
-                image: "/assets/cabelo-crespo.webp"
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
                 title: "5. Manutenção e Brilho Diário",
@@ -1340,7 +1340,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "4. Frohawk (Moicano Americano)",
                 description: "As laterais são totalmente raspadas ou em degradê alto, mantendo uma faixa de volume que vai da testa até a nuca. É um visual ousado e muito estiloso para quem tem crespo tipo 4.",
                 tip: "Aplique uma pomada finalizadora na faixa central para manter o volume firme e bem direcionado.",
-                image: "/assets/cabelo-crespo.webp"
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
                 title: "5. Taper Fade Discreto",
@@ -1373,7 +1373,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '15 min',
       category: 'Cabelo',
-      image: '/assets/cabelo-crespo.webp',
+      image: '/assets/penteado-infantil-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1393,7 +1393,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Identificando 4A, 4B e 4C",
                 description: "O 4A possui cachos pequenos e definidos; o 4B tem formato em 'Z' e mais encolhimento; o 4C é o mais frágil e sem definição natural, mas com um volume incrível. Identificar o seu ajuda a escolher o peso certo dos produtos.",
                 tip: "Crespos 4C amam produtos à base de manteigas densas, enquanto 4A se dão bem com cremes de consistência média.",
-                image: "/assets/cabelo-crespo.webp"
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
                 title: "2. Método LOC (Líquido, Óleo, Creme)",
@@ -1444,7 +1444,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/cabelo-ondulado-feminino.webp',
+      image: '/assets/corte-americano-feminino-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1464,7 +1464,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Butterfly Cut (Corte Borboleta)",
                 description: "O corte queridinho das redes sociais. São camadas curtas no topo que se misturam com camadas longas no comprimento, imitando o formato das asas de uma borboleta. No ondulado, isso gera um volume cinematográfico.",
                 tip: "Use o secador direcionando as camadas da frente para trás para realçar o efeito 'asas'.",
-                image: "/assets/cabelo-ondulado-feminino.webp"
+                image: "/assets/corte-americano-feminino-cacheado.webp"
               },
               {
                 title: "2. U-Cut com Camadas Internas",
@@ -1482,7 +1482,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "4. Corte em 'V' para Ondulados Pesados",
                 description: "Se você gosta de pontas bem afinadas e um visual que alonga a silhueta, o corte em V é a escolha certa. Ele direciona o balanço das ondas para o centro das costas.",
                 tip: "Finalize com um óleo nutritivo nas pontas para evitar o ressecamento comum nesse tipo de corte.",
-                image: "/assets/corte-para-cabelo-ondulado.webp"
+                image: "/assets/side-swept.webp"
               },
               {
                 title: "5. Rotina Noturna: O Truque da Meia",
@@ -1515,7 +1515,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '11 min',
       category: 'Cabelo',
-      image: '/assets/cabelo-ondulado-feminino.webp',
+      image: '/assets/corte-americano-feminino-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1535,7 +1535,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Wavy Pixie (Pixie Ondulado)",
                 description: "O corte batidinho na nuca e nas laterais, mantendo as ondas no topo. É um visual extremamente moderno e elegante que destaca o olhar e as maçãs do rosto.",
                 tip: "Use uma pomada matte apenas nas pontas para definir a curvatura das ondas sem deixar o cabelo oleoso.",
-                image: "/assets/cabelo-ondulado-feminino.webp"
+                image: "/assets/corte-americano-feminino-cacheado.webp"
               },
               {
                 title: "2. Short Bob Ondulado",
@@ -1586,7 +1586,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '11 min',
       category: 'Cabelo',
-      image: '/assets/corte-para-cabelo-ondulado-masculino.webp',
+      image: '/assets/fringe-fade.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1606,7 +1606,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Americano (Taper Fade) em Ondulados",
                 description: "O degradê nas costeletas e nuca cria um contraste limpo que faz com que as ondas no topo ganhem todo o destaque. É o corte mais procurado nas barbearias modernas para quem tem fios ondulados.",
                 tip: "Mantenha o topo com comprimento médio para que a curvatura da onda fique bem visível.",
-                image: "/assets/corte-para-cabelo-ondulado-masculino.webp"
+                image: "/assets/fringe-fade.webp"
               },
               {
                 title: "2. Textured Fringe (Franja Texturizada)",
@@ -1657,7 +1657,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '13 min',
       category: 'Cabelo',
-      image: '/assets/corte-para-cabelo-ondulado.webp',
+      image: '/assets/side-swept.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1677,7 +1677,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Identificando sua Curvatura (2A, 2B, 2C)",
                 description: "Ondulados 2A são quase lisos, 2B possuem ondas em S mais definidas e 2C já flertam com os cachos. Saber sua curvatura ajuda a escolher a densidade certa do creme finalizador.",
                 tip: "Cabelos 2A pedem produtos quase líquidos (sprays), enquanto 2C seguram bem mousses e gelatinas leves.",
-                image: "/assets/corte-para-cabelo-ondulado.webp"
+                image: "/assets/side-swept.webp"
               },
               {
                 title: "2. Finalização 'Fitagem' Suave",
@@ -1843,7 +1843,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "5. Manutenção do Comprimento",
                 description: "Crescer o cabelo não significa parar de ir ao barbeiro. Visite o profissional a cada 2 meses apenas para 'limpar' as pontas e refazer as camadas que dão movimento.",
                 tip: "Penteie sempre começando pelas pontas e subindo para a raiz para evitar nós e quebra.",
-                image: "/assets/wolf-cut-masculino.webp"
+                image: "/assets/wolf-cut.webp"
               }
             ]}
           />
@@ -2032,7 +2032,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Wolf Cut Masculino",
                 description: "O corte do momento. Caracteriza-se por muitas camadas e fios desfiados, criando um visual volumoso e 'selvagem'. No cabelo liso, as camadas dão o movimento que o fio naturalmente não tem.",
                 tip: "Use o spray de sal marinho com o cabelo úmido para criar aquela textura de 'saída de praia' que o Wolf Cut exige.",
-                image: "/assets/wolf-cut-masculino.webp"
+                image: "/assets/wolf-cut.webp"
               },
               {
                 title: "2. Modern Mullet",
