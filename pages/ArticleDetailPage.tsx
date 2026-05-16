@@ -159,6 +159,77 @@ const ArticleDetailPage: React.FC = () => {
         { id: 'mousse-def', name: "Mousse de Definição Atômica", desc: "Fixa as camadas do corte sem deixar o fio endurecido.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> }
       ]
     },
+    'penteados-para-festa-a-noite-brilho-impacto': {
+      title: 'Penteados para Festa a Noite: 5 Looks para Brilhar na Pista de Dança',
+      subtitle: 'Brilhe em qualquer evento noturno com penteados que combinam glamour, fixação e as últimas tendências das passarelas.',
+      author: 'Lara Estilo',
+      date: '15 de Maio de 2026',
+      readTime: '11 min',
+      category: 'Penteados',
+      image: '/assets/penteado-cacheado.webp',
+      content: (
+        <>
+          <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
+            Escolher um dos <strong>penteados para festa a noite</strong> requer pensar não apenas na estética, mas na durabilidade. Festas noturnas costumam envolver movimento, dança e ambientes com iluminação artificial intensa, o que pede brilho e fixação extra. Em 2026, os penteados noturnos estão mais audaciosos, utilizando efeitos molhados e acessórios metalizados para um visual cosmopolita.
+          </p>
+          <ToolBox 
+            tools={[
+              { name: "Gel de Efeito Wet (Alta Fixação)", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Pomada Finalizadora com Partículas de Brilho", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Grampos com Strass ou Cristais", link: "https://mercadolivre.com/sec/28LNYBa" }
+            ]}
+          />
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Impacto e Estilo: A Noite é Sua</h2>
+          <TutorialSteps 
+            steps={[
+              {
+                title: "1. Rabo de Cavalo Alto com Acabamento 'Sleek'",
+                description: "O rabo de cavalo super alto e bem esticado é o sinônimo de poder para a noite. Use um gel de fixação forte para deixar a raiz impecável e finalize o comprimento com uma chapinha para um efeito liso espelhado.",
+                tip: "Esconda o elástico com uma mecha de cabelo e use grampos por baixo para manter o rabo de cavalo bem em pé.",
+                image: "/assets/penteado-cacheado.webp"
+              },
+              {
+                title: "2. Wet Look (Efeito Molhado) Moderno",
+                description: "Este visual transmite uma sofisticação vinda direto das passarelas. Penteie todo o cabelo para trás usando gel de efeito molhado apenas na parte superior e lateral, deixando o comprimento seco e com movimento.",
+                tip: "É o penteado ideal para destacar brincos grandes e maquiagens marcantes nos olhos.",
+                image: "/assets/slicked-back.webp"
+              },
+              {
+                title: "3. Coque Messy com Presilhas de Strass",
+                description: "Para quem prefere um visual mais despojado, o coque bagunçado (messy bun) ganha ares noturnos com o uso estratégico de acessórios. Prenda de forma displicente e adicione presilhas de brilho na lateral.",
+                tip: "Deixe alguns fios soltos na nuca para um ar mais sexy e natural.",
+                image: "/assets/loiro-escuro.webp"
+              },
+              {
+                title: "4. Semipreso com Volume e Ondas XL",
+                description: "Um clássico das festas à noite. Cabelo volumoso com ondas largas e a parte frontal presa de forma polida. O volume extra garante que o penteado não 'caia' com a umidade da noite.",
+                tip: "Aplique um spray de textura antes de fazer as ondas para garantir que elas durem até o amanhecer.",
+                image: "/assets/side-swept.webp"
+              },
+              {
+                title: "5. Trança Lateral Desconstruída",
+                description: "Uma trança larga e frouxa jogada para um lado do ombro. É um visual romântico e ao mesmo tempo imponente para festas noturnas menos formais, como aniversários ou baladas sofisticadas.",
+                tip: "Abra os elos da trança com os dedos após terminar para dar a sensação de que você tem muito mais cabelo.",
+                image: "/assets/fringe-fade.webp"
+              }
+            ]}
+          />
+          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
+            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
+              <Star className="text-brand-gold fill-brand-gold" size={28} />
+              Dica da Lara Estilo
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-lg">
+              "À noite, as luzes artificiais tendem a 'achatar' a cor do cabelo. Por isso, abusar de produtos que conferem brilho reflexivo é fundamental. Se for dançar muito, prefira penteados presos que não desmoronem com o suor. Um coque bem feito é o melhor amigo de uma noite intensa!"
+            </p>
+          </div>
+        </>
+      ),
+      recommendedProducts: [
+        { id: 'wet-gel-pro-hold', name: "Gel Wet Effect 24h", desc: "Brilho molhado duradouro que não descama ao longo da noite.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Zap size={32} /> },
+        { id: 'crystal-hair-clips', name: "Set de Presilhas Stardust", desc: "Adorne seu penteado com o brilho dos cristais para um visual de luxo.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Sparkles size={32} /> }
+      ]
+    },
     'penteados-elegantes-festas-eventos': {
       title: 'Penteados Elegantes: 5 Estilos Sofisticados para Festas e Eventos',
       subtitle: 'Do Chignon às Hollywood Waves, descubra penteados elegantes que garantem um visual sofisticado e inesquecível em qualquer cerimônia.',

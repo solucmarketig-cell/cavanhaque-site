@@ -6,6 +6,16 @@ export const fetchArticles = async (): Promise<Article[]> => {
     setTimeout(() => {
       resolve([
         {
+          id: 'penteados-festa-noite',
+          title: 'Penteados para Festa a Noite: 5 Looks de Impacto',
+          excerpt: 'Brilhe em qualquer evento noturno com penteados que combinam glamour, fixação e as últimas tendências das passarelas.',
+          imageUrl: '/assets/penteado-cacheado.webp',
+          author: 'Lara Estilo',
+          date: '15 Mai 2026',
+          slug: 'penteados-para-festa-a-noite-brilho-impacto',
+          category: 'Penteados'
+        },
+        {
           id: 'penteados-elegantes-festas',
           title: 'Penteados Elegantes: 5 Estilos para Festas e Eventos',
           excerpt: 'Do Chignon às Hollywood Waves, descubra penteados elegantes que garantem um visual sofisticado e inesquecível em qualquer cerimônia.',
