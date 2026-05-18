@@ -180,36 +180,36 @@ const ArticleDetailPage: React.FC = () => {
             ]}
           />
           <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Versatilidade Médio: Estilos para Todo Dia</h2>
-          <TutorialSteps 
+                    <TutorialSteps 
             steps={[
               {
                 title: "1. Ondas Texturizadas (Beach Waves)",
-                description: "Crie ondas largas e desconectadas usando um modelador de cachos. O segredo é deixar as pontas retas para um visual mais moderno e aplicar um spray de textura após finalizar. É o penteado solto ideal para um look casual chic.",
-                tip: "Alterne a direção dos cachos para um efeito mais natural e volumoso.",
+                description: "O efeito de ondas despojadas, popularmente conhecido como 'beach waves', é o segredo supremo para conferir volume, textura e um movimento incrivelmente natural aos fios de comprimento médio. Para uma execução profissional e duradoura, comece aplicando um protetor térmico leve por todo o cabelo seco. Divida os fios em seções horizontais e, utilizando um modelador de cachos de diâmetro largo (cerca de 32mm), envolva mechas médias mantendo sempre os últimos dois centímetros das pontas totalmente fora do modelador — esse detalhe da ponta reta é o grande segredo das passarelas para um visual contemporâneo. Espere os fios esfriarem por 5 minutos para 'assentar' a forma e, em seguida, use os próprios dedos para abrir e desestruturar os cachos de forma delicada.",
+                tip: "Alterne a direção do modelador (uma mecha para frente e a seguinte para trás) para evitar que as ondas se fundam em um único bloco, finalizando com um spray texturizador seco para garantir fixação leve e caimento impecável o dia todo.",
                 image: "/assets/medio-ondas-beach-waves.png"
               },
               {
                 title: "2. Risca Lateral com Presilhas 'Statement'",
-                description: "Divida o cabelo lateralmente e use duas ou três presilhas decorativas no lado com menos cabelo. Isso mantém os fios no lugar e adiciona um ponto de brilho imediato ao visual.",
-                tip: "Escolha presilhas que contrastem com a cor do seu cabelo para um destaque extra.",
+                description: "Este penteado é a união perfeita entre minimalismo moderno e sofisticação retrô. A risca lateral profunda cria uma assimetria elegante que valoriza os traços do rosto e traz um ar instantâneo de refinamento ao comprimento médio. Para fazer, utilize um pente fino para traçar uma risca reta e precisa na lateral de sua preferência, alinhada com o ponto mais alto da sobrancelha. Penteie o lado com menos volume rente ao couro cabeludo, aplicando uma leve quantidade de pomada modeladora de acabamento brilhante para selar o frizz, e posicione duas ou três presilhas metálicas ou com pérolas logo acima da orelha. O lado oposto deve cair livremente sobre o rosto, exibindo volume e movimento natural.",
+                tip: "Certifique-se de que as presilhas estejam bem firmes inserindo-as em sentido contrário ao nascimento do cabelo, e escolha acessórios que contrastem fortemente com o tom dos seus fios para criar um ponto de luz estratégico.",
                 image: "/assets/penteado-medio-solto-ai.png"
               },
               {
                 title: "3. Semipreso com Nó (Half-up Knot)",
-                description: "Pegue apenas a parte superior do cabelo e faça um nó pequeno e frouxo, deixando o restante do comprimento solto e com textura natural. É um penteado urbano, prático e muito estiloso.",
-                tip: "Puxe algumas mechas da parte presa para criar um volume 'messy' proposital.",
+                description: "O half-up knot é o queridinho do estilo 'effortless cool', perfeito para quem quer a praticidade de prender o cabelo sem perder o charme do comprimento solto nas costas. O grande trunfo deste penteado médio é o contraste entre o topo estruturado e a base descontraída. Para criá-lo, separe a seção superior do cabelo (da altura das têmporas para cima) e puxe-a para trás. Em vez de prender em um rabo de cavalo simples, dobre a mecha sobre si mesma criando um nó frouxo ou um pequeno coque inacabado, fixando-o com grampos discretos por baixo da estrutura. O restante do cabelo solto ganha vida com uma textura natural amassada ou ondas suaves.",
+                tip: "Antes de prender o nó, use um spray de volume na raiz da seção superior e dê leves beliscadas nos fios após fixar para criar um topo mais volumoso, descontraído e com uma moldura facial perfeita.",
                 image: "/assets/cabelo-ondulado-definido-ai.png"
               },
               {
                 title: "4. Liso Espelhado (Glass Hair Médio)",
-                description: "O acabamento extremamente liso e brilhante valoriza o corte reto do cabelo médio. Use um protetor térmico antes da prancha e finalize com um sérum de brilho para um efeito 'cabelo de vidro'.",
-                tip: "Passe a prancha devagar em mechas finas para garantir o selamento total das cutículas.",
+                description: "O efeito 'glass hair' ou cabelo de vidro é sinônimo de alta sofisticação e precisão técnica. Em cortes médios de base reta, este visual liso impecável e brilhante destaca a geometria do corte e exala um ar moderno e polido. A preparação é a alma deste penteado: aplique um protetor térmico termoativado com ação defrizante no cabelo úmido e faça uma escova lisa e bem tracionada com secador profissional. Em seguida, divida o cabelo em mechas muito finas e passe a prancha de alta qualidade em temperatura adequada, deslizando de forma contínua e lenta da raiz até as pontas para selar as cutículas hermeticamente.",
+                tip: "Após pranchar, aplique duas gotas de sérum finalizador à base de óleo de argan ou silicone nobre nas palmas das mãos, esfregue-as bem para aquecer o produto e deslize suavemente pela superfície do cabelo para eliminar qualquer fio rebelde.",
                 image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "5. Ondas de Um Lado Só (Old Hollywood Médio)",
-                description: "Jogue todo o cabelo para um ombro e prenda a parte de trás com grampos invisíveis. As ondas largas no comprimento médio criam um ar sofisticado e glamouroso para jantares e eventos.",
-                tip: "Fixe a lateral com um pouco de gel ou pomada para um acabamento impecável.",
+                description: "Inspirado nas divas da era de ouro do cinema, este penteado solto traz um glamour inigualável para festas e eventos formais. O comprimento médio ganha uma sofisticação clássica através de ondas largas e simétricas direcionadas para uma única lateral. Para conseguir o efeito 'wave' clássico, modele todo o cabelo na mesma direção horizontal utilizando um modelador de cachos. O segredo de ouro é escovar o cabelo com uma escova de cerdas macias após cachear toda a cabeça; isso transforma os cachos individuais em uma única onda contínua e ondulante. Jogue todo o volume sobre um ombro e use grampos ocultos na nuca para fixar a lateral oposta perfeitamente rente.",
+                tip: "Aplique uma névoa generosa de spray fixador de brilho e alta fixação a uma distância segura para manter as ondas posicionadas e com um acabamento espelhado de tapete vermelho sob a iluminação da festa.",
                 image: "/assets/penteados-elegantes-festas-ai.png"
               }
             ]}
