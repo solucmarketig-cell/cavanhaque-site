@@ -399,31 +399,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Semipreso com Torcidinho Lateral",
                 description: "Pegue duas mechas frontais, torça-as para trás e prenda com um grampo invisível ou um pequeno elástico. É o penteado mais rápido do mundo para tirar o cabelo do rosto com elegância.",
                 tip: "Afrouxe levemente os torcidinhos para um visual mais romântico e volumoso.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/simples-semipreso-torcidinho.png"
               },
               {
                 title: "2. Coque Baixo Despojado com Lenço",
                 description: "Faça um rabo de cavalo baixo, enrole em um coque frouxo e amarre um lenço colorido por cima. O acessório esconde as imperfeições e traz um ar fashionista instantâneo.",
                 tip: "Deixe algumas mechas soltas na frente para emoldurar o rosto.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/simples-coque-baixo-lenco.png"
               },
               {
                 title: "3. Bubble Braid (Trança de Bolhas)",
                 description: "Uma alternativa moderna para quem não sabe trançar. Basta fazer um rabo de cavalo e colocar elásticos a cada 3 ou 4 centímetros, 'inflando' cada seção para criar as bolhas.",
                 tip: "Use elásticos da cor do seu cabelo para um acabamento mais profissional.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/simples-bubble-braid.png"
               },
               {
                 title: "4. Rabo de Cavalo 'Double Pony'",
                 description: "Faça dois rabos de cavalo, um em cima do outro. O rabo de cima esconde a base do de baixo, criando a ilusão de um rabo de cavalo único muito mais longo e volumoso.",
                 tip: "Ideal para quem tem cabelos finos ou médios.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/simples-double-pony.png"
               },
               {
                 title: "5. Topete 'Sleek' com Cabelo Solto",
                 description: "Penteie a parte frontal do cabelo para trás com um pouco de gel ou pomada e prenda no topo. Deixe o restante do cabelo solto e liso ou ondulado. É um visual clássico de tapete vermelho.",
                 tip: "Use uma escova de cerdas macias para deixar o topo perfeitamente assentado e sem frizz.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/simples-sleek-topete.png"
               }
             ]}
           />
@@ -470,31 +470,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Corte Coração (Heart-shaped)",
                 description: "Como o nome sugere, este corte cria um formato de coração ao deixar mais volume no topo e camadas arredondadas nas laterais. É perfeito para equilibrar rostos angulares e dar destaque total à textura dos cachos.",
                 tip: "Finalize amassando bem os fios de baixo para cima para garantir que o volume lateral fique simétrico.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/curto-cacheado-corte-coracao.png"
               },
               {
                 title: "2. Tapered Cut Cacheado",
                 description: "Foca na nuca e laterais bem curtas, quase em degradê, com todo o volume concentrado no topo da cabeça. É um corte extremamente moderno, fresco e que exala atitude e praticidade.",
                 tip: "Use um gel de fixação média no topo para garantir que os cachos fiquem definidos e altos o dia todo.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/curto-cacheado-tapered.png"
               },
               {
                 title: "3. Curly Bob Desfiado",
                 description: "A versão cacheada do bob tradicional, mas com pontas desfiadas para evitar o efeito 'pirâmide'. As camadas distribuem o volume de forma harmoniosa ao redor do rosto, criando um visual leve e jovial.",
                 tip: "Peça ao seu cabeleireiro para cortar os fios a seco para prever exatamente onde cada cacho vai cair.",
-                image: "/assets/cabelo-cacheado-feminino.webp"
+                image: "/assets/curto-cacheado-curly-bob.png"
               },
               {
                 title: "4. Shaggy Hair Cacheado",
                 description: "Inspirado no estilo rock n' roll, o shaggy curto foca em muitas camadas e uma franja cacheada. O resultado é um visual com muito movimento, perfeito para quem quer um estilo mais 'rebelde' e moderno.",
                 tip: "Não tenha medo da franja cacheada! Ela ajuda a emoldurar o rosto e traz um charme extra ao corte.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/curto-cacheado-shaggy.png"
               },
               {
                 title: "5. Micro Curls com Laterais Batidas",
                 description: "Ideal para quem tem cachos menores e mais fechados (tipo 3C ou 4A). As laterais mais baixas destacam a delicadeza dos cachos menores no topo, criando um visual sofisticado e clean.",
                 tip: "Mantenha o couro cabeludo bem hidratado, pois ele fica mais exposto nesse tipo de corte.",
-                image: "/assets/penteado-infantil-cacheado.webp"
+                image: "/assets/curto-cacheado-micro-curls.png"
               }
             ]}
           />
@@ -1180,31 +1180,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Afro Puff Clássico",
                 description: "O penteado favorito pela sua praticidade e impacto. Consiste em prender todo o cabelo no topo da cabeça, deixando o volume livre. No crespo, o puff ganha uma forma arredondada perfeita.",
                 tip: "Use uma faixa de tecido ou um cadarço largo para prender sem quebrar os fios.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/crespo-afro-puff.png"
               },
               {
                 title: "2. Bantu Knots (Coques Bantu)",
                 description: "Pequenos coques enrolados por toda a cabeça ou em seções estratégicas. Além de ser um penteado com forte carga cultural, ele pode ser usado para texturizar o cabelo após solto.",
                 tip: "Aplique um pouco de óleo nas divisões do couro cabeludo para um visual mais limpo e brilhante.",
-                image: "/assets/penteado-infantil-cacheado.webp"
+                image: "/assets/crespo-bantu-knots.png"
               },
               {
                 title: "3. Space Buns Crespos",
                 description: "Dois puffs laterais que trazem um ar divertido e jovial. O crespo garante que os coques fiquem bem cheios e volumosos sem precisar de preenchimento artificial.",
                 tip: "Estilize o baby hair na testa para dar um acabamento mais polido e moderno ao visual.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/crespo-space-buns.png"
               },
               {
                 title: "4. Coque Baixo Sleek Hair",
                 description: "Ideal para casamentos ou eventos formais. A raiz é bem esticada com gelatina, e o volume crespo é preso na nuca de forma compacta ou em um puff baixo.",
                 tip: "Use uma escova de cerdas macias para assentar os fios da raiz sem causar tração excessiva.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/crespo-sleek-coque.png"
               },
               {
                 title: "5. Penteado Semipreso com Twists",
                 description: "Faça twists na parte frontal e prenda-os para trás, deixando o restante do volume solto. Une a definição do twist com a potência do volume natural.",
                 tip: "Finalize as pontas dos twists com um pouco de creme para evitar que desmanchem.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/crespo-semipreso-twists.png"
               }
             ]}
           />
