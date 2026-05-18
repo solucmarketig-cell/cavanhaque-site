@@ -326,8 +326,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Coque Chignon Clássico",
-                description: "O epítome da elegância. Posicionado baixo na nuca, este coque é polido e simétrico. É a escolha perfeita para casamentos e eventos black-tie, onde a sofisticação discreta é a regra.",
-                tip: "Use uma rede invisível da cor do seu cabelo para garantir que nenhum fio saia do lugar durante a festa.",
+                description: "Para um acabamento de salão que valoriza a saúde e a beleza dos fios, dedique tempo à técnica de finalização. O epítome da elegância. Posicionado baixo na nuca, este coque é polido e simétrico. É a escolha perfeita para casamentos e eventos black-tie, onde a sofisticação discreta é a regra. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
+                tip: "Use uma rede invisível da cor do seu cabelo para garantir que nenhum fio saia do lugar durante a festa. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
                 image: "/assets/slicked-back.webp"
               },
               {
@@ -397,14 +397,14 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Semipreso com Torcidinho Lateral",
-                description: "Pegue duas mechas frontais, torça-as para trás e prenda com um grampo invisível ou um pequeno elástico. É o penteado mais rápido do mundo para tirar o cabelo do rosto com elegância.",
-                tip: "Afrouxe levemente os torcidinhos para um visual mais romântico e volumoso.",
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. Pegue duas mechas frontais, torça-as para trás e prenda com um grampo invisível ou um pequeno elástico. É o penteado mais rápido do mundo para tirar o cabelo do rosto com elegância. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Afrouxe levemente os torcidinhos para um visual mais romântico e volumoso. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
                 image: "/assets/simples-semipreso-torcidinho.png"
               },
               {
                 title: "2. Coque Baixo Despojado com Lenço",
-                description: "Faça um rabo de cavalo baixo, enrole em um coque frouxo e amarre um lenço colorido por cima. O acessório esconde as imperfeições e traz um ar fashionista instantâneo.",
-                tip: "Deixe algumas mechas soltas na frente para emoldurar o rosto.",
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. Faça um rabo de cavalo baixo, enrole em um coque frouxo e amarre um lenço colorido por cima. O acessório esconde as imperfeições e traz um ar fashionista instantâneo. Isso garante fixação confortável e proteção integral para o seu cabelo o dia todo.",
+                tip: "Deixe algumas mechas soltas na frente para emoldurar o rosto. Carregue um mini sérum ou spray revitalizador na bolsa para dar aquele retoque rápido de movimento e brilho ao longo do dia.",
                 image: "/assets/simples-coque-baixo-lenco.png"
               },
               {
@@ -539,8 +539,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Bob Executivo com Pontas Curvadas",
-                description: "Um corte que termina na altura do maxilar, com as pontas levemente curvadas para dentro. Transmite uma imagem de organização e elegância impecável, sendo ideal para reuniões de alto nível.",
-                tip: "Use uma escova redonda média durante a secagem para garantir a curvatura perfeita das pontas.",
+                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Um corte que termina na altura do maxilar, com as pontas levemente curvadas para dentro. Transmite uma imagem de organização e elegância impecável, sendo ideal para reuniões de alto nível. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Use uma escova redonda média durante a secagem para garantir a curvatura perfeita das pontas. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
                 image: "/assets/social-classico.webp"
               },
               {
@@ -610,8 +610,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Pixie Cut Repicado",
-                description: "O clássico 'Joãozinho' ganha uma versão moderna com camadas repicadas e franja alongada. É o corte ideal para destacar os traços do rosto e garantir um visual fresco e ousado.",
-                tip: "Use uma pomada matte para definir as pontas e criar aquele efeito 'bagunçado' proposital.",
+                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. O clássico 'Joãozinho' ganha uma versão moderna com camadas repicadas e franja alongada. É o corte ideal para destacar os traços do rosto e garantir um visual fresco e ousado. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
+                tip: "Use uma pomada matte para definir as pontas e criar aquele efeito 'bagunçado' proposital. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
                 image: "/assets/loiro-curto-especifico.webp"
               },
               {
@@ -687,26 +687,26 @@ const ArticleDetailPage: React.FC = () => {
               },
               {
                 title: "2. Óleo de Argan: O Ouro de Marrocos",
-                description: "Rico em vitamina E e ácidos graxos, o óleo de argan é perfeito para selar as pontas duplas e controlar o frizz sem pesar. Use-o como finalizador após o secador ou em dias de alta umidade.",
-                tip: "Apenas duas gotas são suficientes para todo o comprimento e pontas.",
+                description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. Rico em vitamina E e ácidos graxos, o óleo de argan é perfeito para selar as pontas duplas e controlar o frizz sem pesar. Use-o como finalizador após o secador ou em dias de alta umidade. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
+                tip: "Apenas duas gotas são suficientes para todo o comprimento e pontas. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
                 image: "/assets/loiro-escuro.webp"
               },
               {
                 title: "3. Jojoba para Equilíbrio e Proteção",
-                description: "O óleo de jojoba tem uma composição muito próxima ao sebo natural produzido pelo nosso couro cabeludo. É excelente para proteger os fios da poluição e do sol, agindo como um escudo invisível.",
-                tip: "Misture com seu leave-in favorito para uma finalização mais completa.",
+                description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. O óleo de jojoba tem uma composição muito próxima ao sebo natural produzido pelo nosso couro cabeludo. É excelente para proteger os fios da poluição e do sol, agindo como um escudo invisível. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
+                tip: "Misture com seu leave-in favorito para uma finalização mais completa. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
                 image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "4. O 'Boost' na Máscara de Nutrição",
-                description: "Transforme uma máscara básica em um tratamento de luxo adicionando algumas gotas de um mix de óleos vegetais. Isso aumenta o poder de reposição lipídica e garante um toque aveludado pós-enxágue.",
-                tip: "Sempre misture o óleo apenas na quantidade de máscara que for usar na hora.",
+                description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Transforme uma máscara básica em um tratamento de luxo adicionando algumas gotas de um mix de óleos vegetais. Isso aumenta o poder de reposição lipídica e garante um toque aveludado pós-enxágue. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
+                tip: "Sempre misture o óleo apenas na quantidade de máscara que for usar na hora. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
                 image: "/assets/side-swept.webp"
               },
               {
                 title: "5. Selagem de Pontas Diária",
-                description: "Cabelos ressecados perdem nutrientes pelas pontas. Criar o hábito de aplicar um pouco de óleo finalizador todas as manhãs e noites cria uma barreira contra o atrito e o ressecamento ambiental.",
-                tip: "Evite passar óleo muito próximo à raiz para não obstruir os folículos e causar oleosidade excessiva no couro cabeludo.",
+                description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Cabelos ressecados perdem nutrientes pelas pontas. Criar o hábito de aplicar um pouco de óleo finalizador todas as manhãs e noites cria uma barreira contra o atrito e o ressecamento ambiental. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
+                tip: "Evite passar óleo muito próximo à raiz para não obstruir os folículos e causar oleosidade excessiva no couro cabeludo. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
                 image: "/assets/fringe-fade.webp"
               }
             ]}
@@ -1178,8 +1178,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Afro Puff Clássico",
-                description: "O penteado favorito pela sua praticidade e impacto. Consiste em prender todo o cabelo no topo da cabeça, deixando o volume livre. No crespo, o puff ganha uma forma arredondada perfeita.",
-                tip: "Use uma faixa de tecido ou um cadarço largo para prender sem quebrar os fios.",
+                description: "Para criar um penteado protetor ou volumoso que esbanje saúde e atitude, prepare a fibra com nutrição intensa. O penteado favorito pela sua praticidade e impacto. Consiste em prender todo o cabelo no topo da cabeça, deixando o volume livre. No crespo, o puff ganha uma forma arredondada perfeita. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
+                tip: "Use uma faixa de tecido ou um cadarço largo para prender sem quebrar os fios. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
                 image: "/assets/crespo-afro-puff.png"
               },
               {
@@ -1894,26 +1894,26 @@ const ArticleDetailPage: React.FC = () => {
               },
               {
                 title: "2. Divisão em Ferradura",
-                description: "Divida o cabelo em seções claras. A divisão em 'ferradura' separa o topo das laterais, permitindo que você trabalhe o degradê ou a tesoura nas laterais sem interferir no volume do topo.",
-                tip: "Use presilhas de qualidade para manter as seções bem isoladas.",
+                description: "Para eliminar o frizz e garantir um efeito glass hair duradouro mesmo sob umidade, prepare a fibra capilar. Divida o cabelo em seções claras. A divisão em 'ferradura' separa o topo das laterais, permitindo que você trabalhe o degradê ou a tesoura nas laterais sem interferir no volume do topo. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
+                tip: "Use presilhas de qualidade para manter as seções bem isoladas. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
                 image: "/assets/slicked-back.webp"
               },
               {
                 title: "3. Ângulo de Corte e Mecha Guia",
-                description: "Defina a mecha guia no topo. No cabelo liso, use ângulos de 90 graus para um corte reto ou 45 graus para criar camadas suaves. A precisão aqui evita os temidos buracos no penteado.",
-                tip: "Sempre confira a simetria puxando as mechas dos dois lados para o centro.",
+                description: "Para eliminar o frizz e garantir um efeito glass hair duradouro mesmo sob umidade, prepare a fibra capilar. Defina a mecha guia no topo. No cabelo liso, use ângulos de 90 graus para um corte reto ou 45 graus para criar camadas suaves. A precisão aqui evita os temidos buracos no penteado. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
+                tip: "Sempre confira a simetria puxando as mechas dos dois lados para o centro. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
                 image: "/assets/pompadour-fade.webp"
               },
               {
                 title: "4. Texturização com Tesoura Dentada",
-                description: "Para remover o peso excessivo e evitar o efeito 'bloco', use a tesoura desfiadeira apenas nas pontas. Isso cria canais de ar que permitem que o liso tenha movimento e não fique chapado.",
-                tip: "Não suba a tesoura dentada até a raiz, ou você criará frizz impossível de controlar.",
+                description: "A precisão do acabamento liso exige uma secagem bem tracionada com escova profissional ou passagem contínua da prancha. Para remover o peso excessivo e evitar o efeito 'bloco', use a tesoura desfiadeira apenas nas pontas. Isso cria canais de ar que permitem que o liso tenha movimento e não fique chapado. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
+                tip: "Não suba a tesoura dentada até a raiz, ou você criará frizz impossível de controlar. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
                 image: "/assets/side-swept.webp"
               },
               {
                 title: "5. Acabamento e Contorno",
-                description: "O acabamento da nuca e orelhas no cabelo liso deve ser feito com máquina de acabamento e finalizado na navalha. Como o liso evidencia as linhas, qualquer assimetria será notada.",
-                tip: "Use um gel de barbear transparente para enxergar exatamente onde a lâmina está passando.",
+                description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. O acabamento da nuca e orelhas no cabelo liso deve ser feito com máquina de acabamento e finalizado na navalha. Como o liso evidencia as linhas, qualquer assimetria será notada. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
+                tip: "Use um gel de barbear transparente para enxergar exatamente onde a lâmina está passando. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
                 image: "/assets/high-fade.webp"
               }
             ]}
@@ -2030,8 +2030,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Wolf Cut Masculino",
-                description: "O corte do momento. Caracteriza-se por muitas camadas e fios desfiados, criando um visual volumoso e 'selvagem'. No cabelo liso, as camadas dão o movimento que o fio naturalmente não tem.",
-                tip: "Use o spray de sal marinho com o cabelo úmido para criar aquela textura de 'saída de praia' que o Wolf Cut exige.",
+                description: "A precisão do acabamento liso exige uma secagem bem tracionada com escova profissional ou passagem contínua da prancha. O corte do momento. Caracteriza-se por muitas camadas e fios desfiados, criando um visual volumoso e 'selvagem'. No cabelo liso, as camadas dão o movimento que o fio naturalmente não tem. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
+                tip: "Use o spray de sal marinho com o cabelo úmido para criar aquela textura de 'saída de praia' que o Wolf Cut exige. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
                 image: "/assets/wolf-cut.webp"
               },
               {
@@ -2172,8 +2172,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Pixie com Taper Fade",
-                description: "O Pixie clássico ganha uma nova vida com as costeletas e a nuca em degradê baixo. Isso remove o excesso de fios que costumam incomodar nessas áreas e destaca o desenho das orelhas e do maxilar.",
-                tip: "Finalize o topo com uma cera matte para criar textura 'bagunçada' e moderna.",
+                description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. O Pixie clássico ganha uma nova vida com as costeletas e a nuca em degradê baixo. Isso remove o excesso de fios que costumam incomodar nessas áreas e destaca o desenho das orelhas e do maxilar. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
+                tip: "Finalize o topo com uma cera matte para criar textura 'bagunçada' e moderna. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
                 image: "/assets/corte-americano.webp"
               },
               {
@@ -2249,14 +2249,14 @@ const ArticleDetailPage: React.FC = () => {
               },
               {
                 title: "2. Coque Baixo Minimalista",
-                description: "Posicionado na altura da nuca, este coque é a definição de sofisticação discreta. É o penteado favorito para casamentos e eventos corporativos de alto nível no cabelo liso.",
-                tip: "Enrole o próprio cabelo ao redor do elástico para escondê-lo e dar um toque artesanal ao penteado.",
+                description: "O segredo para um alinhamento impecável e brilho espelhado em fios lisos está no selamento completo das cutículas. Posicionado na altura da nuca, este coque é a definição de sofisticação discreta. É o penteado favorito para casamentos e eventos corporativos de alto nível no cabelo liso. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
+                tip: "Enrole o próprio cabelo ao redor do elástico para escondê-lo e dar um toque artesanal ao penteado. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
                 image: "/assets/slicked-back.webp"
               },
               {
                 title: "3. Semipreso com Torcidinhos",
-                description: "Duas mechas frontais são levemente torcidas e presas na parte de trás. Um penteado romântico que valoriza o comprimento liso e retira o cabelo do rosto com delicadeza.",
-                tip: "Adicione uma presilha de pérolas no ponto onde as mechas se encontram para um toque extra de luxo.",
+                description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. Duas mechas frontais são levemente torcidas e presas na parte de trás. Um penteado romântico que valoriza o comprimento liso e retira o cabelo do rosto com delicadeza. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
+                tip: "Adicione uma presilha de pérolas no ponto onde as mechas se encontram para um toque extra de luxo. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
                 image: "/assets/fringe-fade.webp"
               },
               {
@@ -2314,8 +2314,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. O Taper Fade Clássico",
-                description: "O degradê é concentrado exclusivamente nas costeletas e na nuca. No cabelo liso, isso evita que as laterais fiquem 'espetadas' conforme o cabelo cresce, mantendo o contorno sempre limpo.",
-                tip: "Peça ao barbeiro um 'Low Taper' se você busca um visual mais conservador e elegante.",
+                description: "Para eliminar o frizz e garantir um efeito glass hair duradouro mesmo sob umidade, prepare a fibra capilar. O degradê é concentrado exclusivamente nas costeletas e na nuca. No cabelo liso, isso evita que as laterais fiquem 'espetadas' conforme o cabelo cresce, mantendo o contorno sempre limpo. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
+                tip: "Peça ao barbeiro um 'Low Taper' se você busca um visual mais conservador e elegante. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
                 image: "/assets/corte-americano.webp"
               },
               {
@@ -2663,8 +2663,8 @@ const ArticleDetailPage: React.FC = () => {
               },
               {
                 title: "2. Wolf Cut com Volume Afro",
-                description: "A mistura do mullet com o shaggy continua forte. Para cacheadas, o foco é na franja volumosa e nas laterais mais baixas, criando um visual 'messy' proposital e cheio de estilo urbano.",
-                tip: "Use uma gelatina modeladora para dar peso e definição à franja.",
+                description: "Para ativar a memória dos cachos e garantir definição duradoura por vários day afters, siga a técnica técnica. A mistura do mullet com o shaggy continua forte. Para cacheadas, o foco é na franja volumosa e nas laterais mais baixas, criando um visual 'messy' proposital e cheio de estilo urbano. O resultado são cachos super definidos, macios, saltitantes e com volume na medida certa.",
+                tip: "Use uma gelatina modeladora para dar peso e definição à franja. Use uma toalha de algodão ou camiseta antiga para secar os cachos sem gerar atrito ou frizz indesejado na fibra capilar.",
                 image: "/assets/curly-wolf-cut.png"
               },
               {
@@ -2775,8 +2775,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. A Preparação 'Liquid Gold'",
-                description: "O segredo começa no chuveiro. Use um leave-in de base aquosa logo após o enxágue do condicionador, com o cabelo ainda pingando. Isso 'prende' a umidade dentro do fio, garantindo brilho espelhado.",
-                tip: "Nunca use toalhas de banho comuns; prefira uma camiseta de algodão ou toalha de microfibra para retirar o excesso de água.",
+                description: "Os cabelos cacheados ganham definição, brilho e balanço natural através de camadas fluidas e técnicas de enluve. O segredo começa no chuveiro. Use um leave-in de base aquosa logo após o enxágue do condicionador, com o cabelo ainda pingando. Isso 'prende' a umidade dentro do fio, garantindo brilho espelhado. Isso confere durabilidade ao penteado, mantendo a definição dos caracóis o dia inteiro.",
+                tip: "Nunca use toalhas de banho comuns; prefira uma camiseta de algodão ou toalha de microfibra para retirar o excesso de água. Faça um coque abacaxi frouxo no topo da cabeça para dormir, mantendo a definição dos cachos intacta para a manhã seguinte.",
                 image: "/assets/curly-liquid-gold.png"
               },
               {
@@ -2841,8 +2841,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "Desobstrução de Poros",
-                description: "Lave o rosto com água morna e um sabonete antioleosidade. A gordura natural da pele bloqueia a entrada do Minoxidil. Seque bem o rosto antes de aplicar.",
-                tip: "Use uma toalha limpa para não levar bactérias para as áreas onde você quer que o pelo cresça."
+                description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. Lave o rosto com água morna e um sabonete antioleosidade. A gordura natural da pele bloqueia a entrada do Minoxidil. Seque bem o rosto antes de aplicar. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
+                tip: "Use uma toalha limpa para não levar bactérias para as áreas onde você quer que o pelo cresça. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
               },
               {
                 title: "A Dose Mágica (1ml)",
@@ -3499,8 +3499,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "Esterilização Cirúrgica",
-                description: "Mergulhe o cabeçote do seu dermaroller em um recipiente com álcool 70% por exatamente 10 minutos. Jamais pule esta etapa.",
-                tip: "Use um copinho de café pequeno para economizar álcool, garantindo que as agulhas estejam totalmente submersas."
+                description: "Para um acabamento de salão que valoriza a saúde e a beleza dos fios, dedique tempo à técnica de finalização. Mergulhe o cabeçote do seu dermaroller em um recipiente com álcool 70% por exatamente 10 minutos. Jamais pule esta etapa. Isso garante fixação confortável e proteção integral para o seu cabelo o dia todo.",
+                tip: "Use um copinho de café pequeno para economizar álcool, garantindo que as agulhas estejam totalmente submersas. Carregue um mini sérum ou spray revitalizador na bolsa para dar aquele retoque rápido de movimento e brilho ao longo do dia.",
               },
               {
                 title: "Abertura dos Canais (Técnica da Estrela)",
@@ -3841,8 +3841,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Esboço da Perfeição",
-                description: "Antes de ligar a máquina, use um lápis branco de olho para desenhar o contorno que você deseja no rosto. Isso evita que você tire mais de um lado que do outro.",
-                tip: "Use a linha das pupilas dos seus olhos como referência para onde as laterais do cavanhaque devem terminar."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Antes de ligar a máquina, use um lápis branco de olho para desenhar o contorno que você deseja no rosto. Isso evita que você tire mais de um lado que do outro. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use a linha das pupilas dos seus olhos como referência para onde as laterais do cavanhaque devem terminar. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "A Limpeza de Fundo (Bochechas)",
@@ -4584,8 +4584,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Ponto de Umidade Perfeito",
-                description: "Nunca aplique óleo na barba pingando água. Seque com uma toalha até que ela esteja apenas úmida. A água restante ajuda a 'puxar' o óleo para dentro da cutícula do fio.",
-                tip: "Se a barba estiver muito seca, os fios podem ficar com aspecto engordurado em vez de hidratado."
+                description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. Nunca aplique óleo na barba pingando água. Seque com uma toalha até que ela esteja apenas úmida. A água restante ajuda a 'puxar' o óleo para dentro da cutícula do fio. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
+                tip: "Se a barba estiver muito seca, os fios podem ficar com aspecto engordurado em vez de hidratado. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
               },
               {
                 title: "Ativação Térmica",
@@ -6340,13 +6340,13 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Massagem de Reposicionamento",
-                description: "Coloque o dedo indicador e médio nos cantos da boca. Com pressão média, deslize os dedos para cima, em direção ao topo da orelha, repetindo 20 vezes de cada lado.",
-                tip: "Use um óleo facial leve para os dedos deslizarem sem 'puxar' a pele, o que poderia piorar as rugas."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Coloque o dedo indicador e médio nos cantos da boca. Com pressão média, deslize os dedos para cima, em direção ao topo da orelha, repetindo 20 vezes de cada lado. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Use um óleo facial leve para os dedos deslizarem sem 'puxar' a pele, o que poderia piorar as rugas. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "O Preenchimento Tópico",
-                description: "Aplique o ácido hialurônico especificamente dentro da linha do bigode chinês. O ácido atrai água para a região, esticando a pele de dentro para fora.",
-                tip: "Aplique o sérum com a pele levemente úmida para potencializar a absorção de água."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Aplique o ácido hialurônico especificamente dentro da linha do bigode chinês. O ácido atrai água para a região, esticando a pele de dentro para fora. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Aplique o sérum com a pele levemente úmida para potencializar a absorção de água. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "A Camuflagem Estratégica (Barba)",
@@ -6749,8 +6749,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Técnica do 'Selfie de Engenheiro'",
-                description: "Tire uma foto do seu rosto de frente, com o celular na altura dos olhos. Use o editor de fotos para desenhar linhas: uma na testa, uma nas maçãs do rosto e uma no maxilar. Compare os comprimentos.",
-                tip: "Se a linha do maxilar for a mais larga, seu rosto é quadrado. Se as maçãs forem as mais largas, é redondo ou oval."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Tire uma foto do seu rosto de frente, com o celular na altura dos olhos. Use o editor de fotos para desenhar linhas: uma na testa, uma nas maçãs do rosto e uma no maxilar. Compare os comprimentos. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Se a linha do maxilar for a mais larga, seu rosto é quadrado. Se as maçãs forem as mais largas, é redondo ou oval. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "O Esquadro das Laterais",
@@ -7042,8 +7042,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Mapeamento da Área Doadora",
-                description: "O médico escolhe fios resistentes da nuca ou pescoço. No dia anterior, você deve descansar bem e evitar álcool. O design da barba é desenhado no rosto com caneta cirúrgica para sua aprovação final.",
-                tip: "Peça ao médico para não deixar a linha da bochecha muito alta; um visual mais natural é sempre melhor a longo prazo."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. O médico escolhe fios resistentes da nuca ou pescoço. No dia anterior, você deve descansar bem e evitar álcool. O design da barba é desenhado no rosto com caneta cirúrgica para sua aprovação final. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Peça ao médico para não deixar a linha da bochecha muito alta; um visual mais natural é sempre melhor a longo prazo. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "A Cirurgia (Maratona de Paciência)",
@@ -8964,13 +8964,13 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Segredo da Franja",
-                description: "A franja deve ser cortada para cair naturalmente sobre a testa. Peça ao barbeiro para 'desfiar' as pontas para que não pareça um corte reto de tigela.",
-                tip: "Se você tem o rosto redondo, deixe a franja um pouco mais curta para alongar a face."
+                description: "Para um acabamento de salão que valoriza a saúde e a beleza dos fios, dedique tempo à técnica de finalização. A franja deve ser cortada para cair naturalmente sobre a testa. Peça ao barbeiro para 'desfiar' as pontas para que não pareça um corte reto de tigela. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Se você tem o rosto redondo, deixe a franja um pouco mais curta para alongar a face. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               },
               {
                 title: "Criando Textura com Sal Marinho",
-                description: "Aplique spray de sal marinho no cabelo úmido. Isso dá volume e aquela aparência 'praiana' que o French Crop exige no topo.",
-                tip: "Amasse os fios com as mãos enquanto seca para potencilizar o efeito ondulado."
+                description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. Aplique spray de sal marinho no cabelo úmido. Isso dá volume e aquela aparência 'praiana' que o French Crop exige no topo. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Amasse os fios com as mãos enquanto seca para potencilizar o efeito ondulado. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               },
               {
                 title: "A Finalização com Argila",
@@ -9032,18 +9032,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Identidade do Pezinho",
-                description: "O 'pezinho' no Corte do Jaca é o que define o estilo. Ele deve ser reto e bem marcado, usando navalha para um acabamento nítido que molda o rosto.",
-                tip: "Se você tem pele sensível, use um gel de barbear transparente antes de passar a navalha nos contornos."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. O 'pezinho' no Corte do Jaca é o que define o estilo. Ele deve ser reto e bem marcado, usando navalha para um acabamento nítido que molda o rosto. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Se você tem pele sensível, use um gel de barbear transparente antes de passar a navalha nos contornos. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "A Escovação Diária",
-                description: "Cabelos crespos e curtos devem ser escovados diariamente com uma escova de cerdas duras para manter os fios alinhados e o couro cabeludo saudável.",
-                tip: "Escove sempre no sentido de crescimento para evitar inflamações e o aparecimento de pelos encravados."
+                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. Cabelos crespos e curtos devem ser escovados diariamente com uma escova de cerdas duras para manter os fios alinhados e o couro cabeludo saudável. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Escove sempre no sentido de crescimento para evitar inflamações e o aparecimento de pelos encravados. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "Hidratação do Couro Cabeludo",
-                description: "Como as laterais ficam totalmente expostas, é essencial manter a pele hidratada para evitar descamação que possa ser confundida com caspa.",
-                tip: "Use um balm leve ou óleo pós-barba sem álcool nas áreas raspadas para manter a pele íntegra."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. Como as laterais ficam totalmente expostas, é essencial manter a pele hidratada para evitar descamação que possa ser confundida com caspa. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Use um balm leve ou óleo pós-barba sem álcool nas áreas raspadas para manter a pele íntegra. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               }
             ]}
           />
@@ -9095,18 +9095,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Vantagem do Taper",
-                description: "O Taper permite que o cabelo cresça de forma muito mais uniforme. Você não fica com aquela aparência de 'cabelo crescendo' desordenado quando o degradê começa a perder a forma.",
-                tip: "É o corte ideal para quem quer um visual de baixa manutenção e que dure mais tempo entre as visitas ao barbeiro."
+                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. O Taper permite que o cabelo cresça de forma muito mais uniforme. Você não fica com aquela aparência de 'cabelo crescendo' desordenado quando o degradê começa a perder a forma. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "É o corte ideal para quem quer um visual de baixa manutenção e que dure mais tempo entre as visitas ao barbeiro. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               },
               {
                 title: "Definição de Cachos e Ondas",
-                description: "Se você tem cabelo cacheado ou ondulado, o Corte Americano é perfeito para valorizar o seu volume natural. Aplique o creme para pentear com o cabelo ainda úmido.",
-                tip: "Use a técnica de 'fitagem' com os dedos para definir melhor as mechas no topo e garantir movimento."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. Se você tem cabelo cacheado ou ondulado, o Corte Americano é perfeito para valorizar o seu volume natural. Aplique o creme para pentear com o cabelo ainda úmido. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Use a técnica de 'fitagem' com os dedos para definir melhor as mechas no topo e garantir movimento. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "O Acabamento na Nuca",
-                description: "A nuca deve ser limpa em formato de 'arco' ou 'quadrada', dependendo da sua preferência, mas sempre com o degradê subindo suavemente para não criar degraus.",
-                tip: "Peça ao barbeiro para não subir muito o degradê na nuca para manter o aspecto clássico e masculino."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. A nuca deve ser limpa em formato de 'arco' ou 'quadrada', dependendo da sua preferência, mas sempre com o degradê subindo suavemente para não criar degraus. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
+                tip: "Peça ao barbeiro para não subir muito o degradê na nuca para manter o aspecto clássico e masculino. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
               }
             ]}
           />
@@ -9158,18 +9158,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Simetria do Desenho",
-                description: "A risca geralmente segue a linha natural da sobrancelha ou a curvatura lateral do crânio. Deve ser feita com firmeza e precisão para que a linha não fique tremida ou torta.",
-                tip: "Desenhos mais simples, como uma linha única ou dupla, são mais fáceis de manter e projetam muito mais sofisticação."
+                description: "A estilização moderna e o acabamento premium do penteado dependem de uma preparação capilar minuciosa. A risca geralmente segue a linha natural da sobrancelha ou a curvatura lateral do crânio. Deve ser feita com firmeza e precisão para que a linha não fique tremida ou torta. Isso garante fixação confortável e proteção integral para o seu cabelo o dia todo.",
+                tip: "Desenhos mais simples, como uma linha única ou dupla, são mais fáceis de manter e projetam muito mais sofisticação. Carregue um mini sérum ou spray revitalizador na bolsa para dar aquele retoque rápido de movimento e brilho ao longo do dia.",
               },
               {
                 title: "Proteção do Couro Cabeludo",
-                description: "Como o cabelo está extremamente curto, o couro cabeludo fica exposto aos raios UV. O uso de protetor solar ou bonés torna-se obrigatório para evitar queimaduras.",
-                tip: "Aplique um hidratante facial leve após a lavagem para evitar que a pele do crânio descame e estrague o visual do corte."
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. Como o cabelo está extremamente curto, o couro cabeludo fica exposto aos raios UV. O uso de protetor solar ou bonés torna-se obrigatório para evitar queimaduras. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Aplique um hidratante facial leve após a lavagem para evitar que a pele do crânio descame e estrague o visual do corte. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               },
               {
                 title: "Manutenção da Risca",
-                description: "O desenho perde a nitidez em cerca de 7 a 10 dias. Para manter o visual impactante, você precisará retocar a risca com frequência no barbeiro.",
-                tip: "Não tente retocar o desenho sozinho em casa se não tiver experiência com navalha; você pode acabar engrossando a linha por erro."
+                description: "A estilização moderna e o acabamento premium do penteado dependem de uma preparação capilar minuciosa. O desenho perde a nitidez em cerca de 7 a 10 dias. Para manter o visual impactante, você precisará retocar a risca com frequência no barbeiro. Isso garante fixação confortável e proteção integral para o seu cabelo o dia todo.",
+                tip: "Não tente retocar o desenho sozinho em casa se não tiver experiência com navalha; você pode acabar engrossando a linha por erro. Carregue um mini sérum ou spray revitalizador na bolsa para dar aquele retoque rápido de movimento e brilho ao longo do dia.",
               }
             ]}
           />
@@ -9221,13 +9221,13 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Corte em Camadas",
-                description: "O segredo são as camadas curtas no topo e longas na nuca. Peça ao barbeiro para usar a técnica de navalha para criar pontas desfiadas que dão leveza ao corte.",
-                tip: "Não deixe as camadas muito marcadas; o Wolf Cut deve parecer que você acordou assim, de forma natural."
+                description: "A estilização moderna e o acabamento premium do penteado dependem de uma preparação capilar minuciosa. O segredo são as camadas curtas no topo e longas na nuca. Peça ao barbeiro para usar a técnica de navalha para criar pontas desfiadas que dão leveza ao corte. Isso garante fixação confortável e proteção integral para o seu cabelo o dia todo.",
+                tip: "Não deixe as camadas muito marcadas; o Wolf Cut deve parecer que você acordou assim, de forma natural. Carregue um mini sérum ou spray revitalizador na bolsa para dar aquele retoque rápido de movimento e brilho ao longo do dia.",
               },
               {
                 title: "Secagem com Difusor",
-                description: "Para quem tem ondas, o difusor é obrigatório. Ele seca o cabelo sem desmanchar os cachos, mantendo o volume 'selvagem' no topo e nas laterais.",
-                tip: "Seque com a cabeça abaixada para ganhar ainda mais volume na raiz."
+                description: "A estilização moderna e o acabamento premium do penteado dependem de uma preparação capilar minuciosa. Para quem tem ondas, o difusor é obrigatório. Ele seca o cabelo sem desmanchar os cachos, mantendo o volume 'selvagem' no topo e nas laterais. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Seque com a cabeça abaixada para ganhar ainda mais volume na raiz. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               },
               {
                 title: "Finalização com Teia",
@@ -9285,18 +9285,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Contraste das Laterais",
-                description: "As laterais devem ter um fade limpo para que o volume da nuca e do topo se destaque. O degradê pode ser Mid ou High, dependendo do seu estilo.",
-                tip: "Mantenha o pezinho atrás da orelha bem limpo para dar nitidez ao desenho do corte."
+                description: "Para um acabamento de salão que valoriza a saúde e a beleza dos fios, dedique tempo à técnica de finalização. As laterais devem ter um fade limpo para que o volume da nuca e do topo se destaque. O degradê pode ser Mid ou High, dependendo do seu estilo. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Mantenha o pezinho atrás da orelha bem limpo para dar nitidez ao desenho do corte. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               },
               {
                 title: "O Penteado em 'V'",
-                description: "Penteie a nuca para baixo e para o centro, criando um efeito de ponta. No topo, você pode usar arrepiado ou para frente, conectando com a franja.",
-                tip: "Use um pouco de spray de fixação na nuca para que o formato em 'V' não se desfaça com o vento ou movimento."
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. Penteie a nuca para baixo e para o centro, criando um efeito de ponta. No topo, você pode usar arrepiado ou para frente, conectando com a franja. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
+                tip: "Use um pouco de spray de fixação na nuca para que o formato em 'V' não se desfaça com o vento ou movimento. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
               },
               {
                 title: "Hidratação da Nuca",
-                description: "Como a nuca é a parte mais longa, ela tende a ressecar ou embaraçar. Use um condicionador de qualidade e um óleo finalizador para manter os fios saudáveis.",
-                tip: "Lave bem a região da nuca para evitar o acúmulo de suor e oleosidade, que podem causar irritações na pele."
+                description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. Como a nuca é a parte mais longa, ela tende a ressecar ou embaraçar. Use um condicionador de qualidade e um óleo finalizador para manter os fios saudáveis. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Lave bem a região da nuca para evitar o acúmulo de suor e oleosidade, que podem causar irritações na pele. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               }
             ]}
           />
@@ -9537,18 +9537,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Lavagem de Dreads",
-                description: "Dreads curtos secam rápido, mas o interior deve ser bem enxaguado. Use apenas shampoos que não deixem resíduos, para evitar mofo ou acúmulo de sujeira.",
-                tip: "Lave seus dreads pela manhã e, se possível, use um secador para garantir que o centro de cada dread esteja seco."
+                description: "O segredo para um degradê ou corte curto impecável está na simetria das costeletas e no controle da densidade. Dreads curtos secam rápido, mas o interior deve ser bem enxaguado. Use apenas shampoos que não deixem resíduos, para evitar mofo ou acúmulo de sujeira. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Lave seus dreads pela manhã e, se possível, use um secador para garantir que o centro de cada dread esteja seco. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "Manutenção do Fade",
-                description: "O contraste é o que faz este corte brilhar. Mantenha o degradê lateral sempre 'fresco' visitando o barbeiro a cada 15 dias.",
-                tip: "Peça para o barbeiro não encostar a máquina na base dos dreads para não enfraquecer a estrutura."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. O contraste é o que faz este corte brilhar. Mantenha o degradê lateral sempre 'fresco' visitando o barbeiro a cada 15 dias. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Peça para o barbeiro não encostar a máquina na base dos dreads para não enfraquecer a estrutura. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "Retwist da Raiz",
-                description: "Conforme o cabelo cresce, a base do dread fica frouxa. O 'retwist' organiza esses fios novos para dentro do dread.",
-                tip: "Não aperte demais a raiz no retwist para evitar alopecia de tração e dores de cabeça."
+                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. Conforme o cabelo cresce, a base do dread fica frouxa. O 'retwist' organiza esses fios novos para dentro do dread. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Não aperte demais a raiz no retwist para evitar alopecia de tração e dores de cabeça. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               }
             ]}
           />
@@ -9600,18 +9600,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Poder da Repartição",
-                description: "A linha de repartição deve ser limpa e seguir a curvatura natural do seu crânio. Use um pente para encontrar o ponto onde o cabelo 'abre' naturalmente.",
-                tip: "Se você tem o rosto muito longo, evite dar muito volume no topo para não alongar ainda mais."
+                description: "O segredo para um degradê ou corte curto impecável está na simetria das costeletas e no controle da densidade. A linha de repartição deve ser limpa e seguir a curvatura natural do seu crânio. Use um pente para encontrar o ponto onde o cabelo 'abre' naturalmente. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Se você tem o rosto muito longo, evite dar muito volume no topo para não alongar ainda mais. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "Finalização Executiva",
-                description: "Aplique uma pequena quantidade de creme modelador. Penteie para o lado e para trás, mantendo os fios alinhados mas sem aquele aspecto 'duro' de gel.",
-                tip: "Use as mãos após o pente para dar um toque mais natural e menos rígido ao visual."
+                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. Aplique uma pequena quantidade de creme modelador. Penteie para o lado e para trás, mantendo os fios alinhados mas sem aquele aspecto 'duro' de gel. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Use as mãos após o pente para dar um toque mais natural e menos rígido ao visual. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "A Importância da Nuca Limpa",
-                description: "O que diferencia um corte social bem feito é a limpeza da nuca e das orelhas. Pelos crescendo nessas áreas passam imagem de desleixo.",
-                tip: "Faça uma manutenção rápida em casa com um aparador apenas nas áreas periféricas a cada 10 dias."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. O que diferencia um corte social bem feito é a limpeza da nuca e das orelhas. Pelos crescendo nessas áreas passam imagem de desleixo. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Faça uma manutenção rápida em casa com um aparador apenas nas áreas periféricas a cada 10 dias. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               }
             ]}
           />
@@ -9663,18 +9663,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Segredo do Volume Central",
-                description: "Para o moicano não 'cair' durante o dia, você precisa de uma base sólida. Aplique o produto com o cabelo seco e use o secador apontando para cima.",
-                tip: "Use os dedos em formato de 'garra' para unir as pontas no centro e criar a crista característica."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. Para o moicano não 'cair' durante o dia, você precisa de uma base sólida. Aplique o produto com o cabelo seco e use o secador apontando para cima. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Use os dedos em formato de 'garra' para unir as pontas no centro e criar a crista característica. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               },
               {
                 title: "A Linha da Nuca",
-                description: "Diferente de outros cortes onde a nuca é raspada reta, no moicano disfarçado o volume deve descer acompanhando a coluna vertebral.",
-                tip: "Peça ao barbeiro para fazer um degradê em 'V' na nuca para acentuar o formato do corte."
+                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. Diferente de outros cortes onde a nuca é raspada reta, no moicano disfarçado o volume deve descer acompanhando a coluna vertebral. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Peça ao barbeiro para fazer um degradê em 'V' na nuca para acentuar o formato do corte. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "Versatilidade no Dia a Dia",
-                description: "Nos dias em que não quiser usar o moicano, você pode simplesmente pentear o topo para o lado. O degradê lateral garante que o visual continue alinhado.",
-                tip: "A textura desfiada no topo é o que permite essa versatilidade entre o 'espetado' e o 'comportado'."
+                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Nos dias em que não quiser usar o moicano, você pode simplesmente pentear o topo para o lado. O degradê lateral garante que o visual continue alinhado. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
+                tip: "A textura desfiada no topo é o que permite essa versatilidade entre o 'espetado' e o 'comportado'. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
               }
             ]}
           />
@@ -9726,18 +9726,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "Lavagem para Cabelos Longos",
-                description: "Cabelos longos sofrem mais com o ressecamento das pontas. Use shampoo apenas na raiz e deixe a espuma escorrer pelo comprimento.",
-                tip: "Sempre use condicionador do meio para as pontas. Nunca aplique na raiz para evitar oleosidade excessiva."
+                description: "Os fios ondulados necessitam de produtos leves que ativem as ondas sem pesar na raiz ou desestruturar o balanço. Cabelos longos sofrem mais com o ressecamento das pontas. Use shampoo apenas na raiz e deixe a espuma escorrer pelo comprimento. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
+                tip: "Sempre use condicionador do meio para as pontas. Nunca aplique na raiz para evitar oleosidade excessiva. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
               },
               {
                 title: "O Ritual do Sal Marinho",
-                description: "Com o cabelo úmido, borrife o spray de sal marinho generosamente. Amasse os fios com as mãos, de baixo para cima, para estimular as ondas.",
-                tip: "Deixe secar naturalmente ao vento para um resultado mais autêntico e menos armado."
+                description: "Para realçar a textura natural ondulada de forma despojada e com volume saudável, utilize técnicas de amassamento. Com o cabelo úmido, borrife o spray de sal marinho generosamente. Amasse os fios com as mãos, de baixo para cima, para estimular as ondas. O resultado são ondas com textura incrível, balanço natural e livres de frizz.",
+                tip: "Deixe secar naturalmente ao vento para um resultado mais autêntico e menos armado. Use sempre protetores térmicos fluidos em spray para evitar pesar a raiz do cabelo ondulado e manter o balanço natural das ondas.",
               },
               {
                 title: "Proteção contra o Sol e Cloro",
-                description: "Se você frequenta praia ou piscina, o cabelo longo exige proteção. Use leave-in com filtro solar para evitar que o fio fique 'elástico' e desbotado.",
-                tip: "Enxágue o cabelo com água doce logo após sair do mar ou da piscina."
+                description: "Para um visual natural e elegante que valoriza as ondas médias sem frizz, a preparação térmica é o diferencial. Se você frequenta praia ou piscina, o cabelo longo exige proteção. Use leave-in com filtro solar para evitar que o fio fique 'elástico' e desbotado. Isso confere aquele ar despojado, elegante e com movimento digno de capa de revista.",
+                tip: "Enxágue o cabelo com água doce logo após sair do mar ou da piscina. Faça tranças frouxas antes de dormir para acordar com ondas naturalmente formadas, volumosas e sem necessidade de calor.",
               }
             ]}
           />
@@ -9852,18 +9852,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Movimento Frontal",
-                description: "A franja não deve ficar estática. O segredo é usar produtos que permitam o balanço do cabelo enquanto ele permanece no lugar.",
-                tip: "Ao secar, use o jato de ar de trás para frente para 'empurrar' o volume para a testa."
+                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. A franja não deve ficar estática. O segredo é usar produtos que permitam o balanço do cabelo enquanto ele permanece no lugar. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
+                tip: "Ao secar, use o jato de ar de trás para frente para 'empurrar' o volume para a testa. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
               },
               {
                 title: "Ajuste do Comprimento",
-                description: "A altura ideal da franja é logo acima dos olhos. Se ficar muito longa, pode atrapalhar a visão e perder o formato do corte.",
-                tip: "Peça ao barbeiro para 'picotar' as pontas com a ponta da tesoura para um acabamento mais natural."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. A altura ideal da franja é logo acima dos olhos. Se ficar muito longa, pode atrapalhar a visão e perder o formato do corte. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Peça ao barbeiro para 'picotar' as pontas com a ponta da tesoura para um acabamento mais natural. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "Manutenção do Degradê",
-                description: "Como o foco é o contraste, as laterais precisam estar sempre muito limpas. O ideal é retocar o fade a cada 10 dias.",
-                tip: "Se você usa óculos, peça para o barbeiro limpar bem a área das hastes para evitar que o cabelo 'levante' o acessório."
+                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. Como o foco é o contraste, as laterais precisam estar sempre muito limpas. O ideal é retocar o fade a cada 10 dias. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Se você usa óculos, peça para o barbeiro limpar bem a área das hastes para evitar que o cabelo 'levante' o acessório. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               }
             ]}
           />
@@ -9978,13 +9978,13 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Escolha do Lado",
-                description: "O cabelo sempre tem um lado que 'obedece' melhor. Penteie para os dois lados e veja onde o redemoinho da coroa favorece o caimento.",
-                tip: "Evite lutar contra o nascimento do fio; isso só vai criar frizz e volume indesejado na raiz."
+                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. O cabelo sempre tem um lado que 'obedece' melhor. Penteie para os dois lados e veja onde o redemoinho da coroa favorece o caimento. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Evite lutar contra o nascimento do fio; isso só vai criar frizz e volume indesejado na raiz. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               },
               {
                 title: "Volume na Raiz",
-                description: "O segredo do Side Swept é a altura. Ao secar, levante a raiz com a escova redonda e direcione o ar quente na base do fio.",
-                tip: "Finalize com um jato de ar frio para 'congelar' o volume no lugar por mais tempo."
+                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. O segredo do Side Swept é a altura. Ao secar, levante a raiz com a escova redonda e direcione o ar quente na base do fio. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Finalize com um jato de ar frio para 'congelar' o volume no lugar por mais tempo. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               },
               {
                 title: "O Ponto de Desconexão",
@@ -10031,13 +10031,13 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Técnica da Escovação",
-                description: "O volume do pompadour vem da raiz, não do produto. Ao secar, levante a raiz com a escova e direcione o calor por baixo da mecha.",
-                tip: "Use o jato frio do secador após modelar cada mecha para fixar a forma antes de aplicar a pomada."
+                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. O volume do pompadour vem da raiz, não do produto. Ao secar, levante a raiz com a escova e direcione o calor por baixo da mecha. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Use o jato frio do secador após modelar cada mecha para fixar a forma antes de aplicar a pomada. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "Equilíbrio das Proporções",
-                description: "Se você tem o rosto muito alongado, evite topetes excessivamente altos. Tente um pompadour mais 'baixo' e largo para harmonizar.",
-                tip: "O degradê lateral deve subir até a linha da coroa para que o topo pareça ainda mais volumoso."
+                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Se você tem o rosto muito alongado, evite topetes excessivamente altos. Tente um pompadour mais 'baixo' e largo para harmonizar. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "O degradê lateral deve subir até a linha da coroa para que o topo pareça ainda mais volumoso. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               },
               {
                 title: "Manutenção da Estrutura",
@@ -10094,8 +10094,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Penteado Molhado",
-                description: "Para o efeito clássico, o cabelo deve ser penteado ainda úmido. Isso ajuda a pomada a selar os fios e manter o brilho vitrificado.",
-                tip: "Se o cabelo secar durante o dia e começar a arrepiar, passe um pente úmido para reativar a pomada."
+                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Para o efeito clássico, o cabelo deve ser penteado ainda úmido. Isso ajuda a pomada a selar os fios e manter o brilho vitrificado. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Se o cabelo secar durante o dia e começar a arrepiar, passe um pente úmido para reativar a pomada. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               },
               {
                 title: "Lidando com Cabelos Rebeldes",
@@ -10157,18 +10157,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Franja do Imperador",
-                description: "A linha da franja deve ser perfeitamente horizontal. Isso cria uma moldura forte para o rosto e destaca o olhar.",
-                tip: "Se você tem o rosto muito redondo, peça para o barbeiro fazer a franja levemente 'picotada' em vez de uma linha sólida."
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. A linha da franja deve ser perfeitamente horizontal. Isso cria uma moldura forte para o rosto e destaca o olhar. Isso garante fixação confortável e proteção integral para o seu cabelo o dia todo.",
+                tip: "Se você tem o rosto muito redondo, peça para o barbeiro fazer a franja levemente 'picotada' em vez de uma linha sólida. Carregue um mini sérum ou spray revitalizador na bolsa para dar aquele retoque rápido de movimento e brilho ao longo do dia.",
               },
               {
                 title: "Baixa Manutenção",
-                description: "Para finalizar, basta uma pequena quantidade de pomada matte. Espalhe nas mãos e passe no cabelo seco, direcionando para frente.",
-                tip: "É o corte perfeito para quem pratica esportes ou usa capacete com frequência."
+                description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. Para finalizar, basta uma pequena quantidade de pomada matte. Espalhe nas mãos e passe no cabelo seco, direcionando para frente. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "É o corte perfeito para quem pratica esportes ou usa capacete com frequência. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               },
               {
                 title: "Cuidando do Couro Cabeludo",
-                description: "Como o cabelo é curto, o couro cabeludo respira melhor. Aproveite para usar tônicos capilares se tiver tendência à queda.",
-                tip: "Lave o cabelo diariamente para evitar o acúmulo de oleosidade que pode deixar o corte César com aspecto 'pesado'."
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. Como o cabelo é curto, o couro cabeludo respira melhor. Aproveite para usar tônicos capilares se tiver tendência à queda. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
+                tip: "Lave o cabelo diariamente para evitar o acúmulo de oleosidade que pode deixar o corte César com aspecto 'pesado'. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
               }
             ]}
           />
@@ -10283,18 +10283,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Formato do 'Burst'",
-                description: "A curvatura deve ser perfeita. O barbeiro deve seguir o contorno da orelha, criando uma sombra que se dissipa rapidamente.",
-                tip: "É um corte que valoriza muito quem tem tatuagens na região do pescoço ou atrás da orelha."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. A curvatura deve ser perfeita. O barbeiro deve seguir o contorno da orelha, criando uma sombra que se dissipa rapidamente. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "É um corte que valoriza muito quem tem tatuagens na região do pescoço ou atrás da orelha. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               },
               {
                 title: "Cabelos Crespos e Cacheados",
-                description: "O Burst Fade fica sensacional em texturas afro. Ele permite manter o volume do Black Power ou dos twists enquanto as laterais ficam super limpas.",
-                tip: "Use um ativador de cachos no topo para dar destaque à textura em contraste com o fade."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. O Burst Fade fica sensacional em texturas afro. Ele permite manter o volume do Black Power ou dos twists enquanto as laterais ficam super limpas. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
+                tip: "Use um ativador de cachos no topo para dar destaque à textura em contraste com o fade. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
               },
               {
                 title: "Manutenção Crítica",
-                description: "Por ser um fade muito localizado, qualquer crescimento de cabelo na área do semicírculo 'apaga' o desenho do corte rapidamente.",
-                tip: "Recomendamos retoques a cada 7 a 10 dias para manter a nitidez do arco."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. Por ser um fade muito localizado, qualquer crescimento de cabelo na área do semicírculo 'apaga' o desenho do corte rapidamente. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Recomendamos retoques a cada 7 a 10 dias para manter a nitidez do arco. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               }
             ]}
           />
@@ -10346,13 +10346,13 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Base da Estrutura",
-                description: "O Flat Top só funciona se o cabelo estiver saudável e denso. O uso de shampoos que dão volume e encorpam o fio ajuda na sustentação.",
-                tip: "Ao pentear, faça movimentos verticais para 'armar' o cabelo antes de passar a máquina niveladora."
+                description: "A valorização do cabelo crespo reside na retenção de umidade e no respeito à curvatura natural tipo 4. O Flat Top só funciona se o cabelo estiver saudável e denso. O uso de shampoos que dão volume e encorpam o fio ajuda na sustentação. Seu crespo ganha uma presença poderosa, celebrando a curvatura natural com saúde máxima.",
+                tip: "Ao pentear, faça movimentos verticais para 'armar' o cabelo antes de passar a máquina niveladora. Use sempre produtos ricos em óleos vegetais de abacate ou coco para manter os fios tipo 4 altamente nutridos e fortes.",
               },
               {
                 title: "Simetria é Tudo",
-                description: "O barbeiro deve olhar o corte de todos os ângulos: frente, lados e topo. Qualquer desnível quebra a ilusão da geometria perfeita.",
-                tip: "Se você dorme de lado, pode amassar o corte. Use uma touca protetora para manter o formato durante a noite."
+                description: "Para dar forma ao volume potente sem quebrar a estrutura capilar, utilize o método de dedoliss ou fitagem estruturada. O barbeiro deve olhar o corte de todos os ângulos: frente, lados e topo. Qualquer desnível quebra a ilusão da geometria perfeita. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
+                tip: "Se você dorme de lado, pode amassar o corte. Use uma touca protetora para manter o formato durante a noite. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
               },
               {
                 title: "Estilo e Atitude",
@@ -10409,18 +10409,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Altura do Coque",
-                description: "A posição ideal é exatamente na coroa da cabeça. Muito baixo parece um rabo de cavalo comum; muito alto pode parecer desproporcional.",
-                tip: "Use o osso occipital como referência para encontrar a altura perfeita que valorize seu perfil."
+                description: "O segredo para um degradê ou corte curto impecável está na simetria das costeletas e no controle da densidade. A posição ideal é exatamente na coroa da cabeça. Muito baixo parece um rabo de cavalo comum; muito alto pode parecer desproporcional. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Use o osso occipital como referência para encontrar a altura perfeita que valorize seu perfil. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               },
               {
                 title: "Saúde dos Fios Longos",
-                description: "O cabelo do topo sofre muito atrito com o elástico. Nunca prenda o cabelo enquanto ele estiver úmido; isso causa mofo e quebra severa.",
-                tip: "Use óleos de finalização nas pontas para evitar que o coque pareça uma 'vassoura' ressecada."
+                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. O cabelo do topo sofre muito atrito com o elástico. Nunca prenda o cabelo enquanto ele estiver úmido; isso causa mofo e quebra severa. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
+                tip: "Use óleos de finalização nas pontas para evitar que o coque pareça uma 'vassoura' ressecada. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
               },
               {
                 title: "Manutenção do Undercut",
-                description: "O contraste é o que dá o estilo. Se as laterais crescerem demais, o visual perde a força. Retoque com máquina a cada 10-15 dias.",
-                tip: "Você mesmo pode retocar o undercut em casa se tiver um espelho de mão e firmeza para seguir a linha do topo."
+                description: "O segredo para um degradê ou corte curto impecável está na simetria das costeletas e no controle da densidade. O contraste é o que dá o estilo. Se as laterais crescerem demais, o visual perde a força. Retoque com máquina a cada 10-15 dias. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
+                tip: "Você mesmo pode retocar o undercut em casa se tiver um espelho de mão e firmeza para seguir a linha do topo. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
               }
             ]}
           />
@@ -10472,13 +10472,13 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Corte 'A Seco'",
-                description: "Cabelos ondulados mudam muito de comprimento quando secam. Peça para o barbeiro finalizar o ajuste do topo com o cabelo seco.",
-                tip: "Isso evita que o cabelo fique mais curto do que você planejou após a secagem."
+                description: "Para realçar a textura natural ondulada de forma despojada e com volume saudável, utilize técnicas de amassamento. Cabelos ondulados mudam muito de comprimento quando secam. Peça para o barbeiro finalizar o ajuste do topo com o cabelo seco. O resultado são ondas com textura incrível, balanço natural e livres de frizz.",
+                tip: "Isso evita que o cabelo fique mais curto do que você planejou após a secagem. Use sempre protetores térmicos fluidos em spray para evitar pesar a raiz do cabelo ondulado e manter o balanço natural das ondas.",
               },
               {
                 title: "Controle do Frizz",
-                description: "Ondas tendem a ficar 'arrepiadas' com facilidade. O segredo é nunca esfregar a toalha no cabelo; apenas pressione para tirar a umidade.",
-                tip: "Use uma camiseta de algodão velha para secar; as fibras são mais gentis que as de uma toalha comum."
+                description: "O movimento elegante das ondas é conquistado através de uma secagem estratégica combinada com ativadores de textura. Ondas tendem a ficar 'arrepiadas' com facilidade. O segredo é nunca esfregar a toalha no cabelo; apenas pressione para tirar a umidade. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
+                tip: "Use uma camiseta de algodão velha para secar; as fibras são mais gentis que as de uma toalha comum. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
               },
               {
                 title: "Estilo Versátil",
@@ -10536,18 +10536,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Importância da Textura",
-                description: "Sem textura, o Bowl Cut parece um capacete. O barbeiro deve usar a técnica de 'point cutting' para deixar as pontas irregulares.",
-                tip: "Quanto mais 'bagunçado' no topo, mais moderno e menos datado o corte vai parecer."
+                description: "Para um acabamento de salão que valoriza a saúde e a beleza dos fios, dedique tempo à técnica de finalização. Sem textura, o Bowl Cut parece um capacete. O barbeiro deve usar a técnica de 'point cutting' para deixar as pontas irregulares. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
+                tip: "Quanto mais 'bagunçado' no topo, mais moderno e menos datado o corte vai parecer. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
               },
               {
                 title: "O Formato do Rosto",
-                description: "Este corte acentua as linhas da mandíbula e das maçãs do rosto. É perfeito para rostos com traços angulares e marcantes.",
-                tip: "Se você tem o rosto muito redondo, peça um Bowl Cut com a linha lateral mais alta para 'alongar' a face."
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. Este corte acentua as linhas da mandíbula e das maçãs do rosto. É perfeito para rostos com traços angulares e marcantes. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Se você tem o rosto muito redondo, peça um Bowl Cut com a linha lateral mais alta para 'alongar' a face. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               },
               {
                 title: "Manutenção Estrita",
-                description: "A linha circular perde o formato muito rápido. Para manter o visual vanguardista, você precisará visitar o barbeiro a cada 10 dias.",
-                tip: "Use shampoos de limpeza profunda para que o topo fique sempre leve e com movimento."
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. A linha circular perde o formato muito rápido. Para manter o visual vanguardista, você precisará visitar o barbeiro a cada 10 dias. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
+                tip: "Use shampoos de limpeza profunda para que o topo fique sempre leve e com movimento. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
               }
             ]}
           />
@@ -10662,18 +10662,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Arquitetura Lateral",
-                description: "O segredo da Ducktail não é o queixo, mas as bochechas. Elas devem ser mantidas baixas e retas. Use a máquina no pente 2 ou 3 descendo verticalmente.",
-                tip: "Não siga a curva natural do rosto; corte 'para fora' para criar uma silhueta angular."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. O segredo da Ducktail não é o queixo, mas as bochechas. Elas devem ser mantidas baixas e retas. Use a máquina no pente 2 ou 3 descendo verticalmente. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Não siga a curva natural do rosto; corte 'para fora' para criar uma silhueta angular. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "Esculpindo a Ponta",
-                description: "Com uma tesoura, apare as pontas do queixo para formar um bico suave. O comprimento deve ser maior no centro e diminuir em direção às mandíbulas.",
-                tip: "Use Balm para unir os fios e ver o formato real antes de cortar."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. Com uma tesoura, apare as pontas do queixo para formar um bico suave. O comprimento deve ser maior no centro e diminuir em direção às mandíbulas. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use Balm para unir os fios e ver o formato real antes de cortar. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "Manutenção Diária",
-                description: "Como é um estilo geométrico, qualquer fio fora do lugar aparece. Penteie sempre para baixo e para o centro.",
-                tip: "Use um secador para direcionar os fios do queixo para a ponta."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Como é um estilo geométrico, qualquer fio fora do lugar aparece. Penteie sempre para baixo e para o centro. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Use um secador para direcionar os fios do queixo para a ponta. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               }
             ]}
           />
@@ -10725,18 +10725,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Regra do Lábio",
-                description: "O Chevron deve ser denso. Nunca apare o comprimento por cima. Deixe-o descer até o lábio e corte apenas o excesso que atrapalha a fala ou a alimentação.",
-                tip: "Use a tesoura num ângulo de 45 graus para um acabamento mais natural."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. O Chevron deve ser denso. Nunca apare o comprimento por cima. Deixe-o descer até o lábio e corte apenas o excesso que atrapalha a fala ou a alimentação. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use a tesoura num ângulo de 45 graus para um acabamento mais natural. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "Limpeza das Bochechas",
-                description: "Para o bigode brilhar, o rosto deve estar limpo. Se preferir usar com barba, certifique-se de que o bigode seja significativamente mais longo que o resto.",
-                tip: "O contraste é o que torna o Chevron icônico."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Para o bigode brilhar, o rosto deve estar limpo. Se preferir usar com barba, certifique-se de que o bigode seja significativamente mais longo que o resto. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "O contraste é o que torna o Chevron icônico. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "Nutrição e Brilho",
-                description: "Aplique uma gota de óleo apenas no bigode para evitar que os fios fiquem espetados ou ressecados.",
-                tip: "Cera de bigode ajuda a manter os fios alinhados sem parecer engomado."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. Aplique um óleo pré-shampoo ou gel de barbear transparente sobre a pele para facilitar o deslizamento da lâmina com segurança. Com movimentos curtos e precisos na direção do crescimento do pelo, trace as linhas laterais das bochechas e a curva do pescoço, limpando o excesso com uma toalha macia e aplicando balm hidratante logo em seguida. Aplique uma gota de óleo apenas no bigode para evitar que os fios fiquem espetados ou ressecados. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Cera de bigode ajuda a manter os fios alinhados sem parecer engomado. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               }
             ]}
           />
@@ -10851,8 +10851,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "Mapeando a Âncora",
-                description: "Use a ponta do queixo como centro e trace a linha para os lados, seguindo o osso. A linha não deve subir muito nas bochechas.",
-                tip: "Use um lápis de olho branco para desenhar o molde na pele antes de passar a lâmina."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Use a ponta do queixo como centro e trace a linha para os lados, seguindo o osso. A linha não deve subir muito nas bochechas. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use um lápis de olho branco para desenhar o molde na pele antes de passar a lâmina. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "A Conexão Labial",
@@ -10914,18 +10914,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Higiene Profunda",
-                description: "Barbas longas acumulam resíduos. Lave com shampoo específico 2 a 3 vezes por semana, focando na pele sob os pelos.",
-                tip: "Nunca durma com a barba úmida; use um secador no modo frio."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. Barbas longas acumulam resíduos. Lave com shampoo específico 2 a 3 vezes por semana, focando na pele sob os pelos. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Nunca durma com a barba úmida; use um secador no modo frio. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "O Poder da Escovação",
-                description: "Escovar a barba diariamente com cerdas naturais ajuda a distribuir a oleosidade natural da raiz até as pontas.",
-                tip: "Sempre escove de baixo para cima primeiro para dar volume, e depois de cima para baixo para alinhar."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. Escovar a barba diariamente com cerdas naturais ajuda a distribuir a oleosidade natural da raiz até as pontas. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Sempre escove de baixo para cima primeiro para dar volume, e depois de cima para baixo para alinhar. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Controle de Volume",
-                description: "Use um Balm denso para assentar os fios 'espetados' nas laterais, mantendo o foco no comprimento do queixo.",
-                tip: "Se a barba estiver muito rebelde, use um pente de madeira para desembaraçar antes da escova."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Use um Balm denso para assentar os fios 'espetados' nas laterais, mantendo o foco no comprimento do queixo. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Se a barba estiver muito rebelde, use um pente de madeira para desembaraçar antes da escova. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               }
             ]}
           />
@@ -10967,18 +10967,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Padrão de Comprimento",
-                description: "Use o pente 2 ou 3 da sua máquina em todo o rosto. A ideia é que a barba cubra a pele, mas não esconda o formato da mandíbula.",
-                tip: "Apare a barba a cada 3 dias para não perder o aspecto de 'sempre pronto'."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Use o pente 2 ou 3 da sua máquina em todo o rosto. A ideia é que a barba cubra a pele, mas não esconda o formato da mandíbula. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Apare a barba a cada 3 dias para não perder o aspecto de 'sempre pronto'. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "A Linha do Pescoço",
-                description: "Esta é a parte mais importante. A linha deve estar exatamente dois dedos acima do pomo de adão. Nada de barba crescendo no pescoço.",
-                tip: "Use um espelho de mão para conferir o ângulo lateral do pescoço."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. Esta é a parte mais importante. A linha deve estar exatamente dois dedos acima do pomo de adão. Nada de barba crescendo no pescoço. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use um espelho de mão para conferir o ângulo lateral do pescoço. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "O Toque de Mestre",
-                description: "Use um balm hidratante de absorção rápida para que a barba fique macia e com brilho discreto, sem parecer engordurada.",
-                tip: "Escolha fragrâncias leves que não briguem com o seu perfume."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Use um balm hidratante de absorção rápida para que a barba fique macia e com brilho discreto, sem parecer engordurada. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Escolha fragrâncias leves que não briguem com o seu perfume. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               }
             ]}
           />
@@ -11093,18 +11093,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Desenho da Base",
-                description: "A barba inferior do Balbo deve seguir a linha da mandíbula mas parar antes de chegar às costeletas. O desenho deve ser simétrico em relação ao centro do queixo.",
-                tip: "Mantenha a altura da barba no queixo entre 5 e 10mm."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. A barba inferior do Balbo deve seguir a linha da mandíbula mas parar antes de chegar às costeletas. O desenho deve ser simétrico em relação ao centro do queixo. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Mantenha a altura da barba no queixo entre 5 e 10mm. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "A Desconexão",
-                description: "O espaço entre o bigode e a barba do queixo deve estar perfeitamente limpo. Use um trimmer de precisão para criar esse canal de 1cm de pele lisa.",
-                tip: "Isso é o que diferencia o Balbo de um cavanhaque comum."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. O espaço entre o bigode e a barba do queixo deve estar perfeitamente limpo. Use um trimmer de precisão para criar esse canal de 1cm de pele lisa. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Isso é o que diferencia o Balbo de um cavanhaque comum. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "Manutenção de Linhas",
-                description: "Como o Balbo tem muitas bordas, você precisará retocar o desenho a cada 2 dias para manter o visual 'sharp'.",
-                tip: "Use uma loção pós-barba calmante para evitar irritação nas áreas de pele raspada."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. Como o Balbo tem muitas bordas, você precisará retocar o desenho a cada 2 dias para manter o visual 'sharp'. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Use uma loção pós-barba calmante para evitar irritação nas áreas de pele raspada. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               }
             ]}
           />
@@ -11156,18 +11156,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Escultura da Base",
-                description: "Penteie toda a barba para baixo. Com uma tesoura, corte os fios em um arco suave de orelha a orelha. A base deve ser larga e não pontuda.",
-                tip: "Faça o corte com a barba seca para não ter surpresas após o encolhimento."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. Penteie toda a barba para baixo. Com uma tesoura, corte os fios em um arco suave de orelha a orelha. A base deve ser larga e não pontuda. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Faça o corte com a barba seca para não ter surpresas após o encolhimento. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "O Bigode Garibaldino",
-                description: "O bigode deve ser mantido longo e pode ser levemente curvado para as laterais, integrando-se ao volume da bochecha.",
-                tip: "Não use cera de fixação forte no bigode; ele deve parecer natural."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. O bigode deve ser mantido longo e pode ser levemente curvado para as laterais, integrando-se ao volume da bochecha. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Não use cera de fixação forte no bigode; ele deve parecer natural. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "Cuidado com o Comprimento",
-                description: "A Garibaldi clássica não passa dos 20cm. Se crescer demais, ela vira uma 'Viking'. O charme está no formato compacto e denso.",
-                tip: "Use um condicionador de barba potente no banho para manter os fios macios."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. A Garibaldi clássica não passa dos 20cm. Se crescer demais, ela vira uma 'Viking'. O charme está no formato compacto e denso. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Use um condicionador de barba potente no banho para manter os fios macios. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               }
             ]}
           />
@@ -11219,18 +11219,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Comprimento de Respeito",
-                description: "Para uma trança visível, você precisa de tempo. O crescimento pode levar de 8 meses a um ano. Não corte nada além das laterais durante esse período.",
-                tip: "Use tônicos de crescimento para fortalecer a raiz do fio."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. Para uma trança visível, você precisa de tempo. O crescimento pode levar de 8 meses a um ano. Não corte nada além das laterais durante esse período. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use tônicos de crescimento para fortalecer a raiz do fio. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "A Técnica da Trança",
-                description: "Comece a trança logo abaixo do queixo. Tente manter a tensão igual em todas as voltas para que a trança não fique torta.",
-                tip: "Se sua barba for muito lisa, use um pouco de cera antes de trançar."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Comece a trança logo abaixo do queixo. Tente manter a tensão igual em todas as voltas para que a trança não fique torta. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Se sua barba for muito lisa, use um pouco de cera antes de trançar. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Adornos e Simbolismo",
-                description: "Os anéis de metal não são apenas decorativos; eles ajudam a manter a trança no lugar sem a necessidade de elásticos que podem quebrar o fio.",
-                tip: "Escolha beads de aço inoxidável ou prata para não irritar a pele do pescoço."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. Os anéis de metal não são apenas decorativos; eles ajudam a manter a trança no lugar sem a necessidade de elásticos que podem quebrar o fio. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Escolha beads de aço inoxidável ou prata para não irritar a pele do pescoço. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               }
             ]}
           />
@@ -11282,8 +11282,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Linha da Bochecha Alta",
-                description: "A linha da bochecha deve ser mantida alta e reta. Use uma régua de barba se necessário. O contraste entre a pele limpa e o pelo escuro define o rosto.",
-                tip: "Use uma navalha para dar o toque final de limpeza nas bordas superiores."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. A linha da bochecha deve ser mantida alta e reta. Use uma régua de barba se necessário. O contraste entre a pele limpa e o pelo escuro define o rosto. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Use uma navalha para dar o toque final de limpeza nas bordas superiores. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "Esculpindo o Triângulo",
@@ -11345,18 +11345,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Quadratura do Círculo",
-                description: "Se o seu rosto é redondo, a Short Boxed é sua melhor amiga. Use a máquina para remover o volume das bochechas laterais, criando planos retos.",
-                tip: "Use um espelho triplo para garantir que as laterais estejam paralelas."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Se o seu rosto é redondo, a Short Boxed é sua melhor amiga. Use a máquina para remover o volume das bochechas laterais, criando planos retos. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Use um espelho triplo para garantir que as laterais estejam paralelas. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "O Canto da Mandíbula",
-                description: "O ângulo onde a lateral encontra a base deve ser bem marcado. Use a máquina sem pente para definir esse ponto exato logo abaixo da orelha.",
-                tip: "Mantenha a linha do pescoço limpa a exatamente dois dedos do pomo de adão."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. O ângulo onde a lateral encontra a base deve ser bem marcado. Use a máquina sem pente para definir esse ponto exato logo abaixo da orelha. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Mantenha a linha do pescoço limpa a exatamente dois dedos do pomo de adão. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "Hidratação Sem Óleo",
-                description: "Como é um visual corporativo, evite barbas muito brilhantes. Use um Balm leve que hidrate sem deixar aquele aspecto oleoso no terno.",
-                tip: "Aplique o produto com a barba ainda levemente úmida."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Como é um visual corporativo, evite barbas muito brilhantes. Use um Balm leve que hidrate sem deixar aquele aspecto oleoso no terno. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Aplique o produto com a barba ainda levemente úmida. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               }
             ]}
           />
@@ -11398,18 +11398,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Ponto de Corte das Costeletas",
-                description: "A barba deve parar cerca de 2 a 3 centímetros antes da orelha. A transição deve ser brusca e limpa, sem degradê.",
-                tip: "Use uma máquina shaver para deixar as áreas laterais 'lisas como seda'."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. A barba deve parar cerca de 2 a 3 centímetros antes da orelha. A transição deve ser brusca e limpa, sem degradê. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Use uma máquina shaver para deixar as áreas laterais 'lisas como seda'. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "A Linha da Bochecha Baixa",
-                description: "Diferente da maioria dos estilos, no Hollywoodian a barba na bochecha é muito baixa. Ela deve acompanhar a curvatura da mandíbula de forma paralela.",
-                tip: "Mantenha a espessura da faixa de barba entre 2 e 4 cm."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. Diferente da maioria dos estilos, no Hollywoodian a barba na bochecha é muito baixa. Ela deve acompanhar a curvatura da mandíbula de forma paralela. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Mantenha a espessura da faixa de barba entre 2 e 4 cm. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "Manutenção da 'Ilha'",
-                description: "Como há muita pele exposta, a manutenção deve ser diária. Qualquer penugem nas bochechas ou costeletas destrói o visual sofisticado do estilo.",
-                tip: "Esfolie as áreas raspadas para evitar irritação constante."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Como há muita pele exposta, a manutenção deve ser diária. Qualquer penugem nas bochechas ou costeletas destrói o visual sofisticado do estilo. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Esfolie as áreas raspadas para evitar irritação constante. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               }
             ]}
           />
@@ -11461,18 +11461,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Arredondamento da Base",
-                description: "Diferente da Ducktail, a Verdi nunca é pontuda. Use a tesoura para criar uma curva suave que acompanhe o formato do queixo.",
-                tip: "Apare a barba a cada 10 dias para manter o comprimento compacto."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Diferente da Ducktail, a Verdi nunca é pontuda. Use a tesoura para criar uma curva suave que acompanhe o formato do queixo. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Apare a barba a cada 10 dias para manter o comprimento compacto. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "Estilizando o Handlebar",
-                description: "O segredo está no bigode. Use cera nas pontas e enrole-as para cima e para fora. Ele deve parecer 'flutuar' sobre a barba.",
-                tip: "Não corte o bigode no meio; penteie-o para as laterais desde o início do crescimento."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. O segredo está no bigode. Use cera nas pontas e enrole-as para cima e para fora. Ele deve parecer 'flutuar' sobre a barba. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Não corte o bigode no meio; penteie-o para as laterais desde o início do crescimento. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "O Contraste Necessário",
-                description: "Mantenha a linha do pescoço muito bem limpa. O contraste entre a barba robusta e o pescoço liso realça o desenho da Verdi.",
-                tip: "Use um secador de cabelo e uma escova redonda pequena para dar volume ao bigode."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Mantenha a linha do pescoço muito bem limpa. O contraste entre a barba robusta e o pescoço liso realça o desenho da Verdi. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Use um secador de cabelo e uma escova redonda pequena para dar volume ao bigode. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               }
             ]}
           />
@@ -11514,18 +11514,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Simetria é Tudo",
-                description: "A divisão deve começar exatamente no centro do lábio inferior e descer até a base da barba. Se ficar torto, o visual perde toda a elegância.",
-                tip: "Use o 'arco do cupido' do lábio como referência para a linha central."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. A divisão deve começar exatamente no centro do lábio inferior e descer até a base da barba. Se ficar torto, o visual perde toda a elegância. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Use o 'arco do cupido' do lábio como referência para a linha central. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Criando as Pontas",
-                description: "Penteie cada metade da barba para fora e para baixo. Use uma tesoura para aparar os fios de forma que cada lado termine em uma ponta suave.",
-                tip: "Não corte demais na primeira vez; fios de barba encolhem quando secam."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. Penteie cada metade da barba para fora e para baixo. Use uma tesoura para aparar os fios de forma que cada lado termine em uma ponta suave. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Não corte demais na primeira vez; fios de barba encolhem quando secam. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Manutenção do Vão",
-                description: "O espaço entre as duas pontas deve ser mantido limpo e definido. Use um pouco de cera de bigode para 'colar' os fios rebeldes que tentam fechar o buraco.",
-                tip: "Aplique o product com os dedos, torcendo levemente as pontas."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. O espaço entre as duas pontas deve ser mantido limpo e definido. Use um pouco de cera de bigode para 'colar' os fios rebeldes que tentam fechar o buraco. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Aplique o product com os dedos, torcendo levemente as pontas. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               }
             ]}
           />
@@ -11577,8 +11577,8 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Caminho da Lâmina",
-                description: "A faixa deve começar na costeleta e descer suavemente até o queixo. A largura ideal varia entre 0.5cm e 1.5cm.",
-                tip: "Quanto mais fina a faixa, mais difícil é manter a simetria."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. A faixa deve começar na costeleta e descer suavemente até o queixo. A largura ideal varia entre 0.5cm e 1.5cm. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Quanto mais fina a faixa, mais difícil é manter a simetria. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "A Ausência do Bigode",
@@ -11640,18 +11640,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Fase da Coceira",
-                description: "Nos primeiros meses, a barba vai incomodar. Resista à tentação de aparar. Use óleo de barba desde o primeiro dia para manter a pele macia.",
-                tip: "A coceira geralmente passa após a 4ª semana de crescimento."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Nos primeiros meses, a barba vai incomodar. Resista à tentação de aparar. Use óleo de barba desde o primeiro dia para manter a pele macia. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "A coceira geralmente passa após a 4ª semana de crescimento. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Nutrição de Dentro para Fora",
-                description: "Uma barba Bandholz exige nutrientes. Mantenha uma dieta rica em biotina e vitaminas do complexo B para fios fortes.",
-                tip: "Beba pelo menos 2 litros de água por dia para hidratar os folículos."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. Uma barba Bandholz exige nutrientes. Mantenha uma dieta rica em biotina e vitaminas do complexo B para fios fortes. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Beba pelo menos 2 litros de água por dia para hidratar os folículos. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Aparando com Moderação",
-                description: "Após 6 meses, apare apenas as pontas duplas. O objetivo é densidade, não apenas comprimento.",
-                tip: "Use uma tesoura de barbeiro profissional, nunca use máquina no comprimento."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Aplique um óleo pré-shampoo ou gel de barbear transparente sobre a pele para facilitar o deslizamento da lâmina com segurança. Com movimentos curtos e precisos na direção do crescimento do pelo, trace as linhas laterais das bochechas e a curva do pescoço, limpando o excesso com uma toalha macia e aplicando balm hidratante logo em seguida. Após 6 meses, apare apenas as pontas duplas. O objetivo é densidade, não apenas comprimento. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Use uma tesoura de barbeiro profissional, nunca use máquina no comprimento. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               }
             ]}
           />
@@ -11703,18 +11703,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Desenho do 'Vazio'",
-                description: "A parte mais importante é a limpeza do queixo. A linha deve ser nítida e simétrica. O queixo liso destaca o volume lateral.",
-                tip: "Use um espelho de aumento para garantir que não restou nenhum fio no queixo."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. A parte mais importante é a limpeza do queixo. A linha deve ser nítida e simétrica. O queixo liso destaca o volume lateral. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Use um espelho de aumento para garantir que não restou nenhum fio no queixo. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "Dando Volume às 'Asas'",
-                description: "Penteie os pelos das bochechas para trás e para cima. Use um secador no modo morno para dar aquele aspecto cheio e imponente.",
-                tip: "Aplique um pouco de fixador de cabelo leve para manter as 'asas' no lugar."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Penteie os pelos das bochechas para trás e para cima. Use um secador no modo morno para dar aquele aspecto cheio e imponente. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Aplique um pouco de fixador de cabelo leve para manter as 'asas' no lugar. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "A Integração do Bigode",
-                description: "O bigode não deve ser curto. Ele deve ser largo o suficiente para que seus fios se misturem com os fios das bochechas sem divisões visíveis.",
-                tip: "Não apare a parte superior do bigode; deixe-o encostar no nariz se necessário."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. O bigode não deve ser curto. Ele deve ser largo o suficiente para que seus fios se misturem com os fios das bochechas sem divisões visíveis. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Não apare a parte superior do bigode; deixe-o encostar no nariz se necessário. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               }
             ]}
           />
@@ -11766,18 +11766,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Curvatura Imperial",
-                description: "O bigode deve ser o protagonista. Penteie-o para fora e use cera para enrolar as pontas em círculos perfeitos voltados para as bochechas.",
-                tip: "Aqueça a cera entre os dedos antes de aplicar para evitar grumos."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. O bigode deve ser o protagonista. Penteie-o para fora e use cera para enrolar as pontas em círculos perfeitos voltados para as bochechas. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Aqueça a cera entre os dedos antes de aplicar para evitar grumos. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "O Queixo em 'V'",
-                description: "A barba no queixo deve ser estreita e longa o suficiente para ser modelada em uma ponta fina. Não deixe pelos nas laterais da mandíbula.",
-                tip: "Use um pouco de cera também na ponta do queixo para manter o formato."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. A barba no queixo deve ser estreita e longa o suficiente para ser modelada em uma ponta fina. Não deixe pelos nas laterais da mandíbula. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use um pouco de cera também na ponta do queixo para manter o formato. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "O Toque Final de Limpeza",
-                description: "As bochechas devem estar sempre lisas. Qualquer sombra de pelo nessas áreas tira o foco do desenho Imperial.",
-                tip: "Use uma loção pós-barba com álcool para um acabamento clássico e refrescante."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. As bochechas devem estar sempre lisas. Qualquer sombra de pelo nessas áreas tira o foco do desenho Imperial. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Use uma loção pós-barba com álcool para um acabamento clássico e refrescante. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               }
             ]}
           />
@@ -11829,18 +11829,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Definição do Queixo",
-                description: "A área raspada no queixo deve ter pelo menos 3 a 5 cm de largura. Use uma navalha para garantir que a linha entre a pele lisa e os pelos seja reta e nítida.",
-                tip: "Use o centro do lábio como guia para centralizar a raspagem."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. A área raspada no queixo deve ter pelo menos 3 a 5 cm de largura. Use uma navalha para garantir que a linha entre a pele lisa e os pelos seja reta e nítida. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Use o centro do lábio como guia para centralizar a raspagem. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "O Formato da Ferradura lateral",
-                description: "As costeletas devem descer pela bochecha e curvar-se em direção ao bigode. Mantenha a densidade alta perto da orelha e vá diminuindo levemente em direção à boca.",
-                tip: "Penteie os pelos para baixo para ver o real comprimento antes de aparar."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. As costeletas devem descer pela bochecha e curvar-se em direção ao bigode. Mantenha a densidade alta perto da orelha e vá diminuindo levemente em direção à boca. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Penteie os pelos para baixo para ver o real comprimento antes de aparar. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Cuidados com a Pele Exposta",
-                description: "Como o queixo é raspado constantemente, a pele pode sofrer. Use um bom pós-barba para evitar vermelhidão na área central do rosto.",
-                tip: "Não esqueça de hidratar os pelos das bochechas com balm."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Como o queixo é raspado constantemente, a pele pode sofrer. Use um bom pós-barba para evitar vermelhidão na área central do rosto. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Não esqueça de hidratar os pelos das bochechas com balm. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               }
             ]}
           />
@@ -11892,18 +11892,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Linha da Ferradura",
-                description: "As duas linhas que descem da boca devem ser perfeitamente retas. Use a quina do seu maxilar como referência de fim da linha.",
-                tip: "Cuidado para não deixar as linhas muito finas; a ferradura deve ter presença."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. As duas linhas que descem da boca devem ser perfeitamente retas. Use a quina do seu maxilar como referência de fim da linha. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Cuidado para não deixar as linhas muito finas; a ferradura deve ter presença. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "O Contraste do Queixo",
-                description: "A área central do queixo deve estar sempre muito bem raspada. Qualquer pelo nessa área transforma o bigode em um cavanhaque, perdendo o estilo original.",
-                tip: "Use uma lâmina de barbear clássica para garantir a limpeza total no centro."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. A área central do queixo deve estar sempre muito bem raspada. Qualquer pelo nessa área transforma o bigode em um cavanhaque, perdendo o estilo original. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Use uma lâmina de barbear clássica para garantir a limpeza total no centro. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               },
               {
                 title: "Penteando para Baixo",
-                description: "Penteie os fios verticalmente todos os dias. Isso treina o pelo a crescer na direção certa e evita que ele entre na boca.",
-                tip: "Apare os fios que passarem da linha do lábio superior com uma tesoura pequena."
+                description: "O segredo para um design geométrico e alinhado está na simetria perfeita e na hidratação dos fios rebeldes. Penteie os fios verticalmente todos os dias. Isso treina o pelo a crescer na direção certa e evita que ele entre na boca. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Apare os fios que passarem da linha do lábio superior com uma tesoura pequena. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               }
             ]}
           />
@@ -11955,18 +11955,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Fase do Crescimento",
-                description: "O maior erro é aparar o meio do bigode. Você precisa deixar os pelos crescerem o suficiente para que possam ser penteados para os lados e alcancem as pontas.",
-                tip: "Use um balm para controlar os fios rebeldes enquanto eles crescem."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. O maior erro é aparar o meio do bigode. Você precisa deixar os pelos crescerem o suficiente para que possam ser penteados para os lados e alcancem as pontas. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Use um balm para controlar os fios rebeldes enquanto eles crescem. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "A Técnica da Modelagem",
-                description: "Aqueça uma pequena quantidade de cera entre os dedos. Aplique do centro para as pontas e use o secador no modo quente para ajudar a cera a penetrar, depois mude para o frio para 'congelar' a curva.",
-                tip: "Enrole a ponta ao redor de um lápis se tiver dificuldade em fazer a curva com os dedos."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. Aqueça uma pequena quantidade de cera entre os dedos. Aplique do centro para as pontas e use o secador no modo quente para ajudar a cera a penetrar, depois mude para o frio para 'congelar' a curva. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Enrole a ponta ao redor de um lápis se tiver dificuldade em fazer a curva com os dedos. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Higiene Constante",
-                description: "Bigodes grandes acumulam resíduos de comida e bebida. Lave sempre após as refeições e use um condicionador de barba para manter os fios macios.",
-                tip: "Tenha sempre um lenço à mão quando for beber café ou cerveja."
+                description: "Para esculpir a barba com maestria profissional, a etapa fundamental é a preparação da pele e do contorno facial. Bigodes grandes acumulam resíduos de comida e bebida. Lave sempre após as refeições e use um condicionador de barba para manter os fios macios. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Tenha sempre um lenço à mão quando for beber café ou cerveja. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               }
             ]}
           />
@@ -12018,18 +12018,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "O Segredo da Base Quadrada",
-                description: "Diferente da barba lenhador que pode ser arredondada, o Old Dutch brilha quando as linhas inferiores são retas. Use um aparador para nivelar o fundo da barba em relação ao pescoço.",
-                tip: "Ao olhar de lado, a linha da mandíbula deve parecer uma continuação sólida das costeletas."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. Diferente da barba lenhador que pode ser arredondada, o Old Dutch brilha quando as linhas inferiores são retas. Use um aparador para nivelar o fundo da barba em relação ao pescoço. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Ao olhar de lado, a linha da mandíbula deve parecer uma continuação sólida das costeletas. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "A Disciplina do Bigode",
-                description: "Para manter a autenticidade, o lábio superior deve estar perfeitamente raspado. Qualquer crescimento nessa área descaracteriza o estilo e o transforma em uma 'Full Beard' comum.",
-                tip: "Raspe a área do bigode diariamente com uma lâmina de precisão para evitar a sombra do pelo."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Para manter a autenticidade, o lábio superior deve estar perfeitamente raspado. Qualquer crescimento nessa área descaracteriza o estilo e o transforma em uma 'Full Beard' comum. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Raspe a área do bigode diariamente com uma lâmina de precisão para evitar a sombra do pelo. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "Volume Lateral Controlado",
-                description: "Embora seja uma barba volumosa, ela não deve 'explodir' para os lados. Use um balm para manter os fios laterais alinhados e apontando para baixo.",
-                tip: "Use o secador em temperatura média enquanto penteia para baixo para selar as cutículas do fio."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Embora seja uma barba volumosa, ela não deve 'explodir' para os lados. Use um balm para manter os fios laterais alinhados e apontando para baixo. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use o secador em temperatura média enquanto penteia para baixo para selar as cutículas do fio. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               }
             ]}
           />
@@ -12207,18 +12207,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "Encontrando o Centro",
-                description: "O Soul Patch deve estar perfeitamente centralizado com o arco do cupido e o centro do queixo. Use um espelho de aumento para garantir a simetria.",
-                tip: "Comece com um formato maior e vá diminuindo até chegar ao tamanho ideal para o seu rosto."
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. O Soul Patch deve estar perfeitamente centralizado com o arco do cupido e o centro do queixo. Use um espelho de aumento para garantir a simetria. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
+                tip: "Comece com um formato maior e vá diminuindo até chegar ao tamanho ideal para o seu rosto. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
               },
               {
                 title: "O Formato Ideal",
-                description: "Os formatos mais comuns são o triângulo invertido ou a 'gota'. Ele deve terminar antes de chegar à dobra do queixo.",
-                tip: "Mantenha as bordas nítidas usando uma lâmina de acabamento ou navalhete."
+                description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. Os formatos mais comuns são o triângulo invertido ou a 'gota'. Ele deve terminar antes de chegar à dobra do queixo. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
+                tip: "Mantenha as bordas nítidas usando uma lâmina de acabamento ou navalhete. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
               },
               {
                 title: "Integração com Outros Estilos",
-                description: "A mosca funciona muito bem sozinha, mas também é o complemento essencial para o Cavanhaque Van Dyke ou o Estilo Balbo.",
-                tip: "Se usar com bigode, garanta que haja um espaço de pele limpa entre eles."
+                description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. A mosca funciona muito bem sozinha, mas também é o complemento essencial para o Cavanhaque Van Dyke ou o Estilo Balbo. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
+                tip: "Se usar com bigode, garanta que haja um espaço de pele limpa entre eles. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
               }
             ]}
           />
@@ -12270,18 +12270,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "A Linha de Separação",
-                description: "O Bigode Lápis deve estar a uma distância de 2 a 4mm do lábio superior. Ele nunca deve tocar a boca. O segredo é o espaço de pele limpa entre o pelo e o lábio.",
-                tip: "Use um gel transparente para que você possa ver exatamente onde a lâmina está passando."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. O Bigode Lápis deve estar a uma distância de 2 a 4mm do lábio superior. Ele nunca deve tocar a boca. O segredo é o espaço de pele limpa entre o pelo e o lábio. Sua barba ganha uma presença imponente, com linhas limpas e aparência extremamente saudável.",
+                tip: "Use um gel transparente para que você possa ver exatamente onde a lâmina está passando. Limpe as lâminas constantemente com álcool isopropílico para evitar contaminações e garantir um corte limpo e suave.",
               },
               {
                 title: "Espessura Constante",
-                description: "Diferente do Chevron, o lápis não tem volume vertical. Ele deve ser uma faixa fina e contínua. Se o seu pelo for muito ralo, você pode usar um pouco de rímel para barba para dar definição.",
-                tip: "Não tente fazer o bigode muito fino na primeira tentativa; vá reduzindo aos poucos."
+                description: "Para conquistar uma linha de transição limpa e uma definição digna de barbearia profissional, comece preparando a área. Diferente do Chevron, o lápis não tem volume vertical. Ele deve ser uma faixa fina e contínua. Se o seu pelo for muito ralo, você pode usar um pouco de rímel para barba para dar definição. Isso garante que o contorno facial permaneça destacado e livre de irritações cutâneas.",
+                tip: "Não tente fazer o bigode muito fino na primeira tentativa; vá reduzindo aos poucos. Aplique 3 gotas de óleo de barba diariamente massageando até a pele para manter os pelos macios, hidratados e sem coceira.",
               },
               {
                 title: "Limpeza Superior",
-                description: "A área entre o bigode e o nariz deve estar perfeitamente lisa. Qualquer sombra de pelo descaracteriza o estilo e o deixa com aspecto de 'sujo'.",
-                tip: "Finalize com uma loção pós-barba para fechar os poros e evitar vermelhidão na área raspada."
+                description: "A modelagem e estrutura da barba exigem precisão técnica e o uso das ferramentas corretas para evitar irritações. A área entre o bigode e o nariz deve estar perfeitamente lisa. Qualquer sombra de pelo descaracteriza o estilo e o deixa com aspecto de 'sujo'. O resultado é um design de barba impecável, simétrico e com pelos macios ao toque.",
+                tip: "Finalize com uma loção pós-barba para fechar os poros e evitar vermelhidão na área raspada. Use uma toalha quente no rosto antes de barbear para abrir os poros e use loção pós-barba sem álcool para acalmar a pele e fechar os poros suavemente.",
               }
             ]}
           />
@@ -12441,18 +12441,18 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Escolha do Ativo Correto",
-                description: "Não use qualquer shampoo anticaspa. Para dermatite real, procure produtos com Cetoconazol, Ácido Salicílico ou Piritionato de Zinco. Eles combatem o fungo Malassezia, responsável pela inflamação.",
-                tip: "Alterne entre dois tipos de shampoo com ativos diferentes a cada 15 dias para evitar que o couro cabeludo 'se acostume'."
+                description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. Não use qualquer shampoo anticaspa. Para dermatite real, procure produtos com Cetoconazol, Ácido Salicílico ou Piritionato de Zinco. Eles combatem o fungo Malassezia, responsável pela inflamação. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
+                tip: "Alterne entre dois tipos de shampoo com ativos diferentes a cada 15 dias para evitar que o couro cabeludo 'se acostume'. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
               },
               {
                 title: "2. A Técnica dos 5 Minutos",
-                description: "O erro mais comum é enxaguar o shampoo terapêutico imediatamente. Massageie suavemente com as pontas dos dedos e deixe a espuma agir por 5 minutos inteiros para que o ativo penetre nos poros.",
-                tip: "Nunca use as unhas para coçar; isso cria microferidas que aumentam a inflamação."
+                description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. O erro mais comum é enxaguar o shampoo terapêutico imediatamente. Massageie suavemente com as pontas dos dedos e deixe a espuma agir por 5 minutos inteiros para que o ativo penetre nos poros. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
+                tip: "Nunca use as unhas para coçar; isso cria microferidas que aumentam a inflamação. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
               },
               {
                 title: "3. Hábitos de Higiene e Sono",
-                description: "Nunca durma com o cabelo úmido. A umidade e o calor do travesseiro criam o ambiente perfeito para a proliferação da dermatite. Use secador no modo morno ou frio após a lavagem.",
-                tip: "Lave suas fronhas e bonés semanalmente. Eles acumulam fungos e resíduos de pele morta."
+                description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Nunca durma com o cabelo úmido. A umidade e o calor do travesseiro criam o ambiente perfeito para a proliferação da dermatite. Use secador no modo morno ou frio após a lavagem. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
+                tip: "Lave suas fronhas e bonés semanalmente. Eles acumulam fungos e resíduos de pele morta. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
               }
             ]}
           />
@@ -12553,7 +12553,7 @@ const ArticleDetailPage: React.FC = () => {
               {
                 title: "1. Desembaraço Sem Dor",
                 description: "Nunca penteie o cabelo cacheado seco. Use um spray desembaraçante ou o próprio condicionador durante o banho. Use um pente de dentes largos e comece sempre pelas pontas, subindo gradualmente até a raiz.",
-                tip: "Divida o cabelo em 4 partes para facilitar o processo e evitar que a criança fique impaciente."
+                tip: "Divida o cabelo em 4 partes para facilitar o processo e evitar que a criança fique impaciente.",
               },
               {
                 title: "2. Definição 'Dedoliss'",
