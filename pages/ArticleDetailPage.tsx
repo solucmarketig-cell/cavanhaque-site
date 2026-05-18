@@ -257,31 +257,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Rabo de Cavalo Alto com Acabamento 'Sleek'",
                 description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. O rabo de cavalo super alto e bem esticado é o sinônimo de poder para a noite. Use um gel de fixação forte para deixar a raiz impecável e finalize o comprimento com uma chapinha para um efeito liso espelhado. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
                 tip: "Esconda o elástico com uma mecha de cabelo e use grampos por baixo para manter o rabo de cavalo bem em pé. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/festa-noite-rabo-cavalo.png"
               },
               {
                 title: "2. Wet Look (Efeito Molhado) Moderno",
                 description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. Este visual transmite uma sofisticação vinda direto das passarelas. Penteie todo o cabelo para trás usando gel de efeito molhado apenas na parte superior e lateral, deixando o comprimento seco e com movimento. Isso garante fixação confortável e proteção integral para o seu cabelo o dia todo.",
                 tip: "É o penteado ideal para destacar brincos grandes e maquiagens marcantes nos olhos. Carregue um mini sérum ou spray revitalizador na bolsa para dar aquele retoque rápido de movimento e brilho ao longo do dia.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "3. Coque Messy com Presilhas de Strass",
                 description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. Para quem prefere um visual mais despojado, o coque bagunçado (messy bun) ganha ares noturnos com o uso estratégico de acessórios. Prenda de forma displicente e adicione presilhas de brilho na lateral. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
                 tip: "Deixe alguns fios soltos na nuca para um ar mais sexy e natural. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/penteados-elegantes-festas-ai.png"
               },
               {
                 title: "4. Semipreso com Volume e Ondas XL",
                 description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. Um clássico das festas à noite. Cabelo volumoso com ondas largas e a parte frontal presa de forma polida. O volume extra garante que o penteado não 'caia' com a umidade da noite. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
                 tip: "Aplique um spray de textura antes de fazer as ondas para garantir que elas durem até o amanhecer. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/cabelo-ondulado-definido-ai.png"
               },
               {
                 title: "5. Trança Lateral Desconstruída",
                 description: "Para garantir durabilidade e caimento impecável ao longo do dia, o segredo está na escolha do finalizador adequado. Uma trança larga e frouxa jogada para um lado do ombro. É um visual romântico e ao mesmo tempo imponente para festas noturnas menos formais, como aniversários ou baladas sofisticadas. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
                 tip: "Abra os elos da trança com os dedos após terminar para dar a sensação de que você tem muito mais cabelo. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/simples-bubble-braid.png"
               }
             ]}
           />
