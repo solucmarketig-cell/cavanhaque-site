@@ -521,7 +521,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/social-classico.webp',
+      image: '/assets/curto-feminino-profissional-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1231,7 +1231,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '11 min',
       category: 'Cabelo',
-      image: '/assets/social-classico.webp',
+      image: '/assets/crespo-masculino-executivo-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1870,7 +1870,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '13 min',
       category: 'Cabelo',
-      image: '/assets/social-classico.webp',
+      image: '/assets/corte-liso-tecnico-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -2225,7 +2225,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/social-classico.webp',
+      image: '/assets/penteado-liso-feminino-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
