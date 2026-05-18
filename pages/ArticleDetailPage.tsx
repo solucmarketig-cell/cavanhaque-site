@@ -663,7 +663,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/penteado-infantil-cacheado.webp',
+      image: '/assets/oleo-cabelo-ressecado-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
