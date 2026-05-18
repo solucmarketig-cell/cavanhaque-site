@@ -198,7 +198,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "3. Semipreso com Nó (Half-up Knot)",
                 description: "Pegue apenas a parte superior do cabelo e faça um nó pequeno e frouxo, deixando o restante do comprimento solto e com textura natural. É um penteado urbano, prático e muito estiloso.",
                 tip: "Puxe algumas mechas da parte presa para criar um volume 'messy' proposital.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "4. Liso Espelhado (Glass Hair Médio)",
@@ -237,7 +237,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '11 min',
       category: 'Penteados',
-      image: '/assets/penteado-cacheado.webp',
+      image: '/assets/penteado-feminino-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -257,7 +257,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Rabo de Cavalo Alto com Acabamento 'Sleek'",
                 description: "O rabo de cavalo super alto e bem esticado é o sinônimo de poder para a noite. Use um gel de fixação forte para deixar a raiz impecável e finalize o comprimento com uma chapinha para um efeito liso espelhado.",
                 tip: "Esconda o elástico com uma mecha de cabelo e use grampos por baixo para manter o rabo de cavalo bem em pé.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "2. Wet Look (Efeito Molhado) Moderno",
@@ -379,7 +379,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '10 min',
       category: 'Penteados',
-      image: '/assets/penteado-cacheado.webp',
+      image: '/assets/penteado-feminino-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -399,7 +399,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Semipreso com Torcidinho Lateral",
                 description: "Pegue duas mechas frontais, torça-as para trás e prenda com um grampo invisível ou um pequeno elástico. É o penteado mais rápido do mundo para tirar o cabelo do rosto com elegância.",
                 tip: "Afrouxe levemente os torcidinhos para um visual mais romântico e volumoso.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "2. Coque Baixo Despojado com Lenço",
@@ -411,7 +411,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "3. Bubble Braid (Trança de Bolhas)",
                 description: "Uma alternativa moderna para quem não sabe trançar. Basta fazer um rabo de cavalo e colocar elásticos a cada 3 ou 4 centímetros, 'inflando' cada seção para criar as bolhas.",
                 tip: "Use elásticos da cor do seu cabelo para um acabamento mais profissional.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "4. Rabo de Cavalo 'Double Pony'",
@@ -476,13 +476,13 @@ const ArticleDetailPage: React.FC = () => {
                 title: "2. Tapered Cut Cacheado",
                 description: "Foca na nuca e laterais bem curtas, quase em degradê, com todo o volume concentrado no topo da cabeça. É um corte extremamente moderno, fresco e que exala atitude e praticidade.",
                 tip: "Use um gel de fixação média no topo para garantir que os cachos fiquem definidos e altos o dia todo.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "3. Curly Bob Desfiado",
                 description: "A versão cacheada do bob tradicional, mas com pontas desfiadas para evitar o efeito 'pirâmide'. As camadas distribuem o volume de forma harmoniosa ao redor do rosto, criando um visual leve e jovial.",
                 tip: "Peça ao seu cabeleireiro para cortar os fios a seco para prever exatamente onde cada cacho vai cair.",
-                image: "/assets/cabelo-cacheado.webp"
+                image: "/assets/cabelo-cacheado-feminino.webp"
               },
               {
                 title: "4. Shaggy Hair Cacheado",
@@ -695,7 +695,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "3. Jojoba para Equilíbrio e Proteção",
                 description: "O óleo de jojoba tem uma composição muito próxima ao sebo natural produzido pelo nosso couro cabeludo. É excelente para proteger os fios da poluição e do sol, agindo como um escudo invisível.",
                 tip: "Misture com seu leave-in favorito para uma finalização mais completa.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "4. O 'Boost' na Máscara de Nutrição",
@@ -766,7 +766,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "3. Aplicação Estratégica: Foco na Raiz",
                 description: "O shampoo deve ser aplicado apenas no couro cabeludo. A espuma que escorre pelo comprimento durante o enxágue é suficiente para limpar as pontas sem agredi-las. Nunca esfregue as pontas entre as mãos.",
                 tip: "Massageie o couro cabeludo com a ponta dos dedos, nunca com as unhas, para ativar a circulação.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "4. Alternando com Cowash",
@@ -805,7 +805,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '13 min',
       category: 'Cabelo',
-      image: '/assets/cabelo-ondulado-definicao.webp',
+      image: '/assets/taper-ondulado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -831,7 +831,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "2. Técnica de Enluvamento Profissional",
                 description: "Separe o cabelo em mechas finas e deslize as mãos repetidamente (de 10 a 15 vezes) de cima para baixo. O calor gerado pelo atrito e a massagem ajudam a máscara a penetrar nas escamas abertas pelo shampoo.",
                 tip: "O enluvamento deve ser firme, mas nunca agressivo, para não causar quebra nos fios fragilizados.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "3. Hidratação com Vapor (Vaporização)",
@@ -908,7 +908,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "3. Máscara de Babosa (Aloe Vera) Pura",
                 description: "O gel da babosa é um dos regeneradores mais potentes do mundo. Bata o gel no liquidificador com sua máscara favorita. Devolve a vida até aos cabelos mais porosos e ressecados.",
                 tip: "Remova bem a 'aloína' (líquido amarelo da casca) antes de extrair o gel para evitar irritações.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "4. Touca de Gesso com Amido de Milho",
@@ -979,7 +979,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "3. Nutrição com Óleos Nobres",
                 description: "O cabelo ressecado precisa de gordura (lipídios). Use máscaras que contenham manteiga de karité, óleo de argan ou macadâmia. A nutrição devolve o peso e o brilho que o fio perdeu.",
                 tip: "Potencialize a máscara misturando três gotas de óleo puro na porção que for usar.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "4. Selagem com Acidificante",
@@ -1018,7 +1018,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '14 min',
       category: 'Cabelo',
-      image: '/assets/penteado-cacheado.webp',
+      image: '/assets/penteado-feminino-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1038,7 +1038,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Box Braids Tradicionais",
                 description: "Tranças soltas feitas com material sintético (Jumbo) que permitem uma infinidade de penteados. São ideais para quem busca durabilidade (até 2 meses) e praticidade total no dia a dia.",
                 tip: "Escolha materiais leves para evitar a tração excessiva na raiz do seu cabelo crespo.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "2. Tranças Nagô (Cornrows) com Design",
@@ -1056,13 +1056,13 @@ const ArticleDetailPage: React.FC = () => {
                 title: "4. Fulani Braids (Estilo Tribal)",
                 description: "Uma combinação de tranças nagô frontais com box braids na parte de trás, muitas vezes adornadas com búzios, anéis e miçangas. É um penteado que exala herança e sofisticação.",
                 tip: "Os acessórios metálicos devem ser removidos antes da lavagem para evitar a oxidação.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "5. Cuidados com o Couro Cabeludo",
                 description: "Estar trançada não significa esquecer a saúde. Use tônicos capilares e lave o couro cabeludo apenas com shampoo diluído em água para evitar resíduos entre as divisões.",
                 tip: "Nunca prenda as tranças molhadas para evitar a proliferação de fungos e o mau cheiro.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               }
             ]}
           />
@@ -1160,7 +1160,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '13 min',
       category: 'Cabelo',
-      image: '/assets/penteado-cacheado.webp',
+      image: '/assets/penteado-feminino-cacheado.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1180,7 +1180,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Afro Puff Clássico",
                 description: "O penteado favorito pela sua praticidade e impacto. Consiste em prender todo o cabelo no topo da cabeça, deixando o volume livre. No crespo, o puff ganha uma forma arredondada perfeita.",
                 tip: "Use uma faixa de tecido ou um cadarço largo para prender sem quebrar os fios.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "2. Bantu Knots (Coques Bantu)",
@@ -1328,7 +1328,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "2. Estilo Nudred (Cachos de Esponja)",
                 description: "A técnica que utiliza uma esponja perfurada para criar pequenos rolinhos ou cachos definidos no topo do cabelo crespo. É a solução perfeita para quem quer textura sem usar química.",
                 tip: "Sempre faça movimentos circulares no mesmo sentido para que os cachos fiquem uniformes.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "3. Buzz Cut com Risca Frontal (Shape Up)",
@@ -1399,7 +1399,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "2. Método LOC (Líquido, Óleo, Creme)",
                 description: "A técnica infalível para reter umidade. Primeiro, umedeça com água ou spray hidratante (L), sele com um óleo vegetal (O) e finalize com um creme de pentear ou manteiga (C). Isso cria uma barreira protetora duradoura.",
                 tip: "Use o método LOC após a lavagem para garantir que o cabelo não resseque ao longo da semana.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "3. Pente Garfo e o Volume Black",
@@ -1488,7 +1488,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "5. Rotina Noturna: O Truque da Meia",
                 description: "Para manter as ondas sem frizz e sem amassados ao acordar, use a técnica do 'coque abacaxi' ou enrole mechas em uma meia de seda antes de dormir.",
                 tip: "Isso preserva a forma das ondas e reduz a necessidade de usar calor no dia seguinte.",
-                image: "/assets/penteado-cacheado.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               }
             ]}
           />
@@ -2012,7 +2012,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/wolf-cut-masculino.webp',
+      image: '/assets/wolf-cut.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -2038,7 +2038,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "2. Modern Mullet",
                 description: "O mullet voltou com uma roupagem sofisticada. Laterais baixas (ou em fade) e a parte de trás longa e lisa. É o corte perfeito para quem quer atitude e não tem medo de ousar.",
                 tip: "Penteie a parte de trás para baixo e o topo para o lado para um visual mais arrumado.",
-                image: "/assets/mullet-moderno.webp"
+                image: "/assets/asa-delta-mullet.webp"
               },
               {
                 title: "3. Ivy League (O Militar Elegante)",
@@ -2121,7 +2121,7 @@ const ArticleDetailPage: React.FC = () => {
                 title: "4. Americano com Topo Desconectado",
                 description: "O degradê lateral não se conecta suavemente com o topo, criando uma linha de peso que traz agressividade e modernidade ao visual liso.",
                 tip: "Penteie para a frente ou para cima para destacar o contraste do corte.",
-                image: "/assets/undercut.webp"
+                image: "/assets/high-fade.webp"
               },
               {
                 title: "5. Técnicas de Finalização",
@@ -12478,7 +12478,7 @@ const ArticleDetailPage: React.FC = () => {
       date: "13 de Maio de 2026",
       readTime: "18 min",
       category: "Cabelo",
-      image: "/assets/implante-capilar-estetica.webp",
+      image: "/assets/implante-capilar-v2.webp",
       howToSteps: [
         { name: "Avaliação", text: "Consultar um cirurgião para analisar a área doadora e a extensão da calvície." },
         { name: "Procedimento", text: "Extração de unidades foliculares (FUE) e implante nas áreas receptoras." },
@@ -12717,74 +12717,60 @@ const ArticleDetailPage: React.FC = () => {
     },
     'penteados-infantis-cabelo-cacheado': {
       title: "Penteados Infantis Cabelo Cacheado: 5 Estilos que são Tendência",
-      subtitle: "Transforme o visual dos pequenos com penteados infantis para cabelo cacheado que celebram a textura natural com criatividade.",
+      subtitle: "Transforme a rotina com penteados infantis cabelo cacheado que unem estilo, praticidade e muita fofura.",
       author: "Lara Estilo",
       date: "15 de Maio de 2026",
-      readTime: "13 min",
+      readTime: "10 min",
       category: "Cabelo",
       image: "/assets/penteado-infantil-cacheado.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            Criar <strong>penteados infantis para cabelo cacheado</strong> é uma oportunidade maravilhosa de fortalecer a conexão com as crianças e incentivar o amor pelos seus fios naturais. Esqueça os penteados que esticam ou agridem o couro cabeludo sensível; a tendência atual foca no volume, na cor e em acessórios que transformam o cuidado em uma verdadeira brincadeira. Com a curadoria da <strong>Lara Estilo</strong>, selecionamos 5 looks que são práticos para os pais e amados pelos pequenos.
+            Explorar <strong>penteados infantis cabelo cacheado</strong> é uma oportunidade maravilhosa de celebrar a textura natural dos fios desde a infância. Seja para a escola, um aniversário ou um dia de brincadeiras, os penteados certos podem facilitar o dia a dia e deixar as crianças ainda mais charmosas. Lara Estilo preparou uma seleção de tendências que priorizam o conforto e a saúde capilar infantil.
           </p>
+
           <ToolBox 
             tools={[
-              { name: "Elásticos de Silicone Coloridos (Sem Quebra)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Gelatina Infantil com Cheirinho de Frutas", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Escova Desembaraçante Flexível", link: "https://mercadolivre.com/sec/1exasrj" },
-              { name: "Laços e Tiaras de Cetim", link: "https://mercadolivre.com/sec/2Wo6ZWc" }
+              { name: "Creme de Pentear Kids Suave", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Gelatina Finalizadora sem Álcool", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Elásticos de Silicone Coloridos", link: "https://mercadolivre.com/sec/1exasrj" }
             ]}
           />
-          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Top 5 Penteados para Arrasar em Qualquer Ocasião</h2>
-          <TutorialSteps 
+
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Tendências de Penteados para Crianças</h2>
+          <TutorialSteps
             steps={[
               {
-                title: "1. Coque Abacaxi Estilizado",
-                description: "O clássico 'pineapple' ganha um toque de sofisticação com um laço gigante na base. É o penteado perfeito para festas ou para dias quentes, mantendo os cachos protegidos e o rosto livre. O segredo é não apertar muito o elástico para manter o balanço dos fios no topo.",
-                tip: "Use uma gelatina leve nas laterais para abaixar os 'baby hairs' sem deixar o cabelo endurecido.",
-                image: "/assets/penteado-infantil-abacaxi.png"
+                title: "Coque Abacaxi Moderno",
+                desc: "O clássico que nunca falha. Junte todo o cabelo no topo da cabeça de forma frouxa, deixando os cachos caírem para frente como uma coroa. Ideal para dias quentes e para manter o volume.",
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
-                title: "2. Tranças Laterais com Elásticos Coloridos",
-                description: "Este visual é pura diversão! Faça pequenas tranças ou torcidinhos nas laterais da cabeça, prendendo cada seção com elásticos de cores diferentes. Deixe o restante do cabelo solto e bem volumoso atrás. É um sucesso garantido na escola.",
-                tip: "Umedeça as mechas com um pouco de creme de pentear antes de trançar para garantir que o penteado dure o dia todo.",
-                image: "/assets/penteado-infantil-trancas.png"
+                title: "Maria-Chiquinha com Tranças Frontais",
+                desc: "Divida o cabelo ao meio e faça duas pequenas tranças na parte da frente para prender a franja. O restante do cabelo fica preso em dois rabos laterais cheios de volume.",
+                image: "/assets/penteado-infantil-cacheado.webp"
               },
               {
-                title: "3. Maria-Chiquinha Alta com Volume",
-                description: "Reinventamos a tradicional maria-chiquinha. Em vez de prender todo o comprimento, prenda apenas a base no topo da cabeça, permitindo que os cachos se abram como pompons gigantes. Traz um ar lúdico e destaca a curvatura natural da criança.",
-                tip: "Penteie a raiz suavemente com uma escova de cerdas macias para um acabamento polido na base.",
-                image: "/assets/penteado-infantil-chiquinha.png"
-              },
-              {
-                title: "4. Semipreso com Space Buns (Mini Coques)",
-                description: "Os 'space buns' são a febre do momento. Prenda apenas a parte frontal do cabelo em dois mini coques no topo da cabeça, deixando a parte de trás solta. É moderno, estiloso e muito confortável para brincar.",
-                tip: "Decore os mini coques com glitter capilar biodegradável para eventos especiais ou aniversários.",
-                image: "/assets/penteado-infantil-spacebuns.png"
-              },
-              {
-                title: "5. Acessórios de Princesa e Tiaras",
-                description: "Às vezes, menos é mais. Um cabelo solto e bem finalizado pode ser transformado com o acessório certo. Tiaras com flores, coroas delicadas ou presilhas de pérolas dão o toque final para casamentos e batizados.",
-                tip: "Sempre verifique se o acessório não tem partes pontiagudas que possam machucar o couro cabeludo da criança.",
-                image: "/assets/penteado-infantil-acessorios.png"
+                title: "Semipreso com Acessórios",
+                desc: "Puxe as laterais do cabelo para trás e prenda com presilhas coloridas ou laços grandes. Deixe a parte de trás solta para exibir a definição dos cachos.",
+                image: "/assets/penteado-infantil-cacheado.webp"
               }
             ]}
           />
-          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-8 rounded-3xl my-16 shadow-sm border-l-8 border-l-brand-gold">
-            <h4 className="font-bold text-brand-dark mb-4 flex items-center gap-2 text-xl">
-              <Star className="text-brand-gold fill-brand-gold" size={28} />
-              Dica da Lara Estilo
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic text-lg">
-              "A regra número um para penteados infantis é o conforto. Se a criança sentir que está puxando ou incomodando, ela terá uma relação negativa com o cuidado capilar. Use sempre produtos 'no tears' (sem lágrimas) e transforme o momento do penteado em uma história ou conversa prazerosa."
+
+          <div className="bg-brand-gold/10 p-8 rounded-3xl border border-brand-gold/20 my-12">
+            <h3 className="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+              <Star className="text-brand-gold" /> Dica da Lara Estilo
+            </h3>
+            <p className="text-brand-charcoal leading-relaxed italic">
+              "Para os pequenos, menos é mais. Evite apertar demais os elásticos para não causar tração excessiva no couro cabeludo e use sempre produtos específicos para a faixa etária, que são mais suaves e hipoalergênicos."
             </p>
           </div>
         </>
       ),
       recommendedProducts: [
-        { id: 'kids-gel', name: "Gelatina Kids Brilho Mágico", desc: "Fixação suave e cheirinho de chiclete.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Zap size={32} /> },
-        { id: 'kids-brush', name: "Escova Mágica Desembaraçante", desc: "Desata nós sem puxar e sem quebrar os cachinhos.", link: "https://mercadolivre.com/sec/1exasrj", icon: <Scissors size={32} /> }
+        { id: 'kids-shampoo', name: "Kit Shampoo e Condicionador Kids", desc: "Limpeza suave e desembaraço fácil.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> },
+        { id: 'kids-mask', name: "Máscara de Hidratação Infantil", desc: "Nutrição profunda para cachinhos macios.", link: "https://mercadolivre.com/sec/28LNYBa", icon: <Star size={32} /> }
       ]
     },
     'cabelos-loiros-masculinos-guia': {
@@ -12798,48 +12784,19 @@ const ArticleDetailPage: React.FC = () => {
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>cabelo loiro masculino</strong> é uma afirmação de estilo. Seja natural ou tingido, o loiro traz luminosidade ao rosto e uma vibração de modernidade. Neste guia, exploramos as bases para quem quer entrar no mundo dos loiros, desde a preparação do fio até os cuidados diários para evitar o ressecamento.
+            O <strong>cabelo loiro masculino</strong> é uma afirmação de estilo que exige dedicação. Desde a descoloração até a manutenção diária, cada passo é crucial para evitar o ressecamento e a quebra. Carlos Barbudo explora as melhores práticas para quem deseja ostentar fios claros com saúde e brilho.
           </p>
           <ToolBox 
             tools={[
-              { name: "Shampoo Matizador Violeta", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Máscara de Reconstrução", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Óleo de Argan Finalizador", link: "https://mercadolivre.com/sec/1exasrj" }
+              { name: "Shampoo Matizador Profissional", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Condicionador Reconstrutor", link: "https://mercadolivre.com/sec/28LNYBa" },
+              { name: "Protetor Térmico para Loiros", link: "https://mercadolivre.com/sec/1exasrj" }
             ]}
           />
-          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Guia Passo a Passo: Como Cuidar do Loiro</h2>
-          <TutorialSteps 
-            steps={[
-              {
-                title: "1. A Lavagem Inteligente (Matização)",
-                description: "O maior inimigo do loiro é o tom amarelado 'ovo'. Use um shampoo matizador (roxo/violeta) uma vez por semana para neutralizar os reflexos quentes e manter a cor fria e moderna.",
-                tip: "Não deixe o shampoo matizador por mais de 5 minutos, ou o cabelo pode ficar com reflexos azulados."
-              },
-              {
-                title: "2. Cronograma de Hidratação",
-                description: "A descoloração remove massa do fio. Você precisa repor água e queratina. Alterne entre máscaras de hidratação e nutrição a cada duas lavagens.",
-                tip: "Use água morna ou fria. A água quente abre as cutículas e faz a cor desbotar muito mais rápido."
-              },
-              {
-                title: "3. Proteção e Finalização",
-                description: "O cabelo loiro é mais sensível ao sol e ao calor do secador. Sempre use um leave-in com proteção térmica e filtro UV antes de sair de casa ou usar ferramentas de calor.",
-                tip: "Aplique duas gotas de óleo finalizador nas pontas diariamente para evitar o aspecto 'espigado'."
-              }
-            ]}
-          />
-          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
-            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
-              <Star className="text-brand-gold fill-brand-gold" size={22} />
-              Dica do Mestre
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic">
-              "Se você vai entrar na piscina, molhe o cabelo com água doce antes. O cabelo loiro é como uma esponja; se já estiver saturado de água limpa, ele absorverá menos cloro, evitando que o seu loiro fique esverdeado."
-            </p>
-          </div>
         </>
       ),
       recommendedProducts: [
-        { id: 'blonde-shampoo-gen', name: "Shampoo Manutenção Loiros", desc: "Limpeza suave que preserva a cor e o brilho.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+        { id: 'blonde-kit', name: "Kit Manutenção Loiro Platinum", desc: "Tratamento completo pós-química.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> }
       ]
     },
     'cabelos-loiros-mel-masculino': {
@@ -12853,191 +12810,129 @@ const ArticleDetailPage: React.FC = () => {
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>Loiro Mel</strong> é a tonalidade ideal para quem busca um visual 'sun-kissed' (beijado pelo sol). É um tom quente que combina perfeitamente com peles bronzeadas e traz um aspecto saudável e vibrante ao cabelo masculino.
+            O <strong>loiro mel</strong> é versátil e democrático. Ele traz um calor ao semblante que suaviza traços fortes, sendo ideal para quem quer clarear os fios sem o impacto do platinado.
           </p>
         </>
       ),
       recommendedProducts: [
-        { id: 'honey-oil', name: "Óleo Iluminador Mel", desc: "Destaca os reflexos dourados e hidrata profundamente.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Droplets size={32} /> }
+        { id: 'honey-shampoo', name: "Shampoo Iluminador Mel", desc: "Realça os tons dourados e quentes.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> }
       ]
     },
     'cabelos-loiros-dourados-masculino': {
       title: "Cabelos Loiros Dourados: Brilho e Sofisticação",
-      subtitle: "Como conquistar e manter o loiro dourado impecável. O guia para homens que buscam um visual solar.",
+      subtitle: "Como conquistar e manter o loiro dourado impecável.",
       author: "Carlos Barbudo",
       date: "14 de Maio de 2026",
-      readTime: "10 min",
+      readTime: "12 min",
       category: "Cabelo",
       image: "/assets/loiro-dourado.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>Loiro Dourado</strong> exala confiança. É um tom clássico que nunca sai de moda e funciona muito bem em cortes com mais volume no topo, onde a luz pode refletir em diferentes ângulos, criando profundidade e movimento.
+            O <strong>loiro dourado</strong> remete à vitalidade. É o tom perfeito para cortes que exploram o volume e as camadas, garantindo um visual solar e cheio de personalidade.
           </p>
         </>
       ),
       recommendedProducts: [
-        { id: 'gold-mask', name: "Máscara de Brilho Dourado", desc: "Realça o pigmento dourado e sela as cutículas.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+        { id: 'gold-mask', name: "Máscara de Brilho Dourado", desc: "Nutrição com pigmentos iluminadores.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> }
       ]
     },
     'cabelos-loiros-escuros-masculino': {
       title: "Cabelos Loiros Escuros: Elegância Discreta e Natural",
-      subtitle: "O loiro escuro é a tonalidade mais versátil para o homem moderno. Saiba como valorizar essa cor.",
+      subtitle: "O loiro escuro é a tonalidade mais versátil para o homem moderno.",
       author: "Dr. Estilo (Ph.D)",
       date: "14 de Maio de 2026",
-      readTime: "9 min",
+      readTime: "8 min",
       category: "Cabelo",
       image: "/assets/loiro-escuro.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            Muitas vezes confundido com o castanho claro, o <strong>Loiro Escuro</strong> é uma cor rica e multidimensional. É a escolha perfeita para quem quer clarear o visual de forma sutil, mantendo uma aparência sóbria e profissional.
+            O <strong>loiro escuro</strong> é a transição perfeita entre o castanho e o loiro. Ele oferece uma profundidade natural ao cabelo, sendo extremamente fácil de manter no dia a dia.
           </p>
         </>
       ),
       recommendedProducts: [
-        { id: 'dark-blonde-wax', name: "Cera Modeladora Matte", desc: "Define o corte sem tirar a naturalidade do loiro escuro.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Scissors size={32} /> }
+        { id: 'matte-clay', name: "Argila Modeladora Natural", desc: "Estilo discreto para tons sóbrios.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> }
       ]
     },
     'cabelos-loiros-curtos-masculino': {
       title: "Cabelos Loiros Curtos: Praticidade com Estilo",
-      subtitle: "Os melhores cortes curtos para quem tem cabelo loiro. Veja como destacar a cor no comprimento curto.",
+      subtitle: "Os melhores cortes curtos para quem tem cabelo loiro.",
       author: "Carlos Barbudo",
       date: "14 de Maio de 2026",
-      readTime: "8 min",
+      readTime: "10 min",
       category: "Cabelo",
       image: "/assets/loiro-curto-especifico.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            Cortes curtos como o <strong>Buzz Cut</strong> ganham uma vida nova quando platinados ou loiros. A cor clara destaca as linhas do corte e o formato do crânio, criando um visual impactante e de baixa manutenção.
+            Nos <strong>cabelos loiros curtos</strong>, o degradê e as texturas ficam muito mais evidentes. É um visual prático para quem tem uma rotina agitada mas não abre mão do estilo.
           </p>
         </>
       ),
       recommendedProducts: [
-        { id: 'short-blonde-balm', name: "Balm Protetor de Couro", desc: "Hidrata a pele e o fio curto após a descoloração.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <HeartPulse size={32} /> }
+        { id: 'texture-spray', name: "Spray de Texturização Salina", desc: "Efeito praia para fios curtos.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> }
       ]
     },
     'cabelos-loiros-cacheados-masculino': {
       title: "Cabelos Loiros Cacheados: Definição e Cor em Harmonia",
-      subtitle: "Como cuidar da saúde dos cachos loiros e destacar a textura dos fios.",
+      subtitle: "Como cuidar da saúde dos cachos loiros. Técnicas de finalização.",
       author: "Carlos Barbudo",
       date: "14 de Maio de 2026",
-      readTime: "11 min",
+      readTime: "15 min",
       category: "Cabelo",
       image: "/assets/loiro-cacheado-curto.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            Cachos loiros são visualmente impressionantes. A variação de tons entre as curvas do fio cria um efeito de luz e sombra natural que valoriza qualquer penteado. O foco aqui deve ser a <strong>hidratação extrema</strong>, pois o cacho e a descoloração tendem a ressecar o fio.
+            A união entre <strong>cachos e loiro</strong> cria um visual de alto impacto. O segredo está na reposição lipídica constante para manter a mola do cacho definida e protegida.
           </p>
         </>
       ),
       recommendedProducts: [
-        { id: 'curly-blonde-cream', name: "Ativador de Cachos Loiros", desc: "Define e protege a cor com filtro UV.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Sparkles size={32} /> }
+        { id: 'leave-in-blonde', name: "Leave-in Nutritivo Especial", desc: "Selagem de cutículas para cachos claros.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> }
       ]
     },
     'cabelos-ruivos-masculinos-guia': {
       title: "Cabelos Ruivos Masculinos: Atitude e Personalidade",
-      subtitle: "Um mergulho no mundo dos ruivos. Conheça as variações de tons e como cuidar da pigmentação.",
+      subtitle: "Um mergulho no mundo dos ruivos. Conheça as variações de tons.",
       author: "Dr. Estilo (Ph.D)",
       date: "14 de Maio de 2026",
-      readTime: "14 min",
+      readTime: "12 min",
       category: "Cabelo",
       image: "/assets/cabelos-ruivos-guia.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            Ser ruivo é carregar uma cor rara e cheia de personalidade. Seja você um ruivo natural ou por escolha, a manutenção do pigmento vermelho é o maior desafio para manter o visual impecável. O ruivo desbota com mais facilidade que outras cores, exigindo uma rotina de cuidados específica para selar a cor dentro do fio.
+            O <strong>cabelo ruivo masculino</strong> é raro e marcante. Seja natural ou tingido, ele exige produtos que preservem o pigmento contra a oxidação solar para evitar o desbotamento.
           </p>
-          <ToolBox 
-            tools={[
-              { name: "Shampoo Sem Sulfato (Color Protect)", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Máscara Acidificante", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Óleo de Brilho de Cranberry", link: "https://mercadolivre.com/sec/1exasrj" }
-            ]}
-          />
-          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Passo a Passo: Como Manter o Ruivo Vibrante</h2>
-          <TutorialSteps 
-            steps={[
-              {
-                title: "1. Lavagem com Água Fria",
-                description: "O pigmento ruivo é uma molécula grande que sai fácil com água quente. Lave o cabelo sempre com água fria para manter as cutículas seladas e a cor vibrante por mais tempo.",
-                tip: "Tente espaçar as lavagens. O uso diário de shampoo é o maior culpado pelo desbotamento do ruivo."
-              },
-              {
-                title: "2. Acidificação e Selagem",
-                description: "O cabelo colorido precisa estar com o PH equilibrado. Use um acidificante capilar uma vez por semana após o shampoo para garantir que o fio fique selado e brilhante.",
-                tip: "Produtos com extrato de frutas vermelhas ajudam a manter a oxidação longe dos seus fios."
-              },
-              {
-                title: "3. Proteção Solar Obrigatória",
-                description: "O sol 'queima' o pigmento ruivo, deixando-o alaranjado sem brilho. Use finalizadores com filtro solar específico para cabelos sempre que for se expor ao ar livre.",
-                tip: "Se você for à praia, reaplique o protetor capilar a cada mergulho."
-              }
-            ]}
-          />
-          <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
-            <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
-              <Star className="text-brand-gold fill-brand-gold" size={22} />
-              Dica do Mestre
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic">
-              "Para ruivos naturais: o seu cabelo costuma ser mais grosso e seco. Foque em óleos naturais como o de jojoba ou macadâmia. Para ruivos tingidos: o segredo é a reposição de massa proteica."
-            </p>
-          </div>
         </>
       ),
       recommendedProducts: [
-        { id: 'red-shampoo-gen', name: "Shampoo Realce Ruivo", desc: "Evita o desbotamento e mantém o tom vibrante.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <FlaskConical size={32} /> }
+        { id: 'red-protector', name: "Protetor de Cor Intense Red", desc: "Bloqueio contra raios UV e desbotamento.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> }
       ]
     },
     'cabelos-ruivos-acobreado-escuro-masculino': {
       title: "Ruivo Acobreado Escuro: A Cor da Estação para Homens",
-      subtitle: "O guia definitivo para o ruivo acobreado escuro. Saiba como chegar no tom e manter o brilho.",
+      subtitle: "O guia definitivo para o ruivo acobreado escuro. Saiba como chegar no tom.",
       author: "Dr. Estilo (Ph.D)",
       date: "14 de Maio de 2026",
-      readTime: "13 min",
+      readTime: "10 min",
       category: "Cabelo",
       image: "/assets/ruivo-acobreado-escuro.webp",
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>Ruivo Acobreado Escuro</strong> é a escolha para quem quer sofisticação. É um tom sóbrio, com reflexos metálicos que aparecem sob a luz, ideal para cortes clássicos e barbas bem desenhadas. Diferente do ruivo laranjinha, o acobreado escuro traz um ar de mistério e elegância que combina muito com o outono/inverno.
+            O <strong>ruivo acobreado escuro</strong> é sofisticado e moderno. Ele traz um reflexo metálico sutil que transforma o visual de forma elegante, sem perder a masculinidade.
           </p>
-          <ToolBox 
-            tools={[
-              { name: "Máscara Tonalizante Cobre", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Shampoo Antioxidante", link: "https://mercadolivre.com/sec/28LNYBa" },
-              { name: "Leave-in Hidratante com Filtro UV", link: "https://mercadolivre.com/sec/1exasrj" }
-            ]}
-          />
-          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Passo a Passo: Como Manter o Tom Acobreado</h2>
-          <TutorialSteps 
-            steps={[
-              {
-                title: "1. Higienização de Baixo Impacto",
-                description: "O cobre escuro desbota para um marrom sem vida se lavado incorretamente. Use shampoos com PH baixo e evite esfregar o comprimento do fio. Foque apenas na raiz.",
-                tip: "Lave o cabelo no máximo 3 vezes por semana para preservar o pigmento profundo."
-              },
-              {
-                title: "2. Banho de Brilho Mensal",
-                description: "A cada 30 dias, use uma máscara tonalizante acobreada. Isso repõe o reflexo metálico que se perde com as lavagens, sem precisar recorrer à tinta com amônia novamente.",
-                tip: "Misture a máscara tonalizante com um pouco de creme branco para um resultado mais natural e sutil."
-              },
-              {
-                title: "3. Selagem de Brilho",
-                description: "O segredo do acobreado é o reflexo da luz. Use óleos leves de finalização que contenham vitamina E para proteger contra a oxidação causada pela poluição e sol.",
-                tip: "Finalize sempre com um jato de ar frio do secador para selar as cutículas e dar o brilho máximo."
-              }
-            ]}
-          />
         </>
       ),
       recommendedProducts: [
-        { id: 'copper-mask-dark', name: "Máscara Tonalizante Cobre Escuro", desc: "Repõe o pigmento e garante brilho metálico.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Droplets size={32} /> }
+        { id: 'copper-shampoo', name: "Shampoo Tonalizante Cobre", desc: "Mantém o brilho acobreado entre lavagens.", link: "https://mercadolivre.com/sec/2Wo6ZWc", icon: <Star size={32} /> }
       ]
-    }
+    },
+
   };
   const article = slug && articlesData[slug] ? articlesData[slug] : null;
 
