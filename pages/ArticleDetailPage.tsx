@@ -186,31 +186,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Ondas Texturizadas (Beach Waves)",
                 description: "Crie ondas largas e desconectadas usando um modelador de cachos. O segredo é deixar as pontas retas para um visual mais moderno e aplicar um spray de textura após finalizar. É o penteado solto ideal para um look casual chic.",
                 tip: "Alterne a direção dos cachos para um efeito mais natural e volumoso.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/medio-ondas-beach-waves.png"
               },
               {
                 title: "2. Risca Lateral com Presilhas 'Statement'",
                 description: "Divida o cabelo lateralmente e use duas ou três presilhas decorativas no lado com menos cabelo. Isso mantém os fios no lugar e adiciona um ponto de brilho imediato ao visual.",
                 tip: "Escolha presilhas que contrastem com a cor do seu cabelo para um destaque extra.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/penteado-medio-solto-ai.png"
               },
               {
                 title: "3. Semipreso com Nó (Half-up Knot)",
                 description: "Pegue apenas a parte superior do cabelo e faça um nó pequeno e frouxo, deixando o restante do comprimento solto e com textura natural. É um penteado urbano, prático e muito estiloso.",
                 tip: "Puxe algumas mechas da parte presa para criar um volume 'messy' proposital.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/cabelo-ondulado-definido-ai.png"
               },
               {
                 title: "4. Liso Espelhado (Glass Hair Médio)",
                 description: "O acabamento extremamente liso e brilhante valoriza o corte reto do cabelo médio. Use um protetor térmico antes da prancha e finalize com um sérum de brilho para um efeito 'cabelo de vidro'.",
                 tip: "Passe a prancha devagar em mechas finas para garantir o selamento total das cutículas.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "5. Ondas de Um Lado Só (Old Hollywood Médio)",
                 description: "Jogue todo o cabelo para um ombro e prenda a parte de trás com grampos invisíveis. As ondas largas no comprimento médio criam um ar sofisticado e glamouroso para jantares e eventos.",
                 tip: "Fixe a lateral com um pouco de gel ou pomada para um acabamento impecável.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/penteados-elegantes-festas-ai.png"
               }
             ]}
           />
