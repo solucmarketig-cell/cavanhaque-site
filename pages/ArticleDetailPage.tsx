@@ -525,12 +525,12 @@ const ArticleDetailPage: React.FC = () => {
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>cabelo curto feminino</strong> no ambiente corporativo é um símbolo de dinamismo e autoridade. Ao escolher um corte que equilibra a modernidade com o polimento clássico, a mulher transmite uma imagem de competência e atenção aos detalhes. Em 2026, a estética executiva para curtos foca em linhas limpas, brilho espelhado e volumes estrategicamente posicionados.
+            O <strong>cabelo curto feminino</strong> no ambiente corporativo é um símbolo de dinamismo, elegância e autoridade. Ao escolher um corte que equilibra a modernidade com o polimento clássico, a mulher transmite uma imagem de competência, profissionalismo e atenção aos detalhes. Em 2026, a estética executiva para curtos foca em linhas limpas, brilho saudável e volumes estrategicamente posicionados que valorizam os traços de forma impecável.
           </p>
           <ToolBox 
             tools={[
               { name: "Sérum de Brilho Intensivo", link: "https://mercadolivre.com/sec/1exasrj" },
-              { name: "Escova Progressiva de Cerâmica", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Escova Modeladora Nano", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
               { name: "Fixador de Memória Leve", link: "https://mercadolivre.com/sec/28LNYBa" }
             ]}
           />
@@ -539,32 +539,32 @@ const ArticleDetailPage: React.FC = () => {
             steps={[
               {
                 title: "1. Bob Executivo com Pontas Curvadas",
-                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Um corte que termina na altura do maxilar, com as pontas levemente curvadas para dentro. Transmite uma imagem de organização e elegância impecável, sendo ideal para reuniões de alto nível. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
-                tip: "Use uma escova redonda média durante a secagem para garantir a curvatura perfeita das pontas. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
+                description: "Um clássico atemporal que termina na altura do maxilar, com as pontas sutilmente voltadas para dentro. Esse corte emoldura o rosto de forma suave e elegante, transmitindo organização, seriedade e extrema sofisticação para o ambiente de trabalho formal.",
+                tip: "Use uma escova redonda média e secador para modelar as pontas para dentro. Um spray de brilho leve ajuda a selar as cutículas e dar acabamento espelhado profissional.",
                 image: "/assets/curto-feminino-profissional-ai.png"
               },
               {
                 title: "2. Pixie Clássico Penteado (Sleek Pixie)",
-                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. Diferente da versão repicada, o pixie profissional é mantido mais alinhado e penteado para o lado ou para trás. O foco aqui é o brilho e a precisão do contorno nas orelhas. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
-                tip: "Aplique um pouco de sérum após o corte para manter os fios no lugar com um aspecto saudável. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
+                description: "Para quem busca máxima praticidade sem perder o refinamento. O pixie clássico profissional mantém as linhas limpas e bem desenhadas ao redor das orelhas, sendo estilizado para o lado ou levemente para trás com produtos de fixação suave que mantêm a maciez.",
+                tip: "Aplique uma pequena quantidade de pomada hidratante finalizadora para alinhar fios rebeldes (frizz) sem deixar o visual pesado ou oleoso.",
                 image: "/assets/corte-bob-curly.webp"
               },
               {
                 title: "3. Corte Tapered Feminino Texturizado",
-                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Para mulheres com fios ondulados ou crespos, o tapered (mais baixo nas laterais e nuca, com volume no topo) oferece um visual moderno e extremamente respeitável no ambiente formal. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
-                tip: "Mantenha o volume do topo bem definido com um mousse de fixação leve para evitar o frizz. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
+                description: "Perfeito para valorizar a textura natural de fios ondulados, cacheados e crespos. O tapered traz as laterais e a nuca sutilmente mais baixas, concentrando um volume sofisticado, encorpado e bem texturizado no topo da cabeça.",
+                tip: "Use um ativador de cachos leve no topo e seque com o difusor para garantir volume controlado, definição impecável e movimento natural ao longo do dia.",
                 image: "/assets/corte-camadas-curly.webp"
               },
               {
                 title: "4. Side Swept Curto com Volume",
-                description: "O segredo para um degradê ou corte curto impecável está na simetria das costeletas e no controle da densidade. Um corte curto que foca em uma franja lateral longa e volumosa. Suaviza as linhas do rosto enquanto mantém o impacto visual de um corte de cabelo curto bem planejado. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
-                tip: "O segredo aqui é o levantamento da raiz na parte frontal usando um secador e bico direcionador. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
+                description: "Um corte curto charmoso que se destaca por uma franja lateral longa, sinuosa e expressiva. Ele ajuda a suavizar linhas angulares do rosto, criando um equilíbrio moderno entre sofisticação e leveza que eleva qualquer look executivo.",
+                tip: "Ao secar, use um bico direcionador para levantar a raiz na parte frontal. Um toque de spray de fixação flexível mantém o movimento e a franja no lugar o dia inteiro.",
                 image: "/assets/corte-shaggy-cacheado.webp"
               },
               {
                 title: "5. Micro Bob Simétrico",
-                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Uma versão ainda mais curta do bob, terminando logo abaixo das orelhas. A simetria perfeita deste corte transmite uma imagem de precisão e controle, essencial para cargos de liderança. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
-                tip: "Exige manutenção frequente para que o alinhamento da base permaneça reto. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
+                description: "Uma variação moderna e arrojada do bob tradicional, com a base milimetricamente reta e alinhada logo abaixo das orelhas. A simetria impecável deste corte transmite precisão, foco e uma imagem de liderança refinada e contemporânea.",
+                tip: "Exige manutenção frequente (a cada 4 ou 5 semanas) para manter o alinhamento geométrico perfeito e as pontas sempre bem acabadas no salão.",
                 image: "/assets/corte-wolf-cut-curly.webp"
               }
             ]}
@@ -575,7 +575,7 @@ const ArticleDetailPage: React.FC = () => {
               Dica da Lara Estilo
             </h4>
             <p className="text-gray-700 leading-relaxed italic text-lg">
-              "No mundo profissional, a sua imagem é o seu cartão de visitas. O cabelo curto feminino facilita a rotina matinal, mas não dispensa o cuidado. Um cabelo bem hidratado e com o corte em dia comunica que você é uma pessoa que cuida da própria base antes de cuidar dos negócios. Brilho é sinal de vigor!"
+              "No mundo profissional, a sua imagem é uma extensão de sua competência. O cabelo curto feminino facilita muito a rotina matinal, mas não dispensa o cuidado. Um cabelo bem hidratado, finalizado e com o corte em dia comunica que você cuida dos detalhes fundamentais com a mesma dedicação com que gerencia sua carreira."
             </p>
           </div>
         </>
@@ -590,52 +590,52 @@ const ArticleDetailPage: React.FC = () => {
       subtitle: 'Do Pixie ao Short Bob, descubra os cortes curtos que estão definindo a moda feminina com praticidade e elegância.',
       author: 'Lara Estilo',
       date: '15 de Maio de 2026',
-      readTime: '11 min',
+      readTime: '10 min',
       category: 'Cabelo',
       image: '/assets/loiro-curto-especifico.webp',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>corte de cabelo curto feminino</strong> é muito mais do que uma escolha de praticidade; é uma afirmação de estilo e autoconfiança. Em 2026, as tendências curtas focam em texturas naturais, camadas desconectadas e designs que emolduram o rosto com precisão. Seja para ganhar tempo na rotina ou para renovar o visual, o cabelo curto oferece uma versatilidade surpreendente.
+            Cortar os cabelos curtos é um ato de libertação e estilo. Longe de ser uma escolha limitadora, o <strong>corte de cabelo curto feminino</strong> abre um leque de possibilidades modernas que valorizam a textura dos fios e a moldura do rosto. Em 2026, as tendências apontam para cortes que trazem movimento, leveza e texturas desconectadas que dispensam horas de estilização em frente ao espelho.
           </p>
           <ToolBox 
             tools={[
-              { name: "Pomada Modeladora Matte", link: "https://mercadolivre.com/sec/1exasrj" },
-              { name: "Spray Texturizador de Sal", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Escova Redonda Pequena (Modelagem)", link: "https://mercadolivre.com/sec/28LNYBa" }
+              { name: "Pomada Sculpt Matte", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Spray de Sal Texturizador", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Sérum Iluminador Leve", link: "https://mercadolivre.com/sec/28LNYBa" }
             ]}
           />
-          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Os 5 Curtos que Dominam as Tendências</h2>
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6 text-center">Os Curtos Mais Desejados da Temporada</h2>
           <TutorialSteps 
             steps={[
               {
                 title: "1. Pixie Cut Repicado",
-                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. O clássico 'Joãozinho' ganha uma versão moderna com camadas repicadas e franja alongada. É o corte ideal para destacar os traços do rosto e garantir um visual fresco e ousado. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
-                tip: "Use uma pomada matte para definir as pontas e criar aquele efeito 'bagunçado' proposital. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
+                description: "O pixie repicado é a definição de modernidade e dinamismo. Com suas camadas curtas, leves e desconectadas, ele cria um visual super leve, com volume natural no topo e um balanço espontâneo perfeito para o dia a dia.",
+                tip: "Use uma pequena quantidade de pomada matte nas pontas dos dedos para destacar a textura dos fios e criar um efeito levemente despojado e sofisticado.",
                 image: "/assets/loiro-curto-especifico.webp"
               },
               {
                 title: "2. Bixie (Bob + Pixie)",
-                description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. A mistura perfeita entre o comprimento do bob e o desfiado do pixie. Ele mantém o volume no topo e na nuca, sendo a escolha certa para quem quer encurtar os fios sem radicalizar totalmente. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
-                tip: "Fica incrível em cabelos ondulados, valorizando o movimento natural das mechas. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
+                description: "A fusão perfeita entre a sofisticação estruturada do bob e a rebeldia leve do pixie. Ele apresenta a frente sutilmente mais alongada e a nuca em camadas mais curtas e desfiadas, garantindo um volume elegante na parte traseira.",
+                tip: "É um corte incrivelmente versátil que funciona bem tanto liso quanto ondulado. Finalize com um leave-in hidratante para dar disciplina e brilho saudável.",
                 image: "/assets/corte-coracao-curly.webp"
               },
               {
                 title: "3. Short Bob com Base Reta",
-                description: "O segredo para um degradê ou corte curto impecável está na simetria das costeletas e no controle da densidade. Um corte elegante e minimalista que termina na altura do queixo ou um pouco acima. A base reta transmite uma imagem de sofisticação e ajuda a dar corpo aos cabelos mais finos. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
-                tip: "Finalize com uma chapinha para um visual 'glass hair' extremamente brilhante. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
+                description: "Um corte moderno e minimalista com a base totalmente reta na altura do maxilar ou queixo. Ele valoriza o brilho natural e o peso dos fios, criando uma linha de impacto visual sofisticada e muito elegante.",
+                tip: "Seque direcionando o vento do secador de cima para baixo com a ajuda de uma escova raquete para selar as cutículas e destacar o alinhamento da base.",
                 image: "/assets/corte-cabelo-cacheado-feminino-tendencia.webp"
               },
               {
                 title: "4. Undercut Feminino Estilizado",
-                description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. Para as mais ousadas, o undercut remove o volume excessivo da nuca ou das laterais com máquina. Além de ser extremamente fresco para o verão, permite designs artísticos escondidos sob o cabelo. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
-                tip: "É uma ótima solução para quem tem muito volume na parte de trás da cabeça. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
+                description: "Ideal para quem busca atitude e controle estratégico de volume. Consiste em manter a nuca ou uma das laterais do cabelo bem curtas ou desenhadas, cobertas pelas camadas mais longas do topo que se revelam ao prender os fios.",
+                tip: "Perfeito para quem tem muito volume na nuca. A manutenção da área mais curta deve ser feita a cada 20 dias no salão para manter o desenho sempre limpo.",
                 image: "/assets/corte-cacheado-tendencia-v2.webp"
               },
               {
                 title: "5. Shaggy Curto (Wolf Cut)",
-                description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. Inspirado na estética dos anos 70, o shaggy curto foca em muitas camadas e uma franja volumosa. Transmite um ar 'cool' e é perfeito para quem busca um visual com muita atitude e pouco esforço na finalização. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
-                tip: "Aplique um spray texturizador com os fios ainda úmidos e amasse com as mãos. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
+                description: "Inspirado no estilo retrô dos anos 70, o shaggy curto conta com muitas camadas desconectadas no comprimento e uma franja cheia e descontraída. Ele valoriza o volume natural e dá uma atitude 'cool' irresistível ao visual.",
+                tip: "Amasse os fios úmidos com um creme de pentear leve ou ativador de ondas e deixe secar naturalmente ou com difusor para destacar as camadas.",
                 image: "/assets/corte-bob-curly.webp"
               }
             ]}
@@ -646,7 +646,7 @@ const ArticleDetailPage: React.FC = () => {
               Dica da Lara Estilo
             </h4>
             <p className="text-gray-700 leading-relaxed italic text-lg">
-              "Cabelo curto exige manutenção frequente para não perder o desenho. O ideal é visitar o seu cabeleireiro a cada 4 ou 6 semanas. Além disso, não economize nos finalizadores: um bom spray de brilho ou pomada é o que diferencia um curto comum de um visual de capa de revista."
+              "O cabelo curto feminino é uma moldura para o rosto. Ele destaca o seu olhar, o pescoço e a sua postura. Não tenha medo de brincar com texturas: um dia use liso e polido, no outro, use bagunçado e volumoso com spray texturizador. Curto é sinônimo de liberdade artística!"
             </p>
           </div>
         </>
@@ -2584,34 +2584,34 @@ const ArticleDetailPage: React.FC = () => {
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
-            O <strong>corte americano</strong> (ou Taper Fade) deixou de ser exclusividade das barbearias para dominar o visual das mulheres que buscam atitude e praticidade. Quando aplicado ao <strong>cabelo cacheado</strong>, esse estilo cria um contraste poderoso: as laterais polidas e graduadas dão total protagonismo ao volume e à definição do topo. É o corte perfeito para quem deseja um visual moderno, fresco e carregado de personalidade.
+            O <strong>corte americano</strong> (ou Taper Fade) deixou de ser exclusividade das barbearias para dominar o visual das mulheres que buscam atitude e praticidade. Quando aplicado ao <strong>cabelo cacheado</strong>, esse estilo cria um contraste poderoso: as laterais polidas e graduadas dão total protagonismo ao volume e à definição dos cachos no topo da cabeça. É o corte perfeito para quem deseja um visual moderno, fresco e carregado de personalidade.
           </p>
           <ToolBox 
             tools={[
-              { name: "Máquina de Acabamento Slim", link: "https://mercadolivre.com/sec/1exasrj" },
-              { name: "Pomada Modeladora Efeito Matte", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
-              { name: "Óleo de Argan para Finalização", link: "https://mercadolivre.com/sec/28LNYBa" }
+              { name: "Gelatina Modeladora", link: "https://mercadolivre.com/sec/1exasrj" },
+              { name: "Creme de Pentear Nutritivo", link: "https://mercadolivre.com/sec/2Wo6ZWc" },
+              { name: "Óleo de Coco Reparador", link: "https://mercadolivre.com/sec/28LNYBa" }
             ]}
           />
-          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Por que apostar no Corte Americano?</h2>
+          <h2 className="text-3xl font-serif font-bold text-brand-dark mt-12 mb-6">Por que apostar no Corte Americano Feminino?</h2>
           <TutorialSteps 
             steps={[
               {
                 title: "1. Valorização da Estrutura Facial",
-                description: "Os cabelos cacheados ganham definição, brilho e balanço natural através de camadas fluidas e técnicas de enluve. O degradê lateral (fade) 'limpa' o visual ao redor das orelhas e têmporas, o que ajuda a alongar o rosto e destacar as maçãs e o maxilar. Para cacheadas, isso significa que o volume não 'pesa' no rosto, mantendo a leveza. Seus cachos ganham um brilho tridimensional fantástico e balanço digno de cinema.",
-                tip: "Peça ao profissional para ajustar a altura do fade conforme o formato das suas orelhas e rosto. Misture gelatina modeladora ao creme de pentear para dar mais firmeza e prolongar a durabilidade dos cachos no dia a dia.",
+                description: "O degradê lateral suave (fade) limpa o visual ao redor das orelhas e têmporas, criando um efeito óptico que ajuda a alongar a silhueta, destacar as maçãs do rosto e evidenciar o maxilar. O cacho do topo ganha leveza total, emoldurando as expressões faciais com suavidade e elegância.",
+                tip: "Peça ao seu profissional para suavizar a transição do degradê lateral conforme o formato das suas têmporas, criando um contorno elegante e orgânico.",
                 image: "/assets/curly-american-versatility.png"
               },
               {
                 title: "2. Versatilidade de Estilização",
-                description: "Os cabelos cacheados ganham definição, brilho e balanço natural através de camadas fluidas e técnicas de enluve. Com as laterais baixas, você pode focar toda a sua criatividade no topo. Use técnicas de fitagem para cachos super definidos ou use um pente garfo para um visual afro-chic volumoso e impactante. O resultado são cachos super definidos, macios, saltitantes e com volume na medida certa.",
-                tip: "Experimente usar acessórios como presilhas coloridas na transição do fade para um visual mais delicado. Use uma toalha de algodão ou camiseta antiga para secar os cachos sem gerar atrito ou frizz indesejado na fibra capilar.",
+                description: "Com as laterais bem baixas e alinhadas, você pode focar toda a sua rotina de finalização na área do topo. Use técnicas de fitagem estruturada para cachos super definidos e comportados, ou finalize com secador e difusor para obter volume afro-chic imponente.",
+                tip: "Use uma toalha de microfibra ou uma camiseta antiga de algodão para secar os cachos do topo da cabeça para prevenir o frizz e a quebra capilar.",
                 image: "/assets/curly-satin-pillowcase.png"
               },
               {
                 title: "3. Praticidade no Day After",
-                description: "Os cabelos cacheados ganham definição, brilho e balanço natural através de camadas fluidas e técnicas de enluve. Menos cabelo nas laterais significa menos tempo desembaraçando áreas críticas. O corte americano mantém o visual arrumado por mais tempo, exigindo apenas uma revitalização rápida dos cachos do topo pela manhã. Isso confere durabilidade ao penteado, mantendo a definição dos caracóis o dia inteiro.",
-                tip: "Use uma fronha de cetim para que o fade não perca a nitidez devido ao atrito com o travesseiro. Faça um coque abacaxi frouxo no topo da cabeça para dormir, mantendo a definição dos cachos intacta para a manhã seguinte.",
+                description: "Menos cabelo nas laterais e nuca significa muito menos tempo desembaraçando áreas críticas e fios embaraçados pela manhã. O corte americano mantém as laterais limpas e elegantes por muito mais tempo, exigindo apenas uma revitalização leve dos cachos do topo ao acordar.",
+                tip: "Durma com uma fronha ou touca de cetim para evitar o atrito. Pela manhã, borrife um spray revitalizador ou leave-in diluído em água para redefinir as pontas rapidamente.",
                 image: "/assets/curly-diffuser.png"
               }
             ]}
@@ -2619,10 +2619,10 @@ const ArticleDetailPage: React.FC = () => {
           <div className="bg-brand-gold/5 border-2 border-brand-gold/20 p-6 rounded-2xl my-10 shadow-sm border-l-8 border-l-brand-gold">
             <h4 className="font-bold text-brand-dark mb-3 flex items-center gap-2 text-lg">
               <Star className="text-brand-gold fill-brand-gold" size={22} />
-              Dica da Lara
+              Dica da Lara Estilo
             </h4>
             <p className="text-gray-700 leading-relaxed italic">
-              "O segredo do corte americano feminino é a transição. Diferente do corte masculino, que costuma ser mais geométrico, o feminino pode ter linhas mais suaves e orgânicas. Certifique-se de que o profissional entende a curvatura do seu cacho para que o degradê não fique com 'degraus'."
+              "O segredo do corte americano feminino é a suavidade na transição. Enquanto o masculino costuma ter contornos geométricos bem marcados e retos na testa, o feminino ganha sofisticação com contornos orgânicos e uma transição suave que abraça a textura natural dos seus cachos."
             </p>
           </div>
         </>
