@@ -328,31 +328,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Coque Chignon Clássico",
                 description: "Para um acabamento de salão que valoriza a saúde e a beleza dos fios, dedique tempo à técnica de finalização. O epítome da elegância. Posicionado baixo na nuca, este coque é polido e simétrico. É a escolha perfeita para casamentos e eventos black-tie, onde a sofisticação discreta é a regra. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
                 tip: "Use uma rede invisível da cor do seu cabelo para garantir que nenhum fio saia do lugar durante a festa. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/simples-bubble-braid.png"
               },
               {
                 title: "2. Hollywood Waves (Ondas de Cinema)",
                 description: "Para um acabamento de salão que valoriza a saúde e a beleza dos fios, dedique tempo à técnica de finalização. Ondas largas, brilhantes e perfeitamente alinhadas para o lado. Este penteado traz o glamour da era de ouro do cinema diretamente para o seu evento. Exige um cabelo bem hidratado para refletir a luz. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
                 tip: "Após fazer as ondas com o babyliss, escove-as suavemente com uma escova de cerdas naturais para criar o efeito contínuo. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/simples-coque-baixo-lenco.png"
               },
               {
                 title: "3. Penteado Francês (French Twist)",
                 description: "O visual ganha um ar sofisticado e contemporâneo através do contraste entre textura, brilho e volume natural. Também conhecido como coque banana, o French Twist é vertical e alonga a silhueta. É um clássico que ganhou releituras modernas com acabamentos menos rígidos e algumas mechas soltas. Seu visual ganha um ar sofisticado, polido e perfeitamente finalizado para qualquer ocasião.",
                 tip: "Garanta a sustentação interna com grampos grandes inseridos na vertical. Não subestime o poder dos acessórios: uma presilha ou lenço estratégico pode transformar um visual comum em alta moda.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/simples-double-pony.png"
               },
               {
                 title: "4. Semipreso com Volume no Topo",
                 description: "Para um acabamento de salão que valoriza a saúde e a beleza dos fios, dedique tempo à técnica de finalização. Inspirado na estética dos anos 60, este semipreso foca no volume na coroa da cabeça e fios perfeitamente lisos ou com ondas suaves no comprimento. Transmite uma elegância vintage poderosa. O resultado é um penteado deslumbrante, duradouro e com acabamento de salão.",
                 tip: "Desfie levemente a raiz no topo (backcombing) antes de prender para ganhar altura duradoura. Aplique o spray fixador sempre a uma distância mínima de 30 centímetros para evitar molhar os fios e comprometer a fixação.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/simples-semipreso-torcidinho.png"
               },
               {
                 title: "5. Rabo de Cavalo Baixo Polido",
                 description: "A estilização moderna e o acabamento premium do penteado dependem de uma preparação capilar minuciosa. A prova de que a simplicidade pode ser extremamente elegante. O segredo está na base oculta pelo próprio cabelo e no acabamento 'glass hair' (cabelo de vidro) obtido com prancha e spray de brilho. Isso garante fixação confortável e proteção integral para o seu cabelo o dia todo.",
                 tip: "Use um gel de fixação forte para deixar a parte frontal impecável e sem baby hairs aparentes. Carregue um mini sérum ou spray revitalizador na bolsa para dar aquele retoque rápido de movimento e brilho ao longo do dia.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/simples-sleek-topete.png"
               }
             ]}
           />
@@ -541,31 +541,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Bob Executivo com Pontas Curvadas",
                 description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Um corte que termina na altura do maxilar, com as pontas levemente curvadas para dentro. Transmite uma imagem de organização e elegância impecável, sendo ideal para reuniões de alto nível. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
                 tip: "Use uma escova redonda média durante a secagem para garantir a curvatura perfeita das pontas. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/curto-cacheado-corte-coracao.png"
               },
               {
                 title: "2. Pixie Clássico Penteado (Sleek Pixie)",
                 description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. Diferente da versão repicada, o pixie profissional é mantido mais alinhado e penteado para o lado ou para trás. O foco aqui é o brilho e a precisão do contorno nas orelhas. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
                 tip: "Aplique um pouco de sérum após o corte para manter os fios no lugar com um aspecto saudável. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/curto-cacheado-curly-bob.png"
               },
               {
                 title: "3. Corte Tapered Feminino Texturizado",
                 description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Para mulheres com fios ondulados ou crespos, o tapered (mais baixo nas laterais e nuca, com volume no topo) oferece um visual moderno e extremamente respeitável no ambiente formal. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
                 tip: "Mantenha o volume do topo bem definido com um mousse de fixação leve para evitar o frizz. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/curto-cacheado-micro-curls.png"
               },
               {
                 title: "4. Side Swept Curto com Volume",
                 description: "O segredo para um degradê ou corte curto impecável está na simetria das costeletas e no controle da densidade. Um corte curto que foca em uma franja lateral longa e volumosa. Suaviza as linhas do rosto enquanto mantém o impacto visual de um corte de cabelo curto bem planejado. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
                 tip: "O segredo aqui é o levantamento da raiz na parte frontal usando um secador e bico direcionador. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/curto-cacheado-shaggy.png"
               },
               {
                 title: "5. Micro Bob Simétrico",
                 description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. Uma versão ainda mais curta do bob, terminando logo abaixo das orelhas. A simetria perfeita deste corte transmite uma imagem de precisão e controle, essencial para cargos de liderança. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
                 tip: "Exige manutenção frequente para que o alinhamento da base permaneça reto. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/curto-cacheado-tapered.png"
               }
             ]}
           />
@@ -612,31 +612,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Pixie Cut Repicado",
                 description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. O clássico 'Joãozinho' ganha uma versão moderna com camadas repicadas e franja alongada. É o corte ideal para destacar os traços do rosto e garantir um visual fresco e ousado. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
                 tip: "Use uma pomada matte para definir as pontas e criar aquele efeito 'bagunçado' proposital. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
-                image: "/assets/loiro-curto-especifico.webp"
+                image: "/assets/curto-cacheado-corte-coracao.png"
               },
               {
                 title: "2. Bixie (Bob + Pixie)",
                 description: "Para conferir movimento e textura sem marcas ao corte, a técnica de desfiado com tesoura dentada é a mais indicada. A mistura perfeita entre o comprimento do bob e o desfiado do pixie. Ele mantém o volume no topo e na nuca, sendo a escolha certa para quem quer encurtar os fios sem radicalizar totalmente. Seu visual ganha uma moldura moderna de alta precisão que valoriza muito seus traços.",
                 tip: "Fica incrível em cabelos ondulados, valorizando o movimento natural das mechas. Ajuste a altura da máquina de acabamento com cuidado para evitar marcas escuras ou falhas na transição do degradê.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/curto-cacheado-curly-bob.png"
               },
               {
                 title: "3. Short Bob com Base Reta",
                 description: "O segredo para um degradê ou corte curto impecável está na simetria das costeletas e no controle da densidade. Um corte elegante e minimalista que termina na altura do queixo ou um pouco acima. A base reta transmite uma imagem de sofisticação e ajuda a dar corpo aos cabelos mais finos. O resultado é um corte com transição perfeitamente limpa, simétrico e super moderno.",
                 tip: "Finalize com uma chapinha para um visual 'glass hair' extremamente brilhante. Visite seu barbeiro ou cabeleireiro a cada 15 ou 20 dias para manter as linhas do degradê e o contorno da nuca sempre impecáveis.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/curto-cacheado-micro-curls.png"
               },
               {
                 title: "4. Undercut Feminino Estilizado",
                 description: "Para destacar a estrutura do corte e garantir um acabamento polido, a finalização com pomada matte ou gel é fundamental. Para as mais ousadas, o undercut remove o volume excessivo da nuca ou das laterais com máquina. Além de ser extremamente fresco para o verão, permite designs artísticos escondidos sob o cabelo. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
                 tip: "É uma ótima solução para quem tem muito volume na parte de trás da cabeça. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
-                image: "/assets/pompadour-fade.webp"
+                image: "/assets/curto-cacheado-shaggy.png"
               },
               {
                 title: "5. Shaggy Curto (Wolf Cut)",
                 description: "A precisão de um corte moderno reside nas linhas limpas e na harmonia de transição entre as diferentes camadas. Inspirado na estética dos anos 70, o shaggy curto foca em muitas camadas e uma franja volumosa. Transmite um ar 'cool' e é perfeito para quem busca um visual com muita atitude e pouco esforço na finalização. Isso garante um penteado estiloso, com textura destacada e excelente fixação diária.",
                 tip: "Aplique um spray texturizador com os fios ainda úmidos e amasse com as mãos. Use pomadas finalizadoras à base de água para facilitar a remoção no banho e evitar o acúmulo de resíduos nos fios.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/curto-cacheado-tapered.png"
               }
             ]}
           />
@@ -683,31 +683,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Umectação Noturna com Óleo de Coco",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. O óleo de coco é um dos poucos que consegue penetrar profundamente no córtex do fio. Aplique-o generosamente no cabelo seco antes de dormir e lave no dia seguinte. É o tratamento de choque ideal para fios extremamente ressecados. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Use uma touca de cetim para potencializar o calor e não sujar o travesseiro. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/penteado-infantil-cacheado.webp"
+                image: "/assets/corte-liso-masculino-profissional-ai.png"
               },
               {
                 title: "2. Óleo de Argan: O Ouro de Marrocos",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. Rico em vitamina E e ácidos graxos, o óleo de argan é perfeito para selar as pontas duplas e controlar o frizz sem pesar. Use-o como finalizador após o secador ou em dias de alta umidade. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Apenas duas gotas são suficientes para todo o comprimento e pontas. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/corte-liso-tecnico-ai.png"
               },
               {
                 title: "3. Jojoba para Equilíbrio e Proteção",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. O óleo de jojoba tem uma composição muito próxima ao sebo natural produzido pelo nosso couro cabeludo. É excelente para proteger os fios da poluição e do sol, agindo como um escudo invisível. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Misture com seu leave-in favorito para uma finalização mais completa. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/corte-americano.webp"
               },
               {
                 title: "4. O 'Boost' na Máscara de Nutrição",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Transforme uma máscara básica em um tratamento de luxo adicionando algumas gotas de um mix de óleos vegetais. Isso aumenta o poder de reposição lipídica e garante um toque aveludado pós-enxágue. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Sempre misture o óleo apenas na quantidade de máscara que for usar na hora. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/social-classico.webp"
               },
               {
                 title: "5. Selagem de Pontas Diária",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Cabelos ressecados perdem nutrientes pelas pontas. Criar o hábito de aplicar um pouco de óleo finalizador todas as manhãs e noites cria uma barreira contra o atrito e o ressecamento ambiental. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Evite passar óleo muito próximo à raiz para não obstruir os folículos e causar oleosidade excessiva no couro cabeludo. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/cesar-moderno.webp"
               }
             ]}
           />
@@ -754,31 +754,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. O Perigo dos Sulfatos Fortes",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. Sulfatos como o Sodium Lauryl Sulfate são detergentes potentes que 'sequestram' a umidade do fio. Para cabelos ressecados, procure por shampoos com surfactantes suaves, que fazem menos espuma, mas limpam sem ressecar. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Verifique o rótulo: nomes como 'Sodium Laureth Sulfate' são mais suaves que o 'Lauryl'. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/corte-liso-masculino-profissional-ai.png"
               },
               {
                 title: "2. Shampoos de PH Balanceado",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. O pH ideal do cabelo é levemente ácido (entre 4.5 e 5.5). Shampoos alcalinos abrem demais as cutículas. Escolher um shampoo para cabelo ressecado com pH balanceado mantém as escamas seladas desde a lavagem. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Shampoos perolados costumam ser mais hidratantes que os transparentes. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/corte-liso-tecnico-ai.png"
               },
               {
                 title: "3. Aplicação Estratégica: Foco na Raiz",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. O shampoo deve ser aplicado apenas no couro cabeludo. A espuma que escorre pelo comprimento durante o enxágue é suficiente para limpar as pontas sem agredi-las. Nunca esfregue as pontas entre as mãos. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Massageie o couro cabeludo com a ponta dos dedos, nunca com as unhas, para ativar a circulação. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/corte-americano.webp"
               },
               {
                 title: "4. Alternando com Cowash",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. Para cabelos extremamente ressecados ou cacheados, a técnica de Cowash (lavar apenas com condicionador limpante) uma vez por semana ajuda a preservar a barreira lipídica natural. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Certifique-se de usar um condicionador específico para Cowash, que não contenha silicones insolúveis. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/social-classico.webp"
               },
               {
                 title: "5. Enxágue com Água Morna ou Fria",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. A água quente derrete os óleos protetores do fio e aumenta o ressecamento. Finalize a lavagem sempre com água morna ou fria para garantir que as cutículas fiquem bem fechadas. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Se puder, use água filtrada no último enxágue para evitar o excesso de cloro e minerais. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/cesar-moderno.webp"
               }
             ]}
           />
@@ -825,31 +825,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Entendendo os Ativos Umectantes",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. Para hidratar (devolver água), procure por produtos que contenham Pantenol, Glicerina, Aloe Vera ou Extratos Vegetais. Esses componentes atraem e prendem as moléculas de água dentro da fibra capilar. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Fuja de produtos com excesso de óleos se o seu objetivo principal for a fase de hidratação pura do cronograma. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/corte-liso-masculino-profissional-ai.png"
               },
               {
                 title: "2. Técnica de Enluvamento Profissional",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. Separe o cabelo em mechas finas e deslize as mãos repetidamente (de 10 a 15 vezes) de cima para baixo. O calor gerado pelo atrito e a massagem ajudam a máscara a penetrar nas escamas abertas pelo shampoo. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "O enluvamento deve ser firme, mas nunca agressivo, para não causar quebra nos fios fragilizados. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/corte-liso-tecnico-ai.png"
               },
               {
                 title: "3. Hidratação com Vapor (Vaporização)",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. O uso de uma touca térmica ou até mesmo o vapor do próprio chuveiro ajuda a dilatar as cutículas de forma suave. Isso permite que os ativos de baixo peso molecular entrem profundamente no fio ressecado. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Deixe o vapor agir por 5 a 10 minutos antes de enxaguar com água fria para selar. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/corte-americano.webp"
               },
               {
                 title: "4. Potencialização com Ampolas",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. As ampolas de hidratação possuem alta concentração de ativos e efeito instantâneo. Elas são perfeitas para aqueles dias em que você não tem tempo para o cronograma completo, mas precisa de um resultado visual imediato. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Misture a ampola diretamente na sua máscara favorita para criar um tratamento 'super-charged'. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/social-classico.webp"
               },
               {
                 title: "5. A Importância do Leave-in com Proteção UV",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. O sol é um dos maiores vilões do cabelo ressecado. Após a hidratação, finalize com um leave-in que contenha filtro solar para impedir que a radiação evapore a água que você acabou de repor. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Aplique o leave-in no cabelo ainda bem úmido para distribuir melhor o produto e selar a hidratação. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/cesar-moderno.webp"
               }
             ]}
           />
@@ -896,31 +896,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Misturinha de Mel e Azeite (Nutrição Hídrica)",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. O mel é um umectante natural que atrai água, enquanto o azeite sela a cutícula. Misture 2 colheres de máscara, 1 de mel e 1 de azeite. Aplique nos fios úmidos e deixe agir por 20 minutos. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Aqueça levemente o azeite antes de misturar para facilitar a penetração na fibra capilar. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/corte-liso-masculino-profissional-ai.png"
               },
               {
                 title: "2. Glicerina e Água de Arroz (Brilho Espelhado)",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. A água de arroz é rica em aminoácidos, e a glicerina retém a umidade. Borrifar essa mistura antes de aplicar a máscara caseira potencializa o brilho e reduz o frizz drasticamente. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Use essa receita apenas em dias de alta umidade para evitar que a glicerina 'roube' água do seu fio. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/corte-liso-tecnico-ai.png"
               },
               {
                 title: "3. Máscara de Babosa (Aloe Vera) Pura",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. O gel da babosa é um dos regeneradores mais potentes do mundo. Bata o gel no liquidificador com sua máscara favorita. Devolve a vida até aos cabelos mais porosos e ressecados. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Remova bem a 'aloína' (líquido amarelo da casca) antes de extrair o gel para evitar irritações. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/corte-americano.webp"
               },
               {
                 title: "4. Touca de Gesso com Amido de Milho",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. O famoso 'mingau' de maizena alinha os fios e reduz o volume excessivo causado pelo ressecamento. Misture o amido com água, leve ao fogo até engrossar e adicione à máscara. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Aplique a mistura ainda morna para ajudar na abertura sutil das escamas e melhor absorção. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/social-classico.webp"
               },
               {
                 title: "5. Selagem Final com Soro Fisiológico",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. O soro fisiológico possui um pH muito próximo ao do nosso cabelo. Usá-lo no último enxágue ajuda a fechar as cutículas, garantindo que todo o tratamento caseiro fique 'preso' dentro do fio. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Mantenha o soro na geladeira; o jato frio ajuda ainda mais no brilho instantâneo. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/cesar-moderno.webp"
               }
             ]}
           />
@@ -967,31 +967,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Diagnóstico: Ressecamento vs Porosidade",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Se o seu cabelo demora a secar e não absorve nada, ele está com porosidade baixa. Se ele 'bebe' o creme e continua áspero, está com porosidade alta. Identificar isso é o primeiro passo para o tratamento certo. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Faça o teste do copo d'água: se o fio boiar, precisa de hidratação; se afundar, precisa de reconstrução. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/corte-liso-masculino-profissional-ai.png"
               },
               {
                 title: "2. Lavagem Inversa (Pre-Poo)",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. Antes de entrar no banho, aplique um óleo ou condicionador barato nas pontas secas. Isso cria uma barreira que impede que o shampoo remova a oleosidade natural que ainda resta nos seus fios. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Deixe o Pre-Poo agir por pelo menos 15 minutos antes da lavagem. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/corte-liso-tecnico-ai.png"
               },
               {
                 title: "3. Nutrição com Óleos Nobres",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. O cabelo ressecado precisa de gordura (lipídios). Use máscaras que contenham manteiga de karité, óleo de argan ou macadâmia. A nutrição devolve o peso e o brilho que o fio perdeu. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Potencialize a máscara misturando três gotas de óleo puro na porção que for usar. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/corte-americano.webp"
               },
               {
                 title: "4. Selagem com Acidificante",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. Muitas vezes o produto não funciona porque as cutículas estão muito abertas. O acidificante equilibra o pH do fio, fechando as escamas e 'prendendo' o tratamento lá dentro. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Use o acidificante após a máscara e antes do condicionador final. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/social-classico.webp"
               },
               {
                 title: "5. Hábitos de Preservação",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. Evite água muito quente e reduza o uso de secador e chapinha durante o período de tratamento. Use protetores térmicos com silicone volátil, que protegem sem pesar. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Substitua a fronha de algodão por uma de cetim para evitar que o tecido 'roube' a hidratação dos fios durante a noite. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/cesar-moderno.webp"
               }
             ]}
           />
@@ -1038,31 +1038,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Box Braids Tradicionais",
                 description: "Para dar forma ao volume potente sem quebrar a estrutura capilar, utilize o método de dedoliss ou fitagem estruturada. Tranças soltas feitas com material sintético (Jumbo) que permitem uma infinidade de penteados. São ideais para quem busca durabilidade (até 2 meses) e praticidade total no dia a dia. Seu crespo ganha uma presença poderosa, celebrando a curvatura natural com saúde máxima.",
                 tip: "Escolha materiais leves para evitar a tração excessiva na raiz do seu cabelo crespo. Use sempre produtos ricos em óleos vegetais de abacate ou coco para manter os fios tipo 4 altamente nutridos e fortes.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/crespo-afro-puff.png"
               },
               {
                 title: "2. Tranças Nagô (Cornrows) com Design",
                 description: "Para criar um penteado protetor ou volumoso que esbanje saúde e atitude, prepare a fibra com nutrição intensa. Tranças rasteiras feitas rente ao couro cabeludo. Em 2026, o foco está em desenhos geométricos complexos e na mistura de espessuras de tranças para criar um visual artístico. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Durma com uma touca de cetim para evitar que os fios 'arrepiem' na base das tranças. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/penteado-infantil-cacheado.webp"
+                image: "/assets/crespo-bantu-knots.png"
               },
               {
                 title: "3. Passion Twists",
                 description: "A valorização do cabelo crespo reside na retenção de umidade e no respeito à curvatura natural tipo 4. Uma variação dos twists tradicionais feita com um material mais cacheado e macio. O resultado é uma textura boêmia, leve e com muito balanço, perfeita para quem quer um visual menos rígido. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Aplique um sérum de brilho nos twists semanalmente para manter o aspecto de novo. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/crespo-semipreso-twists.png"
               },
               {
                 title: "4. Fulani Braids (Estilo Tribal)",
                 description: "Para criar um penteado protetor ou volumoso que esbanje saúde e atitude, prepare a fibra com nutrição intensa. Uma combinação de tranças nagô frontais com box braids na parte de trás, muitas vezes adornadas com búzios, anéis e miçangas. É um penteado que exala herança e sofisticação. Seu crespo ganha uma presença poderosa, celebrando a curvatura natural com saúde máxima.",
                 tip: "Os acessórios metálicos devem ser removidos antes da lavagem para evitar a oxidação. Use sempre produtos ricos em óleos vegetais de abacate ou coco para manter os fios tipo 4 altamente nutridos e fortes.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/crespo-sleek-coque.png"
               },
               {
                 title: "5. Cuidados com o Couro Cabeludo",
                 description: "A valorização do cabelo crespo reside na retenção de umidade e no respeito à curvatura natural tipo 4. Estar trançada não significa esquecer a saúde. Use tônicos capilares e lave o couro cabeludo apenas com shampoo diluído em água para evitar resíduos entre as divisões. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Nunca prenda as tranças molhadas para evitar a proliferação de fungos e o mau cheiro. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/crespo-space-buns.png"
               }
             ]}
           />
@@ -1109,31 +1109,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. High Fade com Freestyle (Riscos Artísticos)",
                 description: "O segredo para a perfeita definição e controle do frizz em fios crespos está na técnica correta de fitagem. O degradê alto serve como base para desenhos geométricos, tribais ou linhas minimalistas feitos na navalha. É a personalização máxima do corte, transformando o cabelo em uma obra de arte única. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Escolha designs que acompanhem a curvatura natural do seu crânio para um visual mais harmônico. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/pompadour-fade.webp"
+                image: "/assets/corte-crespo-masculino-ai.png"
               },
               {
                 title: "2. Afro Curto Platinado (Nevou)",
                 description: "Para dar forma ao volume potente sem quebrar a estrutura capilar, utilize o método de dedoliss ou fitagem estruturada. A tendência do platinado global continua forte. No cabelo crespo, o contraste entre a cor claríssima e a textura densa cria um impacto visual inigualável, destacando o contorno do rosto. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "A descoloração no crespo exige um cronograma capilar rigoroso de reconstrução para não perder a elasticidade. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/crespo-masculino-executivo-ai.png"
               },
               {
                 title: "3. Burst Fade em Crespos",
                 description: "O segredo para a perfeita definição e controle do frizz em fios crespos está na técnica correta de fitagem. Um degradê em formato de meia-lua que 'explode' ao redor das orelhas, deixando o volume na nuca e no topo. Cria um visual dinâmico que valoriza o moicano natural dos fios crespos. Seu crespo ganha uma presença poderosa, celebrando a curvatura natural com saúde máxima.",
                 tip: "Finalize o volume central com um pouco de pomada para dar sustentação e definição. Use sempre produtos ricos em óleos vegetais de abacate ou coco para manter os fios tipo 4 altamente nutridos e fortes.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/corte-crespo-masculino-ai.png"
               },
               {
                 title: "4. Corte 'Box' Retrô com Textura",
                 description: "Para dar forma ao volume potente sem quebrar a estrutura capilar, utilize o método de dedoliss ou fitagem estruturada. Inspirado na 'Era de Ouro' do Hip Hop, o corte Box ganha uma releitura moderna com topos menos rígidos e laterais em degradê de pele (Skin Fade). Une a nostalgia com a precisão atual. Seu crespo ganha uma presença poderosa, celebrando a curvatura natural com saúde máxima.",
                 tip: "Use o pente garfo para garantir que a geometria do topo esteja perfeitamente alinhada. Use sempre produtos ricos em óleos vegetais de abacate ou coco para manter os fios tipo 4 altamente nutridos e fortes.",
-                image: "/assets/penteado-infantil-cacheado.webp"
+                image: "/assets/crespo-masculino-executivo-ai.png"
               },
               {
                 title: "5. Manutenção Criativa: Pigmentação",
                 description: "Para dar forma ao volume potente sem quebrar a estrutura capilar, utilize o método de dedoliss ou fitagem estruturada. Para quem quer o contorno (line up) e os desenhos sempre nítidos, a pigmentação capilar é a aliada perfeita. Ela preenche falhas e destaca a geometria do corte por mais tempo. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Procure profissionais que usem pigmentos de qualidade para evitar que a cor desbote para tons avermelhados ou esverdeados. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/crespo-trancas-protetoras-ai.png"
               }
             ]}
           />
@@ -1251,31 +1251,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Low Fade com Topo Curto",
                 description: "Para dar forma ao volume potente sem quebrar a estrutura capilar, utilize o método de dedoliss ou fitagem estruturada. O degradê começa bem próximo à orelha e nuca, mantendo a maior parte do cabelo com um comprimento baixo e uniforme. É a definição de um visual discreto, limpo e extremamente profissional. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "Peça ao barbeiro para manter a linha da testa (line up) natural, mas muito bem desenhada. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/corte-crespo-masculino-ai.png"
               },
               {
                 title: "2. Corte Social Crespo na Tesoura",
                 description: "O segredo para a perfeita definição e controle do frizz em fios crespos está na técnica correta de fitagem. Todo feito na tesoura para um caimento mais orgânico e menos agressivo que a máquina. Ideal para quem busca um visual clássico que respeita a curvatura do fio sem o contraste do degradê. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Exige que o cabelo esteja muito bem hidratado para que o corte tenha o brilho necessário da estética executiva. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/high-fade.webp"
+                image: "/assets/crespo-masculino-executivo-ai.png"
               },
               {
                 title: "3. Mid Fade com Risca Lateral Discreta",
                 description: "A valorização do cabelo crespo reside na retenção de umidade e no respeito à curvatura natural tipo 4. O degradê médio traz modernidade, enquanto a risca lateral feita na navalha simula o repartido clássico dos cortes de negócios. Transmite uma imagem de quem presta atenção aos detalhes. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "A risca deve ser fina e seguir o desenho natural da cabeça para não parecer artificial. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/corte-crespo-masculino-ai.png"
               },
               {
                 title: "4. Black Power Reduzido e Simétrico",
                 description: "O segredo para a perfeita definição e controle do frizz em fios crespos está na técnica correta de fitagem. Para quem não abre mão do volume mas precisa de controle. O cabelo é mantido em um formato arredondado impecável e com comprimento menor, garantindo que o volume seja uma moldura séria para o rosto. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "Use o pente garfo apenas para ajustar a forma, mantendo as pontas seladas com pomada. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/penteado-infantil-cacheado.webp"
+                image: "/assets/crespo-masculino-executivo-ai.png"
               },
               {
                 title: "5. Manutenção e Brilho Diário",
                 description: "Para criar um penteado protetor ou volumoso que esbanje saúde e atitude, prepare a fibra com nutrição intensa. Um corte executivo pede fios brilhantes. O cabelo crespo tende a ser opaco; por isso, o uso diário de um sérum ou óleo finalizador é obrigatório para transmitir saúde e vigor. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Aplique o produto sempre após a higienização, com o cabelo levemente úmido para melhor absorção. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/crespo-trancas-protetoras-ai.png"
               }
             ]}
           />
@@ -1322,31 +1322,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. High Top Fade (O Clássico Flat Top)",
                 description: "Para criar um penteado protetor ou volumoso que esbanje saúde e atitude, prepare a fibra com nutrição intensa. Com as laterais em degradê alto e o topo esculpido de forma plana ou levemente arredondada. É um corte imponente que exige uma mão firme do barbeiro para garantir a simetria perfeita. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "Use o pente garfo para levantar todo o topo antes de realizar o polimento final com a máquina. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/corte-crespo-masculino-ai.png"
               },
               {
                 title: "2. Estilo Nudred (Cachos de Esponja)",
                 description: "Para criar um penteado protetor ou volumoso que esbanje saúde e atitude, prepare a fibra com nutrição intensa. A técnica que utiliza uma esponja perfurada para criar pequenos rolinhos ou cachos definidos no topo do cabelo crespo. É a solução perfeita para quem quer textura sem usar química. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "Sempre faça movimentos circulares no mesmo sentido para que os cachos fiquem uniformes. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/crespo-masculino-executivo-ai.png"
               },
               {
                 title: "3. Buzz Cut com Risca Frontal (Shape Up)",
                 description: "O segredo para a perfeita definição e controle do frizz em fios crespos está na técnica correta de fitagem. O cabelo é cortado bem baixo, mas o destaque fica para o 'shape up' – o contorno da testa e das têmporas feito com precisão milimétrica na navalha, muitas vezes acompanhado de uma risca lateral ou frontal. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Mantenha o pezinho sempre limpo para que a geometria do corte não se perca conforme o cabelo cresce. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/corte-crespo-masculino-ai.png"
               },
               {
                 title: "4. Frohawk (Moicano Americano)",
                 description: "O segredo para a perfeita definição e controle do frizz em fios crespos está na técnica correta de fitagem. As laterais são totalmente raspadas ou em degradê alto, mantendo uma faixa de volume que vai da testa até a nuca. É um visual ousado e muito estiloso para quem tem crespo tipo 4. Seu crespo ganha uma presença poderosa, celebrando a curvatura natural com saúde máxima.",
                 tip: "Aplique uma pomada finalizadora na faixa central para manter o volume firme e bem direcionado. Use sempre produtos ricos em óleos vegetais de abacate ou coco para manter os fios tipo 4 altamente nutridos e fortes.",
-                image: "/assets/penteado-infantil-cacheado.webp"
+                image: "/assets/crespo-masculino-executivo-ai.png"
               },
               {
                 title: "5. Taper Fade Discreto",
                 description: "A valorização do cabelo crespo reside na retenção de umidade e no respeito à curvatura natural tipo 4. Para quem prefere um visual mais conservador mas ainda moderno. O degradê acontece apenas nas costeletas e no acabamento da nuca, preservando o volume natural em todo o restante da cabeça. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "Ótimo para quem está deixando o cabelo crescer e quer manter o visual limpo durante o processo. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/crespo-trancas-protetoras-ai.png"
               }
             ]}
           />
@@ -1393,31 +1393,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Identificando 4A, 4B e 4C",
                 description: "Para dar forma ao volume potente sem quebrar a estrutura capilar, utilize o método de dedoliss ou fitagem estruturada. O 4A possui cachos pequenos e definidos; o 4B tem formato em 'Z' e mais encolhimento; o 4C é o mais frágil e sem definição natural, mas com um volume incrível. Identificar o seu ajuda a escolher o peso certo dos produtos. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "Crespos 4C amam produtos à base de manteigas densas, enquanto 4A se dão bem com cremes de consistência média. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/penteado-infantil-cacheado.webp"
+                image: "/assets/crespo-afro-puff.png"
               },
               {
                 title: "2. Método LOC (Líquido, Óleo, Creme)",
                 description: "Para criar um penteado protetor ou volumoso que esbanje saúde e atitude, prepare a fibra com nutrição intensa. A técnica infalível para reter umidade. Primeiro, umedeça com água ou spray hidratante (L), sele com um óleo vegetal (O) e finalize com um creme de pentear ou manteiga (C). Isso cria uma barreira protetora duradoura. Isso garante um penteado duradouro com day afters perfeitos e cachos altamente protegidos.",
                 tip: "Use o método LOC após a lavagem para garantir que o cabelo não resseque ao longo da semana. Aplique um spray revitalizador caseiro (água e leave-in) pela manhã para reativar o volume e a maciez dos fios com rapidez.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/crespo-bantu-knots.png"
               },
               {
                 title: "3. Pente Garfo e o Volume Black",
                 description: "Para criar um penteado protetor ou volumoso que esbanje saúde e atitude, prepare a fibra com nutrição intensa. Para ganhar volume sem desmanchar a textura, use o pente garfo apenas na raiz. Insira o pente e puxe levemente para cima. Isso solta o cabelo do couro cabeludo e cria o efeito Black Power. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Nunca passe o pente garfo até as pontas para não quebrar o fio e gerar frizz desnecessário. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/crespo-semipreso-twists.png"
               },
               {
                 title: "4. Umectação Noturna com Óleo de Rícino",
                 description: "A valorização do cabelo crespo reside na retenção de umidade e no respeito à curvatura natural tipo 4. Cabelos crespos amam nutrição. Aplique óleo de rícino ou coco em todo o cabelo seco antes de dormir. Lave apenas no dia seguinte. Isso devolve a elasticidade e o brilho que o crespo perde naturalmente. Seu crespo ganha uma presença poderosa, celebrando a curvatura natural com saúde máxima.",
                 tip: "Proteja os fios com uma touca de cetim para que o óleo não manche o travesseiro e a hidratação seja potencializada. Use sempre produtos ricos em óleos vegetais de abacate ou coco para manter os fios tipo 4 altamente nutridos e fortes.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/crespo-sleek-coque.png"
               },
               {
                 title: "5. Finalização: Dedoliss vs Twists",
                 description: "O segredo para a perfeita definição e controle do frizz em fios crespos está na técnica correta de fitagem. Se busca definição extrema, o Dedoliss (enrolar mecha por mecha no dedo) é ideal. Se busca controle e redução de encolhimento, os Twists (tranças de duas mechas) são a melhor escolha para o dia a dia. O resultado é um visual crespo que esbanja volume máximo, definição e brilho radiante.",
                 tip: "Ao soltar os twists, use um pouco de óleo nas mãos para evitar que o atrito gere frizz. Evite o uso de pentes finos após a secagem para não desestruturar o volume natural e use touca de cetim à noite para manter a forma e evitar o frizz.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/crespo-space-buns.png"
               }
             ]}
           />
@@ -1464,31 +1464,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Butterfly Cut (Corte Borboleta)",
                 description: "Os fios ondulados necessitam de produtos leves que ativem as ondas sem pesar na raiz ou desestruturar o balanço. O corte queridinho das redes sociais. São camadas curtas no topo que se misturam com camadas longas no comprimento, imitando o formato das asas de uma borboleta. No ondulado, isso gera um volume cinematográfico. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
                 tip: "Use o secador direcionando as camadas da frente para trás para realçar o efeito 'asas'. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/medio-ondas-beach-waves.png"
               },
               {
                 title: "2. U-Cut com Camadas Internas",
                 description: "Para um visual natural e elegante que valoriza as ondas médias sem frizz, a preparação térmica é o diferencial. O corte em formato de 'U' na base evita que as pontas pareçam ralas. As camadas internas removem o peso sem alterar o comprimento, permitindo que as ondas subam e fiquem mais nítidas. Isso confere aquele ar despojado, elegante e com movimento digno de capa de revista.",
                 tip: "Ideal para quem tem muito volume e quer controle sem perder a extensão dos fios. Faça tranças frouxas antes de dormir para acordar com ondas naturalmente formadas, volumosas e sem necessidade de calor.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/cabelo-ondulado-definido-ai.png"
               },
               {
                 title: "3. Wavy Shag com Franja Cortininha",
                 description: "Para um visual natural e elegante que valoriza as ondas médias sem frizz, a preparação térmica é o diferencial. Inspirado nos anos 70, o Shag é todo repicado. Combinado com a franja cortininha (Curtain Bangs), ele emoldura o rosto e traz uma atitude moderna e despojada às ondas. Isso confere aquele ar despojado, elegante e com movimento digno de capa de revista.",
                 tip: "Aplique um mousse leve nas camadas repicadas para dar fixação e textura. Faça tranças frouxas antes de dormir para acordar com ondas naturalmente formadas, volumosas e sem necessidade de calor.",
-                image: "/assets/surfer-shag.webp"
+                image: "/assets/penteado-medio-solto-ai.png"
               },
               {
                 title: "4. Corte em 'V' para Ondulados Pesados",
                 description: "Para realçar a textura natural ondulada de forma despojada e com volume saudável, utilize técnicas de amassamento. Se você gosta de pontas bem afinadas e um visual que alonga a silhueta, o corte em V é a escolha certa. Ele direciona o balanço das ondas para o centro das costas. O resultado são ondas com textura incrível, balanço natural e livres de frizz.",
                 tip: "Finalize com um óleo nutritivo nas pontas para evitar o ressecamento comum nesse tipo de corte. Use sempre protetores térmicos fluidos em spray para evitar pesar a raiz do cabelo ondulado e manter o balanço natural das ondas.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/medio-ondas-beach-waves.png"
               },
               {
                 title: "5. Rotina Noturna: O Truque da Meia",
                 description: "Para um visual natural e elegante que valoriza as ondas médias sem frizz, a preparação térmica é o diferencial. Para manter as ondas sem frizz e sem amassados ao acordar, use a técnica do 'coque abacaxi' ou enrole mechas em uma meia de seda antes de dormir. O resultado são ondas com textura incrível, balanço natural e livres de frizz.",
                 tip: "Isso preserva a forma das ondas e reduz a necessidade de usar calor no dia seguinte. Use sempre protetores térmicos fluidos em spray para evitar pesar a raiz do cabelo ondulado e manter o balanço natural das ondas.",
-                image: "/assets/penteado-feminino-cacheado.webp"
+                image: "/assets/cabelo-ondulado-definido-ai.png"
               }
             ]}
           />
@@ -2174,31 +2174,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Pixie com Taper Fade",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. O Pixie clássico ganha uma nova vida com as costeletas e a nuca em degradê baixo. Isso remove o excesso de fios que costumam incomodar nessas áreas e destaca o desenho das orelhas e do maxilar. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "Finalize o topo com uma cera matte para criar textura 'bagunçada' e moderna. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/corte-americano.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "2. Bowl Cut Moderno (Estilo Americano)",
                 description: "O segredo para um alinhamento impecável e brilho espelhado em fios lisos está no selamento completo das cutículas. O corte 'tigela' repaginado. A linha reta do topo liso contrasta perfeitamente com um Mid Fade nas laterais, criando um visual geométrico e de alta moda. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "Mantenha o brilho espelhado do topo usando um spray de brilho após a secagem. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/bowl-cut-moderno.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "3. Pompadour Feminino com Fade Alto",
                 description: "O segredo para um alinhamento impecável e brilho espelhado em fios lisos está no selamento completo das cutículas. Um topete volumoso e liso no topo com laterais em degradê alto. É um visual de impacto que alonga a silhueta e transmite confiança. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
                 tip: "Use o secador e uma escova pequena para dar a curvatura perfeita ao pompadour frontal. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
-                image: "/assets/pompadour-fade.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "4. Americano com Sidecut Artístico",
                 description: "Para eliminar o frizz e garantir um efeito glass hair duradouro mesmo sob umidade, prepare a fibra capilar. Uma lateral é mantida em degradê americano (taper) enquanto a outra possui o comprimento liso. A área do degradê pode receber desenhos discretos na navalha. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "É o corte ideal para quem quer um visual assimétrico e cheio de personalidade. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "5. Manutenção e Higiene",
                 description: "A precisão do acabamento liso exige uma secagem bem tracionada com escova profissional ou passagem contínua da prancha. Cabelos curtos e lisos com degradê exigem visitas ao barbeiro ou cabeleireiro a cada 15-20 dias para manter a nitidez do fade e o contorno impecável. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
                 tip: "Use shampoos de limpeza profunda na área do degradê para evitar o acúmulo de oleosidade e resíduos. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
-                image: "/assets/cesar-moderno.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               }
             ]}
           />
@@ -2245,31 +2245,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Rabo de Cavalo Alto Polido",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. O icônico visual 'Clean Girl'. O cabelo é puxado para o topo da cabeça e preso com extrema precisão. Não deve haver nenhum fio fora do lugar. O rabo de cavalo cai liso e reto, transmitindo elegância e poder. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "Use uma escova de dentes com um pouco de spray para abaixar os baby hairs e garantir o acabamento perfeito. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "2. Coque Baixo Minimalista",
                 description: "O segredo para um alinhamento impecável e brilho espelhado em fios lisos está no selamento completo das cutículas. Posicionado na altura da nuca, este coque é a definição de sofisticação discreta. É o penteado favorito para casamentos e eventos corporativos de alto nível no cabelo liso. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
                 tip: "Enrole o próprio cabelo ao redor do elástico para escondê-lo e dar um toque artesanal ao penteado. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "3. Semipreso com Torcidinhos",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. Duas mechas frontais são levemente torcidas e presas na parte de trás. Um penteado romântico que valoriza o comprimento liso e retira o cabelo do rosto com delicadeza. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
                 tip: "Adicione uma presilha de pérolas no ponto onde as mechas se encontram para um toque extra de luxo. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "4. Efeito Wet Look (Molhado)",
                 description: "O segredo para um alinhamento impecável e brilho espelhado em fios lisos está no selamento completo das cutículas. O auge da modernidade. O topo do cabelo recebe gel de fixação média para criar o aspecto molhado, enquanto o comprimento continua seco e liso. É o look das passarelas internacionais. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "Penteie para trás com um pente largo para criar as marcas de direção que dão textura ao visual. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "5. Trança Lateral Embutida",
                 description: "O segredo para um alinhamento impecável e brilho espelhado em fios lisos está no selamento completo das cutículas. Uma trança única que começa na têmpora e desce rente ao couro cabeludo, deixando o restante do cabelo solto. No liso, a definição da trança fica extremamente nítida. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "Aplique um pouco de pó texturizador nos gomos da trança e abra-os levemente com os dedos para dar mais volume. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               }
             ]}
           />
@@ -2387,31 +2387,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Low Taper (Degradê Baixo)",
                 description: "A precisão do acabamento liso exige uma secagem bem tracionada com escova profissional ou passagem contínua da prancha. Uma versão sutil onde o degradê ocorre apenas nas costeletas e na nuca. Perfeito para quem quer testar o estilo sem uma mudança radical. No cabelo liso, cria uma moldura limpa para o rosto. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
                 tip: "Use um brinco de impacto para destacar ainda mais a região polida das costeletas. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
-                image: "/assets/corte-americano.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "2. Mid Fade com Topo Assimétrico",
                 description: "A precisão do acabamento liso exige uma secagem bem tracionada com escova profissional ou passagem contínua da prancha. O degradê começa na altura da orelha e sobe suavemente. O topo liso pode ser cortado de forma assimétrica para um visual artístico e contemporâneo. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
                 tip: "Penteie o topo para o lado oposto ao fade mais alto para criar um volume dramático. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "3. High Fade com Hair Tattoo",
                 description: "Para eliminar o frizz e garantir um efeito glass hair duradouro mesmo sob umidade, prepare a fibra capilar. Para as mais ousadas: degradê alto e desenhos geométricos feitos na navalha (hair tattoo) nas laterais. O contraste com o topo liso chapado é visualmente impressionante. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
                 tip: "Retoque o desenho a cada 10 dias para manter a nitidez das linhas. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
-                image: "/assets/buzz-cut.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "4. Americano com Franja Longa",
                 description: "Para eliminar o frizz e garantir um efeito glass hair duradouro mesmo sob umidade, prepare a fibra capilar. Laterais em degradê e uma franja longa e lisa que cai sobre o rosto. Une o 'boyish look' com uma feminilidade misteriosa. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "Pranche a franja para garantir que ela fique perfeitamente alinhada com o fade lateral. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "5. Undercut Americano (Oculto)",
                 description: "Para eliminar o frizz e garantir um efeito glass hair duradouro mesmo sob umidade, prepare a fibra capilar. O degradê é feito apenas na nuca e laterais baixas, ficando oculto quando o cabelo está solto e revelando o estilo ao prender um rabo de cavalo ou coque. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
                 tip: "Ideal para quem precisa de um visual formal no trabalho mas quer atitude nas horas vagas. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
-                image: "/assets/high-fade.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               }
             ]}
           />
@@ -2529,31 +2529,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. O Blunt Cut Perfeito (Corte Reto)",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. O corte reto, sem camadas, é a maior tendência para 2026. Ele traz uma sensação de fios mais encorpados e densos, sendo a escolha ideal para quem busca um visual moderno, 'clean' e minimalista. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
                 tip: "Peça ao seu cabeleireiro para fazer o corte com a tesoura a fio laser para garantir a precisão milimétrica nas pontas. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "2. Camadas Invisíveis para Movimento",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. Para quem tem muito volume e sente o cabelo 'pesado', as camadas internas são a solução. Elas removem o peso sem alterar o comprimento visual, permitindo que os fios balancem com naturalidade a cada passo. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
                 tip: "Evite camadas muito curtas no topo para não criar o efeito 'ouriçado' indesejado em dias úmidos. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
-                image: "/assets/french-crop.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "3. Curtain Bangs (Franja Cortininha)",
                 description: "O segredo para um alinhamento impecável e brilho espelhado em fios lisos está no selamento completo das cutículas. A franja que emoldura o rosto de forma suave. No cabelo liso, ela traz um ar romântico e ajuda a equilibrar as proporções do rosto, tirando a monotonia do liso chapado. O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "Use uma escova redonda grande e o secador direcionado para fora para dar o caimento perfeito às pontas da franja. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "4. Penteado Slicked Back Polido",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. O look de passarela: todo o cabelo penteado para trás com efeito ultra polido. É o penteado perfeito para eventos formais onde você quer transmitir poder e sofisticação. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
                 tip: "Aplique um pouco de pomada de fixação leve na raiz e use um pente fino para criar as linhas de direção perfeitas. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "5. Ritual de Brilho Espelhado",
                 description: "A precisão do acabamento liso exige uma secagem bem tracionada com escova profissional ou passagem contínua da prancha. Fios lisos têm a vantagem de refletir a luz com mais facilidade. Um cronograma focado em selagem das cutículas e hidratação profunda é o segredo para aquele brilho que parece um espelho. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
                 tip: "Termine o banho sempre com um jato de água fria. Isso fecha as escamas do fio instantaneamente, potencializando o brilho natural. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
-                image: "/assets/ivy-league.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               }
             ]}
           />
@@ -2600,19 +2600,19 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Valorização da Estrutura Facial",
                 description: "Os cabelos cacheados ganham definição, brilho e balanço natural através de camadas fluidas e técnicas de enluve. O degradê lateral (fade) 'limpa' o visual ao redor das orelhas e têmporas, o que ajuda a alongar o rosto e destacar as maçãs e o maxilar. Para cacheadas, isso significa que o volume não 'pesa' no rosto, mantendo a leveza. Seus cachos ganham um brilho tridimensional fantástico e balanço digno de cinema.",
                 tip: "Peça ao profissional para ajustar a altura do fade conforme o formato das suas orelhas e rosto. Misture gelatina modeladora ao creme de pentear para dar mais firmeza e prolongar a durabilidade dos cachos no dia a dia.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/curto-cacheado-corte-coracao.png"
               },
               {
                 title: "2. Versatilidade de Estilização",
                 description: "Os cabelos cacheados ganham definição, brilho e balanço natural através de camadas fluidas e técnicas de enluve. Com as laterais baixas, você pode focar toda a sua criatividade no topo. Use técnicas de fitagem para cachos super definidos ou use um pente garfo para um visual afro-chic volumoso e impactante. O resultado são cachos super definidos, macios, saltitantes e com volume na medida certa.",
                 tip: "Experimente usar acessórios como presilhas coloridas na transição do fade para um visual mais delicado. Use uma toalha de algodão ou camiseta antiga para secar os cachos sem gerar atrito ou frizz indesejado na fibra capilar.",
-                image: "/assets/curly-american-versatility.png"
+                image: "/assets/curto-cacheado-curly-bob.png"
               },
               {
                 title: "3. Praticidade no Day After",
                 description: "Os cabelos cacheados ganham definição, brilho e balanço natural através de camadas fluidas e técnicas de enluve. Menos cabelo nas laterais significa menos tempo desembaraçando áreas críticas. O corte americano mantém o visual arrumado por mais tempo, exigindo apenas uma revitalização rápida dos cachos do topo pela manhã. Isso confere durabilidade ao penteado, mantendo a definição dos caracóis o dia inteiro.",
                 tip: "Use uma fronha de cetim para que o fade não perca a nitidez devido ao atrito com o travesseiro. Faça um coque abacaxi frouxo no topo da cabeça para dormir, mantendo a definição dos cachos intacta para a manhã seguinte.",
-                image: "/assets/curly-satin-pillowcase.png"
+                image: "/assets/curto-cacheado-micro-curls.png"
               }
             ]}
           />
