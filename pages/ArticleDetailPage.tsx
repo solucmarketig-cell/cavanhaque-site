@@ -166,7 +166,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Penteados',
-      image: '/assets/corte-americano-feminino-cacheado.webp',
+      image: '/assets/penteado-medio-solto-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
