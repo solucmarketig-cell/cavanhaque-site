@@ -450,7 +450,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '13 min',
       category: 'Cabelo',
-      image: '/assets/corte-americano-feminino-cacheado.webp',
+      image: '/assets/curto-feminino-cacheado-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -876,7 +876,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/corte-americano-feminino-cacheado.webp',
+      image: '/assets/hidratacao-caseira-ressecado-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
@@ -1302,7 +1302,7 @@ const ArticleDetailPage: React.FC = () => {
       date: '15 de Maio de 2026',
       readTime: '12 min',
       category: 'Cabelo',
-      image: '/assets/corte-americano-feminino-cacheado.webp',
+      image: '/assets/corte-crespo-masculino-ai.png',
       content: (
         <>
           <p className="text-xl font-medium text-brand-charcoal mb-8 leading-relaxed">
