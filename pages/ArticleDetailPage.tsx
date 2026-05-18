@@ -683,31 +683,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Umectação Noturna com Óleo de Coco",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. O óleo de coco é um dos poucos que consegue penetrar profundamente no córtex do fio. Aplique-o generosamente no cabelo seco antes de dormir e lave no dia seguinte. É o tratamento de choque ideal para fios extremamente ressecados. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Use uma touca de cetim para potencializar o calor e não sujar o travesseiro. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/corte-liso-masculino-profissional-ai.png"
+                image: "/assets/curly-liquid-gold.png"
               },
               {
                 title: "2. Óleo de Argan: O Ouro de Marrocos",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. Rico em vitamina E e ácidos graxos, o óleo de argan é perfeito para selar as pontas duplas e controlar o frizz sem pesar. Use-o como finalizador após o secador ou em dias de alta umidade. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Apenas duas gotas são suficientes para todo o comprimento e pontas. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/penteado-feminino-cacheado.webp"
               },
               {
                 title: "3. Jojoba para Equilíbrio e Proteção",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. O óleo de jojoba tem uma composição muito próxima ao sebo natural produzido pelo nosso couro cabeludo. É excelente para proteger os fios da poluição e do sol, agindo como um escudo invisível. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Misture com seu leave-in favorito para uma finalização mais completa. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/simples-coque-baixo-lenco.png"
               },
               {
                 title: "4. O 'Boost' na Máscara de Nutrição",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Transforme uma máscara básica em um tratamento de luxo adicionando algumas gotas de um mix de óleos vegetais. Isso aumenta o poder de reposição lipídica e garante um toque aveludado pós-enxágue. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Sempre misture o óleo apenas na quantidade de máscara que for usar na hora. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/pompadour-fade.webp"
+                image: "/assets/simples-sleek-topete.png"
               },
               {
                 title: "5. Selagem de Pontas Diária",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Cabelos ressecados perdem nutrientes pelas pontas. Criar o hábito de aplicar um pouco de óleo finalizador todas as manhãs e noites cria uma barreira contra o atrito e o ressecamento ambiental. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Evite passar óleo muito próximo à raiz para não obstruir os folículos e causar oleosidade excessiva no couro cabeludo. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/ivy-league.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               }
             ]}
           />
@@ -754,31 +754,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. O Perigo dos Sulfatos Fortes",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. Sulfatos como o Sodium Lauryl Sulfate são detergentes potentes que 'sequestram' a umidade do fio. Para cabelos ressecados, procure por shampoos com surfactantes suaves, que fazem menos espuma, mas limpam sem ressecar. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Verifique o rótulo: nomes como 'Sodium Laureth Sulfate' são mais suaves que o 'Lauryl'. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/corte-liso-tecnico-ai.png"
+                image: "/assets/curly-diffuser.png"
               },
               {
                 title: "2. Shampoos de PH Balanceado",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. O pH ideal do cabelo é levemente ácido (entre 4.5 e 5.5). Shampoos alcalinos abrem demais as cutículas. Escolher um shampoo para cabelo ressecado com pH balanceado mantém as escamas seladas desde a lavagem. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Shampoos perolados costumam ser mais hidratantes que os transparentes. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/french-crop.webp"
+                image: "/assets/curly-fitagem.png"
               },
               {
                 title: "3. Aplicação Estratégica: Foco na Raiz",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. O shampoo deve ser aplicado apenas no couro cabeludo. A espuma que escorre pelo comprimento durante o enxágue é suficiente para limpar as pontas sem agredi-las. Nunca esfregue as pontas entre as mãos. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Massageie o couro cabeludo com a ponta dos dedos, nunca com as unhas, para ativar a circulação. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/cesar-moderno.webp"
+                image: "/assets/curly-plopping.png"
               },
               {
                 title: "4. Alternando com Cowash",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. Para cabelos extremamente ressecados ou cacheados, a técnica de Cowash (lavar apenas com condicionador limpante) uma vez por semana ajuda a preservar a barreira lipídica natural. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Certifique-se de usar um condicionador específico para Cowash, que não contenha silicones insolúveis. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/buzz-cut.webp"
+                image: "/assets/curly-schedule.png"
               },
               {
                 title: "5. Enxágue com Água Morna ou Fria",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. A água quente derrete os óleos protetores do fio e aumenta o ressecamento. Finalize a lavagem sempre com água morna ou fria para garantir que as cutículas fiquem bem fechadas. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Se puder, use água filtrada no último enxágue para evitar o excesso de cloro e minerais. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/high-fade.webp"
+                image: "/assets/curly-curvatures.png"
               }
             ]}
           />
@@ -825,31 +825,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Entendendo os Ativos Umectantes",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. Para hidratar (devolver água), procure por produtos que contenham Pantenol, Glicerina, Aloe Vera ou Extratos Vegetais. Esses componentes atraem e prendem as moléculas de água dentro da fibra capilar. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Fuja de produtos com excesso de óleos se o seu objetivo principal for a fase de hidratação pura do cronograma. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/moicano-disfarcado.webp"
+                image: "/assets/corte-camadas-curly.webp"
               },
               {
                 title: "2. Técnica de Enluvamento Profissional",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. Separe o cabelo em mechas finas e deslize as mãos repetidamente (de 10 a 15 vezes) de cima para baixo. O calor gerado pelo atrito e a massagem ajudam a máscara a penetrar nas escamas abertas pelo shampoo. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "O enluvamento deve ser firme, mas nunca agressivo, para não causar quebra nos fios fragilizados. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/surfer-shag.webp"
+                image: "/assets/crespo-bantu-knots.png"
               },
               {
                 title: "3. Hidratação com Vapor (Vaporização)",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. O uso de uma touca térmica ou até mesmo o vapor do próprio chuveiro ajuda a dilatar as cutículas de forma suave. Isso permite que os ativos de baixo peso molecular entrem profundamente no fio ressecado. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Deixe o vapor agir por 5 a 10 minutos antes de enxaguar com água fria para selar. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/top-knot.webp"
+                image: "/assets/medio-ondas-beach-waves.png"
               },
               {
                 title: "4. Potencialização com Ampolas",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. As ampolas de hidratação possuem alta concentração de ativos e efeito instantâneo. Elas são perfeitas para aqueles dias em que você não tem tempo para o cronograma completo, mas precisa de um resultado visual imediato. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Misture a ampola diretamente na sua máscara favorita para criar um tratamento 'super-charged'. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/penteado-medio-solto-ai.png"
               },
               {
                 title: "5. A Importância do Leave-in com Proteção UV",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. O sol é um dos maiores vilões do cabelo ressecado. Após a hidratação, finalize com um leave-in que contenha filtro solar para impedir que a radiação evapore a água que você acabou de repor. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Aplique o leave-in no cabelo ainda bem úmido para distribuir melhor o produto e selar a hidratação. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/simples-double-pony.png"
               }
             ]}
           />
@@ -896,31 +896,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Misturinha de Mel e Azeite (Nutrição Hídrica)",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. O mel é um umectante natural que atrai água, enquanto o azeite sela a cutícula. Misture 2 colheres de máscara, 1 de mel e 1 de azeite. Aplique nos fios úmidos e deixe agir por 20 minutos. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Aqueça levemente o azeite antes de misturar para facilitar a penetração na fibra capilar. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/corte-do-jaca.webp"
+                image: "/assets/hidratacao-caseira-ressecado-ai.png"
               },
               {
                 title: "2. Glicerina e Água de Arroz (Brilho Espelhado)",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. A água de arroz é rica em aminoácidos, e a glicerina retém a umidade. Borrifar essa mistura antes de aplicar a máscara caseira potencializa o brilho e reduz o frizz drasticamente. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Use essa receita apenas em dias de alta umidade para evitar que a glicerina 'roube' água do seu fio. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/burst-fade.webp"
+                image: "/assets/crespo-semipreso-twists.png"
               },
               {
                 title: "3. Máscara de Babosa (Aloe Vera) Pura",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. O gel da babosa é um dos regeneradores mais potentes do mundo. Bata o gel no liquidificador com sua máscara favorita. Devolve a vida até aos cabelos mais porosos e ressecados. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Remova bem a 'aloína' (líquido amarelo da casca) antes de extrair o gel para evitar irritações. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/flat-top-afro.webp"
+                image: "/assets/simples-bubble-braid.png"
               },
               {
                 title: "4. Touca de Gesso com Amido de Milho",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. O famoso 'mingau' de maizena alinha os fios e reduz o volume excessivo causado pelo ressecamento. Misture o amido com água, leve ao fogo até engrossar e adicione à máscara. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Aplique a mistura ainda morna para ajudar na abertura sutil das escamas e melhor absorção. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/bowl-cut-moderno.webp"
+                image: "/assets/simples-semipreso-torcidinho.png"
               },
               {
                 title: "5. Selagem Final com Soro Fisiológico",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. O soro fisiológico possui um pH muito próximo ao do nosso cabelo. Usá-lo no último enxágue ajuda a fechar as cutículas, garantindo que todo o tratamento caseiro fique 'preso' dentro do fio. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Mantenha o soro na geladeira; o jato frio ajuda ainda mais no brilho instantâneo. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/corte-americano.webp"
+                image: "/assets/crespo-space-buns.png"
               }
             ]}
           />
@@ -967,31 +967,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Diagnóstico: Ressecamento vs Porosidade",
                 description: "Para combater o ressecamento extremo e reabestece a fibra capilar com os nutrientes vitais, a rotina cronograma é essencial. Se o seu cabelo demora a secar e não absorve nada, ele está com porosidade baixa. Se ele 'bebe' o creme e continua áspero, está com porosidade alta. Identificar isso é o primeiro passo para o tratamento certo. O resultado é um cabelo completamente revitalizado, macio, encorpado e com muito brilho.",
                 tip: "Faça o teste do copo d'água: se o fio boiar, precisa de hidratação; se afundar, precisa de reconstrução. Faça uma umectação capilar com óleo vegetal 100% puro uma vez por semana antes de lavar para nutrir profundamente os fios secos.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/oleo-cabelo-ressecado-ai.png"
               },
               {
                 title: "2. Lavagem Inversa (Pre-Poo)",
                 description: "A saúde do couro cabeludo e o fortalecimento do bulbo capilar são os pilares para fios densos e revitalizados. Antes de entrar no banho, aplique um óleo ou condicionador barato nas pontas secas. Isso cria uma barreira que impede que o shampoo remova a oleosidade natural que ainda resta nos seus fios. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Deixe o Pre-Poo agir por pelo menos 15 minutos antes da lavagem. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/crespo-sleek-coque.png"
               },
               {
                 title: "3. Nutrição com Óleos Nobres",
                 description: "O resgate de fios danificados ou desidratados requer ativos emolientes nobres aplicados com massagem vigorosa. O cabelo ressecado precisa de gordura (lipídios). Use máscaras que contenham manteiga de karité, óleo de argan ou macadâmia. A nutrição devolve o peso e o brilho que o fio perdeu. Seu cabelo recupera a elasticidade natural, exibindo uma vitalidade saudável impressionante.",
                 tip: "Potencialize a máscara misturando três gotas de óleo puro na porção que for usar. Massageie o couro cabeludo com a ponta dos dedos em movimentos circulares durante a lavagem para estimular a microcirculação sanguínea.",
-                image: "/assets/willian-bigode-premium.webp"
+                image: "/assets/crespo-afro-puff.png"
               },
               {
                 title: "4. Selagem com Acidificante",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. Muitas vezes o produto não funciona porque as cutículas estão muito abertas. O acidificante equilibra o pH do fio, fechando as escamas e 'prendendo' o tratamento lá dentro. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Use o acidificante após a máscara e antes do condicionador final. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/loiro-cacheado-curto.webp"
+                image: "/assets/penteados-elegantes-festas-ai.png"
               },
               {
                 title: "5. Hábitos de Preservação",
                 description: "Para reequilibrar a oleosidade e selar a hidratação profundamente no interior do córtex capilar, utilize ativos biotecnológicos. Evite água muito quente e reduza o uso de secador e chapinha durante o período de tratamento. Use protetores térmicos com silicone volátil, que protegem sem pesar. Isso protege os fios contra agressões externas e previne a quebra e as pontas duplas.",
                 tip: "Substitua a fronha de algodão por uma de cetim para evitar que o tecido 'roube' a hidratação dos fios durante a noite. Nunca tome banhos com água excessivamente quente, pois as altas temperaturas removem os óleos protetores naturais do couro cabeludo.",
-                image: "/assets/corte-liso-masculino-profissional-ai.png"
+                image: "/assets/penteados-festa-noite-ai.png"
               }
             ]}
           />
@@ -1535,31 +1535,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Wavy Pixie (Pixie Ondulado)",
                 description: "Para um visual natural e elegante que valoriza as ondas médias sem frizz, a preparação térmica é o diferencial. O corte batidinho na nuca e nas laterais, mantendo as ondas no topo. É um visual extremamente moderno e elegante que destaca o olhar e as maçãs do rosto. O resultado são ondas com textura incrível, balanço natural e livres de frizz.",
                 tip: "Use uma pomada matte apenas nas pontas para definir a curvatura das ondas sem deixar o cabelo oleoso. Use sempre protetores térmicos fluidos em spray para evitar pesar a raiz do cabelo ondulado e manter o balanço natural das ondas.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/loiro-cacheado-curto.webp"
               },
               {
                 title: "2. Short Bob Ondulado",
                 description: "Para realçar a textura natural ondulada de forma despojada e com volume saudável, utilize técnicas de amassamento. O Bob na altura do queixo ganha um ar despojado com a textura ondulada. É o equilíbrio perfeito entre o clássico e o contemporâneo. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
                 tip: "Finalize amassando os fios de baixo para cima para estimular o volume nas laterais. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/curto-feminino-cacheado-ai.png"
               },
               {
                 title: "3. Shaggy Hair Curto",
                 description: "Para realçar a textura natural ondulada de forma despojada e com volume saudável, utilize técnicas de amassamento. Muitas camadas e fios repicados. Esse corte é ideal para quem tem muito cabelo e quer distribuir o volume de forma harmoniosa, criando um visual 'rocker' chic. Isso confere aquele ar despojado, elegante e com movimento digno de capa de revista.",
                 tip: "Use um spray texturizador no cabelo seco para dar aquele efeito 'bagunçado' proposital. Faça tranças frouxas antes de dormir para acordar com ondas naturalmente formadas, volumosas e sem necessidade de calor.",
-                image: "/assets/surfer-shag.webp"
+                image: "/assets/corte-shaggy-cacheado.webp"
               },
               {
                 title: "4. French Bob com Ondas",
                 description: "Para um visual natural e elegante que valoriza as ondas médias sem frizz, a preparação térmica é o diferencial. Uma versão mais curta do Bob, geralmente com uma franja levemente ondulada. Transmite uma sofisticação parisiense e muita personalidade. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
                 tip: "Penteie a franja com os dedos para manter a naturalidade da onda frontal. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/curto-cacheado-shaggy.png"
               },
               {
                 title: "5. Sidecut em Curto Ondulado",
                 description: "Para realçar a textura natural ondulada de forma despojada e com volume saudável, utilize técnicas de amassamento. Para as mais ousadas, raspar uma das laterais cria um contraste incrível com o volume das ondas do outro lado. É um corte que transmite atitude e modernidade. O resultado são ondas com textura incrível, balanço natural e livres de frizz.",
                 tip: "Mantenha a lateral raspada sempre bem aparada (a cada 15 dias) para o visual continuar nítido. Use sempre protetores térmicos fluidos em spray para evitar pesar a raiz do cabelo ondulado e manter o balanço natural das ondas.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/corte-coracao-curly.webp"
               }
             ]}
           />
@@ -1677,31 +1677,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Identificando sua Curvatura (2A, 2B, 2C)",
                 description: "Para um visual natural e elegante que valoriza as ondas médias sem frizz, a preparação térmica é o diferencial. Ondulados 2A são quase lisos, 2B possuem ondas em S mais definidas e 2C já flertam com os cachos. Saber sua curvatura ajuda a escolher a densidade certa do creme finalizador. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
                 tip: "Cabelos 2A pedem produtos quase líquidos (sprays), enquanto 2C seguram bem mousses e gelatinas leves. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/cabelo-ondulado-definido-ai.png"
               },
               {
                 title: "2. Finalização 'Fitagem' Suave",
                 description: "O movimento elegante das ondas é conquistado através de uma secagem estratégica combinada com ativadores de textura. Ao contrário dos cachos, a fitagem no ondulado deve ser feita com menos produto e mais 'scrunch' (amassar de baixo para cima). Isso estimula a formação das ondas sem deixar o fio endurecido. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
                 tip: "Faça a finalização com o cabelo ainda bem molhado para selar a umidade dentro do fio. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
-                image: "/assets/corte-americano-feminino-cacheado.webp"
+                image: "/assets/medio-ondas-beach-waves.png"
               },
               {
                 title: "3. Técnica do Plopping",
                 description: "Os fios ondulados necessitam de produtos leves que ativem as ondas sem pesar na raiz ou desestruturar o balanço. Envolva o cabelo em uma toalha de microfibra ou camiseta de algodão no topo da cabeça por 20 minutos. Isso remove o excesso de água sem gerar atrito, combatendo o frizz desde a secagem. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
                 tip: "Essa técnica é o maior segredo para ondas definidas e sem fios arrepiados. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/penteado-medio-solto-ai.png"
               },
               {
                 title: "4. Secagem com Difusor",
                 description: "O movimento elegante das ondas é conquistado através de uma secagem estratégica combinada com ativadores de textura. Use o difusor em temperatura média e baixa velocidade. Encaixe as ondas no bocal e leve em direção à raiz. O calor controlado ajuda a fixar a forma das ondas por mais tempo. O resultado são ondas com textura incrível, balanço natural e livres de frizz.",
                 tip: "Não toque no cabelo enquanto ele seca com o difusor para não desmanchar a definição. Use sempre protetores térmicos fluidos em spray para evitar pesar a raiz do cabelo ondulado e manter o balanço natural das ondas.",
-                image: "/assets/slicked-back.webp"
+                image: "/assets/corte-cabelo-cacheado-feminino-tendencia.webp"
               },
               {
                 title: "5. Revitalização no Day After",
                 description: "Os fios ondulados necessitam de produtos leves que ativem as ondas sem pesar na raiz ou desestruturar o balanço. Para o dia seguinte, use um borrifador com água e um pouco de leave-in líquido. Amasse as ondas suavemente para devolver o volume e a forma sem precisar lavar novamente. Suas ondas naturais ganham destaque e definição sem perder a leveza e a maciez.",
                 tip: "Durma com uma fronha de cetim para reduzir o atrito e manter as ondas intactas até de manhã. Penteie os fios ondulados somente enquanto estiverem molhados com condicionador para evitar quebrar a estrutura natural das ondas.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/corte-cacheado-tendencia-v2.webp"
               }
             ]}
           />
@@ -1748,31 +1748,31 @@ const ArticleDetailPage: React.FC = () => {
                 title: "1. Cronograma Capilar de Alinhamento",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. O cabelo só fica liso e com balanço se estiver nutrido. Alterne entre hidratação (reposição de água) e nutrição (reposição de óleos). Fios ressecados tendem a armar e perder a forma lisa. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
                 tip: "Use produtos que contenham queratina vegetal para fortalecer a estrutura do fio sem deixá-lo rígido. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
-                image: "/assets/loiro-escuro.webp"
+                image: "/assets/penteado-liso-feminino-ai.png"
               },
               {
                 title: "2. Escovação Térmica com Segurança",
                 description: "Para eliminar o frizz e garantir um efeito glass hair duradouro mesmo sob umidade, prepare a fibra capilar. Ao usar o secador, direcione o jato de cima para baixo, seguindo o sentido de crescimento do fio. Isso ajuda a fechar as cutículas naturalmente. Nunca esqueça o protetor térmico! O resultado é um cabelo extremamente alinhado, brilhante e sedoso ao toque.",
                 tip: "Divida o cabelo em mechas finas para garantir que o calor seja distribuído de forma uniforme. Use uma escova de cerdas de javali para distribuir a oleosidade natural da raiz até as pontas, mantendo o cabelo brilhante.",
-                image: "/assets/fringe-fade.webp"
+                image: "/assets/simples-sleek-topete.png"
               },
               {
                 title: "3. Selagem Térmica vs Botox Capilar",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. Para quem quer um efeito liso mais duradouro, o Botox Capilar é excelente para reduzir o volume e alinhar os fios sem a agressividade de uma progressiva. Ele repõe a massa capilar enquanto alisa levemente. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
                 tip: "Sempre faça um teste de mecha antes de aplicar qualquer produto químico em todo o cabelo. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
-                image: "/assets/social-classico.webp"
+                image: "/assets/simples-coque-baixo-lenco.png"
               },
               {
                 title: "4. Controle de Frizz com Óleos Leves",
                 description: "A precisão do acabamento liso exige uma secagem bem tracionada com escova profissional ou passagem contínua da prancha. O frizz é o maior inimigo do cabelo liso. Use óleos finalizadores (como de Argan ou Macadâmia) diariamente nas pontas para selar os fios e protegê-los da umidade externa. Seus fios lisos ganham um brilho vítreo espetacular e caimento fluido impressionante.",
                 tip: "Aplique apenas duas gotas na palma das mãos e espalhe bem antes de passar nos fios. Use fronha de cetim para evitar o atrito que gera frizz e estática nos cabelos lisos ao longo da noite.",
-                image: "/assets/side-swept.webp"
+                image: "/assets/simples-double-pony.png"
               },
               {
                 title: "5. O Truque do Jato Frio",
                 description: "Para obter uma textura lisa sedosa que se move naturalmente com o corpo, a proteção térmica é indispensável. Após terminar a escova ou chapinha, finalize com um jato de ar frio do secador por todo o cabelo. O choque térmico sela as cutículas instantaneamente e garante um brilho imediato. Isso garante um visual moderno de liso espelhado impecável que dura o dia todo.",
                 tip: "Esse passo também ajuda a baixar os baby hairs que insistem em ficar arrepiados. Finalize a secagem com o jato de ar frio do secador por 30 segundos para selar as cutículas e dar brilho espelhado instantâneo.",
-                image: "/assets/ivy-league.webp"
+                image: "/assets/simples-bubble-braid.png"
               }
             ]}
           />
