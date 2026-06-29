@@ -17,15 +17,20 @@ const Hero: React.FC = () => {
       {/* Background with Priority LCP */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10" /> {/* Overlay for text readability */}
-        <OptimizedImage
-          src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2000&auto=format&fit=crop"
-          alt="Homem com barba bem cuidada em ambiente escuro e sofisticado"
-          className="w-full h-full object-cover opacity-60"
-          priority={true}
-          sizes="100vw"
-          width={1920}
-          height={1080}
-        />
+        <picture className="absolute inset-0 w-full h-full z-0 block">
+          <source srcSet="/assets/hero-bg-mobile.webp" media="(max-width: 768px)" type="image/webp" />
+          <source srcSet="/assets/hero-bg.webp" type="image/webp" />
+          <img
+            src="/assets/hero-bg.webp"
+            alt="Homem com barba bem cuidada em ambiente escuro e sofisticado"
+            className="w-full h-full object-cover opacity-60"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+            width={1200}
+            height={800}
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/80 z-20"></div>
       </div>
 

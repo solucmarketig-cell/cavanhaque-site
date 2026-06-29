@@ -25,12 +25,15 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
     const generateSrcSet = (baseUrl: string) => {
         // Check if it's an Unsplash URL
         if (baseUrl.includes('unsplash.com')) {
+            // Remove existing width parameters (e.g. w=2000) to prevent duplicates in query string
+            const cleanUrl = baseUrl.replace(/[?&]w=\d+/g, '');
             const widths = [400, 800, 1200, 1600, 2000];
             return widths
                 .map(w => {
-                    const url = baseUrl.includes('?')
-                        ? `${baseUrl}&w=${w}`
-                        : `${baseUrl}?w=${w}&auto=format&fit=crop`;
+                    const separator = cleanUrl.includes('?') ? '&' : '?';
+                    const url = cleanUrl.includes('auto=')
+                        ? `${cleanUrl}${separator}w=${w}`
+                        : `${cleanUrl}${separator}w=${w}&auto=format&fit=crop`;
                     return `${url} ${w}w`;
                 })
                 .join(', ');

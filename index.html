@@ -11,10 +11,7 @@
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://images.unsplash.com" />
-  <link rel="preload" as="image"
-    href="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2000&auto=format&fit=crop"
-    fetchpriority="high" />
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" imagesrcset="/assets/hero-bg-mobile.webp 600w, /assets/hero-bg.webp 1200w" imagesizes="100vw" fetchpriority="high" />
 
   <!-- PWA Manifest -->
   <link rel="manifest" href="/manifest.json" />
@@ -80,12 +77,25 @@
   <!-- CSS injected via Vite -->
 
   <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832562989573758" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-brand-dark text-brand-light antialiased">
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
+  <script>
+    function loadAds() {
+      if (window.adsLoaded) return;
+      window.adsLoaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5832562989573758';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      document.body.appendChild(s);
+    }
+    window.addEventListener('scroll', loadAds, {once: true, passive: true});
+    window.addEventListener('mousemove', loadAds, {once: true, passive: true});
+    window.addEventListener('touchstart', loadAds, {once: true, passive: true});
+  </script>
 </body>
 
 </html>
